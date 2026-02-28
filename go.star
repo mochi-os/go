@@ -45,11 +45,44 @@ def get_opponent(game, user_id):
 		return game["opponent"]
 	return game["identity"]
 
+# Load game by ID from action input, validate ID and player access
+def load_game(a):
+	if not mochi.valid(a.input("game"), "id"):
+		a.error(400, "Invalid game ID")
+		return None
+	game = mochi.db.row("select * from games where id=?", a.input("game"))
+	if not game:
+		a.error(404, "Game not found")
+		return None
+	if game["identity"] != a.user.identity.id and game["opponent"] != a.user.identity.id:
+		a.error(403, "Not a player in this game")
+		return None
+	return game
+
 # Generate empty board FEN for given size
 def empty_board(size):
 	row = "." * size
 	rows = "/".join([row] * size)
 	return rows + " b 0 0 - 0"
+
+# Validate a Go board FEN string
+def valid_fen(fen):
+	if not fen or len(fen) > 1000:
+		return False
+	parts = fen.split(" ")
+	if len(parts) < 1:
+		return False
+	rows = parts[0].split("/")
+	size = len(rows)
+	if size not in [9, 13, 19]:
+		return False
+	for row in rows:
+		if len(row) != size:
+			return False
+		for ch in row.elems():
+			if ch not in [".", "B", "W"]:
+				return False
+	return True
 
 # Get friends list for new game
 def action_new(a):
@@ -81,6 +114,9 @@ def action_create(a):
 	board_size = 19
 	board_size_str = a.input("board_size", "")
 	if board_size_str:
+		if not mochi.valid(board_size_str, "integer"):
+			a.error(400, "Invalid board size")
+			return
 		board_size = int(board_size_str)
 	if board_size not in [9, 13, 19]:
 		a.error(400, "Invalid board size")
@@ -90,7 +126,13 @@ def action_create(a):
 	komi = 6.5
 	komi_str = a.input("komi", "")
 	if komi_str:
+		if not mochi.valid(komi_str, "numeric"):
+			a.error(400, "Invalid komi")
+			return
 		komi = float(komi_str)
+		if komi < 0 or komi > 10:
+			a.error(400, "Komi must be between 0 and 10")
+			return
 
 	# Randomly assign black (black goes first in Go)
 	coin = mochi.random.alphanumeric(1)
@@ -133,17 +175,8 @@ def action_list(a):
 
 # View a game
 def action_view(a):
-	if not mochi.valid(a.input("game"), "id"):
-		a.error(400, "Invalid game ID")
-		return
-	game = mochi.db.row("select * from games where id=?", a.input("game"))
+	game = load_game(a)
 	if not game:
-		a.error(404, "Game not found")
-		return
-
-	# Verify user is a player
-	if game["identity"] != a.user.identity.id and game["opponent"] != a.user.identity.id:
-		a.error(403, "Not a player in this game")
 		return
 
 	mochi.service.call("notifications", "clear/object", "go", game["id"])
@@ -154,17 +187,8 @@ def action_view(a):
 
 # Get messages for a game with cursor-based pagination
 def action_messages(a):
-	if not mochi.valid(a.input("game"), "id"):
-		a.error(400, "Invalid game ID")
-		return
-	game = mochi.db.row("select * from games where id=?", a.input("game"))
+	game = load_game(a)
 	if not game:
-		a.error(404, "Game not found")
-		return
-
-	# Verify user is a player
-	if game["identity"] != a.user.identity.id and game["opponent"] != a.user.identity.id:
-		a.error(403, "Not a player in this game")
 		return
 
 	# Pagination parameters
@@ -206,17 +230,8 @@ def action_messages(a):
 
 # Send a chat message
 def action_send(a):
-	if not mochi.valid(a.input("game"), "id"):
-		a.error(400, "Invalid game ID")
-		return
-	game = mochi.db.row("select * from games where id=?", a.input("game"))
+	game = load_game(a)
 	if not game:
-		a.error(404, "Game not found")
-		return
-
-	# Verify user is a player
-	if game["identity"] != a.user.identity.id and game["opponent"] != a.user.identity.id:
-		a.error(403, "Not a player in this game")
 		return
 
 	body = a.input("body", "")
@@ -249,17 +264,8 @@ def action_send(a):
 
 # Make a move (place a stone)
 def action_move(a):
-	if not mochi.valid(a.input("game"), "id"):
-		a.error(400, "Invalid game ID")
-		return
-	game = mochi.db.row("select * from games where id=?", a.input("game"))
+	game = load_game(a)
 	if not game:
-		a.error(404, "Game not found")
-		return
-
-	# Verify user is a player
-	if game["identity"] != a.user.identity.id and game["opponent"] != a.user.identity.id:
-		a.error(403, "Not a player in this game")
 		return
 
 	if game["status"] != "active":
@@ -283,8 +289,18 @@ def action_move(a):
 	status = a.input("status", "")
 	winner = a.input("winner", "")
 
-	if not fen:
-		a.error(400, "Missing move data")
+	if not fen or not valid_fen(fen):
+		a.error(400, "Invalid board state")
+		return
+	if previous_fen and not valid_fen(previous_fen):
+		a.error(400, "Invalid previous board state")
+		return
+	if len(sgf) > 10000:
+		a.error(400, "SGF too long")
+		return
+
+	if not mochi.valid(captures_black, "integer") or not mochi.valid(captures_white, "integer"):
+		a.error(400, "Invalid captures")
 		return
 
 	# Validate status and winner
@@ -362,8 +378,18 @@ def action_pass(a):
 	score_black = a.input("score_black", "")
 	score_white = a.input("score_white", "")
 
-	if not fen:
-		a.error(400, "Missing move data")
+	if not fen or not valid_fen(fen):
+		a.error(400, "Invalid board state")
+		return
+	if len(sgf) > 10000:
+		a.error(400, "SGF too long")
+		return
+
+	if score_black and not mochi.valid(score_black, "numeric"):
+		a.error(400, "Invalid score")
+		return
+	if score_white and not mochi.valid(score_white, "numeric"):
+		a.error(400, "Invalid score")
 		return
 
 	valid_statuses = ["active", "finished"]
@@ -655,19 +681,30 @@ def event_new(e):
 		return
 
 	board_size = e.content("board_size")
-	if not board_size:
+	if board_size:
+		if not mochi.valid(str(board_size), "integer"):
+			return
+		board_size = int(board_size)
+	else:
 		board_size = 19
-	board_size = int(board_size)
 	if board_size not in [9, 13, 19]:
 		return
 
 	komi = e.content("komi")
-	if not komi:
+	if komi:
+		if not mochi.valid(str(komi), "numeric"):
+			return
+		komi = float(komi)
+		if komi < 0 or komi > 10:
+			return
+	else:
 		komi = 6.5
-	komi = float(komi)
 
 	fen = e.content("fen")
-	if not fen:
+	if fen:
+		if not valid_fen(fen):
+			return
+	else:
 		fen = empty_board(board_size)
 
 	created = e.content("created")
@@ -703,7 +740,11 @@ def event_move(e):
 	captures_black = e.content("captures_black")
 	captures_white = e.content("captures_white")
 
-	if not fen:
+	if not fen or not valid_fen(fen):
+		return
+	if previous_fen and not valid_fen(previous_fen):
+		return
+	if len(sgf) > 10000:
 		return
 
 	valid_statuses = ["active", "finished"]
@@ -714,10 +755,14 @@ def event_move(e):
 		winner = None
 
 	if captures_black:
+		if not mochi.valid(str(captures_black), "integer"):
+			return
 		captures_black = int(captures_black)
 	else:
 		captures_black = game["captures_black"]
 	if captures_white:
+		if not mochi.valid(str(captures_white), "integer"):
+			return
 		captures_white = int(captures_white)
 	else:
 		captures_white = game["captures_white"]
@@ -895,7 +940,12 @@ def action_notifications_subscribe(a):
 		a.error(400, "Invalid label")
 		return
 
-	destinations_list = json.decode(destinations) if destinations else []
+	destinations_list = []
+	if destinations:
+		destinations_list = json.decode(destinations)
+		if type(destinations_list) != "list":
+			a.error(400, "Invalid destinations")
+			return
 
 	result = mochi.service.call("notifications", "subscribe", label, type, object, destinations_list)
 	return {"data": {"id": result}}

@@ -1,5 +1,5 @@
 import { cn } from '@mochi/common'
-import type { Game } from '@/api/games'
+import { getOpponentName, type Game } from '@/api/games'
 
 interface GameStatusProps {
   game: Game
@@ -7,10 +7,6 @@ interface GameStatusProps {
   isMyTurn: boolean
   myIdentity: string
   score?: { black: number; white: number; winner: 'black' | 'white' } | null
-}
-
-function getOpponentName(game: Game, myIdentity: string): string {
-  return game.identity === myIdentity ? game.opponent_name : game.identity_name
 }
 
 export function GameStatus({
