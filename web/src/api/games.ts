@@ -64,11 +64,13 @@ export const gamesApi = {
       .then((res) => res.data),
 
   create: (opponent: string, boardSize: number = 19, komi: number = 6.5) =>
-    client.post<CreateGameResponse>(endpoints.game.create, {
-      opponent,
-      board_size: boardSize,
-      komi,
-    }),
+    client
+      .post<CreateGameResponse | { data: CreateGameResponse }>(endpoints.game.create, {
+        opponent,
+        board_size: boardSize,
+        komi,
+      })
+      .then((res) => unwrapData<CreateGameResponse>(res)),
 
   resign: (gameId: string) =>
     client.post<ResignResponse>(endpoints.game.resign(gameId)),

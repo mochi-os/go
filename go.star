@@ -40,6 +40,11 @@ def database_create():
 def database_upgrade(to_version):
 	pass
 
+def get_opponent(game, user_id):
+	if game["identity"] == user_id:
+		return game["opponent"]
+	return game["identity"]
+
 # Generate empty board FEN for given size
 def empty_board(size):
 	row = "." * size
@@ -231,11 +236,7 @@ def action_send(a):
 
 	mochi.websocket.write(game["key"], {"type": "message", "created": now, "member": a.user.identity.id, "name": a.user.identity.name, "body": body})
 
-	# Get opponent ID
-	if game["identity"] == a.user.identity.id:
-		other = game["opponent"]
-	else:
-		other = game["identity"]
+	other = get_opponent(game, a.user.identity.id)
 
 	mochi.message.send(
 		{"from": a.user.identity.id, "to": other, "service": "go", "event": "message"},
@@ -311,11 +312,7 @@ def action_move(a):
 		"draw_offer": ""
 	})
 
-	# Send to opponent
-	if game["identity"] == a.user.identity.id:
-		other = game["opponent"]
-	else:
-		other = game["identity"]
+	other = get_opponent(game, a.user.identity.id)
 
 	mochi.message.send(
 		{"from": a.user.identity.id, "to": other, "service": "go", "event": "move"},
@@ -408,11 +405,7 @@ def action_pass(a):
 		ws_data["score_white"] = float(score_white)
 	mochi.websocket.write(game["key"], ws_data)
 
-	# Send to opponent
-	if game["identity"] == a.user.identity.id:
-		other = game["opponent"]
-	else:
-		other = game["identity"]
+	other = get_opponent(game, a.user.identity.id)
 
 	msg_data = {
 		"game": game["id"], "message": id, "created": now, "name": a.user.identity.name,
@@ -453,12 +446,8 @@ def action_resign(a):
 		return
 
 	# Winner is the opponent
-	if game["identity"] == a.user.identity.id:
-		winner = game["opponent"]
-		other = game["opponent"]
-	else:
-		winner = game["identity"]
-		other = game["identity"]
+	other = get_opponent(game, a.user.identity.id)
+	winner = other
 
 	now = mochi.time.now()
 	mochi.db.execute("update games set status='resigned', winner=?, updated=? where id=?", winner, now, game["id"])
@@ -501,11 +490,7 @@ def action_draw_offer(a):
 		a.error(400, "You already offered a draw")
 		return
 
-	# Get opponent ID
-	if game["identity"] == a.user.identity.id:
-		other = game["opponent"]
-	else:
-		other = game["identity"]
+	other = get_opponent(game, a.user.identity.id)
 
 	now = mochi.time.now()
 	mochi.db.execute("update games set draw_offer=?, updated=? where id=?", a.user.identity.id, now, game["id"])
@@ -548,11 +533,7 @@ def action_draw_accept(a):
 		a.error(400, "No draw offer to accept")
 		return
 
-	# Get opponent ID
-	if game["identity"] == a.user.identity.id:
-		other = game["opponent"]
-	else:
-		other = game["identity"]
+	other = get_opponent(game, a.user.identity.id)
 
 	now = mochi.time.now()
 	mochi.db.execute("update games set status='draw', draw_offer=null, updated=? where id=?", now, game["id"])
@@ -595,11 +576,7 @@ def action_draw_decline(a):
 		a.error(400, "No draw offer to decline")
 		return
 
-	# Get opponent ID
-	if game["identity"] == a.user.identity.id:
-		other = game["opponent"]
-	else:
-		other = game["identity"]
+	other = get_opponent(game, a.user.identity.id)
 
 	now = mochi.time.now()
 	mochi.db.execute("update games set draw_offer=null, updated=? where id=?", now, game["id"])
@@ -850,16 +827,15 @@ def event_draw_offer(e):
 	if sender != game["identity"] and sender != game["opponent"]:
 		return
 
-	draw_offer = e.content("draw_offer")
 	body = e.content("body") or "Draw offered"
 
 	now = mochi.time.now()
-	mochi.db.execute("update games set draw_offer=?, updated=? where id=?", draw_offer, now, game["id"])
+	mochi.db.execute("update games set draw_offer=?, updated=? where id=?", sender, now, game["id"])
 
 	id = mochi.uid()
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], sender, "", body, now)
 
-	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_offer", "created": now, "body": body, "draw_offer": draw_offer})
+	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_offer", "created": now, "body": body, "draw_offer": sender})
 	mochi.service.call("notifications", "send", "draw_offer", "Go", body, game["id"], "/go/" + game["id"])
 
 # Received a draw accept event
