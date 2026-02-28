@@ -219,7 +219,7 @@ export function GoBoard({
 
                 {/* Placed stones */}
                 {stone === 'B' && (
-                  <>
+                  <g pointerEvents="none">
                     <circle
                       cx={cx}
                       cy={cy}
@@ -235,10 +235,10 @@ export function GoBoard({
                       r={stoneRadius * 0.25}
                       fill="rgba(255,255,255,0.15)"
                     />
-                  </>
+                  </g>
                 )}
                 {stone === 'W' && (
-                  <>
+                  <g pointerEvents="none">
                     <circle
                       cx={cx}
                       cy={cy}
@@ -254,7 +254,7 @@ export function GoBoard({
                       r={stoneRadius * 0.25}
                       fill="rgba(255,255,255,0.5)"
                     />
-                  </>
+                  </g>
                 )}
 
                 {/* Last move marker */}
@@ -266,6 +266,7 @@ export function GoBoard({
                     fill="none"
                     stroke={stone === 'B' ? '#fff' : '#333'}
                     strokeWidth={1.5}
+                    pointerEvents="none"
                   />
                 )}
 
@@ -279,6 +280,7 @@ export function GoBoard({
                     stroke={myColor === 'b' ? '#000' : '#888'}
                     strokeWidth={0.5}
                     opacity={0.4}
+                    pointerEvents="none"
                   />
                 )}
               </g>

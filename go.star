@@ -117,7 +117,7 @@ def action_create(a):
 # List games
 def action_list(a):
 	games = mochi.db.rows("""
-		SELECT * FROM games
+		SELECT id, identity, identity_name, opponent, opponent_name, black, board_size, komi, status, winner, fen, previous_fen, sgf, captures_black, captures_white, draw_offer, updated, created FROM games
 		WHERE identity = ? OR opponent = ?
 		ORDER BY updated DESC
 	""", a.user.identity.id, a.user.identity.id)
@@ -286,9 +286,11 @@ def action_move(a):
 		a.error(400, "Missing move data")
 		return
 
-	# Update game state
-	new_status = status if status else "active"
-	new_winner = winner if winner else None
+	# Validate status and winner
+	valid_statuses = ["active", "finished"]
+	new_status = status if status in valid_statuses else "active"
+	players = [game["identity"], game["opponent"]]
+	new_winner = winner if winner in players else None
 
 	now = mochi.time.now()
 	mochi.db.execute(
@@ -367,8 +369,10 @@ def action_pass(a):
 		a.error(400, "Missing move data")
 		return
 
-	new_status = status if status else "active"
-	new_winner = winner if winner else None
+	valid_statuses = ["active", "finished"]
+	new_status = status if status in valid_statuses else "active"
+	players = [game["identity"], game["opponent"]]
+	new_winner = winner if winner in players else None
 
 	now = mochi.time.now()
 	mochi.db.execute(
@@ -725,6 +729,13 @@ def event_move(e):
 	if not fen:
 		return
 
+	valid_statuses = ["active", "finished"]
+	if status not in valid_statuses:
+		status = "active"
+	players = [game["identity"], game["opponent"]]
+	if winner and winner not in players:
+		winner = None
+
 	if captures_black:
 		captures_black = int(captures_black)
 	else:
@@ -814,6 +825,11 @@ def event_resign(e):
 
 	winner = e.content("winner")
 	body = e.content("body") or "Opponent resigned"
+
+	# Derive winner: the other player (not the one who resigned)
+	players = [game["identity"], game["opponent"]]
+	if winner not in players:
+		winner = game["opponent"] if sender == game["identity"] else game["identity"]
 
 	now = mochi.time.now()
 	mochi.db.execute("update games set status='resigned', winner=?, updated=? where id=?", winner, now, game["id"])
