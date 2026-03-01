@@ -80,10 +80,13 @@ export function GoBoard({
   const letters = 'ABCDEFGHJKLMNOPQRST'
 
   return (
-    <div className="go-board-container mx-auto" style={{ maxWidth: totalPx }}>
+    <div
+      className="go-board-container mx-auto w-full"
+      style={{ maxWidth: 'min(100%, calc(100dvh - 200px))' }}
+    >
       <svg
         viewBox={`0 0 ${totalPx} ${totalPx}`}
-        className="w-full h-auto"
+        className="w-full h-full"
         style={{ background: '#DEB887' }}
       >
         {/* Board background with wood grain effect */}
