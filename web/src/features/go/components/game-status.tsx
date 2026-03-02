@@ -25,12 +25,7 @@ export function GameStatus({
   if (game.status === 'finished') {
     if (score) {
       const winnerColor = score.winner === 'black' ? 'Black' : 'White'
-      const isMyWin =
-        (score.winner === 'black' && myColor === 'b') ||
-        (score.winner === 'white' && myColor === 'w')
-      statusText = isMyWin
-        ? `${winnerColor} wins — B:${score.black} W:${score.white}`
-        : `${winnerColor} wins — B:${score.black} W:${score.white}`
+      statusText = `${winnerColor} wins — B:${score.black} W:${score.white}`
     } else if (game.winner) {
       statusText = game.winner === myIdentity
         ? 'You win!'

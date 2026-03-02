@@ -38,11 +38,6 @@ export function ChatMessageList({
   const isInitialLoadRef = useRef(true)
   const prevMessageCountRef = useRef<number>(0)
 
-  const isCurrentUserMessage = (message: GameMessage) => {
-    if (!currentUserIdentity) return false
-    return message.member === currentUserIdentity
-  }
-
   const groupedMessages = useMemo(() => {
     const groups: Record<string, GameMessage[]> = {}
     chatMessages.forEach((message) => {
@@ -175,7 +170,7 @@ export function ChatMessageList({
 
             // Move messages
             if (message.type === 'move') {
-              const isSent = isCurrentUserMessage(message)
+              const isSent = message.member === currentUserIdentity
               return (
                 <div
                   key={`${message.id}-${index}`}
@@ -190,7 +185,7 @@ export function ChatMessageList({
             }
 
             // Regular chat messages
-            const isSent = isCurrentUserMessage(message)
+            const isSent = message.member === currentUserIdentity
             return (
               <div
                 key={`${message.id}-${index}`}

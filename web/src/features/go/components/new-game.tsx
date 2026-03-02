@@ -68,6 +68,10 @@ export function NewGame() {
       return
     }
     const komiValue = parseFloat(komi) || 6.5
+    if (komiValue < 0 || komiValue > 10) {
+      toast.error('Komi must be between 0 and 10')
+      return
+    }
     createGameMutation.mutate({
       opponent: selectedFriend,
       boardSize,
@@ -157,6 +161,8 @@ export function NewGame() {
             <input
               type="number"
               step="0.5"
+              min="0"
+              max="10"
               value={komi}
               onChange={(e) => setKomi(e.target.value)}
               className="border-input bg-card flex h-9 w-full rounded-md border px-3 py-1 text-sm focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring"

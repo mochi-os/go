@@ -139,10 +139,18 @@ export function GoGameView() {
   })
 
   // Move
-  const moveMutation = useMoveMutation()
+  const moveMutation = useMoveMutation({
+    onError: (error) => {
+      toast.error(getErrorMessage(error, 'Failed to make move'))
+    },
+  })
 
   // Pass
-  const passMutation = usePassMutation()
+  const passMutation = usePassMutation({
+    onError: (error) => {
+      toast.error(getErrorMessage(error, 'Failed to pass'))
+    },
+  })
 
   // Resign
   const resignMutation = useResignMutation({
