@@ -22,7 +22,7 @@ import {
   SubscribeDialog,
   getAppPath,
 } from '@mochi/common'
-import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw } from 'lucide-react'
+import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw, SkipForward } from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -364,74 +364,57 @@ export function GoGameView() {
   return (
     <>
       <div className="flex h-full flex-col overflow-hidden">
-        <PageHeader
-          title={opponentName || 'Go'}
-          actions={
-            game ? (
-              <div className="flex items-center gap-2">
-                {game.status === 'active' && isMyTurn && (
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={handlePass}
-                    disabled={passMutation.isPending}
-                  >
-                    {passMutation.isPending ? (
-                      <Loader2 className="mr-1 size-3 animate-spin" />
-                    ) : null}
-                    Pass
-                  </Button>
-                )}
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" size="icon">
-                      <MoreHorizontal className="size-5" />
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="w-48">
-                    {game.status === 'active' ? (
-                      <>
-                        {game.draw_offer !== myIdentity && (
-                          <DropdownMenuItem onClick={handleDrawOffer} disabled={drawOfferMutation.isPending}>
-                            <Handshake className="mr-2 size-4" /> Offer draw
-                          </DropdownMenuItem>
-                        )}
-                        <DropdownMenuItem onClick={() => setShowResignDialog(true)}>
-                          <Flag className="mr-2 size-4" /> Resign
-                        </DropdownMenuItem>
-                      </>
-                    ) : (
-                      <>
-                        <DropdownMenuItem onClick={handleRematch} disabled={rematchMutation.isPending}>
-                          <RotateCcw className="mr-2 size-4" /> Rematch
-                        </DropdownMenuItem>
-                        <DropdownMenuItem onClick={handleDelete}>
-                          <Trash2 className="mr-2 size-4" /> Delete game
-                        </DropdownMenuItem>
-                      </>
-                    )}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </div>
-            ) : undefined
-          }
-        />
-
         <Main className="flex min-h-0 flex-1 overflow-hidden">
           {/* Left: Board */}
-          <div className="flex flex-1 flex-col overflow-y-auto p-2 sm:p-4">
+          <div className="flex flex-1 flex-col overflow-y-auto px-2 sm:px-4 pb-2">
             {isLoadingDetail ? (
               <Skeleton className="aspect-square max-w-[560px] w-full mx-auto" />
             ) : game && goGame ? (
               <>
-                <div className="shrink-0">
+                <div className="shrink-0 mb-3">
                   <GameStatus
                     game={game}
                     myColor={myColor}
                     isMyTurn={isMyTurn}
                     myIdentity={myIdentity}
                     score={score}
-                  />
+                  >
+                    <DropdownMenu>
+                      <DropdownMenuTrigger asChild>
+                        <Button variant="ghost" size="icon" className="size-7">
+                          <MoreHorizontal className="size-4" />
+                        </Button>
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent align="end" className="w-48">
+                        {game.status === 'active' ? (
+                          <>
+                            {isMyTurn && (
+                              <DropdownMenuItem onClick={handlePass} disabled={passMutation.isPending}>
+                                <SkipForward className="mr-2 size-4" /> Pass
+                              </DropdownMenuItem>
+                            )}
+                            {game.draw_offer !== myIdentity && (
+                              <DropdownMenuItem onClick={handleDrawOffer} disabled={drawOfferMutation.isPending}>
+                                <Handshake className="mr-2 size-4" /> Offer draw
+                              </DropdownMenuItem>
+                            )}
+                            <DropdownMenuItem onClick={() => setShowResignDialog(true)}>
+                              <Flag className="mr-2 size-4" /> Resign
+                            </DropdownMenuItem>
+                          </>
+                        ) : (
+                          <>
+                            <DropdownMenuItem onClick={handleRematch} disabled={rematchMutation.isPending}>
+                              <RotateCcw className="mr-2 size-4" /> Rematch
+                            </DropdownMenuItem>
+                            <DropdownMenuItem onClick={handleDelete}>
+                              <Trash2 className="mr-2 size-4" /> Delete game
+                            </DropdownMenuItem>
+                          </>
+                        )}
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  </GameStatus>
                   {game.draw_offer && game.draw_offer === myIdentity && (
                     <div className="px-1 py-1 text-sm text-muted-foreground">
                       Draw offered — waiting for {opponentName}

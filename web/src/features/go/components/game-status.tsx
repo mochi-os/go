@@ -7,6 +7,7 @@ interface GameStatusProps {
   isMyTurn: boolean
   myIdentity: string
   score?: { black: number; white: number; winner: 'black' | 'white' } | null
+  children?: React.ReactNode
 }
 
 export function GameStatus({
@@ -15,6 +16,7 @@ export function GameStatus({
   isMyTurn,
   myIdentity,
   score,
+  children,
 }: GameStatusProps) {
   const opponentName = getOpponentName(game, myIdentity)
   const colorLabel = myColor === 'b' ? 'Black' : 'White'
@@ -47,7 +49,7 @@ export function GameStatus({
   }
 
   return (
-    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 px-1 py-2">
+    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 px-1 py-1">
       <div className="flex items-center gap-1.5">
         <span
           className={cn(
@@ -71,6 +73,7 @@ export function GameStatus({
           </span>
         </>
       )}
+      {children && <div className="ml-auto shrink-0">{children}</div>}
     </div>
   )
 }
