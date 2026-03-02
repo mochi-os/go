@@ -67,7 +67,8 @@ export function NewGame() {
       toast.error('Please select a friend')
       return
     }
-    const komiValue = parseFloat(komi) || 6.5
+    const parsedKomi = Number.parseFloat(komi)
+    const komiValue = Number.isNaN(parsedKomi) ? 6.5 : parsedKomi
     if (komiValue < 0 || komiValue > 10) {
       toast.error('Komi must be between 0 and 10')
       return
