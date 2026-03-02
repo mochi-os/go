@@ -21,8 +21,12 @@ import {
   Skeleton,
   SubscribeDialog,
   getAppPath,
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
 } from '@mochi/common'
-import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw, SkipForward } from 'lucide-react'
+import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw, SkipForward, MessageCircle } from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -62,6 +66,7 @@ export function GoGameView() {
   const { openNewGameDialog, setWebsocketStatus } = useSidebarContext()
   const [newMessage, setNewMessage] = useState('')
   const [showResignDialog, setShowResignDialog] = useState(false)
+  const [showMobileChat, setShowMobileChat] = useState(false)
   const [lastMove, setLastMove] = useState<[number, number] | null>(null)
   const [subscribeOpen, setSubscribeOpen] = useState(false)
 
@@ -379,6 +384,9 @@ export function GoGameView() {
                     myIdentity={myIdentity}
                     score={score}
                   >
+                    <Button variant="ghost" size="icon" className="size-7 md:hidden" onClick={() => setShowMobileChat(true)}>
+                      <MessageCircle className="size-4" />
+                    </Button>
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>
                         <Button variant="ghost" size="icon" className="size-7">
@@ -469,6 +477,33 @@ export function GoGameView() {
           </div>
         </Main>
       </div>
+
+      {/* Mobile chat sheet */}
+      <Sheet open={showMobileChat} onOpenChange={setShowMobileChat}>
+        <SheetContent side="right" className="flex flex-col p-0 w-80">
+          <SheetHeader className="border-b px-3 py-2">
+            <SheetTitle className="text-sm font-medium">Chat</SheetTitle>
+          </SheetHeader>
+          <ChatMessageList
+            messagesQuery={messagesQuery}
+            chatMessages={chatMessages}
+            isLoadingMessages={messagesQuery.isLoading}
+            messagesError={messagesQuery.error}
+            currentUserIdentity={myIdentity}
+          />
+          <ChatInput
+            newMessage={newMessage}
+            setNewMessage={setNewMessage}
+            onSendMessage={handleSendMessage}
+            isSending={sendMessageMutation.isPending}
+            errorMessage={
+              sendMessageMutation.error
+                ? getErrorMessage(sendMessageMutation.error, 'Failed to send')
+                : null
+            }
+          />
+        </SheetContent>
+      </Sheet>
 
       {/* Resign confirmation */}
       <AlertDialog
