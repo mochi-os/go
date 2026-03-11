@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from '@tanstack/react-router'
-import { useAuthStore, usePageTitle, useQueryWithError, PageHeader, Main, GeneralError, Button, getErrorMessage, toast, AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, Skeleton, SubscribeDialog, getAppPath, Sheet, SheetContent, SheetHeader, SheetTitle, DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@mochi/common'
+import { useAuthStore, usePageTitle, useQueryWithError, PageHeader, Main, GeneralError, Button, getErrorMessage, toast, AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, Skeleton, shellSubscribeNotifications, Sheet, SheetContent, SheetHeader, SheetTitle, DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@mochi/common'
 import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw, SkipForward, MessageCircle } from 'lucide-react'
 import { GoGame } from '@/lib/go-engine'
 import { useSidebarContext } from '@/context/sidebar-context'
@@ -37,8 +37,6 @@ export function GoGameView() {
   const [showResignDialog, setShowResignDialog] = useState(false)
   const [showMobileChat, setShowMobileChat] = useState(false)
   const [lastMove, setLastMove] = useState<[number, number] | null>(null)
-  const [subscribeOpen, setSubscribeOpen] = useState(false)
-
   const {
     identity: currentUserIdentity,
     initialize: initializeAuth,
@@ -187,7 +185,9 @@ export function GoGameView() {
 
   useEffect(() => {
     if (subscriptionData?.exists === false) {
-      setSubscribeOpen(true)
+      shellSubscribeNotifications('go', [
+        { label: 'Go moves & messages', type: '', defaultEnabled: true },
+      ]).then(() => refetchSubscription())
     }
   }, [subscriptionData?.exists])
 
@@ -516,14 +516,6 @@ export function GoGameView() {
         </AlertDialogContent>
       </AlertDialog>
 
-      <SubscribeDialog
-        open={subscribeOpen}
-        onOpenChange={setSubscribeOpen}
-        app='go'
-        label='Go moves & messages'
-        appBase={getAppPath()}
-        onResult={() => refetchSubscription()}
-      />
     </>
   )
 }
