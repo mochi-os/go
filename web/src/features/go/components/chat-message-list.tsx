@@ -41,6 +41,7 @@ export function ChatMessageList({
   const messagesEndRef = useRef<HTMLDivElement | null>(null)
   const prevScrollHeightRef = useRef<number>(0)
   const isLoadingMoreRef = useRef(false)
+  const skipNextAutoScrollRef = useRef(false)
   const isInitialLoadRef = useRef(true)
   const prevMessageCountRef = useRef<number>(0)
 
@@ -76,6 +77,7 @@ export function ChatMessageList({
       const newScrollHeight = scrollContainerRef.current.scrollHeight
       const scrollDiff = newScrollHeight - prevScrollHeightRef.current
       scrollContainerRef.current.scrollTop += scrollDiff
+      skipNextAutoScrollRef.current = true
       isLoadingMoreRef.current = false
     }
   }, [chatMessages, messagesQuery.isFetchingNextPage])
@@ -87,6 +89,8 @@ export function ChatMessageList({
     if (isInitialLoadRef.current && currentCount > 0) {
       messagesEndRef.current?.scrollIntoView({ behavior: 'instant' })
       isInitialLoadRef.current = false
+    } else if (skipNextAutoScrollRef.current) {
+      skipNextAutoScrollRef.current = false
     } else if (!isLoadingMoreRef.current && currentCount > prevCount) {
       requestAnimationFrame(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
