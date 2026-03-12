@@ -166,7 +166,7 @@ export const useGameWebsocket = (
   useEffect(() => {
     setSnapshot(null)
 
-    if (!gameId) {
+    if (!gameId || !manager) {
       return undefined
     }
 
@@ -186,7 +186,7 @@ export const useGameWebsocket = (
   }, [gameId, gameKey, manager, queryClient])
 
   const forceReconnect = useCallback(() => {
-    if (gameId) {
+    if (gameId && manager) {
       manager.forceReconnect(gameId)
     }
   }, [gameId, manager])
