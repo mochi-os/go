@@ -63,9 +63,16 @@ export function GameStatus({
       {game.status === 'active' && (
         <>
           <span className="text-muted-foreground">·</span>
-          <span className="text-xs text-muted-foreground">
-            Captures: B {game.captures_black} · W {game.captures_white}
-          </span>
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span className="flex items-center gap-1">
+              <span className="inline-block h-3 w-3 shrink-0 rounded-full border border-gray-700 bg-gray-900 dark:border-gray-600 dark:bg-gray-800" />
+              {game.captures_black}
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="inline-block h-3 w-3 shrink-0 rounded-full border border-gray-400 bg-gray-100 dark:border-gray-500 dark:bg-gray-200" />
+              {game.captures_white}
+            </span>
+          </div>
         </>
       )}
       {children && <div className="ml-auto shrink-0">{children}</div>}

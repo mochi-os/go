@@ -369,7 +369,7 @@ export function GoGameView() {
                   >
                     <IconButton
                       variant='ghost'
-                      className='size-7 md:hidden'
+                      className='size-7 shrink-0 md:hidden'
                       onClick={() => setShowMobileChat(true)}
                       label='Open chat panel'
                     >
