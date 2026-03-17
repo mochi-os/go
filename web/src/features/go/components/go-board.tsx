@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from 'react'
-import { cn } from '@mochi/common'
+import { cn } from '@mochi/web'
 import { GoGame } from '@/lib/go-engine'
 
 // Standard star points (hoshi) for each board size
