@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from '@tanstack/react-router'
-import { useAuthStore, usePageTitle, useQueryWithError, PageHeader, Main, GeneralError, IconButton, getErrorMessage, toast, AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, Skeleton, shellSubscribeNotifications, Sheet, SheetContent, SheetHeader, SheetTitle, DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@mochi/common'
+import { useAuthStore, usePageTitle, useQueryWithError, PageHeader, Main, GeneralError, IconButton, getErrorMessage, toast, AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, Skeleton, shellSubscribeNotifications, Sheet, SheetContent, SheetHeader, SheetTitle, DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@mochi/web'
 import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw, SkipForward, MessageCircle } from 'lucide-react'
 import { GoGame } from '@/lib/go-engine'
 import { useSidebarContext } from '@/context/sidebar-context'
