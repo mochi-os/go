@@ -40,9 +40,7 @@ def database_create():
 
 # Upgrade database
 def database_upgrade(to_version):
-	if to_version == 2:
-		mochi.db.execute("create index if not exists games_identity on games( identity )")
-		mochi.db.execute("create index if not exists games_opponent on games( opponent )")
+	pass
 
 def get_opponent(game, user_id):
 	if game["identity"] == user_id:
