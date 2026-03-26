@@ -354,7 +354,7 @@ export function GoGameView() {
       <div className="flex h-full flex-col overflow-hidden">
         <Main className="flex min-h-0 flex-1 overflow-hidden">
           {/* Left: Board */}
-          <div className="flex flex-1 flex-col overflow-y-auto px-2 sm:px-4 pb-2">
+          <div className="flex flex-1 flex-col px-2 sm:px-4 pb-2 min-h-0">
             {isLoadingDetail ? (
               <Skeleton className="aspect-square max-w-[560px] w-full mx-auto" />
             ) : game && goGame ? (
@@ -430,15 +430,17 @@ export function GoGameView() {
                     />
                   )}
                 </div>
-                <GoBoard
-                  fen={game.fen}
-                  previousFen={game.previous_fen}
-                  myColor={myColor}
-                  isMyTurn={isMyTurn}
-                  gameStatus={game.status}
-                  onMove={handleMove}
-                  lastMove={lastMove}
-                />
+                <div className="flex-1 min-h-0" style={{ containerType: 'size' }}>
+                  <GoBoard
+                    fen={game.fen}
+                    previousFen={game.previous_fen}
+                    myColor={myColor}
+                    isMyTurn={isMyTurn}
+                    gameStatus={game.status}
+                    onMove={handleMove}
+                    lastMove={lastMove}
+                  />
+                </div>
               </>
             ) : null}
           </div>

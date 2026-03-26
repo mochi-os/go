@@ -82,7 +82,7 @@ export function GoBoard({
   return (
     <div
       className="go-board-container mx-auto w-full"
-      style={{ maxWidth: 'min(100%, calc(100dvh - 108px))' }}
+      style={{ maxWidth: 'min(100cqw, 100cqh)' }}
     >
       <svg
         viewBox={`0 0 ${totalPx} ${totalPx}`}
