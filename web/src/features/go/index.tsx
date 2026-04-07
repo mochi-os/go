@@ -1,12 +1,36 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from '@tanstack/react-router'
-import { useAuthStore, usePageTitle, useQueryWithError, PageHeader, Main, GeneralError, IconButton, getErrorMessage, toast, AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, Skeleton, shellSubscribeNotifications, Sheet, SheetContent, SheetHeader, SheetTitle, DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@mochi/web'
+import {
+  useAuthStore,
+  usePageTitle,
+  useQueryWithError,
+  PageHeader,
+  Main,
+  GeneralError,
+  GameHeader,
+  GameHeaderStat,
+  GameHeaderStoneDot,
+  ConfirmDialog,
+  IconButton,
+  getErrorMessage,
+  toast,
+  Skeleton,
+  shellSubscribeNotifications,
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@mochi/web'
 import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw, SkipForward, MessageCircle } from 'lucide-react'
 import { GoGame } from '@/lib/go-engine'
 import { useSidebarContext } from '@/context/sidebar-context'
 import { setLastGame } from '@/hooks/useGameStorage'
 import { useGameWebsocket } from '@/hooks/useGameWebsocket'
-import { gamesApi } from '@/api/games'
+import { gamesApi, getOpponentName, type Game } from '@/api/games'
 import {
   useInfiniteMessagesQuery,
   useGamesQuery,
@@ -23,10 +47,43 @@ import {
 } from '@/hooks/useGames'
 import { GameEmptyState } from './components/game-empty-state'
 import { GoBoard } from './components/go-board'
-import { GameStatus } from './components/game-status'
 import { DrawOfferBanner } from './components/draw-offer-banner'
 import { ChatMessageList } from './components/chat-message-list'
 import { ChatInput } from './components/chat-input'
+
+function getGoStatusText(
+  game: Game,
+  myIdentity: string,
+  isMyTurn: boolean,
+  score?: { black: number; white: number; winner: 'black' | 'white' } | null
+): string {
+  const opponentName = getOpponentName(game, myIdentity)
+
+  if (game.status === 'finished') {
+    if (score) {
+      const winnerColor = score.winner === 'black' ? 'Black' : 'White'
+      return `${winnerColor} wins — B:${score.black} W:${score.white}`
+    }
+
+    if (game.winner) {
+      return game.winner === myIdentity ? 'You win!' : `${opponentName} wins`
+    }
+
+    return 'Game over'
+  }
+
+  if (game.status === 'draw') {
+    return 'Draw'
+  }
+
+  if (game.status === 'resigned') {
+    return game.winner === myIdentity
+      ? `${opponentName} resigned — you win!`
+      : `You resigned — ${opponentName} wins`
+  }
+
+  return isMyTurn ? 'Your move' : `${opponentName}'s move`
+}
 
 export function GoGameView() {
   usePageTitle('Go')
@@ -359,78 +416,120 @@ export function GoGameView() {
               <Skeleton className="aspect-square max-w-[560px] w-full mx-auto" />
             ) : game && goGame ? (
               <>
-                <div className="shrink-0 mb-3">
-                  <GameStatus
-                    game={game}
-                    myColor={myColor}
-                    isMyTurn={isMyTurn}
-                    myIdentity={myIdentity}
-                    score={score}
-                  >
-                    <IconButton
-                      variant='ghost'
-                      className='size-7 shrink-0 md:hidden'
-                      onClick={() => setShowMobileChat(true)}
-                      label='Open chat panel'
-                    >
-                      <MessageCircle className="size-4" />
-                    </IconButton>
-                    <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                        <IconButton
-                          variant='ghost'
-                          className='size-7'
-                          label='Open game actions'
-                        >
-                          <MoreHorizontal className="size-4" />
-                        </IconButton>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end" className="w-48">
-                        {game.status === 'active' ? (
+                <div className="shrink-0">
+                  <GameHeader
+                    variant='strip'
+                    myTurn={game.status === 'active' ? isMyTurn : undefined}
+                    title={
+                      game.board_size === 19
+                        ? opponentName
+                        : `${opponentName} (${game.board_size}×${game.board_size})`
+                    }
+                    status={getGoStatusText(game, myIdentity, isMyTurn, score)}
+                    stats={
+                      <>
+                        <GameHeaderStat
+                          icon={<GameHeaderStoneDot color={myColor === 'b' ? 'black' : 'white'} />}
+                          label={myColor === 'b' ? 'Black' : 'White'}
+                        />
+                        {game.status === 'active' && (
                           <>
-                            {isMyTurn && (
-                              <DropdownMenuItem onClick={handlePass} disabled={passMutation.isPending}>
-                                <SkipForward className="mr-2 size-4" /> Pass
-                              </DropdownMenuItem>
-                            )}
-                            {game.draw_offer !== myIdentity && (
-                              <DropdownMenuItem onClick={handleDrawOffer} disabled={drawOfferMutation.isPending}>
-                                <Handshake className="mr-2 size-4" /> Offer draw
-                              </DropdownMenuItem>
-                            )}
-                            <DropdownMenuItem onClick={() => setShowResignDialog(true)}>
-                              <Flag className="mr-2 size-4" /> Resign
-                            </DropdownMenuItem>
-                          </>
-                        ) : (
-                          <>
-                            <DropdownMenuItem onClick={handleRematch} disabled={rematchMutation.isPending}>
-                              <RotateCcw className="mr-2 size-4" /> Rematch
-                            </DropdownMenuItem>
-                            <DropdownMenuItem onClick={handleDelete}>
-                              <Trash2 className="mr-2 size-4" /> Delete game
-                            </DropdownMenuItem>
+                            <GameHeaderStat
+                              icon={<GameHeaderStoneDot color='black' />}
+                              value={game.captures_black}
+                              srLabel='Black captures:'
+                            />
+                            <GameHeaderStat
+                              icon={<GameHeaderStoneDot color='white' />}
+                              value={game.captures_white}
+                              srLabel='White captures:'
+                            />
                           </>
                         )}
-                      </DropdownMenuContent>
-                    </DropdownMenu>
-                  </GameStatus>
-                  {game.draw_offer && game.draw_offer === myIdentity && (
-                    <div className="px-1 py-1 text-sm text-muted-foreground">
-                      Draw offered — waiting for {opponentName}
-                    </div>
-                  )}
-                  {game.draw_offer && game.draw_offer !== myIdentity && (
-                    <DrawOfferBanner
-                      opponentName={opponentName}
-                      onAccept={handleDrawAccept}
-                      onDecline={handleDrawDecline}
-                      isAccepting={drawAcceptMutation.isPending}
-                      isDeclining={drawDeclineMutation.isPending}
-                    />
-                  )}
+                      </>
+                    }
+                    actions={
+                      <>
+                        <IconButton
+                          variant='ghost'
+                          className='size-11 shrink-0 min-[900px]:hidden'
+                          onClick={() => setShowMobileChat(true)}
+                          label='Open chat panel'
+                        >
+                          <MessageCircle className='size-4' />
+                        </IconButton>
+                        <DropdownMenu>
+                          <DropdownMenuTrigger asChild>
+                            <IconButton
+                              variant='ghost'
+                              className='size-11 min-[900px]:size-9'
+                              label='Open game actions'
+                            >
+                              <MoreHorizontal className='size-4' />
+                            </IconButton>
+                          </DropdownMenuTrigger>
+                          <DropdownMenuContent align='end' className='w-48'>
+                            {game.status === 'active' ? (
+                              <>
+                                {isMyTurn && (
+                                  <DropdownMenuItem
+                                    onClick={handlePass}
+                                    disabled={passMutation.isPending}
+                                  >
+                                    <SkipForward className='mr-2 size-4' /> Pass
+                                  </DropdownMenuItem>
+                                )}
+                                {game.draw_offer !== myIdentity && (
+                                  <DropdownMenuItem
+                                    onClick={handleDrawOffer}
+                                    disabled={drawOfferMutation.isPending}
+                                  >
+                                    <Handshake className='mr-2 size-4' /> Offer draw
+                                  </DropdownMenuItem>
+                                )}
+                                <DropdownMenuItem onClick={() => setShowResignDialog(true)}>
+                                  <Flag className='mr-2 size-4' /> Resign
+                                </DropdownMenuItem>
+                              </>
+                            ) : (
+                              <>
+                                <DropdownMenuItem
+                                  onClick={handleRematch}
+                                  disabled={rematchMutation.isPending}
+                                >
+                                  <RotateCcw className='mr-2 size-4' /> Rematch
+                                </DropdownMenuItem>
+                                <DropdownMenuItem onClick={handleDelete}>
+                                  <Trash2 className='mr-2 size-4' /> Delete game
+                                </DropdownMenuItem>
+                              </>
+                            )}
+                          </DropdownMenuContent>
+                        </DropdownMenu>
+                      </>
+                    }
+                    banner={
+                      game.draw_offer
+                        ? game.draw_offer === myIdentity
+                          ? (
+                              <p className='text-sm text-muted-foreground'>
+                                Draw offered — waiting for {opponentName}
+                              </p>
+                            )
+                          : (
+                              <DrawOfferBanner
+                                opponentName={opponentName}
+                                onAccept={handleDrawAccept}
+                                onDecline={handleDrawDecline}
+                                isAccepting={drawAcceptMutation.isPending}
+                                isDeclining={drawDeclineMutation.isPending}
+                              />
+                            )
+                        : undefined
+                    }
+                  />
                 </div>
-                <div className="flex-1 min-h-0" style={{ containerType: 'size' }}>
+                <div className="flex-1 min-h-0 mt-3" style={{ containerType: 'size' }}>
                   <GoBoard
                     fen={game.fen}
                     previousFen={game.previous_fen}
@@ -446,7 +545,7 @@ export function GoGameView() {
           </div>
 
           {/* Right: Chat sidebar */}
-          <div className="hidden md:flex w-72 lg:w-80 flex-col border-l">
+          <div className="hidden min-[900px]:flex w-72 lg:w-80 flex-col border-l">
             <div className="border-b px-3 py-2">
               <h3 className="text-sm font-medium">Chat</h3>
             </div>
@@ -500,38 +599,25 @@ export function GoGameView() {
       </Sheet>
 
       {/* Resign confirmation */}
-      <AlertDialog
+      <ConfirmDialog
         open={showResignDialog}
         onOpenChange={setShowResignDialog}
-      >
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Resign game?</AlertDialogTitle>
-            <AlertDialogDescription>
-              Are you sure you want to resign? {opponentName} will win the game.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel disabled={resignMutation.isPending}>
-              Cancel
-            </AlertDialogCancel>
-            <AlertDialogAction
-              variant="destructive"
-              onClick={handleResign}
-              disabled={resignMutation.isPending}
-            >
-              {resignMutation.isPending ? (
-                <>
-                  <Loader2 className="mr-2 size-4 animate-spin" />
-                  Resigning...
-                </>
-              ) : (
-                'Resign'
-              )}
-            </AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
+        title='Resign game?'
+        desc={`Are you sure you want to resign? ${opponentName} will win the game.`}
+        confirmText={
+          resignMutation.isPending ? (
+            <>
+              <Loader2 className="mr-2 size-4 animate-spin" />
+              Resigning...
+            </>
+          ) : (
+            'Resign'
+          )
+        }
+        destructive
+        handleConfirm={handleResign}
+        isLoading={resignMutation.isPending}
+      />
 
     </>
   )
