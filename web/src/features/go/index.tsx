@@ -452,7 +452,7 @@ export function GoGameView() {
                       <>
                         <IconButton
                           variant='ghost'
-                          className='size-11 shrink-0 min-[900px]:hidden'
+                          className='min-[900px]:hidden'
                           onClick={() => setShowMobileChat(true)}
                           label='Open chat panel'
                         >
@@ -462,7 +462,6 @@ export function GoGameView() {
                           <DropdownMenuTrigger asChild>
                             <IconButton
                               variant='ghost'
-                              className='size-11 min-[900px]:size-9'
                               label='Open game actions'
                             >
                               <MoreHorizontal className='size-4' />
