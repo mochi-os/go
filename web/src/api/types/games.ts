@@ -35,7 +35,6 @@ export interface GameMessage {
   body: string
   type: MessageType
   created: number
-  created_local?: string
 }
 
 export interface GameViewResponse {
