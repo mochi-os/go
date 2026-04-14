@@ -37,6 +37,8 @@ export function GoBoard({
   lastMove,
 }: GoBoardProps) {
   const [hoverPos, setHoverPos] = useState<[number, number] | null>(null)
+  const [keyboardPos, setKeyboardPos] = useState<[number, number] | null>(null)
+  const [isBoardFocused, setIsBoardFocused] = useState(false)
 
   const game = useMemo(
     () => new GoGame(undefined, fen, previousFen ?? undefined),
@@ -70,6 +72,41 @@ export function GoBoard({
     setHoverPos(null)
   }, [])
 
+  // Keyboard navigation for the board (composite widget pattern)
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent<SVGSVGElement>) => {
+      const center = Math.floor(size / 2)
+      const [kr, kc] = keyboardPos ?? [center, center]
+
+      switch (e.key) {
+        case 'ArrowUp':
+          e.preventDefault()
+          setKeyboardPos([Math.max(0, kr - 1), kc])
+          break
+        case 'ArrowDown':
+          e.preventDefault()
+          setKeyboardPos([Math.min(size - 1, kr + 1), kc])
+          break
+        case 'ArrowLeft':
+          e.preventDefault()
+          setKeyboardPos([kr, Math.max(0, kc - 1)])
+          break
+        case 'ArrowRight':
+          e.preventDefault()
+          setKeyboardPos([kr, Math.min(size - 1, kc + 1)])
+          break
+        case 'Enter':
+        case ' ':
+          e.preventDefault()
+          if (keyboardPos) handleClick(keyboardPos[0], keyboardPos[1])
+          break
+        default:
+          break
+      }
+    },
+    [keyboardPos, size, handleClick]
+  )
+
   // Cell size calculation
   const cellPx = size === 19 ? 28 : size === 13 ? 36 : 48
   const boardPx = cellPx * (size - 1)
@@ -78,6 +115,10 @@ export function GoBoard({
 
   // Column labels (skip I)
   const letters = 'ABCDEFGHJKLMNOPQRST'
+
+  const boardDescription = isMyTurn && isActive
+    ? `${size}×${size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a ${myColor === 'b' ? 'black' : 'white'} stone.`
+    : `${size}×${size} Go board`
 
   return (
     <div
@@ -88,6 +129,17 @@ export function GoBoard({
         viewBox={`0 0 ${totalPx} ${totalPx}`}
         className="w-full h-full"
         style={{ background: '#DEB887' }}
+        role="application"
+        aria-label={boardDescription}
+        tabIndex={0}
+        onFocus={() => {
+          setIsBoardFocused(true)
+          if (!keyboardPos) setKeyboardPos([Math.floor(size / 2), Math.floor(size / 2)])
+        }}
+        onBlur={() => {
+          setIsBoardFocused(false)
+        }}
+        onKeyDown={handleKeyDown}
       >
         {/* Board background with wood grain effect */}
         <rect
@@ -101,7 +153,7 @@ export function GoBoard({
 
         {/* Grid lines */}
         {Array.from({ length: size }).map((_, i) => (
-          <g key={`lines-${i}`}>
+          <g key={`lines-${i}`} aria-hidden="true">
             {/* Horizontal lines */}
             <line
               x1={padding}
@@ -134,12 +186,13 @@ export function GoBoard({
             r={cellPx * 0.12}
             fill="#333"
             className="dark:fill-[#1a1a1a]"
+            aria-hidden="true"
           />
         ))}
 
-        {/* Coordinate labels */}
+        {/* Coordinate labels — decorative, hidden from screen readers */}
         {Array.from({ length: size }).map((_, i) => (
-          <g key={`coord-${i}`}>
+          <g key={`coord-${i}`} aria-hidden="true">
             {/* Top letters */}
             <text
               x={padding + i * cellPx}
@@ -201,12 +254,26 @@ export function GoBoard({
               lastMove && lastMove[0] === row && lastMove[1] === col
             const isHover =
               hoverPos && hoverPos[0] === row && hoverPos[1] === col
+            const isKeyboardFocus =
+              isBoardFocused && keyboardPos &&
+              keyboardPos[0] === row && keyboardPos[1] === col
             const stoneRadius = cellPx * 0.45
             const canPlace =
               isActive && isMyTurn && stone === '.' && game.isLegal(row, col)
 
+            const colLabel = letters[col]
+            const rowLabel = String(size - row)
+            const intersectionLabel =
+              stone === 'B'
+                ? `Black stone at ${colLabel}${rowLabel}`
+                : stone === 'W'
+                  ? `White stone at ${colLabel}${rowLabel}`
+                  : canPlace
+                    ? `Empty intersection ${colLabel}${rowLabel}, click or press Enter to place`
+                    : `Empty intersection ${colLabel}${rowLabel}`
+
             return (
-              <g key={`${row}-${col}`}>
+              <g key={`${row}-${col}`} role="img" aria-label={intersectionLabel}>
                 {/* Clickable area */}
                 <rect
                   x={cx - cellPx / 2}
@@ -222,7 +289,7 @@ export function GoBoard({
 
                 {/* Placed stones */}
                 {stone === 'B' && (
-                  <g pointerEvents="none">
+                  <g pointerEvents="none" aria-hidden="true">
                     <circle
                       cx={cx}
                       cy={cy}
@@ -241,7 +308,7 @@ export function GoBoard({
                   </g>
                 )}
                 {stone === 'W' && (
-                  <g pointerEvents="none">
+                  <g pointerEvents="none" aria-hidden="true">
                     <circle
                       cx={cx}
                       cy={cy}
@@ -270,6 +337,7 @@ export function GoBoard({
                     stroke={stone === 'B' ? '#fff' : '#333'}
                     strokeWidth={1.5}
                     pointerEvents="none"
+                    aria-hidden="true"
                   />
                 )}
 
@@ -284,6 +352,23 @@ export function GoBoard({
                     strokeWidth={0.5}
                     opacity={0.4}
                     pointerEvents="none"
+                    aria-hidden="true"
+                  />
+                )}
+
+                {/* Keyboard cursor */}
+                {isKeyboardFocus && (
+                  <rect
+                    x={cx - cellPx * 0.4}
+                    y={cy - cellPx * 0.4}
+                    width={cellPx * 0.8}
+                    height={cellPx * 0.8}
+                    fill="none"
+                    stroke="#2563eb"
+                    strokeWidth={2}
+                    rx={3}
+                    pointerEvents="none"
+                    aria-hidden="true"
                   />
                 )}
               </g>
