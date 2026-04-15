@@ -249,7 +249,7 @@ export function GoGameView() {
   useEffect(() => {
     if (subscriptionData?.exists === false) {
       shellSubscribeNotifications('go', [
-        { label: 'Go moves & messages', type: '', defaultEnabled: true },
+        { label: 'Moves & messages', type: '', defaultEnabled: true },
       ]).then(() => refetchSubscription())
     }
   }, [subscriptionData?.exists])
