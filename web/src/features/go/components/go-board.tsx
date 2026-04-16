@@ -128,7 +128,7 @@ export function GoBoard({
       <svg
         viewBox={`0 0 ${totalPx} ${totalPx}`}
         className="w-full h-full"
-        style={{ background: '#DEB887' }}
+        style={{ background: 'var(--go-board-bg)' }}
         role="application"
         aria-label={boardDescription}
         tabIndex={0}
@@ -147,8 +147,7 @@ export function GoBoard({
           y={0}
           width={totalPx}
           height={totalPx}
-          fill="#DEB887"
-          className="dark:fill-[#B8860B]"
+          style={{ fill: 'var(--go-board-bg)' }}
         />
 
         {/* Grid lines */}
@@ -160,9 +159,8 @@ export function GoBoard({
               y1={padding + i * cellPx}
               x2={padding + boardPx}
               y2={padding + i * cellPx}
-              stroke="#333"
+              style={{ stroke: 'var(--go-board-grid)' }}
               strokeWidth={i === 0 || i === size - 1 ? 1.5 : 0.8}
-              className="dark:stroke-[#1a1a1a]"
             />
             {/* Vertical lines */}
             <line
@@ -170,9 +168,8 @@ export function GoBoard({
               y1={padding}
               x2={padding + i * cellPx}
               y2={padding + boardPx}
-              stroke="#333"
+              style={{ stroke: 'var(--go-board-grid)' }}
               strokeWidth={i === 0 || i === size - 1 ? 1.5 : 0.8}
-              className="dark:stroke-[#1a1a1a]"
             />
           </g>
         ))}
@@ -184,8 +181,7 @@ export function GoBoard({
             cx={padding + c * cellPx}
             cy={padding + r * cellPx}
             r={cellPx * 0.12}
-            fill="#333"
-            className="dark:fill-[#1a1a1a]"
+            style={{ fill: 'var(--go-board-grid)' }}
             aria-hidden="true"
           />
         ))}
@@ -200,8 +196,8 @@ export function GoBoard({
               textAnchor="middle"
               dominantBaseline="middle"
               fontSize={cellPx * 0.35}
-              fill="#666"
-              className="dark:fill-[#888] select-none"
+              style={{ fill: 'var(--go-board-label)' }}
+              className="select-none"
             >
               {letters[i]}
             </text>
@@ -212,8 +208,8 @@ export function GoBoard({
               textAnchor="middle"
               dominantBaseline="middle"
               fontSize={cellPx * 0.35}
-              fill="#666"
-              className="dark:fill-[#888] select-none"
+              style={{ fill: 'var(--go-board-label)' }}
+              className="select-none"
             >
               {letters[i]}
             </text>
@@ -224,8 +220,8 @@ export function GoBoard({
               textAnchor="middle"
               dominantBaseline="middle"
               fontSize={cellPx * 0.35}
-              fill="#666"
-              className="dark:fill-[#888] select-none"
+              style={{ fill: 'var(--go-board-label)' }}
+              className="select-none"
             >
               {size - i}
             </text>
@@ -236,8 +232,8 @@ export function GoBoard({
               textAnchor="middle"
               dominantBaseline="middle"
               fontSize={cellPx * 0.35}
-              fill="#666"
-              className="dark:fill-[#888] select-none"
+              style={{ fill: 'var(--go-board-label)' }}
+              className="select-none"
             >
               {size - i}
             </text>
@@ -294,8 +290,7 @@ export function GoBoard({
                       cx={cx}
                       cy={cy}
                       r={stoneRadius}
-                      fill="#1a1a1a"
-                      stroke="#000"
+                      style={{ fill: 'var(--go-stone-b)', stroke: 'var(--go-stone-b-stroke)' }}
                       strokeWidth={0.5}
                     />
                     {/* Highlight effect */}
@@ -313,8 +308,7 @@ export function GoBoard({
                       cx={cx}
                       cy={cy}
                       r={stoneRadius}
-                      fill="#f5f5f0"
-                      stroke="#888"
+                      style={{ fill: 'var(--go-stone-w)', stroke: 'var(--go-stone-w-stroke)' }}
                       strokeWidth={0.8}
                     />
                     {/* Highlight effect */}
@@ -334,7 +328,7 @@ export function GoBoard({
                     cy={cy}
                     r={stoneRadius * 0.3}
                     fill="none"
-                    stroke={stone === 'B' ? '#fff' : '#333'}
+                    stroke={stone === 'B' ? 'var(--go-stone-w)' : 'var(--go-board-grid)'}
                     strokeWidth={1.5}
                     pointerEvents="none"
                     aria-hidden="true"
@@ -347,8 +341,8 @@ export function GoBoard({
                     cx={cx}
                     cy={cy}
                     r={stoneRadius}
-                    fill={myColor === 'b' ? '#1a1a1a' : '#f5f5f0'}
-                    stroke={myColor === 'b' ? '#000' : '#888'}
+                    fill={myColor === 'b' ? 'var(--go-stone-b)' : 'var(--go-stone-w)'}
+                    stroke={myColor === 'b' ? 'var(--go-stone-b-stroke)' : 'var(--go-stone-w-stroke)'}
                     strokeWidth={0.5}
                     opacity={0.4}
                     pointerEvents="none"
@@ -364,7 +358,7 @@ export function GoBoard({
                     width={cellPx * 0.8}
                     height={cellPx * 0.8}
                     fill="none"
-                    stroke="#2563eb"
+                    style={{ stroke: 'var(--primary)' }}
                     strokeWidth={2}
                     rx={3}
                     pointerEvents="none"

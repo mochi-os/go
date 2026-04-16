@@ -8,6 +8,24 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Go board color tokens — override via theme CSS var overrides to re-theme the board.
+   Stone bodies stay warm-neutral so black/white identity is preserved in dark mode. */
+:root {
+  --go-board-bg:       oklch(0.82 0.07 80);
+  --go-board-grid:     oklch(0.23 0 0);
+  --go-board-label:    oklch(0.42 0 0);
+  --go-stone-b:        oklch(0.11 0 0);
+  --go-stone-b-stroke: oklch(0.05 0 0);
+  --go-stone-w:        oklch(0.97 0.005 85);
+  --go-stone-w-stroke: oklch(0.56 0 0);
+}
+
+.dark {
+  --go-board-bg:    oklch(0.57 0.12 72);
+  --go-board-grid:  oklch(0.12 0 0);
+  --go-board-label: oklch(0.57 0 0);
+}
+
 /* Go board */
 .go-board-container svg {
   border-radius: 4px;
