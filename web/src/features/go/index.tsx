@@ -3,7 +3,6 @@ import { useNavigate, useParams } from '@tanstack/react-router'
 import {
   useAuthStore,
   usePageTitle,
-  useQueryWithError,
   PageHeader,
   Main,
   GeneralError,
@@ -30,7 +29,7 @@ import { GoGame } from '@/lib/go-engine'
 import { useSidebarContext } from '@/context/sidebar-context'
 import { setLastGame } from '@/hooks/useGameStorage'
 import { useGameWebsocket } from '@/hooks/useGameWebsocket'
-import { gamesApi, getOpponentName, type Game } from '@/api/games'
+import { getOpponentName, type Game } from '@/api/games'
 import {
   useInfiniteMessagesQuery,
   useGamesQuery,
@@ -239,20 +238,12 @@ export function GoGameView() {
     setWebsocketStatus(status, retries)
   }, [status, retries, setWebsocketStatus])
 
-  // Subscription check
-  const { data: subscriptionData, refetch: refetchSubscription } = useQueryWithError({
-    queryKey: ['subscription-check', 'go'],
-    queryFn: () => gamesApi.checkSubscription(),
-    staleTime: Infinity,
-  })
-
   useEffect(() => {
-    if (subscriptionData?.exists === false) {
-      shellSubscribeNotifications('go', [
-        { label: 'Go moves & messages', type: '', defaultEnabled: true },
-      ]).then(() => refetchSubscription())
-    }
-  }, [subscriptionData?.exists])
+    void shellSubscribeNotifications('go', [
+      { label: 'Game activity', topic: 'activity', defaultEnabled: true },
+      { label: 'Messages', topic: 'message', defaultEnabled: true },
+    ])
+  }, [])
 
   const handleMove = useCallback(
     (row: number, col: number) => {
