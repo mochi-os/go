@@ -367,6 +367,61 @@ export class GoGame {
     }
   }
 
+  // Returns per-cell territory ownership for finished-game overlay.
+  // 'B' / 'W' = owned empty intersection; 'N' = dame/neutral; null = occupied stone.
+  territory(): ('B' | 'W' | 'N' | null)[][] {
+    const { grid, size } = this.state
+    const result: ('B' | 'W' | 'N' | null)[][] = Array.from(
+      { length: size },
+      () => Array<'B' | 'W' | 'N' | null>(size).fill(null)
+    )
+
+    const visited = new Set<string>()
+
+    for (let r = 0; r < size; r++) {
+      for (let c = 0; c < size; c++) {
+        if (grid[r][c] !== '.') continue
+        const key = `${r},${c}`
+        if (visited.has(key)) continue
+
+        const region: [number, number][] = []
+        const stack: [number, number][] = [[r, c]]
+        let touchesBlack = false
+        let touchesWhite = false
+
+        while (stack.length > 0) {
+          const [cr, cc] = stack.pop()!
+          const ck = `${cr},${cc}`
+          if (visited.has(ck)) continue
+          visited.add(ck)
+
+          if (grid[cr][cc] === '.') {
+            region.push([cr, cc])
+            for (const [nr, nc] of neighbors(cr, cc, size)) {
+              const nk = `${nr},${nc}`
+              if (!visited.has(nk)) {
+                if (grid[nr][nc] === '.') stack.push([nr, nc])
+                else if (grid[nr][nc] === 'B') touchesBlack = true
+                else if (grid[nr][nc] === 'W') touchesWhite = true
+              }
+            }
+          }
+        }
+
+        const owner: 'B' | 'W' | 'N' =
+          touchesBlack && !touchesWhite ? 'B'
+          : touchesWhite && !touchesBlack ? 'W'
+          : 'N'
+
+        for (const [tr, tc] of region) {
+          result[tr][tc] = owner
+        }
+      }
+    }
+
+    return result
+  }
+
   get turn(): Color {
     return this.state.turn
   }

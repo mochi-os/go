@@ -91,6 +91,7 @@ export function GoGameView() {
   const { openNewGameDialog, setWebsocketStatus } = useSidebarContext()
   const [newMessage, setNewMessage] = useState('')
   const [showResignDialog, setShowResignDialog] = useState(false)
+  const [showPassDialog, setShowPassDialog] = useState(false)
   const [showMobileChat, setShowMobileChat] = useState(false)
   const [lastMove, setLastMove] = useState<[number, number] | null>(null)
   const {
@@ -278,6 +279,7 @@ export function GoGameView() {
 
   const handlePass = useCallback(() => {
     if (!game || !selectedGame || !goGame) return
+    setShowPassDialog(false)
 
     const newGame = goGame.pass()
     const sgfMove = `${myColor === 'b' ? 'B' : 'W'}[pass]`
@@ -290,15 +292,9 @@ export function GoGameView() {
     let winner = ''
     if (isGameOver && scoreResult) {
       const winnerColor = scoreResult.winner
-      winner = winnerColor === 'black'
-        ? (game.black === myIdentity ? game.identity : game.opponent)
-        : (game.black === myIdentity ? game.opponent : game.identity)
-      // If I'm black and black wins, winner is the identity that plays black
-      if (game.black === game.identity) {
-        winner = winnerColor === 'black' ? game.identity : game.opponent
-      } else {
-        winner = winnerColor === 'black' ? game.opponent : game.identity
-      }
+      winner = game.black === game.identity
+        ? (winnerColor === 'black' ? game.identity : game.opponent)
+        : (winnerColor === 'black' ? game.opponent : game.identity)
     }
 
     passMutation.mutate({
@@ -471,7 +467,7 @@ export function GoGameView() {
                               <>
                                 {isMyTurn && (
                                   <DropdownMenuItem
-                                    onClick={handlePass}
+                                    onClick={() => setShowPassDialog(true)}
                                     disabled={passMutation.isPending}
                                   >
                                     <SkipForward className='mr-2 size-4' /> Pass
@@ -619,6 +615,31 @@ export function GoGameView() {
         destructive
         handleConfirm={handleResign}
         isLoading={resignMutation.isPending}
+      />
+
+      {/* Pass confirmation */}
+      <ConfirmDialog
+        open={showPassDialog}
+        onOpenChange={setShowPassDialog}
+        title={goGame?.consecutivePasses === 1 ? 'End game?' : 'Pass turn?'}
+        desc={
+          goGame?.consecutivePasses === 1
+            ? `${opponentName} also passed. Confirming will end the game and score the board.`
+            : 'Skip your turn and pass to your opponent.'
+        }
+        confirmText={
+          passMutation.isPending ? (
+            <>
+              <Loader2 className="mr-2 size-4 animate-spin" />
+              Passing...
+            </>
+          ) : (
+            goGame?.consecutivePasses === 1 ? 'End game' : 'Pass'
+          )
+        }
+        destructive={goGame?.consecutivePasses === 1}
+        handleConfirm={handlePass}
+        isLoading={passMutation.isPending}
       />
 
     </>
