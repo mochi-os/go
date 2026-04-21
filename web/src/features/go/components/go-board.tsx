@@ -47,7 +47,13 @@ export function GoBoard({
 
   const size = game.size
   const isActive = gameStatus === 'active'
+  const isFinished = gameStatus === 'finished'
   const starPoints = STAR_POINTS[size] ?? []
+
+  const territoryMap = useMemo(
+    () => (isFinished ? game.territory() : null),
+    [game, isFinished]
+  )
 
   const handleClick = useCallback(
     (row: number, col: number) => {
@@ -259,14 +265,19 @@ export function GoBoard({
 
             const colLabel = letters[col]
             const rowLabel = String(size - row)
+            const territoryOwner = territoryMap?.[row]?.[col] ?? null
             const intersectionLabel =
               stone === 'B'
                 ? `Black stone at ${colLabel}${rowLabel}`
                 : stone === 'W'
                   ? `White stone at ${colLabel}${rowLabel}`
-                  : canPlace
-                    ? `Empty intersection ${colLabel}${rowLabel}, click or press Enter to place`
-                    : `Empty intersection ${colLabel}${rowLabel}`
+                  : territoryOwner === 'B'
+                    ? `Black territory at ${colLabel}${rowLabel}`
+                    : territoryOwner === 'W'
+                      ? `White territory at ${colLabel}${rowLabel}`
+                      : canPlace
+                        ? `Empty intersection ${colLabel}${rowLabel}, click or press Enter to place`
+                        : `Empty intersection ${colLabel}${rowLabel}`
 
             return (
               <g key={`${row}-${col}`} role="img" aria-label={intersectionLabel}>
@@ -345,6 +356,25 @@ export function GoBoard({
                     stroke={myColor === 'b' ? 'var(--go-stone-b-stroke)' : 'var(--go-stone-w-stroke)'}
                     strokeWidth={0.5}
                     opacity={0.4}
+                    pointerEvents="none"
+                    aria-hidden="true"
+                  />
+                )}
+
+                {/* Territory marker (finished games only) */}
+                {stone === '.' && territoryOwner !== null && territoryOwner !== 'N' && (
+                  <rect
+                    x={cx - cellPx * 0.2}
+                    y={cy - cellPx * 0.2}
+                    width={cellPx * 0.4}
+                    height={cellPx * 0.4}
+                    style={
+                      territoryOwner === 'B'
+                        ? { fill: 'var(--go-stone-b)' }
+                        : { fill: 'var(--go-stone-w)', stroke: 'var(--go-board-grid)' }
+                    }
+                    strokeWidth={0.5}
+                    opacity={0.75}
                     pointerEvents="none"
                     aria-hidden="true"
                   />

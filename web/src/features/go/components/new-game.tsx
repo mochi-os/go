@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from '@tanstack/react-router'
 import {
   Button,
+  Input,
   ResponsiveDialog,
   ResponsiveDialogContent,
   ResponsiveDialogDescription,
@@ -24,6 +25,12 @@ const BOARD_SIZES = [
   { value: 9, label: '9×9' },
   { value: 13, label: '13×13' },
   { value: 19, label: '19×19' },
+] as const
+
+const KOMI_PRESETS = [
+  { value: '6.5', label: '6.5' },
+  { value: '7.5', label: '7.5' },
+  { value: '0', label: '0' },
 ] as const
 
 export function NewGame() {
@@ -61,19 +68,21 @@ export function NewGame() {
     [friends]
   )
 
-  const canSubmit = !!selectedFriend && !createGameMutation.isPending
+  const komiError = useMemo(() => {
+    const v = Number.parseFloat(komi)
+    if (Number.isNaN(v)) return 'Enter a valid number'
+    if (v < 0 || v > 10) return 'Must be between 0 and 10'
+    return null
+  }, [komi])
+
+  const canSubmit = !!selectedFriend && !komiError && !createGameMutation.isPending
 
   const handleCreateGame = () => {
     if (!selectedFriend) {
       toast.error('Please select a friend')
       return
     }
-    const parsedKomi = Number.parseFloat(komi)
-    const komiValue = Number.isNaN(parsedKomi) ? 6.5 : parsedKomi
-    if (komiValue < 0 || komiValue > 10) {
-      toast.error('Komi must be between 0 and 10')
-      return
-    }
+    const komiValue = Number.parseFloat(komi)
     createGameMutation.mutate({
       opponent: selectedFriend,
       boardSize,
@@ -167,19 +176,39 @@ export function NewGame() {
           </div>
 
           <div className="space-y-2">
-            <label className="text-sm font-medium">Komi</label>
-            <input
-              type="number"
-              step="0.5"
-              min="0"
-              max="10"
-              value={komi}
-              onChange={(e) => setKomi(e.target.value)}
-              className="border-input bg-card flex h-9 w-full rounded-md border px-3 py-1 text-sm focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring"
-            />
-            <p className="text-xs text-muted-foreground">
-              Points added to White's score to compensate for Black going first
-            </p>
+            <label htmlFor="komi-input" className="text-sm font-medium">Komi</label>
+            <div className="flex items-center gap-2">
+              {KOMI_PRESETS.map((preset) => (
+                <Button
+                  key={preset.value}
+                  type="button"
+                  variant={komi === preset.value ? 'default' : 'outline'}
+                  size="sm"
+                  className="shrink-0"
+                  onClick={() => setKomi(preset.value)}
+                >
+                  {preset.label}
+                </Button>
+              ))}
+              <Input
+                id="komi-input"
+                type="number"
+                step="0.5"
+                min="0"
+                max="10"
+                value={komi}
+                onChange={(e) => setKomi(e.target.value)}
+                aria-describedby={komiError ? 'komi-error' : 'komi-hint'}
+                className="flex-1"
+              />
+            </div>
+            {komiError ? (
+              <p id="komi-error" className="text-xs text-destructive">{komiError}</p>
+            ) : (
+              <p id="komi-hint" className="text-xs text-muted-foreground">
+                Points added to White's score to compensate for Black going first
+              </p>
+            )}
           </div>
         </div>
 
