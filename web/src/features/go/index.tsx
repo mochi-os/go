@@ -397,6 +397,12 @@ export function GoGameView() {
       : game.identity_name
     : ''
 
+  const opponentFingerprint = game
+    ? game.identity === myIdentity
+      ? game.opponent
+      : game.identity
+    : ''
+
   return (
     <>
       <div className="flex h-full flex-col overflow-hidden">
@@ -416,6 +422,8 @@ export function GoGameView() {
                         ? opponentName
                         : `${opponentName} (${game.board_size}×${game.board_size})`
                     }
+                    opponentFingerprint={opponentFingerprint || undefined}
+                    opponentName={opponentName}
                     status={getGoStatusText(game, myIdentity, isMyTurn, score)}
                     stats={
                       <>
