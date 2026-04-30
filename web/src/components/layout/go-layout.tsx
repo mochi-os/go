@@ -5,6 +5,7 @@ import {
   useSidebar,
   useAuthStore,
   AuthenticatedLayout,
+  EntityAvatar,
   type SidebarData,
 } from '@mochi/web'
 import { Plus } from 'lucide-react'
@@ -12,6 +13,26 @@ import { SidebarProvider, useSidebarContext } from '@/context/sidebar-context'
 import { useGamesQuery } from '@/hooks/useGames'
 import { NewGame } from '@/features/go/components/new-game'
 import { getOpponentName, type Game } from '@/api/games'
+
+const opponentIconCache = new Map<string, React.FC>()
+
+function opponentIcon(opponentId: string): React.FC {
+  let Icon = opponentIconCache.get(opponentId)
+  if (!Icon) {
+    Icon = function OpponentIcon() {
+      return (
+        <EntityAvatar
+          src={`/people/${opponentId}/-/avatar`}
+          styleUrl={`/people/${opponentId}/-/style`}
+          size="xs"
+        />
+      )
+    }
+    Icon.displayName = `OpponentIcon(${opponentId})`
+    opponentIconCache.set(opponentId, Icon)
+  }
+  return Icon
+}
 
 function WebsocketStatusIndicator() {
   const { websocketStatusMeta, gameId } = useSidebarContext()
@@ -72,6 +93,9 @@ function GoLayoutInner() {
     const getName = (game: Game) =>
       myIdentity ? getOpponentName(game, myIdentity) : game.opponent_name
 
+    const getOpponentId = (game: Game) =>
+      myIdentity && game.identity === myIdentity ? game.opponent : game.identity
+
     const getSize = (game: Game) =>
       game.board_size !== 19 ? ` (${game.board_size}×${game.board_size})` : ''
 
@@ -83,6 +107,7 @@ function GoLayoutInner() {
         items: activeGames.map((game) => ({
           title: getName(game) + getSize(game),
           url: `/${game.fingerprint ?? game.id}`,
+          icon: opponentIcon(getOpponentId(game)),
         })),
       })
     }
@@ -93,6 +118,7 @@ function GoLayoutInner() {
         items: completedGames.map((game) => ({
           title: `${getName(game)}${getSize(game)} (${game.status})`,
           url: `/${game.fingerprint ?? game.id}`,
+          icon: opponentIcon(getOpponentId(game)),
         })),
       })
     }

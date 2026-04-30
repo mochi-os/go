@@ -14,7 +14,6 @@ import {
   getErrorMessage,
   toast,
   Skeleton,
-  shellSubscribeNotifications,
   Sheet,
   SheetContent,
   SheetHeader,
@@ -238,13 +237,6 @@ export function GoGameView() {
   useEffect(() => {
     setWebsocketStatus(status, retries)
   }, [status, retries, setWebsocketStatus])
-
-  useEffect(() => {
-    void shellSubscribeNotifications('go', [
-      { label: 'Game activity', topic: 'activity', defaultEnabled: true },
-      { label: 'Messages', topic: 'message', defaultEnabled: true },
-    ])
-  }, [])
 
   const handleMove = useCallback(
     (row: number, col: number) => {
