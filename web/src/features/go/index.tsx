@@ -60,7 +60,7 @@ function getGoStatusText(
 
   if (game.status === 'finished') {
     if (score) {
-      const winnerColor = score.winner === 'black' ? 'Black' : 'White'
+      const winnerColor = score.winner === 'black' ? "Black" : "White"
       return `${winnerColor} wins — B:${score.black} W:${score.white}`
     }
 
@@ -419,7 +419,7 @@ export function GoGameView() {
                       <>
                         <GameHeaderStat
                           icon={<GameHeaderStoneDot color={myColor === 'b' ? 'black' : 'white'} />}
-                          label={myColor === 'b' ? 'Black' : 'White'}
+                          label={myColor === 'b' ? t`Black` : t`White`}
                         />
                         {game.status === 'active' && (
                           <>
@@ -615,7 +615,7 @@ export function GoGameView() {
       <ConfirmDialog
         open={showPassDialog}
         onOpenChange={setShowPassDialog}
-        title={goGame?.consecutivePasses === 1 ? 'End game?' : 'Pass turn?'}
+        title={goGame?.consecutivePasses === 1 ? t`End game?` : t`Pass turn?`}
         desc={
           goGame?.consecutivePasses === 1
             ? `${opponentName} also passed. Confirming will end the game and score the board.`
@@ -628,7 +628,7 @@ export function GoGameView() {
               <Trans>Passing...</Trans>
             </>
           ) : (
-            goGame?.consecutivePasses === 1 ? 'End game' : 'Pass'
+            goGame?.consecutivePasses === 1 ? t`End game` : t`Pass`
           )
         }
         destructive={goGame?.consecutivePasses === 1}

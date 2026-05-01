@@ -228,7 +228,7 @@ export function NewGame() {
             ) : (
               <Plus className="size-4" />
             )}
-            {createGameMutation.isPending ? 'Creating...' : 'Start game'}
+            {createGameMutation.isPending ? "Creating..." : "Start game"}
           </Button>
         </ResponsiveDialogFooter>
       </ResponsiveDialogContent>

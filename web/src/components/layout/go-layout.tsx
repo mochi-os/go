@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react'
+import { useLingui } from '@lingui/react/macro'
 import { Outlet, useParams } from '@tanstack/react-router'
 import {
   cn,
@@ -60,6 +61,7 @@ function WebsocketStatusIndicator() {
 }
 
 function GoLayoutInner() {
+  const { t } = useLingui()
   const gamesQuery = useGamesQuery()
   const games = useMemo(
     () => gamesQuery.data?.games ?? [],
@@ -103,7 +105,7 @@ function GoLayoutInner() {
 
     if (activeGames.length > 0) {
       groups.push({
-        title: 'Active Games',
+        title: t`Active Games`,
         items: activeGames.map((game) => ({
           title: getName(game) + getSize(game),
           url: `/${game.fingerprint ?? game.id}`,
@@ -114,7 +116,7 @@ function GoLayoutInner() {
 
     if (completedGames.length > 0) {
       groups.push({
-        title: 'Completed',
+        title: t`Completed`,
         items: completedGames.map((game) => ({
           title: `${getName(game)}${getSize(game)} (${game.status})`,
           url: `/${game.fingerprint ?? game.id}`,
@@ -128,7 +130,7 @@ function GoLayoutInner() {
       separator: true,
       items: [
         {
-          title: 'New game',
+          title: t`New game`,
           onClick: openNewGameDialog,
           icon: Plus,
         },

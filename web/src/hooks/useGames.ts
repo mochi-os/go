@@ -50,7 +50,7 @@ export const useGameDetailQuery = (
     enabled: Boolean(gameId) && (options?.enabled ?? true),
     queryFn: () => {
       if (!gameId) {
-        throw new Error('Game ID is required')
+        throw new Error("Game ID is required")
       }
       return gamesApi.detail(gameId)
     },
