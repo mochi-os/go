@@ -52,7 +52,7 @@ def get_opponent(game, user_id):
 
 # Load game by ID from action input, validate ID and player access
 def load_game(a):
-	if not mochi.valid(a.input("game"), "id"):
+	if not mochi.text.valid(a.input("game"), "id"):
 		a.error_label(400, "errors.invalid_game_id")
 		return None
 	game = mochi.db.row("select * from games where id=?", a.input("game"))
@@ -99,7 +99,7 @@ def action_new(a):
 # Create new game
 def action_create(a):
 	opponent = a.input("opponent")
-	if not mochi.valid(opponent, "entity"):
+	if not mochi.text.valid(opponent, "entity"):
 		a.error_label(400, "errors.invalid_opponent")
 		return
 
@@ -119,7 +119,7 @@ def action_create(a):
 	board_size = 19
 	board_size_str = a.input("board_size", "")
 	if board_size_str:
-		if not mochi.valid(board_size_str, "integer"):
+		if not mochi.text.valid(board_size_str, "integer"):
 			a.error_label(400, "errors.invalid_board_size")
 			return
 		board_size = int(board_size_str)
@@ -131,7 +131,7 @@ def action_create(a):
 	komi = 6.5
 	komi_str = a.input("komi", "")
 	if komi_str:
-		if not mochi.valid(komi_str, "numeric"):
+		if not mochi.text.valid(komi_str, "numeric"):
 			a.error_label(400, "errors.invalid_komi")
 			return
 		komi = float(komi_str)
@@ -199,12 +199,12 @@ def action_messages(a):
 	# Pagination parameters
 	limit = 30
 	limit_str = a.input("limit")
-	if limit_str and mochi.valid(limit_str, "natural"):
+	if limit_str and mochi.text.valid(limit_str, "natural"):
 		limit = min(int(limit_str), 100)
 
 	before = None
 	before_str = a.input("before")
-	if before_str and mochi.valid(before_str, "natural"):
+	if before_str and mochi.text.valid(before_str, "natural"):
 		before = int(before_str)
 
 	if before:
@@ -237,7 +237,7 @@ def action_send(a):
 		return
 
 	body = a.input("body", "")
-	if not mochi.valid(body, "text"):
+	if not mochi.text.valid(body, "text"):
 		a.error_label(400, "errors.invalid_message")
 		return
 	if len(body) > 10000:
@@ -304,7 +304,7 @@ def action_move(a):
 		a.error_label(400, "errors.sgf_too_long")
 		return
 
-	if not mochi.valid(captures_black, "integer") or not mochi.valid(captures_white, "integer"):
+	if not mochi.text.valid(captures_black, "integer") or not mochi.text.valid(captures_white, "integer"):
 		a.error_label(400, "errors.invalid_captures")
 		return
 
@@ -382,10 +382,10 @@ def action_pass(a):
 		a.error_label(400, "errors.sgf_too_long")
 		return
 
-	if score_black and not mochi.valid(score_black, "numeric"):
+	if score_black and not mochi.text.valid(score_black, "numeric"):
 		a.error_label(400, "errors.invalid_score")
 		return
-	if score_white and not mochi.valid(score_white, "numeric"):
+	if score_white and not mochi.text.valid(score_white, "numeric"):
 		a.error_label(400, "errors.invalid_score")
 		return
 
@@ -614,32 +614,32 @@ def event_new(e):
 		return
 
 	game_id = e.content("id")
-	if not mochi.valid(game_id, "id"):
+	if not mochi.text.valid(game_id, "id"):
 		return
 
 	identity = e.content("identity")
-	if not mochi.valid(identity, "entity"):
+	if not mochi.text.valid(identity, "entity"):
 		return
 
 	identity_name = e.content("identity_name")
-	if not mochi.valid(identity_name, "name"):
+	if not mochi.text.valid(identity_name, "name"):
 		return
 
 	opponent = e.content("opponent")
-	if not mochi.valid(opponent, "entity"):
+	if not mochi.text.valid(opponent, "entity"):
 		return
 
 	opponent_name = e.content("opponent_name")
-	if not mochi.valid(opponent_name, "name"):
+	if not mochi.text.valid(opponent_name, "name"):
 		return
 
 	black = e.content("black")
-	if not mochi.valid(black, "entity"):
+	if not mochi.text.valid(black, "entity"):
 		return
 
 	board_size = e.content("board_size")
 	if board_size:
-		if not mochi.valid(str(board_size), "integer"):
+		if not mochi.text.valid(str(board_size), "integer"):
 			return
 		board_size = int(board_size)
 	else:
@@ -649,7 +649,7 @@ def event_new(e):
 
 	komi = e.content("komi")
 	if komi:
-		if not mochi.valid(str(komi), "numeric"):
+		if not mochi.text.valid(str(komi), "numeric"):
 			return
 		komi = float(komi)
 		if komi < 0 or komi > 10:
@@ -665,7 +665,7 @@ def event_new(e):
 		fen = empty_board(board_size)
 
 	created = e.content("created")
-	if not mochi.valid(str(created), "integer"):
+	if not mochi.text.valid(str(created), "integer"):
 		return
 
 	result = mochi.db.execute(
@@ -712,13 +712,13 @@ def event_move(e):
 		winner = None
 
 	if captures_black:
-		if not mochi.valid(str(captures_black), "integer"):
+		if not mochi.text.valid(str(captures_black), "integer"):
 			return
 		captures_black = int(captures_black)
 	else:
 		captures_black = game["captures_black"]
 	if captures_white:
-		if not mochi.valid(str(captures_white), "integer"):
+		if not mochi.text.valid(str(captures_white), "integer"):
 			return
 		captures_white = int(captures_white)
 	else:
@@ -729,11 +729,11 @@ def event_move(e):
 		fen, previous_fen, sgf, captures_black, captures_white, status, winner, now, game["id"])
 
 	id = e.content("message")
-	if not mochi.valid(str(id), "id"):
+	if not mochi.text.valid(str(id), "id"):
 		id = mochi.uid()
 
 	created = e.content("created")
-	if not mochi.valid(str(created), "integer"):
+	if not mochi.text.valid(str(created), "integer"):
 		created = now
 
 	name = e.content("name") or "Opponent"
@@ -772,15 +772,15 @@ def event_message(e):
 		return
 
 	id = e.content("message")
-	if not mochi.valid(str(id), "id"):
+	if not mochi.text.valid(str(id), "id"):
 		return
 
 	created = e.content("created")
-	if not mochi.valid(str(created), "integer"):
+	if not mochi.text.valid(str(created), "integer"):
 		return
 
 	body = e.content("body")
-	if not mochi.valid(str(body), "text"):
+	if not mochi.text.valid(str(body), "text"):
 		return
 	if len(str(body)) > 10000:
 		return
