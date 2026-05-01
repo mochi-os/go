@@ -13,6 +13,24 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:81
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} a abandonné — vous avez gagné !"
+
+#: src/features/go/index.tsx:69
+msgid "{opponentName} wins"
+msgstr "{opponentName} a gagné"
+
+#: src/features/go/index.tsx:85
+msgid "{opponentName}'s move"
+msgstr "Au tour de {opponentName}"
+
+#. placeholder {0}: score.black
+#. placeholder {1}: score.white
+#: src/features/go/index.tsx:65
+msgid "{winnerColor} wins — B:{0} W:{1}"
+msgstr "{winnerColor} gagne — N:{0} B:{1}"
+
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
 msgstr "Accès interdit"
@@ -70,6 +88,10 @@ msgstr "Ajouter aux notifications existantes"
 msgid "Adjust the appearance and layout to suit your preferences."
 msgstr "Ajustez l'apparence et la disposition selon vos préférences."
 
+#: ../../../lib/web/src/components/ui/sort-selector.tsx:38
+msgid "AI"
+msgstr "IA"
+
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:158
 msgid "All"
 msgstr "Tout"
@@ -88,7 +110,8 @@ msgstr "Retour"
 msgid "Back to Home"
 msgstr "Retour à l'accueil"
 
-#: src/features/go/index.tsx:422
+#: src/features/go/index.tsx:64
+#: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Noir"
 
@@ -110,8 +133,8 @@ msgstr "Annuler"
 msgid "Category for this notification"
 msgstr "Catégorie de cette notification"
 
-#: src/features/go/index.tsx:538
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:539
+#: src/features/go/index.tsx:571
 msgid "Chat"
 msgstr "Chat"
 
@@ -156,6 +179,10 @@ msgstr "Effacer la sélection"
 #: ../../../lib/web/src/components/ui/sheet.tsx:76
 msgid "Close"
 msgstr "Fermer"
+
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:97
+msgid "Close navigation"
+msgstr "Fermer la navigation"
 
 #: ../../../lib/web/src/components/layout/right-panel.tsx:254
 msgid "Close Panel"
@@ -210,7 +237,7 @@ msgstr "Par défaut"
 msgid "Default AI account"
 msgstr "Compte IA par défaut"
 
-#: src/features/go/index.tsx:491
+#: src/features/go/index.tsx:492
 msgid "Delete game"
 msgstr "Supprimer la partie"
 
@@ -230,11 +257,15 @@ msgstr "Direction"
 msgid "Displays the mobile sidebar."
 msgstr "Affiche la barre latérale mobile."
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:76
+msgid "Draw"
+msgstr "Match nul"
+
+#: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Terminer la partie"
 
-#: src/features/go/index.tsx:618
+#: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Terminer la partie ?"
 
@@ -242,7 +273,7 @@ msgstr "Terminer la partie ?"
 msgid "Expand sidebar"
 msgstr "Développer la barre latérale"
 
-#: src/features/go/index.tsx:204
+#: src/features/go/index.tsx:205
 msgid "Failed to accept draw"
 msgstr "Échec de l'acceptation du match nul"
 
@@ -250,36 +281,36 @@ msgstr "Échec de l'acceptation du match nul"
 msgid "Failed to create game"
 msgstr "Échec de la création de la partie"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Échec de la création de la revanche"
 
-#: src/features/go/index.tsx:209
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Échec du refus du match nul"
 
-#: src/features/go/index.tsx:230
+#: src/features/go/index.tsx:231
 msgid "Failed to delete game"
 msgstr "Échec de la suppression de la partie"
 
-#: src/features/go/index.tsx:175
+#: src/features/go/index.tsx:176
 msgid "Failed to make move"
 msgstr "Échec du coup"
 
-#: src/features/go/index.tsx:199
+#: src/features/go/index.tsx:200
 msgid "Failed to offer draw"
 msgstr "Échec de la proposition de match nul"
 
-#: src/features/go/index.tsx:182
+#: src/features/go/index.tsx:183
 msgid "Failed to pass"
 msgstr "Échec du passage"
 
-#: src/features/go/index.tsx:192
+#: src/features/go/index.tsx:193
 msgid "Failed to resign"
 msgstr "Échec de l'abandon"
 
-#: src/features/go/index.tsx:554
-#: src/features/go/index.tsx:586
+#: src/features/go/index.tsx:555
+#: src/features/go/index.tsx:587
 msgid "Failed to send"
 msgstr "Échec de l'envoi"
 
@@ -299,13 +330,17 @@ msgstr "Disposition complète"
 msgid "Game created"
 msgstr "Partie créée"
 
-#: src/features/go/index.tsx:226
+#: src/features/go/index.tsx:227
 msgid "Game deleted"
 msgstr "Partie supprimée"
 
-#: src/features/go/index.tsx:89
-#: src/features/go/index.tsx:352
-#: src/features/go/index.tsx:364
+#: src/features/go/index.tsx:72
+msgid "Game over"
+msgstr "Partie terminée"
+
+#: src/features/go/index.tsx:90
+#: src/features/go/index.tsx:353
+#: src/features/go/index.tsx:365
 msgid "Go"
 msgstr "Go"
 
@@ -339,9 +374,21 @@ msgstr "Groupe"
 msgid "Hide"
 msgstr "Masquer"
 
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:82
+msgid "Home"
+msgstr "Accueil"
+
+#: ../../../lib/web/src/components/ui/sort-selector.tsx:41
+msgid "Hot"
+msgstr "Populaire"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:239
 msgid "Inset"
 msgstr "Encastré"
+
+#: ../../../lib/web/src/components/ui/sort-selector.tsx:39
+msgid "Interests"
+msgstr "Centres d'intérêt"
 
 #: src/features/go/components/new-game.tsx:181
 msgid "Komi"
@@ -362,6 +409,14 @@ msgstr "Gauche à droite"
 #: ../../../lib/web/src/components/config-drawer.tsx:200
 msgid "Light"
 msgstr "Clair"
+
+#: ../../../lib/web/src/components/ui/load-more.tsx:32
+msgid "Load more"
+msgstr "Charger plus"
+
+#: ../../../lib/web/src/components/ui/load-more.tsx:32
+msgid "Loading…"
+msgstr "Chargement…"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:98
 #: ../../../lib/web/src/components/layout/nav-user.tsx:164
@@ -390,6 +445,10 @@ msgstr "Menu"
 #: src/features/go/components/chat-input.tsx:25
 msgid "Message"
 msgstr "Message"
+
+#: ../../../lib/web/src/components/ui/sort-selector.tsx:40
+msgid "New"
+msgstr "Nouveau"
 
 #: src/components/layout/go-layout.tsx:133
 #: src/features/go/components/game-empty-state.tsx:21
@@ -421,7 +480,7 @@ msgstr "Aucun ami pour le moment"
 msgid "No groups available"
 msgstr "Aucun groupe disponible"
 
-#: ../../../lib/web/src/components/language-picker.tsx:99
+#: ../../../lib/web/src/components/language-picker.tsx:96
 msgid "No matches."
 msgstr "Aucune correspondance."
 
@@ -463,7 +522,7 @@ msgstr "Aucun"
 msgid "Notifications"
 msgstr "Notifications"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:476
 msgid "Offer draw"
 msgstr "Proposer un match nul"
 
@@ -471,11 +530,11 @@ msgstr "Proposer un match nul"
 msgid "Oops! Page Not Found!"
 msgstr "Oups ! Page introuvable !"
 
-#: src/features/go/index.tsx:446
+#: src/features/go/index.tsx:447
 msgid "Open chat panel"
 msgstr "Ouvrir le panneau de chat"
 
-#: src/features/go/index.tsx:454
+#: src/features/go/index.tsx:455
 msgid "Open game actions"
 msgstr "Ouvrir les actions de la partie"
 
@@ -491,16 +550,16 @@ msgstr "Autre"
 msgid "Owner"
 msgstr "Propriétaire\"#. placeholder {0}: formatInterval(source.interval)"
 
-#: src/features/go/index.tsx:467
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:632
 msgid "Pass"
 msgstr "Passer"
 
-#: src/features/go/index.tsx:618
+#: src/features/go/index.tsx:619
 msgid "Pass turn?"
 msgstr "Passer le tour ?"
 
-#: src/features/go/index.tsx:628
+#: src/features/go/index.tsx:629
 msgid "Passing..."
 msgstr "Passage..."
 
@@ -526,7 +585,7 @@ msgstr "Recommandé"
 msgid "Redirecting to login."
 msgstr "Redirection vers la connexion."
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:489
 msgid "Rematch"
 msgstr "Revanche"
 
@@ -547,15 +606,15 @@ msgstr "Réinitialiser"
 msgid "Reset all settings to default values"
 msgstr "Réinitialiser tous les paramètres aux valeurs par défaut"
 
-#: src/features/go/index.tsx:479
+#: src/features/go/index.tsx:480
 msgid "Resign"
 msgstr "Abandonner"
 
-#: src/features/go/index.tsx:597
+#: src/features/go/index.tsx:598
 msgid "Resign game?"
 msgstr "Abandonner la partie ?"
 
-#: src/features/go/index.tsx:603
+#: src/features/go/index.tsx:604
 msgid "Resigning..."
 msgstr "Abandon..."
 
@@ -623,6 +682,10 @@ msgstr "Définir l'origine et la destination"
 msgid "Settings"
 msgstr "Paramètres"
 
+#: ../../../lib/web/src/components/ui/load-more.tsx:36
+msgid "Showing {totalShown} of {total}"
+msgstr "Affichage de {totalShown} sur {total}"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:225
 #: ../../../lib/web/src/components/config-drawer.tsx:249
 #: ../../../lib/web/src/components/ui/sidebar.tsx:233
@@ -685,6 +748,10 @@ msgstr "Basculer la barre latérale"
 msgid "Toggle theme"
 msgstr "Basculer le thème"
 
+#: ../../../lib/web/src/components/ui/sort-selector.tsx:42
+msgid "Top"
+msgstr "Meilleur"
+
 #: ../../../lib/web/src/components/travelling-picker.tsx:140
 msgid "Travelling"
 msgstr "En déplacement"
@@ -740,6 +807,19 @@ msgstr "Nous serons de retour en ligne sous peu."
 msgid "Website is under maintenance!"
 msgstr "Le site est en maintenance !"
 
-#: src/features/go/index.tsx:422
+#: src/features/go/index.tsx:64
+#: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Blanc"
+
+#: src/features/go/index.tsx:82
+msgid "You resigned — {opponentName} wins"
+msgstr "Vous avez abandonné — {opponentName} a gagné"
+
+#: src/features/go/index.tsx:69
+msgid "You win!"
+msgstr "Vous avez gagné !"
+
+#: src/features/go/index.tsx:85
+msgid "Your move"
+msgstr "À votre tour"

@@ -50,38 +50,39 @@ import { DrawOfferBanner } from './components/draw-offer-banner'
 import { ChatMessageList } from './components/chat-message-list'
 import { ChatInput } from './components/chat-input'
 
-function getGoStatusText(
+function useGoStatusText(
   game: Game,
   myIdentity: string,
   isMyTurn: boolean,
   score?: { black: number; white: number; winner: 'black' | 'white' } | null
 ): string {
+  const { t } = useLingui()
   const opponentName = getOpponentName(game, myIdentity)
 
   if (game.status === 'finished') {
     if (score) {
-      const winnerColor = score.winner === 'black' ? "Black" : "White"
-      return `${winnerColor} wins — B:${score.black} W:${score.white}`
+      const winnerColor = score.winner === 'black' ? t`Black` : t`White`
+      return t`${winnerColor} wins — B:${score.black} W:${score.white}`
     }
 
     if (game.winner) {
-      return game.winner === myIdentity ? 'You win!' : `${opponentName} wins`
+      return game.winner === myIdentity ? t`You win!` : t`${opponentName} wins`
     }
 
-    return 'Game over'
+    return t`Game over`
   }
 
   if (game.status === 'draw') {
-    return 'Draw'
+    return t`Draw`
   }
 
   if (game.status === 'resigned') {
     return game.winner === myIdentity
-      ? `${opponentName} resigned — you win!`
-      : `You resigned — ${opponentName} wins`
+      ? t`${opponentName} resigned — you win!`
+      : t`You resigned — ${opponentName} wins`
   }
 
-  return isMyTurn ? 'Your move' : `${opponentName}'s move`
+  return isMyTurn ? t`Your move` : t`${opponentName}'s move`
 }
 
 export function GoGameView() {
@@ -414,7 +415,7 @@ export function GoGameView() {
                     }
                     opponentFingerprint={opponentFingerprint || undefined}
                     opponentName={opponentName}
-                    status={getGoStatusText(game, myIdentity, isMyTurn, score)}
+                    status={useGoStatusText(game, myIdentity, isMyTurn, score)}
                     stats={
                       <>
                         <GameHeaderStat
