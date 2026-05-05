@@ -6,6 +6,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: ta\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} ஐயும் முறையைத் தாண்டினார். உறுதிப்படுத்துவது விளையாட்டை முடிவுக்குக் கொண்டுவந்து பலகையை மதிப்பெண்ணிடும்."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} சமநிலை வழங்கினார்"
 
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
@@ -18,6 +32,23 @@ msgstr "{opponentName} வெற்றி பெற்றார்"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "{opponentName}-ன் நகர்வு"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "{size}×{size} Go பலகை"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "{size}×{size} Go பலகை, உங்கள் முறை. வழிசெலுத்த அம்புக்குறி விசைகளையும் கருப்புக் கல் வைக்க Enter அல்லது Space ஐயும் பயன்படுத்தவும்."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "{size}×{size} Go பலகை, உங்கள் முறை. வழிசெலுத்த அம்புக்குறி விசைகளையும் வெள்ளைக் கல் வைக்க Enter அல்லது Space ஐயும் பயன்படுத்தவும்."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} <0>{0}</0> விளையாடினார்"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -36,6 +67,10 @@ msgstr "24 மணிநேரம்"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "முழுமையானது (தேதி மற்றும் நேரம்)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "ஏற்றுக்கொள்"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -61,7 +96,7 @@ msgstr "கணக்கு வகை"
 msgid "Account verified"
 msgstr "கணக்கு சரிபார்க்கப்பட்டது"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "செயலில் உள்ள விளையாட்டுகள்"
 
@@ -126,6 +161,10 @@ msgstr "அனைத்தும்"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "வெளியேற விரும்புகிறீர்களா? உங்கள் கணக்கை அணுக மீண்டும் உள்நுழைய வேண்டும்."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "நீங்கள் சரணடைய விரும்புகிறீர்களா? {opponentName} விளையாட்டை வெல்வார்."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "ஏறு"
@@ -144,6 +183,18 @@ msgstr "முகப்புக்கு திரும்பு"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "கருப்பு"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "கருப்பு பிடித்தவை:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} இல் கருப்புக் கல்"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} இல் கருப்புப் பகுதி"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -256,7 +307,7 @@ msgstr "விரைவில் வருகிறது!"
 msgid "Compact"
 msgstr "சுருக்கமான"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "முடிந்தது"
 
@@ -281,6 +332,10 @@ msgstr "தொடர்"
 msgid "Copy"
 msgstr "நகலெடு"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "உருவாக்குகிறது..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -293,6 +348,10 @@ msgstr "இருள்"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "இருள் முறை"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "மறு"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -341,6 +400,18 @@ msgstr "பதிவிறக்கு"
 msgid "Draw"
 msgstr "டிரா"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "சமநிலை வழங்கப்பட்டது — {opponentName}-க்காக காத்திருக்கிறது"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "காலியான சந்திப்பு {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "காலியான சந்திப்பு {colLabel}{rowLabel}, வைக்க கிளிக் செய்க அல்லது Enter அழுத்தவும்"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "ஆட்டத்தை முடி"
@@ -348,6 +419,10 @@ msgstr "ஆட்டத்தை முடி"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "ஆட்டத்தை முடிக்கவா?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "சரியான எண்ணை உள்ளிடவும்"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -577,11 +652,15 @@ msgstr "மெட்ரிக்"
 msgid "Monday"
 msgstr "திங்கட்கிழமை"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "0 மற்றும் 10 க்கு இடையில் இருக்க வேண்டும்"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "புதியது"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -623,7 +702,7 @@ msgstr "குழுக்கள் கிடைக்கவில்லை"
 msgid "No matches."
 msgstr "பொருத்தங்கள் இல்லை."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "செய்திகள் இன்னும் இல்லை"
 
@@ -786,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "அனைத்து அமைப்புகளையும் இயல்பு மதிப்புகளுக்கு மீட்டமைக்கவும்"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "விலகு"
 
@@ -919,9 +999,17 @@ msgstr "வெளியேறுகிறது..."
 msgid "Skip to Main"
 msgstr "முதன்மை பகுதிக்கு தவிர்"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "உங்கள் முறையை தவிர்த்து உங்கள் எதிராளிக்கு அனுப்பவும்."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "புதிய Go கேமை தொடங்கு"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "கேமை தொடங்கு"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1034,6 +1122,10 @@ msgstr "அனுமதிக்கப்படாத அணுகல்"
 msgid "United States"
 msgstr "ஐக்கிய அமெரிக்கா"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "தெரியாதது"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "சரிபார்க்கப்படாதது"
@@ -1090,6 +1182,22 @@ msgstr "புதன்கிழமை"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "வெள்ளை"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "வெள்ளை பிடித்தவை:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} இல் வெள்ளைக் கல்"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} இல் வெள்ளைப் பகுதி"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "நீங்கள்"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

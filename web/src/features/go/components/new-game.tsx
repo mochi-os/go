@@ -72,10 +72,10 @@ export function NewGame() {
 
   const komiError = useMemo(() => {
     const v = Number.parseFloat(komi)
-    if (Number.isNaN(v)) return 'Enter a valid number'
-    if (v < 0 || v > 10) return 'Must be between 0 and 10'
+    if (Number.isNaN(v)) return t`Enter a valid number`
+    if (v < 0 || v > 10) return t`Must be between 0 and 10`
     return null
-  }, [komi])
+  }, [komi, t])
 
   const canSubmit = !!selectedFriend && !komiError && !createGameMutation.isPending
 
@@ -228,7 +228,7 @@ export function NewGame() {
             ) : (
               <Plus className="size-4" />
             )}
-            {createGameMutation.isPending ? "Creating..." : "Start game"}
+            {createGameMutation.isPending ? t`Creating...` : t`Start game`}
           </Button>
         </ResponsiveDialogFooter>
       </ResponsiveDialogContent>

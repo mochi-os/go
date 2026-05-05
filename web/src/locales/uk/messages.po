@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} також пропустив хід. Підтвердження завершить гру та підрахує очки."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} запропонував нічию"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} здався — ви перемогли!"
@@ -24,6 +32,23 @@ msgstr "Перемагає {opponentName}"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Хід {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "Дошка Ґо {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "Дошка Ґо {size}×{size}, ваш хід. Використовуйте стрілки для навігації та Enter або пробіл, щоб поставити чорний камінь."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "Дошка Ґо {size}×{size}, ваш хід. Використовуйте стрілки для навігації та Enter або пробіл, щоб поставити білий камінь."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} зіграв <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 години"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Абсолютне (дата й час)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Прийняти"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Тип облікового запису"
 msgid "Account verified"
 msgstr "Обліковий запис підтверджено"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Активні ігри"
 
@@ -132,6 +161,10 @@ msgstr "Усі"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Ви впевнені, що хочете вийти? Вам доведеться увійти знову, щоб отримати доступ до облікового запису."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Ви впевнені, що хочете здатися? {opponentName} виграє партію."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "За зрост."
@@ -150,6 +183,18 @@ msgstr "Назад на головну"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Чорний"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Захоплено чорними:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Чорний камінь на {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Територія чорних на {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Скоро!"
 msgid "Compact"
 msgstr "Компактний"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Завершено"
 
@@ -287,6 +332,10 @@ msgstr "Продовжити"
 msgid "Copy"
 msgstr "Копіювати"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Створення..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Темна"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Темний режим"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Відхилити"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Завантажити"
 msgid "Draw"
 msgstr "Нічия"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Запропоновано нічию — очікування на {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Порожнє перехрестя {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Порожнє перехрестя {colLabel}{rowLabel}, натисніть або Enter, щоб поставити"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Завершити гру"
@@ -354,6 +419,10 @@ msgstr "Завершити гру"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Завершити гру?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Введіть дійсне число"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Метричні"
 msgid "Monday"
 msgstr "Понеділок"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Має бути від 0 до 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Нове"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Немає доступних груп"
 msgid "No matches."
 msgstr "Збігів немає."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Повідомлень ще немає"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Скинути всі налаштування до значень за замовчуванням"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Здатися"
 
@@ -925,9 +999,17 @@ msgstr "Вихід..."
 msgid "Skip to Main"
 msgstr "Перейти до основного"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Пропустіть свій хід і передайте суперникові."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Почати нову гру в Ґо"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Почати гру"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Неавторизований доступ"
 msgid "United States"
 msgstr "Сполучені Штати"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Невідомо"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Не перевірено"
@@ -1096,6 +1182,22 @@ msgstr "Середа"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Білий"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Захоплено білими:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Білий камінь на {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Територія білих на {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Ви"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

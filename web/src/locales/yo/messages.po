@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} náà ti kọjá. Ìfìdíjámọ́ yóò fi opin sí eré náà yóò sì díwọ̀n pátákó náà."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} fún ní ìdábọ̀"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} fi ipò sílẹ̀ — o borí!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} borí"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Ìṣíkiri ti {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "Pátákó Go {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "Pátákó Go {size}×{size}, ìyípo rẹ. Lo bọ́tìnnì ọfà láti rìn kiri àti Enter tàbí Space láti gbé òkúta dúdú."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "Pátákó Go {size}×{size}, ìyípo rẹ. Lo bọ́tìnnì ọfà láti rìn kiri àti Enter tàbí Space láti gbé òkúta funfun."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} ṣeré <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "Wákàtí 24"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Pípé (ọjọ́ àti àkókò)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Gbà"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Irú àkáǹtì"
 msgid "Account verified"
 msgstr "A ti fọwọ́sí àkáǹtì"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Àwọn Eré Tó Ń Lọ"
 
@@ -132,6 +161,10 @@ msgstr "Gbogbo"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Ṣé o dájú pé o fẹ́ jáde? Wàá nílò láti wọlé lẹ́ẹ̀kan sí i láti rí àkáǹtì rẹ."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Ǹjẹ́ ó dájú pé o fẹ́ jọ̀wọ́? {opponentName} yóò ṣẹ́gun ìdíje náà."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Àsc"
@@ -150,6 +183,18 @@ msgstr "Padà sí Ilé"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Dúdú"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Awọn tí dúdú mú:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Òkúta dúdú ní {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Agbègbè dúdú ní {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Yóò Dé Láìpẹ́!"
 msgid "Compact"
 msgstr "Kékeré"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Tí a parí"
 
@@ -287,6 +332,10 @@ msgstr "Tẹ̀síwájú"
 msgid "Copy"
 msgstr "Ṣe àdàkọ"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Ó ń dá..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Òkùnkùn"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Ọ̀nà òkùnkùn"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Kọ̀"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Gbà sílẹ̀"
 msgid "Draw"
 msgstr "Ìbárapọ̀"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "A fún ní ìdábọ̀ — ń dúró de {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Ìkóra ṣófo {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Ìkóra ṣófo {colLabel}{rowLabel}, tẹ tàbí tẹ Enter láti gbé"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Parí eré"
@@ -354,6 +419,10 @@ msgstr "Parí eré"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Parí eré?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Tẹ nọ́mbà tó tọ́"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Òṣùwọ̀n"
 msgid "Monday"
 msgstr "Ọjọ́ Ajé"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Gbọ́dọ̀ wà láàárín 0 àti 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Tuntun"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Kò sí ẹgbẹ́ tó wà"
 msgid "No matches."
 msgstr "Kò sí ìbámu."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Kò sí ìránṣẹ́ síbẹ̀"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Pa gbogbo ètò padà sí àwọn iye àbùdá"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Fi sílẹ̀"
 
@@ -925,9 +999,17 @@ msgstr "Ń jáde..."
 msgid "Skip to Main"
 msgstr "Fò sí Olórí"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Fò ìyípo rẹ kí o sì gbé fún alátakò rẹ."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Bẹ̀rẹ̀ eré Go tuntun"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Bẹ̀rẹ̀ eré"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Ààyè Aláìláyè"
 msgid "United States"
 msgstr "United States"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Aláìmọ̀"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Kò tíì jẹ́rìí sí"
@@ -1096,6 +1182,22 @@ msgstr "Ọjọ́rú"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Funfun"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Awọn tí funfun mú:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Òkúta funfun ní {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Agbègbè funfun ní {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Ìwọ"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

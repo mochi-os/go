@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName}もパスしました。確認すると対局が終了し、盤面を集計します。"
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName}が引き分けを提案しました"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName}が投了しました — あなたの勝ち！"
@@ -24,6 +32,23 @@ msgstr "{opponentName}の勝ち"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "{opponentName}の番です"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "{size}×{size}囲碁盤"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "{size}×{size}囲碁盤、あなたの番です。矢印キーで移動し、Enterまたはスペースで黒石を置きます。"
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "{size}×{size}囲碁盤、あなたの番です。矢印キーで移動し、Enterまたはスペースで白石を置きます。"
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject}が<0>{0}</0>に打ちました"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24時間"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "絶対 (日付と時刻)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "承認"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "アカウントタイプ"
 msgid "Account verified"
 msgstr "アカウントを確認しました"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "アクティブなゲーム"
 
@@ -132,6 +161,10 @@ msgstr "すべて"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "本当にログアウトしますか？再度アクセスするにはログインが必要です。"
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "本当に投了しますか?{opponentName}の勝ちになります。"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "昇順"
@@ -150,6 +183,18 @@ msgstr "ホームに戻る"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "黒"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "黒のアゲハマ:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel}の黒石"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel}の黒地"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "近日公開!"
 msgid "Compact"
 msgstr "コンパクト"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "完了"
 
@@ -287,6 +332,10 @@ msgstr "続行"
 msgid "Copy"
 msgstr "コピー"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "作成中..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "ダーク"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "ダークモード"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "拒否"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "ダウンロード"
 msgid "Draw"
 msgstr "引き分け"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "引き分けを提案しました — {opponentName}の応答を待っています"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "空の交点 {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "空の交点 {colLabel}{rowLabel}、クリックまたはEnterで配置"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "ゲーム終了"
@@ -354,6 +419,10 @@ msgstr "ゲーム終了"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "ゲームを終了しますか?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "有効な数値を入力してください"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "メートル法"
 msgid "Monday"
 msgstr "月曜日"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "0から10の間でなければなりません"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "新規"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "利用可能なグループがありません"
 msgid "No matches."
 msgstr "一致するものがありません。"
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "まだメッセージがありません"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "すべての設定をデフォルト値にリセット"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "投了"
 
@@ -925,9 +999,17 @@ msgstr "サインアウト中..."
 msgid "Skip to Main"
 msgstr "メインコンテンツへスキップ"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "自分の番をパスして相手に渡します。"
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "新しい囲碁のゲームを始める"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "ゲームを開始"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "認証されていないアクセス"
 msgid "United States"
 msgstr "アメリカ合衆国"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "不明"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "未認証"
@@ -1096,6 +1182,22 @@ msgstr "水曜日"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "白"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "白のアゲハマ:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel}の白石"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel}の白地"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "あなた"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} passade också. Att bekräfta avslutar partiet och räknar brädet."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} erbjöd remi"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} gav upp — du vinner!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} vinner"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "{opponentName}s drag"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "{size}×{size} Go-bräde"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "{size}×{size} Go-bräde, din tur. Använd piltangenterna för att navigera och Retur eller mellanslag för att placera en svart sten."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "{size}×{size} Go-bräde, din tur. Använd piltangenterna för att navigera och Retur eller mellanslag för att placera en vit sten."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} spelade <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 timmar"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Absolut (datum och tid)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Acceptera"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Kontotyp"
 msgid "Account verified"
 msgstr "Konto verifierat"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Aktiva spel"
 
@@ -132,6 +161,10 @@ msgstr "Alla"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Är du säker på att du vill logga ut? Du behöver logga in igen för att komma åt ditt konto."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Är du säker på att du vill ge upp? {opponentName} kommer att vinna partiet."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Stigande"
@@ -150,6 +183,18 @@ msgstr "Tillbaka till start"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Svart"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Svart fångade:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Svart sten på {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Svart territorium på {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Kommer snart!"
 msgid "Compact"
 msgstr "Kompakt"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Slutförd"
 
@@ -287,6 +332,10 @@ msgstr "Fortsätt"
 msgid "Copy"
 msgstr "Kopiera"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Skapar..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Mörk"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Mörkt läge"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Avböj"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Ladda ner"
 msgid "Draw"
 msgstr "Remi"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Remi erbjuden — väntar på {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Tom skärningspunkt {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Tom skärningspunkt {colLabel}{rowLabel}, klicka eller tryck på Retur för att placera"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Avsluta spel"
@@ -354,6 +419,10 @@ msgstr "Avsluta spel"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Avsluta spel?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Ange ett giltigt nummer"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Metrisk"
 msgid "Monday"
 msgstr "Måndag"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Måste vara mellan 0 och 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Ny"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Inga grupper tillgängliga"
 msgid "No matches."
 msgstr "Inga träffar."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Inga meddelanden ännu"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Återställ alla inställningar till standardvärden"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Ge upp"
 
@@ -925,9 +999,17 @@ msgstr "Loggar ut..."
 msgid "Skip to Main"
 msgstr "Hoppa till huvudinnehåll"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Hoppa över din tur och skicka vidare till din motståndare."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Starta ett nytt Go-spel"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Starta spel"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Obehörig åtkomst"
 msgid "United States"
 msgstr "USA"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Okänd"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Overifierad"
@@ -1096,6 +1182,22 @@ msgstr "Onsdag"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Vit"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Vit fångade:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Vit sten på {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Vitt territorium på {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Du"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

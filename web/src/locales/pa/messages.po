@@ -6,6 +6,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: pa\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} ਨੇ ਵੀ ਪਾਸ ਕੀਤਾ। ਪੁਸ਼ਟੀ ਕਰਨ ਨਾਲ ਖੇਡ ਖਤਮ ਹੋ ਜਾਵੇਗੀ ਅਤੇ ਬੋਰਡ ਦਾ ਸਕੋਰ ਹੋਵੇਗਾ।"
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} ਨੇ ਡਰਾਅ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ"
 
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
@@ -18,6 +32,23 @@ msgstr "{opponentName} ਜਿੱਤ ਗਿਆ"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "{opponentName} ਦੀ ਚਾਲ"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "{size}×{size} Go ਬੋਰਡ"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "{size}×{size} Go ਬੋਰਡ, ਤੁਹਾਡੀ ਵਾਰੀ। ਨੇਵੀਗੇਟ ਕਰਨ ਲਈ ਤੀਰ ਕੀਜ਼ ਅਤੇ ਕਾਲਾ ਪੱਥਰ ਰੱਖਣ ਲਈ Enter ਜਾਂ Space ਵਰਤੋ।"
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "{size}×{size} Go ਬੋਰਡ, ਤੁਹਾਡੀ ਵਾਰੀ। ਨੇਵੀਗੇਟ ਕਰਨ ਲਈ ਤੀਰ ਕੀਜ਼ ਅਤੇ ਸਫ਼ੈਦ ਪੱਥਰ ਰੱਖਣ ਲਈ Enter ਜਾਂ Space ਵਰਤੋ।"
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} ਨੇ <0>{0}</0> ਖੇਡਿਆ"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -36,6 +67,10 @@ msgstr "24 ਘੰਟੇ"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "ਨਿਰਪੇਖ (ਮਿਤੀ ਅਤੇ ਸਮਾਂ)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "ਸਵੀਕਾਰ ਕਰੋ"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -61,7 +96,7 @@ msgstr "ਖਾਤੇ ਦੀ ਕਿਸਮ"
 msgid "Account verified"
 msgstr "ਖਾਤਾ ਤਸਦੀਕ ਕੀਤਾ ਗਿਆ"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "ਕਿਰਿਆਸ਼ੀਲ ਖੇਡਾਂ"
 
@@ -126,6 +161,10 @@ msgstr "ਸਾਰੇ"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਹੋ ਕਿ ਤੁਸੀਂ ਲੌਗ ਆਉਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ? ਆਪਣੇ ਖਾਤੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਤੁਹਾਨੂੰ ਦੁਬਾਰਾ ਲੌਗ ਇਨ ਕਰਨਾ ਪਵੇਗਾ।"
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ ਤੇ ਅਸਤੀਫਾ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ? {opponentName} ਖੇਡ ਜਿੱਤੇਗਾ।"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "ਵਧਦਾ"
@@ -144,6 +183,18 @@ msgstr "ਘਰ ਵਾਪਸ"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "ਕਾਲਾ"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "ਕਾਲੇ ਨੇ ਫੜੇ:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} 'ਤੇ ਕਾਲਾ ਪੱਥਰ"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} 'ਤੇ ਕਾਲਾ ਖੇਤਰ"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -256,7 +307,7 @@ msgstr "ਜਲਦ ਆ ਰਿਹਾ ਹੈ!"
 msgid "Compact"
 msgstr "ਸੰਖੇਪ"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "ਪੂਰਾ"
 
@@ -281,6 +332,10 @@ msgstr "ਜਾਰੀ ਰੱਖੋ"
 msgid "Copy"
 msgstr "ਕਾਪੀ ਕਰੋ"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "ਬਣਾ ਰਹੇ ਹਾਂ..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -293,6 +348,10 @@ msgstr "ਡਾਰਕ"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "ਡਾਰਕ ਮੋਡ"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "ਅਸਵੀਕਾਰ ਕਰੋ"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -341,6 +400,18 @@ msgstr "ਡਾਊਨਲੋਡ"
 msgid "Draw"
 msgstr "ਡ੍ਰਾਅ"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "ਡਰਾਅ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ — {opponentName} ਦੀ ਉਡੀਕ ਕਰ ਰਹੇ ਹਾਂ"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "ਖਾਲੀ ਚੌਰਾਹਾ {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "ਖਾਲੀ ਚੌਰਾਹਾ {colLabel}{rowLabel}, ਰੱਖਣ ਲਈ ਕਲਿੱਕ ਕਰੋ ਜਾਂ Enter ਦਬਾਓ"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "ਗੇਮ ਖ਼ਤਮ ਕਰੋ"
@@ -348,6 +419,10 @@ msgstr "ਗੇਮ ਖ਼ਤਮ ਕਰੋ"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "ਗੇਮ ਖ਼ਤਮ ਕਰਨੀ ਹੈ?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "ਇੱਕ ਜਾਇਜ਼ ਸੰਖਿਆ ਦਾਖਲ ਕਰੋ"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -577,11 +652,15 @@ msgstr "ਮੈਟ੍ਰਿਕ"
 msgid "Monday"
 msgstr "ਸੋਮਵਾਰ"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "0 ਅਤੇ 10 ਦੇ ਵਿਚਕਾਰ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "ਨਵਾਂ"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -623,7 +702,7 @@ msgstr "ਕੋਈ ਗਰੁੱਪ ਉਪਲਬਧ ਨਹੀਂ"
 msgid "No matches."
 msgstr "ਕੋਈ ਮੇਲ ਨਹੀਂ।"
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "ਅਜੇ ਕੋਈ ਸੁਨੇਹੇ ਨਹੀਂ"
 
@@ -786,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "ਸਾਰੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਡਿਫਾਲਟ ਮੁੱਲਾਂ 'ਤੇ ਰੀਸੈੱਟ ਕਰੋ"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "ਅਸਤੀਫ਼ਾ ਦਿਓ"
 
@@ -919,9 +999,17 @@ msgstr "ਸਾਈਨ ਆਊਟ ਕਰ ਰਿਹਾ ਹੈ..."
 msgid "Skip to Main"
 msgstr "ਮੁੱਖ ਵੱਲ ਜਾਓ"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "ਆਪਣੀ ਵਾਰੀ ਛੱਡੋ ਅਤੇ ਆਪਣੇ ਵਿਰੋਧੀ ਨੂੰ ਪਾਸ ਕਰੋ।"
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "ਨਵੀਂ Go ਖੇਡ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "ਖੇਡ ਸ਼ੁਰੂ ਕਰੋ"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1034,6 +1122,10 @@ msgstr "ਅਣਅਧਿਕਾਰਤ ਪਹੁੰਚ"
 msgid "United States"
 msgstr "ਸੰਯੁਕਤ ਰਾਜ"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "ਅਣਜਾਣ"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "ਅਪ੍ਰਮਾਣਿਤ"
@@ -1090,6 +1182,22 @@ msgstr "ਬੁੱਧਵਾਰ"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "ਚਿੱਟਾ"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "ਸਫ਼ੈਦ ਨੇ ਫੜੇ:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} 'ਤੇ ਸਫ਼ੈਦ ਪੱਥਰ"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} 'ਤੇ ਸਫ਼ੈਦ ਖੇਤਰ"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "ਤੁਸੀਂ"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

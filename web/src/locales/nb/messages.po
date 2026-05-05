@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} passet også. Bekreftelse vil avslutte spillet og telle brettet."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} tilbød remis"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} ga opp – du vant!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} vinner"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "{opponentName} sitt trekk"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "{size}×{size} Go-brett"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "{size}×{size} Go-brett, din tur. Bruk piltastene til å navigere og Enter eller mellomrom for å plassere en sort stein."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "{size}×{size} Go-brett, din tur. Bruk piltastene til å navigere og Enter eller mellomrom for å plassere en hvit stein."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} spilte <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 timer"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Absolutt (dato og klokkeslett)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Godta"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Kontotype"
 msgid "Account verified"
 msgstr "Konto bekreftet"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Aktive spill"
 
@@ -132,6 +161,10 @@ msgstr "Alle"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Er du sikker på at du vil logge ut? Du må logge inn igjen for å få tilgang til kontoen din."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Er du sikker på at du vil gi opp? {opponentName} vinner spillet."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Stigende"
@@ -150,6 +183,18 @@ msgstr "Tilbake til startsiden"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Svart"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Sort fanget:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Sort stein på {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Sort territorium på {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Kommer snart!"
 msgid "Compact"
 msgstr "Kompakt"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Fullført"
 
@@ -287,6 +332,10 @@ msgstr "Fortsett"
 msgid "Copy"
 msgstr "Kopier"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Oppretter …"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Mørkt"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Mørkt utseende"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Avslå"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Last ned"
 msgid "Draw"
 msgstr "Remis"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Remis tilbudt — venter på {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Tomt skjæringspunkt {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Tomt skjæringspunkt {colLabel}{rowLabel}, klikk eller trykk Enter for å plassere"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Avslutt spill"
@@ -354,6 +419,10 @@ msgstr "Avslutt spill"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Avslutte spillet?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Skriv inn et gyldig tall"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Metrisk"
 msgid "Monday"
 msgstr "Mandag"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Må være mellom 0 og 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Ny"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Ingen grupper tilgjengelig"
 msgid "No matches."
 msgstr "Ingen treff."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Ingen meldinger ennå"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Tilbakestill alle innstillinger til standardverdier"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Gi opp"
 
@@ -925,9 +999,17 @@ msgstr "Logger ut ..."
 msgid "Skip to Main"
 msgstr "Hopp til hovedinnhold"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Hopp over turen din og gi videre til motstanderen."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Start et nytt go-spill"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Start spill"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Ikke tillatt tilgang"
 msgid "United States"
 msgstr "USA"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Ukjent"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Ikke verifisert"
@@ -1096,6 +1182,22 @@ msgstr "Onsdag"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Hvit"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Hvit fanget:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Hvit stein på {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Hvitt territorium på {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Du"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

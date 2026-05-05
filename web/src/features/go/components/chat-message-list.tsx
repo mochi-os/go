@@ -20,7 +20,7 @@ import {
 } from '@mochi/web'
 import type { GameMessage, GetMessagesResponse } from '@/api/games'
 
-import { Trans } from '@lingui/react/macro'
+import { Trans, useLingui } from '@lingui/react/macro'
 interface ChatMessageListProps {
   messagesQuery: UseInfiniteQueryResult<
     InfiniteData<GetMessagesResponse>,
@@ -39,6 +39,7 @@ export function ChatMessageList({
   messagesError,
   currentUserIdentity,
 }: ChatMessageListProps) {
+  const { t } = useLingui()
   const { formatDate, formatTime } = useFormat()
   const scrollContainerRef = useRef<HTMLDivElement | null>(null)
   const messagesEndRef = useRef<HTMLDivElement | null>(null)
@@ -164,6 +165,7 @@ export function ChatMessageList({
       {Object.keys(groupedMessages).map((key) => (
         <Fragment key={key}>
           <div className="my-2 flex items-center justify-center">
+            {/* eslint-disable-next-line lingui/no-unlocalized-strings -- 'T00:00:00' is an ISO-8601 time component, not a UI label */}
             <div className="text-muted-foreground text-[10px]">{formatDate(new Date(key + 'T00:00:00'))}</div>
           </div>
 
@@ -185,14 +187,14 @@ export function ChatMessageList({
             // Move messages
             if (message.type === 'move') {
               const isSent = message.member === currentUserIdentity
+              const subject = isSent ? t`You` : message.name
               return (
                 <div
                   key={`${message.id}-${index}`}
                   className="flex justify-center py-0.5"
                 >
                   <span className="text-[11px] text-muted-foreground/60">
-                    {isSent ? 'You' : message.name} played{' '}
-                    <span className="font-mono">{message.body}</span>
+                    <Trans>{subject} played <span className="font-mono">{message.body}</span></Trans>
                   </span>
                 </div>
               )

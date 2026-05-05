@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName}도 패스했습니다. 확인하면 대국이 끝나고 점수를 계산합니다."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName}이(가) 무승부를 제안했습니다"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName}님이 기권했어요 — 승리했어요!"
@@ -24,6 +32,23 @@ msgstr "{opponentName}님이 승리했어요"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "{opponentName}님의 차례"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "{size}×{size} 바둑판"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "{size}×{size} 바둑판, 당신 차례입니다. 화살표 키로 이동하고 Enter 또는 Space로 흑돌을 놓으세요."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "{size}×{size} 바둑판, 당신 차례입니다. 화살표 키로 이동하고 Enter 또는 Space로 백돌을 놓으세요."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject}님이 <0>{0}</0>에 두었습니다"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24시간"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "절대값 (날짜 및 시간)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "수락"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "계정 유형"
 msgid "Account verified"
 msgstr "계정이 인증되었어요"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "활성 게임"
 
@@ -132,6 +161,10 @@ msgstr "전체"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "로그아웃할까요? 계정에 다시 접근하려면 다시 로그인해야 해요."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "정말 기권하시겠습니까? {opponentName}이(가) 게임에서 이깁니다."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "오름차순"
@@ -150,6 +183,18 @@ msgstr "홈으로 돌아가기"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "검정"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "흑 잡은 돌:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel}에 흑돌"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel}에 흑 집"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "곧 출시!"
 msgid "Compact"
 msgstr "컴팩트"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "완료됨"
 
@@ -287,6 +332,10 @@ msgstr "계속"
 msgid "Copy"
 msgstr "복사"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "생성 중..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "다크"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "다크 모드"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "거절"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "다운로드"
 msgid "Draw"
 msgstr "무승부"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "무승부 제안됨 — {opponentName}의 응답을 기다리는 중"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "빈 교차점 {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "빈 교차점 {colLabel}{rowLabel}, 클릭하거나 Enter를 눌러 놓기"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "게임 종료"
@@ -354,6 +419,10 @@ msgstr "게임 종료"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "게임을 종료할까요?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "유효한 숫자를 입력하세요"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "측정 항목"
 msgid "Monday"
 msgstr "월요일"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "0과 10 사이여야 합니다"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "새로 만들기"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "이용 가능한 그룹이 없어요"
 msgid "No matches."
 msgstr "일치하는 항목이 없어요."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "아직 메시지가 없어요"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "모든 설정을 기본값으로 재설정"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "기권"
 
@@ -925,9 +999,17 @@ msgstr "로그아웃 중..."
 msgid "Skip to Main"
 msgstr "본문으로 건너뛰기"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "차례를 건너뛰고 상대에게 넘깁니다."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "새 바둑 게임 시작"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "게임 시작"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "허용되지 않은 접근"
 msgid "United States"
 msgstr "미국"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "알 수 없음"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "확인되지 않음"
@@ -1096,6 +1182,22 @@ msgstr "수요일"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "백"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "백 잡은 돌:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel}에 백돌"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel}에 백 집"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "본인"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

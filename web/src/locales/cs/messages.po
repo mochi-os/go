@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} také pasoval. Potvrzení ukončí hru a vyhodnotí desku."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} nabídl remízu"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} to vzdal — vyhráváte!"
@@ -24,6 +32,23 @@ msgstr "Vyhrává {opponentName}"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Tah hráče {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "Deska Go {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "Deska Go {size}×{size}, váš tah. Pomocí šipek se pohybujte a Enter nebo mezerníkem umístěte černý kámen."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "Deska Go {size}×{size}, váš tah. Pomocí šipek se pohybujte a Enter nebo mezerníkem umístěte bílý kámen."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} zahrál <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 hodin"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Absolutní (datum a čas)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Přijmout"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Typ účtu"
 msgid "Account verified"
 msgstr "Účet ověřen"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Aktivní hry"
 
@@ -132,6 +161,10 @@ msgstr "Vše"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Opravdu se chcete odhlásit? Pro přístup ke svému účtu se budete muset znovu přihlásit."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Opravdu se chcete vzdát? {opponentName} vyhraje hru."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Vzestupně"
@@ -150,6 +183,18 @@ msgstr "Zpět na hlavní stránku"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Černá"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Černý zajal:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Černý kámen na {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Černé území na {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Již brzy!"
 msgid "Compact"
 msgstr "Kompaktní"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Dokončeno"
 
@@ -287,6 +332,10 @@ msgstr "Pokračovat"
 msgid "Copy"
 msgstr "Kopírovat"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Vytváření..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Tmavá"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Tmavý režim"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Odmítnout"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Stáhnout"
 msgid "Draw"
 msgstr "Remíza"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Nabídnuta remíza — čeká se na {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Prázdné křížení {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Prázdné křížení {colLabel}{rowLabel}, klikněte nebo stiskněte Enter pro umístění"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Ukončit hru"
@@ -354,6 +419,10 @@ msgstr "Ukončit hru"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Ukončit hru?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Zadejte platné číslo"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Metrika"
 msgid "Monday"
 msgstr "Pondělí"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Musí být mezi 0 a 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Nové"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Žádné skupiny k dispozici"
 msgid "No matches."
 msgstr "Žádné shody."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Zatím žádné zprávy"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Obnovit všechna nastavení na výchozí hodnoty"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Vzdát"
 
@@ -925,9 +999,17 @@ msgstr "Odhlašování..."
 msgid "Skip to Main"
 msgstr "Přeskočit na hlavní obsah"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Přeskočte svůj tah a předejte soupeři."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Začít novou hru Go"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Začít hru"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Neoprávněný přístup"
 msgid "United States"
 msgstr "Spojené státy"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Neznámý"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Neověřeno"
@@ -1096,6 +1182,22 @@ msgstr "Středa"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Bílé"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Bílý zajal:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Bílý kámen na {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Bílé území na {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Vy"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

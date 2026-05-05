@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} ก็ผ่านตาเช่นกัน การยืนยันจะจบเกมและคิดคะแนนกระดาน"
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} เสนอเสมอ"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} ยอมแพ้ — คุณชนะ!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} ชนะ"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "ตาของ {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "กระดาน Go {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "กระดาน Go {size}×{size} ตาของคุณ ใช้ปุ่มลูกศรเพื่อนำทางและ Enter หรือ Space เพื่อวางหินดำ"
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "กระดาน Go {size}×{size} ตาของคุณ ใช้ปุ่มลูกศรเพื่อนำทางและ Enter หรือ Space เพื่อวางหินขาว"
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} เล่น <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 ชั่วโมง"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "สัมบูรณ์ (วันที่และเวลา)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "ยอมรับ"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "ประเภทบัญชี"
 msgid "Account verified"
 msgstr "ยืนยันบัญชีแล้ว"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "เกมที่ใช้งานอยู่"
 
@@ -132,6 +161,10 @@ msgstr "ทั้งหมด"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ? คุณจะต้องเข้าสู่ระบบอีกครั้งเพื่อเข้าถึงบัญชีของคุณ"
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "คุณแน่ใจหรือไม่ว่าต้องการยอมแพ้? {opponentName} จะชนะเกม"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "น้อยไปมาก"
@@ -150,6 +183,18 @@ msgstr "กลับไปยังหน้าแรก"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "ดำ"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "ดำจับได้:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "หินดำที่ {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "เขตของดำที่ {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "เร็วๆนี้!"
 msgid "Compact"
 msgstr "กะทัดรัด"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "เสร็จสมบูรณ์"
 
@@ -287,6 +332,10 @@ msgstr "ดำเนินการต่อ"
 msgid "Copy"
 msgstr "คัดลอก"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "กำลังสร้าง..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "มืด"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "โหมดมืด"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "ปฏิเสธ"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "ดาวน์โหลด"
 msgid "Draw"
 msgstr "เสมอ"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "เสนอเสมอแล้ว — กำลังรอ {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "จุดตัดว่าง {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "จุดตัดว่าง {colLabel}{rowLabel} คลิกหรือกด Enter เพื่อวาง"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "จบเกม"
@@ -354,6 +419,10 @@ msgstr "จบเกม"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "จบเกม?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "ใส่ตัวเลขที่ถูกต้อง"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "เมตริก"
 msgid "Monday"
 msgstr "วันจันทร์"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "ต้องอยู่ระหว่าง 0 ถึง 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "ใหม่"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "ไม่มีกลุ่มที่ใช้งานได้"
 msgid "No matches."
 msgstr "ไม่พบรายการที่ตรงกัน"
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "ยังไม่มีข้อความ"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "รีเซ็ตการตั้งค่าทั้งหมดเป็นค่าเริ่มต้น"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "ยอมแพ้"
 
@@ -925,9 +999,17 @@ msgstr "กำลังออกจากระบบ..."
 msgid "Skip to Main"
 msgstr "ข้ามไปยังเนื้อหาหลัก"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "ข้ามตาของคุณและส่งต่อให้ฝ่ายตรงข้าม"
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "เริ่มเกมโกะใหม่"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "เริ่มเกม"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "การเข้าถึงที่ไม่ได้รับอน
 msgid "United States"
 msgstr "สหรัฐอเมริกา"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "ยังไม่ยืนยัน"
@@ -1096,6 +1182,22 @@ msgstr "วันพุธ"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "ขาว"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "ขาวจับได้:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "หินขาวที่ {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "เขตของขาวที่ {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "คุณ"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

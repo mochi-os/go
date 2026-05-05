@@ -427,12 +427,12 @@ export function GoGameView() {
                             <GameHeaderStat
                               icon={<GameHeaderStoneDot color='black' />}
                               value={game.captures_black}
-                              srLabel='Black captures:'
+                              srLabel={t`Black captures:`}
                             />
                             <GameHeaderStat
                               icon={<GameHeaderStoneDot color='white' />}
                               value={game.captures_white}
-                              srLabel='White captures:'
+                              srLabel={t`White captures:`}
                             />
                           </>
                         )}
@@ -502,7 +502,7 @@ export function GoGameView() {
                         ? game.draw_offer === myIdentity
                           ? (
                               <p className='text-sm text-muted-foreground'>
-                                Draw offered — waiting for {opponentName}
+                                <Trans>Draw offered — waiting for {opponentName}</Trans>
                               </p>
                             )
                           : (
@@ -596,7 +596,7 @@ export function GoGameView() {
         open={showResignDialog}
         onOpenChange={setShowResignDialog}
         title={t`Resign game?`}
-        desc={`Are you sure you want to resign? ${opponentName} will win the game.`}
+        desc={t`Are you sure you want to resign? ${opponentName} will win the game.`}
         confirmText={
           resignMutation.isPending ? (
             <>
@@ -604,7 +604,7 @@ export function GoGameView() {
               <Trans>Resigning...</Trans>
             </>
           ) : (
-            'Resign'
+            t`Resign`
           )
         }
         destructive
@@ -619,8 +619,8 @@ export function GoGameView() {
         title={goGame?.consecutivePasses === 1 ? t`End game?` : t`Pass turn?`}
         desc={
           goGame?.consecutivePasses === 1
-            ? `${opponentName} also passed. Confirming will end the game and score the board.`
-            : 'Skip your turn and pass to your opponent.'
+            ? t`${opponentName} also passed. Confirming will end the game and score the board.`
+            : t`Skip your turn and pass to your opponent.`
         }
         confirmText={
           passMutation.isPending ? (

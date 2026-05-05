@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} myös passasi. Vahvistaminen päättää pelin ja laskee laudan pisteet."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} tarjosi tasapeliä"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} luovutti — voitit!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} voittaa"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Pelaajan {opponentName} siirto"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "{size}×{size} Go-lauta"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "{size}×{size} Go-lauta, sinun vuorosi. Liiku nuolinäppäimillä ja paina Enter tai välilyönti asettaaksesi mustan kiven."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "{size}×{size} Go-lauta, sinun vuorosi. Liiku nuolinäppäimillä ja paina Enter tai välilyönti asettaaksesi valkoisen kiven."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} pelasi <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 tuntia"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Absoluuttinen (päivämäärä ja kellonaika)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Hyväksy"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Tilin tyyppi"
 msgid "Account verified"
 msgstr "Tili vahvistettu"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Aktiiviset pelit"
 
@@ -132,6 +161,10 @@ msgstr "Kaikki"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Haluatko varmasti kirjautua ulos? Sinun täytyy kirjautua uudelleen sisään päästäksesi tilillesi."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Haluatko varmasti luovuttaa? {opponentName} voittaa pelin."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Nouseva"
@@ -150,6 +183,18 @@ msgstr "Takaisin etusivulle"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Musta"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Mustan vangit:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Musta kivi kohdassa {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Mustan alue kohdassa {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Tulossa pian!"
 msgid "Compact"
 msgstr "Tiivis"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Valmis"
 
@@ -287,6 +332,10 @@ msgstr "Jatka"
 msgid "Copy"
 msgstr "Kopioi"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Luodaan..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Tumma"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Tumma tila"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Hylkää"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Lataa"
 msgid "Draw"
 msgstr "Tasapeli"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Tasapeliä tarjottu — odotetaan pelaajaa {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Tyhjä risteys {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Tyhjä risteys {colLabel}{rowLabel}, napsauta tai paina Enter asettaaksesi"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Päätä peli"
@@ -354,6 +419,10 @@ msgstr "Päätä peli"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Päätetäänkö peli?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Anna kelvollinen luku"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Metrinen"
 msgid "Monday"
 msgstr "Maanantai"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "On oltava välillä 0 ja 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Uusi"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Ei saatavilla olevia ryhmiä"
 msgid "No matches."
 msgstr "Ei osumia."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Ei vielä viestejä"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Palauta kaikki asetukset oletusarvoihin"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Luovuta"
 
@@ -925,9 +999,17 @@ msgstr "Kirjaudutaan ulos..."
 msgid "Skip to Main"
 msgstr "Siirry pääsisältöön"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Ohita vuorosi ja anna vastustajalle."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Aloita uusi Go-peli"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Aloita peli"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Pääsy ei sallittu"
 msgid "United States"
 msgstr "Yhdysvallat"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Tuntematon"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Vahvistamaton"
@@ -1096,6 +1182,22 @@ msgstr "Keskiviikko"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Valkoinen"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Valkoisen vangit:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Valkoinen kivi kohdassa {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Valkoisen alue kohdassa {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Sinä"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

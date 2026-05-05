@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "U-{opponentName} naye udlulile. Ukuqinisekisa kuya kuphelisa umdlalo kwaye kubale ibhodi."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} unike idrowu"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} uyekile — uphumelele!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} uphumelele"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Umqhubo ka-{opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "Ibhodi ye-Go ye-{size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "Ibhodi ye-Go ye-{size}×{size}, lithuba lakho. Sebenzisa iitshegu zotolo ukuze ujikeleze kwaye u-Enter okanye u-Space ukubeka ilitye elimnyama."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "Ibhodi ye-Go ye-{size}×{size}, lithuba lakho. Sebenzisa iitshegu zotolo ukuze ujikeleze kwaye u-Enter okanye u-Space ukubeka ilitye elimhlophe."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "U-{subject} udlale <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "iiyure ezingama-24"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Eyokwenene (umhla nexesha)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Yamkela"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Uhlobo lwe-akhawunti"
 msgid "Account verified"
 msgstr "I-akhawunti iqinisekisiwe"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Imidlalo Esebenzayo"
 
@@ -132,6 +161,10 @@ msgstr "Konke"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Uqinisekile ufuna ukuphuma? Kuya kufuneka ungene kwakhona ukuze ufikelele kwi-akhawunti yakho."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Uqinisekile ukuba ufuna ukunikezela? {opponentName} uza kuphumelela umdlalo."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Enyukayo"
@@ -150,6 +183,18 @@ msgstr "Buyela eKhaya"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Mnyama"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Ezibanjwe ngumnyama:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Ilitye elimnyama ku-{colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Ummandla omnyama ku-{colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Iyeza Kungekudala!"
 msgid "Compact"
 msgstr "Mfutshane"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Kugqityiwe"
 
@@ -287,6 +332,10 @@ msgstr "Qhubeka"
 msgid "Copy"
 msgstr "Kotshela"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Iyenziwa..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Mnyama"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Imodi emnyama"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Yala"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Khuphela"
 msgid "Draw"
 msgstr "Zoba"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Idrowu inikiwe — kulindwe {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Indawo yokunqamleza engenanto {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Indawo yokunqamleza engenanto {colLabel}{rowLabel}, cofa okanye cofa u-Enter ukubeka"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Phelisa umdlalo"
@@ -354,6 +419,10 @@ msgstr "Phelisa umdlalo"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Phelisa umdlalo?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Faka inombolo esebenzayo"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "I-Metric"
 msgid "Monday"
 msgstr "Umvulo"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Kufuneka ibe phakathi kwe-0 ne-10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Entsha"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Akukho maqela afumanekayo"
 msgid "No matches."
 msgstr "Akukho zifananisayo."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Akukho miyalezo okwangoku"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Buyisela zonke iisetingi kumaxabiso amiselweyo"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Rhoxa"
 
@@ -925,9 +999,17 @@ msgstr "Iyaphuma..."
 msgid "Skip to Main"
 msgstr "Tsiba uye kweyona"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Tsiba ithuba lakho udlulisele kumchasi wakho."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Qalisa umdlalo omtsha we-Go"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Qalisa umdlalo"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Ufikelelo Olungavunyelwanga"
 msgid "United States"
 msgstr "United States"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Akwaziwa"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Ayingqinwanga"
@@ -1096,6 +1182,22 @@ msgstr "Ulwesithathu"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Mhlophe"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Ezibanjwe ngumhlophe:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Ilitye elimhlophe ku-{colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Ummandla omhlophe ku-{colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Wena"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

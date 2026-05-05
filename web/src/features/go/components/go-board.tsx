@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from 'react'
+import { useLingui } from '@lingui/react/macro'
 import { cn } from '@mochi/web'
 import { GoGame } from '@/lib/go-engine'
 
@@ -36,6 +37,7 @@ export function GoBoard({
   onMove,
   lastMove,
 }: GoBoardProps) {
+  const { t } = useLingui()
   const [hoverPos, setHoverPos] = useState<[number, number] | null>(null)
   const [keyboardPos, setKeyboardPos] = useState<[number, number] | null>(null)
   const [isBoardFocused, setIsBoardFocused] = useState(false)
@@ -123,8 +125,10 @@ export function GoBoard({
   const letters = 'ABCDEFGHJKLMNOPQRST'
 
   const boardDescription = isMyTurn && isActive
-    ? `${size}×${size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a ${myColor === 'b' ? 'black' : 'white'} stone.`
-    : `${size}×${size} Go board`
+    ? (myColor === 'b'
+      ? t`${size}×${size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone.`
+      : t`${size}×${size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone.`)
+    : t`${size}×${size} Go board`
 
   return (
     <div
@@ -268,16 +272,16 @@ export function GoBoard({
             const territoryOwner = territoryMap?.[row]?.[col] ?? null
             const intersectionLabel =
               stone === 'B'
-                ? `Black stone at ${colLabel}${rowLabel}`
+                ? t`Black stone at ${colLabel}${rowLabel}`
                 : stone === 'W'
-                  ? `White stone at ${colLabel}${rowLabel}`
+                  ? t`White stone at ${colLabel}${rowLabel}`
                   : territoryOwner === 'B'
-                    ? `Black territory at ${colLabel}${rowLabel}`
+                    ? t`Black territory at ${colLabel}${rowLabel}`
                     : territoryOwner === 'W'
-                      ? `White territory at ${colLabel}${rowLabel}`
+                      ? t`White territory at ${colLabel}${rowLabel}`
                       : canPlace
-                        ? `Empty intersection ${colLabel}${rowLabel}, click or press Enter to place`
-                        : `Empty intersection ${colLabel}${rowLabel}`
+                        ? t`Empty intersection ${colLabel}${rowLabel}, click or press Enter to place`
+                        : t`Empty intersection ${colLabel}${rowLabel}`
 
             return (
               <g key={`${row}-${col}`} role="img" aria-label={intersectionLabel}>

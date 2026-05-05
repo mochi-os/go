@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} نے بھی پاس کیا۔ تصدیق کرنے سے کھیل ختم ہو جائے گا اور بورڈ کا اسکور ہوگا۔"
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} نے ڈرا کی پیشکش کی"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} نے دستبرداری اختیار کی — آپ جیت گئے!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} جیت گئے"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "{opponentName} کی چال"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "{size}×{size} Go بورڈ"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "{size}×{size} Go بورڈ، آپ کی باری۔ نیویگیٹ کرنے کے لیے تیر کیز اور سیاہ پتھر رکھنے کے لیے Enter یا Space استعمال کریں۔"
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "{size}×{size} Go بورڈ، آپ کی باری۔ نیویگیٹ کرنے کے لیے تیر کیز اور سفید پتھر رکھنے کے لیے Enter یا Space استعمال کریں۔"
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} نے <0>{0}</0> کھیلا"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 گھنٹے"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "مطلق (تاریخ اور وقت)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "قبول کریں"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "اکاؤنٹ کی قسم"
 msgid "Account verified"
 msgstr "اکاؤنٹ تصدیق شدہ"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "فعال گیمز"
 
@@ -132,6 +161,10 @@ msgstr "تمام"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "کیا آپ واقعی لاگ آؤٹ کرنا چاہتے ہیں؟ آپ کو اپنے اکاؤنٹ تک رسائی کے لیے دوبارہ لاگ ان کرنا ہوگا۔"
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "کیا آپ واقعی ہار ماننا چاہتے ہیں؟ {opponentName} کھیل جیت جائے گا۔"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "بڑھتا ہوا"
@@ -150,6 +183,18 @@ msgstr "ہوم پر واپس"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "کالا"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "سیاہ کے قبضے:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} پر سیاہ پتھر"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} پر سیاہ علاقہ"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "جلد آرہا ہے!"
 msgid "Compact"
 msgstr "کمپیکٹ"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "مکمل"
 
@@ -287,6 +332,10 @@ msgstr "جاری رکھیں"
 msgid "Copy"
 msgstr "کاپی کریں"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "بن رہا ہے..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Dark"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Dark موڈ"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "انکار کریں"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "ڈاؤن لوڈ"
 msgid "Draw"
 msgstr "برابر"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "ڈرا کی پیشکش کی گئی — {opponentName} کا انتظار ہے"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "خالی تقاطع {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "خالی تقاطع {colLabel}{rowLabel}، رکھنے کے لیے کلک کریں یا Enter دبائیں"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "گیم ختم کریں"
@@ -354,6 +419,10 @@ msgstr "گیم ختم کریں"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "گیم ختم کریں؟"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "ایک درست نمبر درج کریں"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "metric"
 msgid "Monday"
 msgstr "پیر"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "0 اور 10 کے درمیان ہونا چاہیے"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "نیا"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "کوئی گروپ دستیاب نہیں"
 msgid "No matches."
 msgstr "کوئی matches نہیں۔"
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "ابھی تک کوئی پیغامات نہیں"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "تمام سیٹنگز کو ڈیفالٹ ویلیوز پر reset کریں"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "resign کریں"
 
@@ -925,9 +999,17 @@ msgstr "سائن آؤٹ کیا جا رہا ہے..."
 msgid "Skip to Main"
 msgstr "مین پر جائیں"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "اپنی باری چھوڑیں اور اپنے حریف کو پاس کریں۔"
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "نیا Go گیم شروع کریں"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "گیم شروع کریں"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "غیر مجاز رسائی"
 msgid "United States"
 msgstr "ریاستہائے متحدہ"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "نامعلوم"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "غیر تصدیق شدہ"
@@ -1096,6 +1182,22 @@ msgstr "بدھ"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "سفید"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "سفید کے قبضے:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} پر سفید پتھر"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "{colLabel}{rowLabel} پر سفید علاقہ"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "آپ"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

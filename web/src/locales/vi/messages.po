@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} cũng đã bỏ lượt. Xác nhận sẽ kết thúc ván cờ và tính điểm bàn cờ."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} đã đề nghị hòa"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} đã đầu hàng — bạn thắng!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} thắng"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Lượt của {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "Bàn cờ Vây {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "Bàn cờ Vây {size}×{size}, lượt của bạn. Dùng các phím mũi tên để di chuyển và Enter hoặc Space để đặt quân đen."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "Bàn cờ Vây {size}×{size}, lượt của bạn. Dùng các phím mũi tên để di chuyển và Enter hoặc Space để đặt quân trắng."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} đã chơi <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 giờ"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Tuyệt đối (ngày và giờ)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Chấp nhận"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Loại tài khoản"
 msgid "Account verified"
 msgstr "Đã xác minh tài khoản"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Ván đang chơi"
 
@@ -132,6 +161,10 @@ msgstr "Tất cả"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Bạn có chắc muốn đăng xuất? Bạn sẽ cần đăng nhập lại để truy cập tài khoản."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Bạn có chắc muốn xin thua không? {opponentName} sẽ thắng ván cờ."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Tăng dần"
@@ -150,6 +183,18 @@ msgstr "Quay lại Trang chủ"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Đen"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Đen bắt được:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Quân đen tại {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Vùng đen tại {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Sắp ra mắt!"
 msgid "Compact"
 msgstr "Gọn"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Hoàn tất"
 
@@ -287,6 +332,10 @@ msgstr "Tiếp tục"
 msgid "Copy"
 msgstr "Sao chép"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Đang tạo..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Tối"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Chế độ tối"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Từ chối"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Tải xuống"
 msgid "Draw"
 msgstr "Hoà"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Đã đề nghị hòa — đang chờ {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Giao điểm trống {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Giao điểm trống {colLabel}{rowLabel}, nhấp hoặc nhấn Enter để đặt"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Kết thúc trò chơi"
@@ -354,6 +419,10 @@ msgstr "Kết thúc trò chơi"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Kết thúc trò chơi?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Nhập một số hợp lệ"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Hệ mét"
 msgid "Monday"
 msgstr "Thứ Hai"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Phải nằm giữa 0 và 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Mới"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Không có nhóm nào"
 msgid "No matches."
 msgstr "Không có kết quả khớp."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Chưa có tin nhắn"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Đặt lại tất cả cài đặt về giá trị mặc định"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Đầu hàng"
 
@@ -925,9 +999,17 @@ msgstr "Đang đăng xuất..."
 msgid "Skip to Main"
 msgstr "Chuyển đến nội dung chính"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Bỏ qua lượt của bạn và chuyển cho đối thủ."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Bắt đầu một ván cờ Vây mới"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Bắt đầu trò chơi"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Truy cập không được phép"
 msgid "United States"
 msgstr "Hoa Kỳ"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Không rõ"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Chưa xác minh"
@@ -1096,6 +1182,22 @@ msgstr "Thứ tư"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Trắng"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Trắng bắt được:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Quân trắng tại {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Vùng trắng tại {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Bạn"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "Ο/Η {opponentName} επίσης πέρασε. Η επιβεβαίωση θα τερματίσει το παιχνίδι και θα μετρήσει τον πίνακα."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "Ο/Η {opponentName} πρότεινε ισοπαλία"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "Ο/Η {opponentName} παραιτήθηκε — νικήσατε!"
@@ -24,6 +32,23 @@ msgstr "Νικάει ο/η {opponentName}"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Η σειρά του/της {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "Πίνακας Go {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "Πίνακας Go {size}×{size}, η σειρά σας. Χρησιμοποιήστε τα βελάκια για πλοήγηση και Enter ή Space για να τοποθετήσετε μαύρη πέτρα."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "Πίνακας Go {size}×{size}, η σειρά σας. Χρησιμοποιήστε τα βελάκια για πλοήγηση και Enter ή Space για να τοποθετήσετε λευκή πέτρα."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "Ο/Η {subject} έπαιξε <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 ώρες"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Απόλυτη (ημερομηνία και ώρα)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Αποδοχή"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Τύπος λογαριασμού"
 msgid "Account verified"
 msgstr "Ο λογαριασμός επαληθεύτηκε"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Ενεργά παιχνίδια"
 
@@ -132,6 +161,10 @@ msgstr "Όλα"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Είστε βέβαιοι ότι θέλετε να αποσυνδεθείτε; Θα πρέπει να συνδεθείτε ξανά για να αποκτήσετε πρόσβαση στον λογαριασμό σας."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Είστε σίγουροι ότι θέλετε να παραιτηθείτε; Ο/Η {opponentName} θα κερδίσει την παρτίδα."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Αύξουσα"
@@ -150,6 +183,18 @@ msgstr "Πίσω στην αρχική"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Μαύρο"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Συλλήψεις μαύρου:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Μαύρη πέτρα στο {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Μαύρη επικράτεια στο {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Έρχεται σύντομα!"
 msgid "Compact"
 msgstr "Συμπαγές"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Ολοκληρώθηκε"
 
@@ -287,6 +332,10 @@ msgstr "Συνέχεια"
 msgid "Copy"
 msgstr "Αντιγραφή"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Δημιουργία..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Σκοτεινό"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Σκοτεινή λειτουργία"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Απόρριψη"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Λήψη"
 msgid "Draw"
 msgstr "Ισοπαλία"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Προσφέρθηκε ισοπαλία — αναμονή για {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Κενή διασταύρωση {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Κενή διασταύρωση {colLabel}{rowLabel}, κάντε κλικ ή πατήστε Enter για τοποθέτηση"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Λήξη παιχνιδιού"
@@ -354,6 +419,10 @@ msgstr "Λήξη παιχνιδιού"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Λήξη παιχνιδιού;"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Εισαγάγετε έγκυρο αριθμό"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Μετρικό"
 msgid "Monday"
 msgstr "Δευτέρα"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Πρέπει να είναι μεταξύ 0 και 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Νέο"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Δεν υπάρχουν διαθέσιμες ομάδες"
 msgid "No matches."
 msgstr "Καμία αντιστοιχία."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Δεν υπάρχουν ακόμη μηνύματα"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Επαναφορά όλων των ρυθμίσεων σε προεπιλεγμένες τιμές"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Παραίτηση"
 
@@ -925,9 +999,17 @@ msgstr "Αποσύνδεση..."
 msgid "Skip to Main"
 msgstr "Μετάβαση στο κύριο περιεχόμενο"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Παραλείψτε τη σειρά σας και περάστε στον αντίπαλό σας."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Ξεκινήστε ένα νέο παιχνίδι Go"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Έναρξη παιχνιδιού"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Μη εξουσιοδοτημένη πρόσβαση"
 msgid "United States"
 msgstr "Ηνωμένες Πολιτείες"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Άγνωστο"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Μη επαληθευμένο"
@@ -1096,6 +1182,22 @@ msgstr "Τετάρτη"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Λευκό"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Συλλήψεις λευκού:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Λευκή πέτρα στο {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Λευκή επικράτεια στο {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Εσείς"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

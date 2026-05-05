@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} también pasó. Confirmar terminará la partida y puntuará el tablero."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} ha ofrecido tablas"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} se ha rendido — ¡has ganado!"
@@ -24,6 +32,23 @@ msgstr "Gana {opponentName}"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Turno de {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "Tablero de Go {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "Tablero de Go {size}×{size}, tu turno. Usa las flechas para navegar e Intro o Espacio para colocar una piedra negra."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "Tablero de Go {size}×{size}, tu turno. Usa las flechas para navegar e Intro o Espacio para colocar una piedra blanca."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} jugó <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 horas"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Absoluta (fecha y hora)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Aceptar"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Tipo de cuenta"
 msgid "Account verified"
 msgstr "Cuenta verificada"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Partidas activas"
 
@@ -132,6 +161,10 @@ msgstr "Todos"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "¿Seguro que quieres cerrar sesión? Necesitarás volver a iniciar sesión para acceder a tu cuenta."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "¿Estás seguro de que quieres rendirte? {opponentName} ganará la partida."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Asc"
@@ -150,6 +183,18 @@ msgstr "Volver al inicio"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Negro"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Capturas de negras:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Piedra negra en {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Territorio negro en {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "¡Próximamente!"
 msgid "Compact"
 msgstr "Compacto"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Completado"
 
@@ -287,6 +332,10 @@ msgstr "Continuar"
 msgid "Copy"
 msgstr "Copiar"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Creando..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Oscuro"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Modo oscuro"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Rechazar"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Descargar"
 msgid "Draw"
 msgstr "Tablas"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Tablas ofrecidas — esperando a {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Intersección vacía {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Intersección vacía {colLabel}{rowLabel}, haz clic o pulsa Intro para colocar"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Terminar partida"
@@ -354,6 +419,10 @@ msgstr "Terminar partida"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "¿Terminar partida?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Introduce un número válido"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Métrico"
 msgid "Monday"
 msgstr "Lunes"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Debe estar entre 0 y 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Nuevo"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "No hay grupos disponibles"
 msgid "No matches."
 msgstr "Sin coincidencias."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Aún no hay mensajes"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Restablecer todos los ajustes a sus valores predeterminados"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Rendirse"
 
@@ -925,9 +999,17 @@ msgstr "Cerrando sesión..."
 msgid "Skip to Main"
 msgstr "Saltar al contenido principal"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Salta tu turno y pasa a tu oponente."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Iniciar una nueva partida de Go"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Iniciar partida"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Acceso no permitido"
 msgid "United States"
 msgstr "Estados Unidos"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Desconocido"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Sin verificar"
@@ -1096,6 +1182,22 @@ msgstr "Miércoles"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Blanco"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Capturas de blancas:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Piedra blanca en {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Territorio blanco en {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Tú"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} juga melewatkan giliran. Mengonfirmasi akan mengakhiri permainan dan menghitung skor papan."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} menawarkan remis"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} mengundurkan diri — Anda menang!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} menang"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Giliran {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "Papan Go {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "Papan Go {size}×{size}, giliran Anda. Gunakan tombol panah untuk menavigasi dan Enter atau Space untuk menempatkan batu hitam."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "Papan Go {size}×{size}, giliran Anda. Gunakan tombol panah untuk menavigasi dan Enter atau Space untuk menempatkan batu putih."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} memainkan <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 jam"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Absolut (tanggal dan waktu)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Terima"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Tipe akun"
 msgid "Account verified"
 msgstr "Akun terverifikasi"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Permainan Aktif"
 
@@ -132,6 +161,10 @@ msgstr "Semua"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Apakah Anda yakin ingin keluar? Anda perlu masuk kembali untuk mengakses akun Anda."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Apakah Anda yakin ingin menyerah? {opponentName} akan memenangkan permainan."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Naik"
@@ -150,6 +183,18 @@ msgstr "Kembali ke Beranda"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Hitam"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Tangkapan hitam:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Batu hitam di {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Wilayah hitam di {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Segera Hadir!"
 msgid "Compact"
 msgstr "Kompak"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Selesai"
 
@@ -287,6 +332,10 @@ msgstr "Lanjutkan"
 msgid "Copy"
 msgstr "Salin"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Membuat..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Gelap"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Mode gelap"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Tolak"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Unduh"
 msgid "Draw"
 msgstr "Seri"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Remis ditawarkan — menunggu {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Persimpangan kosong {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Persimpangan kosong {colLabel}{rowLabel}, klik atau tekan Enter untuk menempatkan"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Akhiri permainan"
@@ -354,6 +419,10 @@ msgstr "Akhiri permainan"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Akhiri permainan?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Masukkan angka yang valid"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Metrik"
 msgid "Monday"
 msgstr "Senin"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Harus antara 0 dan 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Baru"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Tidak ada grup yang tersedia"
 msgid "No matches."
 msgstr "Tidak ada kecocokan."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Belum ada pesan"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Reset semua pengaturan ke nilai default"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Menyerah"
 
@@ -925,9 +999,17 @@ msgstr "Keluar..."
 msgid "Skip to Main"
 msgstr "Lewati ke Utama"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Lewati giliran Anda dan oper ke lawan."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Mulai permainan Go baru"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Mulai permainan"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Akses Tidak Diizinkan"
 msgid "United States"
 msgstr "Amerika Serikat"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Tidak diketahui"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Belum diverifikasi"
@@ -1096,6 +1182,22 @@ msgstr "Rabu"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Putih"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Tangkapan putih:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Batu putih di {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Wilayah putih di {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Anda"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

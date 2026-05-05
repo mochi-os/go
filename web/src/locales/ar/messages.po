@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "مرر {opponentName} أيضًا. سينهي التأكيد اللعبة ويحسب نقاط اللوحة."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "عرض {opponentName} التعادل"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} استسلم — لقد فزت!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} يفوز"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "دور {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "لوحة Go بحجم {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "لوحة Go بحجم {size}×{size}، دورك. استخدم مفاتيح الأسهم للتنقل وEnter أو Space لوضع حجر أسود."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "لوحة Go بحجم {size}×{size}، دورك. استخدم مفاتيح الأسهم للتنقل وEnter أو Space لوضع حجر أبيض."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "لعب {subject} <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "24 ساعة"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "مطلق (تاريخ ووقت)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "قبول"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "نوع الحساب"
 msgid "Account verified"
 msgstr "تم التحقق من الحساب"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "الألعاب النشطة"
 
@@ -132,6 +161,10 @@ msgstr "الكل"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "هل أنت متأكد من تسجيل الخروج؟ ستحتاج إلى تسجيل الدخول مرة أخرى للوصول إلى حسابك."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "هل أنت متأكد أنك تريد الاستسلام؟ سيفوز {opponentName} باللعبة."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "تصاعدي"
@@ -150,6 +183,18 @@ msgstr "العودة إلى الصفحة الرئيسية"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "أسود"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "أسر الأسود:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "حجر أسود في {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "منطقة سوداء في {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "قريبًا!"
 msgid "Compact"
 msgstr "مضغوط"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "مكتمل"
 
@@ -287,6 +332,10 @@ msgstr "متابعة"
 msgid "Copy"
 msgstr "نسخ"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "جارٍ الإنشاء..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "داكن"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "الوضع الداكن"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "رفض"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "تنزيل"
 msgid "Draw"
 msgstr "تعادل"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "تم عرض التعادل — في انتظار {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "تقاطع فارغ {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "تقاطع فارغ {colLabel}{rowLabel}، انقر أو اضغط Enter للوضع"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "إنهاء اللعبة"
@@ -354,6 +419,10 @@ msgstr "إنهاء اللعبة"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "إنهاء اللعبة؟"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "أدخل رقمًا صالحًا"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "متري"
 msgid "Monday"
 msgstr "الاثنين"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "يجب أن يكون بين 0 و10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "جديد"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "لا توجد مجموعات متاحة"
 msgid "No matches."
 msgstr "لا توجد تطابقات."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "لا توجد رسائل بعد"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "إعادة تعيين كل الإعدادات إلى القيم الافتراضية"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "الاستسلام"
 
@@ -925,9 +999,17 @@ msgstr "جاري تسجيل الخروج..."
 msgid "Skip to Main"
 msgstr "التخطي إلى الرئيسي"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "تخط دورك ومرر إلى خصمك."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "بدء لعبة Go جديدة"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "بدء اللعبة"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "وصول غير مصرح"
 msgid "United States"
 msgstr "الولايات المتحدة"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "غير معروف"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "غير محقق"
@@ -1096,6 +1182,22 @@ msgstr "الأربعاء"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "أبيض"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "أسر الأبيض:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "حجر أبيض في {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "منطقة بيضاء في {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "أنت"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"

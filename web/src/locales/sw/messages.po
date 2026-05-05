@@ -13,6 +13,14 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/index.tsx:622
+msgid "{opponentName} also passed. Confirming will end the game and score the board."
+msgstr "{opponentName} pia ameruka zamu. Kuthibitisha kutamaliza mchezo na kuhesabu ubao."
+
+#: src/features/go/components/draw-offer-banner.tsx:25
+msgid "{opponentName} offered a draw"
+msgstr "{opponentName} ametoa sare"
+
 #: src/features/go/index.tsx:81
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} amejitoa — umeshinda!"
@@ -24,6 +32,23 @@ msgstr "{opponentName} ameshinda"
 #: src/features/go/index.tsx:85
 msgid "{opponentName}'s move"
 msgstr "Hamisho la {opponentName}"
+
+#: src/features/go/components/go-board.tsx:131
+msgid "{size}×{size} Go board"
+msgstr "Ubao wa Go {size}×{size}"
+
+#: src/features/go/components/go-board.tsx:129
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a black stone."
+msgstr "Ubao wa Go {size}×{size}, zamu yako. Tumia vitufe vya mshale kusogea na Enter au Space kuweka jiwe jeusi."
+
+#: src/features/go/components/go-board.tsx:130
+msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
+msgstr "Ubao wa Go {size}×{size}, zamu yako. Tumia vitufe vya mshale kusogea na Enter au Space kuweka jiwe jeupe."
+
+#. placeholder {0}: message.body
+#: src/features/go/components/chat-message-list.tsx:197
+msgid "{subject} played <0>{0}</0>"
+msgstr "{subject} alicheza <0>{0}</0>"
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -42,6 +67,10 @@ msgstr "Masaa 24"
 #: ../../../lib/web/src/lib/preference-utils.ts:61
 msgid "Absolute (date and time)"
 msgstr "Kamili (tarehe na muda)"
+
+#: src/features/go/components/draw-offer-banner.tsx:41
+msgid "Accept"
+msgstr "Kubali"
 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:12
 msgid "Access Forbidden"
@@ -67,7 +96,7 @@ msgstr "Aina ya akaunti"
 msgid "Account verified"
 msgstr "Akaunti imethibitishwa"
 
-#: src/components/layout/go-layout.tsx:108
+#: src/components/layout/go-layout.tsx:109
 msgid "Active Games"
 msgstr "Michezo Inayoendelea"
 
@@ -132,6 +161,10 @@ msgstr "Vyote"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Una uhakika unataka kuondoka? Utahitaji kuingia tena kufikia akaunti yako."
 
+#: src/features/go/index.tsx:599
+msgid "Are you sure you want to resign? {opponentName} will win the game."
+msgstr "Una uhakika unataka kujisalimisha? {opponentName} atashinda mchezo."
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:56
 msgid "Asc"
 msgstr "Pandisha"
@@ -150,6 +183,18 @@ msgstr "Rudi Mwanzo"
 #: src/features/go/index.tsx:423
 msgid "Black"
 msgstr "Nyeusi"
+
+#: src/features/go/index.tsx:430
+msgid "Black captures:"
+msgstr "Nyeusi imekamata:"
+
+#: src/features/go/components/go-board.tsx:275
+msgid "Black stone at {colLabel}{rowLabel}"
+msgstr "Jiwe jeusi katika {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:279
+msgid "Black territory at {colLabel}{rowLabel}"
+msgstr "Eneo jeusi katika {colLabel}{rowLabel}"
 
 #: src/features/go/components/new-game.tsx:163
 msgid "Board size"
@@ -262,7 +307,7 @@ msgstr "Inakuja Karibuni!"
 msgid "Compact"
 msgstr "Fupi"
 
-#: src/components/layout/go-layout.tsx:119
+#: src/components/layout/go-layout.tsx:120
 msgid "Completed"
 msgstr "Imekamilika"
 
@@ -287,6 +332,10 @@ msgstr "Endelea"
 msgid "Copy"
 msgstr "Nakili"
 
+#: src/features/go/components/new-game.tsx:231
+msgid "Creating..."
+msgstr "Inaunda..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:205
 #: ../../../lib/web/src/lib/preference-utils.ts:17
 msgid "Dark"
@@ -299,6 +348,10 @@ msgstr "Giza"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:120
 msgid "Dark mode"
 msgstr "Hali ya giza"
+
+#: src/features/go/components/draw-offer-banner.tsx:34
+msgid "Decline"
+msgstr "Kataa"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:297
 msgid "Default"
@@ -347,6 +400,18 @@ msgstr "Pakua"
 msgid "Draw"
 msgstr "Sare"
 
+#: src/features/go/index.tsx:505
+msgid "Draw offered — waiting for {opponentName}"
+msgstr "Sare imetolewa — inasubiri {opponentName}"
+
+#: src/features/go/components/go-board.tsx:284
+msgid "Empty intersection {colLabel}{rowLabel}"
+msgstr "Makutano tupu {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:283
+msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
+msgstr "Makutano tupu {colLabel}{rowLabel}, bofya au bonyeza Enter kuweka"
+
 #: src/features/go/index.tsx:632
 msgid "End game"
 msgstr "Maliza mchezo"
@@ -354,6 +419,10 @@ msgstr "Maliza mchezo"
 #: src/features/go/index.tsx:619
 msgid "End game?"
 msgstr "Maliza mchezo?"
+
+#: src/features/go/components/new-game.tsx:75
+msgid "Enter a valid number"
+msgstr "Weka nambari halali"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -583,11 +652,15 @@ msgstr "Metriki"
 msgid "Monday"
 msgstr "Jumatatu"
 
+#: src/features/go/components/new-game.tsx:76
+msgid "Must be between 0 and 10"
+msgstr "Lazima iwe kati ya 0 na 10"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Mpya"
 
-#: src/components/layout/go-layout.tsx:133
+#: src/components/layout/go-layout.tsx:134
 #: src/features/go/components/game-empty-state.tsx:22
 #: src/features/go/components/game-empty-state.tsx:38
 msgid "New game"
@@ -629,7 +702,7 @@ msgstr "Hakuna vikundi vinavyopatikana"
 msgid "No matches."
 msgstr "Hakuna kilichooana."
 
-#: src/features/go/components/chat-message-list.tsx:147
+#: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Hakuna ujumbe bado"
 
@@ -792,6 +865,7 @@ msgid "Reset all settings to default values"
 msgstr "Weka upya mipangilio yote kwa thamani chaguo-msingi"
 
 #: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:607
 msgid "Resign"
 msgstr "Jiuzulu"
 
@@ -925,9 +999,17 @@ msgstr "Inaondoka..."
 msgid "Skip to Main"
 msgstr "Ruka kwa Kuu"
 
+#: src/features/go/index.tsx:623
+msgid "Skip your turn and pass to your opponent."
+msgstr "Ruka zamu yako na pitisha kwa mpinzani wako."
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Anza mchezo mpya wa Go"
+
+#: src/features/go/components/new-game.tsx:231
+msgid "Start game"
+msgstr "Anza mchezo"
 
 #: ../../../lib/web/src/components/coming-soon.tsx:12
 msgid "Stay tuned though!"
@@ -1040,6 +1122,10 @@ msgstr "Ufikiaji Usioruhusiwa"
 msgid "United States"
 msgstr "Marekani"
 
+#: src/hooks/useGameWebsocket.ts:161
+msgid "Unknown"
+msgstr "Haijulikani"
+
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Haijathibitishwa"
@@ -1096,6 +1182,22 @@ msgstr "Jumatano"
 #: src/features/go/index.tsx:423
 msgid "White"
 msgstr "Nyeupe"
+
+#: src/features/go/index.tsx:435
+msgid "White captures:"
+msgstr "Nyeupe imekamata:"
+
+#: src/features/go/components/go-board.tsx:277
+msgid "White stone at {colLabel}{rowLabel}"
+msgstr "Jiwe jeupe katika {colLabel}{rowLabel}"
+
+#: src/features/go/components/go-board.tsx:281
+msgid "White territory at {colLabel}{rowLabel}"
+msgstr "Eneo jeupe katika {colLabel}{rowLabel}"
+
+#: src/features/go/components/chat-message-list.tsx:190
+msgid "You"
+msgstr "Wewe"
 
 #: src/features/go/index.tsx:82
 msgid "You resigned — {opponentName} wins"
