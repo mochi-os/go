@@ -248,7 +248,7 @@ msgstr "Birajte između smjera s lijeva na desno ili s desna na lijevo"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Birajte između sistemskih postavki, svijetlog ili tamnog načina"
 
-#: ../../../lib/web/src/components/language-picker.tsx:167
+#: ../../../lib/web/src/components/language-picker.tsx:174
 msgid "Choose language"
 msgstr "Odaberite jezik"
 
@@ -299,11 +299,16 @@ msgstr "Zatvori pretragu"
 msgid "Collapse sidebar"
 msgstr "Skupi bočnu traku"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:93
+msgid "Comfortable"
+msgstr "Udobno"
+
 #: ../../../lib/web/src/components/coming-soon.tsx:9
 msgid "Coming Soon!"
 msgstr "Uskoro!"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:302
+#: ../../../lib/web/src/lib/preference-utils.ts:92
 msgid "Compact"
 msgstr "Kompaktno"
 
@@ -331,6 +336,10 @@ msgstr "Nastavi"
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Kopiraj"
+
+#: ../../../lib/web/src/features/document/document-page.tsx:81
+msgid "Could not load this document. Please try again later."
+msgstr "Nije moguće učitati ovaj dokument. Molimo pokušajte ponovo kasnije."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -373,7 +382,7 @@ msgstr "Opadajuće"
 msgid "Details Panel"
 msgstr "Panel s detaljima"
 
-#: ../../../lib/web/src/components/language-picker.tsx:145
+#: ../../../lib/web/src/components/language-picker.tsx:152
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -404,6 +413,10 @@ msgstr "Remi"
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Ponuđen remi — čeka se {opponentName}"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:134
+msgid "Dyslexia-friendly"
+msgstr "Prilagođeno disleksiji"
+
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
 msgstr "Prazan presjek {colLabel}{rowLabel}"
@@ -427,6 +440,10 @@ msgstr "Unesite važeći broj"
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
 msgstr "Proširi bočnu traku"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:124
+msgid "Extra large"
+msgstr "Ekstra veliko"
 
 #: src/features/go/index.tsx:205
 msgid "Failed to accept draw"
@@ -496,6 +513,14 @@ msgstr "Petak"
 #: ../../../lib/web/src/components/travelling-picker.tsx:149
 msgid "From"
 msgstr "Od"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:91
+#: ../../../lib/web/src/lib/preference-utils.ts:101
+#: ../../../lib/web/src/lib/preference-utils.ts:112
+#: ../../../lib/web/src/lib/preference-utils.ts:120
+#: ../../../lib/web/src/lib/preference-utils.ts:131
+msgid "From theme"
+msgstr "Iz teme"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:307
 msgid "Full layout"
@@ -580,6 +605,11 @@ msgstr "Nevažeći verifikacioni kod"
 msgid "Komi"
 msgstr "Komi"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:105
+#: ../../../lib/web/src/lib/preference-utils.ts:123
+msgid "Large"
+msgstr "Veliko"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:273
 msgid "Layout"
 msgstr "Izgled"
@@ -602,6 +632,7 @@ msgid "Load more"
 msgstr "Učitaj više"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:32
+#: ../../../lib/web/src/features/document/document-page.tsx:87
 msgid "Loading…"
 msgstr "Učitavanje…"
 
@@ -631,6 +662,10 @@ msgstr "Odjavljivanje…"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:220
 msgid "Mark all as read"
 msgstr "Označi sve kao pročitano"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:104
+msgid "Medium"
+msgstr "Srednje"
 
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:152
 msgid "Menu"
@@ -694,10 +729,6 @@ msgstr "Još nema igara"
 msgid "No groups available"
 msgstr "Nema dostupnih grupa"
 
-#: ../../../lib/web/src/components/language-picker.tsx:177
-msgid "No matches."
-msgstr "Nema podudaranja."
-
 #: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Još nema poruka"
@@ -728,8 +759,14 @@ msgid "No users found"
 msgstr "Nisu pronađeni korisnici"
 
 #: ../../../lib/web/src/components/person-picker.tsx:349
+#: ../../../lib/web/src/lib/preference-utils.ts:102
+#: ../../../lib/web/src/lib/preference-utils.ts:113
 msgid "None"
 msgstr "Ništa"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:122
+msgid "Normal"
+msgstr "Normalno"
 
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:132
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:146
@@ -803,6 +840,11 @@ msgstr "Bodovi dodani na bijelin rezultat za kompenzaciju što crni kreće prvi"
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Prethodna slika"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:24
+#: ../../../lib/web/src/features/document/document-page.tsx:41
+msgid "Privacy"
+msgstr "Privatnost"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:134
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
@@ -909,10 +951,6 @@ msgstr "Pretraži korisnike"
 msgid "Search..."
 msgstr "Pretraži..."
 
-#: ../../../lib/web/src/components/language-picker.tsx:175
-msgid "Search…"
-msgstr "Pretraži…"
-
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:174
 #: ../../../lib/web/src/components/search-entity-page.tsx:149
 #: ../../../lib/web/src/features/access/access-dialog.tsx:199
@@ -963,6 +1001,15 @@ msgstr "Odaberi preferencu teme"
 msgid "Send message"
 msgstr "Pošalji poruku"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:133
+msgid "Serif"
+msgstr "Serifno"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:16
+#: ../../../lib/web/src/features/document/document-page.tsx:37
+msgid "Server rules"
+msgstr "Pravila servera"
+
 #: ../../../lib/web/src/lib/api-client.ts:224
 msgid "Session expired"
 msgstr "Sesija je istekla"
@@ -999,6 +1046,15 @@ msgstr "Preskoči na glavni dio"
 msgid "Skip your turn and pass to your opponent."
 msgstr "Preskoči svoj potez i predaj protivniku."
 
+#: ../../../lib/web/src/lib/preference-utils.ts:103
+#: ../../../lib/web/src/lib/preference-utils.ts:121
+msgid "Small"
+msgstr "Malo"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:94
+msgid "Spacious"
+msgstr "Prostrano"
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Započni novu Go partiju"
@@ -1021,6 +1077,7 @@ msgstr "Nedjelja"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:195
 #: ../../../lib/web/src/lib/preference-utils.ts:18
+#: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
 msgstr "Sistem"
 
@@ -1031,6 +1088,11 @@ msgstr "Tag"
 #: ../../../lib/web/src/components/layout/team-switcher.tsx:60
 msgid "Teams/Apps"
 msgstr "Timovi/Aplikacije"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:20
+#: ../../../lib/web/src/features/document/document-page.tsx:39
+msgid "Terms and conditions"
+msgstr "Uslovi i pravila"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"

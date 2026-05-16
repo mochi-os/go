@@ -248,7 +248,7 @@ msgstr "Soldan-sağa və ya sağdan-sola sayt istiqaməti arasında seçim edin"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Sistem üstünlüyü, açıq rejim və ya tünd rejim arasında seçim edin"
 
-#: ../../../lib/web/src/components/language-picker.tsx:167
+#: ../../../lib/web/src/components/language-picker.tsx:174
 msgid "Choose language"
 msgstr "Dil seçin"
 
@@ -299,11 +299,16 @@ msgstr "Axtarışı bağla"
 msgid "Collapse sidebar"
 msgstr "Yan paneli yığ"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:93
+msgid "Comfortable"
+msgstr "Rahat"
+
 #: ../../../lib/web/src/components/coming-soon.tsx:9
 msgid "Coming Soon!"
 msgstr "Tezliklə!"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:302
+#: ../../../lib/web/src/lib/preference-utils.ts:92
 msgid "Compact"
 msgstr "Kompakt"
 
@@ -331,6 +336,10 @@ msgstr "Davam et"
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Kopyala"
+
+#: ../../../lib/web/src/features/document/document-page.tsx:81
+msgid "Could not load this document. Please try again later."
+msgstr "Bu sənəd yüklənə bilmədi. Daha sonra yenidən cəhd edin."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -373,7 +382,7 @@ msgstr "Azalan"
 msgid "Details Panel"
 msgstr "Təfərrüatlar paneli"
 
-#: ../../../lib/web/src/components/language-picker.tsx:145
+#: ../../../lib/web/src/components/language-picker.tsx:152
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -404,6 +413,10 @@ msgstr "Çək"
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Heç-heçə təklif edildi — {opponentName} gözlənilir"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:134
+msgid "Dyslexia-friendly"
+msgstr "Disleksiya üçün uyğun"
+
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
 msgstr "Boş kəsişmə {colLabel}{rowLabel}"
@@ -427,6 +440,10 @@ msgstr "Etibarlı bir rəqəm daxil edin"
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
 msgstr "Yan paneli genişləndir"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:124
+msgid "Extra large"
+msgstr "Çox böyük"
 
 #: src/features/go/index.tsx:205
 msgid "Failed to accept draw"
@@ -496,6 +513,14 @@ msgstr "Cümə"
 #: ../../../lib/web/src/components/travelling-picker.tsx:149
 msgid "From"
 msgstr "Kimdən"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:91
+#: ../../../lib/web/src/lib/preference-utils.ts:101
+#: ../../../lib/web/src/lib/preference-utils.ts:112
+#: ../../../lib/web/src/lib/preference-utils.ts:120
+#: ../../../lib/web/src/lib/preference-utils.ts:131
+msgid "From theme"
+msgstr "Mövzudan"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:307
 msgid "Full layout"
@@ -580,6 +605,11 @@ msgstr "Etibarsız doğrulama kodu"
 msgid "Komi"
 msgstr "Komi"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:105
+#: ../../../lib/web/src/lib/preference-utils.ts:123
+msgid "Large"
+msgstr "Böyük"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:273
 msgid "Layout"
 msgstr "Tərtibat"
@@ -602,6 +632,7 @@ msgid "Load more"
 msgstr "Daha çox yüklə"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:32
+#: ../../../lib/web/src/features/document/document-page.tsx:87
 msgid "Loading…"
 msgstr "Yüklənir…"
 
@@ -631,6 +662,10 @@ msgstr "Çıxış edilir…"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:220
 msgid "Mark all as read"
 msgstr "Hamısını oxunmuş kimi işarələ"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:104
+msgid "Medium"
+msgstr "Orta"
 
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:152
 msgid "Menu"
@@ -694,10 +729,6 @@ msgstr "Hələ oyun yoxdur"
 msgid "No groups available"
 msgstr "Mövcud qrup yoxdur"
 
-#: ../../../lib/web/src/components/language-picker.tsx:177
-msgid "No matches."
-msgstr "Uyğunluq yoxdur."
-
 #: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Hələ mesaj yoxdur"
@@ -728,8 +759,14 @@ msgid "No users found"
 msgstr "İstifadəçi tapılmadı"
 
 #: ../../../lib/web/src/components/person-picker.tsx:349
+#: ../../../lib/web/src/lib/preference-utils.ts:102
+#: ../../../lib/web/src/lib/preference-utils.ts:113
 msgid "None"
 msgstr "Heç biri"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:122
+msgid "Normal"
+msgstr "Normal"
 
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:132
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:146
@@ -803,6 +840,11 @@ msgstr "Qaranın əvvəl getməsini kompensasiya etmək üçün Ağın xalına �
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Əvvəlki şəkil"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:24
+#: ../../../lib/web/src/features/document/document-page.tsx:41
+msgid "Privacy"
+msgstr "Məxfilik"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:134
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
@@ -909,10 +951,6 @@ msgstr "İstifadəçi axtar"
 msgid "Search..."
 msgstr "Axtar..."
 
-#: ../../../lib/web/src/components/language-picker.tsx:175
-msgid "Search…"
-msgstr "Axtar…"
-
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:174
 #: ../../../lib/web/src/components/search-entity-page.tsx:149
 #: ../../../lib/web/src/features/access/access-dialog.tsx:199
@@ -963,6 +1001,15 @@ msgstr "Mövzu seçimini seçin"
 msgid "Send message"
 msgstr "Mesaj göndər"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:133
+msgid "Serif"
+msgstr "Serif"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:16
+#: ../../../lib/web/src/features/document/document-page.tsx:37
+msgid "Server rules"
+msgstr "Server qaydaları"
+
 #: ../../../lib/web/src/lib/api-client.ts:224
 msgid "Session expired"
 msgstr "Sessiyanın vaxtı bitdi"
@@ -999,6 +1046,15 @@ msgstr "Əsasa keç"
 msgid "Skip your turn and pass to your opponent."
 msgstr "Növbənizi keçin və rəqibinizə ötürün."
 
+#: ../../../lib/web/src/lib/preference-utils.ts:103
+#: ../../../lib/web/src/lib/preference-utils.ts:121
+msgid "Small"
+msgstr "Kiçik"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:94
+msgid "Spacious"
+msgstr "Geniş"
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Yeni Go oyununa başla"
@@ -1021,6 +1077,7 @@ msgstr "Bazar"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:195
 #: ../../../lib/web/src/lib/preference-utils.ts:18
+#: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
 msgstr "Sistem"
 
@@ -1031,6 +1088,11 @@ msgstr "Etiket"
 #: ../../../lib/web/src/components/layout/team-switcher.tsx:60
 msgid "Teams/Apps"
 msgstr "Komandalar/Tətbiqlər"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:20
+#: ../../../lib/web/src/features/document/document-page.tsx:39
+msgid "Terms and conditions"
+msgstr "Şərtlər və qaydalar"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"

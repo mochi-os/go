@@ -248,7 +248,7 @@ msgstr "Chapdan oʻngga yoki oʻngdan chapga sayt yoʻnalishi orasidan tanlang"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Tizim sozlamasi, yorugʻ yoki qorongʻi rejim orasidan tanlang"
 
-#: ../../../lib/web/src/components/language-picker.tsx:167
+#: ../../../lib/web/src/components/language-picker.tsx:174
 msgid "Choose language"
 msgstr "Tilni tanlang"
 
@@ -299,11 +299,16 @@ msgstr "Qidiruvni yopish"
 msgid "Collapse sidebar"
 msgstr "Yon panelni yigʻish"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:93
+msgid "Comfortable"
+msgstr "Qulay"
+
 #: ../../../lib/web/src/components/coming-soon.tsx:9
 msgid "Coming Soon!"
 msgstr "Tez orada!"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:302
+#: ../../../lib/web/src/lib/preference-utils.ts:92
 msgid "Compact"
 msgstr "Ixcham"
 
@@ -331,6 +336,10 @@ msgstr "Davom etish"
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Nusxalash"
+
+#: ../../../lib/web/src/features/document/document-page.tsx:81
+msgid "Could not load this document. Please try again later."
+msgstr "Bu hujjatni yuklab boʻlmadi. Iltimos, keyinroq qayta urinib koʻring."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -373,7 +382,7 @@ msgstr "Pasayuvchi"
 msgid "Details Panel"
 msgstr "Tafsilotlar paneli"
 
-#: ../../../lib/web/src/components/language-picker.tsx:145
+#: ../../../lib/web/src/components/language-picker.tsx:152
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -404,6 +413,10 @@ msgstr "Chizish"
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Durang taklif qilindi — {opponentName} kutilmoqda"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:134
+msgid "Dyslexia-friendly"
+msgstr "Disleksiyaga moslashtirilgan"
+
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
 msgstr "Boʻsh kesishma {colLabel}{rowLabel}"
@@ -427,6 +440,10 @@ msgstr "Yaroqli raqam kiriting"
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
 msgstr "Yon panelni kengaytirish"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:124
+msgid "Extra large"
+msgstr "Juda katta"
 
 #: src/features/go/index.tsx:205
 msgid "Failed to accept draw"
@@ -496,6 +513,14 @@ msgstr "Juma"
 #: ../../../lib/web/src/components/travelling-picker.tsx:149
 msgid "From"
 msgstr "Kimdan"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:91
+#: ../../../lib/web/src/lib/preference-utils.ts:101
+#: ../../../lib/web/src/lib/preference-utils.ts:112
+#: ../../../lib/web/src/lib/preference-utils.ts:120
+#: ../../../lib/web/src/lib/preference-utils.ts:131
+msgid "From theme"
+msgstr "Mavzudan"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:307
 msgid "Full layout"
@@ -580,6 +605,11 @@ msgstr "Notoʻgʻri tasdiqlash kodi"
 msgid "Komi"
 msgstr "Komi"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:105
+#: ../../../lib/web/src/lib/preference-utils.ts:123
+msgid "Large"
+msgstr "Katta"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:273
 msgid "Layout"
 msgstr "Tartib"
@@ -602,6 +632,7 @@ msgid "Load more"
 msgstr "Koʻproq yuklash"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:32
+#: ../../../lib/web/src/features/document/document-page.tsx:87
 msgid "Loading…"
 msgstr "Yuklanmoqda…"
 
@@ -631,6 +662,10 @@ msgstr "Chiqilmoqda…"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:220
 msgid "Mark all as read"
 msgstr "Hammasini oʻqilgan deb belgilash"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:104
+msgid "Medium"
+msgstr "Oʻrta"
 
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:152
 msgid "Menu"
@@ -694,10 +729,6 @@ msgstr "Hozircha oʻyinlar yoʻq"
 msgid "No groups available"
 msgstr "Mavjud guruhlar yoʻq"
 
-#: ../../../lib/web/src/components/language-picker.tsx:177
-msgid "No matches."
-msgstr "Mosliklar yoʻq."
-
 #: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Hozircha xabarlar yoʻq"
@@ -728,8 +759,14 @@ msgid "No users found"
 msgstr "Foydalanuvchilar topilmadi"
 
 #: ../../../lib/web/src/components/person-picker.tsx:349
+#: ../../../lib/web/src/lib/preference-utils.ts:102
+#: ../../../lib/web/src/lib/preference-utils.ts:113
 msgid "None"
 msgstr "Hech qanday"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:122
+msgid "Normal"
+msgstr "Oddiy"
 
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:132
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:146
@@ -803,6 +840,11 @@ msgstr "Qora avval yurganini qoplash uchun Oqning hisobiga qoʻshilgan ochkolar"
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Oldingi rasm"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:24
+#: ../../../lib/web/src/features/document/document-page.tsx:41
+msgid "Privacy"
+msgstr "Maxfiylik"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:134
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
@@ -909,10 +951,6 @@ msgstr "Foydalanuvchilarni qidirish"
 msgid "Search..."
 msgstr "Qidirish..."
 
-#: ../../../lib/web/src/components/language-picker.tsx:175
-msgid "Search…"
-msgstr "Qidirish…"
-
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:174
 #: ../../../lib/web/src/components/search-entity-page.tsx:149
 #: ../../../lib/web/src/features/access/access-dialog.tsx:199
@@ -963,6 +1001,15 @@ msgstr "Mavzu sozlamasini tanlang"
 msgid "Send message"
 msgstr "Xabar yuborish"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:133
+msgid "Serif"
+msgstr "Serif"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:16
+#: ../../../lib/web/src/features/document/document-page.tsx:37
+msgid "Server rules"
+msgstr "Server qoidalari"
+
 #: ../../../lib/web/src/lib/api-client.ts:224
 msgid "Session expired"
 msgstr "Sessiya muddati tugadi"
@@ -999,6 +1046,15 @@ msgstr "Asosiyga oʻtish"
 msgid "Skip your turn and pass to your opponent."
 msgstr "Navbatingizni oʻtkazib yuboring va raqibingizga oʻtkazing."
 
+#: ../../../lib/web/src/lib/preference-utils.ts:103
+#: ../../../lib/web/src/lib/preference-utils.ts:121
+msgid "Small"
+msgstr "Kichik"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:94
+msgid "Spacious"
+msgstr "Keng"
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Yangi Go oʻyini boshlash"
@@ -1021,6 +1077,7 @@ msgstr "Yakshanba"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:195
 #: ../../../lib/web/src/lib/preference-utils.ts:18
+#: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
 msgstr "Tizim"
 
@@ -1031,6 +1088,11 @@ msgstr "Teg"
 #: ../../../lib/web/src/components/layout/team-switcher.tsx:60
 msgid "Teams/Apps"
 msgstr "Jamoalar/Ilovalar"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:20
+#: ../../../lib/web/src/features/document/document-page.tsx:39
+msgid "Terms and conditions"
+msgstr "Shartlar va qoidalar"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"

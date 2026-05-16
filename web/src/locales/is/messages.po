@@ -248,7 +248,7 @@ msgstr "Veldu milli stefnu vefsvæðis frá vinstri til hægri eða hægri til v
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Veldu milli kerfisstillingar, ljóss hams eða dökks hams"
 
-#: ../../../lib/web/src/components/language-picker.tsx:167
+#: ../../../lib/web/src/components/language-picker.tsx:174
 msgid "Choose language"
 msgstr "Veldu tungumál"
 
@@ -299,11 +299,16 @@ msgstr "Loka leit"
 msgid "Collapse sidebar"
 msgstr "Fella saman hliðarstiku"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:93
+msgid "Comfortable"
+msgstr "Þægilegt"
+
 #: ../../../lib/web/src/components/coming-soon.tsx:9
 msgid "Coming Soon!"
 msgstr "Væntanlegt!"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:302
+#: ../../../lib/web/src/lib/preference-utils.ts:92
 msgid "Compact"
 msgstr "Þétt"
 
@@ -331,6 +336,10 @@ msgstr "Halda áfram"
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Afrita"
+
+#: ../../../lib/web/src/features/document/document-page.tsx:81
+msgid "Could not load this document. Please try again later."
+msgstr "Ekki tókst að hlaða þessu skjali. Reyndu aftur síðar."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -373,7 +382,7 @@ msgstr "Lækkandi"
 msgid "Details Panel"
 msgstr "Smáatriðaspjald"
 
-#: ../../../lib/web/src/components/language-picker.tsx:145
+#: ../../../lib/web/src/components/language-picker.tsx:152
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -404,6 +413,10 @@ msgstr "Jafntefli"
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Boð um jafntefli — beðið eftir {opponentName}"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:134
+msgid "Dyslexia-friendly"
+msgstr "Lesblinduvænt"
+
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
 msgstr "Tómur skurðpunktur {colLabel}{rowLabel}"
@@ -427,6 +440,10 @@ msgstr "Sláðu inn gilda tölu"
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
 msgstr "Útvíkka hliðarstiku"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:124
+msgid "Extra large"
+msgstr "Mjög stórt"
 
 #: src/features/go/index.tsx:205
 msgid "Failed to accept draw"
@@ -496,6 +513,14 @@ msgstr "Föstudagur"
 #: ../../../lib/web/src/components/travelling-picker.tsx:149
 msgid "From"
 msgstr "Frá"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:91
+#: ../../../lib/web/src/lib/preference-utils.ts:101
+#: ../../../lib/web/src/lib/preference-utils.ts:112
+#: ../../../lib/web/src/lib/preference-utils.ts:120
+#: ../../../lib/web/src/lib/preference-utils.ts:131
+msgid "From theme"
+msgstr "Frá þema"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:307
 msgid "Full layout"
@@ -580,6 +605,11 @@ msgstr "Ógildur staðfestingarkóði"
 msgid "Komi"
 msgstr "Komi"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:105
+#: ../../../lib/web/src/lib/preference-utils.ts:123
+msgid "Large"
+msgstr "Stórt"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:273
 msgid "Layout"
 msgstr "Umgjörð"
@@ -602,6 +632,7 @@ msgid "Load more"
 msgstr "Hlaða meiru"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:32
+#: ../../../lib/web/src/features/document/document-page.tsx:87
 msgid "Loading…"
 msgstr "Hleð…"
 
@@ -631,6 +662,10 @@ msgstr "Útskrái…"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:220
 msgid "Mark all as read"
 msgstr "Merkja allt sem lesið"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:104
+msgid "Medium"
+msgstr "Miðlungs"
 
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:152
 msgid "Menu"
@@ -694,10 +729,6 @@ msgstr "Engir leikir ennþá"
 msgid "No groups available"
 msgstr "Engir hópar tiltækir"
 
-#: ../../../lib/web/src/components/language-picker.tsx:177
-msgid "No matches."
-msgstr "Engar samsvaranir."
-
 #: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Engin skilaboð ennþá"
@@ -728,8 +759,14 @@ msgid "No users found"
 msgstr "Engir notendur fundust"
 
 #: ../../../lib/web/src/components/person-picker.tsx:349
+#: ../../../lib/web/src/lib/preference-utils.ts:102
+#: ../../../lib/web/src/lib/preference-utils.ts:113
 msgid "None"
 msgstr "Ekkert"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:122
+msgid "Normal"
+msgstr "Venjulegt"
 
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:132
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:146
@@ -803,6 +840,11 @@ msgstr "Stig sem bætt er við stigafjölda Hvíts til að bæta upp fyrir að S
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Fyrri mynd"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:24
+#: ../../../lib/web/src/features/document/document-page.tsx:41
+msgid "Privacy"
+msgstr "Friðhelgi"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:134
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
@@ -909,10 +951,6 @@ msgstr "Leita að notendum"
 msgid "Search..."
 msgstr "Leita..."
 
-#: ../../../lib/web/src/components/language-picker.tsx:175
-msgid "Search…"
-msgstr "Leita…"
-
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:174
 #: ../../../lib/web/src/components/search-entity-page.tsx:149
 #: ../../../lib/web/src/features/access/access-dialog.tsx:199
@@ -963,6 +1001,15 @@ msgstr "Veldu þemastillingu"
 msgid "Send message"
 msgstr "Senda skilaboð"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:133
+msgid "Serif"
+msgstr "Þverstrik"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:16
+#: ../../../lib/web/src/features/document/document-page.tsx:37
+msgid "Server rules"
+msgstr "Reglur þjónsins"
+
 #: ../../../lib/web/src/lib/api-client.ts:224
 msgid "Session expired"
 msgstr "Seta rann út"
@@ -999,6 +1046,15 @@ msgstr "Fara í aðalefni"
 msgid "Skip your turn and pass to your opponent."
 msgstr "Slepptu þinni umferð og afhentu andstæðingnum."
 
+#: ../../../lib/web/src/lib/preference-utils.ts:103
+#: ../../../lib/web/src/lib/preference-utils.ts:121
+msgid "Small"
+msgstr "Lítið"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:94
+msgid "Spacious"
+msgstr "Rúmgott"
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Hefja nýjan Go-leik"
@@ -1021,6 +1077,7 @@ msgstr "Sunnudagur"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:195
 #: ../../../lib/web/src/lib/preference-utils.ts:18
+#: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
 msgstr "Kerfi"
 
@@ -1031,6 +1088,11 @@ msgstr "Merki"
 #: ../../../lib/web/src/components/layout/team-switcher.tsx:60
 msgid "Teams/Apps"
 msgstr "Teymi/Forrit"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:20
+#: ../../../lib/web/src/features/document/document-page.tsx:39
+msgid "Terms and conditions"
+msgstr "Skilmálar og skilyrði"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"

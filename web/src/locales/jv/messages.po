@@ -6,6 +6,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: jv\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #: src/features/go/index.tsx:622
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
@@ -242,7 +248,7 @@ msgstr "Pilih antarane arah situs kiwa-tengen utawa tengen-kiwa"
 msgid "Choose between system preference, light mode, or dark mode"
 msgstr "Pilih antarane preferensi sistem, mode terang, utawa mode peteng"
 
-#: ../../../lib/web/src/components/language-picker.tsx:167
+#: ../../../lib/web/src/components/language-picker.tsx:174
 msgid "Choose language"
 msgstr "Pilih basa"
 
@@ -293,11 +299,16 @@ msgstr "Tutup panggolékan"
 msgid "Collapse sidebar"
 msgstr "Tutup sidebar"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:93
+msgid "Comfortable"
+msgstr "Nyaman"
+
 #: ../../../lib/web/src/components/coming-soon.tsx:9
 msgid "Coming Soon!"
 msgstr "Bakal Teka!"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:302
+#: ../../../lib/web/src/lib/preference-utils.ts:92
 msgid "Compact"
 msgstr "Ringkes"
 
@@ -325,6 +336,10 @@ msgstr "Terus"
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Salin"
+
+#: ../../../lib/web/src/features/document/document-page.tsx:81
+msgid "Could not load this document. Please try again later."
+msgstr "Ora bisa muat dokumen iki. Coba manèh mengko."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -367,7 +382,7 @@ msgstr "Mudhun"
 msgid "Details Panel"
 msgstr "Panel Rincian"
 
-#: ../../../lib/web/src/components/language-picker.tsx:145
+#: ../../../lib/web/src/components/language-picker.tsx:152
 #: ../../../lib/web/src/components/timezone-select.tsx:43
 #: ../../../lib/web/src/components/timezone-select.tsx:80
 #: ../../../lib/web/src/lib/preference-utils.ts:25
@@ -398,6 +413,10 @@ msgstr "Imbang"
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Tawaran imbang — ngenténi {opponentName}"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:134
+msgid "Dyslexia-friendly"
+msgstr "Cocok kanggo disleksia"
+
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
 msgstr "Persimpangan kosong {colLabel}{rowLabel}"
@@ -421,6 +440,10 @@ msgstr "Lebokna nomer sing valid"
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
 msgstr "Bukak sidebar"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:124
+msgid "Extra large"
+msgstr "Gedhe banget"
 
 #: src/features/go/index.tsx:205
 msgid "Failed to accept draw"
@@ -490,6 +513,14 @@ msgstr "Jumat"
 #: ../../../lib/web/src/components/travelling-picker.tsx:149
 msgid "From"
 msgstr "Saka"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:91
+#: ../../../lib/web/src/lib/preference-utils.ts:101
+#: ../../../lib/web/src/lib/preference-utils.ts:112
+#: ../../../lib/web/src/lib/preference-utils.ts:120
+#: ../../../lib/web/src/lib/preference-utils.ts:131
+msgid "From theme"
+msgstr "Saka tema"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:307
 msgid "Full layout"
@@ -574,6 +605,11 @@ msgstr "Kode verifikasi ora valid"
 msgid "Komi"
 msgstr "Komi"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:105
+#: ../../../lib/web/src/lib/preference-utils.ts:123
+msgid "Large"
+msgstr "Gedhe"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:273
 msgid "Layout"
 msgstr "Tata letak"
@@ -596,6 +632,7 @@ msgid "Load more"
 msgstr "Muat luwih akèh"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:32
+#: ../../../lib/web/src/features/document/document-page.tsx:87
 msgid "Loading…"
 msgstr "Mbukak…"
 
@@ -625,6 +662,10 @@ msgstr "Lagi metu…"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:220
 msgid "Mark all as read"
 msgstr "Tandhani kabèh wis diwaca"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:104
+msgid "Medium"
+msgstr "Sedheng"
 
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:152
 msgid "Menu"
@@ -688,10 +729,6 @@ msgstr "Durung ana game"
 msgid "No groups available"
 msgstr "Ora ana grup kasedhiya"
 
-#: ../../../lib/web/src/components/language-picker.tsx:177
-msgid "No matches."
-msgstr "Ora ana cocog."
-
 #: src/features/go/components/chat-message-list.tsx:148
 msgid "No messages yet"
 msgstr "Durung ana pesen"
@@ -722,8 +759,14 @@ msgid "No users found"
 msgstr "Ora ana pangguna ditemokaké"
 
 #: ../../../lib/web/src/components/person-picker.tsx:349
+#: ../../../lib/web/src/lib/preference-utils.ts:102
+#: ../../../lib/web/src/lib/preference-utils.ts:113
 msgid "None"
 msgstr "Ora ana"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:122
+msgid "Normal"
+msgstr "Biasa"
 
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:132
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:146
@@ -797,6 +840,11 @@ msgstr "Poin ditambahaké menyang skor Putih kanggo ngimbangi Ireng sing main dh
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
 msgid "Previous image"
 msgstr "Gambar sadurungé"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:24
+#: ../../../lib/web/src/features/document/document-page.tsx:41
+msgid "Privacy"
+msgstr "Privasi"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:134
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
@@ -903,10 +951,6 @@ msgstr "Goleki pangguna"
 msgid "Search..."
 msgstr "Goleki..."
 
-#: ../../../lib/web/src/components/language-picker.tsx:175
-msgid "Search…"
-msgstr "Goleki…"
-
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:174
 #: ../../../lib/web/src/components/search-entity-page.tsx:149
 #: ../../../lib/web/src/features/access/access-dialog.tsx:199
@@ -957,6 +1001,15 @@ msgstr "Pilih preferensi tema"
 msgid "Send message"
 msgstr "Kirim pesen"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:133
+msgid "Serif"
+msgstr "Serif"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:16
+#: ../../../lib/web/src/features/document/document-page.tsx:37
+msgid "Server rules"
+msgstr "Aturan server"
+
 #: ../../../lib/web/src/lib/api-client.ts:224
 msgid "Session expired"
 msgstr "Sesi wis kadaluwarsa"
@@ -993,6 +1046,15 @@ msgstr "Liwati menyang Utama"
 msgid "Skip your turn and pass to your opponent."
 msgstr "Liwati giliranmu lan oper menyang lawan."
 
+#: ../../../lib/web/src/lib/preference-utils.ts:103
+#: ../../../lib/web/src/lib/preference-utils.ts:121
+msgid "Small"
+msgstr "Cilik"
+
+#: ../../../lib/web/src/lib/preference-utils.ts:94
+msgid "Spacious"
+msgstr "Jembar"
+
 #: src/features/go/components/new-game.tsx:123
 msgid "Start a new Go game"
 msgstr "Miwiti game Go anyar"
@@ -1015,6 +1077,7 @@ msgstr "Minggu"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:195
 #: ../../../lib/web/src/lib/preference-utils.ts:18
+#: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
 msgstr "Sistem"
 
@@ -1025,6 +1088,11 @@ msgstr "Tag"
 #: ../../../lib/web/src/components/layout/team-switcher.tsx:60
 msgid "Teams/Apps"
 msgstr "Tim/App"
+
+#: ../../../lib/web/src/components/server-documents-footer.tsx:20
+#: ../../../lib/web/src/features/document/document-page.tsx:39
+msgid "Terms and conditions"
+msgstr "Syarat lan ketentuan"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
