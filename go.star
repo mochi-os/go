@@ -3,6 +3,63 @@
 def notify(topic, object="", title="", body="", url="", event_id=""):
 	mochi.service.call("notifications", "send", topic, object, title, body, url, mochi.app.label("notifications.topic." + topic.replace("/", ".")), "", "", None, event_id)
 
+# Commit hook: fires the live-update websocket on every host that sees
+# a new messages row commit, whether locally (via action_send /
+# action_move / action_pass / event_message / event_move calling
+# mochi.db.commit.fire) or via replication apply (auto-fired by core
+# with op.UID set, per the row-uid wire field added in #36). Both
+# replicas of a paired account thus see the live update in any open
+# browser tab, instead of only the host that served the action.
+#
+# Scoped to messages.insert for the chat ('message') and board-move
+# ('move') message types. System-event messages (resign, draw_offer,
+# draw_accept, draw_decline) stay on direct mochi.websocket.write
+# because all four are messages.insert rows with type='system' that
+# can only be disambiguated by the body text (which is user-facing
+# and will be localised) or by the surrounding games-row state at
+# read time (race-prone for back-to-back events). The hook cannot
+# tell which of the four it is from the row alone.
+def go_commit_hook(table, kind, row_uid):
+	if table != "messages" or kind != "insert" or not row_uid:
+		return
+	message = mochi.db.row("select * from messages where id=?", row_uid)
+	if not message:
+		return
+	game = mochi.db.row("select key, fen, previous_fen, sgf, captures_black, captures_white, status, winner from games where id=?", message["game"])
+	if not game:
+		return
+	if message["type"] == "message":
+		mochi.websocket.write(game["key"], {
+			"type": "message",
+			"created": message["created"],
+			"member": message["member"],
+			"name": message["name"],
+			"body": message["body"],
+		})
+	elif message["type"] == "move":
+		mochi.websocket.write(game["key"], {
+			"type": "move",
+			"created": message["created"],
+			"member": message["member"],
+			"name": message["name"],
+			"body": message["body"],
+			"fen": game["fen"],
+			"previous_fen": game["previous_fen"] or "",
+			"sgf": game["sgf"],
+			"captures_black": game["captures_black"],
+			"captures_white": game["captures_white"],
+			"status": game["status"],
+			"winner": game["winner"] or "",
+			"draw_offer": "",
+		})
+
+# Lazy hook registration; the call to mochi.db.commit.hook needs a
+# user/app context that's only present during a real request, not at
+# module load. Re-registering on every call is a plain assignment on
+# the AppVersion struct - cheap and idempotent at the framework level.
+def go_ensure_commit_hook():
+	mochi.db.commit.hook("go_commit_hook")
+
 # Create database
 def database_create():
 	mochi.db.execute("""create table if not exists games (
@@ -247,11 +304,16 @@ def action_send(a):
 		a.error.label(400, "errors.message_cannot_be_empty")
 		return
 
+	go_ensure_commit_hook()
 	id = mochi.uid()
 	now = mochi.time.now()
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'message', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, body, now)
 
-	mochi.websocket.write(game["key"], {"type": "message", "created": now, "member": a.user.identity.id, "name": a.user.identity.name, "body": body})
+	# Live-update websocket: fired from go_commit_hook on every host
+	# that sees this messages row (local + paired replicas via the
+	# row-uid wire field from #36), so the user's tabs on every host
+	# see the message arrive without a refresh.
+	mochi.db.commit.fire("messages", "insert", id)
 
 	other = get_opponent(game, a.user.identity.id)
 
@@ -314,6 +376,7 @@ def action_move(a):
 	players = [game["identity"], game["opponent"]]
 	new_winner = winner if winner in players else None
 
+	go_ensure_commit_hook()
 	now = mochi.time.now()
 	mochi.db.execute(
 		"update games set fen=?, previous_fen=?, sgf=?, captures_black=?, captures_white=?, status=?, winner=?, draw_offer=null, updated=? where id=?",
@@ -324,14 +387,11 @@ def action_move(a):
 	id = mochi.uid()
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'move', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, move_label, now)
 
-	mochi.websocket.write(game["key"], {
-		"type": "move", "created": now, "member": a.user.identity.id, "name": a.user.identity.name,
-		"body": move_label,
-		"fen": fen, "previous_fen": previous_fen, "sgf": sgf,
-		"captures_black": int(captures_black), "captures_white": int(captures_white),
-		"status": new_status, "winner": new_winner or "",
-		"draw_offer": ""
-	})
+	# Live-update websocket: fired from go_commit_hook on every host
+	# that sees this messages row commit (local + paired replicas via
+	# the row-uid wire field from #36). The hook reads the games row
+	# to fill fen/sgf/captures/status/winner.
+	mochi.db.commit.fire("messages", "insert", id)
 
 	other = get_opponent(game, a.user.identity.id)
 
@@ -394,6 +454,7 @@ def action_pass(a):
 	players = [game["identity"], game["opponent"]]
 	new_winner = winner if winner in players else None
 
+	go_ensure_commit_hook()
 	now = mochi.time.now()
 	mochi.db.execute(
 		"update games set fen=?, previous_fen=?, sgf=?, status=?, winner=?, draw_offer=null, updated=? where id=?",
@@ -414,19 +475,14 @@ def action_pass(a):
 
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'move', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, move_label, now)
 
-	ws_data = {
-		"type": "move", "created": now, "member": a.user.identity.id, "name": a.user.identity.name,
-		"body": move_label, "pass": True,
-		"fen": fen, "sgf": sgf,
-		"captures_black": game["captures_black"], "captures_white": game["captures_white"],
-		"status": new_status, "winner": new_winner or "",
-		"draw_offer": ""
-	}
-	if score_black:
-		ws_data["score_black"] = float(score_black)
-	if score_white:
-		ws_data["score_white"] = float(score_white)
-	mochi.websocket.write(game["key"], ws_data)
+	# Live-update websocket: fired from go_commit_hook on every host
+	# that sees this messages row commit (local + paired replicas via
+	# the row-uid wire field from #36). The hook reads the games row
+	# to fill fen/sgf/captures/status/winner. The pass/score_black/
+	# score_white extras aren't stored in any row, so they're dropped;
+	# the frontend doesn't consume them (it computes the local board
+	# score from the FEN and treats body="Pass" as the pass marker).
+	mochi.db.commit.fire("messages", "insert", id)
 
 	other = get_opponent(game, a.user.identity.id)
 
@@ -472,6 +528,12 @@ def action_resign(a):
 	msg = a.user.identity.name + " resigned"
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
 
+	# Stays on direct write: type='system' messages all share the same
+	# row shape across four semantic events (resign/draw_offer/
+	# draw_accept/draw_decline), and the commit hook can't tell them
+	# apart from the row alone — see comment on go_commit_hook above.
+	# Paired-host clients miss the live update for system events until
+	# the row replicates and the user refreshes.
 	mochi.websocket.write(game["key"], {"type": "system", "event": "resign", "created": now, "body": msg, "winner": winner})
 
 	mochi.message.send(
@@ -507,6 +569,7 @@ def action_draw_offer(a):
 	msg = a.user.identity.name + " offered a draw"
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
 
+	# Stays on direct write: same reason as action_resign above.
 	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_offer", "created": now, "body": msg, "draw_offer": a.user.identity.id})
 
 	mochi.message.send(
@@ -542,6 +605,7 @@ def action_draw_accept(a):
 	msg = "Draw agreed"
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
 
+	# Stays on direct write: same reason as action_resign above.
 	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_accept", "created": now, "body": msg})
 
 	mochi.message.send(
@@ -577,6 +641,7 @@ def action_draw_decline(a):
 	msg = a.user.identity.name + " declined the draw"
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
 
+	# Stays on direct write: same reason as action_resign above.
 	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_decline", "created": now, "body": msg, "draw_offer": ""})
 
 	mochi.message.send(
@@ -724,6 +789,7 @@ def event_move(e):
 	else:
 		captures_white = game["captures_white"]
 
+	go_ensure_commit_hook()
 	now = mochi.time.now()
 	mochi.db.execute("update games set fen=?, previous_fen=?, sgf=?, captures_black=?, captures_white=?, status=?, winner=?, draw_offer=null, updated=? where id=?",
 		fen, previous_fen, sgf, captures_black, captures_white, status, winner, now, game["id"])
@@ -740,25 +806,13 @@ def event_move(e):
 
 	mochi.db.execute("insert or ignore into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'move', ? )", id, game["id"], sender, name, body, created)
 
-	ws_data = {
-		"type": "move", "created": created, "member": sender, "name": name,
-		"body": body,
-		"fen": fen, "previous_fen": previous_fen or "", "sgf": sgf,
-		"captures_black": captures_black, "captures_white": captures_white,
-		"status": status, "winner": winner or "",
-		"draw_offer": ""
-	}
-	is_pass = e.content("pass")
-	if is_pass:
-		ws_data["pass"] = True
-	score_black = e.content("score_black")
-	score_white = e.content("score_white")
-	if score_black:
-		ws_data["score_black"] = float(score_black)
-	if score_white:
-		ws_data["score_white"] = float(score_white)
-
-	mochi.websocket.write(game["key"], ws_data)
+	# Live-update websocket: fired from go_commit_hook on every host
+	# that sees this messages row commit (local + paired replicas via
+	# the row-uid wire field from #36). The hook reads the games row
+	# to fill fen/sgf/captures/status/winner. The pass/score_black/
+	# score_white extras from the inbound event aren't stored in any
+	# row, so they're dropped; the frontend doesn't consume them.
+	mochi.db.commit.fire("messages", "insert", id)
 	notify("activity", "", mochi.app.label("notifications.title.move"), mochi.app.label("notifications.body.played_move", name=name, move=body), "/go/" + game["id"], event_id="move:" + str(id))
 
 # Received a chat message event
@@ -787,9 +841,13 @@ def event_message(e):
 
 	name = e.content("name") or "Opponent"
 
+	go_ensure_commit_hook()
 	mochi.db.execute("insert or ignore into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'message', ? )", id, game["id"], sender, name, body, created)
 
-	mochi.websocket.write(game["key"], {"type": "message", "created": created, "member": sender, "name": name, "body": body})
+	# Live-update websocket: fired from go_commit_hook on every host
+	# that sees this messages row commit (local + paired replicas via
+	# the row-uid wire field from #36).
+	mochi.db.commit.fire("messages", "insert", id)
 	notify("message", "", mochi.app.label("notifications.title.message"), name + ": " + body, "/go/" + game["id"], event_id="message:" + str(id))
 
 # Received a resign event
@@ -816,6 +874,10 @@ def event_resign(e):
 	id = mochi.uid()
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], sender, "", body, now)
 
+	# Stays on direct write: type='system' messages share their row
+	# shape across resign/draw_offer/draw_accept/draw_decline and the
+	# commit hook can't disambiguate from the row — see comment on
+	# go_commit_hook above.
 	mochi.websocket.write(game["key"], {"type": "system", "event": "resign", "created": now, "body": body, "winner": winner or ""})
 	notify("activity", "", mochi.app.label("notifications.title.game"), body, "/go/" + game["id"], event_id="resign:" + game["id"])
 
@@ -850,6 +912,7 @@ def event_draw_offer(e):
 	id = mochi.uid()
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], sender, "", body, now)
 
+	# Stays on direct write: same reason as event_resign above.
 	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_offer", "created": now, "body": body, "draw_offer": sender})
 	notify("activity", "", mochi.app.label("notifications.title.go"), body, "/go/" + game["id"], event_id="draw_offer:" + game["id"] + ":" + str(incoming))
 
@@ -871,6 +934,7 @@ def event_draw_accept(e):
 	id = mochi.uid()
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], sender, "", body, now)
 
+	# Stays on direct write: same reason as event_resign above.
 	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_accept", "created": now, "body": body})
 	notify("activity", "", mochi.app.label("notifications.title.go"), body, "/go/" + game["id"], event_id="draw_accept:" + game["id"])
 
@@ -892,6 +956,7 @@ def event_draw_decline(e):
 	id = mochi.uid()
 	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], sender, "", body, now)
 
+	# Stays on direct write: same reason as event_resign above.
 	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_decline", "created": now, "body": body, "draw_offer": ""})
 	notify("activity", "", mochi.app.label("notifications.title.go"), body, "/go/" + game["id"], event_id="draw_decline:" + game["id"] + ":" + sender)
 
