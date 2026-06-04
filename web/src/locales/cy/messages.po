@@ -13,6 +13,18 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/components/chat-message-list.tsx:185
+msgid "{name} declined the draw"
+msgstr "Gwrthododd {name} y cyfartal"
+
+#: src/features/go/components/chat-message-list.tsx:181
+msgid "{name} offered a draw"
+msgstr "Cynigiodd {name} gyfartal"
+
+#: src/features/go/components/chat-message-list.tsx:179
+msgid "{name} resigned"
+msgstr "Ildiodd {name}"
+
 #: src/features/go/index.tsx:622
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "Mae {opponentName} hefyd wedi pasio. Bydd cadarnhau yn dod â'r gêm i ben ac yn sgorio'r bwrdd."
@@ -45,10 +57,9 @@ msgstr "Bwrdd Go {size}×{size}, eich tro chi. Defnyddiwch fysellau saeth i lywi
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "Bwrdd Go {size}×{size}, eich tro chi. Defnyddiwch fysellau saeth i lywio ac Enter neu Space i osod carreg wen."
 
-#. placeholder {0}: message.body
-#: src/features/go/components/chat-message-list.tsx:197
-msgid "{subject} played <0>{0}</0>"
-msgstr "Chwaraeodd {subject} <0>{0}</0>"
+#: src/features/go/components/chat-message-list.tsx:212
+msgid "{subject} played <0>{moveLabel}</0>"
+msgstr ""
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -173,6 +184,10 @@ msgstr "Ydych chi'n siŵr eich bod am ymddiswyddo? Bydd {opponentName} yn ennill
 msgid "Asc"
 msgstr "Esg"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "Cod dilyswr"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "Yn ôl"
@@ -209,6 +224,7 @@ msgid "Boost interest"
 msgstr "Hybu diddordeb"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -219,11 +235,11 @@ msgstr "Hybu diddordeb"
 msgid "Cancel"
 msgstr "Canslo"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:131
+#: ../../../lib/web/src/components/notification-category-button.tsx:135
 msgid "Category for this notification"
 msgstr "Categori ar gyfer yr hysbysiad hwn"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:115
+#: ../../../lib/web/src/components/notification-category-button.tsx:119
 msgid "Change notification category"
 msgstr "Newid categori hysbysiad"
 
@@ -337,6 +353,10 @@ msgstr "Gwybodaeth a manylion cyd-destunol."
 msgid "Continue"
 msgstr "Parhau"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "Parhau gyda {label}"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Copïo"
@@ -344,6 +364,18 @@ msgstr "Copïo"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "Methwyd llwytho'r ddogfen hon. Rhowch gynnig arni eto yn nes ymlaen."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "Methwyd anfon y cod. Rhowch gynnig arall arni."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "Methwyd dechrau ailddilysu. Rhowch gynnig arall arni."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "Methwyd dilysu gyda'r cyfrif hwnnw. Rhowch gynnig arall arni."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -378,6 +410,10 @@ msgstr "Cyfrif AI diofyn"
 msgid "Delete game"
 msgstr "Dileu gêm"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:90
+msgid "Delete your account on the old server"
+msgstr "Dilëwch eich cyfrif ar yr hen weinydd"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:60
 msgid "Desc"
 msgstr "Disg"
@@ -401,6 +437,10 @@ msgstr "Adnabod o'r porwr gwe"
 msgid "Direction"
 msgstr "Cyfeiriad"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:73
+msgid "Dismiss"
+msgstr "Diystyru"
+
 #: ../../../lib/web/src/components/ui/sidebar.tsx:235
 msgid "Displays the mobile sidebar."
 msgstr "Yn dangos y bar ochr symudol."
@@ -413,6 +453,10 @@ msgstr "Lawrlwytho"
 msgid "Draw"
 msgstr "Cyfartal"
 
+#: src/features/go/components/chat-message-list.tsx:183
+msgid "Draw agreed"
+msgstr "Cytunwyd ar gyfartal"
+
 #: src/features/go/index.tsx:505
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Cynigiwyd cyfartal — yn aros am {opponentName}"
@@ -420,6 +464,10 @@ msgstr "Cynigiwyd cyfartal — yn aros am {opponentName}"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "Cyfeillgar i ddyslecsia"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "Cod e-bost"
 
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
@@ -440,6 +488,14 @@ msgstr "Gorffen gêm?"
 #: src/features/go/components/new-game.tsx:75
 msgid "Enter a valid number"
 msgstr "Rhowch rif dilys"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "Rhowch y cod o'ch e-bost"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "Rhowch god eich ap dilysu"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -502,9 +558,13 @@ msgstr "Methwyd anfon"
 msgid "Failed to send verification code"
 msgstr "Methwyd anfon y cod dilysu"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:104
+#: ../../../lib/web/src/components/notification-category-button.tsx:108
 msgid "Failed to update category"
 msgstr "Methwyd diweddaru'r categori"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:79
+msgid "Finish moving your account"
+msgstr "Gorffennwch symud eich cyfrif"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:244
 msgid "Floating"
@@ -758,7 +818,7 @@ msgstr "Heb ddod o hyd i ganlyniadau."
 msgid "No time zone found."
 msgstr "Heb ddod o hyd i barth amser."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:139
 msgid "No topic record yet — try again after the next notification."
 msgstr "Dim cofnod pwnc eto — rhowch gynnig arall arni ar ôl yr hysbysiad nesaf."
 
@@ -824,6 +884,7 @@ msgstr "Arall"
 msgid "Owner"
 msgstr "Perchennog"
 
+#: src/features/go/components/chat-message-list.tsx:205
 #: src/features/go/index.tsx:468
 #: src/features/go/index.tsx:632
 msgid "Pass"
@@ -836,6 +897,18 @@ msgstr "Pasio tro?"
 #: src/features/go/index.tsx:629
 msgid "Passing..."
 msgstr "Yn pasio..."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr "Pasallwedd"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "Methodd dilysu'r allwedd mynediad. Rhowch gynnig arall arni."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "Pasallweddi"
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -858,6 +931,14 @@ msgstr "Preifatrwydd"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
 msgid "Profile"
 msgstr "Proffil"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:98
+msgid "Re-link your accounts on this server"
+msgstr "Ail-gysylltwch eich cyfrifon ar y gweinydd hwn"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "Ailgofrestrwch eich allweddi mynediad ar y gweinydd hwn"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -901,6 +982,10 @@ msgstr "Tynnu mynediad?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "Tynnu diddordeb"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "Ailanfon yr e-bost"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -1010,6 +1095,10 @@ msgstr "Dewis dewis thema"
 msgid "Send again"
 msgstr "Anfon eto"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "Anfon e-bost"
+
 #: src/features/go/components/chat-input.tsx:40
 msgid "Send message"
 msgstr "Anfon neges"
@@ -1107,6 +1196,10 @@ msgstr "Timau/Apiau"
 msgid "Terms and conditions"
 msgstr "Telerau ac amodau"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "Mae'r cod hwnnw'n anghywir neu wedi dod i ben."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
 msgstr "Thema"
@@ -1184,7 +1277,7 @@ msgstr "Teipiwch i chwilio..."
 msgid "Unable to redirect to login. Please try again."
 msgstr "Methu ailgyfeirio i fewngofnodi. Rhowch gynnig arall arni."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:147
 msgid "Unassigned"
 msgstr "Heb ei neilltuo"
 
@@ -1196,13 +1289,17 @@ msgstr "Mynediad Heb Awdurdod"
 msgid "United States"
 msgstr "Yr Unol Daleithiau"
 
-#: src/hooks/useGameWebsocket.ts:161
+#: src/hooks/useGameWebsocket.ts:163
 msgid "Unknown"
 msgstr "Anhysbys"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Heb ei ddilysu"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "Defnyddiwch eich allwedd mynediad"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
@@ -1220,6 +1317,7 @@ msgstr "Cod dilysu wedi'i anfon"
 msgid "Verification failed"
 msgstr "Dilysiad wedi methu"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -1228,6 +1326,10 @@ msgstr "Dilysu"
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:58
 msgid "Verify email address"
 msgstr "Dilysu cyfeiriad e-bost"
+
+#: ../../../lib/web/src/components/attachment-gallery.tsx:63
+msgid "Video thumbnail"
+msgstr "Bawd fideo"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:30
 msgid "View"
@@ -1270,7 +1372,7 @@ msgstr "Carreg gwyn yn {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Tiriogaeth gwyn yn {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:190
+#: src/features/go/components/chat-message-list.tsx:202
 msgid "You"
 msgstr "Chi"
 
@@ -1281,6 +1383,10 @@ msgstr "Ymddiswyddoch"
 #: src/features/go/index.tsx:69
 msgid "You win!"
 msgstr "Rydych yn ennill!"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:82
+msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
+msgstr "Symudwyd eich cyfrif yma o {source}. Hyd nes y byddwch yn ei ddileu yno, gall negeseuon a hysbysiadau gyrraedd y ddau weinydd, gall peth o'ch cynnwys barhau i gael ei weini o'r hen weinydd, a gall dilynwyr gymryd ychydig funudau i ddod o hyd i chi yma."
 
 #: src/features/go/index.tsx:85
 msgid "Your move"

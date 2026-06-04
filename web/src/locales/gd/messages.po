@@ -13,6 +13,18 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/components/chat-message-list.tsx:185
+msgid "{name} declined the draw"
+msgstr "Dhiùlt {name} an geall-cothrom"
+
+#: src/features/go/components/chat-message-list.tsx:181
+msgid "{name} offered a draw"
+msgstr "Thairg {name} geall-cothrom"
+
+#: src/features/go/components/chat-message-list.tsx:179
+msgid "{name} resigned"
+msgstr "Ghèill {name}"
+
 #: src/features/go/index.tsx:622
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "Leig {opponentName} seachad cuideachd. Dearbhaidh seo crìoch a' gheama agus sgòraidh e am bòrd."
@@ -45,10 +57,9 @@ msgstr "Bòrd Go {size}×{size}, do chuairt. Cleachd na h-iuchraichean saighde a
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "Bòrd Go {size}×{size}, do chuairt. Cleachd na h-iuchraichean saighde airson seòladh agus Enter no Space airson clach gheal a chur sìos."
 
-#. placeholder {0}: message.body
-#: src/features/go/components/chat-message-list.tsx:197
-msgid "{subject} played <0>{0}</0>"
-msgstr "Chluich {subject} <0>{0}</0>"
+#: src/features/go/components/chat-message-list.tsx:212
+msgid "{subject} played <0>{moveLabel}</0>"
+msgstr ""
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -173,6 +184,10 @@ msgstr "A bheil thu cinnteach gu bheil thu airson dreuchd a leigeil dhìot? Buan
 msgid "Asc"
 msgstr "Dìreadh"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "Còd dearbhachaidh"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "Air ais"
@@ -209,6 +224,7 @@ msgid "Boost interest"
 msgstr "Brosnaich ùidh"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -219,11 +235,11 @@ msgstr "Brosnaich ùidh"
 msgid "Cancel"
 msgstr "Sguir dheth"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:131
+#: ../../../lib/web/src/components/notification-category-button.tsx:135
 msgid "Category for this notification"
 msgstr "Roinn airson a' bhratha seo"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:115
+#: ../../../lib/web/src/components/notification-category-button.tsx:119
 msgid "Change notification category"
 msgstr "Atharraich roinn nam brathan"
 
@@ -337,6 +353,10 @@ msgstr "Fiosrachadh agus mion-fhiosrachadh co-theacsail."
 msgid "Continue"
 msgstr "Lean air adhart"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "Lean air adhart le {label}"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Dèan lethbhreac"
@@ -344,6 +364,18 @@ msgstr "Dèan lethbhreac"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "Cha b' urrainn an sgrìobhainn seo a luchdachadh. Feuch ris a-rithist nas anmoiche."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "Cha b' urrainn an còd a chur. Feuch ris a-rithist."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "Cha b' urrainn ath-dhearbhadh a thòiseachadh. Feuch ris a-rithist."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "Cha b' urrainn dearbhadh leis a' chunntas sin. Feuch ris a-rithist."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -378,6 +410,10 @@ msgstr "Cunntas AI bunaiteach"
 msgid "Delete game"
 msgstr "Sguab às geama"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:90
+msgid "Delete your account on the old server"
+msgstr "Sguab às do chunntas air an t-seann fhrithealaiche"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:60
 msgid "Desc"
 msgstr "Teàrnadh"
@@ -401,6 +437,10 @@ msgstr "Lorg bhon bhrabhsair-lìn"
 msgid "Direction"
 msgstr "Comhair"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:73
+msgid "Dismiss"
+msgstr "Leig seachad"
+
 #: ../../../lib/web/src/components/ui/sidebar.tsx:235
 msgid "Displays the mobile sidebar."
 msgstr "Seallaidh am bàr-thaobh fòn-làimhe."
@@ -413,6 +453,10 @@ msgstr "Luchdaich a-nuas"
 msgid "Draw"
 msgstr "Tarraing"
 
+#: src/features/go/components/chat-message-list.tsx:183
+msgid "Draw agreed"
+msgstr "Geall-cothrom aontaichte"
+
 #: src/features/go/index.tsx:505
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Tarraing air a thabhann — a' feitheamh ri {opponentName}"
@@ -420,6 +464,10 @@ msgstr "Tarraing air a thabhann — a' feitheamh ri {opponentName}"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "Freagarrach do dhisléicse"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "Còd puist-d"
 
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
@@ -440,6 +488,14 @@ msgstr "Crìochnaich an geama?"
 #: src/features/go/components/new-game.tsx:75
 msgid "Enter a valid number"
 msgstr "Cuir a-steach àireamh dhligheach"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "Cuir a-steach an còd on phost-d agad"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "Cuir a-steach còd na h-aplacaid dearbhaidh agad"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -502,9 +558,13 @@ msgstr "Cha b' urrainn cur"
 msgid "Failed to send verification code"
 msgstr "Cha b' urrainn còd dearbhaidh a chur"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:104
+#: ../../../lib/web/src/components/notification-category-button.tsx:108
 msgid "Failed to update category"
 msgstr "Cha b' urrainn an roinn-seòrsa ùrachadh"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:79
+msgid "Finish moving your account"
+msgstr "Crìochnaich gluasad do chunntas"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:244
 msgid "Floating"
@@ -758,7 +818,7 @@ msgstr "Cha deach toraidhean a lorg."
 msgid "No time zone found."
 msgstr "Cha deach roinn-tìde a lorg."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:139
 msgid "No topic record yet — try again after the next notification."
 msgstr "Chan eil clàradh cuspair ann fhathast — feuch a-rithist às dèidh an ath bhrath."
 
@@ -824,6 +884,7 @@ msgstr "Eile"
 msgid "Owner"
 msgstr "Sealbhadair"
 
+#: src/features/go/components/chat-message-list.tsx:205
 #: src/features/go/index.tsx:468
 #: src/features/go/index.tsx:632
 msgid "Pass"
@@ -836,6 +897,18 @@ msgstr "Cuir an cuairt seachad?"
 #: src/features/go/index.tsx:629
 msgid "Passing..."
 msgstr "A' cur seachad..."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr "Pasgair"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "Dh'fhàillig dearbhadh na h-iuchrach-inntrigidh. Feuch ris a-rithist."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "Pasgairean"
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -858,6 +931,14 @@ msgstr "Prìobhaideachd"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
 msgid "Profile"
 msgstr "Pròifil"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:98
+msgid "Re-link your accounts on this server"
+msgstr "Ath-cheangail do chunntasan air an fhrithealaiche seo"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "Ath-chlàraich na h-iuchraichean inntrigidh agad air an fhrithealaiche seo"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -901,6 +982,10 @@ msgstr "Thoir an cothrom air falbh?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "Thoir an ùidh air falbh"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "Cuir am post-d a-rithist"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -1010,6 +1095,10 @@ msgstr "Tagh roghainn an ùrlair"
 msgid "Send again"
 msgstr "Cuir a-rithist"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "Cuir post-d"
+
 #: src/features/go/components/chat-input.tsx:40
 msgid "Send message"
 msgstr "Cuir teachdaireachd"
@@ -1107,6 +1196,10 @@ msgstr "Sgiobaidhean/Aplacaidean"
 msgid "Terms and conditions"
 msgstr "Teirmichean is cùmhnantan"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "Tha an còd sin ceàrr no air a dhol à bann."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
 msgstr "Ùrlar"
@@ -1184,7 +1277,7 @@ msgstr "Sgrìobh airson lorg..."
 msgid "Unable to redirect to login. Please try again."
 msgstr "Cha b' urrainnear ath-stiùireadh dhan log-a-steach. Feuch a-rithist."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:147
 msgid "Unassigned"
 msgstr "Gun shònrachadh"
 
@@ -1196,13 +1289,17 @@ msgstr "Inntrigeadh gun chead"
 msgid "United States"
 msgstr "Stàitean Aonaichte"
 
-#: src/hooks/useGameWebsocket.ts:161
+#: src/hooks/useGameWebsocket.ts:163
 msgid "Unknown"
 msgstr "Neo-aithnichte"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Gun dearbhadh"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "Cleachd an iuchair-inntrigidh agad"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
@@ -1220,6 +1317,7 @@ msgstr "Còd dearbhaidh air a chur"
 msgid "Verification failed"
 msgstr "Dh'fhàillig an dearbhadh"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -1228,6 +1326,10 @@ msgstr "Dearbh"
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:58
 msgid "Verify email address"
 msgstr "Dearbh seòladh puist-d"
+
+#: ../../../lib/web/src/components/attachment-gallery.tsx:63
+msgid "Video thumbnail"
+msgstr "Dealbhag video"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:30
 msgid "View"
@@ -1270,7 +1372,7 @@ msgstr "Clach gheal aig {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Tìr Geal aig {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:190
+#: src/features/go/components/chat-message-list.tsx:202
 msgid "You"
 msgstr "Thusa"
 
@@ -1281,6 +1383,10 @@ msgstr "Leig thu seachad — bhuannaich {opponentName}"
 #: src/features/go/index.tsx:69
 msgid "You win!"
 msgstr "Bhuannaich thu!"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:82
+msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
+msgstr "Chaidh do chunntas a ghluasad an seo à {source}. Gus an sguab thu às e an sin, faodaidh teachdaireachdan agus brathan ruighinn air an dà fhrithealaiche, bidh cuid den susbaint agad ga frithealadh bhon t-seann fhrithealaiche, agus faodaidh luchd-leantainn beagan mhionaidean a ghabhail gus do lorg an seo."
 
 #: src/features/go/index.tsx:85
 msgid "Your move"

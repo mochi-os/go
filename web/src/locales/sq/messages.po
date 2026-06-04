@@ -13,6 +13,18 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/components/chat-message-list.tsx:185
+msgid "{name} declined the draw"
+msgstr "{name} refuzoi barazimin"
+
+#: src/features/go/components/chat-message-list.tsx:181
+msgid "{name} offered a draw"
+msgstr "{name} ofroi barazim"
+
+#: src/features/go/components/chat-message-list.tsx:179
+msgid "{name} resigned"
+msgstr "{name} dorëzoi"
+
 #: src/features/go/index.tsx:622
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} gjithashtu kapërceu. Konfirmimi do të mbarojë lojën dhe do të vlerësojë tabelën."
@@ -45,10 +57,9 @@ msgstr "Tabela Go {size}×{size}, radha jote. Përdor tastet me shigjeta për t�
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "Tabela Go {size}×{size}, radha jote. Përdor tastet me shigjeta për të lëvizur dhe Enter ose Space për të vendosur një gur të bardhë."
 
-#. placeholder {0}: message.body
-#: src/features/go/components/chat-message-list.tsx:197
-msgid "{subject} played <0>{0}</0>"
-msgstr "{subject} luajti <0>{0}</0>"
+#: src/features/go/components/chat-message-list.tsx:212
+msgid "{subject} played <0>{moveLabel}</0>"
+msgstr ""
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -173,6 +184,10 @@ msgstr "Je i sigurt që do të dorëzohesh? {opponentName} do të fitojë lojën
 msgid "Asc"
 msgstr "Rritës"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "Kodi i autentikuesit"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "Mbrapa"
@@ -209,6 +224,7 @@ msgid "Boost interest"
 msgstr "Rrit interesin"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -219,11 +235,11 @@ msgstr "Rrit interesin"
 msgid "Cancel"
 msgstr "Anulo"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:131
+#: ../../../lib/web/src/components/notification-category-button.tsx:135
 msgid "Category for this notification"
 msgstr "Kategoria për këtë njoftim"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:115
+#: ../../../lib/web/src/components/notification-category-button.tsx:119
 msgid "Change notification category"
 msgstr "Ndrysho kategorinë e njoftimit"
 
@@ -337,6 +353,10 @@ msgstr "Informacion kontekstual dhe detaje."
 msgid "Continue"
 msgstr "Vazhdo"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "Vazhdo me {label}"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Kopjo"
@@ -344,6 +364,18 @@ msgstr "Kopjo"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "Nuk mund të ngarkohej ky dokument. Provo më vonë."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "Kodi nuk mund të dërgohej. Ju lutemi provoni përsëri."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "Rivërtetimi nuk mund të niste. Ju lutemi provoni përsëri."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "Nuk u verifikua dot me atë llogari. Ju lutemi provoni përsëri."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -378,6 +410,10 @@ msgstr "Llogaria e parazgjedhur AI"
 msgid "Delete game"
 msgstr "Fshi lojën"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:90
+msgid "Delete your account on the old server"
+msgstr "Fshini llogarinë tuaj në serverin e vjetër"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:60
 msgid "Desc"
 msgstr "Zbritës"
@@ -401,6 +437,10 @@ msgstr "Zbulo nga shfletuesi i web-it"
 msgid "Direction"
 msgstr "Drejtimi"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:73
+msgid "Dismiss"
+msgstr "Hidhe"
+
 #: ../../../lib/web/src/components/ui/sidebar.tsx:235
 msgid "Displays the mobile sidebar."
 msgstr "Shfaq anën mobile."
@@ -413,6 +453,10 @@ msgstr "Shkarko"
 msgid "Draw"
 msgstr "Barazim"
 
+#: src/features/go/components/chat-message-list.tsx:183
+msgid "Draw agreed"
+msgstr "Barazimi u pranua"
+
 #: src/features/go/index.tsx:505
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "U ofrua barazim — duke pritur për {opponentName}"
@@ -420,6 +464,10 @@ msgstr "U ofrua barazim — duke pritur për {opponentName}"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "I përshtatshëm për disleksi"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "Kodi me email"
 
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
@@ -440,6 +488,14 @@ msgstr "Të përfundojë loja?"
 #: src/features/go/components/new-game.tsx:75
 msgid "Enter a valid number"
 msgstr "Shkruani një numër të vlefshëm"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "Vendosni kodin nga email-i juaj"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "Vendosni kodin e aplikacionit të vërtetimit"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -502,9 +558,13 @@ msgstr "Dërgimi dështoi"
 msgid "Failed to send verification code"
 msgstr "Dërgimi i kodit të verifikimit dështoi"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:104
+#: ../../../lib/web/src/components/notification-category-button.tsx:108
 msgid "Failed to update category"
 msgstr "Përditësimi i kategorisë dështoi"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:79
+msgid "Finish moving your account"
+msgstr "Përfundoni lëvizjen e llogarisë suaj"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:244
 msgid "Floating"
@@ -758,7 +818,7 @@ msgstr "S'u gjet asnjë rezultat."
 msgid "No time zone found."
 msgstr "S'u gjet asnjë zonë kohore."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:139
 msgid "No topic record yet — try again after the next notification."
 msgstr "Ende asnjë regjistrim teme — provoni përsëri pas njoftimit tjetër."
 
@@ -824,6 +884,7 @@ msgstr "Tjetër"
 msgid "Owner"
 msgstr "Pronari"
 
+#: src/features/go/components/chat-message-list.tsx:205
 #: src/features/go/index.tsx:468
 #: src/features/go/index.tsx:632
 msgid "Pass"
@@ -836,6 +897,18 @@ msgstr "Të kaloj radhën?"
 #: src/features/go/index.tsx:629
 msgid "Passing..."
 msgstr "Duke kaluar..."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr "Kyç"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "Verifikimi i çelësit të hyrjes dështoi. Ju lutemi provoni përsëri."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "Kyçet"
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -858,6 +931,14 @@ msgstr "Privatësia"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
 msgid "Profile"
 msgstr "Profili"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:98
+msgid "Re-link your accounts on this server"
+msgstr "Rilinkoni llogaritë tuaja në këtë server"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "Riregjistroni çelësat tuaj të hyrjes në këtë server"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -901,6 +982,10 @@ msgstr "Të hiqet qasja?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "Hiq interesin"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "Ridërgo email-in"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -1010,6 +1095,10 @@ msgstr "Zgjidh preferencën e temës"
 msgid "Send again"
 msgstr "Dërgo përsëri"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "Dërgo email"
+
 #: src/features/go/components/chat-input.tsx:40
 msgid "Send message"
 msgstr "Dërgo mesazhin"
@@ -1107,6 +1196,10 @@ msgstr "Ekipet/Aplikacionet"
 msgid "Terms and conditions"
 msgstr "Kushtet dhe rregullat"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "Ai kod është i pasaktë ose ka skaduar."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
 msgstr "Tema"
@@ -1184,7 +1277,7 @@ msgstr "Shkruaj për të kërkuar..."
 msgid "Unable to redirect to login. Please try again."
 msgstr "Nuk mund të ridrejtohet te hyrja. Ju lutemi provoni përsëri."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:147
 msgid "Unassigned"
 msgstr "I pacaktuar"
 
@@ -1196,13 +1289,17 @@ msgstr "Akses i paautorizuar"
 msgid "United States"
 msgstr "Shtetet e Bashkuara"
 
-#: src/hooks/useGameWebsocket.ts:161
+#: src/hooks/useGameWebsocket.ts:163
 msgid "Unknown"
 msgstr "I panjohur"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "I paverifikuar"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "Përdorni çelësin tuaj të hyrjes"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
@@ -1220,6 +1317,7 @@ msgstr "Kodi i verifikimit u dërgua"
 msgid "Verification failed"
 msgstr "Verifikimi dështoi"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -1228,6 +1326,10 @@ msgstr "Verifiko"
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:58
 msgid "Verify email address"
 msgstr "Verifiko adresën e email-it"
+
+#: ../../../lib/web/src/components/attachment-gallery.tsx:63
+msgid "Video thumbnail"
+msgstr "Miniatura e videos"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:30
 msgid "View"
@@ -1270,7 +1372,7 @@ msgstr "Guri i bardhë te {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Territori i bardhë te {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:190
+#: src/features/go/components/chat-message-list.tsx:202
 msgid "You"
 msgstr "Ti"
 
@@ -1281,6 +1383,10 @@ msgstr "U dorëzove — {opponentName} fiton"
 #: src/features/go/index.tsx:69
 msgid "You win!"
 msgstr "Fitove!"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:82
+msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
+msgstr "Llogaria juaj u zhvendos këtu nga {source}. Derisa ta fshini atje, mesazhet dhe njoftimet mund të arrijnë në të dy serverët, një pjesë e përmbajtjes suaj vazhdon të shërbejë nga serveri i vjetër dhe ndjekësit mund të kenë nevojë për disa minuta që t'ju gjejnë këtu."
 
 #: src/features/go/index.tsx:85
 msgid "Your move"

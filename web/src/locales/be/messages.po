@@ -13,6 +13,18 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/components/chat-message-list.tsx:185
+msgid "{name} declined the draw"
+msgstr "{name} адхіліў нічыю"
+
+#: src/features/go/components/chat-message-list.tsx:181
+msgid "{name} offered a draw"
+msgstr "{name} прапанаваў нічыю"
+
+#: src/features/go/components/chat-message-list.tsx:179
+msgid "{name} resigned"
+msgstr "{name} здаўся"
+
 #: src/features/go/index.tsx:622
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} таксама прапусціў. Пацверджанне завершыць гульню і падлічыць ачкі."
@@ -45,10 +57,9 @@ msgstr "Дошка для Го {size}×{size}, ваш ход. Выкарысто
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "Дошка для Го {size}×{size}, ваш ход. Выкарыстоўвайце клавішы са стрэлкамі для навігацыі і Enter або Space, каб паставіць белы камень."
 
-#. placeholder {0}: message.body
-#: src/features/go/components/chat-message-list.tsx:197
-msgid "{subject} played <0>{0}</0>"
-msgstr "{subject} згуляў <0>{0}</0>"
+#: src/features/go/components/chat-message-list.tsx:212
+msgid "{subject} played <0>{moveLabel}</0>"
+msgstr ""
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -173,6 +184,10 @@ msgstr "Вы ўпэўнены, што хочаце здацца? {opponentName} 
 msgid "Asc"
 msgstr "Узрастанне"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "Код аўтэнтыфікатара"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "Назад"
@@ -209,6 +224,7 @@ msgid "Boost interest"
 msgstr "Узмацніць цікавасць"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -219,11 +235,11 @@ msgstr "Узмацніць цікавасць"
 msgid "Cancel"
 msgstr "Адмена"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:131
+#: ../../../lib/web/src/components/notification-category-button.tsx:135
 msgid "Category for this notification"
 msgstr "Катэгорыя для гэтага апавяшчэння"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:115
+#: ../../../lib/web/src/components/notification-category-button.tsx:119
 msgid "Change notification category"
 msgstr "Змяніць катэгорыю апавяшчэння"
 
@@ -337,6 +353,10 @@ msgstr "Кантэкстная інфармацыя і дэталі."
 msgid "Continue"
 msgstr "Працягнуць"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "Працягнуць з {label}"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "Капіраваць"
@@ -344,6 +364,18 @@ msgstr "Капіраваць"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "Не атрымалася загрузіць гэты дакумент. Калі ласка, паспрабуйце пазней."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "Не ўдалося адправіць код. Калі ласка, паспрабуйце яшчэ раз."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "Не ўдалося пачаць паўторную аўтэнтыфікацыю. Калі ласка, паспрабуйце яшчэ раз."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "Не ўдалося пацвердзіць з гэтым уліковым запісам. Калі ласка, паспрабуйце яшчэ раз."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -378,6 +410,10 @@ msgstr "Уліковы запіс AI па змаўчанні"
 msgid "Delete game"
 msgstr "Выдаліць гульню"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:90
+msgid "Delete your account on the old server"
+msgstr "Выдаліце свой акаўнт на старым серверы"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:60
 msgid "Desc"
 msgstr "Спаданне"
@@ -401,6 +437,10 @@ msgstr "Вызначыць з вэб-браўзера"
 msgid "Direction"
 msgstr "Напрамак"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:73
+msgid "Dismiss"
+msgstr "Адхіліць"
+
 #: ../../../lib/web/src/components/ui/sidebar.tsx:235
 msgid "Displays the mobile sidebar."
 msgstr "Адлюстроўвае мабільную бакавую панэль."
@@ -413,6 +453,10 @@ msgstr "Спампаваць"
 msgid "Draw"
 msgstr "Маляваць"
 
+#: src/features/go/components/chat-message-list.tsx:183
+msgid "Draw agreed"
+msgstr "Нічыя пагоджана"
+
 #: src/features/go/index.tsx:505
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Прапанавана нічыя — чаканне {opponentName}"
@@ -420,6 +464,10 @@ msgstr "Прапанавана нічыя — чаканне {opponentName}"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "Сябар дыслексіі"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "Код па эл. пошце"
 
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
@@ -440,6 +488,14 @@ msgstr "Скончыць гульню?"
 #: src/features/go/components/new-game.tsx:75
 msgid "Enter a valid number"
 msgstr "Увядзіце сапраўдны нумар"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "Увядзіце код з вашай электроннай пошты"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "Увядзіце код з праграмы-аўтэнтыфікатара"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -502,9 +558,13 @@ msgstr "Не ўдалося адправіць"
 msgid "Failed to send verification code"
 msgstr "Не ўдалося адправіць код пацвярджэння"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:104
+#: ../../../lib/web/src/components/notification-category-button.tsx:108
 msgid "Failed to update category"
 msgstr "Не ўдалося абнавіць катэгорыю"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:79
+msgid "Finish moving your account"
+msgstr "Завяршыце перанос акаўнта"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:244
 msgid "Floating"
@@ -758,7 +818,7 @@ msgstr "Вынікі не знойдзены."
 msgid "No time zone found."
 msgstr "Часавы пояс не знойдзены."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:139
 msgid "No topic record yet — try again after the next notification."
 msgstr "Запісу тэмы яшчэ няма — паспрабуйце пасля наступнага апавяшчэння."
 
@@ -824,6 +884,7 @@ msgstr "Іншае"
 msgid "Owner"
 msgstr "Уладальнік"
 
+#: src/features/go/components/chat-message-list.tsx:205
 #: src/features/go/index.tsx:468
 #: src/features/go/index.tsx:632
 msgid "Pass"
@@ -836,6 +897,18 @@ msgstr "Прапусціць ход?"
 #: src/features/go/index.tsx:629
 msgid "Passing..."
 msgstr "Прапускаем..."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr "Ключ доступу"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "Не ўдалося праверыць ключ доступу. Калі ласка, паспрабуйце яшчэ раз."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "Ключы доступу"
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -858,6 +931,14 @@ msgstr "Канфідэнцыяльнасць"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
 msgid "Profile"
 msgstr "Профіль"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:98
+msgid "Re-link your accounts on this server"
+msgstr "Паўторна прывяжыце свае акаўнты на гэтым серверы"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "Зарэгіструйце ключы доступу на гэтым серверы зноў"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -901,6 +982,10 @@ msgstr "Выдаліць доступ?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "Выдаліць цікавасць"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "Адправіць ліст паўторна"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -1010,6 +1095,10 @@ msgstr "Выбраць перавагу тэмы"
 msgid "Send again"
 msgstr "Адправіць яшчэ раз"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "Адправіць эл. пошту"
+
 #: src/features/go/components/chat-input.tsx:40
 msgid "Send message"
 msgstr "Адправіць паведамленне"
@@ -1107,6 +1196,10 @@ msgstr "Каманды/Праграмы"
 msgid "Terms and conditions"
 msgstr "Умовы і палажэнні"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "Гэты код няправільны або састарэў."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
 msgstr "Тэма"
@@ -1184,7 +1277,7 @@ msgstr "Увядзіце для пошуку..."
 msgid "Unable to redirect to login. Please try again."
 msgstr "Не ўдалося перанакіраваць на ўваход. Калі ласка, паспрабуйце зноў."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:147
 msgid "Unassigned"
 msgstr "Не прызначана"
 
@@ -1196,13 +1289,17 @@ msgstr "Несанкцыянаваны доступ"
 msgid "United States"
 msgstr "Злучаныя Штаты"
 
-#: src/hooks/useGameWebsocket.ts:161
+#: src/hooks/useGameWebsocket.ts:163
 msgid "Unknown"
 msgstr "Невядома"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "Не пацверджана"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "Скарыстайцеся ключом доступу"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
@@ -1220,6 +1317,7 @@ msgstr "Код праверкі адпраўлены"
 msgid "Verification failed"
 msgstr "Праверка не атрымалася"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -1228,6 +1326,10 @@ msgstr "Праверыць"
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:58
 msgid "Verify email address"
 msgstr "Пацвердзіць email-адрас"
+
+#: ../../../lib/web/src/components/attachment-gallery.tsx:63
+msgid "Video thumbnail"
+msgstr "Мініяцюра відэа"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:30
 msgid "View"
@@ -1270,7 +1372,7 @@ msgstr "Белы камень на {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Тэрыторыя белых на {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:190
+#: src/features/go/components/chat-message-list.tsx:202
 msgid "You"
 msgstr "Вы"
 
@@ -1281,6 +1383,10 @@ msgstr "Вы здаліся — {opponentName} перамагае"
 #: src/features/go/index.tsx:69
 msgid "You win!"
 msgstr "Вы перамаглі!"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:82
+msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
+msgstr "Ваш акаўнт быў перанесены сюды з {source}. Пакуль вы не выдаліце яго там, паведамленні і апавяшчэнні могуць паступаць на абодва серверы, частка вашага кантэнту па-ранейшаму будзе аддавацца са старога сервера, а падпісчыкам можа спатрэбіцца некалькі хвілін, каб знайсці вас тут."
 
 #: src/features/go/index.tsx:85
 msgid "Your move"

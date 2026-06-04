@@ -13,6 +13,18 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/components/chat-message-list.tsx:185
+msgid "{name} declined the draw"
+msgstr "{name} דחה את התיקו"
+
+#: src/features/go/components/chat-message-list.tsx:181
+msgid "{name} offered a draw"
+msgstr "{name} הציע תיקו"
+
+#: src/features/go/components/chat-message-list.tsx:179
+msgid "{name} resigned"
+msgstr "{name} פרש"
+
 #: src/features/go/index.tsx:622
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} גם ויתר על תורו. אישור יסיים את המשחק וינקד את הלוח."
@@ -45,10 +57,9 @@ msgstr "לוח Go בגודל {size}×{size}, תורך. השתמש במקשי ה�
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "לוח Go בגודל {size}×{size}, תורך. השתמש במקשי החיצים לניווט ובמקש Enter או רווח להציב אבן לבנה."
 
-#. placeholder {0}: message.body
-#: src/features/go/components/chat-message-list.tsx:197
-msgid "{subject} played <0>{0}</0>"
-msgstr "{subject} שיחק <0>{0}</0>"
+#: src/features/go/components/chat-message-list.tsx:212
+msgid "{subject} played <0>{moveLabel}</0>"
+msgstr ""
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -173,6 +184,10 @@ msgstr "האם אתה בטוח שברצונך לפרוש? {opponentName} ינצ�
 msgid "Asc"
 msgstr "עולה"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "קוד אימות"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "חזור"
@@ -209,6 +224,7 @@ msgid "Boost interest"
 msgstr "הגבר עניין"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -219,11 +235,11 @@ msgstr "הגבר עניין"
 msgid "Cancel"
 msgstr "ביטול"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:131
+#: ../../../lib/web/src/components/notification-category-button.tsx:135
 msgid "Category for this notification"
 msgstr "קטגוריה עבור התראה זו"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:115
+#: ../../../lib/web/src/components/notification-category-button.tsx:119
 msgid "Change notification category"
 msgstr "שנה קטגוריית התראה"
 
@@ -337,6 +353,10 @@ msgstr "מידע קונטקסטואלי ופרטים."
 msgid "Continue"
 msgstr "המשך"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "המשך עם {label}"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "העתק"
@@ -344,6 +364,18 @@ msgstr "העתק"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "לא ניתן היה לטעון מסמך זה. אנא נסה שוב מאוחר יותר."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "לא ניתן היה לשלוח את הקוד. נסה שוב."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "לא ניתן היה להתחיל את האימות מחדש. נסה שוב."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "לא ניתן היה לאמת עם החשבון הזה. נסה שוב."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -378,6 +410,10 @@ msgstr "חשבון AI ברירת מחדל"
 msgid "Delete game"
 msgstr "מחק משחק"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:90
+msgid "Delete your account on the old server"
+msgstr "מחק את חשבונך בשרת הישן"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:60
 msgid "Desc"
 msgstr "יורד"
@@ -401,6 +437,10 @@ msgstr "זיהוי מהדפדפן"
 msgid "Direction"
 msgstr "כיוון"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:73
+msgid "Dismiss"
+msgstr "סגור"
+
 #: ../../../lib/web/src/components/ui/sidebar.tsx:235
 msgid "Displays the mobile sidebar."
 msgstr "מציג את סרגל הצד למובייל."
@@ -413,6 +453,10 @@ msgstr "הורדה"
 msgid "Draw"
 msgstr "תיקו"
 
+#: src/features/go/components/chat-message-list.tsx:183
+msgid "Draw agreed"
+msgstr "הוסכם על תיקו"
+
 #: src/features/go/index.tsx:505
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "הוצעה תיקו — ממתין ל-{opponentName}"
@@ -420,6 +464,10 @@ msgstr "הוצעה תיקו — ממתין ל-{opponentName}"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "ידידותי לדיסלקציה"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "קוד אימייל"
 
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
@@ -440,6 +488,14 @@ msgstr "לסיים את המשחק?"
 #: src/features/go/components/new-game.tsx:75
 msgid "Enter a valid number"
 msgstr "הזן מספר תקין"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "הזן את הקוד מהאימייל שלך"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "הזן את הקוד מאפליקציית האימות"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -502,9 +558,13 @@ msgstr "השליחה נכשלה"
 msgid "Failed to send verification code"
 msgstr "שליחת קוד האימות נכשלה"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:104
+#: ../../../lib/web/src/components/notification-category-button.tsx:108
 msgid "Failed to update category"
 msgstr "עדכון הקטגוריה נכשל"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:79
+msgid "Finish moving your account"
+msgstr "סיים את העברת החשבון"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:244
 msgid "Floating"
@@ -758,7 +818,7 @@ msgstr "לא נמצאו תוצאות."
 msgid "No time zone found."
 msgstr "לא נמצא אזור זמן."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:139
 msgid "No topic record yet — try again after the next notification."
 msgstr "עדיין אין רשומת נושא — נסה שוב לאחר ההתראה הבאה."
 
@@ -824,6 +884,7 @@ msgstr "אחר"
 msgid "Owner"
 msgstr "בעלים"
 
+#: src/features/go/components/chat-message-list.tsx:205
 #: src/features/go/index.tsx:468
 #: src/features/go/index.tsx:632
 msgid "Pass"
@@ -836,6 +897,18 @@ msgstr "לדלג על התור?"
 #: src/features/go/index.tsx:629
 msgid "Passing..."
 msgstr "מדלג..."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr "מפתח גישה"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "אימות מפתח הגישה נכשל. נסה שוב."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "מפתחות גישה"
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -858,6 +931,14 @@ msgstr "פרטיות"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
 msgid "Profile"
 msgstr "פרופיל"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:98
+msgid "Re-link your accounts on this server"
+msgstr "קשר מחדש את חשבונותיך בשרת זה"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "רשמו מחדש את מפתחות הגישה שלכם בשרת הזה"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -901,6 +982,10 @@ msgstr "להסיר גישה?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "הסר עניין"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "שלח את האימייל שוב"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -1010,6 +1095,10 @@ msgstr "בחר העדפת ערכת נושא"
 msgid "Send again"
 msgstr "שלח שוב"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "שלח אימייל"
+
 #: src/features/go/components/chat-input.tsx:40
 msgid "Send message"
 msgstr "שלח הודעה"
@@ -1107,6 +1196,10 @@ msgstr "צוותים/אפליקציות"
 msgid "Terms and conditions"
 msgstr "תנאים והגבלות"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "הקוד שגוי או שתוקפו פג."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
 msgstr "ערכת נושא"
@@ -1184,7 +1277,7 @@ msgstr "הקלד לחיפוש..."
 msgid "Unable to redirect to login. Please try again."
 msgstr "לא ניתן להפנות להתחברות. נסה שוב."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:147
 msgid "Unassigned"
 msgstr "לא משויך"
 
@@ -1196,13 +1289,17 @@ msgstr "גישה לא מורשית"
 msgid "United States"
 msgstr "ארצות הברית"
 
-#: src/hooks/useGameWebsocket.ts:161
+#: src/hooks/useGameWebsocket.ts:163
 msgid "Unknown"
 msgstr "לא ידוע"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "לא מאומת"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "השתמש במפתח הגישה שלך"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
@@ -1220,6 +1317,7 @@ msgstr "קוד האימות נשלח"
 msgid "Verification failed"
 msgstr "האימות נכשל"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -1228,6 +1326,10 @@ msgstr "אמת"
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:58
 msgid "Verify email address"
 msgstr "אמת כתובת אימייל"
+
+#: ../../../lib/web/src/components/attachment-gallery.tsx:63
+msgid "Video thumbnail"
+msgstr "תמונה ממוזערת של הסרטון"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:30
 msgid "View"
@@ -1270,7 +1372,7 @@ msgstr "אבן לבנה ב-{colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "טריטוריה לבנה ב-{colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:190
+#: src/features/go/components/chat-message-list.tsx:202
 msgid "You"
 msgstr "אתה"
 
@@ -1281,6 +1383,10 @@ msgstr "התפטרת — {opponentName} ניצח"
 #: src/features/go/index.tsx:69
 msgid "You win!"
 msgstr "ניצחת!"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:82
+msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
+msgstr "חשבונך הועבר לכאן מ-{source}. עד שתמחק אותו שם, הודעות והתראות עשויות להגיע לשני השרתים, חלק מהתוכן שלך ממשיך להיות מוגש מהשרת הישן, ועוקבים עשויים לקחת מספר דקות למצוא אותך כאן."
 
 #: src/features/go/index.tsx:85
 msgid "Your move"

@@ -13,6 +13,18 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/features/go/components/chat-message-list.tsx:185
+msgid "{name} declined the draw"
+msgstr "{name}-მა ფრე უარყო"
+
+#: src/features/go/components/chat-message-list.tsx:181
+msgid "{name} offered a draw"
+msgstr "{name}-მა ფრე შესთავაზა"
+
+#: src/features/go/components/chat-message-list.tsx:179
+msgid "{name} resigned"
+msgstr "{name}-მა დანებდა"
+
 #: src/features/go/index.tsx:622
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{name}-ის სვლა"
@@ -45,10 +57,9 @@ msgstr "{size}×{size} Go დაფა"
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "{size}×{size} Go დაფა, თქვენი რიგია. გამოიყენეთ ისრის კლავიშები ნავიგაციისთვის და Enter ან Space შავი ქვის დასადებად."
 
-#. placeholder {0}: message.body
-#: src/features/go/components/chat-message-list.tsx:197
-msgid "{subject} played <0>{0}</0>"
-msgstr "{slotLabel} განახლდა"
+#: src/features/go/components/chat-message-list.tsx:212
+msgid "{subject} played <0>{moveLabel}</0>"
+msgstr ""
 
 #. placeholder {0}: score.black
 #. placeholder {1}: score.white
@@ -173,6 +184,10 @@ msgstr "დარწმუნებული ხართ, რომ გსუ�
 msgid "Asc"
 msgstr "ზრდადი"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:312
+msgid "Authenticator code"
+msgstr "Authenticator-ის კოდი"
+
 #: ../../../lib/web/src/components/place-picker.tsx:152
 msgid "Back"
 msgstr "უკან"
@@ -209,6 +224,7 @@ msgid "Boost interest"
 msgstr "ინტერესის გაძლიერება"
 
 #: ../../../lib/web/src/components/responsive-confirm-dialog.tsx:64
+#: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
@@ -219,11 +235,11 @@ msgstr "ინტერესის გაძლიერება"
 msgid "Cancel"
 msgstr "გაუქმება"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:131
+#: ../../../lib/web/src/components/notification-category-button.tsx:135
 msgid "Category for this notification"
 msgstr "ამ შეტყობინების კატეგორია"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:115
+#: ../../../lib/web/src/components/notification-category-button.tsx:119
 msgid "Change notification category"
 msgstr "შეტყობინების კატეგორიის შეცვლა"
 
@@ -337,6 +353,10 @@ msgstr "კონტექსტური ინფორმაცია და 
 msgid "Continue"
 msgstr "გაგრძელება"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:349
+msgid "Continue with {label}"
+msgstr "გაგრძელება {label}-ით"
+
 #: ../../../lib/web/src/components/ui/copy-button.tsx:60
 msgid "Copy"
 msgstr "კოპირება"
@@ -344,6 +364,18 @@ msgstr "კოპირება"
 #: ../../../lib/web/src/features/document/document-page.tsx:81
 msgid "Could not load this document. Please try again later."
 msgstr "ამ დოკუმენტის ჩატვირთვა ვერ მოხერხდა. სცადეთ მოგვიანებით."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:181
+msgid "Couldn't send the code. Please try again."
+msgstr "კოდის გაგზავნა ვერ მოხერხდა. გთხოვთ, სცადოთ ხელახლა."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:133
+msgid "Couldn't start re-authentication. Please try again."
+msgstr "ხელახალი ავთენტიფიკაციის დაწყება ვერ მოხერხდა. გთხოვთ, სცადოთ ხელახლა."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:218
+msgid "Couldn't verify with that account. Please try again."
+msgstr "ამ ანგარიშით ვერ მოხერხდა გადამოწმება. გთხოვთ, სცადოთ თავიდან."
 
 #: src/features/go/components/new-game.tsx:231
 msgid "Creating..."
@@ -378,6 +410,10 @@ msgstr "ნაგულისხმევი AI ანგარიში"
 msgid "Delete game"
 msgstr "თამაშის წაშლა"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:90
+msgid "Delete your account on the old server"
+msgstr "წაშალეთ თქვენი ანგარიში ძველ სერვერზე"
+
 #: ../../../lib/web/src/components/data-table/column-header.tsx:60
 msgid "Desc"
 msgstr "კლებადი"
@@ -401,6 +437,10 @@ msgstr "ვებ ბრაუზერიდან აღმოჩენა"
 msgid "Direction"
 msgstr "მიმართულება"
 
+#: ../../../lib/web/src/components/restore-banner.tsx:73
+msgid "Dismiss"
+msgstr "უარყოფა"
+
 #: ../../../lib/web/src/components/ui/sidebar.tsx:235
 msgid "Displays the mobile sidebar."
 msgstr "აჩვენებს მობილურის გვერდით პანელს."
@@ -413,6 +453,10 @@ msgstr "ჩამოტვირთვა"
 msgid "Draw"
 msgstr "ფრე"
 
+#: src/features/go/components/chat-message-list.tsx:183
+msgid "Draw agreed"
+msgstr "ფრე შეთანხმდა"
+
 #: src/features/go/index.tsx:505
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "შემოთავაზებულია ფრე — ველოდები {opponentName}-ს"
@@ -420,6 +464,10 @@ msgstr "შემოთავაზებულია ფრე — ველო
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Dyslexia-friendly"
 msgstr "დისლექსიის თავსებადი"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:286
+msgid "Email code"
+msgstr "ელფოსტის კოდი"
 
 #: src/features/go/components/go-board.tsx:284
 msgid "Empty intersection {colLabel}{rowLabel}"
@@ -440,6 +488,14 @@ msgstr "დაასრულოთ თამაში?"
 #: src/features/go/components/new-game.tsx:75
 msgid "Enter a valid number"
 msgstr "შეიყვანეთ მართებული რიცხვი"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:296
+msgid "Enter the code from your email"
+msgstr "შეიყვანეთ კოდი თქვენი ელფოსტიდან"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:321
+msgid "Enter your authenticator code"
+msgstr "შეიყვანეთ თქვენი authenticator-ის კოდი"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:35
 msgid "Expand sidebar"
@@ -502,9 +558,13 @@ msgstr "გაგზავნა ვერ მოხერხდა"
 msgid "Failed to send verification code"
 msgstr "დადასტურების კოდის გაგზავნა ვერ მოხერხდა"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:104
+#: ../../../lib/web/src/components/notification-category-button.tsx:108
 msgid "Failed to update category"
 msgstr "კატეგორიის განახლება ვერ მოხერხდა"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:79
+msgid "Finish moving your account"
+msgstr "დაასრულეთ ანგარიშის გადატანა"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:244
 msgid "Floating"
@@ -758,7 +818,7 @@ msgstr "შედეგები ვერ მოიძებნა."
 msgid "No time zone found."
 msgstr "დროის სარტყელი ვერ მოიძებნა."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:139
 msgid "No topic record yet — try again after the next notification."
 msgstr "თემის ჩანაწერი ჯერ არ არის — სცადეთ ხელახლა შემდეგი შეტყობინების შემდეგ."
 
@@ -824,6 +884,7 @@ msgstr "სხვა"
 msgid "Owner"
 msgstr "მფლობელი"
 
+#: src/features/go/components/chat-message-list.tsx:205
 #: src/features/go/index.tsx:468
 #: src/features/go/index.tsx:632
 msgid "Pass"
@@ -836,6 +897,18 @@ msgstr "გამოტოვება?"
 #: src/features/go/index.tsx:629
 msgid "Passing..."
 msgstr "გამოტოვება..."
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:331
+msgid "Passkey"
+msgstr ""
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:206
+msgid "Passkey verification failed. Please try again."
+msgstr "passkey-ის გადამოწმება ვერ მოხერხდა. გთხოვთ, სცადოთ ხელახლა."
+
+#: ../../../lib/web/src/components/restore-banner.tsx:126
+msgid "Passkeys"
+msgstr "Passkey-ები"
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -858,6 +931,14 @@ msgstr "კონფიდენციალურობა"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:111
 msgid "Profile"
 msgstr "პროფილი"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:98
+msgid "Re-link your accounts on this server"
+msgstr "ხელახლა დააკავშირეთ თქვენი ანგარიშები ამ სერვერზე"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:120
+msgid "Re-register your passkeys on this server"
+msgstr "ხელახლა დაარეგისტრირეთ თქვენი წვდომის გასაღებები ამ სერვერზე"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
 #: ../../../lib/web/src/components/search-entity-page.tsx:191
@@ -901,6 +982,10 @@ msgstr "წვდომის წაშლა?"
 #: ../../../lib/web/src/components/post-tags.tsx:190
 msgid "Remove interest"
 msgstr "ინტერესის წაშლა"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:364
+msgid "Resend email"
+msgstr "ელფოსტის ხელახლა გაგზავნა"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:77
 #: ../../../lib/web/src/components/data-table/toolbar.tsx:78
@@ -1010,6 +1095,10 @@ msgstr "აირჩიეთ თემის პრიორიტეტი"
 msgid "Send again"
 msgstr "თავიდან გაგზავნა"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:304
+msgid "Send email"
+msgstr "ელფოსტის გაგზავნა"
+
 #: src/features/go/components/chat-input.tsx:40
 msgid "Send message"
 msgstr "შეტყობინების გაგზავნა"
@@ -1107,6 +1196,10 @@ msgstr "გუნდები/აპები"
 msgid "Terms and conditions"
 msgstr "წესები და პირობები"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:192
+msgid "That code is incorrect or has expired."
+msgstr "ეს კოდი არასწორია ან ვადაგასულია."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:181
 msgid "Theme"
 msgstr "თემა"
@@ -1184,7 +1277,7 @@ msgstr "მომხმარებლების მოსაძებნა�
 msgid "Unable to redirect to login. Please try again."
 msgstr "ვერსიის ინფორმაციის ჩატვირთვა ვერ ხერხდება"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:147
 msgid "Unassigned"
 msgstr "ფიდების სერვისთან სინქრონიზება ვერ ხერხდება. ნაჩვენებია ქეშირებული მონაცემები."
 
@@ -1196,13 +1289,17 @@ msgstr "უუფლებო"
 msgid "United States"
 msgstr "ამ ვიკის უნიკალური იდენტიფიკატორები."
 
-#: src/hooks/useGameWebsocket.ts:161
+#: src/hooks/useGameWebsocket.ts:163
 msgid "Unknown"
 msgstr "ერთეულები"
 
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:131
 msgid "Unverified"
 msgstr "უსათაურო ლისტინგი"
+
+#: ../../../lib/web/src/components/step-up-dialog.tsx:335
+msgid "Use your passkey"
+msgstr "გამოიყენეთ თქვენი passkey"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:155
 msgid "User"
@@ -1220,6 +1317,7 @@ msgstr "შემოწმების კოდი"
 msgid "Verification failed"
 msgstr "შემოწმების კოდი გაიგზავნა"
 
+#: ../../../lib/web/src/components/step-up-dialog.tsx:385
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:164
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:106
 msgid "Verify"
@@ -1228,6 +1326,10 @@ msgstr "შემოწმებული"
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:58
 msgid "Verify email address"
 msgstr "შემოწმება და ჩართვა"
+
+#: ../../../lib/web/src/components/attachment-gallery.tsx:63
+msgid "Video thumbnail"
+msgstr "ვერსია {0} შეიქმნა."
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:30
 msgid "View"
@@ -1270,7 +1372,7 @@ msgstr "თეთრი იჭერს:"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "თეთრი ქვა {colLabel}{rowLabel}-ზე"
 
-#: src/features/go/components/chat-message-list.tsx:190
+#: src/features/go/components/chat-message-list.tsx:202
 msgid "You"
 msgstr "დიახ, ძალით"
 
@@ -1281,6 +1383,10 @@ msgstr "თქვენ თავი დანებეთ"
 #: src/features/go/index.tsx:69
 msgid "You win!"
 msgstr "თქვენ ამოგაშორეს ამ ჩატიდან"
+
+#: ../../../lib/web/src/components/restore-banner.tsx:82
+msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
+msgstr "თქვენი ანგარიში გადმოტანილია {source}-დან. სანამ იქ წაშლით, შეტყობინებები და ნოტიფიკაციები შეიძლება ორივე სერვერს მიაღწიოს, თქვენი კონტენტის ნაწილი კვლავ ძველი სერვერიდან ხელმისაწვდომია, ხოლო მიმდევრებს შეიძლება რამდენიმე წუთი დასჭირდეთ თქვენი პოვნისთვის."
 
 #: src/features/go/index.tsx:85
 msgid "Your move"

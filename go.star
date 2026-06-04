@@ -94,13 +94,21 @@ def database_create():
 		name text not null,
 		body text not null,
 		type text not null default 'message',
+		event text not null default '',
 		created integer not null
 	)""")
 	mochi.db.execute("create index if not exists messages_game_created on messages( game, created )")
 
 # Upgrade database
 def database_upgrade(to_version):
-	pass
+	if to_version == 3:
+		# Add messages.event so the frontend can render system messages
+		# (resign / draw offer / accept / decline) localised per viewer,
+		# instead of the pre-rendered English `body`. Legacy rows keep ''
+		# and fall back to the stored body.
+		cols = [r["name"] for r in mochi.db.table("messages") or []]
+		if "event" not in cols:
+			mochi.db.execute("alter table messages add column event text not null default ''")
 
 def get_opponent(game, user_id):
 	if game["identity"] == user_id:
@@ -196,9 +204,8 @@ def action_create(a):
 			a.error.label(400, "errors.komi_must_be_between_0_and_10")
 			return
 
-	# Randomly assign black (black goes first in Go)
-	coin = mochi.random.alphanumeric(1)
-	if coin < "s":
+	# Randomly assign black (black goes first in Go); fair 50/50
+	if mochi.random.integer(0, 1) == 0:
 		black = a.user.identity.id
 	else:
 		black = opponent
@@ -226,9 +233,9 @@ def action_create(a):
 # List games
 def action_list(a):
 	games = mochi.db.rows("""
-		SELECT id, identity, identity_name, opponent, opponent_name, black, board_size, komi, status, winner, fen, previous_fen, sgf, captures_black, captures_white, draw_offer, updated, created FROM games
-		WHERE identity = ? OR opponent = ?
-		ORDER BY updated DESC
+		select id, identity, identity_name, opponent, opponent_name, black, board_size, komi, status, winner, fen, previous_fen, sgf, captures_black, captures_white, draw_offer, updated, created from games
+		where identity = ? or opponent = ?
+		order by updated desc
 	""", a.user.identity.id, a.user.identity.id)
 
 	return {
@@ -337,7 +344,8 @@ def action_move(a):
 		return
 
 	# Validate turn — board state metadata has turn indicator
-	turn = "b" if " b " in game["fen"] else "w"
+	fen_parts = game["fen"].split(" ")
+	turn = fen_parts[1] if len(fen_parts) > 1 else "b"
 	player_color = "b" if game["black"] == a.user.identity.id else "w"
 	if turn != player_color:
 		a.error.label(400, "errors.not_your_turn")
@@ -421,7 +429,8 @@ def action_pass(a):
 		return
 
 	# Validate turn
-	turn = "b" if " b " in game["fen"] else "w"
+	fen_parts = game["fen"].split(" ")
+	turn = fen_parts[1] if len(fen_parts) > 1 else "b"
 	player_color = "b" if game["black"] == a.user.identity.id else "w"
 	if turn != player_color:
 		a.error.label(400, "errors.not_your_turn")
@@ -526,7 +535,7 @@ def action_resign(a):
 	# Insert system message
 	id = mochi.uid()
 	msg = a.user.identity.name + " resigned"
-	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'resign', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
 
 	# Stays on direct write: type='system' messages all share the same
 	# row shape across four semantic events (resign/draw_offer/
@@ -534,7 +543,7 @@ def action_resign(a):
 	# apart from the row alone — see comment on go_commit_hook above.
 	# Paired-host clients miss the live update for system events until
 	# the row replicates and the user refreshes.
-	mochi.websocket.write(game["key"], {"type": "system", "event": "resign", "created": now, "body": msg, "winner": winner})
+	mochi.websocket.write(game["key"], {"type": "system", "event": "resign", "name": a.user.identity.name, "created": now, "body": msg, "winner": winner})
 
 	mochi.message.send(
 		{"from": a.user.identity.id, "to": other, "service": "go", "event": "resign"},
@@ -567,10 +576,10 @@ def action_draw_offer(a):
 	# Insert system message
 	id = mochi.uid()
 	msg = a.user.identity.name + " offered a draw"
-	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'draw_offer', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
 
 	# Stays on direct write: same reason as action_resign above.
-	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_offer", "created": now, "body": msg, "draw_offer": a.user.identity.id})
+	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_offer", "name": a.user.identity.name, "created": now, "body": msg, "draw_offer": a.user.identity.id})
 
 	mochi.message.send(
 		{"from": a.user.identity.id, "to": other, "service": "go", "event": "draw_offer"},
@@ -603,10 +612,10 @@ def action_draw_accept(a):
 	# Insert system message
 	id = mochi.uid()
 	msg = "Draw agreed"
-	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'draw_accept', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
 
 	# Stays on direct write: same reason as action_resign above.
-	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_accept", "created": now, "body": msg})
+	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_accept", "name": a.user.identity.name, "created": now, "body": msg})
 
 	mochi.message.send(
 		{"from": a.user.identity.id, "to": other, "service": "go", "event": "draw_accept"},
@@ -639,10 +648,10 @@ def action_draw_decline(a):
 	# Insert system message
 	id = mochi.uid()
 	msg = a.user.identity.name + " declined the draw"
-	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'draw_decline', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
 
 	# Stays on direct write: same reason as action_resign above.
-	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_decline", "created": now, "body": msg, "draw_offer": ""})
+	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_decline", "name": a.user.identity.name, "created": now, "body": msg, "draw_offer": ""})
 
 	mochi.message.send(
 		{"from": a.user.identity.id, "to": other, "service": "go", "event": "draw_decline"},
@@ -861,7 +870,8 @@ def event_resign(e):
 		return
 
 	winner = e.content("winner")
-	body = e.content("body") or "Opponent resigned"
+	body = e.content("body") or mochi.app.label("notifications.body.opponent_resigned")
+	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
 
 	# Derive winner: the other player (not the one who resigned)
 	players = [game["identity"], game["opponent"]]
@@ -872,14 +882,14 @@ def event_resign(e):
 	mochi.db.execute("update games set status='resigned', winner=?, updated=? where id=?", winner, now, game["id"])
 
 	id = mochi.uid()
-	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], sender, "", body, now)
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'resign', ? )", id, game["id"], sender, sender_name, body, now)
 
 	# Stays on direct write: type='system' messages share their row
 	# shape across resign/draw_offer/draw_accept/draw_decline and the
 	# commit hook can't disambiguate from the row — see comment on
 	# go_commit_hook above.
-	mochi.websocket.write(game["key"], {"type": "system", "event": "resign", "created": now, "body": body, "winner": winner or ""})
-	notify("activity", "", mochi.app.label("notifications.title.game"), body, "/go/" + game["id"], event_id="resign:" + game["id"])
+	mochi.websocket.write(game["key"], {"type": "system", "event": "resign", "name": sender_name, "created": now, "body": body, "winner": winner or ""})
+	notify("activity", "", mochi.app.label("notifications.title.game"), mochi.app.label("notifications.body.opponent_resigned"), "/go/" + game["id"], event_id="resign:" + game["id"])
 
 # Received a draw offer event
 def event_draw_offer(e):
@@ -891,7 +901,8 @@ def event_draw_offer(e):
 	if sender != game["identity"] and sender != game["opponent"]:
 		return
 
-	body = e.content("body") or "Draw offered"
+	body = e.content("body") or mochi.app.label("notifications.body.draw_offered")
+	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
 
 	# LWW gate: both players can offer draw concurrently from different
 	# hosts. Use the sender's `created` (the action's local now at offer
@@ -910,11 +921,11 @@ def event_draw_offer(e):
 	mochi.db.execute("update games set draw_offer=?, updated=? where id=?", sender, incoming, game["id"])
 
 	id = mochi.uid()
-	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], sender, "", body, now)
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'draw_offer', ? )", id, game["id"], sender, sender_name, body, now)
 
 	# Stays on direct write: same reason as event_resign above.
-	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_offer", "created": now, "body": body, "draw_offer": sender})
-	notify("activity", "", mochi.app.label("notifications.title.go"), body, "/go/" + game["id"], event_id="draw_offer:" + game["id"] + ":" + str(incoming))
+	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_offer", "name": sender_name, "created": now, "body": body, "draw_offer": sender})
+	notify("activity", "", mochi.app.label("notifications.title.go"), mochi.app.label("notifications.body.draw_offered"), "/go/" + game["id"], event_id="draw_offer:" + game["id"] + ":" + str(incoming))
 
 # Received a draw accept event
 def event_draw_accept(e):
@@ -926,17 +937,18 @@ def event_draw_accept(e):
 	if sender != game["identity"] and sender != game["opponent"]:
 		return
 
-	body = e.content("body") or "Draw agreed"
+	body = e.content("body") or mochi.app.label("notifications.body.draw_agreed")
+	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
 
 	now = mochi.time.now()
 	mochi.db.execute("update games set status='draw', draw_offer=null, updated=? where id=?", now, game["id"])
 
 	id = mochi.uid()
-	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], sender, "", body, now)
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'draw_accept', ? )", id, game["id"], sender, sender_name, body, now)
 
 	# Stays on direct write: same reason as event_resign above.
-	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_accept", "created": now, "body": body})
-	notify("activity", "", mochi.app.label("notifications.title.go"), body, "/go/" + game["id"], event_id="draw_accept:" + game["id"])
+	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_accept", "name": sender_name, "created": now, "body": body})
+	notify("activity", "", mochi.app.label("notifications.title.go"), mochi.app.label("notifications.body.draw_agreed"), "/go/" + game["id"], event_id="draw_accept:" + game["id"])
 
 # Received a draw decline event
 def event_draw_decline(e):
@@ -948,15 +960,16 @@ def event_draw_decline(e):
 	if sender != game["identity"] and sender != game["opponent"]:
 		return
 
-	body = e.content("body") or "Draw declined"
+	body = e.content("body") or mochi.app.label("notifications.body.draw_declined")
+	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
 
 	now = mochi.time.now()
 	mochi.db.execute("update games set draw_offer=null, updated=? where id=?", now, game["id"])
 
 	id = mochi.uid()
-	mochi.db.execute("insert into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'system', ? )", id, game["id"], sender, "", body, now)
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'draw_decline', ? )", id, game["id"], sender, sender_name, body, now)
 
 	# Stays on direct write: same reason as event_resign above.
-	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_decline", "created": now, "body": body, "draw_offer": ""})
-	notify("activity", "", mochi.app.label("notifications.title.go"), body, "/go/" + game["id"], event_id="draw_decline:" + game["id"] + ":" + sender)
+	mochi.websocket.write(game["key"], {"type": "system", "event": "draw_decline", "name": sender_name, "created": now, "body": body, "draw_offer": ""})
+	notify("activity", "", mochi.app.label("notifications.title.go"), mochi.app.label("notifications.body.draw_declined"), "/go/" + game["id"], event_id="draw_decline:" + game["id"] + ":" + sender)
 

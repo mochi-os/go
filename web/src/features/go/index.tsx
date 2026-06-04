@@ -50,13 +50,16 @@ import { DrawOfferBanner } from './components/draw-offer-banner'
 import { ChatMessageList } from './components/chat-message-list'
 import { ChatInput } from './components/chat-input'
 
-function useGoStatusText(
+// Plain function (not a hook) so it can be called from inside conditional JSX
+// without violating the rules of hooks. The `t` tag is passed in from the
+// component's own useLingui() call.
+function goStatusText(
+  t: ReturnType<typeof useLingui>['t'],
   game: Game,
   myIdentity: string,
   isMyTurn: boolean,
   score?: { black: number; white: number; winner: 'black' | 'white' } | null
 ): string {
-  const { t } = useLingui()
   const opponentName = getOpponentName(game, myIdentity)
 
   if (game.status === 'finished') {
@@ -415,7 +418,7 @@ export function GoGameView() {
                     }
                     opponentFingerprint={opponentFingerprint || undefined}
                     opponentName={opponentName}
-                    status={useGoStatusText(game, myIdentity, isMyTurn, score)}
+                    status={goStatusText(t, game, myIdentity, isMyTurn, score)}
                     stats={
                       <>
                         <GameHeaderStat
