@@ -25,25 +25,13 @@ msgstr "{name} прапанаваў нічыю"
 msgid "{name} resigned"
 msgstr "{name} здаўся"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} таксама прапусціў. Пацверджанне завершыць гульню і падлічыць ачкі."
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} прапанаваў нічыю"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "{opponentName} здаўся — вы перамаглі!"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "{opponentName} перамагае"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "Ход {opponentName}"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -59,13 +47,7 @@ msgstr "Дошка для Го {size}×{size}, ваш ход. Выкарысто
 
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
-msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "{winnerColor} перамагае — Ч:{0} Б:{1}"
+msgstr "{subject} зрабіў ход <0>{moveLabel}</0>"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "AI"
 msgid "All"
 msgstr "Усе"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr "Адбылася памылка"
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr "Адбылася нечаканая памылка"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Вы ўпэўнены, што хочаце выйсці? Вам трэба будзе ўвайсці зноў, каб атрымаць доступ да ўліковага запісу."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Вы ўпэўнены, што хочаце здацца? {opponentName} выйграе гульню."
 
@@ -198,12 +188,11 @@ msgstr "Назад"
 msgid "Back to home"
 msgstr "На галоўную"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "Чорныя"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "Узяцці чорных:"
 
@@ -243,8 +232,8 @@ msgstr "Катэгорыя для гэтага апавяшчэння"
 msgid "Change notification category"
 msgstr "Змяніць катэгорыю апавяшчэння"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "Чат"
 
@@ -406,7 +395,7 @@ msgstr "Па змаўчанні"
 msgid "Default AI account"
 msgstr "Уліковы запіс AI па змаўчанні"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "Выдаліць гульню"
 
@@ -449,15 +438,11 @@ msgstr "Адлюстроўвае мабільную бакавую панэль.
 msgid "Download"
 msgstr "Спампаваць"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "Маляваць"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr "Нічыя пагоджана"
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Прапанавана нічыя — чаканне {opponentName}"
 
@@ -477,11 +462,11 @@ msgstr "Пустое перасячэнне {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Пустое перасячэнне {colLabel}{rowLabel}, націсніце або націсніце Enter, каб размясціць"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "Скончыць гульню"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "Скончыць гульню?"
 
@@ -505,7 +490,7 @@ msgstr "Разгарнуць бакавую панэль"
 msgid "Extra large"
 msgstr "Вельмі вялікі"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "Не ўдалося прыняць нічыю"
 
@@ -517,27 +502,27 @@ msgstr "Не ўдалося дадаць акаўнт"
 msgid "Failed to create game"
 msgstr "Не ўдалося стварыць гульню"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "Не ўдалося стварыць перагульванне"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "Не ўдалося адхіліць нічыю"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "Не ўдалося выдаліць гульню"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "Не ўдалося зрабіць ход"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "Не ўдалося прапанаваць нічыю"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "Не ўдалося прапусціць"
 
@@ -545,12 +530,12 @@ msgstr "Не ўдалося прапусціць"
 msgid "Failed to remove account"
 msgstr "Не ўдалося выдаліць акаўнт"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "Не ўдалося здацца"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "Не ўдалося адправіць"
 
@@ -594,17 +579,13 @@ msgstr "Поўная разметка"
 msgid "Game created"
 msgstr "Гульня створана"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "Гульня выдалена"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "Канец гульні"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Перайсці"
 
@@ -755,6 +736,10 @@ msgstr "Панядзелак"
 msgid "Must be between 0 and 10"
 msgstr "Павінна быць ад 0 да 10"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr "Памылка сеткі"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Новы"
@@ -842,7 +827,7 @@ msgstr "Звычайны"
 msgid "Notifications"
 msgstr "Апавяшчэнні"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "Прапанаваць нічыю"
 
@@ -855,11 +840,11 @@ msgstr "Вой! Старонка не знойдзена!"
 msgid "Open account actions"
 msgstr "Адкрыць дзеянні акаўнта"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "Адкрыць панэль чату"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "Адкрыць дзеянні гульні"
 
@@ -885,16 +870,16 @@ msgid "Owner"
 msgstr "Уладальнік"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "Прапусціць"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "Прапусціць ход?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "Прапускаем..."
 
@@ -909,6 +894,10 @@ msgstr "Не ўдалося праверыць ключ доступу. Калі
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
 msgstr "Ключы доступу"
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
+msgstr "Праверце падключэнне да інтэрнэту і паспрабуйце зноў."
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -961,7 +950,7 @@ msgstr "Адносна (5м, 3г, 2д)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Адносна ў межах 24 гадзін, інакш абсалютна"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "Reматч"
 
@@ -996,16 +985,16 @@ msgstr "Скід"
 msgid "Reset all settings to default values"
 msgstr "Скінуць усе налады да значэнняў па змаўчанні"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "Здацца"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "Здацца ў гульні?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "Здаемся..."
 
@@ -1107,6 +1096,11 @@ msgstr "Адправіць паведамленне"
 msgid "Serif"
 msgstr "З засечкамі"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr "Памылка сервера"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "Выхад..."
 msgid "Skip to Main"
 msgstr "Перайсці да галоўнага"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "Прапусціце свой ход і перадайце суперніку."
 
@@ -1272,6 +1266,10 @@ msgstr "Увядзіце для пошуку карыстальнікаў"
 msgid "Type to search..."
 msgstr "Увядзіце для пошуку..."
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr "Не ўдалося падключыцца да выдаленага сервера"
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "Сайт на тэхнічным абслугоўванні!"
 msgid "Wednesday"
 msgstr "Серада"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "Белыя"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "Белыя ўзялі:"
 
@@ -1376,18 +1373,6 @@ msgstr "Тэрыторыя белых на {colLabel}{rowLabel}"
 msgid "You"
 msgstr "Вы"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "Вы здаліся — {opponentName} перамагае"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "Вы перамаглі!"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ваш акаўнт быў перанесены сюды з {source}. Пакуль вы не выдаліце яго там, паведамленні і апавяшчэнні могуць паступаць на абодва серверы, частка вашага кантэнту па-ранейшаму будзе аддавацца са старога сервера, а падпісчыкам можа спатрэбіцца некалькі хвілін, каб знайсці вас тут."
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "Ваш ход"

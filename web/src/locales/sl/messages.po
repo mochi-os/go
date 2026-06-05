@@ -25,25 +25,13 @@ msgstr "{name} je ponudil remi"
 msgid "{name} resigned"
 msgstr "{name} se je predal"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} je tudi predal. S potrditvijo se igra konča in se prešteje tabla."
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} je ponudil neodločeno"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "{opponentName} se je predal — zmagal si!"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "{opponentName} zmaga"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "Poteza igralca {opponentName}"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -59,13 +47,7 @@ msgstr "Tabla Go {size}×{size}, tvoja poteza. Uporabi puščice za navigacijo i
 
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
-msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "{winnerColor} zmaga — Č:{0} B:{1}"
+msgstr "{subject} je odigral <0>{moveLabel}</0>"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "AI"
 msgid "All"
 msgstr "Vse"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr "Prišlo je do napake"
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr "Prišlo je do nepričakovane napake"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Ali ste prepričani, da se želite odjaviti? Za dostop do računa se boste morali znova prijaviti."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Ali ste prepričani, da se želite predati? {opponentName} bo zmagal igro."
 
@@ -198,12 +188,11 @@ msgstr "Nazaj"
 msgid "Back to home"
 msgstr "Nazaj na začetek"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "Črna"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "Črni zajemi:"
 
@@ -243,8 +232,8 @@ msgstr "Kategorija za to obvestilo"
 msgid "Change notification category"
 msgstr "Spremeni kategorijo obvestil"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "Klepet"
 
@@ -406,7 +395,7 @@ msgstr "Privzeto"
 msgid "Default AI account"
 msgstr "Privzeti AI račun"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "Izbriši igro"
 
@@ -449,15 +438,11 @@ msgstr "Prikaže mobilno stransko vrstico."
 msgid "Download"
 msgstr "Prenesi"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "Neodločeno"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr "Remi sprejet"
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Ponujen remi — čakanje na {opponentName}"
 
@@ -477,11 +462,11 @@ msgstr "Prazno presečišče {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Prazno presečišče {colLabel}{rowLabel}, kliknite ali pritisnite Enter za postavitev"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "Končaj igro"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "Končaj igro?"
 
@@ -505,7 +490,7 @@ msgstr "Razširi stransko vrstico"
 msgid "Extra large"
 msgstr "Zelo veliko"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "Neuspešno sprejetje remija"
 
@@ -517,27 +502,27 @@ msgstr "Neuspešno dodajanje računa"
 msgid "Failed to create game"
 msgstr "Neuspešno ustvarjanje igre"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "Neuspešno ustvarjanje povratne tekme"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "Neuspešna zavrnitev remija"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "Neuspešno brisanje igre"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "Neuspešna izvedba poteze"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "Neuspešna ponudba remija"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "Neuspešen preskok"
 
@@ -545,12 +530,12 @@ msgstr "Neuspešen preskok"
 msgid "Failed to remove account"
 msgstr "Neuspešna odstranitev računa"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "Neuspešna predaja"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "Pošiljanje ni uspelo"
 
@@ -594,17 +579,13 @@ msgstr "Polna postavitev"
 msgid "Game created"
 msgstr "Igra ustvarjena"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "Igra izbrisana"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "Konec igre"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Pojdi"
 
@@ -755,6 +736,10 @@ msgstr "Ponedeljek"
 msgid "Must be between 0 and 10"
 msgstr "Mora biti med 0 in 10"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr "Napaka omrežja"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Novo"
@@ -842,7 +827,7 @@ msgstr "Normalno"
 msgid "Notifications"
 msgstr "Obvestila"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "Ponudi remi"
 
@@ -855,11 +840,11 @@ msgstr "Ups! Strani ni bilo mogoče najti!"
 msgid "Open account actions"
 msgstr "Odpri dejanja računa"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "Odpri ploščo pogovora"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "Odpri dejanja igre"
 
@@ -885,16 +870,16 @@ msgid "Owner"
 msgstr "Lastnik"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "Pass"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "Pass turn?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "Passing..."
 
@@ -909,6 +894,10 @@ msgstr "Preverjanje ključa za dostop ni uspelo. Poskusite znova."
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
 msgstr "Geslo-ključi"
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
+msgstr "Preverite internetno povezavo in poskusite znova."
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -961,7 +950,7 @@ msgstr "Relativno (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relativno v 24 urah, sicer absolutno"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "Vrnitev"
 
@@ -996,16 +985,16 @@ msgstr "Ponastavi"
 msgid "Reset all settings to default values"
 msgstr "Ponastavi vse nastavitve na privzete vrednosti"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "Odstopi"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "Odstopi od igre?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "Odstopanje..."
 
@@ -1107,6 +1096,11 @@ msgstr "Pošlji sporočilo"
 msgid "Serif"
 msgstr "Serifna"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr "Napaka strežnika"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "Odjavljanje..."
 msgid "Skip to Main"
 msgstr "Preskoči na glavno"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "Preskoči svojo potezo in jo predaj nasprotniku."
 
@@ -1272,6 +1266,10 @@ msgstr "Vnesi za iskanje uporabnikov"
 msgid "Type to search..."
 msgstr "Vnesi za iskanje..."
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr "Povezava z oddaljenim strežnikom ni mogoča"
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "Spletno mesto je v vzdrževanju!"
 msgid "Wednesday"
 msgstr "Sreda"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "Bele"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "Bele zajamejo:"
 
@@ -1376,18 +1373,6 @@ msgstr "Belo ozemlje na {colLabel}{rowLabel}"
 msgid "You"
 msgstr "Ti"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "Predal si se — {opponentName} zmaga"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "Zmagal si!"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Vaš račun je bil preseljen sem iz {source}. Dokler ga tam ne izbrišete, sporočila in obvestila morda dosežejo oba strežnika, del vaše vsebine se še naprej streže s starega strežnika in sledilci bodo morda potrebovali nekaj minut, da vas najdejo tukaj."
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "Tvoja poteza"

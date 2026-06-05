@@ -25,25 +25,13 @@ msgstr "{name} הציע תיקו"
 msgid "{name} resigned"
 msgstr "{name} פרש"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} גם ויתר על תורו. אישור יסיים את המשחק וינקד את הלוח."
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} הציע תיקו"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "{opponentName} התפטר — ניצחת!"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "{opponentName} ניצח"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "התור של {opponentName}"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -59,13 +47,7 @@ msgstr "לוח Go בגודל {size}×{size}, תורך. השתמש במקשי ה�
 
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
-msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "{winnerColor} ניצח — שחור:{0} לבן:{1}"
+msgstr "{subject} שיחק <0>{moveLabel}</0>"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "AI"
 msgid "All"
 msgstr "הכול"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr "אירעה שגיאה"
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr "אירעה שגיאה בלתי צפויה"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "האם אתה בטוח שברצונך להתנתק? יהיה עליך להתחבר שוב כדי לגשת לחשבונך."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "האם אתה בטוח שברצונך לפרוש? {opponentName} ינצח במשחק."
 
@@ -198,12 +188,11 @@ msgstr "חזור"
 msgid "Back to home"
 msgstr "חזרה לבית"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "שחור"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "שבויי שחור:"
 
@@ -243,8 +232,8 @@ msgstr "קטגוריה עבור התראה זו"
 msgid "Change notification category"
 msgstr "שנה קטגוריית התראה"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "צ'אט"
 
@@ -406,7 +395,7 @@ msgstr "ברירת מחדל"
 msgid "Default AI account"
 msgstr "חשבון AI ברירת מחדל"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "מחק משחק"
 
@@ -449,15 +438,11 @@ msgstr "מציג את סרגל הצד למובייל."
 msgid "Download"
 msgstr "הורדה"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "תיקו"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr "הוסכם על תיקו"
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "הוצעה תיקו — ממתין ל-{opponentName}"
 
@@ -477,11 +462,11 @@ msgstr "צומת ריק {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "צומת ריק {colLabel}{rowLabel}, לחץ או הקש Enter כדי להציב"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "סיים משחק"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "לסיים את המשחק?"
 
@@ -505,7 +490,7 @@ msgstr "הרחב סרגל צד"
 msgid "Extra large"
 msgstr "גדול במיוחד"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "קבלת התיקו נכשלה"
 
@@ -517,27 +502,27 @@ msgstr "הוספת החשבון נכשלה"
 msgid "Failed to create game"
 msgstr "יצירת המשחק נכשלה"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "יצירת המשחק החוזר נכשלה"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "דחיית התיקו נכשלה"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "מחיקת המשחק נכשלה"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "ביצוע המהלך נכשל"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "הצעת התיקו נכשלה"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "הוויתור נכשל"
 
@@ -545,12 +530,12 @@ msgstr "הוויתור נכשל"
 msgid "Failed to remove account"
 msgstr "הסרת החשבון נכשלה"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "ההתפטרות נכשלה"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "השליחה נכשלה"
 
@@ -594,17 +579,13 @@ msgstr "פריסה מלאה"
 msgid "Game created"
 msgstr "המשחק נוצר"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "המשחק נמחק"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "המשחק נגמר"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Go"
 
@@ -755,6 +736,10 @@ msgstr "יום שני"
 msgid "Must be between 0 and 10"
 msgstr "חייב להיות בין 0 ל-10"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr "שגיאת רשת"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "חדש"
@@ -842,7 +827,7 @@ msgstr "רגיל"
 msgid "Notifications"
 msgstr "התראות"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "הצע תיקו"
 
@@ -855,11 +840,11 @@ msgstr "אופס! הדף לא נמצא!"
 msgid "Open account actions"
 msgstr "פתח פעולות חשבון"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "פתח פאנל צ'אט"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "פתח פעולות משחק"
 
@@ -885,16 +870,16 @@ msgid "Owner"
 msgstr "בעלים"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "דלג"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "לדלג על התור?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "מדלג..."
 
@@ -909,6 +894,10 @@ msgstr "אימות מפתח הגישה נכשל. נסה שוב."
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
 msgstr "מפתחות גישה"
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
+msgstr "בדקו את חיבור האינטרנט ונסו שוב."
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -961,7 +950,7 @@ msgstr "יחסי (5 דקות, 3 שעות, 2 ימים)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "יחסי בתוך 24 שעות, אחרת מוחלט"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "משחק חוזר"
 
@@ -996,16 +985,16 @@ msgstr "אפס"
 msgid "Reset all settings to default values"
 msgstr "אפס את כל ההגדרות לערכי ברירת המחדל"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "פרוש"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "לפרוש מהמשחק?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "פורש..."
 
@@ -1107,6 +1096,11 @@ msgstr "שלח הודעה"
 msgid "Serif"
 msgstr "סריף"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr "שגיאת שרת"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "מתנתק..."
 msgid "Skip to Main"
 msgstr "דלג לראשי"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "דלג על תורך ומסור ליריב."
 
@@ -1272,6 +1266,10 @@ msgstr "הקלד לחיפוש משתמשים"
 msgid "Type to search..."
 msgstr "הקלד לחיפוש..."
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr "לא ניתן להתחבר לשרת המרוחק"
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "האתר בתחזוקה!"
 msgid "Wednesday"
 msgstr "יום רביעי"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "לבן"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "שבויי לבן:"
 
@@ -1376,18 +1373,6 @@ msgstr "טריטוריה לבנה ב-{colLabel}{rowLabel}"
 msgid "You"
 msgstr "אתה"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "התפטרת — {opponentName} ניצח"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "ניצחת!"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "חשבונך הועבר לכאן מ-{source}. עד שתמחק אותו שם, הודעות והתראות עשויות להגיע לשני השרתים, חלק מהתוכן שלך ממשיך להיות מוגש מהשרת הישן, ועוקבים עשויים לקחת מספר דקות למצוא אותך כאן."
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "התור שלך"

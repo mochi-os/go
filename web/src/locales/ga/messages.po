@@ -25,25 +25,13 @@ msgstr "Thairg {name} cothrom"
 msgid "{name} resigned"
 msgstr "Ghéill {name}"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "Phasáil {opponentName} freisin. Críochnóidh deimhniú an cluiche agus marcálfar an clár."
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "Mhol {opponentName} comhscór"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "D'éirigh {opponentName} as — buann tú!"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "Buann {opponentName}"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "Gluaiseacht {opponentName}"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -59,13 +47,7 @@ msgstr "{size}×{size} clár Go, do sheal. Úsáid eochracha saighde chun nascle
 
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
-msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "Buann {winnerColor} — D:{0} B:{1}"
+msgstr "D'imir {subject} <0>{moveLabel}</0>"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "AI"
 msgid "All"
 msgstr "Iomlán"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr "Tharla earráid"
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr "Tharla earráid gan choinne"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "An bhfuil tú cinnte gur mian leat logáil amach? Beidh ort logáil isteach arís chun do chuntas a rochtain."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "An bhfuil tú cinnte gur mian leat éirí as? Buaillfidh {opponentName} an cluiche."
 
@@ -198,12 +188,11 @@ msgstr "Ar ais"
 msgid "Back to home"
 msgstr "Ar ais go baile"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "Dubh"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "Gabháltais Dhuibhe:"
 
@@ -243,8 +232,8 @@ msgstr "Catagóir don fhógra seo"
 msgid "Change notification category"
 msgstr "Athraigh catagóir an fhógra"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "Comhrá"
 
@@ -406,7 +395,7 @@ msgstr "Réamhshocrú"
 msgid "Default AI account"
 msgstr "Cuntas AI réamhshocraithe"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "Scrios cluiche"
 
@@ -449,15 +438,11 @@ msgstr "Taispeánann an barra taoibh móibíleach."
 msgid "Download"
 msgstr "Íoslódáil"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "Tarraing"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr "Cothrom comhaontaithe"
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Comhionannas tairgthe — ag fanacht le {opponentName}"
 
@@ -477,11 +462,11 @@ msgstr "Trasnú folamh {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Trasnú folamh {colLabel}{rowLabel}, cliceáil nó brúigh Enter chun a chur"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "Cuir deireadh leis an gcluiche"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "Cuir deireadh leis an gcluiche?"
 
@@ -505,7 +490,7 @@ msgstr "Leathnaigh barra taoibh"
 msgid "Extra large"
 msgstr "Breise mór"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "Theip ar ghlacadh leis an gcomhionannas"
 
@@ -517,27 +502,27 @@ msgstr "Theip ar chuntas a chur leis"
 msgid "Failed to create game"
 msgstr "Theip ar chluiche a chruthú"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "Theip ar athchluiche a chruthú"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "Theip ar dhiúltú don chomhionannas"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "Theip ar chluiche a scriosadh"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "Theip ar bhogadh a dhéanamh"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "Theip ar chomhionannas a thairiscint"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "Theip ar phas"
 
@@ -545,12 +530,12 @@ msgstr "Theip ar phas"
 msgid "Failed to remove account"
 msgstr "Theip ar bhaint chuntais"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "Theip ar éirí as"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "Theip ar sheoladh"
 
@@ -594,17 +579,13 @@ msgstr "Leagan amach iomlán"
 msgid "Game created"
 msgstr "Cluiche cruthaithe"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "Cluiche scriosta"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "Cluiche thart"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Imigh"
 
@@ -755,6 +736,10 @@ msgstr "Dé Luain"
 msgid "Must be between 0 and 10"
 msgstr "Caithfidh idir 0 agus 10 a bheith ann"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr "Earráid líonra"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Nua"
@@ -842,7 +827,7 @@ msgstr "Gnách"
 msgid "Notifications"
 msgstr "Fógraí"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "Tairg comhscór"
 
@@ -855,11 +840,11 @@ msgstr "Úps! Níor aimsíodh an leathanach!"
 msgid "Open account actions"
 msgstr "Oscail gníomhartha cuntais"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "Oscail painéal comhrá"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "Oscail gníomhartha cluiche"
 
@@ -885,16 +870,16 @@ msgid "Owner"
 msgstr "Úinéir"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "Lig thar"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "Lig an seal thar?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "Ag ligean thar..."
 
@@ -909,6 +894,10 @@ msgstr "Theip ar fhíorú na heochrach rochtana. Bain triail eile as."
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
 msgstr "Pasluichí"
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
+msgstr "Seiceáil do nasc idirlín agus bain triail eile as."
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -961,7 +950,7 @@ msgstr "Coibhneasta (5n, 3u, 2l)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Coibhneasta laistigh de 24 uair, eile dearbhach"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "Athchluiche"
 
@@ -996,16 +985,16 @@ msgstr "Athshocraigh"
 msgid "Reset all settings to default values"
 msgstr "Athshocraigh gach socrú chuig na luachanna réamhshocraithe"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "Éirigh as"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "Éirigh as an gcluiche?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "Ag éirí as..."
 
@@ -1107,6 +1096,11 @@ msgstr "Seol teachtaireacht"
 msgid "Serif"
 msgstr "Le serif"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr "Earráid freastalaí"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "Á shíniú amach..."
 msgid "Skip to Main"
 msgstr "Scipeáil go dtí an Príomhábhar"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "Lig do sheal thart agus cuir ar aghaidh chuig do chéile comhraic é."
 
@@ -1272,6 +1266,10 @@ msgstr "Clóscríobh chun cuardach a dhéanamh ar úsáideoirí"
 msgid "Type to search..."
 msgstr "Clóscríobh chun cuardach a dhéanamh..."
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr "Ní féidir nascadh leis an bhfreastalaí cianda"
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "Tá an suíomh gréasáin faoi chothabháil!"
 msgid "Wednesday"
 msgstr "Céadaoin"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "Bán"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "Gabhálacha bána:"
 
@@ -1376,18 +1373,6 @@ msgstr "Críoch bhán ag {colLabel}{rowLabel}"
 msgid "You"
 msgstr "Tusa"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "D'éirigh tú as — buann {opponentName}"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "Bhuaigh tú!"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Aistríodh do chuntas anseo ó {source}. Go dtí go scriosann tú é ansin, d'fhéadfadh teachtaireachtaí agus fógraí an dá fhreastalaí a bhaint amach, leanann roinnt de d'ábhar á sheirbheáil ón sean-fhreastalaí, agus d'fhéadfadh sé cúpla nóiméad a thógáil ar do lucht leanúna tú a aimsiú anseo."
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "Do ghluaiseacht"

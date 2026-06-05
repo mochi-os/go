@@ -25,25 +25,13 @@ msgstr "{name} oikuave'ẽ pe'ã"
 msgid "{name} resigned"
 msgstr "{name} oñembotove"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} avei ohasáma. Embokuave'ẽvo opáta ñembosarái ha ojepapáta tabla."
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} oikuave'ẽ empate"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "{opponentName} oñembohasáma — repu'aka!"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "{opponentName} ipu'aka"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "{opponentName} pa'ũ"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -59,13 +47,7 @@ msgstr "{size}×{size} Go tabla, ne pa'ũ. Eipuru jereha tai jereraha haguã ha 
 
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
-msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "{winnerColor} ipu'aka — H:{0} M:{1}"
+msgstr "{subject} oñembosarái <0>{moveLabel}</0>"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "AI"
 msgid "All"
 msgstr "Opaite"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr "Oĩ peteĩ jejavy"
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr "Oĩ peteĩ jejavy ñeha'ãrõ'ỹva"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Añetehápe esẽse? Eñepyrũjeýta hag̃ua eike ne tetãyguápe."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Añetehápe eikese? {opponentName} ogana ñembosarái."
 
@@ -198,12 +188,11 @@ msgstr "Tapykuépe"
 msgid "Back to home"
 msgstr "Eju jey ógape"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "Hũ"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "Hũ ipoguypegua:"
 
@@ -243,8 +232,8 @@ msgstr "Categoría ko ñe'ẽmondo-pegua"
 msgid "Change notification category"
 msgstr "Embojere ñe'ẽmondo categoría"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "Chat"
 
@@ -406,7 +395,7 @@ msgstr "Default"
 msgid "Default AI account"
 msgstr "Default AI tetãygua"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "Hundi ñembosarái"
 
@@ -449,15 +438,11 @@ msgstr "Ohechauka mobile sidebar."
 msgid "Download"
 msgstr "Emboguejy"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "Pyhuỹi"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr "Pe'ã oñemoneĩ"
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Oñeñeʼẽ pyhuỹire — oñehaʼarõ {opponentName}"
 
@@ -477,11 +462,11 @@ msgstr "Intersección nandi {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Intersección nandi {colLabel}{rowLabel}, eikutu térã eikutu Enter emoĩ haguã"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "Emomba mbosaraitápe"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "¿Emomba mbosaraitápe?"
 
@@ -505,7 +490,7 @@ msgstr "Embotuicha sidebar"
 msgid "Extra large"
 msgstr "Tuichavéva"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "Ndaikatúi oñeñe'ẽ pyhuỹire"
 
@@ -517,27 +502,27 @@ msgstr "Ndaikatúi oñembojuaju cuenta"
 msgid "Failed to create game"
 msgstr "Ndaikatúi oñembojuaju mbosaraita"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "Ndaikatúi oñembojuaju ñembosarai jey"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "Ndaikatúi ojeheja pyhuỹi"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "Ndaikatúi ojejuka mbosaraita"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "Ndaikatúi ojeku'e"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "Ndaikatúi oñeñe'ẽ pyhuỹire"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "Ndaikatúi oñehasa"
 
@@ -545,12 +530,12 @@ msgstr "Ndaikatúi oñehasa"
 msgid "Failed to remove account"
 msgstr "Ndaikatúi oñembogue cuenta"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "Ndaikatúi oñerrendi"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "Ndaikatúi oñemondo"
 
@@ -594,17 +579,13 @@ msgstr "Layout iguasúva"
 msgid "Game created"
 msgstr "Oñembojuaju mbosaraita"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "Oñembogue mbosaraita"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "Mbosaraita opa"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Eha"
 
@@ -755,6 +736,10 @@ msgstr "Arakõi"
 msgid "Must be between 0 and 10"
 msgstr "Tekotevẽ 0 ha 10 apytépe"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr "Jejavy ñanduti rehegua"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Pyahu"
@@ -842,7 +827,7 @@ msgstr "Iko háicha"
 msgid "Notifications"
 msgstr "Ñehenói"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "Eme'ẽ jehecha"
 
@@ -855,11 +840,11 @@ msgstr "Hetia'epa! ¡Kuatiarogue ndojejuhúi!"
 msgid "Open account actions"
 msgstr "Eipe'a cuenta tembiapo"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "Eipe'a ñe'ẽ panel"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "Eipe'a ñembosarái tembiapo"
 
@@ -885,16 +870,16 @@ msgid "Owner"
 msgstr "Mburuvicha"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "Ehasa"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "Ehasa torno?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "Ohasahína..."
 
@@ -909,6 +894,10 @@ msgstr "Passkey ñemyatã ndoikói. Eñehaʼã jey."
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
 msgstr "Jeike rape kuéra"
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
+msgstr "Ehechami nde internet conexión ha eha'ã jey."
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -961,7 +950,7 @@ msgstr "Mbytetégua (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Mbytetégua 24 hora ndive, ambue tiempo absoluto"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "Eha'ã jey"
 
@@ -996,16 +985,16 @@ msgstr "Embojevy"
 msgid "Reset all settings to default values"
 msgstr "Embojevy opa ñembosako'i ypy peguávape"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "Ehasa"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "Ehasa ñembosarái?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "Ohasahína..."
 
@@ -1107,6 +1096,11 @@ msgstr "Emondo marandu"
 msgid "Serif"
 msgstr "Serif"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr "Jejavy servidor rehegua"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "Sesionhápe oñesẽva..."
 msgid "Skip to Main"
 msgstr "Eheja Tenondévare"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "Eheja ne pa'ũ ha ehasa angirũre."
 
@@ -1272,6 +1266,10 @@ msgstr "Ehai eheka mboapurevahára"
 msgid "Type to search..."
 msgstr "Ehai eheka..."
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr "Ndaikatúi ojeike servidor mombyrýpe"
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "Web tembiporu ojejapo!"
 msgid "Wednesday"
 msgstr "Mba'embohopapa"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "Morotĩ"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "Morotĩ ohupi:"
 
@@ -1376,18 +1373,6 @@ msgstr "Morotĩ tendarã {colLabel}{rowLabel}-pe"
 msgid "You"
 msgstr "Nde"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "Reñembohasáma — {opponentName} ipu'aka"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "Repu'aka!"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Nde cuenta oiko ko'ápe {source} guive. Peve reipe'a upépe, marandu ha mba'emimi ikatu ogueru servidor mokõive-pe, nde mba'e mba'eapo ambuéva ohasave ypykue servidor guive, ha erekopy'araka'e minutopi peve reko'ata ko'ápe."
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "Ne pyenda"

@@ -25,25 +25,13 @@ msgstr "{name} ofereceu empate"
 msgid "{name} resigned"
 msgstr "{name} desistiu"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} também passou. Confirmar terminará o jogo e calculará a pontuação do tabuleiro."
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ofereceu empate"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "{opponentName} desistiu — venceu!"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "{opponentName} vence"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "Jogada de {opponentName}"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -59,13 +47,7 @@ msgstr "Tabuleiro de Go {size}×{size}, é a sua vez. Use as teclas de seta para
 
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
-msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "{winnerColor} vence — P:{0} B:{1}"
+msgstr "{subject} jogou <0>{moveLabel}</0>"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "IA"
 msgid "All"
 msgstr "Todos"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr "Ocorreu um erro"
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr "Ocorreu um erro inesperado"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Tem a certeza de que pretende terminar sessão? Terá de iniciar sessão novamente para aceder à sua conta."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Tem a certeza de que quer desistir? {opponentName} vai ganhar a partida."
 
@@ -198,12 +188,11 @@ msgstr "Voltar"
 msgid "Back to home"
 msgstr "Voltar ao início"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "Pretas"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "Capturas das pretas:"
 
@@ -243,8 +232,8 @@ msgstr "Categoria para esta notificação"
 msgid "Change notification category"
 msgstr "Alterar categoria de notificação"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "Conversa"
 
@@ -406,7 +395,7 @@ msgstr "Predefinição"
 msgid "Default AI account"
 msgstr "Conta de IA predefinida"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "Eliminar jogo"
 
@@ -449,15 +438,11 @@ msgstr "Apresenta a barra lateral móvel."
 msgid "Download"
 msgstr "Transferir"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "Empate"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr "Empate acordado"
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Empate oferecido — à espera de {opponentName}"
 
@@ -477,11 +462,11 @@ msgstr "Interseção vazia {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Interseção vazia {colLabel}{rowLabel}, clique ou prima Enter para colocar"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "Terminar jogo"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "Terminar jogo?"
 
@@ -505,7 +490,7 @@ msgstr "Expandir barra lateral"
 msgid "Extra large"
 msgstr "Extra grande"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "Falha ao aceitar empate"
 
@@ -517,27 +502,27 @@ msgstr "Falha ao adicionar conta"
 msgid "Failed to create game"
 msgstr "Falha ao criar jogo"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "Falha ao criar revanche"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "Falha ao recusar empate"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "Falha ao eliminar jogo"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "Falha ao realizar jogada"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "Falha ao propor empate"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "Falha ao passar"
 
@@ -545,12 +530,12 @@ msgstr "Falha ao passar"
 msgid "Failed to remove account"
 msgstr "Falha ao remover conta"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "Falha ao desistir"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "Falha ao enviar"
 
@@ -594,17 +579,13 @@ msgstr "Disposição completa"
 msgid "Game created"
 msgstr "Jogo criado"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "Jogo eliminado"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "Fim do jogo"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Ir"
 
@@ -755,6 +736,10 @@ msgstr "Segunda-feira"
 msgid "Must be between 0 and 10"
 msgstr "Deve estar entre 0 e 10"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr "Erro de rede"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Novo"
@@ -842,7 +827,7 @@ msgstr "Normal"
 msgid "Notifications"
 msgstr "Notificações"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "Propor empate"
 
@@ -855,11 +840,11 @@ msgstr "Ups! Página Não Encontrada!"
 msgid "Open account actions"
 msgstr "Abrir ações da conta"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "Abrir painel de conversa"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "Abrir ações do jogo"
 
@@ -885,16 +870,16 @@ msgid "Owner"
 msgstr "Proprietário"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "Passar"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "Passar a vez?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "A passar..."
 
@@ -909,6 +894,10 @@ msgstr "A verificação da chave de acesso falhou. Tente novamente."
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
 msgstr "Chaves de acesso"
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
+msgstr "Verifique a sua ligação à Internet e tente novamente."
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -961,7 +950,7 @@ msgstr "Relativo (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relativo dentro de 24 horas, caso contrário absoluto"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "Revanche"
 
@@ -996,16 +985,16 @@ msgstr "Repor"
 msgid "Reset all settings to default values"
 msgstr "Repor todas as definições para os valores predefinidos"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "Desistir"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "Desistir do jogo?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "A desistir..."
 
@@ -1107,6 +1096,11 @@ msgstr "Enviar mensagem"
 msgid "Serif"
 msgstr "Com serifa"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr "Erro do servidor"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "A terminar sessão..."
 msgid "Skip to Main"
 msgstr "Saltar para o principal"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "Salte a sua vez e passe ao seu adversário."
 
@@ -1272,6 +1266,10 @@ msgstr "Escreva para pesquisar utilizadores"
 msgid "Type to search..."
 msgstr "Escreva para pesquisar..."
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr "Não foi possível ligar ao servidor remoto"
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "O site está em manutenção!"
 msgid "Wednesday"
 msgstr "Quarta-feira"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "Brancas"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "Capturas das brancas:"
 
@@ -1376,18 +1373,6 @@ msgstr "Território branco em {colLabel}{rowLabel}"
 msgid "You"
 msgstr "Você"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "Desistiu — {opponentName} vence"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "Venceu!"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "A sua conta foi transferida para aqui a partir de {source}. Até a eliminar lá, as mensagens e notificações podem chegar a ambos os servidores, parte do seu conteúdo continua a ser servido pelo servidor antigo e os seguidores podem demorar alguns minutos a encontrá-la aqui."
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "A sua jogada"

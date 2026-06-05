@@ -25,25 +25,13 @@ msgstr "{name} menawarkan seri"
 msgid "{name} resigned"
 msgstr "{name} mengaku kalah"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} juga melepasi giliran. Mengesahkan akan menamatkan permainan dan mengira papan."
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} menawarkan seri"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "{opponentName} mengalah — anda menang!"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "{opponentName} menang"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "Giliran {opponentName}"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -59,13 +47,7 @@ msgstr "Papan Go {size}×{size}, giliran anda. Gunakan kekunci anak panah untuk 
 
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
-msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "{winnerColor} menang — H:{0} P:{1}"
+msgstr "{subject} bermain <0>{moveLabel}</0>"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "AI"
 msgid "All"
 msgstr "Semua"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr "Ralat berlaku"
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr "Ralat yang tidak dijangka berlaku"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Adakah anda pasti mahu log keluar? Anda perlu log masuk semula untuk mengakses akaun anda."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Adakah anda pasti mahu mengaku kalah? {opponentName} akan memenangi permainan."
 
@@ -198,12 +188,11 @@ msgstr "Kembali"
 msgid "Back to home"
 msgstr "Kembali ke laman utama"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "Hitam"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "Tangkapan hitam:"
 
@@ -243,8 +232,8 @@ msgstr "Kategori untuk pemberitahuan ini"
 msgid "Change notification category"
 msgstr "Tukar kategori pemberitahuan"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "Sembang"
 
@@ -406,7 +395,7 @@ msgstr "Lalai"
 msgid "Default AI account"
 msgstr "Akaun AI lalai"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "Padam permainan"
 
@@ -449,15 +438,11 @@ msgstr "Memaparkan bar sisi mudah alih."
 msgid "Download"
 msgstr "Muat turun"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "Seri"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr "Seri dipersetujui"
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Seri ditawarkan — menunggu {opponentName}"
 
@@ -477,11 +462,11 @@ msgstr "Persimpangan kosong {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Persimpangan kosong {colLabel}{rowLabel}, klik atau tekan Enter untuk meletakkan"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "Tamatkan permainan"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "Tamatkan permainan?"
 
@@ -505,7 +490,7 @@ msgstr "Kembangkan bar sisi"
 msgid "Extra large"
 msgstr "Sangat besar"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "Gagal menerima seri"
 
@@ -517,27 +502,27 @@ msgstr "Gagal menambah akaun"
 msgid "Failed to create game"
 msgstr "Gagal mencipta permainan"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "Gagal mencipta perlawanan semula"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "Gagal menolak seri"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "Gagal memadam permainan"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "Gagal membuat pergerakan"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "Gagal menawarkan seri"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "Gagal melepasi"
 
@@ -545,12 +530,12 @@ msgstr "Gagal melepasi"
 msgid "Failed to remove account"
 msgstr "Gagal mengalih keluar akaun"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "Gagal mengaku kalah"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "Gagal menghantar"
 
@@ -594,17 +579,13 @@ msgstr "Susun atur penuh"
 msgid "Game created"
 msgstr "Permainan dicipta"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "Permainan dipadam"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "Permainan tamat"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Pergi"
 
@@ -755,6 +736,10 @@ msgstr "Isnin"
 msgid "Must be between 0 and 10"
 msgstr "Mestilah antara 0 dan 10"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr "Ralat rangkaian"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Baharu"
@@ -842,7 +827,7 @@ msgstr "Biasa"
 msgid "Notifications"
 msgstr "Pemberitahuan"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "Tawarkan seri"
 
@@ -855,11 +840,11 @@ msgstr "Alamak! Halaman Tidak Dijumpai!"
 msgid "Open account actions"
 msgstr "Buka tindakan akaun"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "Buka panel sembang"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "Buka tindakan permainan"
 
@@ -885,16 +870,16 @@ msgid "Owner"
 msgstr "Pemilik"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "Lepas"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "Lepas giliran?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "Melepaskan..."
 
@@ -909,6 +894,10 @@ msgstr "Pengesahan kunci laluan gagal. Sila cuba lagi."
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
 msgstr "Passkey"
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
+msgstr "Sila semak sambungan internet anda dan cuba lagi."
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -961,7 +950,7 @@ msgstr "Relatif (5m, 3j, 2h)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relatif dalam 24 jam, jika tidak mutlak"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "Lawan semula"
 
@@ -996,16 +985,16 @@ msgstr "Tetapkan semula"
 msgid "Reset all settings to default values"
 msgstr "Tetapkan semula semua tetapan kepada nilai lalai"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "Letak jawatan"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "Letak jawatan permainan?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "Meletakkan jawatan..."
 
@@ -1107,6 +1096,11 @@ msgstr "Hantar mesej"
 msgid "Serif"
 msgstr "Serif"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr "Ralat pelayan"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "Sedang log keluar..."
 msgid "Skip to Main"
 msgstr "Langkau ke Utama"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "Langkau giliran anda dan pas kepada lawan anda."
 
@@ -1272,6 +1266,10 @@ msgstr "Taip untuk mencari pengguna"
 msgid "Type to search..."
 msgstr "Taip untuk mencari..."
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr "Tidak dapat menyambung ke pelayan jauh"
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "Laman web sedang dalam penyelenggaraan!"
 msgid "Wednesday"
 msgstr "Rabu"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "Putih"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "Tangkapan putih:"
 
@@ -1376,18 +1373,6 @@ msgstr "Wilayah putih di {colLabel}{rowLabel}"
 msgid "You"
 msgstr "Anda"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "Anda mengalah — {opponentName} menang"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "Anda menang!"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Akaun anda telah dipindahkan ke sini dari {source}. Sehingga anda memadamnya di sana, mesej dan pemberitahuan mungkin sampai ke kedua-dua pelayan, sebahagian kandungan anda terus dihidangkan dari pelayan lama, dan pengikut mungkin mengambil masa beberapa minit untuk mencari anda di sini."
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "Giliran anda"

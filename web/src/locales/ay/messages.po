@@ -25,25 +25,13 @@ msgstr "{name} kikipa anatañ amuyt'awayi"
 msgid "{name} resigned"
 msgstr "{name} jaytawayi"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} mä empate uñstayi"
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} resignasta — gantata!"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "{opponentName} ganata"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "{opponentName} movimientopa"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "{pageTitle} - Comentarios"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -59,13 +47,7 @@ msgstr "{slotLabel} machaqachata"
 
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
-msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "{winnerName} ganata"
+msgstr "{subject} anatawayi <0>{moveLabel}</0>"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "AI"
 msgid "All"
 msgstr "Taqpach"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr "Mä juch'a utjawayi"
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr "Jan suyt'ata juch'a utjawayi"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Chiqpach mistuña munta? Wasitat mantañam cuentamar mantañataki."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Chiqpach jaytaña munta? {opponentName} ukax anatawix atipiyani."
 
@@ -198,12 +188,11 @@ msgstr "Kutta"
 msgid "Back to home"
 msgstr "Utar kutiña"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "Ch'iyara"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "Ch'iyara katjawinaka:"
 
@@ -243,8 +232,8 @@ msgstr "Aka yatiyäw kasta"
 msgid "Change notification category"
 msgstr "Yatiyäw kasta mayjt'ayaña"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "Chat"
 
@@ -406,7 +395,7 @@ msgstr "Default"
 msgid "Default AI account"
 msgstr "Default AI cuenta"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "Anatawi chhaqtayaña"
 
@@ -449,15 +438,11 @@ msgstr "Móvil sidebar uñacht'ayi."
 msgid "Download"
 msgstr "Apaqaña"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "Sallqa"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr "Kikipa anatañ amuyt'awi"
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Sallqa churatawa — {opponentName} suyasin"
 
@@ -477,11 +462,11 @@ msgstr "Wakischa intersección {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Wakischa intersección {colLabel}{rowLabel}, click luraña jan ukax Enter limt'aña uchantañataki"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "Anatawi tukuyaña"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "¿Anatawi tukuyaña?"
 
@@ -505,7 +490,7 @@ msgstr "Sidebar jach'achaña"
 msgid "Extra large"
 msgstr "Sinti jach'a"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "Janiw sallqa katuqaña atinkti"
 
@@ -517,27 +502,27 @@ msgstr "Janiw cuenta yapxataña atinkti"
 msgid "Failed to create game"
 msgstr "Janiw anatawi lurña atinkti"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "Janiw rematch lurña atinkti"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "Janiw sallqa jiskhaña atinkti"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "Janiw anatawi chhaqtayaña atinkti"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "Janiw kuyuwi luraña atinkti"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "Janiw sallqa churaña atinkti"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "Janiw pasaña atinkti"
 
@@ -545,12 +530,12 @@ msgstr "Janiw pasaña atinkti"
 msgid "Failed to remove account"
 msgstr "Janiw cuenta apsuña atinkti"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "Janiw jaytxaña atinkti"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "Janiw apayaña atinkti"
 
@@ -594,17 +579,13 @@ msgstr "Taqpach diseño"
 msgid "Game created"
 msgstr "Anatawi luratawa"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "Anatawi chhaqtayatawa"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "Anatawi tukusi"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Saraña"
 
@@ -755,6 +736,10 @@ msgstr "Lunes"
 msgid "Must be between 0 and 10"
 msgstr "0 ukat 10 taypinkañapawa"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr "Red juch'a"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Machaqa"
@@ -842,7 +827,7 @@ msgstr "Walja"
 msgid "Notifications"
 msgstr "Yatiyawinaka"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "Empate offerma"
 
@@ -855,11 +840,11 @@ msgstr "¡Oops! ¡Página jan jikxatasiti!"
 msgid "Open account actions"
 msgstr "Cuenta lurawinak jist'arma"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "Parla panel jist'arma"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "Anatawi lurawinak jist'arma"
 
@@ -885,16 +870,16 @@ msgid "Owner"
 msgstr "Dueño"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "Pasaña"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "¿Turno pasaña?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "Pasaski..."
 
@@ -909,6 +894,10 @@ msgstr "Passkey yatiyañax jan walikiti. Mira wasitat yant'asma."
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
 msgstr "Passkeyanaka"
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
+msgstr "Mira internet conexion ukat wasitat yant'asim."
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -961,7 +950,7 @@ msgstr "Relativo (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relativo 24 hora taypi, jan ukax absoluto"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "Mayamp anatasiñ"
 
@@ -996,16 +985,16 @@ msgstr "Kutintayama"
 msgid "Reset all settings to default values"
 msgstr "Taqi configuracionanak default valoranakar kutintayama"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "Jaytayma"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "¿Anatawi jaytayma?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "Jaytayski..."
 
@@ -1107,6 +1096,11 @@ msgstr "Mensaje apayaña"
 msgid "Serif"
 msgstr "Serif"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr "Servidor juch'a"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "Mistuyasa..."
 msgid "Skip to Main"
 msgstr "Main ukar saraqaña"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "Vuelta saraqaña, contrari ukar churaña."
 
@@ -1272,6 +1266,10 @@ msgstr "Thaqhañatak qillqam..."
 msgid "Type to search..."
 msgstr "Mensajemam qillqam…"
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr "Jan jaya servidorar mayachasiñjamäkiti"
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "Miércoles"
 msgid "Wednesday"
 msgstr "Semanax aka uru qalltani"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "Janq'u katuqäwinaka:"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "{colLabel}{rowLabel} ukan janq'u qala"
 
@@ -1376,18 +1373,6 @@ msgstr "Janq'u {0}"
 msgid "You"
 msgstr "Aka masimamp mä chat utjxiwa"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "Aka chatat apaqasta"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "Aka subasta gantata"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Juman cuenta {source} ukamanta achakata. Ukankiwa juchut'ayapkchama, ikirinakampi willt'awinakampi pä servdorankama chikañ atikaniwa, walja lurawinakasataki jach'a servdorpa ukatpachani uñakiparakiwa, ukhamaraki suyirinakaxa aka jichhxa jupast'aña pätpachani saräniwa."
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "Sutimax, kunjaman mayninakax uñjapxañpa muntax"

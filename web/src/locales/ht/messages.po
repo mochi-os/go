@@ -25,25 +25,13 @@ msgstr "{name} ofri yon egalite"
 msgid "{name} resigned"
 msgstr "{name} bay legen"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} tou pase. Konfime pral fini jwèt la epi nòt tablo a."
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ofri yon egal"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "{opponentName} demisyone — ou genyen!"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "{opponentName} genyen"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "Mouvman {opponentName}"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -59,13 +47,7 @@ msgstr "Tablo Go {size}×{size}, tou pa w. Itilize touch flèch yo pou navige ep
 
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
-msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "{winnerColor} genyen — B:{0} W:{1}"
+msgstr "{subject} jwe <0>{moveLabel}</0>"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "AI"
 msgid "All"
 msgstr "Tout"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr "Yon erè te rive"
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr "Yon erè inatandi te rive"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Èske ou sèten ou vle dekonekte? Ou pral bezwen konekte ankò pou aksede kont ou."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Èske ou sèten ou vle bay vag? {opponentName} pral genyen jwèt la."
 
@@ -198,12 +188,11 @@ msgstr "Retounen"
 msgid "Back to home"
 msgstr "Tounen lakay"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "Nwa"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "Nwa kaptire:"
 
@@ -243,8 +232,8 @@ msgstr "Kategori pou notifikasyon sa a"
 msgid "Change notification category"
 msgstr "Chanje kategori notifikasyon"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "Chat"
 
@@ -406,7 +395,7 @@ msgstr "Defo"
 msgid "Default AI account"
 msgstr "Kont AI defo"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "Efase jwèt"
 
@@ -449,15 +438,11 @@ msgstr "Afiche ba kote mobil la."
 msgid "Download"
 msgstr "Telechaje"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "Match nul"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr "Egalite dakò"
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Match nul ofri — ap tann {opponentName}"
 
@@ -477,11 +462,11 @@ msgstr "Entèseksyon vid {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Entèseksyon vid {colLabel}{rowLabel}, klike oswa peze Enter pou plase"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "Fini jwèt la"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "Fini jwèt la?"
 
@@ -505,7 +490,7 @@ msgstr "Elaji ba kote"
 msgid "Extra large"
 msgstr "Trè gwo"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "Echwe pou aksepte match nul"
 
@@ -517,27 +502,27 @@ msgstr "Echwe pou ajoute kont"
 msgid "Failed to create game"
 msgstr "Echwe pou kreye jwèt"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "Echwe pou kreye remach"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "Echwe pou refize match nul"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "Echwe pou efase jwèt"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "Echwe pou fè mouvman"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "Echwe pou ofri match nul"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "Echwe pou pase"
 
@@ -545,12 +530,12 @@ msgstr "Echwe pou pase"
 msgid "Failed to remove account"
 msgstr "Echwe pou retire kont"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "Echwe pou demisyone"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "Echwe pou voye"
 
@@ -594,17 +579,13 @@ msgstr "Layout konplè"
 msgid "Game created"
 msgstr "Jwèt kreye"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "Jwèt efase"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "Jwèt fini"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Ale"
 
@@ -755,6 +736,10 @@ msgstr "Lendi"
 msgid "Must be between 0 and 10"
 msgstr "Dwe ant 0 ak 10"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr "Erè rezo"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Nouvo"
@@ -842,7 +827,7 @@ msgstr "Nòmal"
 msgid "Notifications"
 msgstr "Notifikasyon"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "Pwopoze egalite"
 
@@ -855,11 +840,11 @@ msgstr "Oops! Paj Pa Jwenn!"
 msgid "Open account actions"
 msgstr "Ouvri aksyon kont yo"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "Ouvri panèl chat"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "Ouvri aksyon jwèt yo"
 
@@ -885,22 +870,22 @@ msgid "Owner"
 msgstr "Pwopriyetè"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "Pase"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "Pase tou?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "Ap pase..."
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:331
 msgid "Passkey"
-msgstr ""
+msgstr "Kle aksè"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:206
 msgid "Passkey verification failed. Please try again."
@@ -909,6 +894,10 @@ msgstr "Verifikasyon passkey la echwe. Tanpri eseye ankò."
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
 msgstr "Paskey"
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
+msgstr "Tanpri tcheke koneksyon entènèt ou epi eseye ankò."
 
 #: src/features/go/components/new-game.tsx:84
 msgid "Please select a friend"
@@ -961,7 +950,7 @@ msgstr "Relatif (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relatif nan 24 èdtan, sinon absoli"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "Rejwèt"
 
@@ -996,16 +985,16 @@ msgstr "Reset"
 msgid "Reset all settings to default values"
 msgstr "Reset tout paramèt nan valè default"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "Demisyone"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "Demisyone jwèt?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "Ap demisyone..."
 
@@ -1107,6 +1096,11 @@ msgstr "Voye mesaj"
 msgid "Serif"
 msgstr "Serif"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr "Erè sèvè"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "Ap dekonekte..."
 msgid "Skip to Main"
 msgstr "Sote pou Prensipal"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "Sote tou pa w epi pase l bay opozan w lan."
 
@@ -1272,6 +1266,10 @@ msgstr "Tape pou chèche itilizatè"
 msgid "Type to search..."
 msgstr "Tape pou chèche..."
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr "Pa kapab konekte ak sèvè aleka a"
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "Sit la nan antretyen!"
 msgid "Wednesday"
 msgstr "Mèkredi"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "Blan"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "Blan kapture:"
 
@@ -1376,18 +1373,6 @@ msgstr "Tèritwa blan nan {colLabel}{rowLabel}"
 msgid "You"
 msgstr "Ou"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "Ou demisyone — {opponentName} genyen"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "Ou genyen!"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Kont ou te deplase isit la depi {source}. Jiskaske ou efase li la, mesaj ak notifikasyon yo ka rive sou de sèvè yo, yon pati nan kontni ou ap kontinye sèvi depi ansyen sèvè a, epi moun k ap swiv ou yo ka pran kèk minit pou jwenn ou isit la."
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "Mouvman w"

@@ -25,25 +25,13 @@ msgstr ""
 msgid "{name} resigned"
 msgstr ""
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} sa også pass. Stadfesting avsluttar spelet og tel poenga på brettet."
 
 #: src/features/go/components/draw-offer-banner.tsx:25
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} tilbaud uavgjort"
-
-#: src/features/go/index.tsx:81
-msgid "{opponentName} resigned — you win!"
-msgstr "{opponentName} gav opp — du vinn!"
-
-#: src/features/go/index.tsx:69
-msgid "{opponentName} wins"
-msgstr "{opponentName} vinn"
-
-#: src/features/go/index.tsx:85
-msgid "{opponentName}'s move"
-msgstr "{opponentName} sitt trekk"
 
 #: src/features/go/components/go-board.tsx:131
 msgid "{size}×{size} Go board"
@@ -60,12 +48,6 @@ msgstr "{size}×{size} Go-brett, din tur. Bruk piltastane for å navigere og Ent
 #: src/features/go/components/chat-message-list.tsx:212
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr ""
-
-#. placeholder {0}: score.black
-#. placeholder {1}: score.white
-#: src/features/go/index.tsx:65
-msgid "{winnerColor} wins — B:{0} W:{1}"
-msgstr "{winnerColor} vinn — S:{0} K:{1}"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:39
 msgid "12 hours"
@@ -172,11 +154,19 @@ msgstr "KI"
 msgid "All"
 msgstr "Alle"
 
+#: ../../../lib/web/src/lib/api-client.ts:189
+msgid "An error occurred"
+msgstr ""
+
+#: ../../../lib/web/src/lib/api-client.ts:252
+msgid "An unexpected error occurred"
+msgstr ""
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:24
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Er du sikker på at du vil logge ut? Du må logge inn att for å få tilgang til kontoen din."
 
-#: src/features/go/index.tsx:599
+#: src/features/go/index.tsx:602
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Er du sikker på at du vil gje opp? {opponentName} vinn spelet."
 
@@ -198,12 +188,11 @@ msgstr "Tilbake"
 msgid "Back to home"
 msgstr ""
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "Black"
 msgstr "Svart"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:433
 msgid "Black captures:"
 msgstr "Svart fangar:"
 
@@ -243,8 +232,8 @@ msgstr "Kategori for dette varselet"
 msgid "Change notification category"
 msgstr "Endre varselkategori"
 
-#: src/features/go/index.tsx:539
-#: src/features/go/index.tsx:571
+#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:574
 msgid "Chat"
 msgstr "Prat"
 
@@ -406,7 +395,7 @@ msgstr "Standard"
 msgid "Default AI account"
 msgstr "Standard KI-konto"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:495
 msgid "Delete game"
 msgstr "Slett spel"
 
@@ -449,15 +438,11 @@ msgstr "Viser mobil sidestolpe."
 msgid "Download"
 msgstr "Last ned"
 
-#: src/features/go/index.tsx:76
-msgid "Draw"
-msgstr "Remis"
-
 #: src/features/go/components/chat-message-list.tsx:183
 msgid "Draw agreed"
 msgstr ""
 
-#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:508
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Remis tilbydd — ventar på {opponentName}"
 
@@ -477,11 +462,11 @@ msgstr "Tomt skjeringspunkt {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Tomt skjeringspunkt {colLabel}{rowLabel}, klikk eller trykk Enter for å plassera"
 
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:635
 msgid "End game"
 msgstr "Avslutt spel"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "End game?"
 msgstr "Avslutt spel?"
 
@@ -505,7 +490,7 @@ msgstr "Utvid sidestolpe"
 msgid "Extra large"
 msgstr ""
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:208
 msgid "Failed to accept draw"
 msgstr "Klarte ikkje godta remis"
 
@@ -517,27 +502,27 @@ msgstr "Klarte ikkje leggja til konto"
 msgid "Failed to create game"
 msgstr "Klarte ikkje oppretta spel"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:223
 msgid "Failed to create rematch"
 msgstr "Klarte ikkje oppretta omkamp"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:213
 msgid "Failed to decline draw"
 msgstr "Klarte ikkje avslå remis"
 
-#: src/features/go/index.tsx:231
+#: src/features/go/index.tsx:234
 msgid "Failed to delete game"
 msgstr "Klarte ikkje sletta spel"
 
-#: src/features/go/index.tsx:176
+#: src/features/go/index.tsx:179
 msgid "Failed to make move"
 msgstr "Klarte ikkje gjera trekk"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:203
 msgid "Failed to offer draw"
 msgstr "Klarte ikkje tilby remis"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:186
 msgid "Failed to pass"
 msgstr "Klarte ikkje passa"
 
@@ -545,12 +530,12 @@ msgstr "Klarte ikkje passa"
 msgid "Failed to remove account"
 msgstr "Klarte ikkje fjerna konto"
 
-#: src/features/go/index.tsx:193
+#: src/features/go/index.tsx:196
 msgid "Failed to resign"
 msgstr "Klarte ikkje gje opp"
 
-#: src/features/go/index.tsx:555
-#: src/features/go/index.tsx:587
+#: src/features/go/index.tsx:558
+#: src/features/go/index.tsx:590
 msgid "Failed to send"
 msgstr "Klarte ikkje senda"
 
@@ -594,17 +579,13 @@ msgstr "Full layout"
 msgid "Game created"
 msgstr "Spel oppretta"
 
-#: src/features/go/index.tsx:227
+#: src/features/go/index.tsx:230
 msgid "Game deleted"
 msgstr "Spel sletta"
 
-#: src/features/go/index.tsx:72
-msgid "Game over"
-msgstr "Spelet er over"
-
-#: src/features/go/index.tsx:90
-#: src/features/go/index.tsx:353
-#: src/features/go/index.tsx:365
+#: src/features/go/index.tsx:93
+#: src/features/go/index.tsx:356
+#: src/features/go/index.tsx:368
 msgid "Go"
 msgstr "Gå"
 
@@ -755,6 +736,10 @@ msgstr "Måndag"
 msgid "Must be between 0 and 10"
 msgstr "Må vera mellom 0 og 10"
 
+#: ../../../lib/web/src/lib/api-client.ts:297
+msgid "Network error"
+msgstr ""
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:40
 msgid "New"
 msgstr "Ny"
@@ -842,7 +827,7 @@ msgstr "Normal"
 msgid "Notifications"
 msgstr "Varsel"
 
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:479
 msgid "Offer draw"
 msgstr "Tilby remis"
 
@@ -855,11 +840,11 @@ msgstr "Ups! Side ikkje funne!"
 msgid "Open account actions"
 msgstr "Opna kontohandlingar"
 
-#: src/features/go/index.tsx:447
+#: src/features/go/index.tsx:450
 msgid "Open chat panel"
 msgstr "Opna pratpanel"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:458
 msgid "Open game actions"
 msgstr "Opna spelhandlingar"
 
@@ -885,16 +870,16 @@ msgid "Owner"
 msgstr "Eigar"
 
 #: src/features/go/components/chat-message-list.tsx:205
-#: src/features/go/index.tsx:468
-#: src/features/go/index.tsx:632
+#: src/features/go/index.tsx:471
+#: src/features/go/index.tsx:635
 msgid "Pass"
 msgstr "Pasar"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:622
 msgid "Pass turn?"
 msgstr "Pasar tur?"
 
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:632
 msgid "Passing..."
 msgstr "Pasar..."
 
@@ -908,6 +893,10 @@ msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:126
 msgid "Passkeys"
+msgstr ""
+
+#: ../../../lib/web/src/lib/api-client.ts:298
+msgid "Please check your internet connection and try again."
 msgstr ""
 
 #: src/features/go/components/new-game.tsx:84
@@ -961,7 +950,7 @@ msgstr "Relativ (5m, 3t, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relativ innan 24 timar, elles absolutt"
 
-#: src/features/go/index.tsx:489
+#: src/features/go/index.tsx:492
 msgid "Rematch"
 msgstr "Omkamp"
 
@@ -996,16 +985,16 @@ msgstr "Tilbakestill"
 msgid "Reset all settings to default values"
 msgstr "Tilbakestill alle innstillingar til standardverdiar"
 
-#: src/features/go/index.tsx:480
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:610
 msgid "Resign"
 msgstr "Gje opp"
 
-#: src/features/go/index.tsx:598
+#: src/features/go/index.tsx:601
 msgid "Resign game?"
 msgstr "Gje opp spelet?"
 
-#: src/features/go/index.tsx:604
+#: src/features/go/index.tsx:607
 msgid "Resigning..."
 msgstr "Gjev opp..."
 
@@ -1107,6 +1096,11 @@ msgstr "Send melding"
 msgid "Serif"
 msgstr "Serif"
 
+#: ../../../lib/web/src/lib/api-client.ts:256
+#: ../../../lib/web/src/lib/api-client.ts:281
+msgid "Server error"
+msgstr ""
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx:16
 #: ../../../lib/web/src/features/document/document-page.tsx:37
 msgid "Server rules"
@@ -1144,7 +1138,7 @@ msgstr "Loggar ut..."
 msgid "Skip to Main"
 msgstr "Hopp til hovudinnhald"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Skip your turn and pass to your opponent."
 msgstr "Hopp over turen din og send vidare til motstandaren."
 
@@ -1272,6 +1266,10 @@ msgstr "Skriv for å søkje etter brukarar"
 msgid "Type to search..."
 msgstr "Skriv for å søkje..."
 
+#: ../../../lib/web/src/lib/api-client.ts:277
+msgid "Unable to connect to remote server"
+msgstr ""
+
 #: ../../../lib/web/src/lib/auth-manager.ts:82
 #: ../../../lib/web/src/lib/auth-manager.ts:94
 msgid "Unable to redirect to login. Please try again."
@@ -1355,12 +1353,11 @@ msgstr "Nettstaden er under vedlikehald!"
 msgid "Wednesday"
 msgstr "Onsdag"
 
-#: src/features/go/index.tsx:64
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:426
 msgid "White"
 msgstr "Kvit"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:438
 msgid "White captures:"
 msgstr "Kvit fangar:"
 
@@ -1376,18 +1373,6 @@ msgstr "Kvitt territorium på {colLabel}{rowLabel}"
 msgid "You"
 msgstr "Du"
 
-#: src/features/go/index.tsx:82
-msgid "You resigned — {opponentName} wins"
-msgstr "Du gav opp — {opponentName} vinn"
-
-#: src/features/go/index.tsx:69
-msgid "You win!"
-msgstr "Du vinn!"
-
 #: ../../../lib/web/src/components/restore-banner.tsx:82
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr ""
-
-#: src/features/go/index.tsx:85
-msgid "Your move"
-msgstr "Trekket ditt"
