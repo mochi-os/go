@@ -138,7 +138,8 @@ msgstr "გუნდის/აპის დამატება"
 msgid "Add to existing notifications"
 msgstr "არსებულ შეტყობინებებში დამატება"
 
-#: ../../../lib/web/src/components/view-tabs.tsx:57
+#: ../../../lib/web/src/components/view-tabs.tsx:81
+#: ../../../lib/web/src/components/view-tabs.tsx:82
 msgid "Add view"
 msgstr "ხედის დამატება"
 
@@ -216,6 +217,7 @@ msgstr "ინტერესის გაძლიერება"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
+#: ../../../lib/web/src/components/ui/editable-field-row.tsx:129
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
 #: ../../../lib/web/src/features/access/access-list.tsx:255
 #: ../../../lib/web/src/features/accounts/account-add.tsx:185
@@ -326,8 +328,8 @@ msgstr "კომპაქტური"
 msgid "Completed"
 msgstr "დასრულდა"
 
-#: ../../../lib/web/src/components/place-picker.tsx:155
-#: ../../../lib/web/src/components/travelling-picker.tsx:299
+#: ../../../lib/web/src/components/place-picker.tsx:156
+#: ../../../lib/web/src/components/travelling-picker.tsx:300
 msgid "Confirm"
 msgstr "დადასტურება"
 
@@ -451,9 +453,13 @@ msgstr "ფრე შეთანხმდა"
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "შემოთავაზებულია ფრე — ველოდები {opponentName}-ს"
 
-#: ../../../lib/web/src/lib/preference-utils.ts:134
+#: ../../../lib/web/src/lib/preference-utils.ts:143
 msgid "Dyslexia-friendly"
 msgstr "დისლექსიის თავსებადი"
+
+#: ../../../lib/web/src/components/ui/editable-field-row.tsx:151
+msgid "Edit {label}"
+msgstr "{label}-ის რედაქტირება"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:286
 msgid "Email code"
@@ -491,7 +497,7 @@ msgstr "შეიყვანეთ თქვენი authenticator-ის კ�
 msgid "Expand sidebar"
 msgstr "გვერდითი პანელის გაშლა"
 
-#: ../../../lib/web/src/lib/preference-utils.ts:124
+#: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Extra large"
 msgstr "ძალიან დიდი"
 
@@ -556,6 +562,10 @@ msgstr "კატეგორიის განახლება ვერ მ
 msgid "Finish moving your account"
 msgstr "დაასრულეთ ანგარიშის გადატანა"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:113
+msgid "Flat"
+msgstr "ბრტყელი"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:244
 msgid "Floating"
 msgstr "მცურავი"
@@ -571,8 +581,9 @@ msgstr "ვისგან"
 #: ../../../lib/web/src/lib/preference-utils.ts:91
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:112
-#: ../../../lib/web/src/lib/preference-utils.ts:120
-#: ../../../lib/web/src/lib/preference-utils.ts:131
+#: ../../../lib/web/src/lib/preference-utils.ts:121
+#: ../../../lib/web/src/lib/preference-utils.ts:129
+#: ../../../lib/web/src/lib/preference-utils.ts:140
 msgid "From theme"
 msgstr "თემიდან"
 
@@ -660,7 +671,7 @@ msgid "Komi"
 msgstr "კომი"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:105
-#: ../../../lib/web/src/lib/preference-utils.ts:123
+#: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "Large"
 msgstr "დიდი"
 
@@ -818,13 +829,17 @@ msgstr "მომხმარებლები ვერ მოიძებნ�
 
 #: ../../../lib/web/src/components/person-picker.tsx:349
 #: ../../../lib/web/src/lib/preference-utils.ts:102
-#: ../../../lib/web/src/lib/preference-utils.ts:113
+#: ../../../lib/web/src/lib/preference-utils.ts:122
 msgid "None"
 msgstr "არცერთი"
 
-#: ../../../lib/web/src/lib/preference-utils.ts:122
+#: ../../../lib/web/src/lib/preference-utils.ts:131
 msgid "Normal"
 msgstr "ნორმალური"
+
+#: ../../../lib/web/src/components/ui/editable-field-row.tsx:143
+msgid "Not set"
+msgstr "არ არის დაყენებული"
 
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:132
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:146
@@ -930,6 +945,10 @@ msgstr "კონფიდენციალურობა"
 msgid "Profile"
 msgstr "პროფილი"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:114
+msgid "Raised"
+msgstr "აწეული"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:98
 msgid "Re-link your accounts on this server"
 msgstr "ხელახლა დააკავშირეთ თქვენი ანგარიშები ამ სერვერზე"
@@ -1019,6 +1038,7 @@ msgstr "სტრიქონები გვერდზე"
 msgid "Saturday"
 msgstr "შაბათი"
 
+#: ../../../lib/web/src/components/ui/editable-field-row.tsx:119
 #: ../../../lib/web/src/components/ui/secret-field.tsx:74
 msgid "Save"
 msgstr "შენახვა"
@@ -1105,7 +1125,7 @@ msgstr "ელფოსტის გაგზავნა"
 msgid "Send message"
 msgstr "შეტყობინების გაგზავნა"
 
-#: ../../../lib/web/src/lib/preference-utils.ts:133
+#: ../../../lib/web/src/lib/preference-utils.ts:142
 msgid "Serif"
 msgstr "სერიფი"
 
@@ -1156,7 +1176,7 @@ msgid "Skip your turn and pass to your opponent."
 msgstr "გამოტოვეთ თქვენი სვლა და გადაეცით მოწინააღმდეგეს."
 
 #: ../../../lib/web/src/lib/preference-utils.ts:103
-#: ../../../lib/web/src/lib/preference-utils.ts:121
+#: ../../../lib/web/src/lib/preference-utils.ts:130
 msgid "Small"
 msgstr "პატარა"
 
@@ -1186,7 +1206,7 @@ msgstr "კვირა"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:195
 #: ../../../lib/web/src/lib/preference-utils.ts:18
-#: ../../../lib/web/src/lib/preference-utils.ts:132
+#: ../../../lib/web/src/lib/preference-utils.ts:141
 msgid "System"
 msgstr "სისტემა"
 

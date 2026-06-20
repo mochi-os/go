@@ -138,7 +138,8 @@ msgstr "Equipo/app yapxataña"
 msgid "Add to existing notifications"
 msgstr "Yatiyaw utjkirinakar yapxataña"
 
-#: ../../../lib/web/src/components/view-tabs.tsx:57
+#: ../../../lib/web/src/components/view-tabs.tsx:81
+#: ../../../lib/web/src/components/view-tabs.tsx:82
 msgid "Add view"
 msgstr "Uñacht'awi yapxataña"
 
@@ -216,6 +217,7 @@ msgstr "Munawi jiltayaña"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:360
 #: ../../../lib/web/src/components/travelling-picker.tsx:292
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:245
+#: ../../../lib/web/src/components/ui/editable-field-row.tsx:129
 #: ../../../lib/web/src/features/access/access-dialog.tsx:325
 #: ../../../lib/web/src/features/access/access-list.tsx:255
 #: ../../../lib/web/src/features/accounts/account-add.tsx:185
@@ -326,8 +328,8 @@ msgstr "Compacto"
 msgid "Completed"
 msgstr "Tukuyata"
 
-#: ../../../lib/web/src/components/place-picker.tsx:155
-#: ../../../lib/web/src/components/travelling-picker.tsx:299
+#: ../../../lib/web/src/components/place-picker.tsx:156
+#: ../../../lib/web/src/components/travelling-picker.tsx:300
 msgid "Confirm"
 msgstr "Iyawsaña"
 
@@ -451,9 +453,13 @@ msgstr "Kikipa anatañ amuyt'awi"
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Sallqa churatawa — {opponentName} suyasin"
 
-#: ../../../lib/web/src/lib/preference-utils.ts:134
+#: ../../../lib/web/src/lib/preference-utils.ts:143
 msgid "Dyslexia-friendly"
 msgstr "Dislexia jaqinakataki"
+
+#: ../../../lib/web/src/components/ui/editable-field-row.tsx:151
+msgid "Edit {label}"
+msgstr "{label} askichaña"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:286
 msgid "Email code"
@@ -491,7 +497,7 @@ msgstr "Autenticador codigoma uchma"
 msgid "Expand sidebar"
 msgstr "Sidebar jach'achaña"
 
-#: ../../../lib/web/src/lib/preference-utils.ts:124
+#: ../../../lib/web/src/lib/preference-utils.ts:133
 msgid "Extra large"
 msgstr "Sinti jach'a"
 
@@ -556,6 +562,10 @@ msgstr "Janiw categoría machaqachaña atinkti"
 msgid "Finish moving your account"
 msgstr "Cuenta apsuña tukuyaña"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:113
+msgid "Flat"
+msgstr "Pallalla"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:244
 msgid "Floating"
 msgstr "Tuyuri"
@@ -571,8 +581,9 @@ msgstr "Ukatx"
 #: ../../../lib/web/src/lib/preference-utils.ts:91
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:112
-#: ../../../lib/web/src/lib/preference-utils.ts:120
-#: ../../../lib/web/src/lib/preference-utils.ts:131
+#: ../../../lib/web/src/lib/preference-utils.ts:121
+#: ../../../lib/web/src/lib/preference-utils.ts:129
+#: ../../../lib/web/src/lib/preference-utils.ts:140
 msgid "From theme"
 msgstr "Temata"
 
@@ -660,7 +671,7 @@ msgid "Komi"
 msgstr "Komi"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:105
-#: ../../../lib/web/src/lib/preference-utils.ts:123
+#: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "Large"
 msgstr "Jach'a"
 
@@ -818,13 +829,17 @@ msgstr "Usuarionak jan jikxatasiti"
 
 #: ../../../lib/web/src/components/person-picker.tsx:349
 #: ../../../lib/web/src/lib/preference-utils.ts:102
-#: ../../../lib/web/src/lib/preference-utils.ts:113
+#: ../../../lib/web/src/lib/preference-utils.ts:122
 msgid "None"
 msgstr "Janiwa"
 
-#: ../../../lib/web/src/lib/preference-utils.ts:122
+#: ../../../lib/web/src/lib/preference-utils.ts:131
 msgid "Normal"
 msgstr "Walja"
+
+#: ../../../lib/web/src/components/ui/editable-field-row.tsx:143
+msgid "Not set"
+msgstr "Jan wakichata"
 
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:132
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:146
@@ -930,6 +945,10 @@ msgstr "Imantawi"
 msgid "Profile"
 msgstr "Perfil"
 
+#: ../../../lib/web/src/lib/preference-utils.ts:114
+msgid "Raised"
+msgstr "Aptata"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:98
 msgid "Re-link your accounts on this server"
 msgstr "Aka servdorankiw cuentasnaka nayraqatapachani uñakipaña"
@@ -1019,6 +1038,7 @@ msgstr "Página taypi filanaka"
 msgid "Saturday"
 msgstr "Kharminthi"
 
+#: ../../../lib/web/src/components/ui/editable-field-row.tsx:119
 #: ../../../lib/web/src/components/ui/secret-field.tsx:74
 msgid "Save"
 msgstr "Imaña"
@@ -1105,7 +1125,7 @@ msgstr "Email apayaña"
 msgid "Send message"
 msgstr "Mensaje apayaña"
 
-#: ../../../lib/web/src/lib/preference-utils.ts:133
+#: ../../../lib/web/src/lib/preference-utils.ts:142
 msgid "Serif"
 msgstr "Serif"
 
@@ -1156,7 +1176,7 @@ msgid "Skip your turn and pass to your opponent."
 msgstr "Vuelta saraqaña, contrari ukar churaña."
 
 #: ../../../lib/web/src/lib/preference-utils.ts:103
-#: ../../../lib/web/src/lib/preference-utils.ts:121
+#: ../../../lib/web/src/lib/preference-utils.ts:130
 msgid "Small"
 msgstr "Jisk'a"
 
@@ -1186,7 +1206,7 @@ msgstr "Domingo"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:195
 #: ../../../lib/web/src/lib/preference-utils.ts:18
-#: ../../../lib/web/src/lib/preference-utils.ts:132
+#: ../../../lib/web/src/lib/preference-utils.ts:141
 msgid "System"
 msgstr "Sistema"
 
