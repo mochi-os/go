@@ -19,6 +19,7 @@ import {
   IconButton,
   getErrorMessage,
   toast,
+  toastAction,
   Skeleton,
   Sheet,
   SheetContent,
@@ -220,25 +221,10 @@ export function GoGameView() {
   })
 
   // Rematch
-  const rematchMutation = useCreateGameMutation({
-    onSuccess: (data) => {
-      void navigate({ to: '/$gameId', params: { gameId: data.id } })
-    },
-    onError: (error) => {
-      toast.error(getErrorMessage(error, t`Failed to create rematch`))
-    },
-  })
+  const rematchMutation = useCreateGameMutation()
 
   // Delete
-  const deleteGameMutation = useDeleteGameMutation({
-    onSuccess: () => {
-      toast.success(t`Game deleted`)
-      void navigate({ to: '/' })
-    },
-    onError: (error) => {
-      toast.error(getErrorMessage(error, t`Failed to delete game`))
-    },
-  })
+  const deleteGameMutation = useDeleteGameMutation()
 
   // WebSocket
   const { status, retries } = useGameWebsocket(
@@ -324,9 +310,21 @@ export function GoGameView() {
     resignMutation.mutate({ gameId: selectedGame.id })
   }
 
-  const handleDelete = () => {
+  const handleDelete = async () => {
     if (!selectedGame) return
-    deleteGameMutation.mutate({ gameId: selectedGame.id })
+    try {
+      await toastAction(
+        deleteGameMutation.mutateAsync({ gameId: selectedGame.id }),
+        {
+          loading: t`Deleting game...`,
+          success: t`Game deleted`,
+          error: (error) => getErrorMessage(error, t`Failed to delete game`),
+        }
+      )
+      void navigate({ to: '/' })
+    } catch {
+      // toastAction already showed error
+    }
   }
 
   const handleDrawOffer = () => {
@@ -344,14 +342,28 @@ export function GoGameView() {
     drawDeclineMutation.mutate({ gameId: selectedGame.id })
   }
 
-  const handleRematch = () => {
+  const handleRematch = async () => {
     if (!game || !myIdentity) return
-    const opponentId = game.identity === myIdentity ? game.opponent : game.identity
-    rematchMutation.mutate({
-      opponent: opponentId,
-      boardSize: game.board_size as 9 | 13 | 19,
-      komi: game.komi,
-    })
+    const opponentId =
+      game.identity === myIdentity ? game.opponent : game.identity
+    try {
+      const data = await toastAction(
+        rematchMutation.mutateAsync({
+          opponent: opponentId,
+          boardSize: game.board_size as 9 | 13 | 19,
+          komi: game.komi,
+        }),
+        {
+          loading: t`Creating rematch...`,
+          success: t`Rematch created`,
+          error: (error) =>
+            getErrorMessage(error, t`Failed to create rematch`),
+        }
+      )
+      void navigate({ to: '/$gameId', params: { gameId: data.id } })
+    } catch {
+      // toastAction already showed error
+    }
   }
 
   // Loading / empty

@@ -25,7 +25,7 @@ msgstr "{name} tilbød remis"
 msgid "{name} resigned"
 msgstr "{name} ga opp"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:642
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} passet også. Bekreftelse vil avslutte spillet og telle brettet."
 
@@ -114,11 +114,11 @@ msgstr "Legg til konto"
 msgid "Add an account to receive notifications and use services."
 msgstr "Legg til en konto for å motta varsler og bruke tjenester."
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:155
 msgid "Add friends"
 msgstr "Legg til venner"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:148
 msgid "Add friends in the People app to start playing"
 msgstr "Legg til venner i Personer-appen for å begynne å spille"
 
@@ -167,7 +167,7 @@ msgstr "Det oppstod en uventet feil"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Er du sikker på at du vil logge ut? Du må logge inn igjen for å få tilgang til kontoen din."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:619
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Er du sikker på at du vil gi opp? {opponentName} vinner spillet."
 
@@ -193,11 +193,11 @@ msgstr "Tilbake"
 msgid "Back to home"
 msgstr "Tilbake til start"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "Black"
 msgstr "Svart"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:450
 msgid "Black captures:"
 msgstr "Sort fanget:"
 
@@ -209,7 +209,7 @@ msgstr "Sort stein på {colLabel}{rowLabel}"
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "Sort territorium på {colLabel}{rowLabel}"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:173
 msgid "Board size"
 msgstr "Brettstørrelse"
 
@@ -227,7 +227,7 @@ msgstr "Øk interesse"
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:89
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:233
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -240,8 +240,8 @@ msgstr "Kategori for dette varselet"
 msgid "Change notification category"
 msgstr "Endre varselkategori"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:559
+#: src/features/go/index.tsx:591
 msgid "Chat"
 msgstr "Chat"
 
@@ -270,7 +270,7 @@ msgstr "Velg mellom systeminnstilling, lyst eller mørkt utseende"
 msgid "Choose language"
 msgstr "Velg språk"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:139
 msgid "Choose opponent"
 msgstr "Velg motstander"
 
@@ -301,8 +301,8 @@ msgid "Clear selection (Escape)"
 msgstr "Tøm utvalg (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "Lukk"
@@ -323,8 +323,8 @@ msgstr "Lukk søk"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Collapse"
 msgstr "Skjul"
 
@@ -390,7 +390,15 @@ msgstr "Kunne ikke starte ny autentisering. Prøv igjen."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Kunne ikke verifisere med den kontoen. Prøv igjen."
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:91
+msgid "Creating game..."
+msgstr ""
+
+#: src/features/go/index.tsx:357
+msgid "Creating rematch..."
+msgstr ""
+
+#: src/features/go/components/new-game.tsx:241
 msgid "Creating..."
 msgstr "Oppretter …"
 
@@ -423,13 +431,17 @@ msgstr "Standard"
 msgid "Default AI account"
 msgstr "Standard KI-konto"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:512
 msgid "Delete game"
 msgstr "Slett spill"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Slett kontoen din på den gamle serveren"
+
+#: src/features/go/index.tsx:319
+msgid "Deleting game..."
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -467,16 +479,20 @@ msgstr "Lukk"
 msgid "Displays the mobile sidebar."
 msgstr "Viser sidefeltet for mobil."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:320
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:326
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
 msgid "Download"
 msgstr "Last ned"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:68
+msgid "Download failed"
+msgstr ""
 
 #: src/features/go/components/chat-message-list.tsx:188
 msgid "Draw agreed"
 msgstr "Remis avtalt"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:525
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Remis tilbudt — venter på {opponentName}"
 
@@ -500,15 +516,15 @@ msgstr "Tomt skjæringspunkt {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Tomt skjæringspunkt {colLabel}{rowLabel}, klikk eller trykk Enter for å plassere"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:652
 msgid "End game"
 msgstr "Avslutt spill"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "End game?"
 msgstr "Avslutte spillet?"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:70
 msgid "Enter a valid number"
 msgstr "Skriv inn et gyldig tall"
 
@@ -522,8 +538,8 @@ msgstr "Skriv inn autentiseringskoden din"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Expand"
 msgstr "Utvid"
 
@@ -535,7 +551,7 @@ msgstr "Utvid sidefelt"
 msgid "Extra large"
 msgstr "Ekstra stor"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:214
 msgid "Failed to accept draw"
 msgstr "Kunne ikke godta remis"
 
@@ -543,31 +559,31 @@ msgstr "Kunne ikke godta remis"
 msgid "Failed to add account"
 msgstr "Kunne ikke legge til konto"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:93
 msgid "Failed to create game"
 msgstr "Kunne ikke opprette spill"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:360
 msgid "Failed to create rematch"
 msgstr "Kunne ikke opprette omkamp"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:219
 msgid "Failed to decline draw"
 msgstr "Kunne ikke avslå remis"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:321
 msgid "Failed to delete game"
 msgstr "Kunne ikke slette spill"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:185
 msgid "Failed to make move"
 msgstr "Kunne ikke utføre trekk"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:209
 msgid "Failed to offer draw"
 msgstr "Kunne ikke tilby remis"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:192
 msgid "Failed to pass"
 msgstr "Kunne ikke passe"
 
@@ -575,12 +591,12 @@ msgstr "Kunne ikke passe"
 msgid "Failed to remove account"
 msgstr "Kunne ikke fjerne konto"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:202
 msgid "Failed to resign"
 msgstr "Kunne ikke gi opp"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:575
+#: src/features/go/index.tsx:607
 msgid "Failed to send"
 msgstr "Kunne ikke sende"
 
@@ -625,17 +641,17 @@ msgstr "Fra tema"
 msgid "Full layout"
 msgstr "Full layout"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:92
 msgid "Game created"
 msgstr "Spill opprettet"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:320
 msgid "Game deleted"
 msgstr "Spill slettet"
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
+#: src/features/go/index.tsx:99
 #: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:385
 msgid "Go"
 msgstr "Gå"
 
@@ -704,7 +720,7 @@ msgstr "Interesser"
 msgid "Invalid verification code"
 msgstr "Ugyldig bekreftelseskode"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:191
 msgid "Komi"
 msgstr "Komi"
 
@@ -734,6 +750,10 @@ msgstr "Lys"
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 msgid "Load more"
 msgstr "Last inn flere"
+
+#: ../../../lib/web/src/components/ui/loading-content.tsx:29
+msgid "Loading content…"
+msgstr ""
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
@@ -788,7 +808,7 @@ msgstr "Metrisk"
 msgid "Monday"
 msgstr "Mandag"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:71
 msgid "Must be between 0 and 10"
 msgstr "Må være mellom 0 og 10"
 
@@ -806,12 +826,12 @@ msgstr "Ny"
 msgid "New game"
 msgstr "Nytt spill"
 
-#: src/features/go/components/new-game.tsx:125
+#: src/features/go/components/new-game.tsx:130
 msgid "New Game"
 msgstr "Nytt spill"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:366
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:371
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
 msgid "Next image"
 msgstr "Neste bilde"
 
@@ -823,11 +843,11 @@ msgstr "Ingen tilgangsregler konfigurert. Legg til regler for å styre hvem som 
 msgid "No connected accounts"
 msgstr "Ingen tilkoblede kontoer"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:165
 msgid "No friends found"
 msgstr "Ingen venner funnet"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:147
 msgid "No friends yet"
 msgstr "Ingen venner ennå"
 
@@ -890,7 +910,7 @@ msgstr "Ikke satt"
 msgid "Notifications"
 msgstr "Varsler"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:496
 msgid "Offer draw"
 msgstr "Tilby remis"
 
@@ -903,16 +923,16 @@ msgstr "Ups! Side ikke funnet!"
 msgid "Open account actions"
 msgstr "Åpne kontohandlinger"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:152
-#: ../../../lib/web/src/components/layout/nav-group.tsx:157
+#: ../../../lib/web/src/components/layout/nav-group.tsx:182
+#: ../../../lib/web/src/components/layout/nav-group.tsx:187
 msgid "Open actions"
 msgstr "Åpne handlinger"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:467
 msgid "Open chat panel"
 msgstr "Åpne chatpanel"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:475
 msgid "Open game actions"
 msgstr "Åpne spillhandlinger"
 
@@ -940,16 +960,16 @@ msgid "Owner"
 msgstr "Eier"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:652
 msgid "Pass"
 msgstr "Pass"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "Pass turn?"
 msgstr "Passe tur?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:649
 msgid "Passing..."
 msgstr "Passer …"
 
@@ -969,16 +989,16 @@ msgstr "Passnøkler"
 msgid "Please check your internet connection and try again."
 msgstr "Sjekk internettforbindelsen din og prøv igjen."
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:79
 msgid "Please select a friend"
 msgstr "Velg en venn"
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:221
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Poeng lagt til hvits poengsum som kompensasjon for at svart starter først"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:351
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:356
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
 msgid "Previous image"
 msgstr "Forrige bilde"
 
@@ -1026,9 +1046,13 @@ msgstr "Relativ (5m, 3t, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relativ innen 24 timer, ellers absolutt"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:509
 msgid "Rematch"
 msgstr "Omkamp"
+
+#: src/features/go/index.tsx:358
+msgid "Rematch created"
+msgstr ""
 
 #: ../../../lib/web/src/features/access/access-list.tsx:265
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
@@ -1062,16 +1086,16 @@ msgstr "Tilbakestill"
 msgid "Reset all settings to default values"
 msgstr "Tilbakestill alle innstillinger til standardverdier"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:627
 msgid "Resign"
 msgstr "Gi opp"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:618
 msgid "Resign game?"
 msgstr "Gi opp partiet?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:624
 msgid "Resigning..."
 msgstr "Gir opp …"
 
@@ -1122,7 +1146,7 @@ msgstr "Søk ..."
 msgid "Searching..."
 msgstr "Søker ..."
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:164
 msgid "Select a friend..."
 msgstr "Velg en venn ..."
 
@@ -1232,7 +1256,7 @@ msgstr "Logger ut ..."
 msgid "Skip to Main"
 msgstr "Hopp til hovedinnhold"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:643
 msgid "Skip your turn and pass to your opponent."
 msgstr "Hopp over turen din og gi videre til motstanderen."
 
@@ -1245,11 +1269,11 @@ msgstr "Liten"
 msgid "Spacious"
 msgstr "Romslig"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:133
 msgid "Start a new Go game"
 msgstr "Start et nytt go-spill"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:241
 msgid "Start game"
 msgstr "Start spill"
 
@@ -1314,10 +1338,10 @@ msgstr "Slå av/på kolonner"
 msgid "Toggle right panel"
 msgstr "Veksle høyre panel"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:321
-#: ../../../lib/web/src/components/layout/nav-group.tsx:328
-#: ../../../lib/web/src/components/layout/nav-group.tsx:451
-#: ../../../lib/web/src/components/layout/nav-group.tsx:458
+#: ../../../lib/web/src/components/layout/nav-group.tsx:351
+#: ../../../lib/web/src/components/layout/nav-group.tsx:358
+#: ../../../lib/web/src/components/layout/nav-group.tsx:481
+#: ../../../lib/web/src/components/layout/nav-group.tsx:488
 msgid "Toggle section"
 msgstr "Vis/skjul seksjon"
 
@@ -1463,11 +1487,11 @@ msgstr "Nettstedet er under vedlikehold!"
 msgid "Wednesday"
 msgstr "Onsdag"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "White"
 msgstr "Hvit"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:455
 msgid "White captures:"
 msgstr "Hvit fanget:"
 

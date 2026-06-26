@@ -25,7 +25,7 @@ msgstr "{name} เสนอเสมอ"
 msgid "{name} resigned"
 msgstr "{name} ยอมแพ้"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:642
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} ก็ผ่านตาเช่นกัน การยืนยันจะจบเกมและคิดคะแนนกระดาน"
 
@@ -114,11 +114,11 @@ msgstr "เพิ่มบัญชี"
 msgid "Add an account to receive notifications and use services."
 msgstr "เพิ่มบัญชีเพื่อรับการแจ้งเตือนและใช้บริการ"
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:155
 msgid "Add friends"
 msgstr "เพิ่มเพื่อน"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:148
 msgid "Add friends in the People app to start playing"
 msgstr "เพิ่มเพื่อนในแอป People เพื่อเริ่มเล่น"
 
@@ -167,7 +167,7 @@ msgstr "เกิดข้อผิดพลาดที่ไม่คาดค
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ? คุณจะต้องเข้าสู่ระบบอีกครั้งเพื่อเข้าถึงบัญชีของคุณ"
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:619
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการยอมแพ้? {opponentName} จะชนะเกม"
 
@@ -193,11 +193,11 @@ msgstr "ย้อนกลับ"
 msgid "Back to home"
 msgstr "กลับไปหน้าหลัก"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "Black"
 msgstr "ดำ"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:450
 msgid "Black captures:"
 msgstr "ดำจับได้:"
 
@@ -209,7 +209,7 @@ msgstr "หินดำที่ {colLabel}{rowLabel}"
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "เขตของดำที่ {colLabel}{rowLabel}"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:173
 msgid "Board size"
 msgstr "ขนาดกระดาน"
 
@@ -227,7 +227,7 @@ msgstr "เพิ่มความสนใจ"
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:89
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:233
 msgid "Cancel"
 msgstr "ยกเลิก"
 
@@ -240,8 +240,8 @@ msgstr "หมวดหมู่สำหรับการแจ้งเตื
 msgid "Change notification category"
 msgstr "เปลี่ยนหมวดหมู่การแจ้งเตือน"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:559
+#: src/features/go/index.tsx:591
 msgid "Chat"
 msgstr "แชท"
 
@@ -270,7 +270,7 @@ msgstr "เลือกระหว่างการตั้งค่าระ
 msgid "Choose language"
 msgstr "เลือกภาษา"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:139
 msgid "Choose opponent"
 msgstr "เลือกคู่ต่อสู้"
 
@@ -301,8 +301,8 @@ msgid "Clear selection (Escape)"
 msgstr "ล้างการเลือก (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "ปิด"
@@ -323,8 +323,8 @@ msgstr "ปิดการค้นหา"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Collapse"
 msgstr "ยุบ"
 
@@ -390,7 +390,15 @@ msgstr "เริ่มการยืนยันตัวตนอีกคร
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ไม่สามารถยืนยันด้วยบัญชีนั้นได้ โปรดลองอีกครั้ง"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:91
+msgid "Creating game..."
+msgstr ""
+
+#: src/features/go/index.tsx:357
+msgid "Creating rematch..."
+msgstr ""
+
+#: src/features/go/components/new-game.tsx:241
 msgid "Creating..."
 msgstr "กำลังสร้าง..."
 
@@ -423,13 +431,17 @@ msgstr "ค่าเริ่มต้น"
 msgid "Default AI account"
 msgstr "บัญชี AI เริ่มต้น"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:512
 msgid "Delete game"
 msgstr "ลบเกม"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "ลบบัญชีของคุณบนเซิร์ฟเวอร์เดิม"
+
+#: src/features/go/index.tsx:319
+msgid "Deleting game..."
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -467,16 +479,20 @@ msgstr "ปิด"
 msgid "Displays the mobile sidebar."
 msgstr "แสดงแถบด้านข้างบนมือถือ"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:320
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:326
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
 msgid "Download"
 msgstr "ดาวน์โหลด"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:68
+msgid "Download failed"
+msgstr ""
 
 #: src/features/go/components/chat-message-list.tsx:188
 msgid "Draw agreed"
 msgstr "ตกลงเสมอ"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:525
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "เสนอเสมอแล้ว — กำลังรอ {opponentName}"
 
@@ -500,15 +516,15 @@ msgstr "จุดตัดว่าง {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "จุดตัดว่าง {colLabel}{rowLabel} คลิกหรือกด Enter เพื่อวาง"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:652
 msgid "End game"
 msgstr "จบเกม"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "End game?"
 msgstr "จบเกม?"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:70
 msgid "Enter a valid number"
 msgstr "ใส่ตัวเลขที่ถูกต้อง"
 
@@ -522,8 +538,8 @@ msgstr "ป้อนรหัสจากแอปยืนยันตัวต
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Expand"
 msgstr "ขยาย"
 
@@ -535,7 +551,7 @@ msgstr "ขยายแถบด้านข้าง"
 msgid "Extra large"
 msgstr "ใหญ่พิเศษ"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:214
 msgid "Failed to accept draw"
 msgstr "ไม่สามารถยอมรับการเสมอได้"
 
@@ -543,31 +559,31 @@ msgstr "ไม่สามารถยอมรับการเสมอได
 msgid "Failed to add account"
 msgstr "ไม่สามารถเพิ่มบัญชีได้"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:93
 msgid "Failed to create game"
 msgstr "ไม่สามารถสร้างเกมได้"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:360
 msgid "Failed to create rematch"
 msgstr "ไม่สามารถสร้างการแข่งใหม่ได้"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:219
 msgid "Failed to decline draw"
 msgstr "ไม่สามารถปฏิเสธการเสมอได้"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:321
 msgid "Failed to delete game"
 msgstr "ไม่สามารถลบเกมได้"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:185
 msgid "Failed to make move"
 msgstr "ไม่สามารถเดินได้"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:209
 msgid "Failed to offer draw"
 msgstr "ไม่สามารถเสนอเสมอได้"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:192
 msgid "Failed to pass"
 msgstr "ไม่สามารถข้ามได้"
 
@@ -575,12 +591,12 @@ msgstr "ไม่สามารถข้ามได้"
 msgid "Failed to remove account"
 msgstr "ไม่สามารถเอาบัญชีออกได้"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:202
 msgid "Failed to resign"
 msgstr "ไม่สามารถยอมแพ้ได้"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:575
+#: src/features/go/index.tsx:607
 msgid "Failed to send"
 msgstr "ไม่สามารถส่งได้"
 
@@ -625,17 +641,17 @@ msgstr "จากธีม"
 msgid "Full layout"
 msgstr "เลย์เอาต์เต็ม"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:92
 msgid "Game created"
 msgstr "สร้างเกมแล้ว"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:320
 msgid "Game deleted"
 msgstr "ลบเกมแล้ว"
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
+#: src/features/go/index.tsx:99
 #: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:385
 msgid "Go"
 msgstr "ไป"
 
@@ -704,7 +720,7 @@ msgstr "ความสนใจ"
 msgid "Invalid verification code"
 msgstr "รหัสยืนยันไม่ถูกต้อง"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:191
 msgid "Komi"
 msgstr "โคมิ"
 
@@ -734,6 +750,10 @@ msgstr "สว่าง"
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 msgid "Load more"
 msgstr "โหลดเพิ่ม"
+
+#: ../../../lib/web/src/components/ui/loading-content.tsx:29
+msgid "Loading content…"
+msgstr ""
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
@@ -788,7 +808,7 @@ msgstr "เมตริก"
 msgid "Monday"
 msgstr "วันจันทร์"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:71
 msgid "Must be between 0 and 10"
 msgstr "ต้องอยู่ระหว่าง 0 ถึง 10"
 
@@ -806,12 +826,12 @@ msgstr "ใหม่"
 msgid "New game"
 msgstr "เกมใหม่"
 
-#: src/features/go/components/new-game.tsx:125
+#: src/features/go/components/new-game.tsx:130
 msgid "New Game"
 msgstr "เกมใหม่"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:366
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:371
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
 msgid "Next image"
 msgstr "รูปถัดไป"
 
@@ -823,11 +843,11 @@ msgstr "ยังไม่ได้ตั้งกฎการเข้าถึ
 msgid "No connected accounts"
 msgstr "ไม่มีบัญชีที่เชื่อมต่อ"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:165
 msgid "No friends found"
 msgstr "ไม่พบเพื่อน"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:147
 msgid "No friends yet"
 msgstr "ยังไม่มีเพื่อน"
 
@@ -890,7 +910,7 @@ msgstr "ยังไม่ได้ตั้งค่า"
 msgid "Notifications"
 msgstr "การแจ้งเตือน"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:496
 msgid "Offer draw"
 msgstr "เสนอเสมอ"
 
@@ -903,16 +923,16 @@ msgstr "ขออภัย! ไม่พบหน้านี้!"
 msgid "Open account actions"
 msgstr "เปิดการดำเนินการของบัญชี"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:152
-#: ../../../lib/web/src/components/layout/nav-group.tsx:157
+#: ../../../lib/web/src/components/layout/nav-group.tsx:182
+#: ../../../lib/web/src/components/layout/nav-group.tsx:187
 msgid "Open actions"
 msgstr "เปิดการดำเนินการ"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:467
 msgid "Open chat panel"
 msgstr "เปิดแผงแชต"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:475
 msgid "Open game actions"
 msgstr "เปิดการดำเนินการของเกม"
 
@@ -940,16 +960,16 @@ msgid "Owner"
 msgstr "เจ้าของ"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:652
 msgid "Pass"
 msgstr "ผ่าน"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "Pass turn?"
 msgstr "ผ่านตา?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:649
 msgid "Passing..."
 msgstr "กำลังผ่านตา..."
 
@@ -969,16 +989,16 @@ msgstr "พาสคีย์"
 msgid "Please check your internet connection and try again."
 msgstr "โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณแล้วลองอีกครั้ง"
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:79
 msgid "Please select a friend"
 msgstr "กรุณาเลือกเพื่อน"
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:221
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "แต้มที่บวกให้คะแนนของฝ่ายขาวเพื่อชดเชยที่ฝ่ายดำเดินก่อน"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:351
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:356
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
 msgid "Previous image"
 msgstr "รูปก่อนหน้า"
 
@@ -1026,9 +1046,13 @@ msgstr "แบบสัมพัทธ์ (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "สัมพัทธ์ภายใน 24 ชั่วโมง นอกนั้นแบบสัมบูรณ์"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:509
 msgid "Rematch"
 msgstr "แข่งใหม่"
+
+#: src/features/go/index.tsx:358
+msgid "Rematch created"
+msgstr ""
 
 #: ../../../lib/web/src/features/access/access-list.tsx:265
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
@@ -1062,16 +1086,16 @@ msgstr "รีเซ็ต"
 msgid "Reset all settings to default values"
 msgstr "รีเซ็ตการตั้งค่าทั้งหมดเป็นค่าเริ่มต้น"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:627
 msgid "Resign"
 msgstr "ยอมแพ้"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:618
 msgid "Resign game?"
 msgstr "ยอมแพ้เกม?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:624
 msgid "Resigning..."
 msgstr "กำลังยอมแพ้..."
 
@@ -1122,7 +1146,7 @@ msgstr "ค้นหา..."
 msgid "Searching..."
 msgstr "กำลังค้นหา..."
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:164
 msgid "Select a friend..."
 msgstr "เลือกเพื่อน..."
 
@@ -1232,7 +1256,7 @@ msgstr "กำลังออกจากระบบ..."
 msgid "Skip to Main"
 msgstr "ข้ามไปยังเนื้อหาหลัก"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:643
 msgid "Skip your turn and pass to your opponent."
 msgstr "ข้ามตาของคุณและส่งต่อให้ฝ่ายตรงข้าม"
 
@@ -1245,11 +1269,11 @@ msgstr "เล็ก"
 msgid "Spacious"
 msgstr "กว้างขวาง"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:133
 msgid "Start a new Go game"
 msgstr "เริ่มเกมโกะใหม่"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:241
 msgid "Start game"
 msgstr "เริ่มเกม"
 
@@ -1314,10 +1338,10 @@ msgstr "สลับคอลัมน์"
 msgid "Toggle right panel"
 msgstr "สลับแผงด้านขวา"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:321
-#: ../../../lib/web/src/components/layout/nav-group.tsx:328
-#: ../../../lib/web/src/components/layout/nav-group.tsx:451
-#: ../../../lib/web/src/components/layout/nav-group.tsx:458
+#: ../../../lib/web/src/components/layout/nav-group.tsx:351
+#: ../../../lib/web/src/components/layout/nav-group.tsx:358
+#: ../../../lib/web/src/components/layout/nav-group.tsx:481
+#: ../../../lib/web/src/components/layout/nav-group.tsx:488
 msgid "Toggle section"
 msgstr "สลับส่วน"
 
@@ -1463,11 +1487,11 @@ msgstr "เว็บไซต์อยู่ระหว่างการบำ
 msgid "Wednesday"
 msgstr "วันพุธ"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "White"
 msgstr "ขาว"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:455
 msgid "White captures:"
 msgstr "ขาวจับได้:"
 

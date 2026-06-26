@@ -25,7 +25,7 @@ msgstr "{name} piedāvāja neizšķirtu"
 msgid "{name} resigned"
 msgstr "{name} padevās"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:642
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} arī izlaida. Apstiprinot, spēle beigsies un dēlis tiks novērtēts."
 
@@ -114,11 +114,11 @@ msgstr "Pievienot kontu"
 msgid "Add an account to receive notifications and use services."
 msgstr "Pievieno kontu, lai saņemtu paziņojumus un izmantotu pakalpojumus."
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:155
 msgid "Add friends"
 msgstr "Pievienot draugus"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:148
 msgid "Add friends in the People app to start playing"
 msgstr "Pievieno draugus People lietotnē, lai sāktu spēlēt"
 
@@ -167,7 +167,7 @@ msgstr "Radās negaidīta kļūda"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Vai tiešām vēlies izrakstīties? Lai piekļūtu kontam, būs jāpierakstās vēlreiz."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:619
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Vai tiešām vēlies padoties? {opponentName} uzvarēs spēli."
 
@@ -193,11 +193,11 @@ msgstr "Atpakaļ"
 msgid "Back to home"
 msgstr "Atpakaļ uz sākumu"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "Black"
 msgstr "Melnais"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:450
 msgid "Black captures:"
 msgstr "Melnā paņemtie:"
 
@@ -209,7 +209,7 @@ msgstr "Melnais akmens pozīcijā {colLabel}{rowLabel}"
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "Melnā teritorija pozīcijā {colLabel}{rowLabel}"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:173
 msgid "Board size"
 msgstr "Galda izmērs"
 
@@ -227,7 +227,7 @@ msgstr "Veicināt interesi"
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:89
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:233
 msgid "Cancel"
 msgstr "Atcelt"
 
@@ -240,8 +240,8 @@ msgstr "Šī paziņojuma kategorija"
 msgid "Change notification category"
 msgstr "Mainīt paziņojuma kategoriju"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:559
+#: src/features/go/index.tsx:591
 msgid "Chat"
 msgstr "Saruna"
 
@@ -270,7 +270,7 @@ msgstr "Izvēlies starp sistēmas iestatījumu, gaišo vai tumšo režīmu"
 msgid "Choose language"
 msgstr "Izvēlies valodu"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:139
 msgid "Choose opponent"
 msgstr "Izvēlies pretinieku"
 
@@ -301,8 +301,8 @@ msgid "Clear selection (Escape)"
 msgstr "Notīrīt atlasi (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "Aizvērt"
@@ -323,8 +323,8 @@ msgstr "Aizvērt meklēšanu"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Collapse"
 msgstr "Sakļaut"
 
@@ -390,7 +390,15 @@ msgstr "Neizdevās sākt atkārtotu autentifikāciju. Lūdzu, mēģiniet vēlrei
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Neizdevās verificēt ar šo kontu. Lūdzu, mēģiniet vēlreiz."
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:91
+msgid "Creating game..."
+msgstr ""
+
+#: src/features/go/index.tsx:357
+msgid "Creating rematch..."
+msgstr ""
+
+#: src/features/go/components/new-game.tsx:241
 msgid "Creating..."
 msgstr "Izveido..."
 
@@ -423,13 +431,17 @@ msgstr "Noklusētais"
 msgid "Default AI account"
 msgstr "Noklusētais AI konts"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:512
 msgid "Delete game"
 msgstr "Dzēst spēli"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Dzēsiet savu kontu vecajā serverī"
+
+#: src/features/go/index.tsx:319
+msgid "Deleting game..."
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -467,16 +479,20 @@ msgstr "Aizvērt"
 msgid "Displays the mobile sidebar."
 msgstr "Parāda mobilo sānu joslu."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:320
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:326
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
 msgid "Download"
 msgstr "Lejupielādēt"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:68
+msgid "Download failed"
+msgstr ""
 
 #: src/features/go/components/chat-message-list.tsx:188
 msgid "Draw agreed"
 msgstr "Neizšķirts pieņemts"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:525
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Piedāvāts neizšķirts — gaida {opponentName}"
 
@@ -500,15 +516,15 @@ msgstr "Tukšs krustojums {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Tukšs krustojums {colLabel}{rowLabel}, noklikšķiniet vai nospiediet Enter, lai novietotu"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:652
 msgid "End game"
 msgstr "Beigt spēli"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "End game?"
 msgstr "Beigt spēli?"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:70
 msgid "Enter a valid number"
 msgstr "Ievadiet derīgu skaitli"
 
@@ -522,8 +538,8 @@ msgstr "Ievadiet autentifikatora kodu"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Expand"
 msgstr "Izvērst"
 
@@ -535,7 +551,7 @@ msgstr "Izvērst sānjoslu"
 msgid "Extra large"
 msgstr "Ļoti liels"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:214
 msgid "Failed to accept draw"
 msgstr "Neizdevās pieņemt neizšķirtu"
 
@@ -543,31 +559,31 @@ msgstr "Neizdevās pieņemt neizšķirtu"
 msgid "Failed to add account"
 msgstr "Neizdevās pievienot kontu"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:93
 msgid "Failed to create game"
 msgstr "Neizdevās izveidot spēli"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:360
 msgid "Failed to create rematch"
 msgstr "Neizdevās izveidot atkārtotu spēli"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:219
 msgid "Failed to decline draw"
 msgstr "Neizdevās noraidīt neizšķirtu"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:321
 msgid "Failed to delete game"
 msgstr "Neizdevās dzēst spēli"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:185
 msgid "Failed to make move"
 msgstr "Neizdevās izdarīt gājienu"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:209
 msgid "Failed to offer draw"
 msgstr "Neizdevās piedāvāt neizšķirtu"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:192
 msgid "Failed to pass"
 msgstr "Neizdevās izlaist gājienu"
 
@@ -575,12 +591,12 @@ msgstr "Neizdevās izlaist gājienu"
 msgid "Failed to remove account"
 msgstr "Neizdevās noņemt kontu"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:202
 msgid "Failed to resign"
 msgstr "Neizdevās padoties"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:575
+#: src/features/go/index.tsx:607
 msgid "Failed to send"
 msgstr "Neizdevās nosūtīt"
 
@@ -625,17 +641,17 @@ msgstr "No motīva"
 msgid "Full layout"
 msgstr "Pilns izkārtojums"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:92
 msgid "Game created"
 msgstr "Spēle izveidota"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:320
 msgid "Game deleted"
 msgstr "Spēle dzēsta"
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
+#: src/features/go/index.tsx:99
 #: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:385
 msgid "Go"
 msgstr "Iet"
 
@@ -704,7 +720,7 @@ msgstr "Intereses"
 msgid "Invalid verification code"
 msgstr "Nederīgs verifikācijas kods"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:191
 msgid "Komi"
 msgstr "Komi"
 
@@ -734,6 +750,10 @@ msgstr "Gaišs"
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 msgid "Load more"
 msgstr "Ielādēt vairāk"
+
+#: ../../../lib/web/src/components/ui/loading-content.tsx:29
+msgid "Loading content…"
+msgstr ""
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
@@ -788,7 +808,7 @@ msgstr "Metrisks"
 msgid "Monday"
 msgstr "Pirmdiena"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:71
 msgid "Must be between 0 and 10"
 msgstr "Jābūt no 0 līdz 10"
 
@@ -806,12 +826,12 @@ msgstr "Jauns"
 msgid "New game"
 msgstr "Jauna spēle"
 
-#: src/features/go/components/new-game.tsx:125
+#: src/features/go/components/new-game.tsx:130
 msgid "New Game"
 msgstr "Jauna spēle"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:366
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:371
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
 msgid "Next image"
 msgstr "Nākamais attēls"
 
@@ -823,11 +843,11 @@ msgstr "Piekļuves noteikumi nav konfigurēti. Pievienojiet noteikumus, lai kont
 msgid "No connected accounts"
 msgstr "Nav saistītu kontu"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:165
 msgid "No friends found"
 msgstr "Draugi nav atrasti"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:147
 msgid "No friends yet"
 msgstr "Vēl nav draugu"
 
@@ -890,7 +910,7 @@ msgstr "Nav iestatīts"
 msgid "Notifications"
 msgstr "Paziņojumi"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:496
 msgid "Offer draw"
 msgstr "Piedāvāt neizšķirtu"
 
@@ -903,16 +923,16 @@ msgstr "Hops! Lapa nav atrasta!"
 msgid "Open account actions"
 msgstr "Atvērt konta darbības"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:152
-#: ../../../lib/web/src/components/layout/nav-group.tsx:157
+#: ../../../lib/web/src/components/layout/nav-group.tsx:182
+#: ../../../lib/web/src/components/layout/nav-group.tsx:187
 msgid "Open actions"
 msgstr "Atvērt darbības"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:467
 msgid "Open chat panel"
 msgstr "Atvērt čata paneli"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:475
 msgid "Open game actions"
 msgstr "Atvērt spēles darbības"
 
@@ -940,16 +960,16 @@ msgid "Owner"
 msgstr "Īpašnieks"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:652
 msgid "Pass"
 msgstr "Izlaist"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "Pass turn?"
 msgstr "Izlaist gājienu?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:649
 msgid "Passing..."
 msgstr "Izlaiž..."
 
@@ -969,16 +989,16 @@ msgstr "Piekļuves atslēgas"
 msgid "Please check your internet connection and try again."
 msgstr "Lūdzu, pārbaudiet interneta savienojumu un mēģiniet vēlreiz."
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:79
 msgid "Please select a friend"
 msgstr "Lūdzu, atlasiet draugu"
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:221
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Punkti, kas pievienoti baltā rezultātam, lai kompensētu, ka melnais sāk pirmais"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:351
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:356
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
 msgid "Previous image"
 msgstr "Iepriekšējais attēls"
 
@@ -1026,9 +1046,13 @@ msgstr "Relatīvs (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relatīvs 24 stundu laikā, citādi absolūts"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:509
 msgid "Rematch"
 msgstr "Atkārtota spēle"
+
+#: src/features/go/index.tsx:358
+msgid "Rematch created"
+msgstr ""
 
 #: ../../../lib/web/src/features/access/access-list.tsx:265
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
@@ -1062,16 +1086,16 @@ msgstr "Atiestatīt"
 msgid "Reset all settings to default values"
 msgstr "Atiestatīt visus iestatījumus uz noklusējuma vērtībām"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:627
 msgid "Resign"
 msgstr "Padoties"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:618
 msgid "Resign game?"
 msgstr "Padoties spēlē?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:624
 msgid "Resigning..."
 msgstr "Padodas..."
 
@@ -1122,7 +1146,7 @@ msgstr "Meklēt..."
 msgid "Searching..."
 msgstr "Meklē..."
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:164
 msgid "Select a friend..."
 msgstr "Atlasīt draugu..."
 
@@ -1232,7 +1256,7 @@ msgstr "Notiek izrakstīšanās..."
 msgid "Skip to Main"
 msgstr "Pāriet uz galveno"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:643
 msgid "Skip your turn and pass to your opponent."
 msgstr "Izlaist savu gājienu un nodot to pretiniekam."
 
@@ -1245,11 +1269,11 @@ msgstr "Mazs"
 msgid "Spacious"
 msgstr "Plašs"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:133
 msgid "Start a new Go game"
 msgstr "Sākt jaunu Go spēli"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:241
 msgid "Start game"
 msgstr "Sākt spēli"
 
@@ -1314,10 +1338,10 @@ msgstr "Pārslēgt kolonnas"
 msgid "Toggle right panel"
 msgstr "Pārslēgt labo paneli"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:321
-#: ../../../lib/web/src/components/layout/nav-group.tsx:328
-#: ../../../lib/web/src/components/layout/nav-group.tsx:451
-#: ../../../lib/web/src/components/layout/nav-group.tsx:458
+#: ../../../lib/web/src/components/layout/nav-group.tsx:351
+#: ../../../lib/web/src/components/layout/nav-group.tsx:358
+#: ../../../lib/web/src/components/layout/nav-group.tsx:481
+#: ../../../lib/web/src/components/layout/nav-group.tsx:488
 msgid "Toggle section"
 msgstr "Pārslēgt sadaļu"
 
@@ -1463,11 +1487,11 @@ msgstr "Vietne tiek apkopta!"
 msgid "Wednesday"
 msgstr "Trešdiena"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "White"
 msgstr "Baltais"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:455
 msgid "White captures:"
 msgstr "Baltais sagrābj:"
 

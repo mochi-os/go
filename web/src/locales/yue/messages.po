@@ -25,7 +25,7 @@ msgstr ""
 msgid "{name} resigned"
 msgstr ""
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:642
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr ""
 
@@ -114,11 +114,11 @@ msgstr ""
 msgid "Add an account to receive notifications and use services."
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:155
 msgid "Add friends"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:148
 msgid "Add friends in the People app to start playing"
 msgstr ""
 
@@ -167,7 +167,7 @@ msgstr ""
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr ""
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:619
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr ""
 
@@ -193,11 +193,11 @@ msgstr ""
 msgid "Back to home"
 msgstr ""
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "Black"
 msgstr ""
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:450
 msgid "Black captures:"
 msgstr ""
 
@@ -209,7 +209,7 @@ msgstr ""
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:173
 msgid "Board size"
 msgstr ""
 
@@ -227,7 +227,7 @@ msgstr ""
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:89
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:233
 msgid "Cancel"
 msgstr ""
 
@@ -240,8 +240,8 @@ msgstr ""
 msgid "Change notification category"
 msgstr ""
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:559
+#: src/features/go/index.tsx:591
 msgid "Chat"
 msgstr ""
 
@@ -270,7 +270,7 @@ msgstr ""
 msgid "Choose language"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:139
 msgid "Choose opponent"
 msgstr ""
 
@@ -301,8 +301,8 @@ msgid "Clear selection (Escape)"
 msgstr ""
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr ""
@@ -323,8 +323,8 @@ msgstr ""
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Collapse"
 msgstr ""
 
@@ -390,7 +390,15 @@ msgstr ""
 msgid "Couldn't verify with that account. Please try again."
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:91
+msgid "Creating game..."
+msgstr ""
+
+#: src/features/go/index.tsx:357
+msgid "Creating rematch..."
+msgstr ""
+
+#: src/features/go/components/new-game.tsx:241
 msgid "Creating..."
 msgstr ""
 
@@ -423,12 +431,16 @@ msgstr ""
 msgid "Default AI account"
 msgstr ""
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:512
 msgid "Delete game"
 msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
+msgstr ""
+
+#: src/features/go/index.tsx:319
+msgid "Deleting game..."
 msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
@@ -467,16 +479,20 @@ msgstr ""
 msgid "Displays the mobile sidebar."
 msgstr ""
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:320
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:326
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
 msgid "Download"
+msgstr ""
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:68
+msgid "Download failed"
 msgstr ""
 
 #: src/features/go/components/chat-message-list.tsx:188
 msgid "Draw agreed"
 msgstr ""
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:525
 msgid "Draw offered — waiting for {opponentName}"
 msgstr ""
 
@@ -500,15 +516,15 @@ msgstr ""
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr ""
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:652
 msgid "End game"
 msgstr ""
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "End game?"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:70
 msgid "Enter a valid number"
 msgstr ""
 
@@ -522,8 +538,8 @@ msgstr ""
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Expand"
 msgstr ""
 
@@ -535,7 +551,7 @@ msgstr ""
 msgid "Extra large"
 msgstr ""
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:214
 msgid "Failed to accept draw"
 msgstr ""
 
@@ -543,31 +559,31 @@ msgstr ""
 msgid "Failed to add account"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:93
 msgid "Failed to create game"
 msgstr ""
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:360
 msgid "Failed to create rematch"
 msgstr ""
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:219
 msgid "Failed to decline draw"
 msgstr ""
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:321
 msgid "Failed to delete game"
 msgstr ""
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:185
 msgid "Failed to make move"
 msgstr ""
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:209
 msgid "Failed to offer draw"
 msgstr ""
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:192
 msgid "Failed to pass"
 msgstr ""
 
@@ -575,12 +591,12 @@ msgstr ""
 msgid "Failed to remove account"
 msgstr ""
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:202
 msgid "Failed to resign"
 msgstr ""
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:575
+#: src/features/go/index.tsx:607
 msgid "Failed to send"
 msgstr ""
 
@@ -625,17 +641,17 @@ msgstr ""
 msgid "Full layout"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:92
 msgid "Game created"
 msgstr ""
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:320
 msgid "Game deleted"
 msgstr ""
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
+#: src/features/go/index.tsx:99
 #: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:385
 msgid "Go"
 msgstr ""
 
@@ -704,7 +720,7 @@ msgstr ""
 msgid "Invalid verification code"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:191
 msgid "Komi"
 msgstr ""
 
@@ -733,6 +749,10 @@ msgstr ""
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 msgid "Load more"
+msgstr ""
+
+#: ../../../lib/web/src/components/ui/loading-content.tsx:29
+msgid "Loading content…"
 msgstr ""
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
@@ -788,7 +808,7 @@ msgstr ""
 msgid "Monday"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:71
 msgid "Must be between 0 and 10"
 msgstr ""
 
@@ -806,12 +826,12 @@ msgstr ""
 msgid "New game"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:125
+#: src/features/go/components/new-game.tsx:130
 msgid "New Game"
 msgstr ""
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:366
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:371
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
 msgid "Next image"
 msgstr ""
 
@@ -823,11 +843,11 @@ msgstr ""
 msgid "No connected accounts"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:165
 msgid "No friends found"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:147
 msgid "No friends yet"
 msgstr ""
 
@@ -890,7 +910,7 @@ msgstr ""
 msgid "Notifications"
 msgstr ""
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:496
 msgid "Offer draw"
 msgstr ""
 
@@ -903,16 +923,16 @@ msgstr "唔好意思！搵唔到呢一頁！"
 msgid "Open account actions"
 msgstr ""
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:152
-#: ../../../lib/web/src/components/layout/nav-group.tsx:157
+#: ../../../lib/web/src/components/layout/nav-group.tsx:182
+#: ../../../lib/web/src/components/layout/nav-group.tsx:187
 msgid "Open actions"
 msgstr ""
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:467
 msgid "Open chat panel"
 msgstr ""
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:475
 msgid "Open game actions"
 msgstr ""
 
@@ -940,16 +960,16 @@ msgid "Owner"
 msgstr ""
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:652
 msgid "Pass"
 msgstr ""
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "Pass turn?"
 msgstr ""
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:649
 msgid "Passing..."
 msgstr ""
 
@@ -969,16 +989,16 @@ msgstr ""
 msgid "Please check your internet connection and try again."
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:79
 msgid "Please select a friend"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:221
 msgid "Points added to White's score to compensate for Black going first"
 msgstr ""
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:351
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:356
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
 msgid "Previous image"
 msgstr ""
 
@@ -1026,8 +1046,12 @@ msgstr ""
 msgid "Relative within 24 hours, else absolute"
 msgstr ""
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:509
 msgid "Rematch"
+msgstr ""
+
+#: src/features/go/index.tsx:358
+msgid "Rematch created"
 msgstr ""
 
 #: ../../../lib/web/src/features/access/access-list.tsx:265
@@ -1062,16 +1086,16 @@ msgstr ""
 msgid "Reset all settings to default values"
 msgstr ""
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:627
 msgid "Resign"
 msgstr ""
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:618
 msgid "Resign game?"
 msgstr ""
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:624
 msgid "Resigning..."
 msgstr ""
 
@@ -1122,7 +1146,7 @@ msgstr ""
 msgid "Searching..."
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:164
 msgid "Select a friend..."
 msgstr ""
 
@@ -1232,7 +1256,7 @@ msgstr ""
 msgid "Skip to Main"
 msgstr ""
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:643
 msgid "Skip your turn and pass to your opponent."
 msgstr ""
 
@@ -1245,11 +1269,11 @@ msgstr ""
 msgid "Spacious"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:133
 msgid "Start a new Go game"
 msgstr ""
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:241
 msgid "Start game"
 msgstr ""
 
@@ -1314,10 +1338,10 @@ msgstr ""
 msgid "Toggle right panel"
 msgstr ""
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:321
-#: ../../../lib/web/src/components/layout/nav-group.tsx:328
-#: ../../../lib/web/src/components/layout/nav-group.tsx:451
-#: ../../../lib/web/src/components/layout/nav-group.tsx:458
+#: ../../../lib/web/src/components/layout/nav-group.tsx:351
+#: ../../../lib/web/src/components/layout/nav-group.tsx:358
+#: ../../../lib/web/src/components/layout/nav-group.tsx:481
+#: ../../../lib/web/src/components/layout/nav-group.tsx:488
 msgid "Toggle section"
 msgstr ""
 
@@ -1463,11 +1487,11 @@ msgstr ""
 msgid "Wednesday"
 msgstr ""
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "White"
 msgstr ""
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:455
 msgid "White captures:"
 msgstr ""
 

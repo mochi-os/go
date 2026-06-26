@@ -25,7 +25,7 @@ msgstr "{name} heç-heçə təklif etdi"
 msgid "{name} resigned"
 msgstr "{name} təslim oldu"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:642
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} təslim oldu — qazandınız!"
 
@@ -114,11 +114,11 @@ msgstr "Hesab əlavə et"
 msgid "Add an account to receive notifications and use services."
 msgstr "Bildiriş almaq və xidmətlərdən istifadə etmək üçün hesab əlavə edin."
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:155
 msgid "Add friends"
 msgstr "Dostlar əlavə et"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:148
 msgid "Add friends in the People app to start playing"
 msgstr "Oynamağa başlamaq üçün People tətbiqində dost əlavə edin"
 
@@ -167,7 +167,7 @@ msgstr "Gözlənilməz xəta baş verdi"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Çıxmaq istədiyinizə əminsiniz? Hesabınıza giriş üçün yenidən daxil olmalı olacaqsınız."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:619
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Təslim olmaq istədiyinizə əminsiniz? {opponentName} oyunu qazanacaq."
 
@@ -193,11 +193,11 @@ msgstr "Geri"
 msgid "Back to home"
 msgstr "Ana səhifəyə qayıt"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "Black"
 msgstr "Qara"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:450
 msgid "Black captures:"
 msgstr "Qara tutulanlar:"
 
@@ -209,7 +209,7 @@ msgstr "{colLabel}{rowLabel} mövqeyində qara daş"
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "{colLabel}{rowLabel} mövqeyində qara ərazi"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:173
 msgid "Board size"
 msgstr "Lövhə ölçüsü"
 
@@ -227,7 +227,7 @@ msgstr "Marağı artır"
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:89
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:233
 msgid "Cancel"
 msgstr "Ləğv et"
 
@@ -240,8 +240,8 @@ msgstr "Bu bildiriş üçün kateqoriya"
 msgid "Change notification category"
 msgstr "Bildiriş kateqoriyasını dəyişdir"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:559
+#: src/features/go/index.tsx:591
 msgid "Chat"
 msgstr "Söhbət"
 
@@ -270,7 +270,7 @@ msgstr "Sistem üstünlüyü, açıq rejim və ya tünd rejim arasında seçim e
 msgid "Choose language"
 msgstr "Dil seçin"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:139
 msgid "Choose opponent"
 msgstr "Rəqib seçin"
 
@@ -301,8 +301,8 @@ msgid "Clear selection (Escape)"
 msgstr "Seçimi təmizlə (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "Bağla"
@@ -323,8 +323,8 @@ msgstr "Axtarışı bağla"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Collapse"
 msgstr "Yığ"
 
@@ -390,7 +390,15 @@ msgstr "Yenidən autentifikasiyanı başlatmaq mümkün olmadı. Zəhmət olmasa
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Bu hesabla doğrulama mümkün olmadı. Zəhmət olmasa, yenidən cəhd edin."
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:91
+msgid "Creating game..."
+msgstr ""
+
+#: src/features/go/index.tsx:357
+msgid "Creating rematch..."
+msgstr ""
+
+#: src/features/go/components/new-game.tsx:241
 msgid "Creating..."
 msgstr "Yaradılır..."
 
@@ -423,13 +431,17 @@ msgstr "Default"
 msgid "Default AI account"
 msgstr "Default AI hesabı"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:512
 msgid "Delete game"
 msgstr "Oyunu sil"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Köhnə serverdə hesabınızı silin"
+
+#: src/features/go/index.tsx:319
+msgid "Deleting game..."
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -467,16 +479,20 @@ msgstr "Rədd et"
 msgid "Displays the mobile sidebar."
 msgstr "Mobil yan paneli göstərir."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:320
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:326
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
 msgid "Download"
 msgstr "Yüklə"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:68
+msgid "Download failed"
+msgstr ""
 
 #: src/features/go/components/chat-message-list.tsx:188
 msgid "Draw agreed"
 msgstr "Heç-heçə razılaşıldı"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:525
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Heç-heçə təklif edildi — {opponentName} gözlənilir"
 
@@ -500,15 +516,15 @@ msgstr "Boş kəsişmə {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Boş kəsişmə {colLabel}{rowLabel}, yerləşdirmək üçün klikləyin və ya Enter düyməsini basın"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:652
 msgid "End game"
 msgstr "Oyunu bitir"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "End game?"
 msgstr "Oyunu bitirmək?"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:70
 msgid "Enter a valid number"
 msgstr "Etibarlı bir rəqəm daxil edin"
 
@@ -522,8 +538,8 @@ msgstr "Autentifikator kodunuzu daxil edin"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Expand"
 msgstr "Genişlət"
 
@@ -535,7 +551,7 @@ msgstr "Yan paneli genişləndir"
 msgid "Extra large"
 msgstr "Çox böyük"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:214
 msgid "Failed to accept draw"
 msgstr "Heç-heçəni qəbul etmək alınmadı"
 
@@ -543,31 +559,31 @@ msgstr "Heç-heçəni qəbul etmək alınmadı"
 msgid "Failed to add account"
 msgstr "Hesab əlavə etmək alınmadı"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:93
 msgid "Failed to create game"
 msgstr "Oyun yaratmaq alınmadı"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:360
 msgid "Failed to create rematch"
 msgstr "Təkrar oyun yaratmaq alınmadı"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:219
 msgid "Failed to decline draw"
 msgstr "Heç-heçəni rədd etmək alınmadı"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:321
 msgid "Failed to delete game"
 msgstr "Oyunu silmək alınmadı"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:185
 msgid "Failed to make move"
 msgstr "Hərəkət etmək alınmadı"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:209
 msgid "Failed to offer draw"
 msgstr "Heç-heçə təklif etmək alınmadı"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:192
 msgid "Failed to pass"
 msgstr "Pas vermək alınmadı"
 
@@ -575,12 +591,12 @@ msgstr "Pas vermək alınmadı"
 msgid "Failed to remove account"
 msgstr "Hesabı silmək alınmadı"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:202
 msgid "Failed to resign"
 msgstr "Təslim olmaq alınmadı"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:575
+#: src/features/go/index.tsx:607
 msgid "Failed to send"
 msgstr "Göndərmək alınmadı"
 
@@ -625,17 +641,17 @@ msgstr "Mövzudan"
 msgid "Full layout"
 msgstr "Tam tərtibat"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:92
 msgid "Game created"
 msgstr "Oyun yaradıldı"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:320
 msgid "Game deleted"
 msgstr "Oyun silindi"
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
+#: src/features/go/index.tsx:99
 #: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:385
 msgid "Go"
 msgstr "Get"
 
@@ -704,7 +720,7 @@ msgstr "Maraqlar"
 msgid "Invalid verification code"
 msgstr "Etibarsız doğrulama kodu"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:191
 msgid "Komi"
 msgstr "Komi"
 
@@ -734,6 +750,10 @@ msgstr "İşıqlı"
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 msgid "Load more"
 msgstr "Daha çox yüklə"
+
+#: ../../../lib/web/src/components/ui/loading-content.tsx:29
+msgid "Loading content…"
+msgstr ""
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
@@ -788,7 +808,7 @@ msgstr "Metrik"
 msgid "Monday"
 msgstr "Bazar ertəsi"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:71
 msgid "Must be between 0 and 10"
 msgstr "0 ilə 10 arasında olmalıdır"
 
@@ -806,12 +826,12 @@ msgstr "Yeni"
 msgid "New game"
 msgstr "Yeni oyun"
 
-#: src/features/go/components/new-game.tsx:125
+#: src/features/go/components/new-game.tsx:130
 msgid "New Game"
 msgstr "Yeni Oyun"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:366
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:371
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
 msgid "Next image"
 msgstr "Növbəti şəkil"
 
@@ -823,11 +843,11 @@ msgstr "Giriş qaydaları konfiqurasiya edilməyib. Bu resursa kimin daxil ola b
 msgid "No connected accounts"
 msgstr "Bağlı hesab yoxdur"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:165
 msgid "No friends found"
 msgstr "Dost tapılmadı"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:147
 msgid "No friends yet"
 msgstr "Hələ dost yoxdur"
 
@@ -890,7 +910,7 @@ msgstr "Təyin edilməyib"
 msgid "Notifications"
 msgstr "Bildirişlər"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:496
 msgid "Offer draw"
 msgstr "Heç-heçə təklif et"
 
@@ -903,16 +923,16 @@ msgstr "Hopa! Səhifə Tapılmadı!"
 msgid "Open account actions"
 msgstr "Hesab əməliyyatlarını aç"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:152
-#: ../../../lib/web/src/components/layout/nav-group.tsx:157
+#: ../../../lib/web/src/components/layout/nav-group.tsx:182
+#: ../../../lib/web/src/components/layout/nav-group.tsx:187
 msgid "Open actions"
 msgstr "Əməliyyatları aç"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:467
 msgid "Open chat panel"
 msgstr "Söhbət panelini aç"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:475
 msgid "Open game actions"
 msgstr "Oyun əməliyyatlarını aç"
 
@@ -940,16 +960,16 @@ msgid "Owner"
 msgstr "Sahibi"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:652
 msgid "Pass"
 msgstr "Pas"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:639
 msgid "Pass turn?"
 msgstr "Növbəni ötür?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:649
 msgid "Passing..."
 msgstr "Ötürülür..."
 
@@ -969,16 +989,16 @@ msgstr "Passkey-lər"
 msgid "Please check your internet connection and try again."
 msgstr "İnternet bağlantınızı yoxlayıb yenidən cəhd edin."
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:79
 msgid "Please select a friend"
 msgstr "Dost seçin"
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:221
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Qaranın əvvəl getməsini kompensasiya etmək üçün Ağın xalına əlavə edilən xallar"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:351
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:356
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
 msgid "Previous image"
 msgstr "Əvvəlki şəkil"
 
@@ -1026,9 +1046,13 @@ msgstr "Nisbi (5d, 3s, 2g)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 saat içində nisbi, əks halda mütləq"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:509
 msgid "Rematch"
 msgstr "Yenidən qarşılaşma"
+
+#: src/features/go/index.tsx:358
+msgid "Rematch created"
+msgstr ""
 
 #: ../../../lib/web/src/features/access/access-list.tsx:265
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
@@ -1062,16 +1086,16 @@ msgstr "Sıfırla"
 msgid "Reset all settings to default values"
 msgstr "Bütün parametrləri standart dəyərlərə sıfırla"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:627
 msgid "Resign"
 msgstr "Təslim ol"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:618
 msgid "Resign game?"
 msgstr "Oyundan təslim olunsun?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:624
 msgid "Resigning..."
 msgstr "Təslim olunur..."
 
@@ -1122,7 +1146,7 @@ msgstr "Axtar..."
 msgid "Searching..."
 msgstr "Axtarılır..."
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:164
 msgid "Select a friend..."
 msgstr "Dost seç..."
 
@@ -1232,7 +1256,7 @@ msgstr "Çıxılır..."
 msgid "Skip to Main"
 msgstr "Əsasa keç"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:643
 msgid "Skip your turn and pass to your opponent."
 msgstr "Növbənizi keçin və rəqibinizə ötürün."
 
@@ -1245,11 +1269,11 @@ msgstr "Kiçik"
 msgid "Spacious"
 msgstr "Geniş"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:133
 msgid "Start a new Go game"
 msgstr "Yeni Go oyununa başla"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:241
 msgid "Start game"
 msgstr "Oyuna başla"
 
@@ -1314,10 +1338,10 @@ msgstr "Görünüş seçimlərini açıb-bağla"
 msgid "Toggle right panel"
 msgstr "Sağ paneli aç/bağla"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:321
-#: ../../../lib/web/src/components/layout/nav-group.tsx:328
-#: ../../../lib/web/src/components/layout/nav-group.tsx:451
-#: ../../../lib/web/src/components/layout/nav-group.tsx:458
+#: ../../../lib/web/src/components/layout/nav-group.tsx:351
+#: ../../../lib/web/src/components/layout/nav-group.tsx:358
+#: ../../../lib/web/src/components/layout/nav-group.tsx:481
+#: ../../../lib/web/src/components/layout/nav-group.tsx:488
 msgid "Toggle section"
 msgstr "Bölməni aç/bağla"
 
@@ -1463,11 +1487,11 @@ msgstr "Həftə başlayır"
 msgid "Wednesday"
 msgstr "Digər wiki-lər bu wiki-ni replikasiya etdikdə burada görünəcəklər."
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:443
 msgid "White"
 msgstr "{colLabel}{rowLabel}-də ağ daş"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:455
 msgid "White captures:"
 msgstr "{colLabel}{rowLabel}-də ağ ərazi"
 

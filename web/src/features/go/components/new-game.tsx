@@ -17,6 +17,7 @@ import {
   ResponsiveDialogTitle,
   getErrorMessage,
   toast,
+  toastAction,
   Skeleton,
   PersonPicker,
   GeneralError,
@@ -55,18 +56,7 @@ export function NewGame() {
     enabled: open,
   })
 
-  const createGameMutation = useCreateGameMutation({
-    onSuccess: (data) => {
-      onOpenChange(false)
-      if (data.id) {
-        navigate({ to: '/$gameId', params: { gameId: data.id } })
-        toast.success(t`Game created`)
-      }
-    },
-    onError: (error) => {
-      toast.error(getErrorMessage(error, t`Failed to create game`))
-    },
-  })
+  const createGameMutation = useCreateGameMutation()
 
   const friends = useMemo(() => data?.friends ?? [], [data?.friends])
 
@@ -84,17 +74,32 @@ export function NewGame() {
 
   const canSubmit = !!selectedFriend && !komiError && !createGameMutation.isPending
 
-  const handleCreateGame = () => {
+  const handleCreateGame = async () => {
     if (!selectedFriend) {
       toast.error(t`Please select a friend`)
       return
     }
     const komiValue = Number.parseFloat(komi)
-    createGameMutation.mutate({
-      opponent: selectedFriend,
-      boardSize,
-      komi: komiValue,
-    })
+    try {
+      const data = await toastAction(
+        createGameMutation.mutateAsync({
+          opponent: selectedFriend,
+          boardSize,
+          komi: komiValue,
+        }),
+        {
+          loading: t`Creating game...`,
+          success: t`Game created`,
+          error: (error) => getErrorMessage(error, t`Failed to create game`),
+        }
+      )
+      onOpenChange(false)
+      if (data.id) {
+        navigate({ to: '/$gameId', params: { gameId: data.id } })
+      }
+    } catch {
+      // toastAction already showed error
+    }
   }
 
   useEffect(() => {
