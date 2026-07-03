@@ -126,7 +126,7 @@ msgstr "Cuir caraidean ris ann an aplacaid Daoine gus tòiseachadh a' cluich"
 msgid "Add new account"
 msgstr "Cuir cunntas ùr ris"
 
-#: ../../../lib/web/src/components/post-tags.tsx:129
+#: ../../../lib/web/src/components/post-tags.tsx:133
 msgid "Add tag..."
 msgstr "Cuir taga ris..."
 
@@ -155,11 +155,11 @@ msgstr "AI"
 msgid "All"
 msgstr "Na h-uile"
 
-#: ../../../lib/web/src/lib/api-client.ts:192
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:159
 msgid "An error occurred"
 msgstr "Thachair mearachd"
 
-#: ../../../lib/web/src/lib/api-client.ts:255
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:241
 msgid "An unexpected error occurred"
 msgstr "Thachair mearachd ris nach robh dùil"
 
@@ -213,8 +213,8 @@ msgstr "Tìr dhubh aig {colLabel}{rowLabel}"
 msgid "Board size"
 msgstr "Meud bùird"
 
-#: ../../../lib/web/src/components/post-tags.tsx:172
-#: ../../../lib/web/src/components/post-tags.tsx:184
+#: ../../../lib/web/src/components/post-tags.tsx:176
+#: ../../../lib/web/src/components/post-tags.tsx:188
 msgid "Boost interest"
 msgstr "Brosnaich ùidh"
 
@@ -301,8 +301,8 @@ msgid "Clear selection (Escape)"
 msgstr "Falamhaich an taghadh (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "Dùin"
@@ -323,8 +323,8 @@ msgstr "Dùin an lorg"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Collapse"
 msgstr "Lùb a-steach"
 
@@ -467,10 +467,14 @@ msgstr "Leig seachad"
 msgid "Displays the mobile sidebar."
 msgstr "Seallaidh am bàr-thaobh fòn-làimhe."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:320
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:326
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
 msgid "Download"
 msgstr "Luchdaich a-nuas"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:68
+msgid "Download failed"
+msgstr "Dh’fhàillig an luchdadh a-nuas"
 
 #: src/features/go/components/chat-message-list.tsx:188
 msgid "Draw agreed"
@@ -522,8 +526,8 @@ msgstr "Cuir a-steach còd na h-aplacaid dearbhaidh agad"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Expand"
 msgstr "Leudaich"
 
@@ -735,6 +739,10 @@ msgstr "Soilleir"
 msgid "Load more"
 msgstr "Luchdaich barrachd"
 
+#: ../../../lib/web/src/components/ui/loading-content.tsx:29
+msgid "Loading content…"
+msgstr "A’ luchdadh susbaint…"
+
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
 msgid "Loading…"
@@ -792,7 +800,7 @@ msgstr "DiLuain"
 msgid "Must be between 0 and 10"
 msgstr "Feumaidh e a bhith eadar 0 agus 10"
 
-#: ../../../lib/web/src/lib/api-client.ts:300
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:288
 msgid "Network error"
 msgstr "Mearachd lìonraidh"
 
@@ -810,8 +818,8 @@ msgstr "Geama ùr"
 msgid "New Game"
 msgstr "Geama Ùr"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:366
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:371
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
 msgid "Next image"
 msgstr "An ath dhealbh"
 
@@ -903,8 +911,8 @@ msgstr "Och! Cha deach an duilleag a lorg!"
 msgid "Open account actions"
 msgstr "Fosgail gnìomhan a' chunntais"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:152
-#: ../../../lib/web/src/components/layout/nav-group.tsx:157
+#: ../../../lib/web/src/components/layout/nav-group.tsx:182
+#: ../../../lib/web/src/components/layout/nav-group.tsx:187
 msgid "Open actions"
 msgstr "Fosgail na gnìomhan"
 
@@ -965,7 +973,7 @@ msgstr "Dh'fhàillig dearbhadh na h-iuchrach-inntrigidh. Feuch ris a-rithist."
 msgid "Passkeys"
 msgstr "Pasgairean"
 
-#: ../../../lib/web/src/lib/api-client.ts:301
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:289
 msgid "Please check your internet connection and try again."
 msgstr "Thoir sùil air a' cheangal eadar-lìn agad agus feuch ris a-rithist."
 
@@ -977,8 +985,8 @@ msgstr "Tagh caraid"
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Puingean a chuirear ri sgòr a' Gheal airson dìoladh ri Dubh a' dol an toiseach"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:351
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:356
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
 msgid "Previous image"
 msgstr "An dealbh roimhe"
 
@@ -1013,8 +1021,8 @@ msgstr "Air a mholadh"
 msgid "Redirecting to login."
 msgstr "Ag ath-stiùireadh dhan log a-steach."
 
-#: ../../../lib/web/src/components/post-tags.tsx:192
-#: ../../../lib/web/src/components/post-tags.tsx:204
+#: ../../../lib/web/src/components/post-tags.tsx:196
+#: ../../../lib/web/src/components/post-tags.tsx:208
 msgid "Reduce interest"
 msgstr "Lùghdaich an ùidh"
 
@@ -1044,8 +1052,8 @@ msgstr "Thoir an riaghailt cothraim air falbh"
 msgid "Remove access?"
 msgstr "Thoir an cothrom air falbh?"
 
-#: ../../../lib/web/src/components/post-tags.tsx:212
-#: ../../../lib/web/src/components/post-tags.tsx:224
+#: ../../../lib/web/src/components/post-tags.tsx:216
+#: ../../../lib/web/src/components/post-tags.tsx:228
 msgid "Remove interest"
 msgstr "Thoir an ùidh air falbh"
 
@@ -1179,8 +1187,8 @@ msgstr "Cuir teachdaireachd"
 msgid "Serif"
 msgstr "Serif"
 
-#: ../../../lib/web/src/lib/api-client.ts:259
-#: ../../../lib/web/src/lib/api-client.ts:284
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:245
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:271
 msgid "Server error"
 msgstr "Mearachd frithealaiche"
 
@@ -1189,7 +1197,7 @@ msgstr "Mearachd frithealaiche"
 msgid "Server rules"
 msgstr "Riaghailtean an fhrithealaiche"
 
-#: ../../../lib/web/src/lib/api-client.ts:227
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:209
 msgid "Session expired"
 msgstr "Dh'fhalbh an ùine air an t-seisean"
 
@@ -1275,8 +1283,8 @@ msgstr "Siostam"
 msgid "Tag"
 msgstr "Taga"
 
-#: ../../../lib/web/src/components/post-tags.tsx:96
-#: ../../../lib/web/src/components/post-tags.tsx:107
+#: ../../../lib/web/src/components/post-tags.tsx:100
+#: ../../../lib/web/src/components/post-tags.tsx:111
 msgid "Tags"
 msgstr "Tagaichean"
 
@@ -1314,10 +1322,10 @@ msgstr "Toglaich colbhan"
 msgid "Toggle right panel"
 msgstr "Toglaich am panail deas"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:321
-#: ../../../lib/web/src/components/layout/nav-group.tsx:328
-#: ../../../lib/web/src/components/layout/nav-group.tsx:451
-#: ../../../lib/web/src/components/layout/nav-group.tsx:458
+#: ../../../lib/web/src/components/layout/nav-group.tsx:351
+#: ../../../lib/web/src/components/layout/nav-group.tsx:358
+#: ../../../lib/web/src/components/layout/nav-group.tsx:481
+#: ../../../lib/web/src/components/layout/nav-group.tsx:488
 msgid "Toggle section"
 msgstr "Toglaich an earrann"
 
@@ -1375,7 +1383,7 @@ msgstr "Sgrìobh airson cleachdaichean a lorg"
 msgid "Type to search..."
 msgstr "Sgrìobh airson lorg..."
 
-#: ../../../lib/web/src/lib/api-client.ts:280
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:267
 msgid "Unable to connect to remote server"
 msgstr "Cha ghabh ceangal ris an fhrithealaiche chèin"
 

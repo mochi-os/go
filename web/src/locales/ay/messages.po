@@ -126,7 +126,7 @@ msgstr "Masinaka yapxataña People appnxa anatañ qalltañataki"
 msgid "Add new account"
 msgstr "Machaq cuenta yapxataña"
 
-#: ../../../lib/web/src/components/post-tags.tsx:129
+#: ../../../lib/web/src/components/post-tags.tsx:133
 msgid "Add tag..."
 msgstr "Tag yapxataña..."
 
@@ -155,11 +155,11 @@ msgstr "AI"
 msgid "All"
 msgstr "Taqpach"
 
-#: ../../../lib/web/src/lib/api-client.ts:192
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:159
 msgid "An error occurred"
 msgstr "Mä juch'a utjawayi"
 
-#: ../../../lib/web/src/lib/api-client.ts:255
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:241
 msgid "An unexpected error occurred"
 msgstr "Jan suyt'ata juch'a utjawayi"
 
@@ -213,8 +213,8 @@ msgstr "Ch'iyara uraqi {colLabel}{rowLabel} ukana"
 msgid "Board size"
 msgstr "Tabla jach'awi"
 
-#: ../../../lib/web/src/components/post-tags.tsx:172
-#: ../../../lib/web/src/components/post-tags.tsx:184
+#: ../../../lib/web/src/components/post-tags.tsx:176
+#: ../../../lib/web/src/components/post-tags.tsx:188
 msgid "Boost interest"
 msgstr "Munawi jiltayaña"
 
@@ -301,8 +301,8 @@ msgid "Clear selection (Escape)"
 msgstr "Ajllxawi q'umachaña (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "Jist'antaña"
@@ -323,8 +323,8 @@ msgstr "Thaqaña jist'antaña"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Collapse"
 msgstr "Pist'aña"
 
@@ -467,10 +467,14 @@ msgstr "Apaqaña"
 msgid "Displays the mobile sidebar."
 msgstr "Móvil sidebar uñacht'ayi."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:320
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:326
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
 msgid "Download"
 msgstr "Apaqaña"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:68
+msgid "Download failed"
+msgstr "Apaqañax janiw walkiti"
 
 #: src/features/go/components/chat-message-list.tsx:188
 msgid "Draw agreed"
@@ -522,8 +526,8 @@ msgstr "Autenticador codigoma uchma"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Expand"
 msgstr "Jach'achaña"
 
@@ -735,6 +739,10 @@ msgstr "Qhana"
 msgid "Load more"
 msgstr "Jukamp apaqaña"
 
+#: ../../../lib/web/src/components/ui/loading-content.tsx:29
+msgid "Loading content…"
+msgstr "Contenido aptañataki…"
+
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
 msgid "Loading…"
@@ -792,7 +800,7 @@ msgstr "Lunes"
 msgid "Must be between 0 and 10"
 msgstr "0 ukat 10 taypinkañapawa"
 
-#: ../../../lib/web/src/lib/api-client.ts:300
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:288
 msgid "Network error"
 msgstr "Red juch'a"
 
@@ -810,8 +818,8 @@ msgstr "Machaqa anatawi"
 msgid "New Game"
 msgstr "Machaqa Anatawi"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:366
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:371
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
 msgid "Next image"
 msgstr "Arkiri imagen"
 
@@ -903,8 +911,8 @@ msgstr "¡Oops! ¡Página jan jikxatasiti!"
 msgid "Open account actions"
 msgstr "Cuenta lurawinak jist'arma"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:152
-#: ../../../lib/web/src/components/layout/nav-group.tsx:157
+#: ../../../lib/web/src/components/layout/nav-group.tsx:182
+#: ../../../lib/web/src/components/layout/nav-group.tsx:187
 msgid "Open actions"
 msgstr "Lurawinaka jist'araña"
 
@@ -965,7 +973,7 @@ msgstr "Passkey yatiyañax jan walikiti. Mira wasitat yant'asma."
 msgid "Passkeys"
 msgstr "Passkeyanaka"
 
-#: ../../../lib/web/src/lib/api-client.ts:301
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:289
 msgid "Please check your internet connection and try again."
 msgstr "Mira internet conexion ukat wasitat yant'asim."
 
@@ -977,8 +985,8 @@ msgstr "Mä amigo ajllima"
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "White score yapxatat puntonak Black nayraqat saraskat compensañataki"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:351
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:356
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
 msgid "Previous image"
 msgstr "Nayrïri imagen"
 
@@ -1013,8 +1021,8 @@ msgstr "Recomendata"
 msgid "Redirecting to login."
 msgstr "Login uksaru redirecting."
 
-#: ../../../lib/web/src/components/post-tags.tsx:192
-#: ../../../lib/web/src/components/post-tags.tsx:204
+#: ../../../lib/web/src/components/post-tags.tsx:196
+#: ../../../lib/web/src/components/post-tags.tsx:208
 msgid "Reduce interest"
 msgstr "Interés pisi tukuyma"
 
@@ -1044,8 +1052,8 @@ msgstr "Mantañ kamachi aparma"
 msgid "Remove access?"
 msgstr "¿Mantañ aparma?"
 
-#: ../../../lib/web/src/components/post-tags.tsx:212
-#: ../../../lib/web/src/components/post-tags.tsx:224
+#: ../../../lib/web/src/components/post-tags.tsx:216
+#: ../../../lib/web/src/components/post-tags.tsx:228
 msgid "Remove interest"
 msgstr "Interés aparma"
 
@@ -1179,8 +1187,8 @@ msgstr "Mensaje apayaña"
 msgid "Serif"
 msgstr "Serif"
 
-#: ../../../lib/web/src/lib/api-client.ts:259
-#: ../../../lib/web/src/lib/api-client.ts:284
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:245
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:271
 msgid "Server error"
 msgstr "Servidor juch'a"
 
@@ -1189,7 +1197,7 @@ msgstr "Servidor juch'a"
 msgid "Server rules"
 msgstr "Servidor reglas"
 
-#: ../../../lib/web/src/lib/api-client.ts:227
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:209
 msgid "Session expired"
 msgstr "Sesión tukusi"
 
@@ -1275,8 +1283,8 @@ msgstr "Sistema"
 msgid "Tag"
 msgstr "Tag"
 
-#: ../../../lib/web/src/components/post-tags.tsx:96
-#: ../../../lib/web/src/components/post-tags.tsx:107
+#: ../../../lib/web/src/components/post-tags.tsx:100
+#: ../../../lib/web/src/components/post-tags.tsx:111
 msgid "Tags"
 msgstr "Chimpunaka"
 
@@ -1314,10 +1322,10 @@ msgstr "Tema cambiaña"
 msgid "Toggle right panel"
 msgstr "Kupi panel mayjt’ayaña"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:321
-#: ../../../lib/web/src/components/layout/nav-group.tsx:328
-#: ../../../lib/web/src/components/layout/nav-group.tsx:451
-#: ../../../lib/web/src/components/layout/nav-group.tsx:458
+#: ../../../lib/web/src/components/layout/nav-group.tsx:351
+#: ../../../lib/web/src/components/layout/nav-group.tsx:358
+#: ../../../lib/web/src/components/layout/nav-group.tsx:481
+#: ../../../lib/web/src/components/layout/nav-group.tsx:488
 msgid "Toggle section"
 msgstr "Jaljat(sección) tukuyaña"
 
@@ -1375,7 +1383,7 @@ msgstr "Thaqhañatak qillqam..."
 msgid "Type to search..."
 msgstr "Mensajemam qillqam…"
 
-#: ../../../lib/web/src/lib/api-client.ts:280
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:267
 msgid "Unable to connect to remote server"
 msgstr "Jan jaya servidorar mayachasiñjamäkiti"
 

@@ -126,7 +126,7 @@ msgstr "Yongeza abahlobo kwi-app yeAbantu ukuze uqalise ukudlala"
 msgid "Add new account"
 msgstr "Yongeza i-akhawunti entsha"
 
-#: ../../../lib/web/src/components/post-tags.tsx:129
+#: ../../../lib/web/src/components/post-tags.tsx:133
 msgid "Add tag..."
 msgstr "Yongeza ithegi..."
 
@@ -155,11 +155,11 @@ msgstr "AI"
 msgid "All"
 msgstr "Konke"
 
-#: ../../../lib/web/src/lib/api-client.ts:192
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:159
 msgid "An error occurred"
 msgstr "Kwenzeke impazamo"
 
-#: ../../../lib/web/src/lib/api-client.ts:255
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:241
 msgid "An unexpected error occurred"
 msgstr "Kwenzeke impazamo engalindelekanga"
 
@@ -213,8 +213,8 @@ msgstr "Ummandla omnyama ku-{colLabel}{rowLabel}"
 msgid "Board size"
 msgstr "Ubungakanani bebhodi"
 
-#: ../../../lib/web/src/components/post-tags.tsx:172
-#: ../../../lib/web/src/components/post-tags.tsx:184
+#: ../../../lib/web/src/components/post-tags.tsx:176
+#: ../../../lib/web/src/components/post-tags.tsx:188
 msgid "Boost interest"
 msgstr "Khulisa umdla"
 
@@ -301,8 +301,8 @@ msgid "Clear selection (Escape)"
 msgstr "Cima ukukhetha (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:332
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:335
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "Vala"
@@ -323,8 +323,8 @@ msgstr "Vala ukukhangela"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Collapse"
 msgstr "Goqa"
 
@@ -467,10 +467,14 @@ msgstr "Yikhabe"
 msgid "Displays the mobile sidebar."
 msgstr "Ibonisa ibara lecala leselula."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:320
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:326
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
 msgid "Download"
 msgstr "Khuphela"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:68
+msgid "Download failed"
+msgstr "Ukukhuphela akuphumelelanga"
 
 #: src/features/go/components/chat-message-list.tsx:188
 msgid "Draw agreed"
@@ -522,8 +526,8 @@ msgstr "Faka ikhowudi yakho yesiqinisekisi"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
-#: ../../../lib/web/src/components/tree-row.tsx:255
-#: ../../../lib/web/src/components/tree-row.tsx:269
+#: ../../../lib/web/src/components/tree-row.tsx:338
+#: ../../../lib/web/src/components/tree-row.tsx:352
 msgid "Expand"
 msgstr "Yandisa"
 
@@ -735,6 +739,10 @@ msgstr "Khaphukhaphu"
 msgid "Load more"
 msgstr "Layisha okungakumbi"
 
+#: ../../../lib/web/src/components/ui/loading-content.tsx:29
+msgid "Loading content…"
+msgstr "Iyalayisha umxholo…"
+
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
 msgid "Loading…"
@@ -792,7 +800,7 @@ msgstr "Umvulo"
 msgid "Must be between 0 and 10"
 msgstr "Kufuneka ibe phakathi kwe-0 ne-10"
 
-#: ../../../lib/web/src/lib/api-client.ts:300
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:288
 msgid "Network error"
 msgstr "Impazamo yothungelwano"
 
@@ -810,8 +818,8 @@ msgstr "Umdlalo omtsha"
 msgid "New Game"
 msgstr "Umdlalo Omtsha"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:366
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:371
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
 msgid "Next image"
 msgstr "Umfanekiso olandelayo"
 
@@ -903,8 +911,8 @@ msgstr "Yhu! Iphepha Alifumanekanga!"
 msgid "Open account actions"
 msgstr "Vula izenzo zeakhawunti"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:152
-#: ../../../lib/web/src/components/layout/nav-group.tsx:157
+#: ../../../lib/web/src/components/layout/nav-group.tsx:182
+#: ../../../lib/web/src/components/layout/nav-group.tsx:187
 msgid "Open actions"
 msgstr "Vula izenzo"
 
@@ -965,7 +973,7 @@ msgstr "Ukuqinisekiswa kwe-passkey akuphumelelanga. Nceda uzame kwakhona."
 msgid "Passkeys"
 msgstr "Ii-passkey"
 
-#: ../../../lib/web/src/lib/api-client.ts:301
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:289
 msgid "Please check your internet connection and try again."
 msgstr "Nceda ukhangele uqhagamshelwano lwakho lwe-intanethi uze uzame kwakhona."
 
@@ -977,8 +985,8 @@ msgstr "Nceda khetha umhlobo"
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Amanqaku ongezelelwe kwinqaku le-White ukuthatha indawo yokuba i-Black ihambe kuqala"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:351
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:356
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
 msgid "Previous image"
 msgstr "Umfanekiso ongaphambili"
 
@@ -1013,8 +1021,8 @@ msgstr "Iyacetyiswa"
 msgid "Redirecting to login."
 msgstr "Iyahanjiswa kwiportal yokungena."
 
-#: ../../../lib/web/src/components/post-tags.tsx:192
-#: ../../../lib/web/src/components/post-tags.tsx:204
+#: ../../../lib/web/src/components/post-tags.tsx:196
+#: ../../../lib/web/src/components/post-tags.tsx:208
 msgid "Reduce interest"
 msgstr "Nciphisa umnxili"
 
@@ -1044,8 +1052,8 @@ msgstr "Susa umthetho wofikelelo"
 msgid "Remove access?"
 msgstr "Susa ufikelelo?"
 
-#: ../../../lib/web/src/components/post-tags.tsx:212
-#: ../../../lib/web/src/components/post-tags.tsx:224
+#: ../../../lib/web/src/components/post-tags.tsx:216
+#: ../../../lib/web/src/components/post-tags.tsx:228
 msgid "Remove interest"
 msgstr "Susa umnxili"
 
@@ -1179,8 +1187,8 @@ msgstr "Thumela umyalezo"
 msgid "Serif"
 msgstr "Iserif"
 
-#: ../../../lib/web/src/lib/api-client.ts:259
-#: ../../../lib/web/src/lib/api-client.ts:284
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:245
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:271
 msgid "Server error"
 msgstr "Impazamo yeseva"
 
@@ -1189,7 +1197,7 @@ msgstr "Impazamo yeseva"
 msgid "Server rules"
 msgstr "Imithetho yeseva"
 
-#: ../../../lib/web/src/lib/api-client.ts:227
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:209
 msgid "Session expired"
 msgstr "Iseshoni iphelelwe"
 
@@ -1275,8 +1283,8 @@ msgstr "Inkqubo"
 msgid "Tag"
 msgstr "Iletile"
 
-#: ../../../lib/web/src/components/post-tags.tsx:96
-#: ../../../lib/web/src/components/post-tags.tsx:107
+#: ../../../lib/web/src/components/post-tags.tsx:100
+#: ../../../lib/web/src/components/post-tags.tsx:111
 msgid "Tags"
 msgstr "Iiletile"
 
@@ -1314,10 +1322,10 @@ msgstr "Tshintsha iikholam"
 msgid "Toggle right panel"
 msgstr "Tshintsha iphaneli yasekunene"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:321
-#: ../../../lib/web/src/components/layout/nav-group.tsx:328
-#: ../../../lib/web/src/components/layout/nav-group.tsx:451
-#: ../../../lib/web/src/components/layout/nav-group.tsx:458
+#: ../../../lib/web/src/components/layout/nav-group.tsx:351
+#: ../../../lib/web/src/components/layout/nav-group.tsx:358
+#: ../../../lib/web/src/components/layout/nav-group.tsx:481
+#: ../../../lib/web/src/components/layout/nav-group.tsx:488
 msgid "Toggle section"
 msgstr "Vula/vala icandelo"
 
@@ -1375,7 +1383,7 @@ msgstr "Bhala ukukhangela abasebenzisi"
 msgid "Type to search..."
 msgstr "Bhala ukukhangela..."
 
-#: ../../../lib/web/src/lib/api-client.ts:280
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:267
 msgid "Unable to connect to remote server"
 msgstr "Ayikwazi ukuqhagamshela kwiseva ekude"
 
