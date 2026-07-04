@@ -4,7 +4,7 @@
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
 
 {
-	"version": "1.53",
+	"version": "1.54",
 	"label": "app.name",
 	"classes": ["game"],
 	"paths": ["go"],
@@ -14,10 +14,9 @@
 	"execute": ["go.star"],
 
 	"database": {
-		"schema": 3,
+		"schema": 1,
 		"file": "go.db",
 		"create": {"function": "database_create"},
-		"upgrade": {"function": "database_upgrade"}
 	},
 
 	"icons": [

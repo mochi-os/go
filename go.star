@@ -104,17 +104,6 @@ def database_create():
 	)""")
 	mochi.db.execute("create index if not exists messages_game_created on messages( game, created )")
 
-# Upgrade database
-def database_upgrade(to_version):
-	if to_version == 3:
-		# Add messages.event so the frontend can render system messages
-		# (resign / draw offer / accept / decline) localised per viewer,
-		# instead of the pre-rendered English `body`. Legacy rows keep ''
-		# and fall back to the stored body.
-		cols = [r["name"] for r in mochi.db.table("messages") or []]
-		if "event" not in cols:
-			mochi.db.execute("alter table messages add column event text not null default ''")
-
 def get_opponent(game, user_id):
 	if game["identity"] == user_id:
 		return game["opponent"]
