@@ -65,6 +65,10 @@ msgstr "מוחלט (תאריך ושעה)"
 msgid "Accept"
 msgstr "אישור"
 
+#: ../../../lib/web/src/features/errors/general-error.tsx:60
+msgid "Access denied"
+msgstr "הגישה נדחתה"
+
 #: ../../../lib/web/src/features/errors/forbidden.tsx:16
 msgid "Access Forbidden"
 msgstr "הגישה אסורה"
@@ -159,7 +163,7 @@ msgstr "הכול"
 msgid "An error occurred"
 msgstr "אירעה שגיאה"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:241
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:256
 msgid "An unexpected error occurred"
 msgstr "אירעה שגיאה בלתי צפויה"
 
@@ -231,12 +235,12 @@ msgstr "הגבר עניין"
 msgid "Cancel"
 msgstr "ביטול"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:144
+#: ../../../lib/web/src/components/notification-category-button.tsx:143
 msgid "Category for this notification"
 msgstr "קטגוריה עבור התראה זו"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:125
-#: ../../../lib/web/src/components/notification-category-button.tsx:136
+#: ../../../lib/web/src/components/notification-category-button.tsx:124
+#: ../../../lib/web/src/components/notification-category-button.tsx:135
 msgid "Change notification category"
 msgstr "שנה קטגוריית התראה"
 
@@ -410,6 +414,10 @@ msgstr "כהה"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:123
 msgid "Dark mode"
 msgstr "מצב כהה"
+
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:240
+msgid "Data conflict"
+msgstr "התנגשות נתונים"
 
 #: src/features/go/components/draw-offer-banner.tsx:39
 msgid "Decline"
@@ -592,7 +600,7 @@ msgstr "השליחה נכשלה"
 msgid "Failed to send verification code"
 msgstr "שליחת קוד האימות נכשלה"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:112
+#: ../../../lib/web/src/components/notification-category-button.tsx:111
 msgid "Failed to update category"
 msgstr "עדכון הקטגוריה נכשל"
 
@@ -800,7 +808,8 @@ msgstr "יום שני"
 msgid "Must be between 0 and 10"
 msgstr "חייב להיות בין 0 ל-10"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:288
+#: ../../../lib/web/src/features/errors/general-error.tsx:53
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:303
 msgid "Network error"
 msgstr "שגיאת רשת"
 
@@ -868,7 +877,7 @@ msgstr "לא נמצאו תוצאות."
 msgid "No time zone found."
 msgstr "לא נמצא אזור זמן."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:148
+#: ../../../lib/web/src/components/notification-category-button.tsx:147
 msgid "No topic record yet — try again after the next notification."
 msgstr "עדיין אין רשומת נושא — נסה שוב לאחר ההתראה הבאה."
 
@@ -885,6 +894,10 @@ msgstr "ללא"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Normal"
 msgstr "רגיל"
+
+#: ../../../lib/web/src/features/errors/general-error.tsx:67
+msgid "Not found"
+msgstr "לא נמצא"
 
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:146
 msgid "Not set"
@@ -973,13 +986,23 @@ msgstr "אימות מפתח הגישה נכשל. נסה שוב."
 msgid "Passkeys"
 msgstr "מפתחות גישה"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:289
+#: ../../../lib/web/src/features/errors/general-error.tsx:54
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:304
+#: ../../../lib/web/src/lib/error-normalizer.ts:201
 msgid "Please check your internet connection and try again."
 msgstr "בדקו את חיבור האינטרנט ונסו שוב."
 
 #: src/features/go/components/new-game.tsx:89
 msgid "Please select a friend"
 msgstr "בחר חבר"
+
+#: ../../../lib/web/src/features/errors/general-error.tsx:83
+msgid "Please try again."
+msgstr "אנא נסה שוב."
+
+#: ../../../lib/web/src/features/errors/general-error.tsx:75
+msgid "Please wait a moment and try again."
+msgstr "יש להמתין מעט ולנסות שוב."
 
 #: src/features/go/components/new-game.tsx:216
 msgid "Points added to White's score to compensate for Black going first"
@@ -1012,8 +1035,8 @@ msgstr "קשר מחדש את חשבונותיך בשרת זה"
 msgid "Re-register your passkeys on this server"
 msgstr "רשמו מחדש את מפתחות הגישה שלכם בשרת הזה"
 
-#: ../../../lib/web/src/components/search-entity-dialog.tsx:219
-#: ../../../lib/web/src/components/search-entity-page.tsx:194
+#: ../../../lib/web/src/components/search-entity-dialog.tsx:216
+#: ../../../lib/web/src/components/search-entity-page.tsx:240
 msgid "Recommended"
 msgstr "מומלץ"
 
@@ -1124,8 +1147,8 @@ msgstr "חפש משתמשים"
 msgid "Search..."
 msgstr "חיפוש..."
 
-#: ../../../lib/web/src/components/search-entity-dialog.tsx:177
-#: ../../../lib/web/src/components/search-entity-page.tsx:152
+#: ../../../lib/web/src/components/search-entity-dialog.tsx:174
+#: ../../../lib/web/src/components/search-entity-page.tsx:198
 #: ../../../lib/web/src/features/access/access-dialog.tsx:202
 msgid "Searching..."
 msgstr "מחפש..."
@@ -1187,8 +1210,8 @@ msgstr "שלח הודעה"
 msgid "Serif"
 msgstr "סריף"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:245
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:271
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:260
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:286
 msgid "Server error"
 msgstr "שגיאת שרת"
 
@@ -1197,9 +1220,9 @@ msgstr "שגיאת שרת"
 msgid "Server rules"
 msgstr "כללי השרת"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:209
-msgid "Session expired"
-msgstr "ההפעלה פגה"
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:210
+msgid "Session expired. Please log in again."
+msgstr "פג תוקף ההפעלה. יש להתחבר שוב."
 
 #: ../../../lib/web/src/components/travelling-picker.tsx:147
 msgid "Set origin and destination"
@@ -1301,6 +1324,10 @@ msgstr "תנאים והגבלות"
 msgid "That code is incorrect or has expired."
 msgstr "הקוד שגוי או שתוקפו פג."
 
+#: ../../../lib/web/src/features/errors/general-error.tsx:68
+msgid "The requested content could not be found."
+msgstr "לא ניתן למצוא את התוכן המבוקש."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:194
 msgid "Theme"
 msgstr "ערכת נושא"
@@ -1344,6 +1371,10 @@ msgstr "החלף סרגל צד"
 msgid "Toggle theme"
 msgstr "החלף ערכת נושא"
 
+#: ../../../lib/web/src/features/errors/general-error.tsx:74
+msgid "Too many requests"
+msgstr "יותר מדי בקשות"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:45
 msgid "Top"
 msgstr "ראש"
@@ -1352,13 +1383,13 @@ msgstr "ראש"
 msgid "Travelling"
 msgstr "בנסיעה"
 
-#: ../../../lib/web/src/components/search-entity-dialog.tsx:193
-#: ../../../lib/web/src/components/search-entity-page.tsx:168
+#: ../../../lib/web/src/components/search-entity-dialog.tsx:190
+#: ../../../lib/web/src/components/search-entity-page.tsx:214
 msgid "Try adjusting your search terms"
 msgstr "נסה להתאים את מונחי החיפוש שלך"
 
-#: ../../../lib/web/src/features/errors/general-error.tsx:128
-#: ../../../lib/web/src/features/errors/general-error.tsx:168
+#: ../../../lib/web/src/features/errors/general-error.tsx:140
+#: ../../../lib/web/src/features/errors/general-error.tsx:180
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:19
 msgid "Try again"
 msgstr "נסה שוב"
@@ -1383,7 +1414,7 @@ msgstr "הקלד לחיפוש משתמשים"
 msgid "Type to search..."
 msgstr "הקלד לחיפוש..."
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:267
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:282
 msgid "Unable to connect to remote server"
 msgstr "לא ניתן להתחבר לשרת המרוחק"
 
@@ -1392,7 +1423,7 @@ msgstr "לא ניתן להתחבר לשרת המרוחק"
 msgid "Unable to redirect to login. Please try again."
 msgstr "לא ניתן להפנות להתחברות. נסה שוב."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:156
+#: ../../../lib/web/src/components/notification-category-button.tsx:155
 msgid "Unassigned"
 msgstr "לא משויך"
 
@@ -1490,6 +1521,10 @@ msgstr "טריטוריה לבנה ב-{colLabel}{rowLabel}"
 #: src/features/go/components/chat-message-list.tsx:207
 msgid "You"
 msgstr "אתה"
+
+#: ../../../lib/web/src/features/errors/general-error.tsx:61
+msgid "You do not have access to this section."
+msgstr "אין לך גישה לאזור זה."
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

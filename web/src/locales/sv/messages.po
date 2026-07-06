@@ -65,6 +65,10 @@ msgstr "Absolut (datum och tid)"
 msgid "Accept"
 msgstr "Acceptera"
 
+#: ../../../lib/web/src/features/errors/general-error.tsx:60
+msgid "Access denied"
+msgstr "Åtkomst nekad"
+
 #: ../../../lib/web/src/features/errors/forbidden.tsx:16
 msgid "Access Forbidden"
 msgstr "Åtkomst förbjuden"
@@ -159,7 +163,7 @@ msgstr "Alla"
 msgid "An error occurred"
 msgstr "Ett fel uppstod"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:241
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:256
 msgid "An unexpected error occurred"
 msgstr "Ett oväntat fel uppstod"
 
@@ -231,12 +235,12 @@ msgstr "Öka intresse"
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:144
+#: ../../../lib/web/src/components/notification-category-button.tsx:143
 msgid "Category for this notification"
 msgstr "Kategori för denna avisering"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:125
-#: ../../../lib/web/src/components/notification-category-button.tsx:136
+#: ../../../lib/web/src/components/notification-category-button.tsx:124
+#: ../../../lib/web/src/components/notification-category-button.tsx:135
 msgid "Change notification category"
 msgstr "Ändra aviseringskategori"
 
@@ -410,6 +414,10 @@ msgstr "Mörk"
 #: ../../../lib/web/src/components/profile-dropdown.tsx:123
 msgid "Dark mode"
 msgstr "Mörkt läge"
+
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:240
+msgid "Data conflict"
+msgstr "Datakonflikt"
 
 #: src/features/go/components/draw-offer-banner.tsx:39
 msgid "Decline"
@@ -592,7 +600,7 @@ msgstr "Kunde inte skicka"
 msgid "Failed to send verification code"
 msgstr "Kunde inte skicka verifieringskod"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:112
+#: ../../../lib/web/src/components/notification-category-button.tsx:111
 msgid "Failed to update category"
 msgstr "Kunde inte uppdatera kategori"
 
@@ -800,7 +808,8 @@ msgstr "Måndag"
 msgid "Must be between 0 and 10"
 msgstr "Måste vara mellan 0 och 10"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:288
+#: ../../../lib/web/src/features/errors/general-error.tsx:53
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:303
 msgid "Network error"
 msgstr "Nätverksfel"
 
@@ -868,7 +877,7 @@ msgstr "Inga resultat hittades."
 msgid "No time zone found."
 msgstr "Ingen tidszon hittades."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:148
+#: ../../../lib/web/src/components/notification-category-button.tsx:147
 msgid "No topic record yet — try again after the next notification."
 msgstr "Ingen ämnespost ännu — försök igen efter nästa avisering."
 
@@ -885,6 +894,10 @@ msgstr "Ingen"
 #: ../../../lib/web/src/lib/preference-utils.ts:134
 msgid "Normal"
 msgstr "Normal"
+
+#: ../../../lib/web/src/features/errors/general-error.tsx:67
+msgid "Not found"
+msgstr "Hittades inte"
 
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:146
 msgid "Not set"
@@ -973,13 +986,23 @@ msgstr "Verifieringen med nyckel misslyckades. Försök igen."
 msgid "Passkeys"
 msgstr "Nycklar"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:289
+#: ../../../lib/web/src/features/errors/general-error.tsx:54
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:304
+#: ../../../lib/web/src/lib/error-normalizer.ts:201
 msgid "Please check your internet connection and try again."
 msgstr "Kontrollera din internetanslutning och försök igen."
 
 #: src/features/go/components/new-game.tsx:89
 msgid "Please select a friend"
 msgstr "Välj en vän"
+
+#: ../../../lib/web/src/features/errors/general-error.tsx:83
+msgid "Please try again."
+msgstr "Försök igen."
+
+#: ../../../lib/web/src/features/errors/general-error.tsx:75
+msgid "Please wait a moment and try again."
+msgstr "Vänta en stund och försök igen."
 
 #: src/features/go/components/new-game.tsx:216
 msgid "Points added to White's score to compensate for Black going first"
@@ -1012,8 +1035,8 @@ msgstr "Återlänka dina konton på den här servern"
 msgid "Re-register your passkeys on this server"
 msgstr "Registrera dina nycklar på nytt på den här servern"
 
-#: ../../../lib/web/src/components/search-entity-dialog.tsx:219
-#: ../../../lib/web/src/components/search-entity-page.tsx:194
+#: ../../../lib/web/src/components/search-entity-dialog.tsx:216
+#: ../../../lib/web/src/components/search-entity-page.tsx:240
 msgid "Recommended"
 msgstr "Rekommenderad"
 
@@ -1124,8 +1147,8 @@ msgstr "Sök användare"
 msgid "Search..."
 msgstr "Sök..."
 
-#: ../../../lib/web/src/components/search-entity-dialog.tsx:177
-#: ../../../lib/web/src/components/search-entity-page.tsx:152
+#: ../../../lib/web/src/components/search-entity-dialog.tsx:174
+#: ../../../lib/web/src/components/search-entity-page.tsx:198
 #: ../../../lib/web/src/features/access/access-dialog.tsx:202
 msgid "Searching..."
 msgstr "Söker..."
@@ -1187,8 +1210,8 @@ msgstr "Skicka meddelande"
 msgid "Serif"
 msgstr "Serif"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:245
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:271
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:260
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:286
 msgid "Server error"
 msgstr "Serverfel"
 
@@ -1197,9 +1220,9 @@ msgstr "Serverfel"
 msgid "Server rules"
 msgstr "Serverregler"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:209
-msgid "Session expired"
-msgstr "Sessionen har löpt ut"
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:210
+msgid "Session expired. Please log in again."
+msgstr "Sessionen har gått ut. Logga in igen."
 
 #: ../../../lib/web/src/components/travelling-picker.tsx:147
 msgid "Set origin and destination"
@@ -1301,6 +1324,10 @@ msgstr "Villkor"
 msgid "That code is incorrect or has expired."
 msgstr "Koden är felaktig eller har upphört att gälla."
 
+#: ../../../lib/web/src/features/errors/general-error.tsx:68
+msgid "The requested content could not be found."
+msgstr "Det begärda innehållet kunde inte hittas."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:194
 msgid "Theme"
 msgstr "Tema"
@@ -1344,6 +1371,10 @@ msgstr "Växla sidofält"
 msgid "Toggle theme"
 msgstr "Växla tema"
 
+#: ../../../lib/web/src/features/errors/general-error.tsx:74
+msgid "Too many requests"
+msgstr "För många förfrågningar"
+
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:45
 msgid "Top"
 msgstr "Topp"
@@ -1352,13 +1383,13 @@ msgstr "Topp"
 msgid "Travelling"
 msgstr "Reser"
 
-#: ../../../lib/web/src/components/search-entity-dialog.tsx:193
-#: ../../../lib/web/src/components/search-entity-page.tsx:168
+#: ../../../lib/web/src/components/search-entity-dialog.tsx:190
+#: ../../../lib/web/src/components/search-entity-page.tsx:214
 msgid "Try adjusting your search terms"
 msgstr "Försök justera dina sökord"
 
-#: ../../../lib/web/src/features/errors/general-error.tsx:128
-#: ../../../lib/web/src/features/errors/general-error.tsx:168
+#: ../../../lib/web/src/features/errors/general-error.tsx:140
+#: ../../../lib/web/src/features/errors/general-error.tsx:180
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:19
 msgid "Try again"
 msgstr "Försök igen"
@@ -1383,7 +1414,7 @@ msgstr "Skriv för att söka användare"
 msgid "Type to search..."
 msgstr "Skriv för att söka..."
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:267
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:282
 msgid "Unable to connect to remote server"
 msgstr "Det gick inte att ansluta till fjärrservern"
 
@@ -1392,7 +1423,7 @@ msgstr "Det gick inte att ansluta till fjärrservern"
 msgid "Unable to redirect to login. Please try again."
 msgstr "Kunde inte omdirigera till inloggning. Försök igen."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:156
+#: ../../../lib/web/src/components/notification-category-button.tsx:155
 msgid "Unassigned"
 msgstr "Otilldelad"
 
@@ -1490,6 +1521,10 @@ msgstr "Vitt territorium på {colLabel}{rowLabel}"
 #: src/features/go/components/chat-message-list.tsx:207
 msgid "You"
 msgstr "Du"
+
+#: ../../../lib/web/src/features/errors/general-error.tsx:61
+msgid "You do not have access to this section."
+msgstr "Du har inte åtkomst till det här avsnittet."
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
