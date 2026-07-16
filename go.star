@@ -65,6 +65,14 @@ def go_commit_hook(table, kind, row_uid):
 def go_ensure_commit_hook():
 	mochi.db.commit.hook("go_commit_hook")
 
+def database_upgrade(version):
+	if version == 2:
+		# Drop the pre-2026-07 broadcast tables left in the app data DB when
+		# broadcast state moved to the per-app system DB - inert, but stale
+		# sequence/log copies mislead diagnosis.
+		for table in ["sequence", "log", "acknowledged", "received"]:
+			mochi.db.execute("drop table if exists " + table)
+
 # Create database
 def database_create():
 	mochi.db.execute("""create table if not exists games (
