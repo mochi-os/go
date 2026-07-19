@@ -13,6 +13,11 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#. js-lingui-explicit-id
+#: ../../../lib/web/src/lib/error-normalizer.ts:204
+msgid "Please check your internet connection and try again."
+msgstr "Интернет байланышыңызды текшерип, кайра аракет кылыңыз."
+
 #: src/features/go/components/chat-message-list.tsx:190
 msgid "{name} declined the draw"
 msgstr "{name} тең оюндан баш тартты"
@@ -94,7 +99,7 @@ msgid "Account verified"
 msgstr "Аккаунт текшерилди"
 
 #: src/components/layout/go-layout.tsx:114
-msgid "Active Games"
+msgid "Active games"
 msgstr "Активдүү оюндар"
 
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
@@ -130,7 +135,7 @@ msgstr "Ойноо үчүн People колдонмосунан дос кошуң�
 msgid "Add new account"
 msgstr "Жаңы аккаунт кошуу"
 
-#: ../../../lib/web/src/components/post-tags.tsx:133
+#: ../../../lib/web/src/components/post-tags.tsx:137
 msgid "Add tag..."
 msgstr "Тег кошуу..."
 
@@ -217,8 +222,8 @@ msgstr "{colLabel}{rowLabel} жеринде кара аймак"
 msgid "Board size"
 msgstr "Тактайдын өлчөмү"
 
-#: ../../../lib/web/src/components/post-tags.tsx:176
-#: ../../../lib/web/src/components/post-tags.tsx:188
+#: ../../../lib/web/src/components/post-tags.tsx:180
+#: ../../../lib/web/src/components/post-tags.tsx:192
 msgid "Boost interest"
 msgstr "Кызыгууну күчөтүү"
 
@@ -820,11 +825,8 @@ msgstr "Жаңы"
 #: src/components/layout/go-layout.tsx:139
 #: src/features/go/components/game-empty-state.tsx:27
 #: src/features/go/components/game-empty-state.tsx:43
-msgid "New game"
-msgstr "Жаңы оюн"
-
 #: src/features/go/components/new-game.tsx:125
-msgid "New Game"
+msgid "New game"
 msgstr "Жаңы оюн"
 
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
@@ -988,7 +990,6 @@ msgstr "Кирүү ачкычтары"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
-#: ../../../lib/web/src/lib/error-normalizer.ts:201
 msgid "Please check your internet connection and try again."
 msgstr "Интернет байланышыңызды текшерип, кайра аракет кылыңыз."
 
@@ -1036,7 +1037,7 @@ msgid "Re-register your passkeys on this server"
 msgstr "Бул серверде кирүү ачкычтарыңызды кайра каттаңыз"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:216
-#: ../../../lib/web/src/components/search-entity-page.tsx:240
+#: ../../../lib/web/src/components/search-entity-page.tsx:242
 msgid "Recommended"
 msgstr "Сунушталган"
 
@@ -1044,8 +1045,8 @@ msgstr "Сунушталган"
 msgid "Redirecting to login."
 msgstr "Кирүүгө кайра багытталууда."
 
-#: ../../../lib/web/src/components/post-tags.tsx:196
-#: ../../../lib/web/src/components/post-tags.tsx:208
+#: ../../../lib/web/src/components/post-tags.tsx:200
+#: ../../../lib/web/src/components/post-tags.tsx:212
 msgid "Reduce interest"
 msgstr "Кызыгууну азайтуу"
 
@@ -1075,8 +1076,8 @@ msgstr "Кирүү эрежесин алуу"
 msgid "Remove access?"
 msgstr "Кирүүнү аласызбы?"
 
-#: ../../../lib/web/src/components/post-tags.tsx:216
-#: ../../../lib/web/src/components/post-tags.tsx:228
+#: ../../../lib/web/src/components/post-tags.tsx:220
+#: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "Кызыгууну алуу"
 
@@ -1148,7 +1149,7 @@ msgid "Search..."
 msgstr "Издөө..."
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:174
-#: ../../../lib/web/src/components/search-entity-page.tsx:198
+#: ../../../lib/web/src/components/search-entity-page.tsx:200
 #: ../../../lib/web/src/features/access/access-dialog.tsx:202
 msgid "Searching..."
 msgstr "Изделүүдө..."
@@ -1306,8 +1307,8 @@ msgstr "Системалык"
 msgid "Tag"
 msgstr "Тег"
 
-#: ../../../lib/web/src/components/post-tags.tsx:100
-#: ../../../lib/web/src/components/post-tags.tsx:111
+#: ../../../lib/web/src/components/post-tags.tsx:101
+#: ../../../lib/web/src/components/post-tags.tsx:115
 msgid "Tags"
 msgstr "Тегдер"
 
@@ -1384,7 +1385,7 @@ msgid "Travelling"
 msgstr "Саякаттоо"
 
 #: ../../../lib/web/src/components/search-entity-dialog.tsx:190
-#: ../../../lib/web/src/components/search-entity-page.tsx:214
+#: ../../../lib/web/src/components/search-entity-page.tsx:216
 msgid "Try adjusting your search terms"
 msgstr "Издөө сөздөрүңүздү тууралап көрүңүз"
 
@@ -1473,7 +1474,7 @@ msgstr "Текшерүү"
 msgid "Verify email address"
 msgstr "Электрондук почта дарегин текшерүү"
 
-#: ../../../lib/web/src/components/attachment-gallery.tsx:66
+#: ../../../lib/web/src/components/attachment-gallery.tsx:74
 msgid "Video thumbnail"
 msgstr "Видеонун эскизи"
 
