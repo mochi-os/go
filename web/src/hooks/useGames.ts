@@ -159,8 +159,9 @@ export const useMoveMutation = (
       })
       queryClient.invalidateQueries({
         queryKey: gameKeys.detail(variables.gameId),
+        exact: true,
       })
-      queryClient.invalidateQueries({ queryKey: gameKeys.all() })
+      queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
       onSuccess?.(data, variables, context, mutation)
     },
     ...restOptions,
@@ -184,8 +185,9 @@ export const usePassMutation = (
       })
       queryClient.invalidateQueries({
         queryKey: gameKeys.detail(variables.gameId),
+        exact: true,
       })
-      queryClient.invalidateQueries({ queryKey: gameKeys.all() })
+      queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
       onSuccess?.(data, variables, context, mutation)
     },
     ...restOptions,
@@ -229,7 +231,7 @@ export const useCreateGameMutation = (
     mutationFn: ({ opponent, boardSize, komi }: CreateGameVariables) =>
       gamesApi.create(opponent, boardSize, komi),
     onSuccess: (data, variables, context, mutation) => {
-      queryClient.invalidateQueries({ queryKey: gameKeys.all() })
+      queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
       onSuccess?.(data, variables, context, mutation)
     },
     ...restOptions,
@@ -248,9 +250,10 @@ export const useResignMutation = (
   return useMutation({
     mutationFn: ({ gameId }: ResignVariables) => gamesApi.resign(gameId),
     onSuccess: (data, variables, context, mutation) => {
-      queryClient.invalidateQueries({ queryKey: gameKeys.all() })
+      queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
       queryClient.invalidateQueries({
         queryKey: gameKeys.detail(variables.gameId),
+        exact: true,
       })
       onSuccess?.(data, variables, context, mutation)
     },
@@ -272,6 +275,7 @@ export const useDrawOfferMutation = (
     onSuccess: (data, variables, context, mutation) => {
       queryClient.invalidateQueries({
         queryKey: gameKeys.detail(variables.gameId),
+        exact: true,
       })
       onSuccess?.(data, variables, context, mutation)
     },
@@ -287,9 +291,10 @@ export const useDrawAcceptMutation = (
   return useMutation({
     mutationFn: ({ gameId }: DrawVariables) => gamesApi.drawAccept(gameId),
     onSuccess: (data, variables, context, mutation) => {
-      queryClient.invalidateQueries({ queryKey: gameKeys.all() })
+      queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
       queryClient.invalidateQueries({
         queryKey: gameKeys.detail(variables.gameId),
+        exact: true,
       })
       onSuccess?.(data, variables, context, mutation)
     },
@@ -307,6 +312,7 @@ export const useDrawDeclineMutation = (
     onSuccess: (data, variables, context, mutation) => {
       queryClient.invalidateQueries({
         queryKey: gameKeys.detail(variables.gameId),
+        exact: true,
       })
       onSuccess?.(data, variables, context, mutation)
     },
@@ -326,7 +332,7 @@ export const useDeleteGameMutation = (
   return useMutation({
     mutationFn: ({ gameId }: DeleteGameVariables) => gamesApi.delete(gameId),
     onSuccess: (data, variables, context, mutation) => {
-      queryClient.invalidateQueries({ queryKey: gameKeys.all() })
+      queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
       onSuccess?.(data, variables, context, mutation)
     },
     ...restOptions,

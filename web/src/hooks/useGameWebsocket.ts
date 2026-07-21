@@ -10,7 +10,7 @@ import {
   type QueryClient,
   type InfiniteData,
 } from '@tanstack/react-query'
-import type { GameMessage, GetMessagesResponse, GameViewResponse } from '@/api/games'
+import type { GameMessage, GetMessagesResponse, GameViewResponse, GetGamesResponse } from '@/api/games'
 import {
   type ChatWebsocketMessagePayload,
   type WebsocketConnectionStatus,
@@ -70,16 +70,39 @@ const handleWebsocketPayload = (
   const msgType = payload.type as string | undefined
   const event = payload.event as string | undefined
 
-  // Handle resign event — invalidate all queries
-  if (event === 'resign') {
-    void queryClient.invalidateQueries({ queryKey: gameKeys.all() })
-    void queryClient.invalidateQueries({ queryKey: gameKeys.detail(gameId) })
-  }
-
-  // Handle draw accept — game ended
-  if (event === 'draw_accept') {
-    void queryClient.invalidateQueries({ queryKey: gameKeys.all() })
-    void queryClient.invalidateQueries({ queryKey: gameKeys.detail(gameId) })
+  // Handle resign / draw accept — the payload carries the final state, so
+  // patch the caches directly. Invalidating here would refetch view + list
+  // a second time on the actor's side (their mutation already invalidates).
+  if (event === 'resign' || event === 'draw_accept') {
+    const status = event === 'resign' ? ('resigned' as const) : ('draw' as const)
+    const winner =
+      typeof payload.winner === 'string' && payload.winner ? payload.winner : null
+    queryClient.setQueryData<GameViewResponse>(
+      gameKeys.detail(gameId),
+      (current) => {
+        if (!current) return current
+        return {
+          ...current,
+          game: {
+            ...current.game,
+            status,
+            winner: winner ?? current.game.winner,
+            draw_offer: null,
+          },
+        }
+      }
+    )
+    queryClient.setQueryData<GetGamesResponse>(gameKeys.all(), (current) => {
+      if (!current) return current
+      return {
+        ...current,
+        games: current.games.map((g) =>
+          g.id === gameId
+            ? { ...g, status, winner: winner ?? g.winner, draw_offer: null }
+            : g
+        ),
+      }
+    })
   }
 
   // Handle draw offer / decline — update draw_offer in cache
