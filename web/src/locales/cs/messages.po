@@ -30,7 +30,7 @@ msgstr "{name} nabídl/a remízu"
 msgid "{name} resigned"
 msgstr "{name} se vzdal/a"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:665
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} také pasoval. Potvrzení ukončí hru a vyhodnotí desku."
 
@@ -176,7 +176,7 @@ msgstr "Došlo k neočekávané chybě"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Opravdu se chcete odhlásit? Pro přístup ke svému účtu se budete muset znovu přihlásit."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:621
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Opravdu se chcete vzdát? {opponentName} vyhraje hru."
 
@@ -202,11 +202,11 @@ msgstr "Zpět"
 msgid "Back to home"
 msgstr "Zpět na úvod"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "Black"
 msgstr "Černá"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:452
 msgid "Black captures:"
 msgstr "Černý zajal:"
 
@@ -249,8 +249,8 @@ msgstr "Kategorie pro toto oznámení"
 msgid "Change notification category"
 msgstr "Změnit kategorii oznámení"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:561
+#: src/features/go/index.tsx:593
 msgid "Chat"
 msgstr "Chat"
 
@@ -436,13 +436,25 @@ msgstr "Výchozí"
 msgid "Default AI account"
 msgstr "Výchozí AI účet"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:650
+msgid "Delete"
+msgstr ""
+
+#: src/features/go/index.tsx:514
 msgid "Delete game"
 msgstr "Smazat hru"
+
+#: src/features/go/index.tsx:641
+msgid "Delete game?"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Smazat účet na starém serveru"
+
+#: src/features/go/index.tsx:647
+msgid "Deleting..."
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -493,7 +505,7 @@ msgstr "Stahování se nezdařilo"
 msgid "Draw agreed"
 msgstr "Remíza dohodnuta"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:527
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Nabídnuta remíza — čeká se na {opponentName}"
 
@@ -517,11 +529,11 @@ msgstr "Prázdné křížení {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Prázdné křížení {colLabel}{rowLabel}, klikněte nebo stiskněte Enter pro umístění"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:675
 msgid "End game"
 msgstr "Ukončit hru"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "End game?"
 msgstr "Ukončit hru?"
 
@@ -552,7 +564,7 @@ msgstr "Rozbalit postranní panel"
 msgid "Extra large"
 msgstr "Velmi velké"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:219
 msgid "Failed to accept draw"
 msgstr "Nepodařilo se přijmout remízu"
 
@@ -564,27 +576,27 @@ msgstr "Nepodařilo se přidat účet"
 msgid "Failed to create game"
 msgstr "Nepodařilo se vytvořit hru"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:234
 msgid "Failed to create rematch"
 msgstr "Nepodařilo se vytvořit odvetu"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:224
 msgid "Failed to decline draw"
 msgstr "Nepodařilo se odmítnout remízu"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:245
 msgid "Failed to delete game"
 msgstr "Nepodařilo se smazat hru"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:190
 msgid "Failed to make move"
 msgstr "Nepodařilo se provést tah"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:214
 msgid "Failed to offer draw"
 msgstr "Nepodařilo se nabídnout remízu"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to pass"
 msgstr "Nepodařilo se předat"
 
@@ -592,12 +604,12 @@ msgstr "Nepodařilo se předat"
 msgid "Failed to remove account"
 msgstr "Nepodařilo se odebrat účet"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to resign"
 msgstr "Nepodařilo se vzdát se"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:577
+#: src/features/go/index.tsx:609
 msgid "Failed to send"
 msgstr "Nepodařilo se odeslat"
 
@@ -646,13 +658,13 @@ msgstr "Plné rozvržení"
 msgid "Game created"
 msgstr "Hra vytvořena"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:241
 msgid "Game deleted"
 msgstr "Hra smazána"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
-#: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:368
+#: src/features/go/index.tsx:380
 msgid "Go"
 msgstr "Go"
 
@@ -913,7 +925,7 @@ msgstr "Nenastaveno"
 msgid "Notifications"
 msgstr "Oznámení"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:498
 msgid "Offer draw"
 msgstr "Nabídnout remízu"
 
@@ -926,16 +938,16 @@ msgstr "Jejda! Stránka nenalezena!"
 msgid "Open account actions"
 msgstr "Otevřít akce účtu"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:182
-#: ../../../lib/web/src/components/layout/nav-group.tsx:187
+#: ../../../lib/web/src/components/layout/nav-group.tsx:202
+#: ../../../lib/web/src/components/layout/nav-group.tsx:207
 msgid "Open actions"
 msgstr "Otevřít akce"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:469
 msgid "Open chat panel"
 msgstr "Otevřít panel chatu"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:477
 msgid "Open game actions"
 msgstr "Otevřít akce hry"
 
@@ -963,16 +975,16 @@ msgid "Owner"
 msgstr "Vlastník"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:490
+#: src/features/go/index.tsx:675
 msgid "Pass"
 msgstr "Vynechat"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "Pass turn?"
 msgstr "Vynechat tah?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:672
 msgid "Passing..."
 msgstr "Vynechávání…"
 
@@ -1058,7 +1070,7 @@ msgstr "Relativní (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relativní do 24 hodin, jinak absolutní"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:511
 msgid "Rematch"
 msgstr "Odveta"
 
@@ -1094,16 +1106,16 @@ msgstr "Resetovat"
 msgid "Reset all settings to default values"
 msgstr "Obnovit všechna nastavení na výchozí hodnoty"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:502
+#: src/features/go/index.tsx:629
 msgid "Resign"
 msgstr "Vzdát"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:620
 msgid "Resign game?"
 msgstr "Vzdát hru?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:626
 msgid "Resigning..."
 msgstr "Vzdávání…"
 
@@ -1264,7 +1276,7 @@ msgstr "Odhlašování..."
 msgid "Skip to Main"
 msgstr "Přeskočit na hlavní obsah"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:666
 msgid "Skip your turn and pass to your opponent."
 msgstr "Přeskočte svůj tah a předejte soupeři."
 
@@ -1337,6 +1349,10 @@ msgstr "Motiv"
 msgid "Theme Settings"
 msgstr "Nastavení motivu"
 
+#: src/features/go/index.tsx:642
+msgid "This permanently deletes the game and its chat. This cannot be undone."
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Čtvrtek"
@@ -1350,10 +1366,10 @@ msgstr "Přepnout sloupce"
 msgid "Toggle right panel"
 msgstr "Přepnout pravý panel"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:351
-#: ../../../lib/web/src/components/layout/nav-group.tsx:358
-#: ../../../lib/web/src/components/layout/nav-group.tsx:481
-#: ../../../lib/web/src/components/layout/nav-group.tsx:488
+#: ../../../lib/web/src/components/layout/nav-group.tsx:373
+#: ../../../lib/web/src/components/layout/nav-group.tsx:380
+#: ../../../lib/web/src/components/layout/nav-group.tsx:503
+#: ../../../lib/web/src/components/layout/nav-group.tsx:510
 msgid "Toggle section"
 msgstr "Přepnout sekci"
 
@@ -1503,11 +1519,11 @@ msgstr "Web je v režimu údržby!"
 msgid "Wednesday"
 msgstr "Středa"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "White"
 msgstr "Bílé"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:457
 msgid "White captures:"
 msgstr "Bílý zajal:"
 

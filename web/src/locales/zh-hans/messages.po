@@ -30,7 +30,7 @@ msgstr "{name} 提出和棋"
 msgid "{name} resigned"
 msgstr "{name} 认输"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:665
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} 也已停一手。确认将结束对局并计算棋盘得分。"
 
@@ -176,7 +176,7 @@ msgstr "发生意外错误"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "确定要退出登录吗?你需要重新登录才能访问账户。"
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:621
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "确定要认输吗?{opponentName} 将赢得比赛。"
 
@@ -202,11 +202,11 @@ msgstr "返回"
 msgid "Back to home"
 msgstr "返回首页"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "Black"
 msgstr "黑色"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:452
 msgid "Black captures:"
 msgstr "黑提子："
 
@@ -249,8 +249,8 @@ msgstr "该通知的分类"
 msgid "Change notification category"
 msgstr "更改通知分类"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:561
+#: src/features/go/index.tsx:593
 msgid "Chat"
 msgstr "聊天"
 
@@ -436,13 +436,25 @@ msgstr "默认"
 msgid "Default AI account"
 msgstr "默认 AI 账户"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:650
+msgid "Delete"
+msgstr ""
+
+#: src/features/go/index.tsx:514
 msgid "Delete game"
 msgstr "删除游戏"
+
+#: src/features/go/index.tsx:641
+msgid "Delete game?"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "删除旧服务器上的账户"
+
+#: src/features/go/index.tsx:647
+msgid "Deleting..."
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -493,7 +505,7 @@ msgstr "下载失败"
 msgid "Draw agreed"
 msgstr "同意和棋"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:527
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "已提议和棋 — 等待 {opponentName}"
 
@@ -517,11 +529,11 @@ msgstr "空交叉点 {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "空交叉点 {colLabel}{rowLabel}，点击或按 Enter 放置"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:675
 msgid "End game"
 msgstr "结束游戏"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "End game?"
 msgstr "结束游戏?"
 
@@ -552,7 +564,7 @@ msgstr "展开侧边栏"
 msgid "Extra large"
 msgstr "特大"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:219
 msgid "Failed to accept draw"
 msgstr "接受和棋失败"
 
@@ -564,27 +576,27 @@ msgstr "添加账户失败"
 msgid "Failed to create game"
 msgstr "创建游戏失败"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:234
 msgid "Failed to create rematch"
 msgstr "创建再赛失败"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:224
 msgid "Failed to decline draw"
 msgstr "拒绝和棋失败"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:245
 msgid "Failed to delete game"
 msgstr "删除游戏失败"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:190
 msgid "Failed to make move"
 msgstr "走子失败"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:214
 msgid "Failed to offer draw"
 msgstr "提议和棋失败"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to pass"
 msgstr "跳过失败"
 
@@ -592,12 +604,12 @@ msgstr "跳过失败"
 msgid "Failed to remove account"
 msgstr "移除账户失败"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to resign"
 msgstr "认输失败"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:577
+#: src/features/go/index.tsx:609
 msgid "Failed to send"
 msgstr "发送失败"
 
@@ -646,13 +658,13 @@ msgstr "完整布局"
 msgid "Game created"
 msgstr "已创建游戏"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:241
 msgid "Game deleted"
 msgstr "已删除游戏"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
-#: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:368
+#: src/features/go/index.tsx:380
 msgid "Go"
 msgstr "前往"
 
@@ -913,7 +925,7 @@ msgstr "未设置"
 msgid "Notifications"
 msgstr "通知"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:498
 msgid "Offer draw"
 msgstr "提议和棋"
 
@@ -926,16 +938,16 @@ msgstr "抱歉!页面未找到!"
 msgid "Open account actions"
 msgstr "打开账户操作"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:182
-#: ../../../lib/web/src/components/layout/nav-group.tsx:187
+#: ../../../lib/web/src/components/layout/nav-group.tsx:202
+#: ../../../lib/web/src/components/layout/nav-group.tsx:207
 msgid "Open actions"
 msgstr "打开操作"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:469
 msgid "Open chat panel"
 msgstr "打开聊天面板"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:477
 msgid "Open game actions"
 msgstr "打开游戏操作"
 
@@ -963,16 +975,16 @@ msgid "Owner"
 msgstr "所有者"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:490
+#: src/features/go/index.tsx:675
 msgid "Pass"
 msgstr "跳过"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "Pass turn?"
 msgstr "跳过本回合?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:672
 msgid "Passing..."
 msgstr "正在跳过..."
 
@@ -1058,7 +1070,7 @@ msgstr "相对时间(5分钟、3小时、2天)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 小时内显示相对时间,否则显示绝对时间"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:511
 msgid "Rematch"
 msgstr "再来一局"
 
@@ -1094,16 +1106,16 @@ msgstr "重置"
 msgid "Reset all settings to default values"
 msgstr "将所有设置重置为默认值"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:502
+#: src/features/go/index.tsx:629
 msgid "Resign"
 msgstr "认输"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:620
 msgid "Resign game?"
 msgstr "认输?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:626
 msgid "Resigning..."
 msgstr "正在认输..."
 
@@ -1264,7 +1276,7 @@ msgstr "正在退出..."
 msgid "Skip to Main"
 msgstr "跳至主内容"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:666
 msgid "Skip your turn and pass to your opponent."
 msgstr "跳过你的回合,让给对手。"
 
@@ -1337,6 +1349,10 @@ msgstr "主题"
 msgid "Theme Settings"
 msgstr "主题设置"
 
+#: src/features/go/index.tsx:642
+msgid "This permanently deletes the game and its chat. This cannot be undone."
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "星期四"
@@ -1350,10 +1366,10 @@ msgstr "切换列"
 msgid "Toggle right panel"
 msgstr "切换右侧面板"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:351
-#: ../../../lib/web/src/components/layout/nav-group.tsx:358
-#: ../../../lib/web/src/components/layout/nav-group.tsx:481
-#: ../../../lib/web/src/components/layout/nav-group.tsx:488
+#: ../../../lib/web/src/components/layout/nav-group.tsx:373
+#: ../../../lib/web/src/components/layout/nav-group.tsx:380
+#: ../../../lib/web/src/components/layout/nav-group.tsx:503
+#: ../../../lib/web/src/components/layout/nav-group.tsx:510
 msgid "Toggle section"
 msgstr "展开/折叠区块"
 
@@ -1503,11 +1519,11 @@ msgstr "网站正在维护中!"
 msgid "Wednesday"
 msgstr "星期三"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "White"
 msgstr "白"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:457
 msgid "White captures:"
 msgstr "白提子："
 

@@ -30,7 +30,7 @@ msgstr "{name} ofreció tablas"
 msgid "{name} resigned"
 msgstr "{name} abandonó"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:665
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} también pasó. Confirmar terminará la partida y puntuará el tablero."
 
@@ -176,7 +176,7 @@ msgstr "Se produjo un error inesperado"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "¿Seguro que quieres cerrar sesión? Necesitarás volver a iniciar sesión para acceder a tu cuenta."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:621
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "¿Estás seguro de que quieres rendirte? {opponentName} ganará la partida."
 
@@ -202,11 +202,11 @@ msgstr "Atrás"
 msgid "Back to home"
 msgstr "Volver al inicio"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "Black"
 msgstr "Negro"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:452
 msgid "Black captures:"
 msgstr "Capturas de negras:"
 
@@ -249,8 +249,8 @@ msgstr "Categoría para esta notificación"
 msgid "Change notification category"
 msgstr "Cambiar la categoría de la notificación"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:561
+#: src/features/go/index.tsx:593
 msgid "Chat"
 msgstr "Chat"
 
@@ -436,13 +436,25 @@ msgstr "Predeterminado"
 msgid "Default AI account"
 msgstr "Cuenta de IA predeterminada"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:650
+msgid "Delete"
+msgstr ""
+
+#: src/features/go/index.tsx:514
 msgid "Delete game"
 msgstr "Eliminar partida"
+
+#: src/features/go/index.tsx:641
+msgid "Delete game?"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Elimina tu cuenta en el servidor antiguo"
+
+#: src/features/go/index.tsx:647
+msgid "Deleting..."
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -493,7 +505,7 @@ msgstr "Error al descargar"
 msgid "Draw agreed"
 msgstr "Tablas acordadas"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:527
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Tablas ofrecidas — esperando a {opponentName}"
 
@@ -517,11 +529,11 @@ msgstr "Intersección vacía {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Intersección vacía {colLabel}{rowLabel}, haz clic o pulsa Intro para colocar"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:675
 msgid "End game"
 msgstr "Terminar partida"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "End game?"
 msgstr "¿Terminar partida?"
 
@@ -552,7 +564,7 @@ msgstr "Expandir barra lateral"
 msgid "Extra large"
 msgstr "Extra grande"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:219
 msgid "Failed to accept draw"
 msgstr "Error al aceptar las tablas"
 
@@ -564,27 +576,27 @@ msgstr "Error al añadir la cuenta"
 msgid "Failed to create game"
 msgstr "Error al crear la partida"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:234
 msgid "Failed to create rematch"
 msgstr "Error al crear la revancha"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:224
 msgid "Failed to decline draw"
 msgstr "Error al rechazar las tablas"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:245
 msgid "Failed to delete game"
 msgstr "Error al eliminar la partida"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:190
 msgid "Failed to make move"
 msgstr "Error al realizar el movimiento"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:214
 msgid "Failed to offer draw"
 msgstr "Error al ofrecer tablas"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to pass"
 msgstr "Error al pasar"
 
@@ -592,12 +604,12 @@ msgstr "Error al pasar"
 msgid "Failed to remove account"
 msgstr "Error al quitar la cuenta"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to resign"
 msgstr "Error al abandonar"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:577
+#: src/features/go/index.tsx:609
 msgid "Failed to send"
 msgstr "Error al enviar"
 
@@ -646,13 +658,13 @@ msgstr "Diseño completo"
 msgid "Game created"
 msgstr "Partida creada"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:241
 msgid "Game deleted"
 msgstr "Partida eliminada"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
-#: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:368
+#: src/features/go/index.tsx:380
 msgid "Go"
 msgstr "Ir"
 
@@ -913,7 +925,7 @@ msgstr "Sin establecer"
 msgid "Notifications"
 msgstr "Notificaciones"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:498
 msgid "Offer draw"
 msgstr "Ofrecer tablas"
 
@@ -926,16 +938,16 @@ msgstr "¡Vaya! Página no encontrada"
 msgid "Open account actions"
 msgstr "Abrir acciones de cuenta"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:182
-#: ../../../lib/web/src/components/layout/nav-group.tsx:187
+#: ../../../lib/web/src/components/layout/nav-group.tsx:202
+#: ../../../lib/web/src/components/layout/nav-group.tsx:207
 msgid "Open actions"
 msgstr "Abrir acciones"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:469
 msgid "Open chat panel"
 msgstr "Abrir panel de chat"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:477
 msgid "Open game actions"
 msgstr "Abrir acciones de la partida"
 
@@ -963,16 +975,16 @@ msgid "Owner"
 msgstr "Propietario"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:490
+#: src/features/go/index.tsx:675
 msgid "Pass"
 msgstr "Pasar"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "Pass turn?"
 msgstr "¿Pasar turno?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:672
 msgid "Passing..."
 msgstr "Pasando..."
 
@@ -1058,7 +1070,7 @@ msgstr "Relativo (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relativo en las últimas 24 horas; de lo contrario, absoluto"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:511
 msgid "Rematch"
 msgstr "Revancha"
 
@@ -1094,16 +1106,16 @@ msgstr "Restablecer"
 msgid "Reset all settings to default values"
 msgstr "Restablecer todos los ajustes a sus valores predeterminados"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:502
+#: src/features/go/index.tsx:629
 msgid "Resign"
 msgstr "Rendirse"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:620
 msgid "Resign game?"
 msgstr "¿Rendir la partida?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:626
 msgid "Resigning..."
 msgstr "Rindiéndose..."
 
@@ -1264,7 +1276,7 @@ msgstr "Cerrando sesión..."
 msgid "Skip to Main"
 msgstr "Saltar al contenido principal"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:666
 msgid "Skip your turn and pass to your opponent."
 msgstr "Salta tu turno y pasa a tu oponente."
 
@@ -1337,6 +1349,10 @@ msgstr "Tema"
 msgid "Theme Settings"
 msgstr "Ajustes de tema"
 
+#: src/features/go/index.tsx:642
+msgid "This permanently deletes the game and its chat. This cannot be undone."
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Jueves"
@@ -1350,10 +1366,10 @@ msgstr "Alternar columnas"
 msgid "Toggle right panel"
 msgstr "Alternar panel derecho"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:351
-#: ../../../lib/web/src/components/layout/nav-group.tsx:358
-#: ../../../lib/web/src/components/layout/nav-group.tsx:481
-#: ../../../lib/web/src/components/layout/nav-group.tsx:488
+#: ../../../lib/web/src/components/layout/nav-group.tsx:373
+#: ../../../lib/web/src/components/layout/nav-group.tsx:380
+#: ../../../lib/web/src/components/layout/nav-group.tsx:503
+#: ../../../lib/web/src/components/layout/nav-group.tsx:510
 msgid "Toggle section"
 msgstr "Alternar sección"
 
@@ -1503,11 +1519,11 @@ msgstr "¡El sitio web está en mantenimiento!"
 msgid "Wednesday"
 msgstr "Miércoles"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "White"
 msgstr "Blanco"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:457
 msgid "White captures:"
 msgstr "Capturas de blancas:"
 
