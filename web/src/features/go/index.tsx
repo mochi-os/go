@@ -238,6 +238,7 @@ export function GoGameView() {
   // Delete
   const deleteGameMutation = useDeleteGameMutation({
     onSuccess: () => {
+      setShowDeleteDialog(false)
       toast.success(t`Game deleted`)
       void navigate({ to: '/' })
     },
@@ -332,7 +333,6 @@ export function GoGameView() {
 
   const handleDelete = () => {
     if (!selectedGame) return
-    setShowDeleteDialog(false)
     deleteGameMutation.mutate({ gameId: selectedGame.id })
   }
 
