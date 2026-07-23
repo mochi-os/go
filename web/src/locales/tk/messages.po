@@ -30,7 +30,7 @@ msgstr "{name} deňlik teklip etdi"
 msgid "{name} resigned"
 msgstr "{name} boýun egdi"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:665
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} hem ätledi. Tassyklama oýny tamamlar we tagtany hasaplaýar."
 
@@ -176,7 +176,7 @@ msgstr "Garaşylmadyk ýalňyşlyk ýüze çykdy"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Çykmak isleýärsiňizmi? Hasabyňyza girmek üçin täzeden girmeli bolarsyňyz."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:621
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Boýun egmek isleýärsiňizmi? {opponentName} oýny utar."
 
@@ -202,11 +202,11 @@ msgstr "Yza"
 msgid "Back to home"
 msgstr "Baş sahypa dolan"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "Black"
 msgstr "Gara"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:452
 msgid "Black captures:"
 msgstr "Gara tutdy:"
 
@@ -249,8 +249,8 @@ msgstr "Bu bildiriş üçin kategoriýa"
 msgid "Change notification category"
 msgstr "Bildiriş kategoriýasyny üýtgetmek"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:561
+#: src/features/go/index.tsx:593
 msgid "Chat"
 msgstr "Söhbetdeşlik"
 
@@ -436,13 +436,25 @@ msgstr "Adaty"
 msgid "Default AI account"
 msgstr "Adaty AI hasap"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:650
+msgid "Delete"
+msgstr "Pozmak"
+
+#: src/features/go/index.tsx:514
 msgid "Delete game"
 msgstr "Oýun pozmak"
+
+#: src/features/go/index.tsx:641
+msgid "Delete game?"
+msgstr "Oýun pozulsynmy?"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Köne serwerdäki hasabyňyzy pozy"
+
+#: src/features/go/index.tsx:647
+msgid "Deleting..."
+msgstr "Pozulýar..."
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -493,7 +505,7 @@ msgstr "Ýükläp almak başartmady"
 msgid "Draw agreed"
 msgstr "Deňlik kabul edildi"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:527
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Deňme-deň teklip edildi — {opponentName} garaşylýar"
 
@@ -517,11 +529,11 @@ msgstr "Boş kesişme {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Boş kesişme {colLabel}{rowLabel}, ýerleşdirmek üçin basyň ýa-da Enter düwmesine basyň"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:675
 msgid "End game"
 msgstr "Oýny tamamla"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "End game?"
 msgstr "Oýny tamamlaýarsyňyzmy?"
 
@@ -552,7 +564,7 @@ msgstr "Gapdal paneli giňelt"
 msgid "Extra large"
 msgstr "Goşmaça uly"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:219
 msgid "Failed to accept draw"
 msgstr "Deňme-deň kabul edilmedi"
 
@@ -564,27 +576,27 @@ msgstr "Hasap goşulmady"
 msgid "Failed to create game"
 msgstr "Oýun döredilmedi"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:234
 msgid "Failed to create rematch"
 msgstr "Gaýtalama döredilmedi"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:224
 msgid "Failed to decline draw"
 msgstr "Deňme-deň ret edilmedi"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:245
 msgid "Failed to delete game"
 msgstr "Oýun pozulmady"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:190
 msgid "Failed to make move"
 msgstr "Hereket edilmedi"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:214
 msgid "Failed to offer draw"
 msgstr "Deňme-deň teklip edilmedi"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to pass"
 msgstr "Geçilmedi"
 
@@ -592,12 +604,12 @@ msgstr "Geçilmedi"
 msgid "Failed to remove account"
 msgstr "Hasap aýrylmady"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to resign"
 msgstr "Boýun egilmedi"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:577
+#: src/features/go/index.tsx:609
 msgid "Failed to send"
 msgstr "Iberilmedi"
 
@@ -646,13 +658,13 @@ msgstr "Doly ýerleşiş"
 msgid "Game created"
 msgstr "Oýun döredildi"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:241
 msgid "Game deleted"
 msgstr "Oýun pozuldy"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
-#: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:368
+#: src/features/go/index.tsx:380
 msgid "Go"
 msgstr "Git"
 
@@ -913,7 +925,7 @@ msgstr "Bellenilmedik"
 msgid "Notifications"
 msgstr "Bildirişler"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:498
 msgid "Offer draw"
 msgstr "Deňme-deň hödürle"
 
@@ -926,16 +938,16 @@ msgstr "Eý dostum! Sahypa tapylmady!"
 msgid "Open account actions"
 msgstr "Hasap hereketlerini aç"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:182
-#: ../../../lib/web/src/components/layout/nav-group.tsx:187
+#: ../../../lib/web/src/components/layout/nav-group.tsx:202
+#: ../../../lib/web/src/components/layout/nav-group.tsx:207
 msgid "Open actions"
 msgstr "Amallary aç"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:469
 msgid "Open chat panel"
 msgstr "Söhbet panelini aç"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:477
 msgid "Open game actions"
 msgstr "Oýun hereketlerini aç"
 
@@ -963,16 +975,16 @@ msgid "Owner"
 msgstr "Eýesi"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:490
+#: src/features/go/index.tsx:675
 msgid "Pass"
 msgstr "Geç"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "Pass turn?"
 msgstr "Nobaty geçirmek?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:672
 msgid "Passing..."
 msgstr "Geçilýär..."
 
@@ -1058,7 +1070,7 @@ msgstr "Otnositel (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 sagat içinde otnositel, başga absolýut"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:511
 msgid "Rematch"
 msgstr "Gaýtadan oýun"
 
@@ -1094,16 +1106,16 @@ msgstr "Täzeden başlat"
 msgid "Reset all settings to default values"
 msgstr "Ähli sazlamalary deslapky bahalara gaýtar"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:502
+#: src/features/go/index.tsx:629
 msgid "Resign"
 msgstr "Resign et"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:620
 msgid "Resign game?"
 msgstr "Oýny resign etmek?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:626
 msgid "Resigning..."
 msgstr "Resign edilýär..."
 
@@ -1264,7 +1276,7 @@ msgstr "Çykylýar..."
 msgid "Skip to Main"
 msgstr "Esasy mazmuna geç"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:666
 msgid "Skip your turn and pass to your opponent."
 msgstr "Nobatyňy ätläp, garşydaşa ber."
 
@@ -1337,6 +1349,10 @@ msgstr "Tema"
 msgid "Theme Settings"
 msgstr "Tema sazlamalary"
 
+#: src/features/go/index.tsx:642
+msgid "This permanently deletes the game and its chat. This cannot be undone."
+msgstr "Bu oýny we onuň söhbetdeşligini hemişelik pozar. Bu hereketi yzyna gaýtaryp bolmaz."
+
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Penşenbe"
@@ -1350,10 +1366,10 @@ msgstr "Sütünleri geçir"
 msgid "Toggle right panel"
 msgstr "Sag paneli çalşyr"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:351
-#: ../../../lib/web/src/components/layout/nav-group.tsx:358
-#: ../../../lib/web/src/components/layout/nav-group.tsx:481
-#: ../../../lib/web/src/components/layout/nav-group.tsx:488
+#: ../../../lib/web/src/components/layout/nav-group.tsx:373
+#: ../../../lib/web/src/components/layout/nav-group.tsx:380
+#: ../../../lib/web/src/components/layout/nav-group.tsx:503
+#: ../../../lib/web/src/components/layout/nav-group.tsx:510
 msgid "Toggle section"
 msgstr "Bölümi açyp/ýap"
 
@@ -1503,11 +1519,11 @@ msgstr "Web sahypasy abatlaýyşa düşdi!"
 msgid "Wednesday"
 msgstr "Çarşenbe"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "White"
 msgstr "Ak"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:457
 msgid "White captures:"
 msgstr "Ak alýar:"
 

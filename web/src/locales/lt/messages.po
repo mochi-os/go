@@ -30,7 +30,7 @@ msgstr "{name} pasiūlė lygiąsias"
 msgid "{name} resigned"
 msgstr "{name} pasidavė"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:665
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} taip pat praleido. Patvirtinus žaidimas baigsis ir lenta bus įvertinta."
 
@@ -176,7 +176,7 @@ msgstr "Įvyko netikėta klaida"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Ar tikrai norite atsijungti? Norėdami pasiekti paskyrą, turėsite vėl prisijungti."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:621
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Ar tikrai norite pasiduoti? {opponentName} laimės žaidimą."
 
@@ -202,11 +202,11 @@ msgstr "Atgal"
 msgid "Back to home"
 msgstr "Atgal į pradžią"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "Black"
 msgstr "Juoda"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:452
 msgid "Black captures:"
 msgstr "Juodųjų paimti akmenys:"
 
@@ -249,8 +249,8 @@ msgstr "Šio pranešimo kategorija"
 msgid "Change notification category"
 msgstr "Pakeisti pranešimo kategoriją"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:561
+#: src/features/go/index.tsx:593
 msgid "Chat"
 msgstr "Pokalbis"
 
@@ -436,13 +436,25 @@ msgstr "Numatytasis"
 msgid "Default AI account"
 msgstr "Numatytoji DI paskyra"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:650
+msgid "Delete"
+msgstr "Ištrinti"
+
+#: src/features/go/index.tsx:514
 msgid "Delete game"
 msgstr "Ištrinti žaidimą"
+
+#: src/features/go/index.tsx:641
+msgid "Delete game?"
+msgstr "Ištrinti žaidimą?"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Ištrinkite paskyrą senajame serveryje"
+
+#: src/features/go/index.tsx:647
+msgid "Deleting..."
+msgstr "Ištrinama..."
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -493,7 +505,7 @@ msgstr "Atsisiųsti nepavyko"
 msgid "Draw agreed"
 msgstr "Sutarta dėl lygiųjų"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:527
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Pasiūlytos lygiosios — laukiama {opponentName}"
 
@@ -517,11 +529,11 @@ msgstr "Tuščia sankirta {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Tuščia sankirta {colLabel}{rowLabel}, spustelėkite arba paspauskite Enter, kad padėtumėte"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:675
 msgid "End game"
 msgstr "Baigti žaidimą"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "End game?"
 msgstr "Baigti žaidimą?"
 
@@ -552,7 +564,7 @@ msgstr "Išskleisti šoninę juostą"
 msgid "Extra large"
 msgstr "Labai didelis"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:219
 msgid "Failed to accept draw"
 msgstr "Nepavyko priimti lygiųjų"
 
@@ -564,27 +576,27 @@ msgstr "Nepavyko pridėti paskyros"
 msgid "Failed to create game"
 msgstr "Nepavyko sukurti žaidimo"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:234
 msgid "Failed to create rematch"
 msgstr "Nepavyko sukurti revanšo"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:224
 msgid "Failed to decline draw"
 msgstr "Nepavyko atmesti lygiųjų"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:245
 msgid "Failed to delete game"
 msgstr "Nepavyko ištrinti žaidimo"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:190
 msgid "Failed to make move"
 msgstr "Nepavyko atlikti ėjimo"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:214
 msgid "Failed to offer draw"
 msgstr "Nepavyko pasiūlyti lygiųjų"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to pass"
 msgstr "Nepavyko praleisti"
 
@@ -592,12 +604,12 @@ msgstr "Nepavyko praleisti"
 msgid "Failed to remove account"
 msgstr "Nepavyko pašalinti paskyros"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to resign"
 msgstr "Nepavyko pasitraukti"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:577
+#: src/features/go/index.tsx:609
 msgid "Failed to send"
 msgstr "Nepavyko išsiųsti"
 
@@ -646,13 +658,13 @@ msgstr "Pilnas išdėstymas"
 msgid "Game created"
 msgstr "Žaidimas sukurtas"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:241
 msgid "Game deleted"
 msgstr "Žaidimas ištrintas"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
-#: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:368
+#: src/features/go/index.tsx:380
 msgid "Go"
 msgstr "Eiti"
 
@@ -913,7 +925,7 @@ msgstr "Nenustatyta"
 msgid "Notifications"
 msgstr "Pranešimai"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:498
 msgid "Offer draw"
 msgstr "Siūlyti lygiąsias"
 
@@ -926,16 +938,16 @@ msgstr "Oi! Puslapis nerastas!"
 msgid "Open account actions"
 msgstr "Atidaryti paskyros veiksmus"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:182
-#: ../../../lib/web/src/components/layout/nav-group.tsx:187
+#: ../../../lib/web/src/components/layout/nav-group.tsx:202
+#: ../../../lib/web/src/components/layout/nav-group.tsx:207
 msgid "Open actions"
 msgstr "Atidaryti veiksmus"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:469
 msgid "Open chat panel"
 msgstr "Atidaryti pokalbio skydelį"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:477
 msgid "Open game actions"
 msgstr "Atidaryti game veiksmus"
 
@@ -963,16 +975,16 @@ msgid "Owner"
 msgstr "Savininkas"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:490
+#: src/features/go/index.tsx:675
 msgid "Pass"
 msgstr "Praleisti"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "Pass turn?"
 msgstr "Praleisti ėjimą?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:672
 msgid "Passing..."
 msgstr "Praleidžiama..."
 
@@ -1058,7 +1070,7 @@ msgstr "Santykinis (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Santykinis per 24 val., kitaip absoliutus"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:511
 msgid "Rematch"
 msgstr "Permatch"
 
@@ -1094,16 +1106,16 @@ msgstr "Atstatyti"
 msgid "Reset all settings to default values"
 msgstr "Atstatyti visus nustatymus į numatytąsias reikšmes"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:502
+#: src/features/go/index.tsx:629
 msgid "Resign"
 msgstr "Pasiduoti"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:620
 msgid "Resign game?"
 msgstr "Pasiduoti game?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:626
 msgid "Resigning..."
 msgstr "Pasiduodama..."
 
@@ -1264,7 +1276,7 @@ msgstr "Atsijungiama..."
 msgid "Skip to Main"
 msgstr "Pereiti prie pagrindinio"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:666
 msgid "Skip your turn and pass to your opponent."
 msgstr "Praleiskite savo ėjimą ir perduokite varžovui."
 
@@ -1337,6 +1349,10 @@ msgstr "Tema"
 msgid "Theme Settings"
 msgstr "Temos nustatymai"
 
+#: src/features/go/index.tsx:642
+msgid "This permanently deletes the game and its chat. This cannot be undone."
+msgstr "Tai visam laikui ištrins žaidimą ir jo pokalbį. Šio veiksmo negalima anuliuoti."
+
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Ketvirtadienis"
@@ -1350,10 +1366,10 @@ msgstr "Perjungti stulpelius"
 msgid "Toggle right panel"
 msgstr "Perjungti dešinį skydelį"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:351
-#: ../../../lib/web/src/components/layout/nav-group.tsx:358
-#: ../../../lib/web/src/components/layout/nav-group.tsx:481
-#: ../../../lib/web/src/components/layout/nav-group.tsx:488
+#: ../../../lib/web/src/components/layout/nav-group.tsx:373
+#: ../../../lib/web/src/components/layout/nav-group.tsx:380
+#: ../../../lib/web/src/components/layout/nav-group.tsx:503
+#: ../../../lib/web/src/components/layout/nav-group.tsx:510
 msgid "Toggle section"
 msgstr "Perjungti skiltį"
 
@@ -1503,11 +1519,11 @@ msgstr "Svetainė atnaujinama!"
 msgid "Wednesday"
 msgstr "Trečiadienis"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "White"
 msgstr "Baltoji"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:457
 msgid "White captures:"
 msgstr "Baltųjų paimta:"
 

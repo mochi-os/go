@@ -30,7 +30,7 @@ msgstr "{name} bauð jafntefli"
 msgid "{name} resigned"
 msgstr "{name} gafst upp"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:665
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} sleppti einnig. Staðfesting lýkur leiknum og reiknar borðið."
 
@@ -176,7 +176,7 @@ msgstr "Óvænt villa kom upp"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Ertu viss um að þú viljir skrá þig út? Þú þarft að skrá þig inn aftur til að komast að reikningnum þínum."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:621
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Ertu viss um að þú viljir gefast upp? {opponentName} mun vinna leikinn."
 
@@ -202,11 +202,11 @@ msgstr "Til baka"
 msgid "Back to home"
 msgstr "Til baka á forsíðu"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "Black"
 msgstr "Svart"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:452
 msgid "Black captures:"
 msgstr "Svartur náði:"
 
@@ -249,8 +249,8 @@ msgstr "Flokkur fyrir þessa tilkynningu"
 msgid "Change notification category"
 msgstr "Breyta flokki tilkynningar"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:561
+#: src/features/go/index.tsx:593
 msgid "Chat"
 msgstr "Spjall"
 
@@ -436,13 +436,25 @@ msgstr "Sjálfgefið"
 msgid "Default AI account"
 msgstr "Sjálfgefinn gervigreindarreikningur"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:650
+msgid "Delete"
+msgstr "Eyða"
+
+#: src/features/go/index.tsx:514
 msgid "Delete game"
 msgstr "Eyða leik"
+
+#: src/features/go/index.tsx:641
+msgid "Delete game?"
+msgstr "Eyða leiknum?"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Eyddu reikningnum þínum á gamla þjóninum"
+
+#: src/features/go/index.tsx:647
+msgid "Deleting..."
+msgstr "Eyði..."
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -493,7 +505,7 @@ msgstr "Niðurhal mistókst"
 msgid "Draw agreed"
 msgstr "Jafntefli samþykkt"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:527
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Boð um jafntefli — beðið eftir {opponentName}"
 
@@ -517,11 +529,11 @@ msgstr "Tómur skurðpunktur {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Tómur skurðpunktur {colLabel}{rowLabel}, smelltu eða ýttu á Enter til að setja"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:675
 msgid "End game"
 msgstr "Ljúka leik"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "End game?"
 msgstr "Ljúka leik?"
 
@@ -552,7 +564,7 @@ msgstr "Útvíkka hliðarstiku"
 msgid "Extra large"
 msgstr "Mjög stórt"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:219
 msgid "Failed to accept draw"
 msgstr "Tókst ekki að samþykkja jafntefli"
 
@@ -564,27 +576,27 @@ msgstr "Tókst ekki að bæta við reikningi"
 msgid "Failed to create game"
 msgstr "Tókst ekki að búa til leik"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:234
 msgid "Failed to create rematch"
 msgstr "Tókst ekki að búa til endurleik"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:224
 msgid "Failed to decline draw"
 msgstr "Tókst ekki að hafna jafntefli"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:245
 msgid "Failed to delete game"
 msgstr "Tókst ekki að eyða leik"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:190
 msgid "Failed to make move"
 msgstr "Tókst ekki að gera leik"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:214
 msgid "Failed to offer draw"
 msgstr "Tókst ekki að bjóða jafntefli"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to pass"
 msgstr "Tókst ekki að sleppa"
 
@@ -592,12 +604,12 @@ msgstr "Tókst ekki að sleppa"
 msgid "Failed to remove account"
 msgstr "Tókst ekki að fjarlægja reikning"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to resign"
 msgstr "Tókst ekki að gefast upp"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:577
+#: src/features/go/index.tsx:609
 msgid "Failed to send"
 msgstr "Tókst ekki að senda"
 
@@ -646,13 +658,13 @@ msgstr "Full umgjörð"
 msgid "Game created"
 msgstr "Leikur búinn til"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:241
 msgid "Game deleted"
 msgstr "Leik eytt"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
-#: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:368
+#: src/features/go/index.tsx:380
 msgid "Go"
 msgstr "Áfram"
 
@@ -913,7 +925,7 @@ msgstr "Ekki stillt"
 msgid "Notifications"
 msgstr "Tilkynningar"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:498
 msgid "Offer draw"
 msgstr "Bjóða jafntefli"
 
@@ -926,16 +938,16 @@ msgstr "Úps! Síða fannst ekki!"
 msgid "Open account actions"
 msgstr "Opna reikningsaðgerðir"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:182
-#: ../../../lib/web/src/components/layout/nav-group.tsx:187
+#: ../../../lib/web/src/components/layout/nav-group.tsx:202
+#: ../../../lib/web/src/components/layout/nav-group.tsx:207
 msgid "Open actions"
 msgstr "Opna aðgerðir"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:469
 msgid "Open chat panel"
 msgstr "Opna spjallspjald"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:477
 msgid "Open game actions"
 msgstr "Opna leikjaaðgerðir"
 
@@ -963,16 +975,16 @@ msgid "Owner"
 msgstr "Eigandi"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:490
+#: src/features/go/index.tsx:675
 msgid "Pass"
 msgstr "Pass"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "Pass turn?"
 msgstr "Sleppa umferð?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:672
 msgid "Passing..."
 msgstr "Sleppi..."
 
@@ -1058,7 +1070,7 @@ msgstr "Afstætt (5 mín, 3 klst, 2 d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Afstætt innan 24 klst, annars algjört"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:511
 msgid "Rematch"
 msgstr "Endurleikur"
 
@@ -1094,16 +1106,16 @@ msgstr "Endurstilla"
 msgid "Reset all settings to default values"
 msgstr "Endurstilla allar stillingar á sjálfgefin gildi"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:502
+#: src/features/go/index.tsx:629
 msgid "Resign"
 msgstr "Gefast upp"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:620
 msgid "Resign game?"
 msgstr "Gefast upp í leik?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:626
 msgid "Resigning..."
 msgstr "Gefst upp..."
 
@@ -1264,7 +1276,7 @@ msgstr "Skrái út..."
 msgid "Skip to Main"
 msgstr "Fara í aðalefni"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:666
 msgid "Skip your turn and pass to your opponent."
 msgstr "Slepptu þinni umferð og afhentu andstæðingnum."
 
@@ -1337,6 +1349,10 @@ msgstr "Þema"
 msgid "Theme Settings"
 msgstr "Þemastillingar"
 
+#: src/features/go/index.tsx:642
+msgid "This permanently deletes the game and its chat. This cannot be undone."
+msgstr "Þetta eyðir leiknum og spjallinu varanlega. Ekki er hægt að afturkalla þessa aðgerð."
+
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Fimmtudagur"
@@ -1350,10 +1366,10 @@ msgstr "Skipta um dálka"
 msgid "Toggle right panel"
 msgstr "Skipta hægra spjaldi"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:351
-#: ../../../lib/web/src/components/layout/nav-group.tsx:358
-#: ../../../lib/web/src/components/layout/nav-group.tsx:481
-#: ../../../lib/web/src/components/layout/nav-group.tsx:488
+#: ../../../lib/web/src/components/layout/nav-group.tsx:373
+#: ../../../lib/web/src/components/layout/nav-group.tsx:380
+#: ../../../lib/web/src/components/layout/nav-group.tsx:503
+#: ../../../lib/web/src/components/layout/nav-group.tsx:510
 msgid "Toggle section"
 msgstr "Víxla hluta"
 
@@ -1503,11 +1519,11 @@ msgstr "Vefsvæðið er í viðhaldi!"
 msgid "Wednesday"
 msgstr "Miðvikudagur"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "White"
 msgstr "Hvítt"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:457
 msgid "White captures:"
 msgstr "Hvítur náði:"
 

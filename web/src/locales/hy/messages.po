@@ -30,7 +30,7 @@ msgstr "{name}-ը ոչ-ոքի առաջարկեց"
 msgid "{name} resigned"
 msgstr "{name}-ը հանձնվեց"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:665
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName}-ը նույնպես բաց թողեց: Հաստատելը կավարտի խաղը և կհաշվի գրատախտակը:"
 
@@ -176,7 +176,7 @@ msgstr "Անսպասելի սխալ առաջացավ"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Վստա՞հ եք, որ ուզում եք հանել <0>{0}</0>-ին այս խմբից։"
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:621
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Վստա՞հ եք, որ ուզում եք բաժանորդագրությունից հրաժարվել այս CRM-ից։"
 
@@ -202,11 +202,11 @@ msgstr "Հետ դեպի CRM"
 msgid "Back to home"
 msgstr "Վերադառնալ տուն"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "Black"
 msgstr "Սևի վերցրածներ՝"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:452
 msgid "Black captures:"
 msgstr "Սև քար {colLabel}{rowLabel}-ում"
 
@@ -249,8 +249,8 @@ msgstr "Կատեգորիան թարմացված է"
 msgid "Change notification category"
 msgstr "Փոփոխություններ"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:561
+#: src/features/go/index.tsx:593
 msgid "Chat"
 msgstr "Զրույցի ID"
 
@@ -436,13 +436,25 @@ msgstr "Լռելյայն"
 msgid "Default AI account"
 msgstr "Լռելյայն AI հաշիվ"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:650
+msgid "Delete"
+msgstr "Ջնջել"
+
+#: src/features/go/index.tsx:514
 msgid "Delete game"
 msgstr "Ջնջել խաղը"
+
+#: src/features/go/index.tsx:641
+msgid "Delete game?"
+msgstr "Ջնջե՞լ խաղը։"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Ջնջեք ձեր հաշիվը հին սերվերում"
+
+#: src/features/go/index.tsx:647
+msgid "Deleting..."
+msgstr "Ջնջվում է..."
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -493,7 +505,7 @@ msgstr "Ներբեռնումը ձախողվեց"
 msgid "Draw agreed"
 msgstr "Ոչ-ոքի համաձայնեցվեց"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:527
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Ոչ-ոքի առաջարկվեց — սպասում ենք {opponentName}-ին"
 
@@ -517,11 +529,11 @@ msgstr "Դատարկ խաչմերուկ {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Դատարկ խաչմերուկ {colLabel}{rowLabel}, սեղմեք կամ սեղմեք Enter տեղադրելու համար"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:675
 msgid "End game"
 msgstr "Ավարտել խաղը"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "End game?"
 msgstr "Ավարտե՞լ խաղը։"
 
@@ -552,7 +564,7 @@ msgstr "Ընդարձակել կողագոտին"
 msgid "Extra large"
 msgstr "Շատ մեծ"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:219
 msgid "Failed to accept draw"
 msgstr "Չհաջողվեց ընդունել ոչ-ոքին"
 
@@ -564,27 +576,27 @@ msgstr "Չհաջողվեց ավելացնել հաշիվը"
 msgid "Failed to create game"
 msgstr "Չհաջողվեց ստեղծել խաղը"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:234
 msgid "Failed to create rematch"
 msgstr "Չհաջողվեց ստեղծել ռեմատչը"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:224
 msgid "Failed to decline draw"
 msgstr "Չհաջողվեց մերժել ոչ-ոքին"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:245
 msgid "Failed to delete game"
 msgstr "Չհաջողվեց ջնջել խաղը"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:190
 msgid "Failed to make move"
 msgstr "Չհաջողվեց կատարել քայլը"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:214
 msgid "Failed to offer draw"
 msgstr "Չհաջողվեց առաջարկել ոչ-ոքի"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to pass"
 msgstr "Չհաջողվեց բաց թողնել"
 
@@ -592,12 +604,12 @@ msgstr "Չհաջողվեց բաց թողնել"
 msgid "Failed to remove account"
 msgstr "Չհաջողվեց հեռացնել հաշիվը"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to resign"
 msgstr "Չհաջողվեց հանձնվել"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:577
+#: src/features/go/index.tsx:609
 msgid "Failed to send"
 msgstr "Չհաջողվեց ուղարկել"
 
@@ -646,13 +658,13 @@ msgstr "Ամբողջական դասավորություն"
 msgid "Game created"
 msgstr "Խաղը ստեղծվեց"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:241
 msgid "Game deleted"
 msgstr "Խաղը ջնջվեց"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
-#: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:368
+#: src/features/go/index.tsx:380
 msgid "Go"
 msgstr "Անցնել"
 
@@ -913,7 +925,7 @@ msgstr "Չի սահմանված"
 msgid "Notifications"
 msgstr "Ծանուցումներ"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:498
 msgid "Offer draw"
 msgstr "Առաջարկել ոչ-ոքի"
 
@@ -926,16 +938,16 @@ msgstr "Ուփ։ Էջը չի գտնվել։"
 msgid "Open account actions"
 msgstr "Բացել հաշվի գործողությունները"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:182
-#: ../../../lib/web/src/components/layout/nav-group.tsx:187
+#: ../../../lib/web/src/components/layout/nav-group.tsx:202
+#: ../../../lib/web/src/components/layout/nav-group.tsx:207
 msgid "Open actions"
 msgstr "Բացել գործողությունները"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:469
 msgid "Open chat panel"
 msgstr "Բացել զրույցի վահանակը"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:477
 msgid "Open game actions"
 msgstr "Բացել խաղի գործողությունները"
 
@@ -963,16 +975,16 @@ msgid "Owner"
 msgstr "Սեփականատեր"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:490
+#: src/features/go/index.tsx:675
 msgid "Pass"
 msgstr "Փոխանցել"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "Pass turn?"
 msgstr "Փոխանցե՞լ քայլը։"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:672
 msgid "Passing..."
 msgstr "Փոխանցում..."
 
@@ -1058,7 +1070,7 @@ msgstr "Հարաբերական (5մ, 3ժ, 2օ)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Հարաբերական 24 ժամվա ընթացքում, այլապես՝ բացարձակ"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:511
 msgid "Rematch"
 msgstr "Վերախաղ"
 
@@ -1094,16 +1106,16 @@ msgstr "Վերականգնել"
 msgid "Reset all settings to default values"
 msgstr "Վերականգնել բոլոր կարգավորումները լռելյայն արժեքների"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:502
+#: src/features/go/index.tsx:629
 msgid "Resign"
 msgstr "Հանձնվել"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:620
 msgid "Resign game?"
 msgstr "Հանձնվե՞լ խաղում։"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:626
 msgid "Resigning..."
 msgstr "Հանձնվում..."
 
@@ -1264,7 +1276,7 @@ msgstr "Դուրս է գալիս..."
 msgid "Skip to Main"
 msgstr "Բաց թողնել դեպի Հիմնական"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:666
 msgid "Skip your turn and pass to your opponent."
 msgstr "Բաց թողեք ձեր հերթը և փոխանցեք հակառակորդին:"
 
@@ -1337,6 +1349,10 @@ msgstr "Թեմա"
 msgid "Theme Settings"
 msgstr "Թեմայի կարգավորումներ"
 
+#: src/features/go/index.tsx:642
+msgid "This permanently deletes the game and its chat. This cannot be undone."
+msgstr "Սա ընդմիշտ կջնջի խաղը և դրա չաթը։ Այս գործողությունը հնարավոր չէ հետարկել։"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Հինգշաբթի"
@@ -1350,10 +1366,10 @@ msgstr "Սյունակների փոխարկում"
 msgid "Toggle right panel"
 msgstr "Փոխարկել աջ վահանակը"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:351
-#: ../../../lib/web/src/components/layout/nav-group.tsx:358
-#: ../../../lib/web/src/components/layout/nav-group.tsx:481
-#: ../../../lib/web/src/components/layout/nav-group.tsx:488
+#: ../../../lib/web/src/components/layout/nav-group.tsx:373
+#: ../../../lib/web/src/components/layout/nav-group.tsx:380
+#: ../../../lib/web/src/components/layout/nav-group.tsx:503
+#: ../../../lib/web/src/components/layout/nav-group.tsx:510
 msgid "Toggle section"
 msgstr "Փոխարկել բաժինը"
 
@@ -1503,11 +1519,11 @@ msgstr "Կայքը գտնվում է սպասարկման փուլում:"
 msgid "Wednesday"
 msgstr "Չորեքշաբթի"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "White"
 msgstr "Սպիտակ"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:457
 msgid "White captures:"
 msgstr "Սպիտակը գրավում է՝"
 

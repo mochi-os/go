@@ -101,6 +101,7 @@ export function GoGameView() {
   const { openNewGameDialog, setWebsocketStatus } = useSidebarContext()
   const [newMessage, setNewMessage] = useState('')
   const [showResignDialog, setShowResignDialog] = useState(false)
+  const [showDeleteDialog, setShowDeleteDialog] = useState(false)
   const [showPassDialog, setShowPassDialog] = useState(false)
   const [showMobileChat, setShowMobileChat] = useState(false)
   const [lastMove, setLastMove] = useState<[number, number] | null>(null)
@@ -138,7 +139,12 @@ export function GoGameView() {
   )
 
   // Game detail
-  const { data: gameDetail, isLoading: isLoadingDetail } = useGameDetailQuery(selectedGame?.id)
+  const {
+    data: gameDetail,
+    isLoading: isLoadingDetail,
+    error: gameDetailError,
+    refetch: refetchGameDetail,
+  } = useGameDetailQuery(selectedGame?.id)
 
   const game = gameDetail?.game
   const myIdentity = gameDetail?.identity ?? currentUserIdentity
@@ -232,6 +238,7 @@ export function GoGameView() {
   // Delete
   const deleteGameMutation = useDeleteGameMutation({
     onSuccess: () => {
+      setShowDeleteDialog(false)
       toast.success(t`Game deleted`)
       void navigate({ to: '/' })
     },
@@ -410,6 +417,13 @@ export function GoGameView() {
           <div className="flex flex-1 flex-col px-2 sm:px-4 pb-2 min-h-0">
             {isLoadingDetail ? (
               <Skeleton className="aspect-square max-w-[560px] w-full mx-auto" />
+            ) : gameDetailError ? (
+              <GeneralError
+                error={gameDetailError}
+                minimal
+                mode="inline"
+                reset={refetchGameDetail}
+              />
             ) : game && goGame ? (
               <>
                 <div className="shrink-0">
@@ -496,7 +510,7 @@ export function GoGameView() {
                                 >
                                   <RotateCcw className='me-2 size-4' /> <Trans>Rematch</Trans>
                                 </DropdownMenuItem>
-                                <DropdownMenuItem onClick={handleDelete}>
+                                <DropdownMenuItem onClick={() => setShowDeleteDialog(true)}>
                                   <Trash2 className='me-2 size-4' /> <Trans>Delete game</Trans>
                                 </DropdownMenuItem>
                               </>
@@ -547,6 +561,7 @@ export function GoGameView() {
               <h3 className="text-sm font-medium"><Trans>Chat</Trans></h3>
             </div>
             <ChatMessageList
+              key={selectedGame.id}
               messagesQuery={messagesQuery}
               chatMessages={chatMessages}
               isLoadingMessages={messagesQuery.isLoading}
@@ -579,6 +594,7 @@ export function GoGameView() {
             <SheetTitle className="text-sm font-medium"><Trans>Chat</Trans></SheetTitle>
           </SheetHeader>
           <ChatMessageList
+            key={selectedGame.id}
             messagesQuery={messagesQuery}
             chatMessages={chatMessages}
             isLoadingMessages={messagesQuery.isLoading}
@@ -618,6 +634,27 @@ export function GoGameView() {
         destructive
         handleConfirm={handleResign}
         isLoading={resignMutation.isPending}
+      />
+
+      {/* Delete confirmation */}
+      <ConfirmDialog
+        open={showDeleteDialog}
+        onOpenChange={setShowDeleteDialog}
+        title={t`Delete game?`}
+        desc={t`This permanently deletes the game and its chat. This cannot be undone.`}
+        confirmText={
+          deleteGameMutation.isPending ? (
+            <>
+              <Loader2 className="me-2 size-4 animate-spin" />
+              <Trans>Deleting...</Trans>
+            </>
+          ) : (
+            t`Delete`
+          )
+        }
+        destructive
+        handleConfirm={handleDelete}
+        isLoading={deleteGameMutation.isPending}
       />
 
       {/* Pass confirmation */}

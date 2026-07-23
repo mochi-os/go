@@ -30,7 +30,7 @@ msgstr "{name} ya ba da shawarar canjaras"
 msgid "{name} resigned"
 msgstr "{name} ya ja da"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:665
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} ya kuma wuce. Tabbatarwa zai kawo karshen wasan kuma ya jera maki."
 
@@ -176,7 +176,7 @@ msgstr "An samu kuskuren da ba a zata ba"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Ka tabbata kana son fita? Za ka buƙaci shiga kuma don shiga asusunka."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:621
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Kana da tabbacin kana son mika wuya? {opponentName} zai lashe wasan."
 
@@ -202,11 +202,11 @@ msgstr "Komawa"
 msgid "Back to home"
 msgstr "Komawa gida"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "Black"
 msgstr "Baƙi"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:452
 msgid "Black captures:"
 msgstr "Baƙar ya kama:"
 
@@ -249,8 +249,8 @@ msgstr "Rukuni don wannan sanarwa"
 msgid "Change notification category"
 msgstr "Sauya rukunin sanarwa"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:561
+#: src/features/go/index.tsx:593
 msgid "Chat"
 msgstr "Chat"
 
@@ -436,13 +436,25 @@ msgstr "Default"
 msgid "Default AI account"
 msgstr "Default AI asusu"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:650
+msgid "Delete"
+msgstr "Goge"
+
+#: src/features/go/index.tsx:514
 msgid "Delete game"
 msgstr "Goge wasa"
+
+#: src/features/go/index.tsx:641
+msgid "Delete game?"
+msgstr "A goge wasan?"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Goge asusu ka akan tsohon uwar garken"
+
+#: src/features/go/index.tsx:647
+msgid "Deleting..."
+msgstr "Ana goge..."
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -493,7 +505,7 @@ msgstr "Saukarwa ta gaza"
 msgid "Draw agreed"
 msgstr "An yarda da canjaras"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:527
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "An ba da kunnen doki — ana jiran {opponentName}"
 
@@ -517,11 +529,11 @@ msgstr "Mahaɗar babu komai {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Mahaɗar babu komai {colLabel}{rowLabel}, danna ko matsa Enter don sanyawa"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:675
 msgid "End game"
 msgstr "Ƙare wasa"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "End game?"
 msgstr "A ƙare wasa?"
 
@@ -552,7 +564,7 @@ msgstr "Faɗaɗa sidebar"
 msgid "Extra large"
 msgstr "Babba sosai"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:219
 msgid "Failed to accept draw"
 msgstr "An gaza karɓar canjaras"
 
@@ -564,27 +576,27 @@ msgstr "An gaza ƙara account"
 msgid "Failed to create game"
 msgstr "An gaza ƙirƙirar wasa"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:234
 msgid "Failed to create rematch"
 msgstr "An gaza ƙirƙirar rematch"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:224
 msgid "Failed to decline draw"
 msgstr "An gaza ƙin canjaras"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:245
 msgid "Failed to delete game"
 msgstr "An gaza share wasa"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:190
 msgid "Failed to make move"
 msgstr "An gaza yin motsi"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:214
 msgid "Failed to offer draw"
 msgstr "An gaza ba da canjaras"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to pass"
 msgstr "An gaza pass"
 
@@ -592,12 +604,12 @@ msgstr "An gaza pass"
 msgid "Failed to remove account"
 msgstr "An gaza cire account"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to resign"
 msgstr "An gaza yin murabus"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:577
+#: src/features/go/index.tsx:609
 msgid "Failed to send"
 msgstr "An gaza aikawa"
 
@@ -646,13 +658,13 @@ msgstr "Cikakken layout"
 msgid "Game created"
 msgstr "An ƙirƙiri wasa"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:241
 msgid "Game deleted"
 msgstr "An share wasa"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
-#: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:368
+#: src/features/go/index.tsx:380
 msgid "Go"
 msgstr "Tafi"
 
@@ -913,7 +925,7 @@ msgstr "Ba a saita ba"
 msgid "Notifications"
 msgstr "Sanarwa"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:498
 msgid "Offer draw"
 msgstr "Ba da tayin canjaras"
 
@@ -926,16 +938,16 @@ msgstr "Kai! Ba a Sami Shafi Ba!"
 msgid "Open account actions"
 msgstr "Buɗe ayyukan account"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:182
-#: ../../../lib/web/src/components/layout/nav-group.tsx:187
+#: ../../../lib/web/src/components/layout/nav-group.tsx:202
+#: ../../../lib/web/src/components/layout/nav-group.tsx:207
 msgid "Open actions"
 msgstr "Buɗe ayyuka"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:469
 msgid "Open chat panel"
 msgstr "Buɗe panel ɗin chat"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:477
 msgid "Open game actions"
 msgstr "Buɗe ayyukan wasa"
 
@@ -963,16 +975,16 @@ msgid "Owner"
 msgstr "Mai shi"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:490
+#: src/features/go/index.tsx:675
 msgid "Pass"
 msgstr "Pass"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "Pass turn?"
 msgstr "Pass turn?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:672
 msgid "Passing..."
 msgstr "Ana passing..."
 
@@ -1058,7 +1070,7 @@ msgstr "Relative (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relative cikin sa'o'i 24, in ba haka ba absolute"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:511
 msgid "Rematch"
 msgstr "Sake wasa"
 
@@ -1094,16 +1106,16 @@ msgstr "Saiti"
 msgid "Reset all settings to default values"
 msgstr "Mayar da duk saituna zuwa ƙimar asali"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:502
+#: src/features/go/index.tsx:629
 msgid "Resign"
 msgstr "Yi murabus"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:620
 msgid "Resign game?"
 msgstr "A yi murabus daga wasa?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:626
 msgid "Resigning..."
 msgstr "Ana murabus..."
 
@@ -1264,7 +1276,7 @@ msgstr "Ana fita..."
 msgid "Skip to Main"
 msgstr "Tsallake zuwa Babba"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:666
 msgid "Skip your turn and pass to your opponent."
 msgstr "Tsallake juyinka kuma ka ba abokin hamayyarka."
 
@@ -1337,6 +1349,10 @@ msgstr "Theme"
 msgid "Theme Settings"
 msgstr "Saitunan Theme"
 
+#: src/features/go/index.tsx:642
+msgid "This permanently deletes the game and its chat. This cannot be undone."
+msgstr "Wannan zai goge wasan da hirarsa har abada. Ba za a iya sokewa ba."
+
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Alhamis"
@@ -1350,10 +1366,10 @@ msgstr "Toggle ginshiƙai"
 msgid "Toggle right panel"
 msgstr "Canza panel na dama"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:351
-#: ../../../lib/web/src/components/layout/nav-group.tsx:358
-#: ../../../lib/web/src/components/layout/nav-group.tsx:481
-#: ../../../lib/web/src/components/layout/nav-group.tsx:488
+#: ../../../lib/web/src/components/layout/nav-group.tsx:373
+#: ../../../lib/web/src/components/layout/nav-group.tsx:380
+#: ../../../lib/web/src/components/layout/nav-group.tsx:503
+#: ../../../lib/web/src/components/layout/nav-group.tsx:510
 msgid "Toggle section"
 msgstr "Canza sashe"
 
@@ -1503,11 +1519,11 @@ msgstr "Shafin yana cikin kulawa!"
 msgid "Wednesday"
 msgstr "Laraba"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "White"
 msgstr "Fari"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:457
 msgid "White captures:"
 msgstr "Farar ya kama:"
 

@@ -30,7 +30,7 @@ msgstr "{name} тең оюн сунуштады"
 msgid "{name} resigned"
 msgstr "{name} баш тартты"
 
-#: src/features/go/index.tsx:630
+#: src/features/go/index.tsx:665
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} да өткөрүп жиберди. Тастыктоо оюнду аяктап, тактайды баалайт."
 
@@ -176,7 +176,7 @@ msgstr "Күтүлбөгөн ката кетти"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Чыгууну каалайсызбы? Аккаунтуңузга кайра кирүү керек болот."
 
-#: src/features/go/index.tsx:607
+#: src/features/go/index.tsx:621
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Багынууну каалайсызбы? Оюнду {opponentName} утат."
 
@@ -202,11 +202,11 @@ msgstr "Артка"
 msgid "Back to home"
 msgstr "Башкы бетке кайтуу"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "Black"
 msgstr "Кара"
 
-#: src/features/go/index.tsx:438
+#: src/features/go/index.tsx:452
 msgid "Black captures:"
 msgstr "Кара кармагандары:"
 
@@ -249,8 +249,8 @@ msgstr "Бул эскертүү үчүн категория"
 msgid "Change notification category"
 msgstr "Эскертүү категориясын өзгөртүү"
 
-#: src/features/go/index.tsx:547
-#: src/features/go/index.tsx:579
+#: src/features/go/index.tsx:561
+#: src/features/go/index.tsx:593
 msgid "Chat"
 msgstr "Чат"
 
@@ -436,13 +436,25 @@ msgstr "Демейки"
 msgid "Default AI account"
 msgstr "Демейки AI аккаунту"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:650
+msgid "Delete"
+msgstr "Жок кылуу"
+
+#: src/features/go/index.tsx:514
 msgid "Delete game"
 msgstr "Оюнду жок кылуу"
+
+#: src/features/go/index.tsx:641
+msgid "Delete game?"
+msgstr "Оюн жок кылынсынбы?"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:99
 msgid "Delete your account on the old server"
 msgstr "Эски серверден аккаунтуңузду жок кылыңыз"
+
+#: src/features/go/index.tsx:647
+msgid "Deleting..."
+msgstr "Жок кылынууда..."
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:63
 msgid "Desc"
@@ -493,7 +505,7 @@ msgstr "Жүктөп алуу ишке ашкан жок"
 msgid "Draw agreed"
 msgstr "Тең оюнга макул болушту"
 
-#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:527
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Теңтайлаш сунушталды — {opponentName} күтүлүүдө"
 
@@ -517,11 +529,11 @@ msgstr "Бош кесилиш {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Бош кесилиш {colLabel}{rowLabel}, жайгаштыруу үчүн басыңыз же Enter басыңыз"
 
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:675
 msgid "End game"
 msgstr "Оюнду аяктоо"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "End game?"
 msgstr "Оюнду аяктайбы?"
 
@@ -552,7 +564,7 @@ msgstr "Каптал тилкесин жайылтуу"
 msgid "Extra large"
 msgstr "Өтө чоң"
 
-#: src/features/go/index.tsx:213
+#: src/features/go/index.tsx:219
 msgid "Failed to accept draw"
 msgstr "Теңтайлашты кабыл алуу ишке ашкан жок"
 
@@ -564,27 +576,27 @@ msgstr "Эсеп кошуу ишке ашкан жок"
 msgid "Failed to create game"
 msgstr "Оюн түзүү ишке ашкан жок"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:234
 msgid "Failed to create rematch"
 msgstr "Кайра матч түзүү ишке ашкан жок"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:224
 msgid "Failed to decline draw"
 msgstr "Теңтайлаштан баш тартуу ишке ашкан жок"
 
-#: src/features/go/index.tsx:239
+#: src/features/go/index.tsx:245
 msgid "Failed to delete game"
 msgstr "Оюнду өчүрүү ишке ашкан жок"
 
-#: src/features/go/index.tsx:184
+#: src/features/go/index.tsx:190
 msgid "Failed to make move"
 msgstr "Кадам жасоо ишке ашкан жок"
 
-#: src/features/go/index.tsx:208
+#: src/features/go/index.tsx:214
 msgid "Failed to offer draw"
 msgstr "Теңтайлаш сунуштоо ишке ашкан жок"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to pass"
 msgstr "Өткөрүп жиберүү ишке ашкан жок"
 
@@ -592,12 +604,12 @@ msgstr "Өткөрүп жиберүү ишке ашкан жок"
 msgid "Failed to remove account"
 msgstr "Эсепти алып салуу ишке ашкан жок"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to resign"
 msgstr "Багынуу ишке ашкан жок"
 
-#: src/features/go/index.tsx:563
-#: src/features/go/index.tsx:595
+#: src/features/go/index.tsx:577
+#: src/features/go/index.tsx:609
 msgid "Failed to send"
 msgstr "Жөнөтүү ишке ашкан жок"
 
@@ -646,13 +658,13 @@ msgstr "Толук жайгашуу"
 msgid "Game created"
 msgstr "Оюн түзүлдү"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:241
 msgid "Game deleted"
 msgstr "Оюн өчүрүлдү"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:361
-#: src/features/go/index.tsx:373
+#: src/features/go/index.tsx:368
+#: src/features/go/index.tsx:380
 msgid "Go"
 msgstr "Өтүү"
 
@@ -913,7 +925,7 @@ msgstr "Орнотулган эмес"
 msgid "Notifications"
 msgstr "Билдирмелер"
 
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:498
 msgid "Offer draw"
 msgstr "Тең оюн сунуштоо"
 
@@ -926,16 +938,16 @@ msgstr "Аттиң! Барак табылган жок!"
 msgid "Open account actions"
 msgstr "Аккаунт аракеттерин ачуу"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:182
-#: ../../../lib/web/src/components/layout/nav-group.tsx:187
+#: ../../../lib/web/src/components/layout/nav-group.tsx:202
+#: ../../../lib/web/src/components/layout/nav-group.tsx:207
 msgid "Open actions"
 msgstr "Аракеттерди ачуу"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:469
 msgid "Open chat panel"
 msgstr "Чат панелин ачуу"
 
-#: src/features/go/index.tsx:463
+#: src/features/go/index.tsx:477
 msgid "Open game actions"
 msgstr "Оюн аракеттерин ачуу"
 
@@ -963,16 +975,16 @@ msgid "Owner"
 msgstr "Ээси"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:476
-#: src/features/go/index.tsx:640
+#: src/features/go/index.tsx:490
+#: src/features/go/index.tsx:675
 msgid "Pass"
 msgstr "Өткөрүп жиберүү"
 
-#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:662
 msgid "Pass turn?"
 msgstr "Кезекти өткөрүп жибересизби?"
 
-#: src/features/go/index.tsx:637
+#: src/features/go/index.tsx:672
 msgid "Passing..."
 msgstr "Өткөрүлүүдө..."
 
@@ -1058,7 +1070,7 @@ msgstr "Салыштырмалуу (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 саат ичинде салыштырмалуу, антпесе абсолюттук"
 
-#: src/features/go/index.tsx:497
+#: src/features/go/index.tsx:511
 msgid "Rematch"
 msgstr "Кайра оюн"
 
@@ -1094,16 +1106,16 @@ msgstr "Баштапкы абалга кайтаруу"
 msgid "Reset all settings to default values"
 msgstr "Бардык жөндөөлөрдү демейки маанилерге кайтаруу"
 
-#: src/features/go/index.tsx:488
-#: src/features/go/index.tsx:615
+#: src/features/go/index.tsx:502
+#: src/features/go/index.tsx:629
 msgid "Resign"
 msgstr "Баш тартуу"
 
-#: src/features/go/index.tsx:606
+#: src/features/go/index.tsx:620
 msgid "Resign game?"
 msgstr "Оюндан баш тартасызбы?"
 
-#: src/features/go/index.tsx:612
+#: src/features/go/index.tsx:626
 msgid "Resigning..."
 msgstr "Баш тартылууда..."
 
@@ -1264,7 +1276,7 @@ msgstr "Чыгуу жүрүп жатат..."
 msgid "Skip to Main"
 msgstr "Башкыга өтүү"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:666
 msgid "Skip your turn and pass to your opponent."
 msgstr "Кезегиңизди өткөрүп, атаандашыңызга беришиңиз."
 
@@ -1337,6 +1349,10 @@ msgstr "Тема"
 msgid "Theme Settings"
 msgstr "Тема жөндөөлөрү"
 
+#: src/features/go/index.tsx:642
+msgid "This permanently deletes the game and its chat. This cannot be undone."
+msgstr "Бул оюн менен анын чатын биротоло жок кылат. Бул аракетти артка кайтарууга болбойт."
+
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Бейшемби"
@@ -1350,10 +1366,10 @@ msgstr "Тилкелерди которуу"
 msgid "Toggle right panel"
 msgstr "Оң панелди алмаштыруу"
 
-#: ../../../lib/web/src/components/layout/nav-group.tsx:351
-#: ../../../lib/web/src/components/layout/nav-group.tsx:358
-#: ../../../lib/web/src/components/layout/nav-group.tsx:481
-#: ../../../lib/web/src/components/layout/nav-group.tsx:488
+#: ../../../lib/web/src/components/layout/nav-group.tsx:373
+#: ../../../lib/web/src/components/layout/nav-group.tsx:380
+#: ../../../lib/web/src/components/layout/nav-group.tsx:503
+#: ../../../lib/web/src/components/layout/nav-group.tsx:510
 msgid "Toggle section"
 msgstr "Бөлүмдү которуу"
 
@@ -1503,11 +1519,11 @@ msgstr "Сайт техникалык тейлөөдө!"
 msgid "Wednesday"
 msgstr "Шаршемби"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:445
 msgid "White"
 msgstr "Ак"
 
-#: src/features/go/index.tsx:443
+#: src/features/go/index.tsx:457
 msgid "White captures:"
 msgstr "Ак басып алуулар:"
 
