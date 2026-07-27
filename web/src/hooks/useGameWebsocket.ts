@@ -128,35 +128,19 @@ const handleWebsocketPayload = (
   // state. Merge on the presence of the snapshot rather than inferring what
   // changed from the event name, which is how the repaired board used to be
   // dropped here while the database had already converged.
+  // Any non-move payload carrying a board is a complete applied snapshot - a
+  // system event whose snapshot repaired a move this client never saw, or a
+  // reconciliation 'state' payload. Refetch rather than merging field by
+  // field: a snapshot REPLACES state, and a merge cannot clear a value the
+  // way an exact replacement does - an emptied winner or draw offer is falsy,
+  // so `payload.x || current.x` silently keeps the stale one. Refetching also
+  // updates the list, which a detail-only merge left showing the old status.
   if (msgType !== 'move' && payload.fen) {
-    queryClient.setQueryData<GameViewResponse>(
-      gameKeys.detail(gameId),
-      (current) => {
-        if (!current) return current
-        return {
-          ...current,
-          game: {
-            ...current.game,
-            fen: payload.fen as string,
-            previous_fen:
-              (payload.previous_fen as string) || current.game.previous_fen,
-            sgf: (payload.sgf as string) ?? current.game.sgf,
-            captures_black:
-              typeof payload.captures_black === 'number'
-                ? payload.captures_black
-                : current.game.captures_black,
-            captures_white:
-              typeof payload.captures_white === 'number'
-                ? payload.captures_white
-                : current.game.captures_white,
-            status:
-              (payload.status as GameViewResponse['game']['status']) ||
-              current.game.status,
-            winner: (payload.winner as string) || current.game.winner,
-          },
-        }
-      }
-    )
+    void queryClient.invalidateQueries({
+      queryKey: gameKeys.detail(gameId),
+      exact: true,
+    })
+    void queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
   }
 
   // Handle move — update game detail cache with new FEN/status
