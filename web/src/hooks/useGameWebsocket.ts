@@ -184,6 +184,11 @@ const handleWebsocketPayload = (
   }
 
   // Append message to messages cache for all types (message, move, system)
+  // A reconciliation snapshot is a cache signal, not something that happened
+  // in the game: it repairs state this client missed and has no message of its
+  // own. Appending one would put an empty system entry in the chat.
+  if (msgType === 'state') return
+
   const incomingMessage = createMessageFromPayload(gameId, payload, unknownSenderLabel)
 
   queryClient.setQueryData<InfiniteData<GetMessagesResponse>>(
