@@ -277,6 +277,21 @@ def game_players(game):
 	"""Entities entitled to write this game's state."""
 	return [game["identity"], game["opponent"]]
 
+def event_created(e, now):
+	"""Peer-supplied message timestamp, clamped to our clock.
+
+	A stamp far from now would pin the message out of order forever and
+	distort the created-keyed pagination cursor, so anything more than a
+	day behind or five minutes ahead is replaced with our own time.
+	Returns None when the field is absent or malformed."""
+	created = e.content("created")
+	if not mochi.text.valid(str(created), "integer"):
+		return None
+	created = int(created)
+	if created < now - 86400 or created > now + 300:
+		return now
+	return created
+
 def game_terminal(status):
 	return 1 if status in GAME_TERMINAL else 0
 
@@ -304,6 +319,12 @@ def game_snapshot_valid(game, state):
 	if not mochi.text.valid(str(state["captures_black"]), "integer"):
 		return False
 	if not mochi.text.valid(str(state["captures_white"]), "integer"):
+		return False
+	# A 19x19 board holds 361 stones, so a capture count past that is not a
+	# game state, whatever the tuple says.
+	if int(state["captures_black"]) < 0 or int(state["captures_black"]) > 361:
+		return False
+	if int(state["captures_white"]) < 0 or int(state["captures_white"]) > 361:
 		return False
 	if state["status"] not in ["active", "finished", "resigned", "draw"]:
 		return False
@@ -1076,8 +1097,8 @@ def event_new(e):
 	else:
 		fen = empty_board(board_size)
 
-	created = e.content("created")
-	if not mochi.text.valid(str(created), "integer"):
+	created = event_created(e, mochi.time.now())
+	if created == None:
 		return
 
 	# Verify the recipient is one of the two players - a friend must not be able
@@ -1139,12 +1160,16 @@ def event_move(e):
 		if not mochi.text.valid(str(captures_black), "integer"):
 			return
 		captures_black = int(captures_black)
+		if captures_black < 0 or captures_black > 361:
+			return
 	else:
 		captures_black = game["captures_black"]
 	if captures_white:
 		if not mochi.text.valid(str(captures_white), "integer"):
 			return
 		captures_white = int(captures_white)
+		if captures_white < 0 or captures_white > 361:
+			return
 	else:
 		captures_white = game["captures_white"]
 
@@ -1164,8 +1189,8 @@ def event_move(e):
 	if not mochi.text.valid(str(id), "id"):
 		id = mochi.uid()
 
-	created = e.content("created")
-	if not mochi.text.valid(str(created), "integer"):
+	created = event_created(e, now)
+	if created == None:
 		created = now
 
 	name = e.content("name") or "Opponent"
@@ -1195,8 +1220,8 @@ def event_message(e):
 	if not mochi.text.valid(str(id), "id"):
 		return
 
-	created = e.content("created")
-	if not mochi.text.valid(str(created), "integer"):
+	created = event_created(e, mochi.time.now())
+	if created == None:
 		return
 
 	body = e.content("body")
