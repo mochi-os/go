@@ -133,7 +133,7 @@ export function GoGameView() {
   const selectedGame = useMemo(
     () =>
       games.find(
-        (g) => g.id === selectedGameId || g.fingerprint === selectedGameId
+        (g) => g.id === selectedGameId
       ) ?? null,
     [games, selectedGameId]
   )
@@ -250,7 +250,10 @@ export function GoGameView() {
   // WebSocket
   const { status, retries } = useGameWebsocket(
     selectedGame?.id,
-    selectedGame?.key
+    // From the detail row: the list never carries key, so passing
+    // selectedGame?.key was always undefined and made the websocket manager
+    // refetch /view just to learn it.
+    game?.key
   )
   useEffect(() => {
     setWebsocketStatus(status, retries)

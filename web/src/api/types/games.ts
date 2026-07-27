@@ -9,7 +9,6 @@ export function getOpponentName(game: Game, myIdentity: string): string {
 
 export interface Game {
   id: string
-  fingerprint?: string
   identity: string
   identity_name: string
   opponent: string
@@ -19,13 +18,14 @@ export interface Game {
   komi: number
   status: 'active' | 'finished' | 'draw' | 'resigned'
   winner: string | null
+  // Only on the detail response; list rows never carry it.
+  key?: string
   draw_offer: string | null
   fen: string
   previous_fen: string | null
   sgf: string
   captures_black: number
   captures_white: number
-  key: string
   updated: number
   created: number
 }

@@ -4,7 +4,7 @@
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
 
 {
-	"version": "1.64",
+	"version": "1.65",
 	"label": "app.name",
 	"classes": ["game"],
 	"paths": ["go"],
@@ -37,6 +37,7 @@
 		":game/-/messages": {"function": "action_messages"},
 		":game/-/send": {"function": "action_send"},
 		":game/-/move": {"function": "action_move"},
+		":game/-/user/:user/asset/:asset": {"function": "action_user_asset", "public": true},
 		":game/-/pass": {"function": "action_pass"},
 		":game/-/resign": {"function": "action_resign"},
 		":game/-/draw-offer": {"function": "action_draw_offer"},
