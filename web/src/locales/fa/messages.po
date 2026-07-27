@@ -18,6 +18,15 @@ msgstr ""
 msgid "Please check your internet connection and try again."
 msgstr "لطفاً اتصال اینترنت خود را بررسی کرده و دوباره تلاش کنید."
 
+#. placeholder {0}: selectedValues.size
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:66
+msgid "{0, plural, one {# selected} other {# selected}}"
+msgstr "{0, plural, one {# انتخاب‌شده} other {# انتخاب‌شده}}"
+
+#: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:173
+msgid "{entityLabel} name"
+msgstr "نام {entityLabel}"
+
 #: src/features/go/components/chat-message-list.tsx:190
 msgid "{name} declined the draw"
 msgstr "{name} تساوی را رد کرد"
@@ -30,13 +39,29 @@ msgstr "{name} پیشنهاد تساوی داد"
 msgid "{name} resigned"
 msgstr "{name} تسلیم شد"
 
-#: src/features/go/index.tsx:665
+#: src/features/go/index.tsx:667
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} هم رد کرد. تأیید بازی را پایان می‌دهد و تخته را امتیازدهی می‌کند."
 
 #: src/features/go/components/draw-offer-banner.tsx:30
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} پیشنهاد مساوی داد"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
+msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
+msgstr "{selectedCount, plural, one {{entityName} انتخاب شد} other {{manyName} انتخاب شدند}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:52
+msgid "{selectedCount, plural, one {# {entityName} selected. Bulk actions toolbar is available.} other {# {manyName} selected. Bulk actions toolbar is available.}}"
+msgstr "{selectedCount, plural, one {# {entityName} انتخاب شد. نوار اقدامات گروهی در دسترس است.} other {# {manyName} انتخاب شدند. نوار اقدامات گروهی در دسترس است.}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:202
+msgid "{selectedCount, plural, one {# selected} other {# selected}}"
+msgstr "{selectedCount, plural, one {# انتخاب‌شده} other {# انتخاب‌شده}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
+msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
+msgstr "{selectedCount, plural, one {اقدامات گروهی برای # {entityName} انتخاب‌شده} other {اقدامات گروهی برای # {manyName} انتخاب‌شده}}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -176,7 +201,7 @@ msgstr "خطای غیرمنتظره‌ای رخ داد"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "آیا از خروج از حساب مطمئن هستید؟ برای دسترسی به حساب باید دوباره وارد شوید."
 
-#: src/features/go/index.tsx:621
+#: src/features/go/index.tsx:623
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "آیا از تسلیم شدن مطمئن هستید؟ {opponentName} برندهٔ بازی می‌شود."
 
@@ -196,9 +221,9 @@ msgstr "کد احراز هویت"
 msgid "Back"
 msgstr "بازگشت"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:26
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
+#: ../../../lib/web/src/features/errors/forbidden.tsx:28
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:28
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:28
 msgid "Back to home"
 msgstr "بازگشت به خانه"
 
@@ -235,7 +260,7 @@ msgstr "تقویت علاقه"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:89
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
 msgid "Cancel"
 msgstr "لغو"
@@ -250,7 +275,7 @@ msgid "Change notification category"
 msgstr "تغییر دستهٔ اعلان"
 
 #: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:593
+#: src/features/go/index.tsx:594
 msgid "Chat"
 msgstr "گفت‌وگو"
 
@@ -296,28 +321,29 @@ msgstr "پاک کردن"
 msgid "Clear all"
 msgstr "پاک کردن همه"
 
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:140
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:144
 msgid "Clear filters"
 msgstr "پاک کردن فیلترها"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:167
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:171
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:177
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:181
 msgid "Clear selection"
 msgstr "پاک کردن انتخاب"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:168
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:178
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:185
 msgid "Clear selection (Escape)"
 msgstr "پاک کردن انتخاب (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:358
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:361
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "بستن"
 
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:107
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:112
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:108
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:113
 msgid "Close navigation"
 msgstr "بستن منوی پیمایش"
 
@@ -408,6 +434,7 @@ msgid "Custom"
 msgstr "سفارشی"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:218
+#: ../../../lib/web/src/components/theme-switch.tsx:52
 #: ../../../lib/web/src/lib/preference-utils.ts:20
 msgid "Dark"
 msgstr "تیره"
@@ -436,7 +463,7 @@ msgstr "پیش‌فرض"
 msgid "Default AI account"
 msgstr "حساب پیش‌فرض هوش مصنوعی"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/index.tsx:652
 msgid "Delete"
 msgstr "حذف"
 
@@ -444,7 +471,7 @@ msgstr "حذف"
 msgid "Delete game"
 msgstr "حذف بازی"
 
-#: src/features/go/index.tsx:641
+#: src/features/go/index.tsx:643
 msgid "Delete game?"
 msgstr "بازی حذف شود؟"
 
@@ -452,7 +479,7 @@ msgstr "بازی حذف شود؟"
 msgid "Delete your account on the old server"
 msgstr "حساب کاربری خود را در سرور قدیمی حذف کنید"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:649
 msgid "Deleting..."
 msgstr "در حال حذف..."
 
@@ -492,8 +519,8 @@ msgstr "بستن"
 msgid "Displays the mobile sidebar."
 msgstr "نوار کناری موبایل را نمایش می‌دهد."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:352
 msgid "Download"
 msgstr "دانلود"
 
@@ -529,11 +556,11 @@ msgstr "تقاطع خالی {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "تقاطع خالی {colLabel}{rowLabel}، برای قرار دادن کلیک کنید یا Enter را فشار دهید"
 
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "End game"
 msgstr "پایان بازی"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "End game?"
 msgstr "پایان بازی؟"
 
@@ -584,9 +611,17 @@ msgstr "ایجاد بازی مجدد ناموفق بود"
 msgid "Failed to decline draw"
 msgstr "رد تساوی ناموفق بود"
 
-#: src/features/go/index.tsx:245
+#: src/features/go/index.tsx:246
 msgid "Failed to delete game"
 msgstr "حذف بازی ناموفق بود"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load image"
+msgstr "بارگذاری تصویر ناموفق بود"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load video"
+msgstr "بارگذاری ویدیو ناموفق بود"
 
 #: src/features/go/index.tsx:190
 msgid "Failed to make move"
@@ -608,8 +643,8 @@ msgstr "حذف حساب ناموفق بود"
 msgid "Failed to resign"
 msgstr "تسلیم شدن ناموفق بود"
 
-#: src/features/go/index.tsx:577
-#: src/features/go/index.tsx:609
+#: src/features/go/index.tsx:578
+#: src/features/go/index.tsx:611
 msgid "Failed to send"
 msgstr "ارسال ناموفق بود"
 
@@ -658,7 +693,7 @@ msgstr "چیدمان کامل"
 msgid "Game created"
 msgstr "بازی ایجاد شد"
 
-#: src/features/go/index.tsx:241
+#: src/features/go/index.tsx:242
 msgid "Game deleted"
 msgstr "بازی حذف شد"
 
@@ -668,29 +703,29 @@ msgstr "بازی حذف شد"
 msgid "Go"
 msgstr "برو"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:24
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:24
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:24
+#: ../../../lib/web/src/features/errors/forbidden.tsx:26
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
 msgid "Go back"
 msgstr "بازگشت"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:78
+#: ../../../lib/web/src/components/data-table/pagination.tsx:82
 msgid "Go to first page"
 msgstr "رفتن به صفحه اول"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:124
+#: ../../../lib/web/src/components/data-table/pagination.tsx:128
 msgid "Go to last page"
 msgstr "رفتن به صفحه آخر"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:115
+#: ../../../lib/web/src/components/data-table/pagination.tsx:119
 msgid "Go to next page"
 msgstr "رفتن به صفحه بعد"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:102
+#: ../../../lib/web/src/components/data-table/pagination.tsx:106
 msgid "Go to page {pageNumber}"
 msgstr "رفتن به صفحه {pageNumber}"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:87
+#: ../../../lib/web/src/components/data-table/pagination.tsx:91
 msgid "Go to previous page"
 msgstr "رفتن به صفحه قبل"
 
@@ -717,6 +752,11 @@ msgstr "خانه"
 msgid "Hot"
 msgstr "داغ"
 
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:247
+msgid "Image viewer: {0}"
+msgstr "نمایشگر تصویر: {0}"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:86
 msgid "Imperial"
 msgstr "امپریال"
@@ -732,6 +772,10 @@ msgstr "علاقه‌مندی‌ها"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:245
 msgid "Invalid verification code"
 msgstr "کد تأیید نامعتبر"
+
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:18
+msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
+msgstr "به نظر می‌رسد صفحه‌ای که به دنبال آن هستید <0/>وجود ندارد یا حذف شده است."
 
 #: src/features/go/components/new-game.tsx:186
 msgid "Komi"
@@ -756,6 +800,7 @@ msgid "Left to Right"
 msgstr "چپ به راست"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
+#: ../../../lib/web/src/components/theme-switch.tsx:45
 #: ../../../lib/web/src/lib/preference-utils.ts:19
 msgid "Light"
 msgstr "روشن"
@@ -770,8 +815,8 @@ msgstr "در حال بارگذاری محتوا…"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
-msgid "Loading…"
-msgstr "در حال بارگذاری…"
+msgid "Loading..."
+msgstr "در حال بارگذاری..."
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:101
 #: ../../../lib/web/src/components/layout/nav-user.tsx:167
@@ -795,8 +840,8 @@ msgstr "با موفقیت خارج شد"
 msgid "Logging out…"
 msgstr "در حال خروج…"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:92
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:99
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "علامت‌گذاری همه به‌عنوان خوانده‌شده"
@@ -841,8 +886,8 @@ msgstr "جدید"
 msgid "New game"
 msgstr "بازی جدید"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
 msgstr "تصویر بعدی"
 
@@ -883,7 +928,7 @@ msgid "No profile"
 msgstr "بدون پروفایل"
 
 #: ../../../lib/web/src/components/command-menu.tsx:55
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:90
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:94
 msgid "No results found."
 msgstr "نتیجه‌ای یافت نشد."
 
@@ -924,6 +969,11 @@ msgstr "تنظیم نشده"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:261
 msgid "Notifications"
 msgstr "اعلان‌ها"
+
+#. placeholder {0}: unread.length
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+msgid "Notifications: {0}"
+msgstr "اعلان‌ها: {0}"
 
 #: src/features/go/index.tsx:498
 msgid "Offer draw"
@@ -974,17 +1024,22 @@ msgstr "سایر"
 msgid "Owner"
 msgstr "مالک"
 
+#: ../../../lib/web/src/components/data-table/pagination.tsx:43
+#: ../../../lib/web/src/components/data-table/pagination.tsx:71
+msgid "Page {currentPage} of {totalPages}"
+msgstr "صفحه {currentPage} از {totalPages}"
+
 #: src/features/go/components/chat-message-list.tsx:210
 #: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "Pass"
 msgstr "رد کردن"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "Pass turn?"
 msgstr "نوبت را رد می‌کنید؟"
 
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:674
 msgid "Passing..."
 msgstr "در حال رد کردن..."
 
@@ -1005,6 +1060,10 @@ msgstr "پسکی‌ها"
 msgid "Please check your internet connection and try again."
 msgstr "لطفاً اتصال اینترنت خود را بررسی کرده و دوباره تلاش کنید."
 
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:18
+msgid "Please log in with the appropriate credentials <0/> to access this resource."
+msgstr "لطفاً برای دسترسی به این منبع <0/> با اطلاعات ورود مناسب وارد شوید."
+
 #: src/features/go/components/new-game.tsx:89
 msgid "Please select a friend"
 msgstr "لطفاً یک دوست انتخاب کنید"
@@ -1021,8 +1080,8 @@ msgstr "لطفاً چند لحظه صبر کنید و دوباره امتحان 
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "امتیازهایی که برای جبران شروع زودتر سیاه به امتیاز سفید اضافه می‌شود"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:377
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:382
 msgid "Previous image"
 msgstr "تصویر قبلی"
 
@@ -1084,6 +1143,11 @@ msgstr "حذف"
 msgid "Remove access rule"
 msgstr "حذف قاعده دسترسی"
 
+#. placeholder {0}: formatSubject(subject, data.name)
+#: ../../../lib/web/src/features/access/access-list.tsx:259
+msgid "Remove access rule for \"{0}\"?"
+msgstr "قانون دسترسی برای «{0}» حذف شود؟"
+
 #: ../../../lib/web/src/features/access/access-list.tsx:257
 msgid "Remove access?"
 msgstr "حذف دسترسی؟"
@@ -1107,15 +1171,15 @@ msgid "Reset all settings to default values"
 msgstr "بازنشانی همه تنظیمات به مقادیر پیش‌فرض"
 
 #: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:631
 msgid "Resign"
 msgstr "تسلیم"
 
-#: src/features/go/index.tsx:620
+#: src/features/go/index.tsx:622
 msgid "Resign game?"
 msgstr "بازی را تسلیم می‌شوید؟"
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:628
 msgid "Resigning..."
 msgstr "در حال تسلیم..."
 
@@ -1123,7 +1187,7 @@ msgstr "در حال تسلیم..."
 msgid "Right to Left"
 msgstr "راست به چپ"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:63
+#: ../../../lib/web/src/components/data-table/pagination.tsx:65
 msgid "Rows per page"
 msgstr "ردیف‌ها در هر صفحه"
 
@@ -1206,7 +1270,16 @@ msgstr "انتخاب جهت سایت"
 msgid "Select theme preference"
 msgstr "انتخاب ترجیح تم"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:98
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
+msgid "selected"
+msgstr "انتخاب‌شده"
+
+#. placeholder {0}: getSelectedName()
+#: ../../../lib/web/src/features/access/access-dialog.tsx:309
+msgid "Selected: <0>{0}</0>"
+msgstr "انتخاب‌شده: <0>{0}</0>"
+
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:100
 msgid "Send again"
 msgstr "ارسال مجدد"
 
@@ -1276,7 +1349,7 @@ msgstr "در حال خروج..."
 msgid "Skip to Main"
 msgstr "پرش به محتوای اصلی"
 
-#: src/features/go/index.tsx:666
+#: src/features/go/index.tsx:668
 msgid "Skip your turn and pass to your opponent."
 msgstr "نوبت خود را رد کنید و به حریف بسپارید."
 
@@ -1310,6 +1383,7 @@ msgid "Sunday"
 msgstr "یکشنبه"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:208
+#: ../../../lib/web/src/components/theme-switch.tsx:59
 #: ../../../lib/web/src/lib/preference-utils.ts:21
 #: ../../../lib/web/src/lib/preference-utils.ts:144
 msgid "System"
@@ -1341,6 +1415,10 @@ msgstr "این کد نادرست است یا منقضی شده است."
 msgid "The requested content could not be found."
 msgstr "محتوای درخواستی یافت نشد."
 
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
+msgid "The site is not available at the moment."
+msgstr "سایت در حال حاضر در دسترس نیست."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:194
 msgid "Theme"
 msgstr "تم"
@@ -1349,13 +1427,21 @@ msgstr "تم"
 msgid "Theme Settings"
 msgstr "تنظیمات تم"
 
-#: src/features/go/index.tsx:642
+#: ../../../lib/web/src/components/coming-soon.tsx:14
+msgid "This page has not been created yet."
+msgstr "این صفحه هنوز ایجاد نشده است."
+
+#: src/features/go/index.tsx:644
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "این کار بازی و گفتگوی آن را برای همیشه حذف می‌کند. این عمل قابل بازگشت نیست."
 
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "پنجشنبه"
+
+#: ../../../lib/web/src/components/travelling-picker.tsx:220
+msgid "To"
+msgstr "به"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:37
 msgid "Toggle columns"
@@ -1452,7 +1538,7 @@ msgstr "دسترسی غیرمجاز"
 msgid "United States"
 msgstr "ایالات متحده"
 
-#: src/hooks/useGameWebsocket.ts:168
+#: src/hooks/useGameWebsocket.ts:228
 msgid "Unknown"
 msgstr "ناشناخته"
 
@@ -1468,7 +1554,7 @@ msgstr "از کلید عبور خود استفاده کنید"
 msgid "User"
 msgstr "کاربر"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:71
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:73
 msgid "Verification code"
 msgstr "کد تأیید"
 
@@ -1482,7 +1568,7 @@ msgstr "تأیید ناموفق بود"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:388
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:172
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:109
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:111
 msgid "Verify"
 msgstr "تأیید"
 
@@ -1490,9 +1576,14 @@ msgstr "تأیید"
 msgid "Verify email address"
 msgstr "تأیید نشانی ایمیل"
 
-#: ../../../lib/web/src/components/attachment-gallery.tsx:74
+#: ../../../lib/web/src/components/attachment-gallery.tsx:79
 msgid "Video thumbnail"
 msgstr "بندانگشتی ویدیو"
+
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:246
+msgid "Video viewer: {0}"
+msgstr "نمایشگر ویدیو: {0}"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:33
 msgid "View"
@@ -1502,10 +1593,15 @@ msgstr "نمایش"
 msgid "View all"
 msgstr "نمایش همه"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:105
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:113
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
 msgid "View all notifications"
 msgstr "نمایش همه اعلان‌ها"
+
+#. placeholder {0}: account.identifier
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:63
+msgid "We sent a verification code to <0>{0}</0>. Enter the code below to verify your email address."
+msgstr "کد تأیید را به <0>{0}</0> ارسال کردیم. برای تأیید نشانی رایانامه خود، کد را در زیر وارد کنید."
 
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:16
 msgid "We'll be back online shortly."
@@ -1542,6 +1638,10 @@ msgstr "شما"
 #: ../../../lib/web/src/features/errors/general-error.tsx:61
 msgid "You do not have access to this section."
 msgstr "شما به این بخش دسترسی ندارید."
+
+#: ../../../lib/web/src/features/errors/forbidden.tsx:18
+msgid "You don't have necessary permission <0/>to view this resource."
+msgstr "شما مجوز لازم <0/>برای مشاهده این منبع را ندارید."
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

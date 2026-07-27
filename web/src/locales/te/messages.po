@@ -18,6 +18,15 @@ msgstr ""
 msgid "Please check your internet connection and try again."
 msgstr "దయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
 
+#. placeholder {0}: selectedValues.size
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:66
+msgid "{0, plural, one {# selected} other {# selected}}"
+msgstr "{0, plural, one {# ఎంచుకోబడింది} other {# ఎంచుకోబడ్డాయి}}"
+
+#: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:173
+msgid "{entityLabel} name"
+msgstr "{entityLabel} పేరు"
+
 #: src/features/go/components/chat-message-list.tsx:190
 msgid "{name} declined the draw"
 msgstr "{name} డ్రాను తిరస్కరించారు"
@@ -30,13 +39,29 @@ msgstr "{name} డ్రా ప్రతిపాదించారు"
 msgid "{name} resigned"
 msgstr "{name} ఓటమిని అంగీకరించారు"
 
-#: src/features/go/index.tsx:665
+#: src/features/go/index.tsx:667
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} కూడా దాటవేశారు. నిర్ధారిస్తే ఆట ముగుస్తుంది మరియు బోర్డ్‌కు స్కోర్ ఇవ్వబడుతుంది."
 
 #: src/features/go/components/draw-offer-banner.tsx:30
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} డ్రా అందించారు"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
+msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
+msgstr "{selectedCount, plural, one {{entityName} ఎంచుకోబడింది} other {{manyName} ఎంచుకోబడ్డాయి}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:52
+msgid "{selectedCount, plural, one {# {entityName} selected. Bulk actions toolbar is available.} other {# {manyName} selected. Bulk actions toolbar is available.}}"
+msgstr "{selectedCount, plural, one {# {entityName} ఎంచుకోబడింది. బల్క్ చర్యల టూల్‌బార్ అందుబాటులో ఉంది.} other {# {manyName} ఎంచుకోబడ్డాయి. బల్క్ చర్యల టూల్‌బార్ అందుబాటులో ఉంది.}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:202
+msgid "{selectedCount, plural, one {# selected} other {# selected}}"
+msgstr "{selectedCount, plural, one {# ఎంచుకోబడింది} other {# ఎంచుకోబడింది}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
+msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
+msgstr "{selectedCount, plural, one {# ఎంచుకున్న {entityName} కోసం బల్క్ చర్యలు} other {# ఎంచుకున్న {manyName} కోసం బల్క్ చర్యలు}}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -176,7 +201,7 @@ msgstr "ఊహించని లోపం సంభవించింది"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "మీరు లాగ్ అవుట్ చేయాలనుకుంటున్నారా? మీ ఖాతాను యాక్సెస్ చేయడానికి మీరు మళ్లీ లాగిన్ చేయవలసి ఉంటుంది."
 
-#: src/features/go/index.tsx:621
+#: src/features/go/index.tsx:623
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "మీరు నిజంగా రాజీనామా చేయాలనుకుంటున్నారా? {opponentName} ఆటను గెలుస్తాడు."
 
@@ -196,9 +221,9 @@ msgstr "ఆథెంటికేటర్ కోడ్"
 msgid "Back"
 msgstr "వెనుకకు"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:26
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
+#: ../../../lib/web/src/features/errors/forbidden.tsx:28
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:28
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:28
 msgid "Back to home"
 msgstr "హోమ్‌కు తిరిగి వెళ్ళండి"
 
@@ -235,7 +260,7 @@ msgstr "ఆసక్తిని పెంచండి"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:89
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
 msgid "Cancel"
 msgstr "రద్దు చేయండి"
@@ -250,7 +275,7 @@ msgid "Change notification category"
 msgstr "నోటిఫికేషన్ వర్గాన్ని మార్చండి"
 
 #: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:593
+#: src/features/go/index.tsx:594
 msgid "Chat"
 msgstr "చాట్"
 
@@ -296,28 +321,29 @@ msgstr "క్లియర్ చేయండి"
 msgid "Clear all"
 msgstr "అన్నీ క్లియర్ చేయండి"
 
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:140
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:144
 msgid "Clear filters"
 msgstr "ఫిల్టర్‌లను క్లియర్ చేయండి"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:167
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:171
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:177
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:181
 msgid "Clear selection"
 msgstr "ఎంపికను క్లియర్ చేయండి"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:168
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:178
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:185
 msgid "Clear selection (Escape)"
 msgstr "ఎంపికను క్లియర్ చేయండి (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:358
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:361
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "మూసివేయండి"
 
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:107
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:112
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:108
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:113
 msgid "Close navigation"
 msgstr "నావిగేషన్‌ను మూసివేయండి"
 
@@ -408,6 +434,7 @@ msgid "Custom"
 msgstr "అనుకూల"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:218
+#: ../../../lib/web/src/components/theme-switch.tsx:52
 #: ../../../lib/web/src/lib/preference-utils.ts:20
 msgid "Dark"
 msgstr "డార్క్"
@@ -436,7 +463,7 @@ msgstr "డిఫాల్ట్"
 msgid "Default AI account"
 msgstr "డిఫాల్ట్ AI ఖాతా"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/index.tsx:652
 msgid "Delete"
 msgstr "తొలగించండి"
 
@@ -444,7 +471,7 @@ msgstr "తొలగించండి"
 msgid "Delete game"
 msgstr "ఆటను తొలగించండి"
 
-#: src/features/go/index.tsx:641
+#: src/features/go/index.tsx:643
 msgid "Delete game?"
 msgstr "గేమ్‌ను తొలగించాలా?"
 
@@ -452,7 +479,7 @@ msgstr "గేమ్‌ను తొలగించాలా?"
 msgid "Delete your account on the old server"
 msgstr "పాత సర్వర్‌లో మీ ఖాతాను తొలగించండి"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:649
 msgid "Deleting..."
 msgstr "తొలగిస్తోంది..."
 
@@ -492,8 +519,8 @@ msgstr "విస్మరించండి"
 msgid "Displays the mobile sidebar."
 msgstr "మొబైల్ సైడ్‌బార్‌ను ప్రదర్శిస్తుంది."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:352
 msgid "Download"
 msgstr "డౌన్‌లోడ్"
 
@@ -529,11 +556,11 @@ msgstr "ఖాళీ ఖండన {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ఖాళీ ఖండన {colLabel}{rowLabel}, ఉంచడానికి క్లిక్ చేయండి లేదా Enter నొక్కండి"
 
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "End game"
 msgstr "ఆట ముగించండి"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "End game?"
 msgstr "ఆట ముగించాలా?"
 
@@ -584,9 +611,17 @@ msgstr "రీమ్యాచ్‌ను సృష్టించడంలో �
 msgid "Failed to decline draw"
 msgstr "డ్రాను తిరస్కరించడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:245
+#: src/features/go/index.tsx:246
 msgid "Failed to delete game"
 msgstr "ఆటను తొలగించడంలో విఫలమైంది"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load image"
+msgstr "చిత్రాన్ని లోడ్ చేయడంలో విఫలమైంది"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load video"
+msgstr "వీడియోను లోడ్ చేయడంలో విఫలమైంది"
 
 #: src/features/go/index.tsx:190
 msgid "Failed to make move"
@@ -608,8 +643,8 @@ msgstr "ఖాతాను తీసివేయడంలో విఫలమై�
 msgid "Failed to resign"
 msgstr "రాజీనామా చేయడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:577
-#: src/features/go/index.tsx:609
+#: src/features/go/index.tsx:578
+#: src/features/go/index.tsx:611
 msgid "Failed to send"
 msgstr "పంపడంలో విఫలమైంది"
 
@@ -658,7 +693,7 @@ msgstr "పూర్తి లేఅవుట్"
 msgid "Game created"
 msgstr "ఆట సృష్టించబడింది"
 
-#: src/features/go/index.tsx:241
+#: src/features/go/index.tsx:242
 msgid "Game deleted"
 msgstr "ఆట తొలగించబడింది"
 
@@ -668,29 +703,29 @@ msgstr "ఆట తొలగించబడింది"
 msgid "Go"
 msgstr "వెళ్ళండి"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:24
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:24
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:24
+#: ../../../lib/web/src/features/errors/forbidden.tsx:26
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
 msgid "Go back"
 msgstr "వెనక్కి వెళ్ళండి"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:78
+#: ../../../lib/web/src/components/data-table/pagination.tsx:82
 msgid "Go to first page"
 msgstr "మొదటి పేజీకి వెళ్ళండి"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:124
+#: ../../../lib/web/src/components/data-table/pagination.tsx:128
 msgid "Go to last page"
 msgstr "చివరి పేజీకి వెళ్ళండి"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:115
+#: ../../../lib/web/src/components/data-table/pagination.tsx:119
 msgid "Go to next page"
 msgstr "తదుపరి పేజీకి వెళ్ళండి"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:102
+#: ../../../lib/web/src/components/data-table/pagination.tsx:106
 msgid "Go to page {pageNumber}"
 msgstr "పేజీ {pageNumber}కి వెళ్ళండి"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:87
+#: ../../../lib/web/src/components/data-table/pagination.tsx:91
 msgid "Go to previous page"
 msgstr "మునుపటి పేజీకి వెళ్ళండి"
 
@@ -717,6 +752,11 @@ msgstr "హోమ్"
 msgid "Hot"
 msgstr "హాట్"
 
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:247
+msgid "Image viewer: {0}"
+msgstr "చిత్ర వీక్షకం: {0}"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:86
 msgid "Imperial"
 msgstr "ఇంపీరియల్"
@@ -732,6 +772,10 @@ msgstr "ఆసక్తులు"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:245
 msgid "Invalid verification code"
 msgstr "చెల్లని ధృవీకరణ కోడ్"
+
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:18
+msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
+msgstr "మీరు వెతుకుతున్న పేజీ <0/>లేదు లేదా తీసివేయబడి ఉండవచ్చు."
 
 #: src/features/go/components/new-game.tsx:186
 msgid "Komi"
@@ -756,6 +800,7 @@ msgid "Left to Right"
 msgstr "ఎడమ నుండి కుడికి"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
+#: ../../../lib/web/src/components/theme-switch.tsx:45
 #: ../../../lib/web/src/lib/preference-utils.ts:19
 msgid "Light"
 msgstr "లైట్"
@@ -770,8 +815,8 @@ msgstr "కంటెంట్ లోడ్ అవుతోంది…"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
-msgid "Loading…"
-msgstr "లోడ్ చేస్తోంది…"
+msgid "Loading..."
+msgstr "లోడ్ చేస్తోంది..."
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:101
 #: ../../../lib/web/src/components/layout/nav-user.tsx:167
@@ -795,8 +840,8 @@ msgstr "విజయవంతంగా లాగ్ అవుట్ అయ్య
 msgid "Logging out…"
 msgstr "లాగ్ అవుట్ చేస్తోంది…"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:92
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:99
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "అన్నింటినీ చదివినట్లు గుర్తించండి"
@@ -841,8 +886,8 @@ msgstr "కొత్తది"
 msgid "New game"
 msgstr "కొత్త గేమ్"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
 msgstr "తదుపరి చిత్రం"
 
@@ -883,7 +928,7 @@ msgid "No profile"
 msgstr "ప్రొఫైల్ లేదు"
 
 #: ../../../lib/web/src/components/command-menu.tsx:55
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:90
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:94
 msgid "No results found."
 msgstr "ఫలితాలు ఏవీ కనుగొనబడలేదు."
 
@@ -924,6 +969,11 @@ msgstr "సెట్ చేయబడలేదు"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:261
 msgid "Notifications"
 msgstr "నోటిఫికేషన్‌లు"
+
+#. placeholder {0}: unread.length
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+msgid "Notifications: {0}"
+msgstr "నోటిఫికేషన్‌లు: {0}"
 
 #: src/features/go/index.tsx:498
 msgid "Offer draw"
@@ -974,17 +1024,22 @@ msgstr "ఇతర"
 msgid "Owner"
 msgstr "ఓనర్"
 
+#: ../../../lib/web/src/components/data-table/pagination.tsx:43
+#: ../../../lib/web/src/components/data-table/pagination.tsx:71
+msgid "Page {currentPage} of {totalPages}"
+msgstr "పేజీ {currentPage} / {totalPages}"
+
 #: src/features/go/components/chat-message-list.tsx:210
 #: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "Pass"
 msgstr "పాస్"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "Pass turn?"
 msgstr "టర్న్ పాస్ చేయాలా?"
 
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:674
 msgid "Passing..."
 msgstr "పాస్ చేస్తోంది..."
 
@@ -1005,6 +1060,10 @@ msgstr "పాస్‌కీలు"
 msgid "Please check your internet connection and try again."
 msgstr "దయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
 
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:18
+msgid "Please log in with the appropriate credentials <0/> to access this resource."
+msgstr "ఈ వనరును యాక్సెస్ చేయడానికి <0/> దయచేసి సరైన ఆధారాలతో లాగిన్ చేయండి."
+
 #: src/features/go/components/new-game.tsx:89
 msgid "Please select a friend"
 msgstr "స్నేహితుడిని ఎంచుకోండి"
@@ -1021,8 +1080,8 @@ msgstr "కాసేపు వేచి ఉండి, మళ్లీ ప్ర�
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "బ్లాక్ మొదట వెళ్లడానికి కాంపెన్సేట్ చేయడానికి వైట్ స్కోర్‌కు జోడించిన పాయింట్‌లు"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:377
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:382
 msgid "Previous image"
 msgstr "మునుపటి చిత్రం"
 
@@ -1084,6 +1143,11 @@ msgstr "తొలగించండి"
 msgid "Remove access rule"
 msgstr "యాక్సెస్ నియమాన్ని తొలగించండి"
 
+#. placeholder {0}: formatSubject(subject, data.name)
+#: ../../../lib/web/src/features/access/access-list.tsx:259
+msgid "Remove access rule for \"{0}\"?"
+msgstr "\"{0}\" కోసం యాక్సెస్ నియమాన్ని తీసివేయాలా?"
+
 #: ../../../lib/web/src/features/access/access-list.tsx:257
 msgid "Remove access?"
 msgstr "యాక్సెస్‌ను తొలగించాలా?"
@@ -1107,15 +1171,15 @@ msgid "Reset all settings to default values"
 msgstr "అన్ని సెట్టింగ్‌లను డిఫాల్ట్ విలువలకు రీసెట్ చేయండి"
 
 #: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:631
 msgid "Resign"
 msgstr "రిజైన్"
 
-#: src/features/go/index.tsx:620
+#: src/features/go/index.tsx:622
 msgid "Resign game?"
 msgstr "గేమ్‌ను రిజైన్ చేయాలా?"
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:628
 msgid "Resigning..."
 msgstr "రిజైన్ చేస్తోంది..."
 
@@ -1123,7 +1187,7 @@ msgstr "రిజైన్ చేస్తోంది..."
 msgid "Right to Left"
 msgstr "కుడి నుండి ఎడమకు"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:63
+#: ../../../lib/web/src/components/data-table/pagination.tsx:65
 msgid "Rows per page"
 msgstr "ఒక్కో పేజీకి వరుసలు"
 
@@ -1206,7 +1270,16 @@ msgstr "సైట్ దిశను ఎంచుకోండి"
 msgid "Select theme preference"
 msgstr "థీమ్ ప్రాధాన్యతను ఎంచుకోండి"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:98
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
+msgid "selected"
+msgstr "ఎంచుకోబడింది"
+
+#. placeholder {0}: getSelectedName()
+#: ../../../lib/web/src/features/access/access-dialog.tsx:309
+msgid "Selected: <0>{0}</0>"
+msgstr "ఎంచుకోబడింది: <0>{0}</0>"
+
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:100
 msgid "Send again"
 msgstr "మళ్ళీ పంపండి"
 
@@ -1276,7 +1349,7 @@ msgstr "సైన్ అవుట్ అవుతోంది..."
 msgid "Skip to Main"
 msgstr "మెయిన్‌కు దాటవేయండి"
 
-#: src/features/go/index.tsx:666
+#: src/features/go/index.tsx:668
 msgid "Skip your turn and pass to your opponent."
 msgstr "మీ వంతు దాటవేసి మీ ప్రత్యర్థికి పంపండి."
 
@@ -1310,6 +1383,7 @@ msgid "Sunday"
 msgstr "ఆదివారం"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:208
+#: ../../../lib/web/src/components/theme-switch.tsx:59
 #: ../../../lib/web/src/lib/preference-utils.ts:21
 #: ../../../lib/web/src/lib/preference-utils.ts:144
 msgid "System"
@@ -1341,6 +1415,10 @@ msgstr "ఆ కోడ్ తప్పు లేదా గడువు ముగ�
 msgid "The requested content could not be found."
 msgstr "అభ్యర్థించిన కంటెంట్ కనుగొనబడలేదు."
 
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
+msgid "The site is not available at the moment."
+msgstr "సైట్ ప్రస్తుతం అందుబాటులో లేదు."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:194
 msgid "Theme"
 msgstr "థీమ్"
@@ -1349,13 +1427,21 @@ msgstr "థీమ్"
 msgid "Theme Settings"
 msgstr "థీమ్ సెట్టింగ్‌లు"
 
-#: src/features/go/index.tsx:642
+#: ../../../lib/web/src/components/coming-soon.tsx:14
+msgid "This page has not been created yet."
+msgstr "ఈ పేజీ ఇంకా సృష్టించబడలేదు."
+
+#: src/features/go/index.tsx:644
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ఇది గేమ్‌ను మరియు దాని చాట్‌ను శాశ్వతంగా తొలగిస్తుంది. ఈ చర్యను తిరిగి మార్చలేరు."
 
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "గురువారం"
+
+#: ../../../lib/web/src/components/travelling-picker.tsx:220
+msgid "To"
+msgstr "కు"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:37
 msgid "Toggle columns"
@@ -1452,7 +1538,7 @@ msgstr "అనుమతి లేని యాక్సెస్"
 msgid "United States"
 msgstr "యునైటెడ్ స్టేట్స్"
 
-#: src/hooks/useGameWebsocket.ts:168
+#: src/hooks/useGameWebsocket.ts:228
 msgid "Unknown"
 msgstr "తెలియదు"
 
@@ -1468,7 +1554,7 @@ msgstr "మీ పాస్‌కీని ఉపయోగించండి"
 msgid "User"
 msgstr "యూజర్"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:71
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:73
 msgid "Verification code"
 msgstr "ధృవీకరణ కోడ్"
 
@@ -1482,7 +1568,7 @@ msgstr "ధృవీకరణ విఫలమైంది"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:388
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:172
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:109
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:111
 msgid "Verify"
 msgstr "ధృవీకరించండి"
 
@@ -1490,9 +1576,14 @@ msgstr "ధృవీకరించండి"
 msgid "Verify email address"
 msgstr "ఇమెయిల్ చిరునామాను ధృవీకరించండి"
 
-#: ../../../lib/web/src/components/attachment-gallery.tsx:74
+#: ../../../lib/web/src/components/attachment-gallery.tsx:79
 msgid "Video thumbnail"
 msgstr "వీడియో థంబ్‌నెయిల్"
+
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:246
+msgid "Video viewer: {0}"
+msgstr "వీడియో వీక్షకం: {0}"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:33
 msgid "View"
@@ -1502,10 +1593,15 @@ msgstr "వీక్షించండి"
 msgid "View all"
 msgstr "అన్నీ వీక్షించండి"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:105
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:113
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
 msgid "View all notifications"
 msgstr "అన్ని నోటిఫికేషన్‌లను వీక్షించండి"
+
+#. placeholder {0}: account.identifier
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:63
+msgid "We sent a verification code to <0>{0}</0>. Enter the code below to verify your email address."
+msgstr "మేము <0>{0}</0> కు ధృవీకరణ కోడ్‌ను పంపాము. మీ ఇమెయిల్ చిరునామాను ధృవీకరించడానికి క్రింద కోడ్‌ను నమోదు చేయండి."
 
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:16
 msgid "We'll be back online shortly."
@@ -1542,6 +1638,10 @@ msgstr "మీరు"
 #: ../../../lib/web/src/features/errors/general-error.tsx:61
 msgid "You do not have access to this section."
 msgstr "ఈ విభాగానికి మీకు యాక్సెస్ లేదు."
+
+#: ../../../lib/web/src/features/errors/forbidden.tsx:18
+msgid "You don't have necessary permission <0/>to view this resource."
+msgstr "ఈ వనరును వీక్షించడానికి <0/>మీకు అవసరమైన అనుమతి లేదు."
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

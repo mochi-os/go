@@ -18,6 +18,15 @@ msgstr ""
 msgid "Please check your internet connection and try again."
 msgstr "Skontrolujte pripojenie na internet a skúste to znova."
 
+#. placeholder {0}: selectedValues.size
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:66
+msgid "{0, plural, one {# selected} other {# selected}}"
+msgstr "{0, plural, one {# vybraté} few {# vybraté} many {# vybratých} other {# vybratých}}"
+
+#: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:173
+msgid "{entityLabel} name"
+msgstr "Názov {entityLabel}"
+
 #: src/features/go/components/chat-message-list.tsx:190
 msgid "{name} declined the draw"
 msgstr "{name} odmietol remízu"
@@ -30,13 +39,29 @@ msgstr "{name} ponúkol remízu"
 msgid "{name} resigned"
 msgstr "{name} sa vzdal"
 
-#: src/features/go/index.tsx:665
+#: src/features/go/index.tsx:667
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} tiež preskočil. Potvrdenie ukončí hru a vyhodnotí dosku."
 
 #: src/features/go/components/draw-offer-banner.tsx:30
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ponúkol remízu"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
+msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
+msgstr "{selectedCount, plural, one {Vybraté {entityName}} few {Vybraté {manyName}} many {Vybraných {manyName}} other {Vybraných {manyName}}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:52
+msgid "{selectedCount, plural, one {# {entityName} selected. Bulk actions toolbar is available.} other {# {manyName} selected. Bulk actions toolbar is available.}}"
+msgstr "{selectedCount, plural, one {Vybraté # {entityName}. Panel hromadných akcií je dostupný.} few {Vybraté # {manyName}. Panel hromadných akcií je dostupný.} many {Vybraných # {manyName}. Panel hromadných akcií je dostupný.} other {Vybraných # {manyName}. Panel hromadných akcií je dostupný.}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:202
+msgid "{selectedCount, plural, one {# selected} other {# selected}}"
+msgstr "{selectedCount, plural, one {# vybraté} few {# vybraté} many {# vybraté} other {# vybraté}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
+msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
+msgstr "{selectedCount, plural, one {Hromadné akcie pre # vybraté {entityName}} few {Hromadné akcie pre # vybraté {manyName}} many {Hromadné akcie pre # vybratých {manyName}} other {Hromadné akcie pre # vybratého {manyName}}}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -176,7 +201,7 @@ msgstr "Vyskytla sa neočakávaná chyba"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Naozaj sa chcete odhlásiť? Pre prístup k účtu sa budete musieť znova prihlásiť."
 
-#: src/features/go/index.tsx:621
+#: src/features/go/index.tsx:623
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Naozaj sa chcete vzdať? Hru vyhrá {opponentName}."
 
@@ -196,9 +221,9 @@ msgstr "Autentifikačný kód"
 msgid "Back"
 msgstr "Späť"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:26
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
+#: ../../../lib/web/src/features/errors/forbidden.tsx:28
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:28
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:28
 msgid "Back to home"
 msgstr "Späť na úvod"
 
@@ -235,7 +260,7 @@ msgstr "Zvýšiť záujem"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:89
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
 msgid "Cancel"
 msgstr "Zrušiť"
@@ -250,7 +275,7 @@ msgid "Change notification category"
 msgstr "Zmeniť kategóriu notifikácie"
 
 #: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:593
+#: src/features/go/index.tsx:594
 msgid "Chat"
 msgstr "Chat"
 
@@ -296,28 +321,29 @@ msgstr "Vymazať"
 msgid "Clear all"
 msgstr "Vymazať všetko"
 
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:140
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:144
 msgid "Clear filters"
 msgstr "Vymazať filtre"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:167
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:171
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:177
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:181
 msgid "Clear selection"
 msgstr "Zrušiť výber"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:168
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:178
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:185
 msgid "Clear selection (Escape)"
 msgstr "Zrušiť výber (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:358
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:361
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "Zavrieť"
 
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:107
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:112
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:108
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:113
 msgid "Close navigation"
 msgstr "Zavrieť navigáciu"
 
@@ -408,6 +434,7 @@ msgid "Custom"
 msgstr "Vlastné"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:218
+#: ../../../lib/web/src/components/theme-switch.tsx:52
 #: ../../../lib/web/src/lib/preference-utils.ts:20
 msgid "Dark"
 msgstr "Tmavé"
@@ -436,7 +463,7 @@ msgstr "Predvolené"
 msgid "Default AI account"
 msgstr "Predvolený AI účet"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/index.tsx:652
 msgid "Delete"
 msgstr "Odstrániť"
 
@@ -444,7 +471,7 @@ msgstr "Odstrániť"
 msgid "Delete game"
 msgstr "Odstrániť hru"
 
-#: src/features/go/index.tsx:641
+#: src/features/go/index.tsx:643
 msgid "Delete game?"
 msgstr "Odstrániť hru?"
 
@@ -452,7 +479,7 @@ msgstr "Odstrániť hru?"
 msgid "Delete your account on the old server"
 msgstr "Odstráňte svoj účet na starom serveri"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:649
 msgid "Deleting..."
 msgstr "Odstraňuje sa..."
 
@@ -492,8 +519,8 @@ msgstr "Zatvoriť"
 msgid "Displays the mobile sidebar."
 msgstr "Zobrazí mobilný bočný panel."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:352
 msgid "Download"
 msgstr "Stiahnuť"
 
@@ -529,11 +556,11 @@ msgstr "Prázdny priesečník {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Prázdny priesečník {colLabel}{rowLabel}, kliknite alebo stlačte Enter pre umiestnenie"
 
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "End game"
 msgstr "Ukončiť hru"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "End game?"
 msgstr "Ukončiť hru?"
 
@@ -584,9 +611,17 @@ msgstr "Nepodarilo sa vytvoriť odvetu"
 msgid "Failed to decline draw"
 msgstr "Nepodarilo sa odmietnuť remízu"
 
-#: src/features/go/index.tsx:245
+#: src/features/go/index.tsx:246
 msgid "Failed to delete game"
 msgstr "Nepodarilo sa zmazať hru"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load image"
+msgstr "Obrázok sa nepodarilo načítať"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load video"
+msgstr "Video sa nepodarilo načítať"
 
 #: src/features/go/index.tsx:190
 msgid "Failed to make move"
@@ -608,8 +643,8 @@ msgstr "Nepodarilo sa odstrániť účet"
 msgid "Failed to resign"
 msgstr "Nepodarilo sa vzdať"
 
-#: src/features/go/index.tsx:577
-#: src/features/go/index.tsx:609
+#: src/features/go/index.tsx:578
+#: src/features/go/index.tsx:611
 msgid "Failed to send"
 msgstr "Nepodarilo sa odoslať"
 
@@ -658,7 +693,7 @@ msgstr "Úplné rozloženie"
 msgid "Game created"
 msgstr "Hra vytvorená"
 
-#: src/features/go/index.tsx:241
+#: src/features/go/index.tsx:242
 msgid "Game deleted"
 msgstr "Hra zmazaná"
 
@@ -668,29 +703,29 @@ msgstr "Hra zmazaná"
 msgid "Go"
 msgstr "Choď"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:24
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:24
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:24
+#: ../../../lib/web/src/features/errors/forbidden.tsx:26
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
 msgid "Go back"
 msgstr "Späť"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:78
+#: ../../../lib/web/src/components/data-table/pagination.tsx:82
 msgid "Go to first page"
 msgstr "Prejsť na prvú stranu"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:124
+#: ../../../lib/web/src/components/data-table/pagination.tsx:128
 msgid "Go to last page"
 msgstr "Prejsť na poslednú stranu"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:115
+#: ../../../lib/web/src/components/data-table/pagination.tsx:119
 msgid "Go to next page"
 msgstr "Prejsť na ďalšiu stranu"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:102
+#: ../../../lib/web/src/components/data-table/pagination.tsx:106
 msgid "Go to page {pageNumber}"
 msgstr "Prejsť na stránku {pageNumber}"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:87
+#: ../../../lib/web/src/components/data-table/pagination.tsx:91
 msgid "Go to previous page"
 msgstr "Prejsť na predchádzajúcu stranu"
 
@@ -717,6 +752,11 @@ msgstr "Domov"
 msgid "Hot"
 msgstr "Populárne"
 
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:247
+msgid "Image viewer: {0}"
+msgstr "Prehliadač obrázkov: {0}"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:86
 msgid "Imperial"
 msgstr "Imperiálne"
@@ -732,6 +772,10 @@ msgstr "Záujmy"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:245
 msgid "Invalid verification code"
 msgstr "Neplatný overovací kód"
+
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:18
+msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
+msgstr "Zdá sa, že stránka, ktorú hľadáte, <0/>neexistuje alebo bola odstránená."
 
 #: src/features/go/components/new-game.tsx:186
 msgid "Komi"
@@ -756,6 +800,7 @@ msgid "Left to Right"
 msgstr "Zľava doprava"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
+#: ../../../lib/web/src/components/theme-switch.tsx:45
 #: ../../../lib/web/src/lib/preference-utils.ts:19
 msgid "Light"
 msgstr "Svetlý"
@@ -770,7 +815,7 @@ msgstr "Načítava sa obsah…"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
-msgid "Loading…"
+msgid "Loading..."
 msgstr "Načítava sa…"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:101
@@ -795,8 +840,8 @@ msgstr "Úspešne odhlásené"
 msgid "Logging out…"
 msgstr "Odhlasuje sa…"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:92
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:99
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "Označiť všetko ako prečítané"
@@ -841,8 +886,8 @@ msgstr "Nový"
 msgid "New game"
 msgstr "Nová hra"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
 msgstr "Ďalší obrázok"
 
@@ -883,7 +928,7 @@ msgid "No profile"
 msgstr "Bez profilu"
 
 #: ../../../lib/web/src/components/command-menu.tsx:55
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:90
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:94
 msgid "No results found."
 msgstr "Nenašli sa žiadne výsledky."
 
@@ -924,6 +969,11 @@ msgstr "Nenastavené"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:261
 msgid "Notifications"
 msgstr "Notifikácie"
+
+#. placeholder {0}: unread.length
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+msgid "Notifications: {0}"
+msgstr "Oznámenia: {0}"
 
 #: src/features/go/index.tsx:498
 msgid "Offer draw"
@@ -974,17 +1024,22 @@ msgstr "Iné"
 msgid "Owner"
 msgstr "Vlastník"
 
+#: ../../../lib/web/src/components/data-table/pagination.tsx:43
+#: ../../../lib/web/src/components/data-table/pagination.tsx:71
+msgid "Page {currentPage} of {totalPages}"
+msgstr "Stránka {currentPage} z {totalPages}"
+
 #: src/features/go/components/chat-message-list.tsx:210
 #: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "Pass"
 msgstr "Prejsť"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "Pass turn?"
 msgstr "Vynechať ťah?"
 
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:674
 msgid "Passing..."
 msgstr "Vynechávam..."
 
@@ -1005,6 +1060,10 @@ msgstr "Prístupové kľúče"
 msgid "Please check your internet connection and try again."
 msgstr "Skontrolujte pripojenie na internet a skúste to znova."
 
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:18
+msgid "Please log in with the appropriate credentials <0/> to access this resource."
+msgstr "Prihláste sa s príslušnými prihlasovacími údajmi, <0/> aby ste získali prístup k tomuto zdroju."
+
 #: src/features/go/components/new-game.tsx:89
 msgid "Please select a friend"
 msgstr "Vyberte priateľa"
@@ -1021,8 +1080,8 @@ msgstr "Chvíľu počkajte a skúste to znova."
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Body pridané k skóre bieleho ako kompenzácia za to, že čierny ťahá ako prvý"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:377
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:382
 msgid "Previous image"
 msgstr "Predchádzajúci obrázok"
 
@@ -1084,6 +1143,11 @@ msgstr "Odstrániť"
 msgid "Remove access rule"
 msgstr "Odstrániť pravidlo prístupu"
 
+#. placeholder {0}: formatSubject(subject, data.name)
+#: ../../../lib/web/src/features/access/access-list.tsx:259
+msgid "Remove access rule for \"{0}\"?"
+msgstr "Odstrániť pravidlo prístupu pre „{0}“?"
+
 #: ../../../lib/web/src/features/access/access-list.tsx:257
 msgid "Remove access?"
 msgstr "Odstrániť prístup?"
@@ -1107,15 +1171,15 @@ msgid "Reset all settings to default values"
 msgstr "Obnoviť všetky nastavenia na predvolené hodnoty"
 
 #: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:631
 msgid "Resign"
 msgstr "Vzdať"
 
-#: src/features/go/index.tsx:620
+#: src/features/go/index.tsx:622
 msgid "Resign game?"
 msgstr "Vzdať hru?"
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:628
 msgid "Resigning..."
 msgstr "Vzdávam..."
 
@@ -1123,7 +1187,7 @@ msgstr "Vzdávam..."
 msgid "Right to Left"
 msgstr "Sprava doľava"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:63
+#: ../../../lib/web/src/components/data-table/pagination.tsx:65
 msgid "Rows per page"
 msgstr "Riadkov na stránku"
 
@@ -1206,7 +1270,16 @@ msgstr "Vybrať smer stránky"
 msgid "Select theme preference"
 msgstr "Vybrať predvoľbu motívu"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:98
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
+msgid "selected"
+msgstr "vybraté"
+
+#. placeholder {0}: getSelectedName()
+#: ../../../lib/web/src/features/access/access-dialog.tsx:309
+msgid "Selected: <0>{0}</0>"
+msgstr "Vybraté: <0>{0}</0>"
+
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:100
 msgid "Send again"
 msgstr "Odoslať znova"
 
@@ -1276,7 +1349,7 @@ msgstr "Odhlasuje sa..."
 msgid "Skip to Main"
 msgstr "Preskočiť na hlavný obsah"
 
-#: src/features/go/index.tsx:666
+#: src/features/go/index.tsx:668
 msgid "Skip your turn and pass to your opponent."
 msgstr "Preskočte ťah a podajte ho súperovi."
 
@@ -1310,6 +1383,7 @@ msgid "Sunday"
 msgstr "Nedeľa"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:208
+#: ../../../lib/web/src/components/theme-switch.tsx:59
 #: ../../../lib/web/src/lib/preference-utils.ts:21
 #: ../../../lib/web/src/lib/preference-utils.ts:144
 msgid "System"
@@ -1341,6 +1415,10 @@ msgstr "Tento kód je nesprávny alebo vypršal."
 msgid "The requested content could not be found."
 msgstr "Požadovaný obsah sa nepodarilo nájsť."
 
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
+msgid "The site is not available at the moment."
+msgstr "Stránka momentálne nie je dostupná."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:194
 msgid "Theme"
 msgstr "Motív"
@@ -1349,13 +1427,21 @@ msgstr "Motív"
 msgid "Theme Settings"
 msgstr "Nastavenia motívu"
 
-#: src/features/go/index.tsx:642
+#: ../../../lib/web/src/components/coming-soon.tsx:14
+msgid "This page has not been created yet."
+msgstr "Táto stránka zatiaľ nebola vytvorená."
+
+#: src/features/go/index.tsx:644
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Týmto trvalo odstránite hru a jej chat. Túto akciu nemožno vrátiť späť."
 
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Štvrtok"
+
+#: ../../../lib/web/src/components/travelling-picker.tsx:220
+msgid "To"
+msgstr "Kam"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:37
 msgid "Toggle columns"
@@ -1452,7 +1538,7 @@ msgstr "Neoprávnený prístup"
 msgid "United States"
 msgstr "Spojené štáty"
 
-#: src/hooks/useGameWebsocket.ts:168
+#: src/hooks/useGameWebsocket.ts:228
 msgid "Unknown"
 msgstr "Neznáme"
 
@@ -1468,7 +1554,7 @@ msgstr "Použite svoj prístupový kľúč"
 msgid "User"
 msgstr "Používateľ"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:71
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:73
 msgid "Verification code"
 msgstr "Overovací kód"
 
@@ -1482,7 +1568,7 @@ msgstr "Overenie zlyhalo"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:388
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:172
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:109
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:111
 msgid "Verify"
 msgstr "Overiť"
 
@@ -1490,9 +1576,14 @@ msgstr "Overiť"
 msgid "Verify email address"
 msgstr "Overiť e-mailovú adresu"
 
-#: ../../../lib/web/src/components/attachment-gallery.tsx:74
+#: ../../../lib/web/src/components/attachment-gallery.tsx:79
 msgid "Video thumbnail"
 msgstr "Miniatúra videa"
+
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:246
+msgid "Video viewer: {0}"
+msgstr "Prehliadač videí: {0}"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:33
 msgid "View"
@@ -1502,10 +1593,15 @@ msgstr "Zobraziť"
 msgid "View all"
 msgstr "Zobraziť všetko"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:105
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:113
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
 msgid "View all notifications"
 msgstr "Zobraziť všetky oznámenia"
+
+#. placeholder {0}: account.identifier
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:63
+msgid "We sent a verification code to <0>{0}</0>. Enter the code below to verify your email address."
+msgstr "Overovací kód sme odoslali na <0>{0}</0>. Zadajte kód nižšie na overenie vašej e-mailovej adresy."
 
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:16
 msgid "We'll be back online shortly."
@@ -1542,6 +1638,10 @@ msgstr "Vy"
 #: ../../../lib/web/src/features/errors/general-error.tsx:61
 msgid "You do not have access to this section."
 msgstr "Nemáte prístup k tejto sekcii."
+
+#: ../../../lib/web/src/features/errors/forbidden.tsx:18
+msgid "You don't have necessary permission <0/>to view this resource."
+msgstr "Nemáte potrebné oprávnenie <0/>na zobrazenie tohto zdroja."
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

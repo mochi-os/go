@@ -18,6 +18,15 @@ msgstr ""
 msgid "Please check your internet connection and try again."
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਇੰਟਰਨੈੱਟ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
 
+#. placeholder {0}: selectedValues.size
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:66
+msgid "{0, plural, one {# selected} other {# selected}}"
+msgstr "{0, plural, one {# ਚੁਣੇ ਗਏ} other {# ਚੁਣੇ ਗਏ}}"
+
+#: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:173
+msgid "{entityLabel} name"
+msgstr "{entityLabel} ਨਾਮ"
+
 #: src/features/go/components/chat-message-list.tsx:190
 msgid "{name} declined the draw"
 msgstr "{name} ਨੇ ਡਰਾਅ ਠੁਕਰਾ ਦਿੱਤਾ"
@@ -30,13 +39,29 @@ msgstr "{name} ਨੇ ਡਰਾਅ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ"
 msgid "{name} resigned"
 msgstr "{name} ਨੇ ਹਾਰ ਮੰਨ ਲਈ"
 
-#: src/features/go/index.tsx:665
+#: src/features/go/index.tsx:667
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} ਨੇ ਵੀ ਪਾਸ ਕੀਤਾ। ਪੁਸ਼ਟੀ ਕਰਨ ਨਾਲ ਖੇਡ ਖਤਮ ਹੋ ਜਾਵੇਗੀ ਅਤੇ ਬੋਰਡ ਦਾ ਸਕੋਰ ਹੋਵੇਗਾ।"
 
 #: src/features/go/components/draw-offer-banner.tsx:30
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ਨੇ ਡਰਾਅ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
+msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
+msgstr "{selectedCount, plural, one {{entityName} ਚੁਣਿਆ ਗਿਆ} other {{manyName} ਚੁਣੇ ਗਏ}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:52
+msgid "{selectedCount, plural, one {# {entityName} selected. Bulk actions toolbar is available.} other {# {manyName} selected. Bulk actions toolbar is available.}}"
+msgstr "{selectedCount, plural, one {# {entityName} ਚੁਣਿਆ ਗਿਆ। ਬਲਕ ਕਾਰਵਾਈ ਟੂਲਬਾਰ ਉਪਲਬਧ ਹੈ।} other {# {manyName} ਚੁਣੇ ਗਏ। ਬਲਕ ਕਾਰਵਾਈ ਟੂਲਬਾਰ ਉਪਲਬਧ ਹੈ।}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:202
+msgid "{selectedCount, plural, one {# selected} other {# selected}}"
+msgstr "{selectedCount, plural, one {# ਚੁਣੇ ਗਏ} other {# ਚੁਣੇ ਗਏ}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
+msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
+msgstr "{selectedCount, plural, one {# ਚੁਣੇ {entityName} ਲਈ ਬਲਕ ਕਾਰਵਾਈਆਂ} other {# ਚੁਣੇ {manyName} ਲਈ ਬਲਕ ਕਾਰਵਾਈਆਂ}}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -176,7 +201,7 @@ msgstr "ਇੱਕ ਅਣਕਿਆਸੀ ਗੜਬੜ ਹੋਈ"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਹੋ ਕਿ ਤੁਸੀਂ ਲੌਗ ਆਉਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ? ਆਪਣੇ ਖਾਤੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਤੁਹਾਨੂੰ ਦੁਬਾਰਾ ਲੌਗ ਇਨ ਕਰਨਾ ਪਵੇਗਾ।"
 
-#: src/features/go/index.tsx:621
+#: src/features/go/index.tsx:623
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ ਤੇ ਅਸਤੀਫਾ ਦੇਣਾ ਚਾਹੁੰਦੇ ਹੋ? {opponentName} ਖੇਡ ਜਿੱਤੇਗਾ।"
 
@@ -196,9 +221,9 @@ msgstr "ਪ੍ਰਮਾਣਕ ਕੋਡ"
 msgid "Back"
 msgstr "ਵਾਪਸ"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:26
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
+#: ../../../lib/web/src/features/errors/forbidden.tsx:28
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:28
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:28
 msgid "Back to home"
 msgstr "ਮੁੱਖ ਪੰਨੇ ਤੇ ਵਾਪਸ"
 
@@ -235,7 +260,7 @@ msgstr "ਦਿਲਚਸਪੀ ਵਧਾਓ"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:89
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
 msgid "Cancel"
 msgstr "ਰੱਦ ਕਰੋ"
@@ -250,7 +275,7 @@ msgid "Change notification category"
 msgstr "ਨੋਟੀਫਿਕੇਸ਼ਨ ਸ਼੍ਰੇਣੀ ਬਦਲੋ"
 
 #: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:593
+#: src/features/go/index.tsx:594
 msgid "Chat"
 msgstr "ਚੈਟ"
 
@@ -296,28 +321,29 @@ msgstr "ਸਾਫ਼ ਕਰੋ"
 msgid "Clear all"
 msgstr "ਸਭ ਸਾਫ਼ ਕਰੋ"
 
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:140
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:144
 msgid "Clear filters"
 msgstr "ਫਿਲਟਰ ਸਾਫ਼ ਕਰੋ"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:167
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:171
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:177
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:181
 msgid "Clear selection"
 msgstr "ਚੋਣ ਸਾਫ਼ ਕਰੋ"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:168
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:178
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:185
 msgid "Clear selection (Escape)"
 msgstr "ਚੋਣ ਸਾਫ਼ ਕਰੋ (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:358
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:361
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "ਬੰਦ ਕਰੋ"
 
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:107
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:112
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:108
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:113
 msgid "Close navigation"
 msgstr "ਨੈਵੀਗੇਸ਼ਨ ਬੰਦ ਕਰੋ"
 
@@ -408,6 +434,7 @@ msgid "Custom"
 msgstr "ਕਸਟਮ"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:218
+#: ../../../lib/web/src/components/theme-switch.tsx:52
 #: ../../../lib/web/src/lib/preference-utils.ts:20
 msgid "Dark"
 msgstr "ਡਾਰਕ"
@@ -436,7 +463,7 @@ msgstr "ਡਿਫਾਲਟ"
 msgid "Default AI account"
 msgstr "ਡਿਫਾਲਟ AI ਖਾਤਾ"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/index.tsx:652
 msgid "Delete"
 msgstr "ਮਿਟਾਓ"
 
@@ -444,7 +471,7 @@ msgstr "ਮਿਟਾਓ"
 msgid "Delete game"
 msgstr "ਖੇਡ ਮਿਟਾਓ"
 
-#: src/features/go/index.tsx:641
+#: src/features/go/index.tsx:643
 msgid "Delete game?"
 msgstr "ਗੇਮ ਮਿਟਾਈਏ?"
 
@@ -452,7 +479,7 @@ msgstr "ਗੇਮ ਮਿਟਾਈਏ?"
 msgid "Delete your account on the old server"
 msgstr "ਪੁਰਾਣੇ ਸਰਵਰ 'ਤੇ ਆਪਣਾ ਖਾਤਾ ਮਿਟਾਓ"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:649
 msgid "Deleting..."
 msgstr "ਮਿਟਾ ਰਹੇ ਹਾਂ..."
 
@@ -492,8 +519,8 @@ msgstr "ਖਾਰਜ ਕਰੋ"
 msgid "Displays the mobile sidebar."
 msgstr "ਮੋਬਾਈਲ ਸਾਈਡਬਾਰ ਡਿਸਪਲੇ ਕਰਦਾ ਹੈ।"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:352
 msgid "Download"
 msgstr "ਡਾਊਨਲੋਡ"
 
@@ -529,11 +556,11 @@ msgstr "ਖਾਲੀ ਚੌਰਾਹਾ {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ਖਾਲੀ ਚੌਰਾਹਾ {colLabel}{rowLabel}, ਰੱਖਣ ਲਈ ਕਲਿੱਕ ਕਰੋ ਜਾਂ Enter ਦਬਾਓ"
 
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "End game"
 msgstr "ਗੇਮ ਖ਼ਤਮ ਕਰੋ"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "End game?"
 msgstr "ਗੇਮ ਖ਼ਤਮ ਕਰਨੀ ਹੈ?"
 
@@ -584,9 +611,17 @@ msgstr "ਰੀਮੈਚ ਬਣਾਉਣ ਵਿੱਚ ਅਸਫਲ"
 msgid "Failed to decline draw"
 msgstr "ਡ੍ਰਾਅ ਅਸਵੀਕਾਰ ਕਰਨ ਵਿੱਚ ਅਸਫਲ"
 
-#: src/features/go/index.tsx:245
+#: src/features/go/index.tsx:246
 msgid "Failed to delete game"
 msgstr "ਗੇਮ ਮਿਟਾਉਣ ਵਿੱਚ ਅਸਫਲ"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load image"
+msgstr "ਚਿੱਤਰ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load video"
+msgstr "ਵੀਡੀਓ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ"
 
 #: src/features/go/index.tsx:190
 msgid "Failed to make move"
@@ -608,8 +643,8 @@ msgstr "ਖਾਤਾ ਹਟਾਉਣ ਵਿੱਚ ਅਸਫਲ"
 msgid "Failed to resign"
 msgstr "ਅਸਤੀਫ਼ਾ ਦੇਣ ਵਿੱਚ ਅਸਫਲ"
 
-#: src/features/go/index.tsx:577
-#: src/features/go/index.tsx:609
+#: src/features/go/index.tsx:578
+#: src/features/go/index.tsx:611
 msgid "Failed to send"
 msgstr "ਭੇਜਣ ਵਿੱਚ ਅਸਫਲ"
 
@@ -658,7 +693,7 @@ msgstr "ਪੂਰਾ ਲੇਆਉਟ"
 msgid "Game created"
 msgstr "ਗੇਮ ਬਣਾਈ ਗਈ"
 
-#: src/features/go/index.tsx:241
+#: src/features/go/index.tsx:242
 msgid "Game deleted"
 msgstr "ਗੇਮ ਮਿਟਾਈ ਗਈ"
 
@@ -668,29 +703,29 @@ msgstr "ਗੇਮ ਮਿਟਾਈ ਗਈ"
 msgid "Go"
 msgstr "ਜਾਓ"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:24
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:24
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:24
+#: ../../../lib/web/src/features/errors/forbidden.tsx:26
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
 msgid "Go back"
 msgstr "ਵਾਪਸ ਜਾਓ"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:78
+#: ../../../lib/web/src/components/data-table/pagination.tsx:82
 msgid "Go to first page"
 msgstr "ਪਹਿਲੇ ਪੇਜ ਉੱਤੇ ਜਾਓ"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:124
+#: ../../../lib/web/src/components/data-table/pagination.tsx:128
 msgid "Go to last page"
 msgstr "ਆਖਰੀ ਪੇਜ ਉੱਤੇ ਜਾਓ"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:115
+#: ../../../lib/web/src/components/data-table/pagination.tsx:119
 msgid "Go to next page"
 msgstr "ਅਗਲੇ ਪੇਜ ਉੱਤੇ ਜਾਓ"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:102
+#: ../../../lib/web/src/components/data-table/pagination.tsx:106
 msgid "Go to page {pageNumber}"
 msgstr "ਪੰਨਾ {pageNumber} ਤੇ ਜਾਓ"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:87
+#: ../../../lib/web/src/components/data-table/pagination.tsx:91
 msgid "Go to previous page"
 msgstr "ਪਿਛਲੇ ਪੇਜ ਉੱਤੇ ਜਾਓ"
 
@@ -717,6 +752,11 @@ msgstr "ਮੁੱਖ"
 msgid "Hot"
 msgstr "ਪ੍ਰਸਿੱਧ"
 
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:247
+msgid "Image viewer: {0}"
+msgstr "ਚਿੱਤਰ ਦਰਸ਼ਕ: {0}"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:86
 msgid "Imperial"
 msgstr "ਇੰਪੀਰੀਅਲ"
@@ -732,6 +772,10 @@ msgstr "ਦਿਲਚਸਪੀਆਂ"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:245
 msgid "Invalid verification code"
 msgstr "ਅਯੋਗ ਤਸਦੀਕ ਕੋਡ"
+
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:18
+msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
+msgstr "ਜਾਪਦਾ ਹੈ ਕਿ ਜਿਹੜਾ ਪੰਨਾ ਤੁਸੀਂ ਲੱਭ ਰਹੇ ਹੋ <0/>ਉਹ ਮੌਜੂਦ ਨਹੀਂ ਹੈ ਜਾਂ ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ।"
 
 #: src/features/go/components/new-game.tsx:186
 msgid "Komi"
@@ -756,6 +800,7 @@ msgid "Left to Right"
 msgstr "ਲਿਸਟਿੰਗ ਬਣਾਈ ਗਈ"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
+#: ../../../lib/web/src/components/theme-switch.tsx:45
 #: ../../../lib/web/src/lib/preference-utils.ts:19
 msgid "Light"
 msgstr "ਲਿਸਟਿੰਗ ਮਿਟਾਈ ਗਈ"
@@ -770,8 +815,8 @@ msgstr "ਸਮੱਗਰੀ ਲੋਡ ਹੋ ਰਹੀ ਹੈ…"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
-msgid "Loading…"
-msgstr "ਲਾਗਆਊਟ ਕੀਤਾ ਗਿਆ (ਗ਼ਲਤੀਆਂ ਨਾਲ)"
+msgid "Loading..."
+msgstr "ਲਾਗਇਨ ਕੀਤਾ"
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:101
 #: ../../../lib/web/src/components/layout/nav-user.tsx:167
@@ -795,8 +840,8 @@ msgstr "ਸਫਲਤਾਪੂਰਵਕ ਲੌਗ ਆਊਟ ਹੋ ਗਏ"
 msgid "Logging out…"
 msgstr "ਲੌਗ ਆਊਟ ਹੋ ਰਿਹਾ ਹੈ…"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:92
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:99
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "ਸਾਰੇ ਪੜ੍ਹੇ ਵਜੋਂ ਮਾਰਕ ਕਰੋ"
@@ -841,8 +886,8 @@ msgstr "ਨਵਾਂ"
 msgid "New game"
 msgstr "ਨਵੀਂ ਗੇਮ"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
 msgstr "ਅਗਲੀ ਤਸਵੀਰ"
 
@@ -883,7 +928,7 @@ msgid "No profile"
 msgstr "ਕੋਈ ਪ੍ਰੋਫਾਈਲ ਨਹੀਂ"
 
 #: ../../../lib/web/src/components/command-menu.tsx:55
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:90
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:94
 msgid "No results found."
 msgstr "ਕੋਈ ਨਤੀਜੇ ਨਹੀਂ ਮਿਲੇ।"
 
@@ -924,6 +969,11 @@ msgstr "ਸੈੱਟ ਨਹੀਂ"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:261
 msgid "Notifications"
 msgstr "ਨੋਟੀਫਿਕੇਸ਼ਨ"
+
+#. placeholder {0}: unread.length
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+msgid "Notifications: {0}"
+msgstr "ਸੂਚਨਾਵਾਂ: {0}"
 
 #: src/features/go/index.tsx:498
 msgid "Offer draw"
@@ -974,17 +1024,22 @@ msgstr "ਹੋਰ"
 msgid "Owner"
 msgstr "ਮਾਲਕ"
 
+#: ../../../lib/web/src/components/data-table/pagination.tsx:43
+#: ../../../lib/web/src/components/data-table/pagination.tsx:71
+msgid "Page {currentPage} of {totalPages}"
+msgstr "ਪੰਨਾ {currentPage} / {totalPages}"
+
 #: src/features/go/components/chat-message-list.tsx:210
 #: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "Pass"
 msgstr "ਪਾਸ"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "Pass turn?"
 msgstr "ਟਰਨ ਪਾਸ ਕਰੋ?"
 
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:674
 msgid "Passing..."
 msgstr "ਪਾਸ ਕਰ ਰਿਹਾ ਹੈ..."
 
@@ -1005,6 +1060,10 @@ msgstr "ਪਾਸਕੀਆਂ"
 msgid "Please check your internet connection and try again."
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਇੰਟਰਨੈੱਟ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
 
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:18
+msgid "Please log in with the appropriate credentials <0/> to access this resource."
+msgstr "ਇਸ ਸਰੋਤ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ <0/> ਕਿਰਪਾ ਕਰਕੇ ਢੁਕਵੇਂ ਪ੍ਰਮਾਣ ਪੱਤਰਾਂ ਨਾਲ ਲੌਗ ਇਨ ਕਰੋ।"
+
 #: src/features/go/components/new-game.tsx:89
 msgid "Please select a friend"
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਦੋਸਤ ਚੁਣੋ"
@@ -1021,8 +1080,8 @@ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਥੋੜ੍ਹੀ ਦੇਰ ਉਡੀਕ �
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "ਕਾਲੇ ਦੇ ਪਹਿਲਾਂ ਜਾਣ ਦੀ ਪੂਰਤੀ ਲਈ ਚਿੱਟੇ ਦੇ ਸਕੋਰ ਵਿੱਚ ਜੋੜੇ ਗਏ ਅੰਕ"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:377
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:382
 msgid "Previous image"
 msgstr "ਪਿਛਲੀ ਤਸਵੀਰ"
 
@@ -1084,6 +1143,11 @@ msgstr "ਹਟਾਓ"
 msgid "Remove access rule"
 msgstr "ਪਹੁੰਚ ਨਿਯਮ ਹਟਾਓ"
 
+#. placeholder {0}: formatSubject(subject, data.name)
+#: ../../../lib/web/src/features/access/access-list.tsx:259
+msgid "Remove access rule for \"{0}\"?"
+msgstr "\"{0}\" ਲਈ ਪਹੁੰਚ ਨਿਯਮ ਹਟਾਈਏ?"
+
 #: ../../../lib/web/src/features/access/access-list.tsx:257
 msgid "Remove access?"
 msgstr "ਪਹੁੰਚ ਹਟਾਏ?"
@@ -1107,15 +1171,15 @@ msgid "Reset all settings to default values"
 msgstr "ਸਾਰੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਡਿਫਾਲਟ ਮੁੱਲਾਂ 'ਤੇ ਰੀਸੈੱਟ ਕਰੋ"
 
 #: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:631
 msgid "Resign"
 msgstr "ਅਸਤੀਫ਼ਾ ਦਿਓ"
 
-#: src/features/go/index.tsx:620
+#: src/features/go/index.tsx:622
 msgid "Resign game?"
 msgstr "ਗੇਮ ਤੋਂ ਅਸਤੀਫ਼ਾ ਦੇਈਏ?"
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:628
 msgid "Resigning..."
 msgstr "ਅਸਤੀਫ਼ਾ ਦੇ ਰਿਹਾ ਹੈ..."
 
@@ -1123,7 +1187,7 @@ msgstr "ਅਸਤੀਫ਼ਾ ਦੇ ਰਿਹਾ ਹੈ..."
 msgid "Right to Left"
 msgstr "ਸੱਜੇ ਤੋਂ ਖੱਬੇ"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:63
+#: ../../../lib/web/src/components/data-table/pagination.tsx:65
 msgid "Rows per page"
 msgstr "ਪ੍ਰਤੀ ਪੇਜ ਕਤਾਰਾਂ"
 
@@ -1206,7 +1270,16 @@ msgstr "ਸਾਈਟ ਦੀ ਦਿਸ਼ਾ ਚੁਣੋ"
 msgid "Select theme preference"
 msgstr "theme ਪਸੰਦ ਚੁਣੋ"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:98
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
+msgid "selected"
+msgstr "ਚੁਣੇ ਗਏ"
+
+#. placeholder {0}: getSelectedName()
+#: ../../../lib/web/src/features/access/access-dialog.tsx:309
+msgid "Selected: <0>{0}</0>"
+msgstr "ਚੁਣਿਆ: <0>{0}</0>"
+
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:100
 msgid "Send again"
 msgstr "ਫਿਰ ਭੇਜੋ"
 
@@ -1276,7 +1349,7 @@ msgstr "ਸਾਈਨ ਆਊਟ ਕਰ ਰਿਹਾ ਹੈ..."
 msgid "Skip to Main"
 msgstr "ਮੁੱਖ ਵੱਲ ਜਾਓ"
 
-#: src/features/go/index.tsx:666
+#: src/features/go/index.tsx:668
 msgid "Skip your turn and pass to your opponent."
 msgstr "ਆਪਣੀ ਵਾਰੀ ਛੱਡੋ ਅਤੇ ਆਪਣੇ ਵਿਰੋਧੀ ਨੂੰ ਪਾਸ ਕਰੋ।"
 
@@ -1310,6 +1383,7 @@ msgid "Sunday"
 msgstr "ਐਤਵਾਰ"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:208
+#: ../../../lib/web/src/components/theme-switch.tsx:59
 #: ../../../lib/web/src/lib/preference-utils.ts:21
 #: ../../../lib/web/src/lib/preference-utils.ts:144
 msgid "System"
@@ -1341,6 +1415,10 @@ msgstr "ਉਹ ਕੋਡ ਗਲਤ ਹੈ ਜਾਂ ਇਸ ਦੀ ਮਿਆਦ �
 msgid "The requested content could not be found."
 msgstr "ਬੇਨਤੀ ਕੀਤੀ ਸਮੱਗਰੀ ਨਹੀਂ ਮਿਲੀ।"
 
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
+msgid "The site is not available at the moment."
+msgstr "ਸਾਈਟ ਇਸ ਸਮੇਂ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।"
+
 #: ../../../lib/web/src/components/config-drawer.tsx:194
 msgid "Theme"
 msgstr "theme"
@@ -1349,13 +1427,21 @@ msgstr "theme"
 msgid "Theme Settings"
 msgstr "theme ਸੈਟਿੰਗਾਂ"
 
-#: src/features/go/index.tsx:642
+#: ../../../lib/web/src/components/coming-soon.tsx:14
+msgid "This page has not been created yet."
+msgstr "ਇਹ ਪੰਨਾ ਅਜੇ ਤੱਕ ਨਹੀਂ ਬਣਾਇਆ ਗਿਆ।"
+
+#: src/features/go/index.tsx:644
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ਇਹ ਗੇਮ ਅਤੇ ਇਸਦੀ ਚੈਟ ਨੂੰ ਸਥਾਈ ਤੌਰ 'ਤੇ ਮਿਟਾ ਦੇਵੇਗਾ। ਇਸ ਕਾਰਵਾਈ ਨੂੰ ਵਾਪਸ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਦਾ।"
 
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "ਵੀਰਵਾਰ"
+
+#: ../../../lib/web/src/components/travelling-picker.tsx:220
+msgid "To"
+msgstr "ਵੱਲ"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:37
 msgid "Toggle columns"
@@ -1452,7 +1538,7 @@ msgstr "ਅਣਅਧਿਕਾਰਤ ਪਹੁੰਚ"
 msgid "United States"
 msgstr "ਸੰਯੁਕਤ ਰਾਜ"
 
-#: src/hooks/useGameWebsocket.ts:168
+#: src/hooks/useGameWebsocket.ts:228
 msgid "Unknown"
 msgstr "ਅਣਜਾਣ"
 
@@ -1468,7 +1554,7 @@ msgstr "ਆਪਣੀ ਪਾਸਕੀ ਵਰਤੋ"
 msgid "User"
 msgstr "ਉਪਭੋਗਤਾ"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:71
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:73
 msgid "Verification code"
 msgstr "ਪੁਸ਼ਟੀ ਕੋਡ"
 
@@ -1482,7 +1568,7 @@ msgstr "ਪੁਸ਼ਟੀ ਅਸਫਲ"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:388
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:172
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:109
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:111
 msgid "Verify"
 msgstr "ਪੁਸ਼ਟੀ ਕਰੋ"
 
@@ -1490,9 +1576,14 @@ msgstr "ਪੁਸ਼ਟੀ ਕਰੋ"
 msgid "Verify email address"
 msgstr "ਈਮੇਲ ਪਤੇ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ"
 
-#: ../../../lib/web/src/components/attachment-gallery.tsx:74
+#: ../../../lib/web/src/components/attachment-gallery.tsx:79
 msgid "Video thumbnail"
 msgstr "ਵੀਡੀਓ ਥੰਬਨੇਲ"
+
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:246
+msgid "Video viewer: {0}"
+msgstr "ਵੀਡੀਓ ਦਰਸ਼ਕ: {0}"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:33
 msgid "View"
@@ -1502,10 +1593,15 @@ msgstr "ਦੇਖੋ"
 msgid "View all"
 msgstr "ਸਭ ਦੇਖੋ"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:105
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:113
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
 msgid "View all notifications"
 msgstr "ਸਾਰੀਆਂ ਸੂਚਨਾਵਾਂ ਦੇਖੋ"
+
+#. placeholder {0}: account.identifier
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:63
+msgid "We sent a verification code to <0>{0}</0>. Enter the code below to verify your email address."
+msgstr "ਅਸੀਂ <0>{0}</0> 'ਤੇ ਇੱਕ ਤਸਦੀਕ ਕੋਡ ਭੇਜਿਆ ਹੈ। ਆਪਣਾ ਈਮੇਲ ਪਤਾ ਤਸਦੀਕ ਕਰਨ ਲਈ ਹੇਠਾਂ ਕੋਡ ਦਰਜ ਕਰੋ।"
 
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:16
 msgid "We'll be back online shortly."
@@ -1542,6 +1638,10 @@ msgstr "ਤੁਸੀਂ"
 #: ../../../lib/web/src/features/errors/general-error.tsx:61
 msgid "You do not have access to this section."
 msgstr "ਤੁਹਾਡੇ ਕੋਲ ਇਸ ਭਾਗ ਤੱਕ ਪਹੁੰਚ ਨਹੀਂ ਹੈ।"
+
+#: ../../../lib/web/src/features/errors/forbidden.tsx:18
+msgid "You don't have necessary permission <0/>to view this resource."
+msgstr "ਇਸ ਸਰੋਤ ਨੂੰ ਵੇਖਣ ਲਈ <0/>ਤੁਹਾਡੇ ਕੋਲ ਲੋੜੀਂਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਹੈ।"
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

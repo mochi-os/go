@@ -18,6 +18,15 @@ msgstr ""
 msgid "Please check your internet connection and try again."
 msgstr "നിങ്ങളുടെ ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക."
 
+#. placeholder {0}: selectedValues.size
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:66
+msgid "{0, plural, one {# selected} other {# selected}}"
+msgstr "{0, plural, one {# തിരഞ്ഞെടുത്തു} other {# തിരഞ്ഞെടുത്തു}}"
+
+#: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:173
+msgid "{entityLabel} name"
+msgstr "{entityLabel} പേര്"
+
 #: src/features/go/components/chat-message-list.tsx:190
 msgid "{name} declined the draw"
 msgstr "{name} സമനില നിരസിച്ചു"
@@ -30,13 +39,29 @@ msgstr "{name} സമനില വാഗ്ദാനം ചെയ്തു"
 msgid "{name} resigned"
 msgstr "{name} കീഴടങ്ങി"
 
-#: src/features/go/index.tsx:665
+#: src/features/go/index.tsx:667
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} ഉം പാസ് ചെയ്തു. സ്ഥിരീകരിച്ചാൽ ഗെയിം അവസാനിക്കുകയും ബോർഡ് സ്കോർ ചെയ്യുകയും ചെയ്യും."
 
 #: src/features/go/components/draw-offer-banner.tsx:30
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} സമനില വാഗ്ദാനം ചെയ്തു"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
+msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
+msgstr "{selectedCount, plural, one {{entityName} തിരഞ്ഞെടുത്തു} other {{manyName} തിരഞ്ഞെടുത്തു}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:52
+msgid "{selectedCount, plural, one {# {entityName} selected. Bulk actions toolbar is available.} other {# {manyName} selected. Bulk actions toolbar is available.}}"
+msgstr "{selectedCount, plural, one {# {entityName} തിരഞ്ഞെടുത്തു. ബൾക്ക് പ്രവർത്തന ടൂൾബാർ ലഭ്യമാണ്.} other {# {manyName} തിരഞ്ഞെടുത്തു. ബൾക്ക് പ്രവർത്തന ടൂൾബാർ ലഭ്യമാണ്.}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:202
+msgid "{selectedCount, plural, one {# selected} other {# selected}}"
+msgstr "{selectedCount, plural, one {# തിരഞ്ഞെടുത്തു} other {# തിരഞ്ഞെടുത്തു}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
+msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
+msgstr "{selectedCount, plural, one {# തിരഞ്ഞെടുത്ത {entityName} എന്നതിനുള്ള ബൾക്ക് പ്രവർത്തനങ്ങൾ} other {# തിരഞ്ഞെടുത്ത {manyName} എന്നതിനുള്ള ബൾക്ക് പ്രവർത്തനങ്ങൾ}}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -176,7 +201,7 @@ msgstr "അപ്രതീക്ഷിത പിശക് സംഭവിച്�
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "ലോഗ് ഔട്ട് ചെയ്യണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ? നിങ്ങളുടെ അക്കൗണ്ട് ആക്സസ് ചെയ്യാൻ വീണ്ടും ലോഗിൻ ചെയ്യേണ്ടിവരും."
 
-#: src/features/go/index.tsx:621
+#: src/features/go/index.tsx:623
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "നിങ്ങൾ കീഴടങ്ങാൻ തീർച്ചയാണോ? {opponentName} ഗെയിം ജയിക്കും."
 
@@ -196,9 +221,9 @@ msgstr "Authenticator കോഡ്"
 msgid "Back"
 msgstr "തിരികെ"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:26
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
+#: ../../../lib/web/src/features/errors/forbidden.tsx:28
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:28
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:28
 msgid "Back to home"
 msgstr "ഹോമിലേക്ക് മടങ്ങുക"
 
@@ -235,7 +260,7 @@ msgstr "താൽപ്പര്യം വർദ്ധിപ്പിക്ക�
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:89
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
 msgid "Cancel"
 msgstr "റദ്ദാക്കുക"
@@ -250,7 +275,7 @@ msgid "Change notification category"
 msgstr "അറിയിപ്പ് വിഭാഗം മാറ്റുക"
 
 #: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:593
+#: src/features/go/index.tsx:594
 msgid "Chat"
 msgstr "ചാറ്റ്"
 
@@ -296,28 +321,29 @@ msgstr "മായ്ക്കുക"
 msgid "Clear all"
 msgstr "എല്ലാം മായ്ക്കുക"
 
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:140
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:144
 msgid "Clear filters"
 msgstr "ഫിൽട്ടറുകൾ മായ്ക്കുക"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:167
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:171
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:177
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:181
 msgid "Clear selection"
 msgstr "തിരഞ്ഞെടുപ്പ് മായ്ക്കുക"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:168
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:178
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:185
 msgid "Clear selection (Escape)"
 msgstr "തിരഞ്ഞെടുപ്പ് മായ്ക്കുക (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:358
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:361
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "അടയ്ക്കുക"
 
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:107
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:112
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:108
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:113
 msgid "Close navigation"
 msgstr "നാവിഗേഷൻ അടയ്ക്കുക"
 
@@ -408,6 +434,7 @@ msgid "Custom"
 msgstr "ഇഷ്ടാനുസൃതം"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:218
+#: ../../../lib/web/src/components/theme-switch.tsx:52
 #: ../../../lib/web/src/lib/preference-utils.ts:20
 msgid "Dark"
 msgstr "ഇരുണ്ടത്"
@@ -436,7 +463,7 @@ msgstr "ഡിഫോൾട്ട്"
 msgid "Default AI account"
 msgstr "ഡിഫോൾട്ട് AI അക്കൗണ്ട്"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/index.tsx:652
 msgid "Delete"
 msgstr "ഇല്ലാതാക്കുക"
 
@@ -444,7 +471,7 @@ msgstr "ഇല്ലാതാക്കുക"
 msgid "Delete game"
 msgstr "ഗെയിം ഇല്ലാതാക്കുക"
 
-#: src/features/go/index.tsx:641
+#: src/features/go/index.tsx:643
 msgid "Delete game?"
 msgstr "ഗെയിം ഇല്ലാതാക്കണോ?"
 
@@ -452,7 +479,7 @@ msgstr "ഗെയിം ഇല്ലാതാക്കണോ?"
 msgid "Delete your account on the old server"
 msgstr "പഴയ സെർവറിൽ നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കുക"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:649
 msgid "Deleting..."
 msgstr "ഇല്ലാതാക്കുന്നു..."
 
@@ -492,8 +519,8 @@ msgstr "ഒഴിവാക്കുക"
 msgid "Displays the mobile sidebar."
 msgstr "മൊബൈൽ സൈഡ്‌ബാർ പ്രദർശിപ്പിക്കുന്നു."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:352
 msgid "Download"
 msgstr "ഡൗൺലോഡ്"
 
@@ -529,11 +556,11 @@ msgstr "ശൂന്യമായ കവല {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ശൂന്യമായ കവല {colLabel}{rowLabel}, വയ്ക്കാൻ ക്ലിക്ക് ചെയ്യുക അല്ലെങ്കിൽ Enter അമർത്തുക"
 
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "End game"
 msgstr "ഗെയിം അവസാനിപ്പിക്കുക"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "End game?"
 msgstr "ഗെയിം അവസാനിപ്പിക്കണോ?"
 
@@ -584,9 +611,17 @@ msgstr "റീമാച്ച് സൃഷ്ടിക്കുന്നതി�
 msgid "Failed to decline draw"
 msgstr "സമനില നിരസിക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:245
+#: src/features/go/index.tsx:246
 msgid "Failed to delete game"
 msgstr "ഗെയിം ഇല്ലാതാക്കുന്നതിൽ പരാജയപ്പെട്ടു"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load image"
+msgstr "ചിത്രം ലോഡ് ചെയ്യാനായില്ല"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load video"
+msgstr "വീഡിയോ ലോഡ് ചെയ്യാനായില്ല"
 
 #: src/features/go/index.tsx:190
 msgid "Failed to make move"
@@ -608,8 +643,8 @@ msgstr "അക്കൗണ്ട് നീക്കം ചെയ്യുന്�
 msgid "Failed to resign"
 msgstr "രാജിവയ്ക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:577
-#: src/features/go/index.tsx:609
+#: src/features/go/index.tsx:578
+#: src/features/go/index.tsx:611
 msgid "Failed to send"
 msgstr "അയയ്ക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
@@ -658,7 +693,7 @@ msgstr "പൂർണ്ണ ലേഔട്ട്"
 msgid "Game created"
 msgstr "ഗെയിം സൃഷ്ടിച്ചു"
 
-#: src/features/go/index.tsx:241
+#: src/features/go/index.tsx:242
 msgid "Game deleted"
 msgstr "ഗെയിം ഇല്ലാതാക്കി"
 
@@ -668,29 +703,29 @@ msgstr "ഗെയിം ഇല്ലാതാക്കി"
 msgid "Go"
 msgstr "പോകുക"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:24
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:24
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:24
+#: ../../../lib/web/src/features/errors/forbidden.tsx:26
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
 msgid "Go back"
 msgstr "തിരികെ പോകുക"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:78
+#: ../../../lib/web/src/components/data-table/pagination.tsx:82
 msgid "Go to first page"
 msgstr "ആദ്യ പേജിലേക്ക് പോകുക"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:124
+#: ../../../lib/web/src/components/data-table/pagination.tsx:128
 msgid "Go to last page"
 msgstr "അവസാന പേജിലേക്ക് പോകുക"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:115
+#: ../../../lib/web/src/components/data-table/pagination.tsx:119
 msgid "Go to next page"
 msgstr "അടുത്ത പേജിലേക്ക് പോകുക"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:102
+#: ../../../lib/web/src/components/data-table/pagination.tsx:106
 msgid "Go to page {pageNumber}"
 msgstr "പേജ് {pageNumber}-ലേക്ക് പോകുക"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:87
+#: ../../../lib/web/src/components/data-table/pagination.tsx:91
 msgid "Go to previous page"
 msgstr "മുൻ പേജിലേക്ക് പോകുക"
 
@@ -717,6 +752,11 @@ msgstr "ഹോം"
 msgid "Hot"
 msgstr "ഹോട്ട്"
 
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:247
+msgid "Image viewer: {0}"
+msgstr "ചിത്ര വ്യൂവർ: {0}"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:86
 msgid "Imperial"
 msgstr "ഇംപീരിയൽ"
@@ -732,6 +772,10 @@ msgstr "താൽപ്പര്യങ്ങൾ"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:245
 msgid "Invalid verification code"
 msgstr "അസാധുവായ സ്ഥിരീകരണ കോഡ്"
+
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:18
+msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
+msgstr "നിങ്ങൾ തിരയുന്ന പേജ് <0/>നിലവിലില്ല അല്ലെങ്കിൽ നീക്കംചെയ്തിരിക്കാം."
 
 #: src/features/go/components/new-game.tsx:186
 msgid "Komi"
@@ -756,6 +800,7 @@ msgid "Left to Right"
 msgstr "ഇടത്ത് നിന്ന് വലത്തേക്ക്"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
+#: ../../../lib/web/src/components/theme-switch.tsx:45
 #: ../../../lib/web/src/lib/preference-utils.ts:19
 msgid "Light"
 msgstr "ലൈറ്റ്"
@@ -770,8 +815,8 @@ msgstr "ഉള്ളടക്കം ലോഡ് ചെയ്യുന്നു�
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
-msgid "Loading…"
-msgstr "ലോഡുചെയ്യുന്നു…"
+msgid "Loading..."
+msgstr "ലോഡുചെയ്യുന്നു..."
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:101
 #: ../../../lib/web/src/components/layout/nav-user.tsx:167
@@ -795,8 +840,8 @@ msgstr "വിജയകരമായി ലോഗ് ഔട്ട് ചെയ്
 msgid "Logging out…"
 msgstr "ലോഗ് ഔട്ട് ചെയ്യുന്നു…"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:92
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:99
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "എല്ലാം വായിച്ചതായി അടയാളപ്പെടുത്തുക"
@@ -841,8 +886,8 @@ msgstr "പുതിയത്"
 msgid "New game"
 msgstr "പുതിയ ഗെയിം"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
 msgstr "അടുത്ത ചിത്രം"
 
@@ -883,7 +928,7 @@ msgid "No profile"
 msgstr "പ്രൊഫൈൽ ഇല്ല"
 
 #: ../../../lib/web/src/components/command-menu.tsx:55
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:90
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:94
 msgid "No results found."
 msgstr "ഫലങ്ങളൊന്നും കണ്ടെത്തിയില്ല."
 
@@ -924,6 +969,11 @@ msgstr "സജ്ജമാക്കിയിട്ടില്ല"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:261
 msgid "Notifications"
 msgstr "അറിയിപ്പുകൾ"
+
+#. placeholder {0}: unread.length
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+msgid "Notifications: {0}"
+msgstr "അറിയിപ്പുകൾ: {0}"
 
 #: src/features/go/index.tsx:498
 msgid "Offer draw"
@@ -974,17 +1024,22 @@ msgstr "മറ്റുള്ളവ"
 msgid "Owner"
 msgstr "ഉടമ"
 
+#: ../../../lib/web/src/components/data-table/pagination.tsx:43
+#: ../../../lib/web/src/components/data-table/pagination.tsx:71
+msgid "Page {currentPage} of {totalPages}"
+msgstr "പേജ് {currentPage} / {totalPages}"
+
 #: src/features/go/components/chat-message-list.tsx:210
 #: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "Pass"
 msgstr "പാസ് ചെയ്യുക"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "Pass turn?"
 msgstr "ടേൺ പാസ് ചെയ്യണോ?"
 
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:674
 msgid "Passing..."
 msgstr "പാസ് ചെയ്യുന്നു..."
 
@@ -1005,6 +1060,10 @@ msgstr "പാസ്കീകൾ"
 msgid "Please check your internet connection and try again."
 msgstr "നിങ്ങളുടെ ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക."
 
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:18
+msgid "Please log in with the appropriate credentials <0/> to access this resource."
+msgstr "ഈ ഉറവിടം ആക്‌സസ് ചെയ്യാൻ <0/> ഉചിതമായ ക്രെഡൻഷ്യലുകൾ ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യുക."
+
 #: src/features/go/components/new-game.tsx:89
 msgid "Please select a friend"
 msgstr "ഒരു സുഹൃത്തിനെ തിരഞ്ഞെടുക്കുക"
@@ -1021,8 +1080,8 @@ msgstr "അൽപ്പനേരം കാത്തിരുന്ന് വീ�
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Black ആദ്യം പോകുന്നതിന് നഷ്ടപരിഹാരമായി White-ന്റെ സ്കോറിലേക്ക് ചേർത്ത പോയിന്റുകൾ"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:377
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:382
 msgid "Previous image"
 msgstr "മുമ്പത്തെ ഫോട്ടോ"
 
@@ -1084,6 +1143,11 @@ msgstr "നീക്കം ചെയ്യുക (അടുത്ത അറി�
 msgid "Remove access rule"
 msgstr "ആക്സസ് നീക്കം ചെയ്യണോ?"
 
+#. placeholder {0}: formatSubject(subject, data.name)
+#: ../../../lib/web/src/features/access/access-list.tsx:259
+msgid "Remove access rule for \"{0}\"?"
+msgstr "\"{0}\" എന്നതിനുള്ള ആക്‌സസ് നിയമം നീക്കംചെയ്യണോ?"
+
 #: ../../../lib/web/src/features/access/access-list.tsx:257
 msgid "Remove access?"
 msgstr "അക്കൗണ്ട് നീക്കം ചെയ്യണോ?"
@@ -1107,15 +1171,15 @@ msgid "Reset all settings to default values"
 msgstr "മുൻഗണനകൾ റീസെറ്റ് ചെയ്യണോ?"
 
 #: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:631
 msgid "Resign"
 msgstr "ഗെയിം പിന്മാറണോ?"
 
-#: src/features/go/index.tsx:620
+#: src/features/go/index.tsx:622
 msgid "Resign game?"
 msgstr "പിന്മാറുന്നു..."
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:628
 msgid "Resigning..."
 msgstr "റെസല്യൂഷൻ"
 
@@ -1123,7 +1187,7 @@ msgstr "റെസല്യൂഷൻ"
 msgid "Right to Left"
 msgstr "വലത്തുനിന്ന് ഇടത്തേക്ക്"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:63
+#: ../../../lib/web/src/components/data-table/pagination.tsx:65
 msgid "Rows per page"
 msgstr "ഒരു പേജിലെ വരികൾ"
 
@@ -1206,7 +1270,16 @@ msgstr "സൈറ്റ് ദിശ തിരഞ്ഞെടുക്കുക"
 msgid "Select theme preference"
 msgstr "തീം മുൻഗണന തിരഞ്ഞെടുക്കുക"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:98
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
+msgid "selected"
+msgstr "തിരഞ്ഞെടുത്തു"
+
+#. placeholder {0}: getSelectedName()
+#: ../../../lib/web/src/features/access/access-dialog.tsx:309
+msgid "Selected: <0>{0}</0>"
+msgstr "തിരഞ്ഞെടുത്തത്: <0>{0}</0>"
+
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:100
 msgid "Send again"
 msgstr "വീണ്ടും അയയ്ക്കുക"
 
@@ -1276,7 +1349,7 @@ msgstr "സൈൻ ഔട്ട് ചെയ്യുന്നു..."
 msgid "Skip to Main"
 msgstr "പ്രധാനഭാഗത്തേക്ക് പോകുക"
 
-#: src/features/go/index.tsx:666
+#: src/features/go/index.tsx:668
 msgid "Skip your turn and pass to your opponent."
 msgstr "നിങ്ങളുടെ ഊഴം ഒഴിവാക്കി എതിരാളിക്ക് കൈമാറുക."
 
@@ -1310,6 +1383,7 @@ msgid "Sunday"
 msgstr "ഞായറാഴ്ച"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:208
+#: ../../../lib/web/src/components/theme-switch.tsx:59
 #: ../../../lib/web/src/lib/preference-utils.ts:21
 #: ../../../lib/web/src/lib/preference-utils.ts:144
 msgid "System"
@@ -1341,6 +1415,10 @@ msgstr "ആ കോഡ് തെറ്റാണ് അല്ലെങ്കിൽ
 msgid "The requested content could not be found."
 msgstr "അഭ്യർത്ഥിച്ച ഉള്ളടക്കം കണ്ടെത്താനായില്ല."
 
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
+msgid "The site is not available at the moment."
+msgstr "സൈറ്റ് ഈ നിമിഷം ലഭ്യമല്ല."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:194
 msgid "Theme"
 msgstr "തീം"
@@ -1349,13 +1427,21 @@ msgstr "തീം"
 msgid "Theme Settings"
 msgstr "തീം ക്രമീകരണങ്ങൾ"
 
-#: src/features/go/index.tsx:642
+#: ../../../lib/web/src/components/coming-soon.tsx:14
+msgid "This page has not been created yet."
+msgstr "ഈ പേജ് ഇതുവരെ സൃഷ്ടിച്ചിട്ടില്ല."
+
+#: src/features/go/index.tsx:644
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ഇത് ഗെയിമും അതിന്റെ ചാറ്റും ശാശ്വതമായി ഇല്ലാതാക്കും. ഈ പ്രവർത്തി പഴയപടിയാക്കാൻ കഴിയില്ല."
 
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "വ്യാഴാഴ്ച"
+
+#: ../../../lib/web/src/components/travelling-picker.tsx:220
+msgid "To"
+msgstr "എവിടേക്ക്"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:37
 msgid "Toggle columns"
@@ -1452,7 +1538,7 @@ msgstr "അനുവദിക്കാത്ത ആക്സസ്"
 msgid "United States"
 msgstr "യുണൈറ്റഡ് സ്റ്റേറ്റ്സ്"
 
-#: src/hooks/useGameWebsocket.ts:168
+#: src/hooks/useGameWebsocket.ts:228
 msgid "Unknown"
 msgstr "അജ്ഞാതം"
 
@@ -1468,7 +1554,7 @@ msgstr "നിങ്ങളുടെ പാസ്‌കീ ഉപയോഗിക�
 msgid "User"
 msgstr "ഉപയോക്താവ്"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:71
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:73
 msgid "Verification code"
 msgstr "സ്ഥിരീകരണ കോഡ്"
 
@@ -1482,7 +1568,7 @@ msgstr "സ്ഥിരീകരണം പരാജയപ്പെട്ടു"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:388
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:172
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:109
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:111
 msgid "Verify"
 msgstr "സ്ഥിരീകരിക്കുക"
 
@@ -1490,9 +1576,14 @@ msgstr "സ്ഥിരീകരിക്കുക"
 msgid "Verify email address"
 msgstr "ഇമെയിൽ വിലാസം സ്ഥിരീകരിക്കുക"
 
-#: ../../../lib/web/src/components/attachment-gallery.tsx:74
+#: ../../../lib/web/src/components/attachment-gallery.tsx:79
 msgid "Video thumbnail"
 msgstr "വീഡിയോ തംബ്നെയിൽ"
+
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:246
+msgid "Video viewer: {0}"
+msgstr "വീഡിയോ വ്യൂവർ: {0}"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:33
 msgid "View"
@@ -1502,10 +1593,15 @@ msgstr "കാണുക"
 msgid "View all"
 msgstr "എല്ലാം കാണുക"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:105
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:113
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
 msgid "View all notifications"
 msgstr "എല്ലാ അറിയിപ്പുകളും കാണുക"
+
+#. placeholder {0}: account.identifier
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:63
+msgid "We sent a verification code to <0>{0}</0>. Enter the code below to verify your email address."
+msgstr "ഞങ്ങൾ <0>{0}</0> എന്നതിലേക്ക് ഒരു പരിശോധനാ കോഡ് അയച്ചു. നിങ്ങളുടെ ഇമെയിൽ വിലാസം പരിശോധിക്കാൻ താഴെ കോഡ് നൽകുക."
 
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:16
 msgid "We'll be back online shortly."
@@ -1542,6 +1638,10 @@ msgstr "നിങ്ങൾ"
 #: ../../../lib/web/src/features/errors/general-error.tsx:61
 msgid "You do not have access to this section."
 msgstr "ഈ വിഭാഗത്തിലേക്ക് നിങ്ങൾക്ക് പ്രവേശനമില്ല."
+
+#: ../../../lib/web/src/features/errors/forbidden.tsx:18
+msgid "You don't have necessary permission <0/>to view this resource."
+msgstr "ഈ ഉറവിടം കാണാൻ <0/>നിങ്ങൾക്ക് ആവശ്യമായ അനുമതിയില്ല."
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

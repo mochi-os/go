@@ -18,6 +18,15 @@ msgstr ""
 msgid "Please check your internet connection and try again."
 msgstr "Internet tinkiyniykita qhaway, kutiykachimuy."
 
+#. placeholder {0}: selectedValues.size
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:66
+msgid "{0, plural, one {# selected} other {# selected}}"
+msgstr "{0, plural, one {# akllasqa} other {# akllasqa}}"
+
+#: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:173
+msgid "{entityLabel} name"
+msgstr "{entityLabel} suti"
+
 #: src/features/go/components/chat-message-list.tsx:190
 msgid "{name} declined the draw"
 msgstr "{name} kikllachakuyta mana munarqachu"
@@ -30,13 +39,29 @@ msgstr "{name} kikllachakuyta rikuchirqa"
 msgid "{name} resigned"
 msgstr "{name} haykurqa"
 
-#: src/features/go/index.tsx:665
+#: src/features/go/index.tsx:667
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName}pas pasarqan. Confirmaspaqa pukllay tukukunqa hinaspa boardta puntuanqa."
 
 #: src/features/go/components/draw-offer-banner.tsx:30
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} kuska kayta nirqan"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:210
+msgid "{selectedCount, plural, one {{entityName} selected} other {{manyName} selected}}"
+msgstr "{selectedCount, plural, one {{entityName} akllasqa} other {{manyName} akllasqa}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:52
+msgid "{selectedCount, plural, one {# {entityName} selected. Bulk actions toolbar is available.} other {# {manyName} selected. Bulk actions toolbar is available.}}"
+msgstr "{selectedCount, plural, one {# {entityName} akllasqa. Huñu ruway barra kachkan.} other {# {manyName} akllasqa. Huñu ruway barra kachkan.}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:202
+msgid "{selectedCount, plural, one {# selected} other {# selected}}"
+msgstr "{selectedCount, plural, one {# akllasqa} other {# akllasqa}}"
+
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
+msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
+msgstr "{selectedCount, plural, one {# akllasqa {entityName} paq huñu ruwaykuna} other {# akllasqa {manyName} paq huñu ruwaykuna}}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -176,7 +201,7 @@ msgstr "Mana suyasqa pantay rikurirqan"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Lluqsiyta munanki? Kutichiy yaykunaykipaq cuenta-yki-pi."
 
-#: src/features/go/index.tsx:621
+#: src/features/go/index.tsx:623
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Saqiyta munanki? {opponentName} pukllayta atipanqa."
 
@@ -196,9 +221,9 @@ msgstr "Authenticator código"
 msgid "Back"
 msgstr "Kutichiy"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:26
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
+#: ../../../lib/web/src/features/errors/forbidden.tsx:28
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:28
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:28
 msgid "Back to home"
 msgstr "Wasiman kutiy"
 
@@ -235,7 +260,7 @@ msgstr "Munay yapay"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
 #: ../../../lib/web/src/features/access/access-list.tsx:263
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:89
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
 msgid "Cancel"
 msgstr "Mana ruway"
@@ -250,7 +275,7 @@ msgid "Change notification category"
 msgstr "Willaykuna categoría tikray"
 
 #: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:593
+#: src/features/go/index.tsx:594
 msgid "Chat"
 msgstr "Chat"
 
@@ -296,28 +321,29 @@ msgstr "Pichay"
 msgid "Clear all"
 msgstr "Llapan pichay"
 
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:140
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:144
 msgid "Clear filters"
 msgstr "Filtros pichay"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:167
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:171
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:177
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:181
 msgid "Clear selection"
 msgstr "Akllasqa pichay"
 
-#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:168
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:178
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:185
 msgid "Clear selection (Escape)"
 msgstr "Akllasqa pichay (Escape)"
 
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:354
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:357
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:358
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:361
 #: ../../../lib/web/src/components/ui/sheet.tsx:79
 msgid "Close"
 msgstr "Wichq'ay"
 
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:107
-#: ../../../lib/web/src/components/layout/app-sidebar.tsx:112
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:108
+#: ../../../lib/web/src/components/layout/app-sidebar.tsx:113
 msgid "Close navigation"
 msgstr "Navegación wichq'ay"
 
@@ -408,6 +434,7 @@ msgid "Custom"
 msgstr "Sapankuq"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:218
+#: ../../../lib/web/src/components/theme-switch.tsx:52
 #: ../../../lib/web/src/lib/preference-utils.ts:20
 msgid "Dark"
 msgstr "Tutayaq"
@@ -436,7 +463,7 @@ msgstr "Default"
 msgid "Default AI account"
 msgstr "Default AI cuenta"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/index.tsx:652
 msgid "Delete"
 msgstr "Wischuy"
 
@@ -444,7 +471,7 @@ msgstr "Wischuy"
 msgid "Delete game"
 msgstr "Pukllay wischuy"
 
-#: src/features/go/index.tsx:641
+#: src/features/go/index.tsx:643
 msgid "Delete game?"
 msgstr "Pukllayta wischuy?"
 
@@ -452,7 +479,7 @@ msgstr "Pukllayta wischuy?"
 msgid "Delete your account on the old server"
 msgstr "Ñawpaq serverpi cuenta-ykita qichuy"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:649
 msgid "Deleting..."
 msgstr "Wischuspa..."
 
@@ -492,8 +519,8 @@ msgstr "Wischuy"
 msgid "Displays the mobile sidebar."
 msgstr "Movil sidebar qhawachin."
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:348
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:342
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:352
 msgid "Download"
 msgstr "Uray chaskiy"
 
@@ -529,11 +556,11 @@ msgstr "Ch'usaq taripay {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Ch'usaq taripay {colLabel}{rowLabel}, llamiy utaq Enter ñitiy churanaykipaq"
 
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "End game"
 msgstr "Pukllayta tukuchiy"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "End game?"
 msgstr "¿Pukllayta tukuchiy?"
 
@@ -584,9 +611,17 @@ msgstr "Mana watiqmanta pukllayta paqarichiyta atinchu"
 msgid "Failed to decline draw"
 msgstr "Mana chiqansipañata mana munayta atinchu"
 
-#: src/features/go/index.tsx:245
+#: src/features/go/index.tsx:246
 msgid "Failed to delete game"
 msgstr "Mana pukllayta pichayta atinchu"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load image"
+msgstr "Manam rikchata cargayta atikunchu"
+
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:263
+msgid "Failed to load video"
+msgstr "Manam videota cargayta atikunchu"
 
 #: src/features/go/index.tsx:190
 msgid "Failed to make move"
@@ -608,8 +643,8 @@ msgstr "Mana cuentata pichayta atinchu"
 msgid "Failed to resign"
 msgstr "Mana saqiyta atinchu"
 
-#: src/features/go/index.tsx:577
-#: src/features/go/index.tsx:609
+#: src/features/go/index.tsx:578
+#: src/features/go/index.tsx:611
 msgid "Failed to send"
 msgstr "Mana apachiyta atinchu"
 
@@ -658,7 +693,7 @@ msgstr "Hunt'asqa layout"
 msgid "Game created"
 msgstr "Pukllay paqarichisqa"
 
-#: src/features/go/index.tsx:241
+#: src/features/go/index.tsx:242
 msgid "Game deleted"
 msgstr "Pukllay pichasqa"
 
@@ -668,29 +703,29 @@ msgstr "Pukllay pichasqa"
 msgid "Go"
 msgstr "Kachkay"
 
-#: ../../../lib/web/src/features/errors/forbidden.tsx:24
-#: ../../../lib/web/src/features/errors/not-found-error.tsx:24
-#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:24
+#: ../../../lib/web/src/features/errors/forbidden.tsx:26
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:26
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:26
 msgid "Go back"
 msgstr "Kutiy"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:78
+#: ../../../lib/web/src/components/data-table/pagination.tsx:82
 msgid "Go to first page"
 msgstr "Ñawpaq paginaman riy"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:124
+#: ../../../lib/web/src/components/data-table/pagination.tsx:128
 msgid "Go to last page"
 msgstr "Tukuy paginaman riy"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:115
+#: ../../../lib/web/src/components/data-table/pagination.tsx:119
 msgid "Go to next page"
 msgstr "Qatiq paginaman riy"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:102
+#: ../../../lib/web/src/components/data-table/pagination.tsx:106
 msgid "Go to page {pageNumber}"
 msgstr "{pageNumber} p’anqaman riy"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:87
+#: ../../../lib/web/src/components/data-table/pagination.tsx:91
 msgid "Go to previous page"
 msgstr "Ñawpa paginaman riy"
 
@@ -717,6 +752,11 @@ msgstr "Wasi"
 msgid "Hot"
 msgstr "Q'uñi"
 
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:247
+msgid "Image viewer: {0}"
+msgstr "Rikcha qhawana: {0}"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:86
 msgid "Imperial"
 msgstr "Imperial"
@@ -732,6 +772,10 @@ msgstr "Munakuykuna"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:245
 msgid "Invalid verification code"
 msgstr "Mana allin sut'inchay código"
+
+#: ../../../lib/web/src/features/errors/not-found-error.tsx:18
+msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
+msgstr "Maskasqayki p'anqaqa <0/>manam kanchu icha qichusqam."
 
 #: src/features/go/components/new-game.tsx:186
 msgid "Komi"
@@ -756,6 +800,7 @@ msgid "Left to Right"
 msgstr "Lluq'imanta Pañaman"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
+#: ../../../lib/web/src/components/theme-switch.tsx:45
 #: ../../../lib/web/src/lib/preference-utils.ts:19
 msgid "Light"
 msgstr "Sut'i"
@@ -770,8 +815,8 @@ msgstr "Contenido kargachkan…"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:90
-msgid "Loading…"
-msgstr "Wichachichkan…"
+msgid "Loading..."
+msgstr "Wichachichkan..."
 
 #: ../../../lib/web/src/components/layout/nav-user.tsx:101
 #: ../../../lib/web/src/components/layout/nav-user.tsx:167
@@ -795,8 +840,8 @@ msgstr "Allinta lluqsirqun"
 msgid "Logging out…"
 msgstr "Lluqsichkan…"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:92
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:99
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:93
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:100
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:224
 msgid "Mark all as read"
 msgstr "Llapanta ñawinchasqaman churay"
@@ -841,8 +886,8 @@ msgstr "Musuq"
 msgid "New game"
 msgstr "Musuq pukllay"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:388
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:393
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:392
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:397
 msgid "Next image"
 msgstr "Qatiqnin imagen"
 
@@ -883,7 +928,7 @@ msgid "No profile"
 msgstr "Mana perfil"
 
 #: ../../../lib/web/src/components/command-menu.tsx:55
-#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:90
+#: ../../../lib/web/src/components/data-table/faceted-filter.tsx:94
 msgid "No results found."
 msgstr "Mana resultadokuna tarisqachu."
 
@@ -924,6 +969,11 @@ msgstr "Mana churasqa"
 #: ../../../lib/web/src/components/notifications-dropdown.tsx:261
 msgid "Notifications"
 msgstr "Notificacionkuna"
+
+#. placeholder {0}: unread.length
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:86
+msgid "Notifications: {0}"
+msgstr "Willakuykuna: {0}"
 
 #: src/features/go/index.tsx:498
 msgid "Offer draw"
@@ -974,17 +1024,22 @@ msgstr "Huk"
 msgid "Owner"
 msgstr "Apuq"
 
+#: ../../../lib/web/src/components/data-table/pagination.tsx:43
+#: ../../../lib/web/src/components/data-table/pagination.tsx:71
+msgid "Page {currentPage} of {totalPages}"
+msgstr "{totalPages} p'anqamanta {currentPage}"
+
 #: src/features/go/components/chat-message-list.tsx:210
 #: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:675
+#: src/features/go/index.tsx:677
 msgid "Pass"
 msgstr "Saqi"
 
-#: src/features/go/index.tsx:662
+#: src/features/go/index.tsx:664
 msgid "Pass turn?"
 msgstr "Pasayniyta saqiy?"
 
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:674
 msgid "Passing..."
 msgstr "Pasashan..."
 
@@ -1005,6 +1060,10 @@ msgstr "Passkeykuna"
 msgid "Please check your internet connection and try again."
 msgstr "Internet tinkiyniykita qhaway, kutiykachimuy."
 
+#: ../../../lib/web/src/features/errors/unauthorized-error.tsx:18
+msgid "Please log in with the appropriate credentials <0/> to access this resource."
+msgstr "Kay ruwanaman yaykunaykipaq <0/> allin willakuywan yaykuy."
+
 #: src/features/go/components/new-game.tsx:89
 msgid "Please select a friend"
 msgstr "Ama hina, amigota akllay"
@@ -1021,8 +1080,8 @@ msgstr "Ama hina kaspa, huk ratulla suyaykuy, hinaspa watiqmanta ruwaykuy."
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Yana ñawpaqta puriqmanta compensanapaq Yuraqpa puntajeman yapasqa puntakuna"
 
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:373
-#: ../../../lib/web/src/components/ui/image-lightbox.tsx:378
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:377
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:382
 msgid "Previous image"
 msgstr "Ñawpaqnin imagen"
 
@@ -1084,6 +1143,11 @@ msgstr "Qichuy"
 msgid "Remove access rule"
 msgstr "Yaykuy kamachiyta qichuy"
 
+#. placeholder {0}: formatSubject(subject, data.name)
+#: ../../../lib/web/src/features/access/access-list.tsx:259
+msgid "Remove access rule for \"{0}\"?"
+msgstr "¿\"{0}\" yaykuna kamachiyta qichunachu?"
+
 #: ../../../lib/web/src/features/access/access-list.tsx:257
 msgid "Remove access?"
 msgstr "Yaykuyta qichuy?"
@@ -1107,15 +1171,15 @@ msgid "Reset all settings to default values"
 msgstr "Llapan configuracionkunata por defecto valoresman kutichiy"
 
 #: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:629
+#: src/features/go/index.tsx:631
 msgid "Resign"
 msgstr "Saqirakapuy"
 
-#: src/features/go/index.tsx:620
+#: src/features/go/index.tsx:622
 msgid "Resign game?"
 msgstr "Pukllayta saqirakapuy?"
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:628
 msgid "Resigning..."
 msgstr "Saqirakapushan..."
 
@@ -1123,7 +1187,7 @@ msgstr "Saqirakapushan..."
 msgid "Right to Left"
 msgstr "Pañamanta Lluq'iman"
 
-#: ../../../lib/web/src/components/data-table/pagination.tsx:63
+#: ../../../lib/web/src/components/data-table/pagination.tsx:65
 msgid "Rows per page"
 msgstr "Sapa páginapi filakuna"
 
@@ -1206,7 +1270,16 @@ msgstr "Sitio direccionta akllay"
 msgid "Select theme preference"
 msgstr "Tema munayta akllay"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:98
+#: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
+msgid "selected"
+msgstr "akllasqa"
+
+#. placeholder {0}: getSelectedName()
+#: ../../../lib/web/src/features/access/access-dialog.tsx:309
+msgid "Selected: <0>{0}</0>"
+msgstr "Akllasqa: <0>{0}</0>"
+
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:100
 msgid "Send again"
 msgstr "Watiqmanta apachiy"
 
@@ -1276,7 +1349,7 @@ msgstr "Lluqsichkan..."
 msgid "Skip to Main"
 msgstr "Mainman pasay"
 
-#: src/features/go/index.tsx:666
+#: src/features/go/index.tsx:668
 msgid "Skip your turn and pass to your opponent."
 msgstr "Mit'aykita saqiy hinaspa awqayman quy."
 
@@ -1310,6 +1383,7 @@ msgid "Sunday"
 msgstr "Intichaw"
 
 #: ../../../lib/web/src/components/config-drawer.tsx:208
+#: ../../../lib/web/src/components/theme-switch.tsx:59
 #: ../../../lib/web/src/lib/preference-utils.ts:21
 #: ../../../lib/web/src/lib/preference-utils.ts:144
 msgid "System"
@@ -1341,6 +1415,10 @@ msgstr "Chay codigoqa mana allinchu utaq pisipasqañam."
 msgid "The requested content could not be found."
 msgstr "Mañakusqa willaykuna mana tarikunchu."
 
+#: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
+msgid "The site is not available at the moment."
+msgstr "Kay sitioqa kunanqa mana kanchu."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:194
 msgid "Theme"
 msgstr "Tema"
@@ -1349,13 +1427,21 @@ msgstr "Tema"
 msgid "Theme Settings"
 msgstr "Tema Wakichiykuna"
 
-#: src/features/go/index.tsx:642
+#: ../../../lib/web/src/components/coming-soon.tsx:14
+msgid "This page has not been created yet."
+msgstr "Kay p'anqaqa manaraqmi kamasqachu."
+
+#: src/features/go/index.tsx:644
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Kayqa pukllayta rimanakuywantin wiñaypaq wischun. Kayta mana kutichinachu."
 
 #: ../../../lib/web/src/lib/preference-utils.ts:62
 msgid "Thursday"
 msgstr "Illapachaw"
+
+#: ../../../lib/web/src/components/travelling-picker.tsx:220
+msgid "To"
+msgstr "Maypi"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:37
 msgid "Toggle columns"
@@ -1452,7 +1538,7 @@ msgstr "Mana Autorizasqa Yaykuy"
 msgid "United States"
 msgstr "United States"
 
-#: src/hooks/useGameWebsocket.ts:168
+#: src/hooks/useGameWebsocket.ts:228
 msgid "Unknown"
 msgstr "Mana riqsisqa"
 
@@ -1468,7 +1554,7 @@ msgstr "Yaykuna llaveykita llamk'achiy"
 msgid "User"
 msgstr "Apaykachaq"
 
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:71
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:73
 msgid "Verification code"
 msgstr "Qhawariy codigo"
 
@@ -1482,7 +1568,7 @@ msgstr "Qhawariy mana atikurqanchu"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:388
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:172
-#: ../../../lib/web/src/features/accounts/account-verify.tsx:109
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:111
 msgid "Verify"
 msgstr "Qhaway"
 
@@ -1490,9 +1576,14 @@ msgstr "Qhaway"
 msgid "Verify email address"
 msgstr "Email direccionta qhaway"
 
-#: ../../../lib/web/src/components/attachment-gallery.tsx:74
+#: ../../../lib/web/src/components/attachment-gallery.tsx:79
 msgid "Video thumbnail"
 msgstr "Vidiyup uñanchanan"
+
+#. placeholder {0}: currentMedia.name
+#: ../../../lib/web/src/components/ui/image-lightbox.tsx:246
+msgid "Video viewer: {0}"
+msgstr "Video qhawana: {0}"
 
 #: ../../../lib/web/src/components/data-table/view-options.tsx:33
 msgid "View"
@@ -1502,10 +1593,15 @@ msgstr "Qhaway"
 msgid "View all"
 msgstr "Llapanta qhaway"
 
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:105
-#: ../../../lib/web/src/components/layout/notification-menu.tsx:113
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:106
+#: ../../../lib/web/src/components/layout/notification-menu.tsx:114
 msgid "View all notifications"
 msgstr "Llapan willakuykunata qhaway"
+
+#. placeholder {0}: account.identifier
+#: ../../../lib/web/src/features/accounts/account-verify.tsx:63
+msgid "We sent a verification code to <0>{0}</0>. Enter the code below to verify your email address."
+msgstr "<0>{0}</0> nisqaman huk verificación código apachirqayku. Correo electrónicoykita takyachinaykipaq códigota uraypi qillqay."
 
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:16
 msgid "We'll be back online shortly."
@@ -1542,6 +1638,10 @@ msgstr "Qan"
 #: ../../../lib/web/src/features/errors/general-error.tsx:61
 msgid "You do not have access to this section."
 msgstr "Kay t'aqamanqa mana yaykuyta atinkichu."
+
+#: ../../../lib/web/src/features/errors/forbidden.tsx:18
+msgid "You don't have necessary permission <0/>to view this resource."
+msgstr "Kay ruwanata qhawanaykipaq <0/>manam saqiyniyki kanchu."
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
