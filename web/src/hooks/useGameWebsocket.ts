@@ -165,6 +165,17 @@ const handleWebsocketPayload = (
         }
       }
     )
+    // The merge above is for responsiveness only; a move payload is a
+    // complete snapshot, and the merge cannot clear falsy fields or update
+    // the list. Authoritative state comes from the refetch. This hook has no
+    // echo tracking, so an own move refetches once more than needed - the
+    // mutation's onSuccess already invalidated - which is redundant, not
+    // wrong.
+    void queryClient.invalidateQueries({
+      queryKey: gameKeys.detail(gameId),
+      exact: true,
+    })
+    void queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
   }
 
   // Append message to messages cache for all types (message, move, system)
