@@ -122,6 +122,43 @@ const handleWebsocketPayload = (
     )
   }
 
+  // Any payload carrying a board is a complete applied snapshot, whatever the
+  // event was: a resignation or draw offer can carry a move this client never
+  // received, because the server applies the whole state and only the whole
+  // state. Merge on the presence of the snapshot rather than inferring what
+  // changed from the event name, which is how the repaired board used to be
+  // dropped here while the database had already converged.
+  if (msgType !== 'move' && payload.fen) {
+    queryClient.setQueryData<GameViewResponse>(
+      gameKeys.detail(gameId),
+      (current) => {
+        if (!current) return current
+        return {
+          ...current,
+          game: {
+            ...current.game,
+            fen: payload.fen as string,
+            previous_fen:
+              (payload.previous_fen as string) || current.game.previous_fen,
+            sgf: (payload.sgf as string) ?? current.game.sgf,
+            captures_black:
+              typeof payload.captures_black === 'number'
+                ? payload.captures_black
+                : current.game.captures_black,
+            captures_white:
+              typeof payload.captures_white === 'number'
+                ? payload.captures_white
+                : current.game.captures_white,
+            status:
+              (payload.status as GameViewResponse['game']['status']) ||
+              current.game.status,
+            winner: (payload.winner as string) || current.game.winner,
+          },
+        }
+      }
+    )
+  }
+
   // Handle move — update game detail cache with new FEN/status
   if (msgType === 'move') {
     queryClient.setQueryData<GameViewResponse>(
