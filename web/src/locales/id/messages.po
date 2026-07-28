@@ -39,7 +39,7 @@ msgstr "{name} menawarkan remis"
 msgid "{name} resigned"
 msgstr "{name} menyerah"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:670
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} juga melewatkan giliran. Mengonfirmasi akan mengakhiri permainan dan menghitung skor papan."
 
@@ -103,7 +103,7 @@ msgstr "Akses ditolak"
 msgid "Access Forbidden"
 msgstr "Akses Dilarang"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:192
+#: ../../../lib/web/src/features/access/access-list.tsx:197
 msgid "Access level"
 msgstr "Tingkat akses"
 
@@ -123,10 +123,11 @@ msgstr "Tipe akun"
 msgid "Account verified"
 msgstr "Akun terverifikasi"
 
-#: src/components/layout/go-layout.tsx:114
+#: src/components/layout/go-layout.tsx:113
 msgid "Active games"
 msgstr "Permainan Aktif"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
 msgstr "Tambah"
@@ -177,6 +178,10 @@ msgstr "Tambah ke notifikasi yang ada"
 msgid "Add view"
 msgstr "Tambah tampilan"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
+msgid "Adding..."
+msgstr "Menambahkan..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:71
 msgid "Adjust the appearance and layout to suit your preferences."
 msgstr "Sesuaikan tampilan dan tata letak sesuai preferensi Anda."
@@ -197,11 +202,15 @@ msgstr "Terjadi kesalahan"
 msgid "An unexpected error occurred"
 msgstr "Terjadi kesalahan tak terduga"
 
+#: ../../../lib/web/src/features/access/access-list.tsx:45
+msgid "Anyone"
+msgstr "Siapa saja"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:27
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Apakah Anda yakin ingin keluar? Anda perlu masuk kembali untuk mengakses akun Anda."
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Apakah Anda yakin ingin menyerah? {opponentName} akan memenangkan permainan."
 
@@ -212,6 +221,10 @@ msgstr "Naik"
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx:27
 msgid "Ascending"
 msgstr "Naik"
+
+#: ../../../lib/web/src/features/access/access-list.tsx:46
+msgid "Authenticated users"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Authenticator code"
@@ -227,11 +240,11 @@ msgstr "Kembali"
 msgid "Back to home"
 msgstr "Kembali ke beranda"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "Black"
 msgstr "Hitam"
 
-#: src/features/go/index.tsx:452
+#: src/features/go/index.tsx:455
 msgid "Black captures:"
 msgstr "Tangkapan hitam:"
 
@@ -258,7 +271,7 @@ msgstr "Tingkatkan minat"
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:248
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:132
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
-#: ../../../lib/web/src/features/access/access-list.tsx:263
+#: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
@@ -274,10 +287,14 @@ msgstr "Kategori untuk notifikasi ini"
 msgid "Change notification category"
 msgstr "Ubah kategori notifikasi"
 
-#: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:594
+#: src/features/go/index.tsx:564
+#: src/features/go/index.tsx:597
 msgid "Chat"
 msgstr "Chat"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:198
+msgid "Check \"All\" to see your past notifications."
+msgstr ""
 
 #: src/features/go/components/game-empty-state.tsx:23
 msgid "Choose a game from the sidebar or start a new one."
@@ -380,7 +397,7 @@ msgstr "Segera Hadir!"
 msgid "Compact"
 msgstr "Kompak"
 
-#: src/components/layout/go-layout.tsx:125
+#: src/components/layout/go-layout.tsx:124
 msgid "Completed"
 msgstr "Selesai"
 
@@ -463,15 +480,15 @@ msgstr "Default"
 msgid "Default AI account"
 msgstr "Akun AI default"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:655
 msgid "Delete"
 msgstr "Hapus"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:517
 msgid "Delete game"
 msgstr "Hapus permainan"
 
-#: src/features/go/index.tsx:643
+#: src/features/go/index.tsx:646
 msgid "Delete game?"
 msgstr "Hapus permainan?"
 
@@ -479,7 +496,7 @@ msgstr "Hapus permainan?"
 msgid "Delete your account on the old server"
 msgstr "Hapus akun Anda di server lama"
 
-#: src/features/go/index.tsx:649
+#: src/features/go/index.tsx:652
 msgid "Deleting..."
 msgstr "Menghapus..."
 
@@ -510,6 +527,10 @@ msgstr "Deteksi dari web browser"
 msgid "Direction"
 msgstr "Arah"
 
+#: ../../../lib/web/src/components/person-picker.tsx:214
+msgid "Directory"
+msgstr ""
+
 #: ../../../lib/web/src/components/restore-banner.tsx:79
 #: ../../../lib/web/src/components/restore-banner.tsx:85
 msgid "Dismiss"
@@ -532,7 +553,7 @@ msgstr "Unduhan gagal"
 msgid "Draw agreed"
 msgstr "Remis disepakati"
 
-#: src/features/go/index.tsx:527
+#: src/features/go/index.tsx:530
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Remis ditawarkan — menunggu {opponentName}"
 
@@ -556,11 +577,11 @@ msgstr "Persimpangan kosong {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Persimpangan kosong {colLabel}{rowLabel}, klik atau tekan Enter untuk menempatkan"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:680
 msgid "End game"
 msgstr "Akhiri permainan"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "End game?"
 msgstr "Akhiri permainan?"
 
@@ -643,8 +664,8 @@ msgstr "Gagal menghapus akun"
 msgid "Failed to resign"
 msgstr "Gagal menyerah"
 
-#: src/features/go/index.tsx:578
-#: src/features/go/index.tsx:611
+#: src/features/go/index.tsx:581
+#: src/features/go/index.tsx:614
 msgid "Failed to send"
 msgstr "Gagal mengirim"
 
@@ -672,6 +693,10 @@ msgstr "Mengambang"
 msgid "Friday"
 msgstr "Jumat"
 
+#: ../../../lib/web/src/components/person-picker.tsx:207
+msgid "Friends"
+msgstr "Teman"
+
 #: ../../../lib/web/src/components/travelling-picker.tsx:153
 msgid "From"
 msgstr "Dari"
@@ -698,8 +723,8 @@ msgid "Game deleted"
 msgstr "Permainan dihapus"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:368
-#: src/features/go/index.tsx:380
+#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:383
 msgid "Go"
 msgstr "Mulai"
 
@@ -732,6 +757,11 @@ msgstr "Ke halaman sebelumnya"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:162
 msgid "Group"
 msgstr "Grup"
+
+#. placeholder {0}: name || subject.slice(1)
+#: ../../../lib/web/src/features/access/access-list.tsx:68
+msgid "Group: {0}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:70
 msgid "Hide"
@@ -798,6 +828,10 @@ msgstr "Pelajari lebih lanjut"
 #: ../../../lib/web/src/components/config-drawer.tsx:354
 msgid "Left to Right"
 msgstr "Kiri ke Kanan"
+
+#: ../../../lib/web/src/components/post-tags.tsx:72
+msgid "Letters, numbers, spaces, and hyphens only"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
 #: ../../../lib/web/src/components/theme-switch.tsx:45
@@ -879,7 +913,7 @@ msgstr "Kesalahan jaringan"
 msgid "New"
 msgstr "Baru"
 
-#: src/components/layout/go-layout.tsx:139
+#: src/components/layout/go-layout.tsx:141
 #: src/features/go/components/game-empty-state.tsx:27
 #: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
@@ -891,7 +925,7 @@ msgstr "Permainan baru"
 msgid "Next image"
 msgstr "Gambar berikutnya"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:160
+#: ../../../lib/web/src/features/access/access-list.tsx:165
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Tidak ada aturan akses yang dikonfigurasi. Tambahkan aturan untuk mengontrol siapa yang dapat mengakses sumber daya ini."
 
@@ -918,6 +952,10 @@ msgstr "Tidak ada grup yang tersedia"
 #: src/features/go/components/chat-message-list.tsx:153
 msgid "No messages yet"
 msgstr "Belum ada pesan"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "No notifications yet"
+msgstr ""
 
 #: ../../../lib/web/src/components/place-picker.tsx:132
 msgid "No places found"
@@ -975,7 +1013,7 @@ msgstr "Notifikasi"
 msgid "Notifications: {0}"
 msgstr "Notifikasi: {0}"
 
-#: src/features/go/index.tsx:498
+#: src/features/go/index.tsx:501
 msgid "Offer draw"
 msgstr "Tawarkan seri"
 
@@ -993,13 +1031,17 @@ msgstr "Buka tindakan akun"
 msgid "Open actions"
 msgstr "Buka tindakan"
 
-#: src/features/go/index.tsx:469
+#: src/features/go/index.tsx:472
 msgid "Open chat panel"
 msgstr "Buka panel chat"
 
-#: src/features/go/index.tsx:477
+#: src/features/go/index.tsx:480
 msgid "Open game actions"
 msgstr "Buka tindakan permainan"
+
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+msgid "Open menu"
+msgstr "Buka menu"
 
 #: ../../../lib/web/src/components/layout/top-bar.tsx:63
 #: ../../../lib/web/src/components/layout/top-bar.tsx:68
@@ -1020,7 +1062,7 @@ msgstr "Buka pengaturan tema"
 msgid "Other"
 msgstr "Lainnya"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:217
+#: ../../../lib/web/src/features/access/access-list.tsx:222
 msgid "Owner"
 msgstr "Pemilik"
 
@@ -1030,16 +1072,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "Halaman {currentPage} dari {totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:493
+#: src/features/go/index.tsx:680
 msgid "Pass"
 msgstr "Lewati"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "Pass turn?"
 msgstr "Lewati giliran?"
 
-#: src/features/go/index.tsx:674
+#: src/features/go/index.tsx:677
 msgid "Passing..."
 msgstr "Melewati..."
 
@@ -1095,6 +1137,10 @@ msgstr "Privasi"
 msgid "Profile"
 msgstr "Profil"
 
+#: ../../../lib/web/src/components/person-picker.tsx:200
+msgid "Project members"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:117
 msgid "Raised"
 msgstr "Terangkat"
@@ -1129,26 +1175,26 @@ msgstr "Relatif (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relatif dalam 24 jam, selainnya absolut"
 
-#: src/features/go/index.tsx:511
+#: src/features/go/index.tsx:514
 msgid "Rematch"
 msgstr "Tanding ulang"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:265
+#: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
 msgstr "Hapus"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:247
-#: ../../../lib/web/src/features/access/access-list.tsx:253
+#: ../../../lib/web/src/features/access/access-list.tsx:252
+#: ../../../lib/web/src/features/access/access-list.tsx:258
 msgid "Remove access rule"
 msgstr "Hapus aturan akses"
 
 #. placeholder {0}: formatSubject(subject, data.name)
-#: ../../../lib/web/src/features/access/access-list.tsx:259
+#: ../../../lib/web/src/features/access/access-list.tsx:264
 msgid "Remove access rule for \"{0}\"?"
 msgstr "Hapus aturan akses untuk \"{0}\"?"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:257
+#: ../../../lib/web/src/features/access/access-list.tsx:262
 msgid "Remove access?"
 msgstr "Hapus akses?"
 
@@ -1170,16 +1216,16 @@ msgstr "Reset"
 msgid "Reset all settings to default values"
 msgstr "Reset semua pengaturan ke nilai default"
 
-#: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:634
 msgid "Resign"
 msgstr "Menyerah"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "Resign game?"
 msgstr "Menyerah dalam permainan?"
 
-#: src/features/go/index.tsx:628
+#: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Menyerah..."
 
@@ -1349,7 +1395,7 @@ msgstr "Keluar..."
 msgid "Skip to Main"
 msgstr "Lewati ke Utama"
 
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:671
 msgid "Skip your turn and pass to your opponent."
 msgstr "Lewati giliran Anda dan oper ke lawan."
 
@@ -1374,7 +1420,7 @@ msgstr "Mulai permainan"
 msgid "Stay tuned though!"
 msgstr "Tetap pantau!"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:191
+#: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
 msgstr "Subjek"
 
@@ -1392,6 +1438,14 @@ msgstr "Sistem"
 #: ../../../lib/web/src/components/tag-input.tsx:94
 msgid "Tag"
 msgstr "Tag"
+
+#: ../../../lib/web/src/components/post-tags.tsx:76
+msgid "Tag already exists"
+msgstr "Tag sudah ada"
+
+#: ../../../lib/web/src/components/post-tags.tsx:68
+msgid "Tag must be 50 characters or less"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:101
 #: ../../../lib/web/src/components/post-tags.tsx:115
@@ -1431,7 +1485,7 @@ msgstr "Pengaturan Tema"
 msgid "This page has not been created yet."
 msgstr "Halaman ini belum dibuat."
 
-#: src/features/go/index.tsx:644
+#: src/features/go/index.tsx:647
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Ini akan menghapus permainan dan obrolannya secara permanen. Tindakan ini tidak dapat dibatalkan."
 
@@ -1550,6 +1604,7 @@ msgstr "Belum diverifikasi"
 msgid "Use your passkey"
 msgstr "Gunakan kunci sandi Anda"
 
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "Pengguna"
@@ -1607,6 +1662,10 @@ msgstr "Kami mengirim kode verifikasi ke <0>{0}</0>. Masukkan kode di bawah untu
 msgid "We'll be back online shortly."
 msgstr "Kami akan kembali online sebentar lagi."
 
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:197
+msgid "We'll notify you when something important happens."
+msgstr ""
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "Website is under maintenance!"
 msgstr "Situs web sedang dalam pemeliharaan!"
@@ -1615,11 +1674,11 @@ msgstr "Situs web sedang dalam pemeliharaan!"
 msgid "Wednesday"
 msgstr "Rabu"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "White"
 msgstr "Putih"
 
-#: src/features/go/index.tsx:457
+#: src/features/go/index.tsx:460
 msgid "White captures:"
 msgstr "Tangkapan putih:"
 
@@ -1642,6 +1701,10 @@ msgstr "Anda tidak memiliki akses ke bagian ini."
 #: ../../../lib/web/src/features/errors/forbidden.tsx:18
 msgid "You don't have necessary permission <0/>to view this resource."
 msgstr "Anda tidak memiliki izin yang diperlukan <0/>untuk melihat sumber daya ini."
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "You're all caught up!"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

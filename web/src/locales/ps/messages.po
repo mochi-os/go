@@ -39,7 +39,7 @@ msgstr "{name} د مساوي وړاندیز وکړ"
 msgid "{name} resigned"
 msgstr "{name} ماتې ومنله"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:670
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} هم تېر کړ. تایید به لوبه پای ته ورسوي او بورډ نمره کړي."
 
@@ -103,7 +103,7 @@ msgstr "لاسرسی رد شو"
 msgid "Access Forbidden"
 msgstr "لاسرسی منع دی"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:192
+#: ../../../lib/web/src/features/access/access-list.tsx:197
 msgid "Access level"
 msgstr "د لاسرسي کچه"
 
@@ -123,10 +123,11 @@ msgstr "د حساب ډول"
 msgid "Account verified"
 msgstr "حساب تایید شو"
 
-#: src/components/layout/go-layout.tsx:114
+#: src/components/layout/go-layout.tsx:113
 msgid "Active games"
 msgstr "فعالې لوبې"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
 msgstr "اضافه کړئ"
@@ -177,6 +178,10 @@ msgstr "موجوده خبرتیاو ته اضافه کړئ"
 msgid "Add view"
 msgstr "لید اضافه کړئ"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
+msgid "Adding..."
+msgstr "اضافه کول..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:71
 msgid "Adjust the appearance and layout to suit your preferences."
 msgstr "د خپلو غوره توبونو سره سم بڼه او ترتیب تنظیم کړئ."
@@ -197,11 +202,15 @@ msgstr "یوه تېروتنه رامنځته شوه"
 msgid "An unexpected error occurred"
 msgstr "یوه ناڅاپي تېروتنه رامنځته شوه"
 
+#: ../../../lib/web/src/features/access/access-list.tsx:45
+msgid "Anyone"
+msgstr "هر څوک"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:27
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "ایا تاسو ډاډه یاست چې غواړئ وتل وکړئ؟ تاسو به اړتیا ولرئ بیا ننوځئ ترڅو خپل حساب ته لاسرسی ولرئ."
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "ایا تاسو ډاډه یاست چې غواړئ استعفا ورکړئ؟ {opponentName} به لوبه وګټي."
 
@@ -212,6 +221,10 @@ msgstr "صعودي"
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx:27
 msgid "Ascending"
 msgstr "د کم څخه ډېر"
+
+#: ../../../lib/web/src/features/access/access-list.tsx:46
+msgid "Authenticated users"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Authenticator code"
@@ -227,11 +240,11 @@ msgstr "شاته"
 msgid "Back to home"
 msgstr "کور ته بېرته"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "Black"
 msgstr "تور"
 
-#: src/features/go/index.tsx:452
+#: src/features/go/index.tsx:455
 msgid "Black captures:"
 msgstr "د تور نیولې مهرې:"
 
@@ -258,7 +271,7 @@ msgstr "دلچسپي ډیره کړه"
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:248
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:132
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
-#: ../../../lib/web/src/features/access/access-list.tsx:263
+#: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
@@ -274,10 +287,14 @@ msgstr "د دې خبرتیا لپاره کټګورۍ"
 msgid "Change notification category"
 msgstr "د خبرتیا کټګورۍ بدله کړه"
 
-#: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:594
+#: src/features/go/index.tsx:564
+#: src/features/go/index.tsx:597
 msgid "Chat"
 msgstr "چټ"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:198
+msgid "Check \"All\" to see your past notifications."
+msgstr ""
 
 #: src/features/go/components/game-empty-state.tsx:23
 msgid "Choose a game from the sidebar or start a new one."
@@ -380,7 +397,7 @@ msgstr "ډیر ژر راځي!"
 msgid "Compact"
 msgstr "فشرده"
 
-#: src/components/layout/go-layout.tsx:125
+#: src/components/layout/go-layout.tsx:124
 msgid "Completed"
 msgstr "بشپړ شو"
 
@@ -463,15 +480,15 @@ msgstr "ډیفالټ"
 msgid "Default AI account"
 msgstr "د AI ډیفالټ حساب"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:655
 msgid "Delete"
 msgstr "ړنګ کړئ"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:517
 msgid "Delete game"
 msgstr "لوبه ړنګه کړئ"
 
-#: src/features/go/index.tsx:643
+#: src/features/go/index.tsx:646
 msgid "Delete game?"
 msgstr "لوبه ړنګه شي؟"
 
@@ -479,7 +496,7 @@ msgstr "لوبه ړنګه شي؟"
 msgid "Delete your account on the old server"
 msgstr "د پخوانی سرور پر سر خپل حساب ړنګ کړئ"
 
-#: src/features/go/index.tsx:649
+#: src/features/go/index.tsx:652
 msgid "Deleting..."
 msgstr "ړنګیږي..."
 
@@ -510,6 +527,10 @@ msgstr "د ویب براوزر څخه ومومئ"
 msgid "Direction"
 msgstr "لوری"
 
+#: ../../../lib/web/src/components/person-picker.tsx:214
+msgid "Directory"
+msgstr ""
+
 #: ../../../lib/web/src/components/restore-banner.tsx:79
 #: ../../../lib/web/src/components/restore-banner.tsx:85
 msgid "Dismiss"
@@ -532,7 +553,7 @@ msgstr "ډاونلوډ ناکام شو"
 msgid "Draw agreed"
 msgstr "په مساوي موافقه وشوه"
 
-#: src/features/go/index.tsx:527
+#: src/features/go/index.tsx:530
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "مساوي وړاندیز شو — د {opponentName} په تمه"
 
@@ -556,11 +577,11 @@ msgstr "خالي تقاطع {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "خالي تقاطع {colLabel}{rowLabel}، د ځای پر ځای کولو لپاره کلیک وکړئ یا Enter فشار کړئ"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:680
 msgid "End game"
 msgstr "لوبه پای ته ورسوئ"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "End game?"
 msgstr "لوبه پای ته ورسوئ؟"
 
@@ -643,8 +664,8 @@ msgstr "د حساب لیرې کولو پاتې راغلل"
 msgid "Failed to resign"
 msgstr "د استعفا پاتې راغلل"
 
-#: src/features/go/index.tsx:578
-#: src/features/go/index.tsx:611
+#: src/features/go/index.tsx:581
+#: src/features/go/index.tsx:614
 msgid "Failed to send"
 msgstr "د لیږلو پاتې راغلل"
 
@@ -672,6 +693,10 @@ msgstr "ځړیدلی"
 msgid "Friday"
 msgstr "جمعه"
 
+#: ../../../lib/web/src/components/person-picker.tsx:207
+msgid "Friends"
+msgstr "ملګري"
+
 #: ../../../lib/web/src/components/travelling-picker.tsx:153
 msgid "From"
 msgstr "له"
@@ -698,8 +723,8 @@ msgid "Game deleted"
 msgstr "لوبه وشلیده"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:368
-#: src/features/go/index.tsx:380
+#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:383
 msgid "Go"
 msgstr "ولاړ شه"
 
@@ -732,6 +757,11 @@ msgstr "تیر پاڼې ته ولاړ شه"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:162
 msgid "Group"
 msgstr "ګروپ"
+
+#. placeholder {0}: name || subject.slice(1)
+#: ../../../lib/web/src/features/access/access-list.tsx:68
+msgid "Group: {0}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:70
 msgid "Hide"
@@ -798,6 +828,10 @@ msgstr "نور زده کړئ"
 #: ../../../lib/web/src/components/config-drawer.tsx:354
 msgid "Left to Right"
 msgstr "له کیڼ څخه ښي"
+
+#: ../../../lib/web/src/components/post-tags.tsx:72
+msgid "Letters, numbers, spaces, and hyphens only"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
 #: ../../../lib/web/src/components/theme-switch.tsx:45
@@ -879,7 +913,7 @@ msgstr "د شبکې تېروتنه"
 msgid "New"
 msgstr "نوی"
 
-#: src/components/layout/go-layout.tsx:139
+#: src/components/layout/go-layout.tsx:141
 #: src/features/go/components/game-empty-state.tsx:27
 #: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
@@ -891,7 +925,7 @@ msgstr "نوې لوبه"
 msgid "Next image"
 msgstr "بله انځور"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:160
+#: ../../../lib/web/src/features/access/access-list.tsx:165
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "د لاسرسي قاعدې نه دي تنظیم شوې. د دې سرچینې لاسرسي د کنترول لپاره قاعدې اضافه کړئ."
 
@@ -918,6 +952,10 @@ msgstr "هیڅ ډلې شتون نلري"
 #: src/features/go/components/chat-message-list.tsx:153
 msgid "No messages yet"
 msgstr "تر اوسه هیڅ پیغامونه نشته"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "No notifications yet"
+msgstr ""
 
 #: ../../../lib/web/src/components/place-picker.tsx:132
 msgid "No places found"
@@ -975,7 +1013,7 @@ msgstr "خبرتیاوې"
 msgid "Notifications: {0}"
 msgstr "خبرتیاوې: {0}"
 
-#: src/features/go/index.tsx:498
+#: src/features/go/index.tsx:501
 msgid "Offer draw"
 msgstr "د مساوي وړاندیز"
 
@@ -993,13 +1031,17 @@ msgstr "د حساب کړنې خلاصې کړئ"
 msgid "Open actions"
 msgstr "کړنې پرانیزئ"
 
-#: src/features/go/index.tsx:469
+#: src/features/go/index.tsx:472
 msgid "Open chat panel"
 msgstr "د چټ پینل خلاص کړئ"
 
-#: src/features/go/index.tsx:477
+#: src/features/go/index.tsx:480
 msgid "Open game actions"
 msgstr "د لوبې کړنې خلاصې کړئ"
+
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+msgid "Open menu"
+msgstr "مینو خلاص کړئ"
 
 #: ../../../lib/web/src/components/layout/top-bar.tsx:63
 #: ../../../lib/web/src/components/layout/top-bar.tsx:68
@@ -1020,7 +1062,7 @@ msgstr "د ت موضوع تنظیمات خلاص کړئ"
 msgid "Other"
 msgstr "نور"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:217
+#: ../../../lib/web/src/features/access/access-list.tsx:222
 msgid "Owner"
 msgstr "مالک"
 
@@ -1030,16 +1072,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "مخ {currentPage} د {totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:493
+#: src/features/go/index.tsx:680
 msgid "Pass"
 msgstr "تېرول"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "Pass turn?"
 msgstr "وار تېر کړئ؟"
 
-#: src/features/go/index.tsx:674
+#: src/features/go/index.tsx:677
 msgid "Passing..."
 msgstr "د تېرولو په حال کې..."
 
@@ -1095,6 +1137,10 @@ msgstr "محرمیت"
 msgid "Profile"
 msgstr "پروفایل"
 
+#: ../../../lib/web/src/components/person-picker.tsx:200
+msgid "Project members"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:117
 msgid "Raised"
 msgstr "پورته شوی"
@@ -1129,26 +1175,26 @@ msgstr "نسبي (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "په 24 ساعتونو کې نسبي، که نه نو مطلق"
 
-#: src/features/go/index.tsx:511
+#: src/features/go/index.tsx:514
 msgid "Rematch"
 msgstr "بیا لوبه"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:265
+#: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
 msgstr "لرې کول"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:247
-#: ../../../lib/web/src/features/access/access-list.tsx:253
+#: ../../../lib/web/src/features/access/access-list.tsx:252
+#: ../../../lib/web/src/features/access/access-list.tsx:258
 msgid "Remove access rule"
 msgstr "د لاسرسي قاعده لرې کړئ"
 
 #. placeholder {0}: formatSubject(subject, data.name)
-#: ../../../lib/web/src/features/access/access-list.tsx:259
+#: ../../../lib/web/src/features/access/access-list.tsx:264
 msgid "Remove access rule for \"{0}\"?"
 msgstr "د \"{0}\" لپاره د لاسرسي قاعده لرې شي؟"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:257
+#: ../../../lib/web/src/features/access/access-list.tsx:262
 msgid "Remove access?"
 msgstr "لاسرسی لرې کړو؟"
 
@@ -1170,16 +1216,16 @@ msgstr "بیا تنظیم"
 msgid "Reset all settings to default values"
 msgstr "ټول تنظیمات د ډیفالټ ارزښتونو ته بیرته تنظیم کړئ"
 
-#: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:634
 msgid "Resign"
 msgstr "تسلیمیدل"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "Resign game?"
 msgstr "لوبه تسلیم کړو؟"
 
-#: src/features/go/index.tsx:628
+#: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "د تسلیمیدو په حال کې..."
 
@@ -1349,7 +1395,7 @@ msgstr "د وتلو په حال کې..."
 msgid "Skip to Main"
 msgstr "اصلي ته تېر کړئ"
 
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:671
 msgid "Skip your turn and pass to your opponent."
 msgstr "خپل وار تېر کړئ او خپل مخالف ته یې ورکړئ."
 
@@ -1374,7 +1420,7 @@ msgstr "لوبه پیل کړئ"
 msgid "Stay tuned though!"
 msgstr "خو خبر اوسئ!"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:191
+#: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
 msgstr "موضوع"
 
@@ -1392,6 +1438,14 @@ msgstr "سیسټم"
 #: ../../../lib/web/src/components/tag-input.tsx:94
 msgid "Tag"
 msgstr "ټاګ"
+
+#: ../../../lib/web/src/components/post-tags.tsx:76
+msgid "Tag already exists"
+msgstr "ټاګ دمخه شتون لري"
+
+#: ../../../lib/web/src/components/post-tags.tsx:68
+msgid "Tag must be 50 characters or less"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:101
 #: ../../../lib/web/src/components/post-tags.tsx:115
@@ -1431,7 +1485,7 @@ msgstr "د ښکارندوی ترتیبات"
 msgid "This page has not been created yet."
 msgstr "دا مخ لا تر اوسه نه دی جوړ شوی."
 
-#: src/features/go/index.tsx:644
+#: src/features/go/index.tsx:647
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "دا به لوبه او د هغې چیټ د تل لپاره ړنګ کړي. دا کړنه بیرته نشي کیدی."
 
@@ -1550,6 +1604,7 @@ msgstr "تصدیق نه شوی"
 msgid "Use your passkey"
 msgstr "خپله پاس کیلۍ وکاروئ"
 
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "کاروونکی"
@@ -1607,6 +1662,10 @@ msgstr "موږ تصدیق کوډ <0>{0}</0> ته ولیږه. د خپل بریښ�
 msgid "We'll be back online shortly."
 msgstr "موږ به ډېر ژر بیرته آنلاین یو."
 
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:197
+msgid "We'll notify you when something important happens."
+msgstr ""
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "Website is under maintenance!"
 msgstr "ویب پاڼه د خدمت په حال کې ده!"
@@ -1615,11 +1674,11 @@ msgstr "ویب پاڼه د خدمت په حال کې ده!"
 msgid "Wednesday"
 msgstr "چهارشنبه"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "White"
 msgstr "سپین"
 
-#: src/features/go/index.tsx:457
+#: src/features/go/index.tsx:460
 msgid "White captures:"
 msgstr "سپینې نیولې:"
 
@@ -1642,6 +1701,10 @@ msgstr "تاسو دې برخې ته لاسرسی نه لرئ."
 #: ../../../lib/web/src/features/errors/forbidden.tsx:18
 msgid "You don't have necessary permission <0/>to view this resource."
 msgstr "تاسو د دې سرچینې لیدو لپاره <0/>اړینه اجازه نه لرئ."
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "You're all caught up!"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

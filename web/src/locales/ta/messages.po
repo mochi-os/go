@@ -39,7 +39,7 @@ msgstr "{name} சமநிலையை முன்மொழிந்தார�
 msgid "{name} resigned"
 msgstr "{name} விட்டுக்கொடுத்தார்"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:670
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} ஐயும் முறையைத் தாண்டினார். உறுதிப்படுத்துவது விளையாட்டை முடிவுக்குக் கொண்டுவந்து பலகையை மதிப்பெண்ணிடும்."
 
@@ -103,7 +103,7 @@ msgstr "அணுகல் மறுக்கப்பட்டது"
 msgid "Access Forbidden"
 msgstr "அணுகல் தடைசெய்யப்பட்டது"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:192
+#: ../../../lib/web/src/features/access/access-list.tsx:197
 msgid "Access level"
 msgstr "அணுகல் நிலை"
 
@@ -123,10 +123,11 @@ msgstr "கணக்கு வகை"
 msgid "Account verified"
 msgstr "கணக்கு சரிபார்க்கப்பட்டது"
 
-#: src/components/layout/go-layout.tsx:114
+#: src/components/layout/go-layout.tsx:113
 msgid "Active games"
 msgstr "செயலில் உள்ள விளையாட்டுகள்"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
 msgstr "சேர்"
@@ -177,6 +178,10 @@ msgstr "உள்ள அறிவிப்புகளுக்குச் ச�
 msgid "Add view"
 msgstr "காட்சி சேர்"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
+msgid "Adding..."
+msgstr "சேர்க்கிறது..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:71
 msgid "Adjust the appearance and layout to suit your preferences."
 msgstr "உங்கள் விருப்பங்களுக்கு ஏற்ப தோற்றத்தையும் தளவமைப்பையும் சரிசெய்யவும்."
@@ -197,11 +202,15 @@ msgstr "பிழை ஏற்பட்டது"
 msgid "An unexpected error occurred"
 msgstr "எதிர்பாராத பிழை ஏற்பட்டது"
 
+#: ../../../lib/web/src/features/access/access-list.tsx:45
+msgid "Anyone"
+msgstr "எவரும்"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:27
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "வெளியேற விரும்புகிறீர்களா? உங்கள் கணக்கை அணுக மீண்டும் உள்நுழைய வேண்டும்."
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "நீங்கள் சரணடைய விரும்புகிறீர்களா? {opponentName} விளையாட்டை வெல்வார்."
 
@@ -212,6 +221,10 @@ msgstr "ஏறு"
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx:27
 msgid "Ascending"
 msgstr "ஏறுவரிசை"
+
+#: ../../../lib/web/src/features/access/access-list.tsx:46
+msgid "Authenticated users"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Authenticator code"
@@ -227,11 +240,11 @@ msgstr "பின்"
 msgid "Back to home"
 msgstr "முகப்புக்குத் திரும்பு"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "Black"
 msgstr "கருப்பு"
 
-#: src/features/go/index.tsx:452
+#: src/features/go/index.tsx:455
 msgid "Black captures:"
 msgstr "கருப்பு பிடித்தவை:"
 
@@ -258,7 +271,7 @@ msgstr "ஆர்வத்தை அதிகரி"
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:248
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:132
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
-#: ../../../lib/web/src/features/access/access-list.tsx:263
+#: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
@@ -274,10 +287,14 @@ msgstr "இந்த அறிவிப்புக்கான வகை"
 msgid "Change notification category"
 msgstr "அறிவிப்பு வகையை மாற்று"
 
-#: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:594
+#: src/features/go/index.tsx:564
+#: src/features/go/index.tsx:597
 msgid "Chat"
 msgstr "அரட்டை"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:198
+msgid "Check \"All\" to see your past notifications."
+msgstr ""
 
 #: src/features/go/components/game-empty-state.tsx:23
 msgid "Choose a game from the sidebar or start a new one."
@@ -380,7 +397,7 @@ msgstr "விரைவில் வருகிறது!"
 msgid "Compact"
 msgstr "சுருக்கமான"
 
-#: src/components/layout/go-layout.tsx:125
+#: src/components/layout/go-layout.tsx:124
 msgid "Completed"
 msgstr "முடிந்தது"
 
@@ -463,15 +480,15 @@ msgstr "இயல்புநிலை"
 msgid "Default AI account"
 msgstr "இயல்புநிலை AI கணக்கு"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:655
 msgid "Delete"
 msgstr "நீக்கு"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:517
 msgid "Delete game"
 msgstr "விளையாட்டை நீக்கு"
 
-#: src/features/go/index.tsx:643
+#: src/features/go/index.tsx:646
 msgid "Delete game?"
 msgstr "விளையாட்டை நீக்கவா?"
 
@@ -479,7 +496,7 @@ msgstr "விளையாட்டை நீக்கவா?"
 msgid "Delete your account on the old server"
 msgstr "பழைய சேவையகத்தில் உங்கள் கணக்கை நீக்கவும்"
 
-#: src/features/go/index.tsx:649
+#: src/features/go/index.tsx:652
 msgid "Deleting..."
 msgstr "நீக்குகிறது..."
 
@@ -510,6 +527,10 @@ msgstr "வலை உலாவியிலிருந்து கண்டற�
 msgid "Direction"
 msgstr "திசை"
 
+#: ../../../lib/web/src/components/person-picker.tsx:214
+msgid "Directory"
+msgstr ""
+
 #: ../../../lib/web/src/components/restore-banner.tsx:79
 #: ../../../lib/web/src/components/restore-banner.tsx:85
 msgid "Dismiss"
@@ -532,7 +553,7 @@ msgstr "பதிவிறக்கம் தோல்வியடைந்த�
 msgid "Draw agreed"
 msgstr "சமநிலை ஒப்புக்கொள்ளப்பட்டது"
 
-#: src/features/go/index.tsx:527
+#: src/features/go/index.tsx:530
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "சமநிலை வழங்கப்பட்டது — {opponentName}-க்காக காத்திருக்கிறது"
 
@@ -556,11 +577,11 @@ msgstr "காலியான சந்திப்பு {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "காலியான சந்திப்பு {colLabel}{rowLabel}, வைக்க கிளிக் செய்க அல்லது Enter அழுத்தவும்"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:680
 msgid "End game"
 msgstr "ஆட்டத்தை முடி"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "End game?"
 msgstr "ஆட்டத்தை முடிக்கவா?"
 
@@ -643,8 +664,8 @@ msgstr "கணக்கை நீக்க முடியவில்லை"
 msgid "Failed to resign"
 msgstr "ராஜினாமா செய்ய முடியவில்லை"
 
-#: src/features/go/index.tsx:578
-#: src/features/go/index.tsx:611
+#: src/features/go/index.tsx:581
+#: src/features/go/index.tsx:614
 msgid "Failed to send"
 msgstr "அனுப்ப முடியவில்லை"
 
@@ -672,6 +693,10 @@ msgstr "மிதக்கும்"
 msgid "Friday"
 msgstr "வெள்ளிக்கிழமை"
 
+#: ../../../lib/web/src/components/person-picker.tsx:207
+msgid "Friends"
+msgstr "நண்பர்கள்"
+
 #: ../../../lib/web/src/components/travelling-picker.tsx:153
 msgid "From"
 msgstr "இருந்து"
@@ -698,8 +723,8 @@ msgid "Game deleted"
 msgstr "ஆட்டம் நீக்கப்பட்டது"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:368
-#: src/features/go/index.tsx:380
+#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:383
 msgid "Go"
 msgstr "செல்"
 
@@ -732,6 +757,11 @@ msgstr "முந்தைய பக்கத்திற்குச் செ�
 #: ../../../lib/web/src/features/access/access-dialog.tsx:162
 msgid "Group"
 msgstr "குழு"
+
+#. placeholder {0}: name || subject.slice(1)
+#: ../../../lib/web/src/features/access/access-list.tsx:68
+msgid "Group: {0}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:70
 msgid "Hide"
@@ -798,6 +828,10 @@ msgstr "மேலும் அறிய"
 #: ../../../lib/web/src/components/config-drawer.tsx:354
 msgid "Left to Right"
 msgstr "இடமிருந்து வலம்"
+
+#: ../../../lib/web/src/components/post-tags.tsx:72
+msgid "Letters, numbers, spaces, and hyphens only"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
 #: ../../../lib/web/src/components/theme-switch.tsx:45
@@ -879,7 +913,7 @@ msgstr "பிணையப் பிழை"
 msgid "New"
 msgstr "புதியது"
 
-#: src/components/layout/go-layout.tsx:139
+#: src/components/layout/go-layout.tsx:141
 #: src/features/go/components/game-empty-state.tsx:27
 #: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
@@ -891,7 +925,7 @@ msgstr "புதிய விளையாட்டு"
 msgid "Next image"
 msgstr "அடுத்த படம்"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:160
+#: ../../../lib/web/src/features/access/access-list.tsx:165
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "அணுகல் விதிகள் எதுவும் கட்டமைக்கப்படவில்லை. இந்த ஆதாரத்தை யார் அணுகலாம் என்பதைக் கட்டுப்படுத்த விதிகளைச் சேர்க்கவும்."
 
@@ -918,6 +952,10 @@ msgstr "குழுக்கள் கிடைக்கவில்லை"
 #: src/features/go/components/chat-message-list.tsx:153
 msgid "No messages yet"
 msgstr "செய்திகள் இன்னும் இல்லை"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "No notifications yet"
+msgstr ""
 
 #: ../../../lib/web/src/components/place-picker.tsx:132
 msgid "No places found"
@@ -975,7 +1013,7 @@ msgstr "அறிவிப்புகள்"
 msgid "Notifications: {0}"
 msgstr "அறிவிப்புகள்: {0}"
 
-#: src/features/go/index.tsx:498
+#: src/features/go/index.tsx:501
 msgid "Offer draw"
 msgstr "சம நிலை வழங்கவும்"
 
@@ -993,13 +1031,17 @@ msgstr "கணக்கு செயல்களைத் திறக்கவ�
 msgid "Open actions"
 msgstr "செயல்களைத் திற"
 
-#: src/features/go/index.tsx:469
+#: src/features/go/index.tsx:472
 msgid "Open chat panel"
 msgstr "அரட்டை பேனலைத் திறக்கவும்"
 
-#: src/features/go/index.tsx:477
+#: src/features/go/index.tsx:480
 msgid "Open game actions"
 msgstr "விளையாட்டு செயல்களைத் திறக்கவும்"
+
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+msgid "Open menu"
+msgstr "மெனுவைத் திறக்கவும்"
 
 #: ../../../lib/web/src/components/layout/top-bar.tsx:63
 #: ../../../lib/web/src/components/layout/top-bar.tsx:68
@@ -1020,7 +1062,7 @@ msgstr "தீம் அமைப்புகளைத் திறக்கவ�
 msgid "Other"
 msgstr "மற்றவை"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:217
+#: ../../../lib/web/src/features/access/access-list.tsx:222
 msgid "Owner"
 msgstr "உரிமையாளர்"
 
@@ -1030,16 +1072,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "பக்கம் {currentPage} / {totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:493
+#: src/features/go/index.tsx:680
 msgid "Pass"
 msgstr "தவிர்"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "Pass turn?"
 msgstr "முறையை தவிர்க்கவா?"
 
-#: src/features/go/index.tsx:674
+#: src/features/go/index.tsx:677
 msgid "Passing..."
 msgstr "தவிர்க்கப்படுகிறது..."
 
@@ -1095,6 +1137,10 @@ msgstr "தனியுரிமை"
 msgid "Profile"
 msgstr "சுயவிவரம்"
 
+#: ../../../lib/web/src/components/person-picker.tsx:200
+msgid "Project members"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:117
 msgid "Raised"
 msgstr "உயர்த்தப்பட்டது"
@@ -1129,26 +1175,26 @@ msgstr "சார்பு (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 மணி நேரத்திற்குள் சார்பு, இல்லையெனில் முழுமையானது"
 
-#: src/features/go/index.tsx:511
+#: src/features/go/index.tsx:514
 msgid "Rematch"
 msgstr "மறுபோட்டி"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:265
+#: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
 msgstr "அகற்று"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:247
-#: ../../../lib/web/src/features/access/access-list.tsx:253
+#: ../../../lib/web/src/features/access/access-list.tsx:252
+#: ../../../lib/web/src/features/access/access-list.tsx:258
 msgid "Remove access rule"
 msgstr "அணுகல் விதியை அகற்று"
 
 #. placeholder {0}: formatSubject(subject, data.name)
-#: ../../../lib/web/src/features/access/access-list.tsx:259
+#: ../../../lib/web/src/features/access/access-list.tsx:264
 msgid "Remove access rule for \"{0}\"?"
 msgstr "\"{0}\" க்கான அணுகல் விதியை அகற்றவா?"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:257
+#: ../../../lib/web/src/features/access/access-list.tsx:262
 msgid "Remove access?"
 msgstr "அணுகலை அகற்றவா?"
 
@@ -1170,16 +1216,16 @@ msgstr "மீட்டமை"
 msgid "Reset all settings to default values"
 msgstr "அனைத்து அமைப்புகளையும் இயல்பு மதிப்புகளுக்கு மீட்டமைக்கவும்"
 
-#: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:634
 msgid "Resign"
 msgstr "விலகு"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "Resign game?"
 msgstr "விளையாட்டிலிருந்து விலகவா?"
 
-#: src/features/go/index.tsx:628
+#: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "விலகுகிறது..."
 
@@ -1349,7 +1395,7 @@ msgstr "வெளியேறுகிறது..."
 msgid "Skip to Main"
 msgstr "முதன்மை பகுதிக்கு தவிர்"
 
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:671
 msgid "Skip your turn and pass to your opponent."
 msgstr "உங்கள் முறையை தவிர்த்து உங்கள் எதிராளிக்கு அனுப்பவும்."
 
@@ -1374,7 +1420,7 @@ msgstr "கேமை தொடங்கு"
 msgid "Stay tuned though!"
 msgstr "எனினும் காத்திருங்கள்!"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:191
+#: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
 msgstr "பொருள்"
 
@@ -1392,6 +1438,14 @@ msgstr "சிஸ்டம்"
 #: ../../../lib/web/src/components/tag-input.tsx:94
 msgid "Tag"
 msgstr "டேக்"
+
+#: ../../../lib/web/src/components/post-tags.tsx:76
+msgid "Tag already exists"
+msgstr "டேக் ஏற்கனவே உள்ளது"
+
+#: ../../../lib/web/src/components/post-tags.tsx:68
+msgid "Tag must be 50 characters or less"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:101
 #: ../../../lib/web/src/components/post-tags.tsx:115
@@ -1431,7 +1485,7 @@ msgstr "தீம் அமைப்புகள்"
 msgid "This page has not been created yet."
 msgstr "இந்தப் பக்கம் இன்னும் உருவாக்கப்படவில்லை."
 
-#: src/features/go/index.tsx:644
+#: src/features/go/index.tsx:647
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "இது விளையாட்டையும் அதன் அரட்டையையும் நிரந்தரமாக நீக்கும். இந்தச் செயலை மாற்ற முடியாது."
 
@@ -1550,6 +1604,7 @@ msgstr "சரிபார்க்கப்படாதது"
 msgid "Use your passkey"
 msgstr "உங்கள் கடவுவிசையைப் பயன்படுத்தவும்"
 
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "பயனர்"
@@ -1607,6 +1662,10 @@ msgstr "நாங்கள் <0>{0}</0> க்கு சரிபார்ப�
 msgid "We'll be back online shortly."
 msgstr "நாங்கள் விரைவில் ஆன்லைனுக்கு திரும்புவோம்."
 
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:197
+msgid "We'll notify you when something important happens."
+msgstr ""
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "Website is under maintenance!"
 msgstr "இணையதளம் பராமரிப்பில் உள்ளது!"
@@ -1615,11 +1674,11 @@ msgstr "இணையதளம் பராமரிப்பில் உள்�
 msgid "Wednesday"
 msgstr "புதன்கிழமை"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "White"
 msgstr "வெள்ளை"
 
-#: src/features/go/index.tsx:457
+#: src/features/go/index.tsx:460
 msgid "White captures:"
 msgstr "வெள்ளை பிடித்தவை:"
 
@@ -1642,6 +1701,10 @@ msgstr "இந்தப் பிரிவுக்கான அணுகல் 
 #: ../../../lib/web/src/features/errors/forbidden.tsx:18
 msgid "You don't have necessary permission <0/>to view this resource."
 msgstr "இந்த ஆதாரத்தைப் பார்க்க <0/>உங்களுக்குத் தேவையான அனுமதி இல்லை."
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "You're all caught up!"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

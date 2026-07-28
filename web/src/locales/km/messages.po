@@ -39,7 +39,7 @@ msgstr "{name} បានស្នើស្មើ"
 msgid "{name} resigned"
 msgstr "{name} បានចុះចាញ់"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:670
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} ក៏បានប្រគល់។ ការបញ្ជាក់នឹងបញ្ចប់ហ្គេម ហើយដាក់ពិន្ទុលើក្តារ។"
 
@@ -103,7 +103,7 @@ msgstr "ការចូលប្រើត្រូវបានបដិសេធ
 msgid "Access Forbidden"
 msgstr "ការចូលប្រើត្រូវបានហាមឃាត់"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:192
+#: ../../../lib/web/src/features/access/access-list.tsx:197
 msgid "Access level"
 msgstr "កម្រិតការចូលប្រើ"
 
@@ -123,10 +123,11 @@ msgstr "ប្រភេទគណនី"
 msgid "Account verified"
 msgstr "គណនីត្រូវបានផ្ទៀងផ្ទាត់"
 
-#: src/components/layout/go-layout.tsx:114
+#: src/components/layout/go-layout.tsx:113
 msgid "Active games"
 msgstr "ហ្គេមសកម្ម"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
 msgstr "បន្ថែម"
@@ -177,6 +178,10 @@ msgstr "បន្ថែមទៅការជូនដំណឹងដែលមា
 msgid "Add view"
 msgstr "បន្ថែមទិដ្ឋភាព"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
+msgid "Adding..."
+msgstr "កំពុងបន្ថែម..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:71
 msgid "Adjust the appearance and layout to suit your preferences."
 msgstr "កែតម្រូវរូបរាង និងប្លង់ឱ្យសមនឹងចំណូលចិត្តរបស់អ្នក។"
@@ -197,11 +202,15 @@ msgstr "មានកំហុសកើតឡើង"
 msgid "An unexpected error occurred"
 msgstr "មានកំហុសដែលមិនបានរំពឹងទុកកើតឡើង"
 
+#: ../../../lib/web/src/features/access/access-list.tsx:45
+msgid "Anyone"
+msgstr "នរណាម្នាក់"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:27
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "តើអ្នកប្រាកដថាចង់ចាកចេញមែនទេ? អ្នកនឹងត្រូវចូលម្តងទៀតដើម្បីចូលប្រើគណនីរបស់អ្នក។"
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "តើអ្នកប្រាកដថាចង់លាលែងពីតំណែងមែនទេ? {opponentName} នឹងឈ្នះហ្គេម។"
 
@@ -212,6 +221,10 @@ msgstr "ឡើង"
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx:27
 msgid "Ascending"
 msgstr "តាមលំដាប់កើន"
+
+#: ../../../lib/web/src/features/access/access-list.tsx:46
+msgid "Authenticated users"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Authenticator code"
@@ -227,11 +240,11 @@ msgstr "ត្រឡប់"
 msgid "Back to home"
 msgstr "ត្រឡប់ទៅទំព័រដើម"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "Black"
 msgstr "ខ្មៅ"
 
-#: src/features/go/index.tsx:452
+#: src/features/go/index.tsx:455
 msgid "Black captures:"
 msgstr "ខ្មៅចាប់៖"
 
@@ -258,7 +271,7 @@ msgstr "បង្កើនចំណាប់អារម្មណ៍"
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:248
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:132
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
-#: ../../../lib/web/src/features/access/access-list.tsx:263
+#: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
@@ -274,10 +287,14 @@ msgstr "ប្រភេទសម្រាប់ការជូនដំណឹង
 msgid "Change notification category"
 msgstr "ប្ដូរប្រភេទការជូនដំណឹង"
 
-#: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:594
+#: src/features/go/index.tsx:564
+#: src/features/go/index.tsx:597
 msgid "Chat"
 msgstr "ជជែក"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:198
+msgid "Check \"All\" to see your past notifications."
+msgstr ""
 
 #: src/features/go/components/game-empty-state.tsx:23
 msgid "Choose a game from the sidebar or start a new one."
@@ -380,7 +397,7 @@ msgstr "នឹងមកដល់ឆាប់ៗ!"
 msgid "Compact"
 msgstr "តូច"
 
-#: src/components/layout/go-layout.tsx:125
+#: src/components/layout/go-layout.tsx:124
 msgid "Completed"
 msgstr "បានបញ្ចប់"
 
@@ -463,15 +480,15 @@ msgstr "លំនាំដើម"
 msgid "Default AI account"
 msgstr "គណនី AI លំនាំដើម"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:655
 msgid "Delete"
 msgstr "លុប"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:517
 msgid "Delete game"
 msgstr "លុបហ្គេម"
 
-#: src/features/go/index.tsx:643
+#: src/features/go/index.tsx:646
 msgid "Delete game?"
 msgstr "លុបហ្គេម?"
 
@@ -479,7 +496,7 @@ msgstr "លុបហ្គេម?"
 msgid "Delete your account on the old server"
 msgstr "លុបគណនីរបស់អ្នកនៅម៉ាស៊ីនមេចាស់"
 
-#: src/features/go/index.tsx:649
+#: src/features/go/index.tsx:652
 msgid "Deleting..."
 msgstr "កំពុងលុប..."
 
@@ -510,6 +527,10 @@ msgstr "រកឃើញពីកម្មវិធីរុករកគេហទ
 msgid "Direction"
 msgstr "ទិស"
 
+#: ../../../lib/web/src/components/person-picker.tsx:214
+msgid "Directory"
+msgstr ""
+
 #: ../../../lib/web/src/components/restore-banner.tsx:79
 #: ../../../lib/web/src/components/restore-banner.tsx:85
 msgid "Dismiss"
@@ -532,7 +553,7 @@ msgstr "ការទាញយកបានបរាជ័យ"
 msgid "Draw agreed"
 msgstr "បានយល់ព្រមស្មើ"
 
-#: src/features/go/index.tsx:527
+#: src/features/go/index.tsx:530
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "បានស្នើស្មើ — កំពុងរង់ចាំ {opponentName}"
 
@@ -556,11 +577,11 @@ msgstr "ប្រសព្វទទេ {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ប្រសព្វទទេ {colLabel}{rowLabel} ចុច ឬចុច Enter ដើម្បីដាក់"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:680
 msgid "End game"
 msgstr "បញ្ចប់ហ្គេម"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "End game?"
 msgstr "បញ្ចប់ហ្គេម?"
 
@@ -643,8 +664,8 @@ msgstr "បរាជ័យក្នុងការដកគណនី"
 msgid "Failed to resign"
 msgstr "បរាជ័យក្នុងការចុះចាញ់"
 
-#: src/features/go/index.tsx:578
-#: src/features/go/index.tsx:611
+#: src/features/go/index.tsx:581
+#: src/features/go/index.tsx:614
 msgid "Failed to send"
 msgstr "បរាជ័យក្នុងការផ្ញើ"
 
@@ -672,6 +693,10 @@ msgstr "អណ្ដែត"
 msgid "Friday"
 msgstr "ថ្ងៃសុក្រ"
 
+#: ../../../lib/web/src/components/person-picker.tsx:207
+msgid "Friends"
+msgstr "មិត្ត"
+
 #: ../../../lib/web/src/components/travelling-picker.tsx:153
 msgid "From"
 msgstr "ពី"
@@ -698,8 +723,8 @@ msgid "Game deleted"
 msgstr "បានលុបហ្គេម"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:368
-#: src/features/go/index.tsx:380
+#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:383
 msgid "Go"
 msgstr "ទៅ"
 
@@ -732,6 +757,11 @@ msgstr "ទៅទំព័រមុន"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:162
 msgid "Group"
 msgstr "ក្រុម"
+
+#. placeholder {0}: name || subject.slice(1)
+#: ../../../lib/web/src/features/access/access-list.tsx:68
+msgid "Group: {0}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:70
 msgid "Hide"
@@ -798,6 +828,10 @@ msgstr "ស្វែងយល់បន្ថែម"
 #: ../../../lib/web/src/components/config-drawer.tsx:354
 msgid "Left to Right"
 msgstr "ឆ្វេងទៅស្ដាំ"
+
+#: ../../../lib/web/src/components/post-tags.tsx:72
+msgid "Letters, numbers, spaces, and hyphens only"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
 #: ../../../lib/web/src/components/theme-switch.tsx:45
@@ -879,7 +913,7 @@ msgstr "កំហុសបណ្តាញ"
 msgid "New"
 msgstr "ថ្មី"
 
-#: src/components/layout/go-layout.tsx:139
+#: src/components/layout/go-layout.tsx:141
 #: src/features/go/components/game-empty-state.tsx:27
 #: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
@@ -891,7 +925,7 @@ msgstr "ហ្គេមថ្មី"
 msgid "Next image"
 msgstr "រូបភាពបន្ទាប់"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:160
+#: ../../../lib/web/src/features/access/access-list.tsx:165
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "មិនមានច្បាប់ចូលប្រើបានកំណត់រចនាសម្ព័ន្ធទេ។ បន្ថែមច្បាប់ដើម្បីគ្រប់គ្រងអ្នកដែលអាចចូលប្រើធនធាននេះ។"
 
@@ -918,6 +952,10 @@ msgstr "មិនមានក្រុម"
 #: src/features/go/components/chat-message-list.tsx:153
 msgid "No messages yet"
 msgstr "មិនទាន់មានសារ"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "No notifications yet"
+msgstr ""
 
 #: ../../../lib/web/src/components/place-picker.tsx:132
 msgid "No places found"
@@ -975,7 +1013,7 @@ msgstr "ការជូនដំណឹង"
 msgid "Notifications: {0}"
 msgstr "ការជូនដំណឹង៖ {0}"
 
-#: src/features/go/index.tsx:498
+#: src/features/go/index.tsx:501
 msgid "Offer draw"
 msgstr "ផ្តល់ជូនការស្មើ"
 
@@ -993,13 +1031,17 @@ msgstr "បើកសកម្មភាពគណនី"
 msgid "Open actions"
 msgstr "បើកសកម្មភាព"
 
-#: src/features/go/index.tsx:469
+#: src/features/go/index.tsx:472
 msgid "Open chat panel"
 msgstr "បើកបន្ទះសន្ទនា"
 
-#: src/features/go/index.tsx:477
+#: src/features/go/index.tsx:480
 msgid "Open game actions"
 msgstr "បើកសកម្មភាពហ្គេម"
+
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+msgid "Open menu"
+msgstr "បើកម៉ឺនុយ"
 
 #: ../../../lib/web/src/components/layout/top-bar.tsx:63
 #: ../../../lib/web/src/components/layout/top-bar.tsx:68
@@ -1020,7 +1062,7 @@ msgstr "បើកការកំណត់រចនាប័ទ្ម"
 msgid "Other"
 msgstr "ផ្សេងទៀត"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:217
+#: ../../../lib/web/src/features/access/access-list.tsx:222
 msgid "Owner"
 msgstr "ម្ចាស់"
 
@@ -1030,16 +1072,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "ទំព័រ {currentPage} នៃ {totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:493
+#: src/features/go/index.tsx:680
 msgid "Pass"
 msgstr "ឆ្លងកាត់"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "Pass turn?"
 msgstr "ឆ្លងកាត់វេន?"
 
-#: src/features/go/index.tsx:674
+#: src/features/go/index.tsx:677
 msgid "Passing..."
 msgstr "កំពុងឆ្លងកាត់..."
 
@@ -1095,6 +1137,10 @@ msgstr "ឯកជនភាព"
 msgid "Profile"
 msgstr "ប្រវត្តិរូប"
 
+#: ../../../lib/web/src/components/person-picker.tsx:200
+msgid "Project members"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:117
 msgid "Raised"
 msgstr "លើកឡើង"
@@ -1129,26 +1175,26 @@ msgstr "ទាក់ទង (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "ទាក់ទងក្នុង 24 ម៉ោង បើមិនដូច្នេះទេដាច់ខាត"
 
-#: src/features/go/index.tsx:511
+#: src/features/go/index.tsx:514
 msgid "Rematch"
 msgstr "ប្រកួតឡើងវិញ"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:265
+#: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
 msgstr "យកចេញ"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:247
-#: ../../../lib/web/src/features/access/access-list.tsx:253
+#: ../../../lib/web/src/features/access/access-list.tsx:252
+#: ../../../lib/web/src/features/access/access-list.tsx:258
 msgid "Remove access rule"
 msgstr "យកច្បាប់ចូលប្រើចេញ"
 
 #. placeholder {0}: formatSubject(subject, data.name)
-#: ../../../lib/web/src/features/access/access-list.tsx:259
+#: ../../../lib/web/src/features/access/access-list.tsx:264
 msgid "Remove access rule for \"{0}\"?"
 msgstr "លុបច្បាប់ចូលប្រើសម្រាប់ \"{0}\"?"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:257
+#: ../../../lib/web/src/features/access/access-list.tsx:262
 msgid "Remove access?"
 msgstr "យកសិទ្ធិចូលប្រើចេញ?"
 
@@ -1170,16 +1216,16 @@ msgstr "កំណត់ឡើងវិញ"
 msgid "Reset all settings to default values"
 msgstr "កំណត់ការកំណត់ទាំងអស់ឡើងវិញទៅតម្លៃលំនាំដើម"
 
-#: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:634
 msgid "Resign"
 msgstr "ចុះចាញ់"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "Resign game?"
 msgstr "ចុះចាញ់ហ្គេម?"
 
-#: src/features/go/index.tsx:628
+#: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "កំពុងចុះចាញ់..."
 
@@ -1349,7 +1395,7 @@ msgstr "កំពុងចេញ..."
 msgid "Skip to Main"
 msgstr "រំលងទៅមាតិកាសំខាន់"
 
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:671
 msgid "Skip your turn and pass to your opponent."
 msgstr "រំលងវេនរបស់អ្នក ហើយបញ្ជូនទៅគូប្រកួតរបស់អ្នក។"
 
@@ -1374,7 +1420,7 @@ msgstr "ចាប់ផ្តើមហ្គេម"
 msgid "Stay tuned though!"
 msgstr "ប៉ុន្តែសូមតាមដាន!"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:191
+#: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
 msgstr "ប្រធានបទ"
 
@@ -1392,6 +1438,14 @@ msgstr "ប្រព័ន្ធ"
 #: ../../../lib/web/src/components/tag-input.tsx:94
 msgid "Tag"
 msgstr "ស្លាក"
+
+#: ../../../lib/web/src/components/post-tags.tsx:76
+msgid "Tag already exists"
+msgstr "ស្លាកមានរួចហើយ"
+
+#: ../../../lib/web/src/components/post-tags.tsx:68
+msgid "Tag must be 50 characters or less"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:101
 #: ../../../lib/web/src/components/post-tags.tsx:115
@@ -1431,7 +1485,7 @@ msgstr "ការកំណត់រូបរាង"
 msgid "This page has not been created yet."
 msgstr "ទំព័រនេះមិនទាន់ត្រូវបានបង្កើតទេ។"
 
-#: src/features/go/index.tsx:644
+#: src/features/go/index.tsx:647
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "សកម្មភាពនេះនឹងលុបហ្គេម និងជជែកកំសាន្តរបស់វាជាអចិន្ត្រៃយ៍។ សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។"
 
@@ -1550,6 +1604,7 @@ msgstr "មិនបានផ្ទៀងផ្ទាត់"
 msgid "Use your passkey"
 msgstr "ប្រើ passkey របស់អ្នក"
 
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "អ្នកប្រើប្រាស់"
@@ -1607,6 +1662,10 @@ msgstr "យើងបានផ្ញើលេខកូដផ្ទៀងផ្ទ
 msgid "We'll be back online shortly."
 msgstr "យើងនឹងត្រឡប់មកដំណើរការវិញឆាប់ៗនេះ។"
 
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:197
+msgid "We'll notify you when something important happens."
+msgstr ""
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "Website is under maintenance!"
 msgstr "គេហទំព័រកំពុងស្ថិតក្រោមការថែទាំ!"
@@ -1615,11 +1674,11 @@ msgstr "គេហទំព័រកំពុងស្ថិតក្រោមក
 msgid "Wednesday"
 msgstr "ថ្ងៃពុធ"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "White"
 msgstr "ស"
 
-#: src/features/go/index.tsx:457
+#: src/features/go/index.tsx:460
 msgid "White captures:"
 msgstr "ស ចាប់ៈ"
 
@@ -1642,6 +1701,10 @@ msgstr "អ្នកមិនមានសិទ្ធិចូលប្រើផ
 #: ../../../lib/web/src/features/errors/forbidden.tsx:18
 msgid "You don't have necessary permission <0/>to view this resource."
 msgstr "អ្នកមិនមានការអនុញ្ញាតចាំបាច់ <0/>ដើម្បីមើលធនធាននេះទេ។"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "You're all caught up!"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

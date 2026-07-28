@@ -39,7 +39,7 @@ msgstr "{name} dábàá ìfòyebánilọ́pọ̀"
 msgid "{name} resigned"
 msgstr "{name} jọwọ́ ara rẹ̀"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:670
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} náà ti kọjá. Ìfìdíjámọ́ yóò fi opin sí eré náà yóò sì díwọ̀n pátákó náà."
 
@@ -103,7 +103,7 @@ msgstr "A kọ̀ ìwọlé"
 msgid "Access Forbidden"
 msgstr "Ìwọlé Léèwọ̀"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:192
+#: ../../../lib/web/src/features/access/access-list.tsx:197
 msgid "Access level"
 msgstr "Ìpele ìwọlé"
 
@@ -123,10 +123,11 @@ msgstr "Irú àkáǹtì"
 msgid "Account verified"
 msgstr "A ti fọwọ́sí àkáǹtì"
 
-#: src/components/layout/go-layout.tsx:114
+#: src/components/layout/go-layout.tsx:113
 msgid "Active games"
 msgstr "Àwọn Eré Tó Ń Lọ"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
 msgstr "Fi kún"
@@ -177,6 +178,10 @@ msgstr "Fi sí àwọn ìfitónilétí tó wà"
 msgid "Add view"
 msgstr "Fi ìran kún"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
+msgid "Adding..."
+msgstr "Ó ń fi kún..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:71
 msgid "Adjust the appearance and layout to suit your preferences."
 msgstr "Ṣàtúnṣe ìrísí àti ìtò láti bá ìfẹ́ rẹ mu."
@@ -197,11 +202,15 @@ msgstr "Àṣìṣe kan wáyé"
 msgid "An unexpected error occurred"
 msgstr "Àṣìṣe àìròtẹ́lẹ̀ kan wáyé"
 
+#: ../../../lib/web/src/features/access/access-list.tsx:45
+msgid "Anyone"
+msgstr "Ẹnikẹ́ni"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:27
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Ṣé o dájú pé o fẹ́ jáde? Wàá nílò láti wọlé lẹ́ẹ̀kan sí i láti rí àkáǹtì rẹ."
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Ǹjẹ́ ó dájú pé o fẹ́ jọ̀wọ́? {opponentName} yóò ṣẹ́gun ìdíje náà."
 
@@ -212,6 +221,10 @@ msgstr "Àsc"
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx:27
 msgid "Ascending"
 msgstr "Gòkè"
+
+#: ../../../lib/web/src/features/access/access-list.tsx:46
+msgid "Authenticated users"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Authenticator code"
@@ -227,11 +240,11 @@ msgstr "Padà"
 msgid "Back to home"
 msgstr "Pada si ile"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "Black"
 msgstr "Dúdú"
 
-#: src/features/go/index.tsx:452
+#: src/features/go/index.tsx:455
 msgid "Black captures:"
 msgstr "Awọn tí dúdú mú:"
 
@@ -258,7 +271,7 @@ msgstr "Mú ìfẹ́ pọ̀"
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:248
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:132
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
-#: ../../../lib/web/src/features/access/access-list.tsx:263
+#: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
@@ -274,10 +287,14 @@ msgstr "Ẹ̀ka fún ìfitónilétí yìí"
 msgid "Change notification category"
 msgstr "Yí ẹ̀ka ìfitónilétí padà"
 
-#: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:594
+#: src/features/go/index.tsx:564
+#: src/features/go/index.tsx:597
 msgid "Chat"
 msgstr "Ìjíròrò"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:198
+msgid "Check \"All\" to see your past notifications."
+msgstr ""
 
 #: src/features/go/components/game-empty-state.tsx:23
 msgid "Choose a game from the sidebar or start a new one."
@@ -380,7 +397,7 @@ msgstr "Yóò Dé Láìpẹ́!"
 msgid "Compact"
 msgstr "Kékeré"
 
-#: src/components/layout/go-layout.tsx:125
+#: src/components/layout/go-layout.tsx:124
 msgid "Completed"
 msgstr "Tí a parí"
 
@@ -463,15 +480,15 @@ msgstr "Àìpé"
 msgid "Default AI account"
 msgstr "Àkáǹtì AI àìpé"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:655
 msgid "Delete"
 msgstr "Pa rẹ́"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:517
 msgid "Delete game"
 msgstr "Pa eré rẹ́"
 
-#: src/features/go/index.tsx:643
+#: src/features/go/index.tsx:646
 msgid "Delete game?"
 msgstr "Pa eré náà rẹ́?"
 
@@ -479,7 +496,7 @@ msgstr "Pa eré náà rẹ́?"
 msgid "Delete your account on the old server"
 msgstr "Pa akonti rẹ rẹ lori olupin atijọ"
 
-#: src/features/go/index.tsx:649
+#: src/features/go/index.tsx:652
 msgid "Deleting..."
 msgstr "Ó ń pa rẹ́..."
 
@@ -510,6 +527,10 @@ msgstr "Ṣàwárí láti web browser"
 msgid "Direction"
 msgstr "Ìtọ́sọ́nà"
 
+#: ../../../lib/web/src/components/person-picker.tsx:214
+msgid "Directory"
+msgstr ""
+
 #: ../../../lib/web/src/components/restore-banner.tsx:79
 #: ../../../lib/web/src/components/restore-banner.tsx:85
 msgid "Dismiss"
@@ -532,7 +553,7 @@ msgstr "Ìgbasílẹ̀ kùnà"
 msgid "Draw agreed"
 msgstr "Ìfòyebánilọ́pọ̀ ti gbà"
 
-#: src/features/go/index.tsx:527
+#: src/features/go/index.tsx:530
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "A fún ní ìdábọ̀ — ń dúró de {opponentName}"
 
@@ -556,11 +577,11 @@ msgstr "Ìkóra ṣófo {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Ìkóra ṣófo {colLabel}{rowLabel}, tẹ tàbí tẹ Enter láti gbé"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:680
 msgid "End game"
 msgstr "Parí eré"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "End game?"
 msgstr "Parí eré?"
 
@@ -643,8 +664,8 @@ msgstr "Kò lè mú àkántì kúrò"
 msgid "Failed to resign"
 msgstr "Kò lè jọ̀wọ́"
 
-#: src/features/go/index.tsx:578
-#: src/features/go/index.tsx:611
+#: src/features/go/index.tsx:581
+#: src/features/go/index.tsx:614
 msgid "Failed to send"
 msgstr "Kò lè firanṣẹ́"
 
@@ -672,6 +693,10 @@ msgstr "Léfòfò"
 msgid "Friday"
 msgstr "Ọjọ́ Ẹ̀tì"
 
+#: ../../../lib/web/src/components/person-picker.tsx:207
+msgid "Friends"
+msgstr "Àwọn ọ̀rẹ́"
+
 #: ../../../lib/web/src/components/travelling-picker.tsx:153
 msgid "From"
 msgstr "Láti"
@@ -698,8 +723,8 @@ msgid "Game deleted"
 msgstr "A ti pa eré rẹ́"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:368
-#: src/features/go/index.tsx:380
+#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:383
 msgid "Go"
 msgstr "Lọ"
 
@@ -732,6 +757,11 @@ msgstr "Lọ sí ojú-ewé tí ó ṣáájú"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:162
 msgid "Group"
 msgstr "Àwùjọ"
+
+#. placeholder {0}: name || subject.slice(1)
+#: ../../../lib/web/src/features/access/access-list.tsx:68
+msgid "Group: {0}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:70
 msgid "Hide"
@@ -798,6 +828,10 @@ msgstr "Kọ́ síwájú"
 #: ../../../lib/web/src/components/config-drawer.tsx:354
 msgid "Left to Right"
 msgstr "Òsì sí Ọ̀tún"
+
+#: ../../../lib/web/src/components/post-tags.tsx:72
+msgid "Letters, numbers, spaces, and hyphens only"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
 #: ../../../lib/web/src/components/theme-switch.tsx:45
@@ -879,7 +913,7 @@ msgstr "Àṣìṣe nẹ́tíwọ́kì"
 msgid "New"
 msgstr "Tuntun"
 
-#: src/components/layout/go-layout.tsx:139
+#: src/components/layout/go-layout.tsx:141
 #: src/features/go/components/game-empty-state.tsx:27
 #: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
@@ -891,7 +925,7 @@ msgstr "Eré tuntun"
 msgid "Next image"
 msgstr "Àwòrán tó kàn"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:160
+#: ../../../lib/web/src/features/access/access-list.tsx:165
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "A kò ṣètò àwọn òfin àyè kankan. Fi àwọn òfin kún láti ṣàkóso ẹni tó lè ní àyè sí ohun àmúṣọ̀rọ̀ yìí."
 
@@ -918,6 +952,10 @@ msgstr "Kò sí ẹgbẹ́ tó wà"
 #: src/features/go/components/chat-message-list.tsx:153
 msgid "No messages yet"
 msgstr "Kò sí ìránṣẹ́ síbẹ̀"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "No notifications yet"
+msgstr ""
 
 #: ../../../lib/web/src/components/place-picker.tsx:132
 msgid "No places found"
@@ -975,7 +1013,7 @@ msgstr "Àwọn ìfìtọ́nisí"
 msgid "Notifications: {0}"
 msgstr "Àwọn ìfitónilétí: {0}"
 
-#: src/features/go/index.tsx:498
+#: src/features/go/index.tsx:501
 msgid "Offer draw"
 msgstr "Pèsè ìdọ́gba"
 
@@ -993,13 +1031,17 @@ msgstr "Ṣí àwọn iṣẹ́ ìròyìn"
 msgid "Open actions"
 msgstr "Ṣí àwọn ìṣe"
 
-#: src/features/go/index.tsx:469
+#: src/features/go/index.tsx:472
 msgid "Open chat panel"
 msgstr "Ṣí àwòrán chat"
 
-#: src/features/go/index.tsx:477
+#: src/features/go/index.tsx:480
 msgid "Open game actions"
 msgstr "Ṣí àwọn iṣẹ́ eré"
+
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+msgid "Open menu"
+msgstr "Ṣí ìtòlẹ́sẹẹsẹ"
 
 #: ../../../lib/web/src/components/layout/top-bar.tsx:63
 #: ../../../lib/web/src/components/layout/top-bar.tsx:68
@@ -1020,7 +1062,7 @@ msgstr "Ṣí àwọn ètò àkórí"
 msgid "Other"
 msgstr "Mìíràn"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:217
+#: ../../../lib/web/src/features/access/access-list.tsx:222
 msgid "Owner"
 msgstr "Onílé"
 
@@ -1030,16 +1072,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "Ojú-ìwé {currentPage} nínú {totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:493
+#: src/features/go/index.tsx:680
 msgid "Pass"
 msgstr "Kọjá"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "Pass turn?"
 msgstr "Kọjá ìgbà?"
 
-#: src/features/go/index.tsx:674
+#: src/features/go/index.tsx:677
 msgid "Passing..."
 msgstr "Ń kọjá..."
 
@@ -1095,6 +1137,10 @@ msgstr "Aṣírí"
 msgid "Profile"
 msgstr "Profile"
 
+#: ../../../lib/web/src/components/person-picker.tsx:200
+msgid "Project members"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:117
 msgid "Raised"
 msgstr "Gbígbé sókè"
@@ -1129,26 +1175,26 @@ msgstr "Pẹ̀lú ìbáṣepọ̀ (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Pẹ̀lú ìbáṣepọ̀ nínú wákàtí 24, bí ó ṣíkù absolute"
 
-#: src/features/go/index.tsx:511
+#: src/features/go/index.tsx:514
 msgid "Rematch"
 msgstr "Tún bá"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:265
+#: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
 msgstr "Yọ kúrò"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:247
-#: ../../../lib/web/src/features/access/access-list.tsx:253
+#: ../../../lib/web/src/features/access/access-list.tsx:252
+#: ../../../lib/web/src/features/access/access-list.tsx:258
 msgid "Remove access rule"
 msgstr "Yọ òfin àyè kúrò"
 
 #. placeholder {0}: formatSubject(subject, data.name)
-#: ../../../lib/web/src/features/access/access-list.tsx:259
+#: ../../../lib/web/src/features/access/access-list.tsx:264
 msgid "Remove access rule for \"{0}\"?"
 msgstr "Yọ òfin ìwọlé fún \"{0}\" kúrò?"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:257
+#: ../../../lib/web/src/features/access/access-list.tsx:262
 msgid "Remove access?"
 msgstr "Yọ àyè kúrò?"
 
@@ -1170,16 +1216,16 @@ msgstr "Pa padà"
 msgid "Reset all settings to default values"
 msgstr "Pa gbogbo ètò padà sí àwọn iye àbùdá"
 
-#: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:634
 msgid "Resign"
 msgstr "Fi sílẹ̀"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "Resign game?"
 msgstr "Fi eré sílẹ̀?"
 
-#: src/features/go/index.tsx:628
+#: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Ń fi sílẹ̀..."
 
@@ -1349,7 +1395,7 @@ msgstr "Ń jáde..."
 msgid "Skip to Main"
 msgstr "Fò sí Olórí"
 
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:671
 msgid "Skip your turn and pass to your opponent."
 msgstr "Fò ìyípo rẹ kí o sì gbé fún alátakò rẹ."
 
@@ -1374,7 +1420,7 @@ msgstr "Bẹ̀rẹ̀ eré"
 msgid "Stay tuned though!"
 msgstr "Ṣùgbọ́n dúró tì wá!"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:191
+#: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
 msgstr "Àkòrí"
 
@@ -1392,6 +1438,14 @@ msgstr "System"
 #: ../../../lib/web/src/components/tag-input.tsx:94
 msgid "Tag"
 msgstr "Tag"
+
+#: ../../../lib/web/src/components/post-tags.tsx:76
+msgid "Tag already exists"
+msgstr "Tag ti wà tẹ́lẹ̀"
+
+#: ../../../lib/web/src/components/post-tags.tsx:68
+msgid "Tag must be 50 characters or less"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:101
 #: ../../../lib/web/src/components/post-tags.tsx:115
@@ -1431,7 +1485,7 @@ msgstr "Àwọn ìṣètò Theme"
 msgid "This page has not been created yet."
 msgstr "A kò tí ì ṣẹ̀dá ojú-ìwé yìí."
 
-#: src/features/go/index.tsx:644
+#: src/features/go/index.tsx:647
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Èyí yóò pa eré náà àti ìjíròrò rẹ̀ rẹ́ pátápátá. A kò lè yí ìṣe yìí padà."
 
@@ -1550,6 +1604,7 @@ msgstr "Kò tíì jẹ́rìí sí"
 msgid "Use your passkey"
 msgstr "Lo passkey rẹ"
 
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "User"
@@ -1607,6 +1662,10 @@ msgstr "A rán kóòdù ìjẹ́rìísí sí <0>{0}</0>. Tẹ kóòdù náà sí
 msgid "We'll be back online shortly."
 msgstr "A ó padà sí lójú-ọ̀nà láìpẹ́."
 
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:197
+msgid "We'll notify you when something important happens."
+msgstr ""
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "Website is under maintenance!"
 msgstr "Síìtì wà lábẹ́ ìtọ́jú!"
@@ -1615,11 +1674,11 @@ msgstr "Síìtì wà lábẹ́ ìtọ́jú!"
 msgid "Wednesday"
 msgstr "Ọjọ́rú"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "White"
 msgstr "Funfun"
 
-#: src/features/go/index.tsx:457
+#: src/features/go/index.tsx:460
 msgid "White captures:"
 msgstr "Awọn tí funfun mú:"
 
@@ -1642,6 +1701,10 @@ msgstr "O kò ní ààyè sí abala yìí."
 #: ../../../lib/web/src/features/errors/forbidden.tsx:18
 msgid "You don't have necessary permission <0/>to view this resource."
 msgstr "O kò ní àṣẹ tó yẹ <0/>láti wo ohun àmúlò yìí."
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "You're all caught up!"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

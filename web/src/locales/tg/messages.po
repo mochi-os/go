@@ -39,7 +39,7 @@ msgstr "{name} баробариро пешниҳод кард"
 msgid "{name} resigned"
 msgstr "{name} таслим шуд"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:670
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} низ гузашт. Тасдиқ кардан бозиро ба охир мерасонад ва тахтаро ҳисоб мекунад."
 
@@ -103,7 +103,7 @@ msgstr "Дастрасӣ рад карда шуд"
 msgid "Access Forbidden"
 msgstr "Дастрасӣ манъ аст"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:192
+#: ../../../lib/web/src/features/access/access-list.tsx:197
 msgid "Access level"
 msgstr "Сатҳи дастрасӣ"
 
@@ -123,10 +123,11 @@ msgstr "Намуди ҳисоб"
 msgid "Account verified"
 msgstr "Ҳисоб тасдиқ карда шуд"
 
-#: src/components/layout/go-layout.tsx:114
+#: src/components/layout/go-layout.tsx:113
 msgid "Active games"
 msgstr "Бозиҳои фаъол"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
 msgstr "Илова кардан"
@@ -177,6 +178,10 @@ msgstr "Илова ба огоҳиномаҳои мавҷуда"
 msgid "Add view"
 msgstr "Иловаи намуд"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
+msgid "Adding..."
+msgstr "Илова шуда истодааст..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:71
 msgid "Adjust the appearance and layout to suit your preferences."
 msgstr "Намуд ва тарҳбандиро мувофиқи хости худ танзим кунед."
@@ -197,11 +202,15 @@ msgstr "Хатогӣ рух дод"
 msgid "An unexpected error occurred"
 msgstr "Хатогии ғайричашмдошт рух дод"
 
+#: ../../../lib/web/src/features/access/access-list.tsx:45
+msgid "Anyone"
+msgstr "Ҳар кас"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:27
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Шумо мутмаин ҳастед, ки мехоҳед хориҷ шавед? Барои дастрасӣ ба ҳисоб бояд аз нав ворид шавед."
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Шумо мутмаин ҳастед, ки мехоҳед таслим шавед? {opponentName} бозиро мебарад."
 
@@ -212,6 +221,10 @@ msgstr "Афзоянда"
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx:27
 msgid "Ascending"
 msgstr "Афзоишёбанда"
+
+#: ../../../lib/web/src/features/access/access-list.tsx:46
+msgid "Authenticated users"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Authenticator code"
@@ -227,11 +240,11 @@ msgstr "Бозгашт"
 msgid "Back to home"
 msgstr "Бозгашт ба саҳифаи асосӣ"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "Black"
 msgstr "Сиёҳ"
 
-#: src/features/go/index.tsx:452
+#: src/features/go/index.tsx:455
 msgid "Black captures:"
 msgstr "Гирифтаҳои сиёҳ:"
 
@@ -258,7 +271,7 @@ msgstr "Афзоиши таваҷҷуҳ"
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:248
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:132
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
-#: ../../../lib/web/src/features/access/access-list.tsx:263
+#: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
@@ -274,10 +287,14 @@ msgstr "Категория барои ин огоҳинома"
 msgid "Change notification category"
 msgstr "Тағйири категорияи огоҳинома"
 
-#: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:594
+#: src/features/go/index.tsx:564
+#: src/features/go/index.tsx:597
 msgid "Chat"
 msgstr "Чат"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:198
+msgid "Check \"All\" to see your past notifications."
+msgstr ""
 
 #: src/features/go/components/game-empty-state.tsx:23
 msgid "Choose a game from the sidebar or start a new one."
@@ -380,7 +397,7 @@ msgstr "Ба наздикӣ!"
 msgid "Compact"
 msgstr "Паймон"
 
-#: src/components/layout/go-layout.tsx:125
+#: src/components/layout/go-layout.tsx:124
 msgid "Completed"
 msgstr "Анҷомшуда"
 
@@ -463,15 +480,15 @@ msgstr "Пешфарз"
 msgid "Default AI account"
 msgstr "Ҳисоби пешфарз AI"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:655
 msgid "Delete"
 msgstr "Нест кардан"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:517
 msgid "Delete game"
 msgstr "Нест кардани бозӣ"
 
-#: src/features/go/index.tsx:643
+#: src/features/go/index.tsx:646
 msgid "Delete game?"
 msgstr "Бозӣ нест карда шавад?"
 
@@ -479,7 +496,7 @@ msgstr "Бозӣ нест карда шавад?"
 msgid "Delete your account on the old server"
 msgstr "Ҳисоби худро дар сервери кӯҳна нест кунед"
 
-#: src/features/go/index.tsx:649
+#: src/features/go/index.tsx:652
 msgid "Deleting..."
 msgstr "Нест карда истодааст..."
 
@@ -510,6 +527,10 @@ msgstr "Аз браузери веб муайян кардан"
 msgid "Direction"
 msgstr "Самт"
 
+#: ../../../lib/web/src/components/person-picker.tsx:214
+msgid "Directory"
+msgstr ""
+
 #: ../../../lib/web/src/components/restore-banner.tsx:79
 #: ../../../lib/web/src/components/restore-banner.tsx:85
 msgid "Dismiss"
@@ -532,7 +553,7 @@ msgstr "Боргирӣ ноком шуд"
 msgid "Draw agreed"
 msgstr "Баробарӣ қабул шуд"
 
-#: src/features/go/index.tsx:527
+#: src/features/go/index.tsx:530
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Қарор пешниҳод шуд — мунтазири {opponentName}"
 
@@ -556,11 +577,11 @@ msgstr "Буриши холии {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Буриши холии {colLabel}{rowLabel}, барои гузоштан зер кунед ё Enter-ро пахш кунед"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:680
 msgid "End game"
 msgstr "Бозиро ба охир расонед"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "End game?"
 msgstr "Бозиро ба охир расонем?"
 
@@ -643,8 +664,8 @@ msgstr "Бартараф кардани ҳисоб ба анҷом нараси�
 msgid "Failed to resign"
 msgstr "Истеъфо ба анҷом нарасид"
 
-#: src/features/go/index.tsx:578
-#: src/features/go/index.tsx:611
+#: src/features/go/index.tsx:581
+#: src/features/go/index.tsx:614
 msgid "Failed to send"
 msgstr "Ирсол ба анҷом нарасид"
 
@@ -672,6 +693,10 @@ msgstr "Шинокунанда"
 msgid "Friday"
 msgstr "Ҷумъа"
 
+#: ../../../lib/web/src/components/person-picker.tsx:207
+msgid "Friends"
+msgstr "Дӯстон"
+
 #: ../../../lib/web/src/components/travelling-picker.tsx:153
 msgid "From"
 msgstr "Аз"
@@ -698,8 +723,8 @@ msgid "Game deleted"
 msgstr "Бозӣ ҳазф шуд"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:368
-#: src/features/go/index.tsx:380
+#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:383
 msgid "Go"
 msgstr "Рафтан"
 
@@ -732,6 +757,11 @@ msgstr "Ба саҳифаи қаблӣ рафтан"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:162
 msgid "Group"
 msgstr "Гурӯҳ"
+
+#. placeholder {0}: name || subject.slice(1)
+#: ../../../lib/web/src/features/access/access-list.tsx:68
+msgid "Group: {0}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:70
 msgid "Hide"
@@ -798,6 +828,10 @@ msgstr "Маълумоти бештар"
 #: ../../../lib/web/src/components/config-drawer.tsx:354
 msgid "Left to Right"
 msgstr "Аз чап ба рост"
+
+#: ../../../lib/web/src/components/post-tags.tsx:72
+msgid "Letters, numbers, spaces, and hyphens only"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
 #: ../../../lib/web/src/components/theme-switch.tsx:45
@@ -879,7 +913,7 @@ msgstr "Хатогии шабака"
 msgid "New"
 msgstr "Нав"
 
-#: src/components/layout/go-layout.tsx:139
+#: src/components/layout/go-layout.tsx:141
 #: src/features/go/components/game-empty-state.tsx:27
 #: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
@@ -891,7 +925,7 @@ msgstr "Бозии нав"
 msgid "Next image"
 msgstr "Тасвири навбатӣ"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:160
+#: ../../../lib/web/src/features/access/access-list.tsx:165
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Ягон қоидаи дастрасӣ танзим нашудааст. Барои назорати касе ки ба ин манбаъ дастрасӣ дорад қоидаҳо илова кунед."
 
@@ -918,6 +952,10 @@ msgstr "Ягон гурӯҳ дастрас нест"
 #: src/features/go/components/chat-message-list.tsx:153
 msgid "No messages yet"
 msgstr "То ҳол ягон паём нест"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "No notifications yet"
+msgstr ""
 
 #: ../../../lib/web/src/components/place-picker.tsx:132
 msgid "No places found"
@@ -975,7 +1013,7 @@ msgstr "Огоҳиномаҳо"
 msgid "Notifications: {0}"
 msgstr "Огоҳиномаҳо: {0}"
 
-#: src/features/go/index.tsx:498
+#: src/features/go/index.tsx:501
 msgid "Offer draw"
 msgstr "Пешниҳоди дуруст"
 
@@ -993,13 +1031,17 @@ msgstr "Кушодани амалҳои ҳисоб"
 msgid "Open actions"
 msgstr "Кушодани амалҳо"
 
-#: src/features/go/index.tsx:469
+#: src/features/go/index.tsx:472
 msgid "Open chat panel"
 msgstr "Кушодани панели чат"
 
-#: src/features/go/index.tsx:477
+#: src/features/go/index.tsx:480
 msgid "Open game actions"
 msgstr "Кушодани амалҳои бозӣ"
+
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+msgid "Open menu"
+msgstr "Кушодани меню"
 
 #: ../../../lib/web/src/components/layout/top-bar.tsx:63
 #: ../../../lib/web/src/components/layout/top-bar.tsx:68
@@ -1020,7 +1062,7 @@ msgstr "Кушодани танзимоти мавзӯъ"
 msgid "Other"
 msgstr "Дигар"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:217
+#: ../../../lib/web/src/features/access/access-list.tsx:222
 msgid "Owner"
 msgstr "Соҳиб"
 
@@ -1030,16 +1072,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "Саҳифаи {currentPage} аз {totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:493
+#: src/features/go/index.tsx:680
 msgid "Pass"
 msgstr "Гузар"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "Pass turn?"
 msgstr "Навбатро гузаронед?"
 
-#: src/features/go/index.tsx:674
+#: src/features/go/index.tsx:677
 msgid "Passing..."
 msgstr "Гузаронидан..."
 
@@ -1095,6 +1137,10 @@ msgstr "Махфият"
 msgid "Profile"
 msgstr "Профил"
 
+#: ../../../lib/web/src/components/person-picker.tsx:200
+msgid "Project members"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:117
 msgid "Raised"
 msgstr "Бардошта"
@@ -1129,26 +1175,26 @@ msgstr "Нисбӣ (5д, 3с, 2р)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Нисбӣ дар 24 соат, дар акси ҳол мутлақ"
 
-#: src/features/go/index.tsx:511
+#: src/features/go/index.tsx:514
 msgid "Rematch"
 msgstr "Бозиҳои такрорӣ"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:265
+#: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
 msgstr "Хориҷ кардан"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:247
-#: ../../../lib/web/src/features/access/access-list.tsx:253
+#: ../../../lib/web/src/features/access/access-list.tsx:252
+#: ../../../lib/web/src/features/access/access-list.tsx:258
 msgid "Remove access rule"
 msgstr "Хориҷ кардани қоидаи дастрасӣ"
 
 #. placeholder {0}: formatSubject(subject, data.name)
-#: ../../../lib/web/src/features/access/access-list.tsx:259
+#: ../../../lib/web/src/features/access/access-list.tsx:264
 msgid "Remove access rule for \"{0}\"?"
 msgstr "Қоидаи дастрасӣ барои «{0}» нест карда шавад?"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:257
+#: ../../../lib/web/src/features/access/access-list.tsx:262
 msgid "Remove access?"
 msgstr "Дастрасиро хориҷ кардан?"
 
@@ -1170,16 +1216,16 @@ msgstr "Барқарорсозӣ"
 msgid "Reset all settings to default values"
 msgstr "Барқарорсозии ҳамаи танзимот ба қиматҳои нобаёнӣ"
 
-#: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:634
 msgid "Resign"
 msgstr "Таслим"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "Resign game?"
 msgstr "Аз бозӣ таслим шудан?"
 
-#: src/features/go/index.tsx:628
+#: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Таслим шудан..."
 
@@ -1349,7 +1395,7 @@ msgstr "Аз ҳисоб баромадан..."
 msgid "Skip to Main"
 msgstr "Гузаштан ба қисми асосӣ"
 
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:671
 msgid "Skip your turn and pass to your opponent."
 msgstr "Навбати худро гузаронед ва ба ҳариф диҳед."
 
@@ -1374,7 +1420,7 @@ msgstr "Бозӣ оғоз кунед"
 msgid "Stay tuned though!"
 msgstr "Аммо мунтазир бошед!"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:191
+#: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
 msgstr "Мавзӯъ"
 
@@ -1392,6 +1438,14 @@ msgstr "Система"
 #: ../../../lib/web/src/components/tag-input.tsx:94
 msgid "Tag"
 msgstr "Барчасп"
+
+#: ../../../lib/web/src/components/post-tags.tsx:76
+msgid "Tag already exists"
+msgstr "Барчасп аллакай вуҷуд дорад"
+
+#: ../../../lib/web/src/components/post-tags.tsx:68
+msgid "Tag must be 50 characters or less"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:101
 #: ../../../lib/web/src/components/post-tags.tsx:115
@@ -1431,7 +1485,7 @@ msgstr "Танзимоти мавзӯъ"
 msgid "This page has not been created yet."
 msgstr "Ин саҳифа ҳанӯз сохта нашудааст."
 
-#: src/features/go/index.tsx:644
+#: src/features/go/index.tsx:647
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Ин бозӣ ва чати онро якумра нест мекунад. Ин амалро баргардонидан мумкин нест."
 
@@ -1550,6 +1604,7 @@ msgstr "Тасдиқ нашудааст"
 msgid "Use your passkey"
 msgstr "Калиди дастрасии худро истифода баред"
 
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "Корбар"
@@ -1607,6 +1662,10 @@ msgstr "Мо рамзи тасдиқро ба <0>{0}</0> фиристодем. �
 msgid "We'll be back online shortly."
 msgstr "Мо ба зудӣ дубора онлайн хоҳем буд."
 
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:197
+msgid "We'll notify you when something important happens."
+msgstr ""
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "Website is under maintenance!"
 msgstr "Сомона дар ҳолати таъмир аст!"
@@ -1615,11 +1674,11 @@ msgstr "Сомона дар ҳолати таъмир аст!"
 msgid "Wednesday"
 msgstr "Чоршанбе"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "White"
 msgstr "Сафед"
 
-#: src/features/go/index.tsx:457
+#: src/features/go/index.tsx:460
 msgid "White captures:"
 msgstr "Гирифтаҳои сафед:"
 
@@ -1642,6 +1701,10 @@ msgstr "Шумо ба ин бахш дастрасӣ надоред."
 #: ../../../lib/web/src/features/errors/forbidden.tsx:18
 msgid "You don't have necessary permission <0/>to view this resource."
 msgstr "Шумо иҷозати зарурӣ надоред <0/>барои дидани ин манбаъ."
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "You're all caught up!"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."

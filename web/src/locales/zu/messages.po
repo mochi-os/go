@@ -39,7 +39,7 @@ msgstr "{name} uhlongoze ukulingana"
 msgid "{name} resigned"
 msgstr "{name} udedele"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:670
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "U-{opponentName} naye udlulile. Ukuqinisekisa kuzoqeda umdlalo futhi kubale ibhodi."
 
@@ -103,7 +103,7 @@ msgstr "Ukufinyelela kuvinjelwe"
 msgid "Access Forbidden"
 msgstr "Ukufinyelela Akuvunyelwe"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:192
+#: ../../../lib/web/src/features/access/access-list.tsx:197
 msgid "Access level"
 msgstr "Izinga lokufinyelela"
 
@@ -123,10 +123,11 @@ msgstr "Uhlobo lwe-akhawunti"
 msgid "Account verified"
 msgstr "I-akhawunti iqinisekisiwe"
 
-#: src/components/layout/go-layout.tsx:114
+#: src/components/layout/go-layout.tsx:113
 msgid "Active games"
 msgstr "Imidlalo Esebenzayo"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
 msgstr "Engeza"
@@ -177,6 +178,10 @@ msgstr "Engeza ezazisweni ezikhona"
 msgid "Add view"
 msgstr "Engeza umbukiso"
 
+#: ../../../lib/web/src/features/access/access-dialog.tsx:332
+msgid "Adding..."
+msgstr "Iyengeza..."
+
 #: ../../../lib/web/src/components/config-drawer.tsx:71
 msgid "Adjust the appearance and layout to suit your preferences."
 msgstr "Lungisa ukubukeka nesakhiwo ukuze kuhambelane nezintandokazi zakho."
@@ -197,11 +202,15 @@ msgstr "Kwenzeke iphutha"
 msgid "An unexpected error occurred"
 msgstr "Kwenzeke iphutha elingalindelekile"
 
+#: ../../../lib/web/src/features/access/access-list.tsx:45
+msgid "Anyone"
+msgstr "Noma ubani"
+
 #: ../../../lib/web/src/components/sign-out-dialog.tsx:27
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Uqinisekile ufuna ukuphuma? Kuzodingeka ungene futhi ukuze ufinyelele i-akhawunti yakho."
 
-#: src/features/go/index.tsx:623
+#: src/features/go/index.tsx:626
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Uqinisekile ukuthi ufuna ukushiya? {opponentName} uzowina umdlalo."
 
@@ -212,6 +221,10 @@ msgstr "Khuphukayo"
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx:27
 msgid "Ascending"
 msgstr "Ukukhuphuka"
+
+#: ../../../lib/web/src/features/access/access-list.tsx:46
+msgid "Authenticated users"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Authenticator code"
@@ -227,11 +240,11 @@ msgstr "Emuva"
 msgid "Back to home"
 msgstr "Buyela ekhaya"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "Black"
 msgstr "Mnyama"
 
-#: src/features/go/index.tsx:452
+#: src/features/go/index.tsx:455
 msgid "Black captures:"
 msgstr "Okuthwetshulwe okumnyama:"
 
@@ -258,7 +271,7 @@ msgstr "Khulisa intshisekelo"
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:248
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:132
 #: ../../../lib/web/src/features/access/access-dialog.tsx:328
-#: ../../../lib/web/src/features/access/access-list.tsx:263
+#: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:188
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
 #: src/features/go/components/new-game.tsx:228
@@ -274,10 +287,14 @@ msgstr "Isigaba salesi saziso"
 msgid "Change notification category"
 msgstr "Shintsha isigaba sesaziso"
 
-#: src/features/go/index.tsx:561
-#: src/features/go/index.tsx:594
+#: src/features/go/index.tsx:564
+#: src/features/go/index.tsx:597
 msgid "Chat"
 msgstr "Ingxoxo"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:198
+msgid "Check \"All\" to see your past notifications."
+msgstr ""
 
 #: src/features/go/components/game-empty-state.tsx:23
 msgid "Choose a game from the sidebar or start a new one."
@@ -380,7 +397,7 @@ msgstr "Kuyeza Maduze!"
 msgid "Compact"
 msgstr "Okufishane"
 
-#: src/components/layout/go-layout.tsx:125
+#: src/components/layout/go-layout.tsx:124
 msgid "Completed"
 msgstr "Kuqediwe"
 
@@ -463,15 +480,15 @@ msgstr "Okuzenzakalelayo"
 msgid "Default AI account"
 msgstr "I-akhawunti ye-AI ezenzakalelayo"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:655
 msgid "Delete"
 msgstr "Susa"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:517
 msgid "Delete game"
 msgstr "Susa umdlalo"
 
-#: src/features/go/index.tsx:643
+#: src/features/go/index.tsx:646
 msgid "Delete game?"
 msgstr "Susa umdlalo?"
 
@@ -479,7 +496,7 @@ msgstr "Susa umdlalo?"
 msgid "Delete your account on the old server"
 msgstr "Susa i-akhawunti yakho eservereni endala"
 
-#: src/features/go/index.tsx:649
+#: src/features/go/index.tsx:652
 msgid "Deleting..."
 msgstr "Kususwa..."
 
@@ -510,6 +527,10 @@ msgstr "Bona kusuka kubhrawuza ye-web"
 msgid "Direction"
 msgstr "Indlela"
 
+#: ../../../lib/web/src/components/person-picker.tsx:214
+msgid "Directory"
+msgstr ""
+
 #: ../../../lib/web/src/components/restore-banner.tsx:79
 #: ../../../lib/web/src/components/restore-banner.tsx:85
 msgid "Dismiss"
@@ -532,7 +553,7 @@ msgstr "Ukulanda kuhlulekile"
 msgid "Draw agreed"
 msgstr "Kuvunyelwene ngokulingana"
 
-#: src/features/go/index.tsx:527
+#: src/features/go/index.tsx:530
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Idrowu inikeziwe — kulindwe {opponentName}"
 
@@ -556,11 +577,11 @@ msgstr "Isiphambano esingenalutho {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Isiphambano esingenalutho {colLabel}{rowLabel}, chofoza noma cindezela u-Enter ukuze ubeke"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:680
 msgid "End game"
 msgstr "Phetha umdlalo"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "End game?"
 msgstr "Phetha umdlalo?"
 
@@ -643,8 +664,8 @@ msgstr "Kuhlulekile ukususa i-akhawunti"
 msgid "Failed to resign"
 msgstr "Kuhlulekile ukuyeka"
 
-#: src/features/go/index.tsx:578
-#: src/features/go/index.tsx:611
+#: src/features/go/index.tsx:581
+#: src/features/go/index.tsx:614
 msgid "Failed to send"
 msgstr "Kuhlulekile ukuthumela"
 
@@ -672,6 +693,10 @@ msgstr "Kuntwebezelayo"
 msgid "Friday"
 msgstr "ULwesihlanu"
 
+#: ../../../lib/web/src/components/person-picker.tsx:207
+msgid "Friends"
+msgstr "Abangane"
+
 #: ../../../lib/web/src/components/travelling-picker.tsx:153
 msgid "From"
 msgstr "Kusukela"
@@ -698,8 +723,8 @@ msgid "Game deleted"
 msgstr "Umdlalo ususiwe"
 
 #: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:368
-#: src/features/go/index.tsx:380
+#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:383
 msgid "Go"
 msgstr "Hamba"
 
@@ -732,6 +757,11 @@ msgstr "Yiya ekhasini elingaphambilini"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:162
 msgid "Group"
 msgstr "Iqembu"
+
+#. placeholder {0}: name || subject.slice(1)
+#: ../../../lib/web/src/features/access/access-list.tsx:68
+msgid "Group: {0}"
+msgstr ""
 
 #: ../../../lib/web/src/components/data-table/column-header.tsx:70
 msgid "Hide"
@@ -798,6 +828,10 @@ msgstr "Funda kabanzi"
 #: ../../../lib/web/src/components/config-drawer.tsx:354
 msgid "Left to Right"
 msgstr "Kusuka Kwesokunxele Kuya Kwesokudla"
+
+#: ../../../lib/web/src/components/post-tags.tsx:72
+msgid "Letters, numbers, spaces, and hyphens only"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:213
 #: ../../../lib/web/src/components/theme-switch.tsx:45
@@ -879,7 +913,7 @@ msgstr "Iphutha lenethiwekhi"
 msgid "New"
 msgstr "Okusha"
 
-#: src/components/layout/go-layout.tsx:139
+#: src/components/layout/go-layout.tsx:141
 #: src/features/go/components/game-empty-state.tsx:27
 #: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
@@ -891,7 +925,7 @@ msgstr "Umdlalo omusha"
 msgid "Next image"
 msgstr "Isithombe esilandelayo"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:160
+#: ../../../lib/web/src/features/access/access-list.tsx:165
 msgid "No access rules configured. Add rules to control who can access this resource."
 msgstr "Awekho amarela okufinyelela acushiwe. Engeza amarela ukulawula ukuthi ubani ongafinyelela kulesi sisetshenziswa."
 
@@ -918,6 +952,10 @@ msgstr "Awekho amaqembu atholakalayo"
 #: src/features/go/components/chat-message-list.tsx:153
 msgid "No messages yet"
 msgstr "Ayikho imiyalezo okwamanje"
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "No notifications yet"
+msgstr ""
 
 #: ../../../lib/web/src/components/place-picker.tsx:132
 msgid "No places found"
@@ -975,7 +1013,7 @@ msgstr "Izaziso"
 msgid "Notifications: {0}"
 msgstr "Izaziso: {0}"
 
-#: src/features/go/index.tsx:498
+#: src/features/go/index.tsx:501
 msgid "Offer draw"
 msgstr "Phakamisa udonsela"
 
@@ -993,13 +1031,17 @@ msgstr "Vula izenzo ze-akhawunti"
 msgid "Open actions"
 msgstr "Vula izenzo"
 
-#: src/features/go/index.tsx:469
+#: src/features/go/index.tsx:472
 msgid "Open chat panel"
 msgstr "Vula iphaneli yengxoxo"
 
-#: src/features/go/index.tsx:477
+#: src/features/go/index.tsx:480
 msgid "Open game actions"
 msgstr "Vula izenzo zomdlalo"
+
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+msgid "Open menu"
+msgstr "Vula imenyu"
 
 #: ../../../lib/web/src/components/layout/top-bar.tsx:63
 #: ../../../lib/web/src/components/layout/top-bar.tsx:68
@@ -1020,7 +1062,7 @@ msgstr "Vula izilungiselelo zetimu"
 msgid "Other"
 msgstr "Okunye"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:217
+#: ../../../lib/web/src/features/access/access-list.tsx:222
 msgid "Owner"
 msgstr "Umnikazi"
 
@@ -1030,16 +1072,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "Ikhasi {currentPage} kwangu-{totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:490
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:493
+#: src/features/go/index.tsx:680
 msgid "Pass"
 msgstr "Yedlula"
 
-#: src/features/go/index.tsx:664
+#: src/features/go/index.tsx:667
 msgid "Pass turn?"
 msgstr "Yedlula ithuba?"
 
-#: src/features/go/index.tsx:674
+#: src/features/go/index.tsx:677
 msgid "Passing..."
 msgstr "Iyedlula..."
 
@@ -1095,6 +1137,10 @@ msgstr "Ubumfihlo"
 msgid "Profile"
 msgstr "Umbiko womsebenzisi"
 
+#: ../../../lib/web/src/components/person-picker.tsx:200
+msgid "Project members"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:117
 msgid "Raised"
 msgstr "Iphakanyisiwe"
@@ -1129,26 +1175,26 @@ msgstr "Okuhlobene (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Okuhlobene phakathi kwamahora angu-24, ngale kwalokho okuphelele"
 
-#: src/features/go/index.tsx:511
+#: src/features/go/index.tsx:514
 msgid "Rematch"
 msgstr "Phindela emdlalweni"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:265
+#: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
 msgstr "Khipha"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:247
-#: ../../../lib/web/src/features/access/access-list.tsx:253
+#: ../../../lib/web/src/features/access/access-list.tsx:252
+#: ../../../lib/web/src/features/access/access-list.tsx:258
 msgid "Remove access rule"
 msgstr "Khipha umthetho wokufinyelela"
 
 #. placeholder {0}: formatSubject(subject, data.name)
-#: ../../../lib/web/src/features/access/access-list.tsx:259
+#: ../../../lib/web/src/features/access/access-list.tsx:264
 msgid "Remove access rule for \"{0}\"?"
 msgstr "Susa umthetho wokufinyelela we-\"{0}\"?"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:257
+#: ../../../lib/web/src/features/access/access-list.tsx:262
 msgid "Remove access?"
 msgstr "Khipha ukufinyelela?"
 
@@ -1170,16 +1216,16 @@ msgstr "Setha kabusha"
 msgid "Reset all settings to default values"
 msgstr "Setha kabusha zonke izilungiselelo emanani okuzenzakalelayo"
 
-#: src/features/go/index.tsx:502
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:634
 msgid "Resign"
 msgstr "Yeka"
 
-#: src/features/go/index.tsx:622
+#: src/features/go/index.tsx:625
 msgid "Resign game?"
 msgstr "Yeka umdlalo?"
 
-#: src/features/go/index.tsx:628
+#: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Iyayeka..."
 
@@ -1349,7 +1395,7 @@ msgstr "Kuyaphunywa..."
 msgid "Skip to Main"
 msgstr "Yeqela Eyokuqala"
 
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:671
 msgid "Skip your turn and pass to your opponent."
 msgstr "Yeqa ithuba lakho udlulisele komqondisi wakho."
 
@@ -1374,7 +1420,7 @@ msgstr "Qala umdlalo"
 msgid "Stay tuned though!"
 msgstr "Kodwa hlala ulindile!"
 
-#: ../../../lib/web/src/features/access/access-list.tsx:191
+#: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
 msgstr "Isihloko"
 
@@ -1392,6 +1438,14 @@ msgstr "Isistimu"
 #: ../../../lib/web/src/components/tag-input.tsx:94
 msgid "Tag"
 msgstr "Ithegi"
+
+#: ../../../lib/web/src/components/post-tags.tsx:76
+msgid "Tag already exists"
+msgstr "Ithegi selikhona"
+
+#: ../../../lib/web/src/components/post-tags.tsx:68
+msgid "Tag must be 50 characters or less"
+msgstr ""
 
 #: ../../../lib/web/src/components/post-tags.tsx:101
 #: ../../../lib/web/src/components/post-tags.tsx:115
@@ -1431,7 +1485,7 @@ msgstr "Izilungiselelo Zendikimba"
 msgid "This page has not been created yet."
 msgstr "Leli khasi alikadalwa."
 
-#: src/features/go/index.tsx:644
+#: src/features/go/index.tsx:647
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Lokhu kuzosusa umdlalo nengxoxo yawo unomphela. Lesi senzo asikwazi ukuhlehliswa."
 
@@ -1550,6 +1604,7 @@ msgstr "Akuqinisekisiwe"
 msgid "Use your passkey"
 msgstr "Sebenzisa i-passkey yakho"
 
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "Umsebenzisi"
@@ -1607,6 +1662,10 @@ msgstr "Sithumele ikhodi yokuqinisekisa ku-<0>{0}</0>. Faka ikhodi ngezansi ukuz
 msgid "We'll be back online shortly."
 msgstr "Sizobuya ku-inthanethi maduze."
 
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:197
+msgid "We'll notify you when something important happens."
+msgstr ""
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:13
 msgid "Website is under maintenance!"
 msgstr "Iwebhusayithi ingaphansi kwezilungiselelo!"
@@ -1615,11 +1674,11 @@ msgstr "Iwebhusayithi ingaphansi kwezilungiselelo!"
 msgid "Wednesday"
 msgstr "ULwesithathu"
 
-#: src/features/go/index.tsx:445
+#: src/features/go/index.tsx:448
 msgid "White"
 msgstr "Mhlophe"
 
-#: src/features/go/index.tsx:457
+#: src/features/go/index.tsx:460
 msgid "White captures:"
 msgstr "Okuthwetshulwe okumhlophe:"
 
@@ -1642,6 +1701,10 @@ msgstr "Awunakho ukufinyelela kule ngxenye."
 #: ../../../lib/web/src/features/errors/forbidden.tsx:18
 msgid "You don't have necessary permission <0/>to view this resource."
 msgstr "Awunayo imvume edingekayo <0/>yokubuka le nsiza."
+
+#: ../../../lib/web/src/components/notifications-dropdown.tsx:193
+msgid "You're all caught up!"
+msgstr ""
 
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
