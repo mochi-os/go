@@ -88,7 +88,7 @@ export const useInfiniteMessagesQuery = (
     enabled?: boolean
   }
 ) =>
-  useInfiniteQueryWithError<GetMessagesResponse, Error, InfiniteData<GetMessagesResponse>, ReturnType<typeof gameKeys.messages>, number | undefined>({
+  useInfiniteQueryWithError<GetMessagesResponse, Error, InfiniteData<GetMessagesResponse>, ReturnType<typeof gameKeys.messages>, string | undefined>({
     queryKey: gameKeys.messages(gameId ?? 'unknown'),
     enabled: Boolean(gameId) && (options?.enabled ?? true),
     initialPageParam: undefined,
