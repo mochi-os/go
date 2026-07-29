@@ -52,7 +52,7 @@ msgstr "Ildiodd {name}"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "Mae {opponentName} hefyd wedi pasio. Bydd cadarnhau yn dod â'r gêm i ben ac yn sgorio'r bwrdd."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "Cynigiodd {opponentName} gêm gyfartal"
 
@@ -92,6 +92,11 @@ msgstr "Chwaraeodd {subject} <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, zero {Agor y ddewislen (# hysbysiad heb ei ddarllen)} one {Agor y ddewislen (# hysbysiad heb ei ddarllen)} two {Agor y ddewislen (# hysbysiad heb eu darllen)} few {Agor y ddewislen (# hysbysiad heb eu darllen)} many {Agor y ddewislen (# hysbysiad heb eu darllen)} other {Agor y ddewislen (# hysbysiad heb eu darllen)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 awr"
@@ -104,7 +109,7 @@ msgstr "24 awr"
 msgid "Absolute (date and time)"
 msgstr "Absoliwt (dyddiad ac amser)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Derbyn"
 
@@ -140,6 +145,7 @@ msgstr "Cyfrif wedi'i wirio"
 msgid "Active games"
 msgstr "Gemau gweithredol"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -162,6 +168,10 @@ msgstr "Ychwanegu cyfrif"
 msgid "Add an account to receive notifications and use services."
 msgstr "Ychwanegu cyfrif i dderbyn hysbysiadau a defnyddio gwasanaethau."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Ychwanegu cyfeillion"
@@ -169,6 +179,10 @@ msgstr "Ychwanegu cyfeillion"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Ychwanegu cyfeillion yn yr app Pobl i ddechrau chwarae"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -323,12 +337,12 @@ msgstr "Hysbysiadau porwr"
 msgid "Cancel"
 msgstr "Canslo"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:146
 msgid "Category for this notification"
 msgstr "Categori ar gyfer yr hysbysiad hwn"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:124
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:127
+#: ../../../lib/web/src/components/notification-category-button.tsx:138
 msgid "Change notification category"
 msgstr "Newid categori hysbysiad"
 
@@ -341,7 +355,7 @@ msgstr "Sgwrs"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Ticiwch \"Popeth\" i weld eich hysbysiadau blaenorol."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:30
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Dewiswch gêm o'r bar ochr neu dechreuwch un newydd."
 
@@ -555,7 +569,7 @@ msgstr "Modd tywyll"
 msgid "Data conflict"
 msgstr "Gwrthdaro data"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Gwrthod"
 
@@ -621,6 +635,14 @@ msgstr "Cyfeiriad"
 #: ../../../lib/web/src/components/person-picker.tsx:214
 msgid "Directory"
 msgstr "Cyfeiriadur"
+
+#: ../../../lib/web/src/components/comment-composer.tsx:300
+msgid "Discard"
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:298
+msgid "Discard draft?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -790,7 +812,7 @@ msgstr "Methwyd anfon"
 msgid "Failed to send verification code"
 msgstr "Methwyd anfon y cod dilysu"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:111
+#: ../../../lib/web/src/components/notification-category-button.tsx:114
 msgid "Failed to update category"
 msgstr "Methwyd diweddaru'r categori"
 
@@ -932,6 +954,10 @@ msgstr "Mewnol"
 msgid "Interests"
 msgstr "Diddordebau"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Tag annilys: llythrennau, rhifau, bylchau, cysylltnodau a slaesau yn unig (uchafswm 50 nod)"
@@ -1037,7 +1063,7 @@ msgstr "Canolig"
 msgid "Menu"
 msgstr "Dewislen"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Neges"
 
@@ -1074,9 +1100,9 @@ msgstr "Gwall rhwydwaith"
 msgid "New"
 msgstr "Newydd"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:34
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:46
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Gêm newydd"
@@ -1102,7 +1128,7 @@ msgstr "Heb ddod o hyd i ffrindiau"
 msgid "No friends yet"
 msgstr "Dim ffrindiau eto"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:43
 msgid "No games yet"
 msgstr "Dim gemau eto"
 
@@ -1118,6 +1144,7 @@ msgstr "Dim negeseuon eto"
 msgid "No notifications yet"
 msgstr "Dim hysbysiadau eto"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Heb ddod o hyd i bobl"
@@ -1144,7 +1171,7 @@ msgstr "Heb ddod o hyd i ganlyniadau."
 msgid "No time zone found."
 msgstr "Heb ddod o hyd i barth amser."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:147
+#: ../../../lib/web/src/components/notification-category-button.tsx:150
 msgid "No topic record yet — try again after the next notification."
 msgstr "Dim cofnod pwnc eto — rhowch gynnig arall arni ar ôl yr hysbysiad nesaf."
 
@@ -1276,6 +1303,7 @@ msgstr "Pasallweddi"
 msgid "Pick a date"
 msgstr "Dewiswch ddyddiad"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
 msgid "Please check your internet connection and try again."
@@ -1366,6 +1394,7 @@ msgstr "Cymharol o fewn 24 awr, fel arall yn absoliwt"
 msgid "Rematch"
 msgstr "Aildrefnu gêm"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:232
 #: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
@@ -1395,6 +1424,10 @@ msgstr "Tynnu mynediad?"
 #: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "Tynnu diddordeb"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
@@ -1426,6 +1459,10 @@ msgstr "Ymddiswyddo o'r gêm?"
 #: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Yn ymddiswyddo..."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:249
+msgid "Retry"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1499,7 +1536,7 @@ msgstr "Dewis {0}"
 msgid "Select a friend..."
 msgstr "Dewiswch ffrind..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:29
 msgid "Select a game"
 msgstr "Dewiswch gêm"
 
@@ -1547,6 +1584,11 @@ msgstr "Dewis cyfeiriad y safle"
 msgid "Select theme preference"
 msgstr "Dewis dewis thema"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "wedi'u dewis"
@@ -1564,8 +1606,8 @@ msgstr "Anfon eto"
 msgid "Send email"
 msgstr "Anfon e-bost"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Anfon neges"
 
@@ -1795,7 +1837,7 @@ msgstr "Dydd Mawrth"
 msgid "Type a command or search..."
 msgstr "Teipiwch orchymyn neu chwilio..."
 
-#: src/features/go/components/chat-input.tsx:34
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
 msgid "Type a message..."
 msgstr "Teipiwch neges..."
 
@@ -1816,7 +1858,7 @@ msgstr "Methu cysylltu â'r gweinydd pell"
 msgid "Unable to redirect to login. Please try again."
 msgstr "Methu ailgyfeirio i fewngofnodi. Rhowch gynnig arall arni."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:155
+#: ../../../lib/web/src/components/notification-category-button.tsx:158
 msgid "Unassigned"
 msgstr "Heb ei neilltuo"
 
@@ -1959,3 +2001,15 @@ msgstr "Rydych wedi dal i fyny!"
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Symudwyd eich cyfrif yma o {source}. Hyd nes y byddwch yn ei ddileu yno, gall negeseuon a hysbysiadau gyrraedd y ddau weinydd, gall peth o'ch cynnwys barhau i gael ei weini o'r hen weinydd, a gall dilynwyr gymryd ychydig funudau i ddod o hyd i chi yma."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:291
+msgid "Your attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:289
+msgid "Your text and attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:292
+msgid "Your text will be lost."
+msgstr ""

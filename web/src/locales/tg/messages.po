@@ -52,7 +52,7 @@ msgstr "{name} таслим шуд"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} низ гузашт. Тасдиқ кардан бозиро ба охир мерасонад ва тахтаро ҳисоб мекунад."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} баробариро пешниҳод кард"
 
@@ -92,6 +92,11 @@ msgstr "{subject} бозӣ кард <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Менюро кушоед (# огоҳиномаи хонданашуда)} other {Менюро кушоед (# огоҳиномаи хонданашуда)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 соат"
@@ -104,7 +109,7 @@ msgstr "24 соат"
 msgid "Absolute (date and time)"
 msgstr "Мутлақ (сана ва вақт)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Қабул кардан"
 
@@ -140,6 +145,7 @@ msgstr "Ҳисоб тасдиқ карда шуд"
 msgid "Active games"
 msgstr "Бозиҳои фаъол"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -162,6 +168,10 @@ msgstr "Иловаи ҳисоб"
 msgid "Add an account to receive notifications and use services."
 msgstr "Барои гирифтани огоҳиномаҳо ва истифодаи хидматҳо ҳисоб илова кунед."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Иловаи дӯстон"
@@ -169,6 +179,10 @@ msgstr "Иловаи дӯстон"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Дар барномаи People дӯстон илова кунед, то бозиро оғоз кунед"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -323,12 +337,12 @@ msgstr "Огоҳиномаҳои браузер"
 msgid "Cancel"
 msgstr "Бекор кардан"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:146
 msgid "Category for this notification"
 msgstr "Категория барои ин огоҳинома"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:124
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:127
+#: ../../../lib/web/src/components/notification-category-button.tsx:138
 msgid "Change notification category"
 msgstr "Тағйири категорияи огоҳинома"
 
@@ -341,7 +355,7 @@ msgstr "Чат"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Барои дидани огоҳиномаҳои гузашта «Ҳама»-ро интихоб кунед."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:30
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Аз панели канорӣ бозиеро интихоб кунед ё нав оғоз кунед."
 
@@ -555,7 +569,7 @@ msgstr "Ҳолати торик"
 msgid "Data conflict"
 msgstr "Ихтилофи маълумот"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Рад кардан"
 
@@ -621,6 +635,14 @@ msgstr "Самт"
 #: ../../../lib/web/src/components/person-picker.tsx:214
 msgid "Directory"
 msgstr "Феҳрист"
+
+#: ../../../lib/web/src/components/comment-composer.tsx:300
+msgid "Discard"
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:298
+msgid "Discard draft?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -790,7 +812,7 @@ msgstr "Ирсол ба анҷом нарасид"
 msgid "Failed to send verification code"
 msgstr "Ирсоли рамзи тасдиқ ба анҷом нарасид"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:111
+#: ../../../lib/web/src/components/notification-category-button.tsx:114
 msgid "Failed to update category"
 msgstr "Навсозии категория ба анҷом нарасид"
 
@@ -932,6 +954,10 @@ msgstr "Дохилӣ"
 msgid "Interests"
 msgstr "Шавқҳо"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Тамғаи нодуруст: танҳо ҳарфҳо, рақамҳо, фосилаҳо, дефисҳо ва каҷхатҳо (ҳадди аксар 50 аломат)"
@@ -1037,7 +1063,7 @@ msgstr "Миёна"
 msgid "Menu"
 msgstr "Меню"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Паём"
 
@@ -1074,9 +1100,9 @@ msgstr "Хатогии шабака"
 msgid "New"
 msgstr "Нав"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:34
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:46
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Бозии нав"
@@ -1102,7 +1128,7 @@ msgstr "Ягон дӯст ёфт нашуд"
 msgid "No friends yet"
 msgstr "То ҳол ягон дӯст нест"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:43
 msgid "No games yet"
 msgstr "То ҳол ягон бозӣ нест"
 
@@ -1118,6 +1144,7 @@ msgstr "То ҳол ягон паём нест"
 msgid "No notifications yet"
 msgstr "Ҳанӯз огоҳинома нест"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Ягон шахс ёфт нашуд"
@@ -1144,7 +1171,7 @@ msgstr "Ягон натиҷа ёфт нашуд."
 msgid "No time zone found."
 msgstr "Ягон минтақаи вақт ёфт нашуд."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:147
+#: ../../../lib/web/src/components/notification-category-button.tsx:150
 msgid "No topic record yet — try again after the next notification."
 msgstr "Ягон сабти мавзӯъ ҳоло нест — пас аз огоҳиномаи навбатӣ боз кӯшиш кунед."
 
@@ -1276,6 +1303,7 @@ msgstr "Калидҳои дастрасӣ"
 msgid "Pick a date"
 msgstr "Санаро интихоб кунед"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
 msgid "Please check your internet connection and try again."
@@ -1366,6 +1394,7 @@ msgstr "Нисбӣ дар 24 соат, дар акси ҳол мутлақ"
 msgid "Rematch"
 msgstr "Бозиҳои такрорӣ"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:232
 #: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
@@ -1395,6 +1424,10 @@ msgstr "Дастрасиро хориҷ кардан?"
 #: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "Хориҷ кардани шавқу ҳавас"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
@@ -1426,6 +1459,10 @@ msgstr "Аз бозӣ таслим шудан?"
 #: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Таслим шудан..."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:249
+msgid "Retry"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1499,7 +1536,7 @@ msgstr "Интихоби {0}"
 msgid "Select a friend..."
 msgstr "Як дӯстро интихоб кунед..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:29
 msgid "Select a game"
 msgstr "Як бозиро интихоб кунед"
 
@@ -1547,6 +1584,11 @@ msgstr "Самти сайтро интихоб кунед"
 msgid "Select theme preference"
 msgstr "Афзалияти мавзӯъро интихоб кунед"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "интихобшуда"
@@ -1564,8 +1606,8 @@ msgstr "Бори дигар фиристодан"
 msgid "Send email"
 msgstr "Имейл фиристодан"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Паём фиристодан"
 
@@ -1795,7 +1837,7 @@ msgstr "Сешанбе"
 msgid "Type a command or search..."
 msgstr "Фармонеро чоп кунед ё ҷустуҷӯ кунед..."
 
-#: src/features/go/components/chat-input.tsx:34
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
 msgid "Type a message..."
 msgstr "Паёмеро чоп кунед..."
 
@@ -1816,7 +1858,7 @@ msgstr "Пайвастшавӣ ба сервери дурдаст имконно
 msgid "Unable to redirect to login. Please try again."
 msgstr "Ба воридшавӣ равона кардан имконнопазир аст. Лутфан дубора кӯшиш кунед."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:155
+#: ../../../lib/web/src/components/notification-category-button.tsx:158
 msgid "Unassigned"
 msgstr "Таъин нашудааст"
 
@@ -1959,3 +2001,15 @@ msgstr "Шумо ҳамаро дидед!"
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ҳисоби шумо аз {source} ба ин ҷо интиқол дода шуд. То он гоҳ, ки онро дар он ҷо нест накунед, паёмҳо ва огоҳиҳо метавонанд ба ҳарду сервер расанд, қисмати муайяни мазмуни шумо аз сервери кӯҳна хизмат медиҳад ва пайравон метавонанд чанд дақиқа вақт барои ёфтани шумо дар ин ҷо сарф кунанд."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:291
+msgid "Your attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:289
+msgid "Your text and attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:292
+msgid "Your text will be lost."
+msgstr ""

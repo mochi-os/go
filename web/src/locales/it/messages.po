@@ -52,7 +52,7 @@ msgstr "{name} ha abbandonato"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "Anche {opponentName} ha passato. Confermando terminerà la partita e calcolerà il punteggio."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ha offerto la patta"
 
@@ -92,6 +92,11 @@ msgstr "{subject} ha giocato <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Apri il menu (# notifica non letta)} other {Apri il menu (# notifiche non lette)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 ore"
@@ -104,7 +109,7 @@ msgstr "24 ore"
 msgid "Absolute (date and time)"
 msgstr "Assoluto (data e ora)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Accetta"
 
@@ -140,6 +145,7 @@ msgstr "Account verificato"
 msgid "Active games"
 msgstr "Partite attive"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -162,6 +168,10 @@ msgstr "Aggiungi account"
 msgid "Add an account to receive notifications and use services."
 msgstr "Aggiungi un account per ricevere notifiche e usare i servizi."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Aggiungi amici"
@@ -169,6 +179,10 @@ msgstr "Aggiungi amici"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Aggiungi amici nell'app Persone per iniziare a giocare"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -323,12 +337,12 @@ msgstr "Notifiche del browser"
 msgid "Cancel"
 msgstr "Annulla"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:146
 msgid "Category for this notification"
 msgstr "Categoria per questa notifica"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:124
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:127
+#: ../../../lib/web/src/components/notification-category-button.tsx:138
 msgid "Change notification category"
 msgstr "Cambia categoria di notifica"
 
@@ -341,7 +355,7 @@ msgstr "Chat"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Seleziona «Tutto» per vedere le notifiche precedenti."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:30
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Scegli una partita dalla barra laterale o avviane una nuova."
 
@@ -555,7 +569,7 @@ msgstr "Modalità scura"
 msgid "Data conflict"
 msgstr "Conflitto di dati"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Rifiuta"
 
@@ -621,6 +635,14 @@ msgstr "Direzione"
 #: ../../../lib/web/src/components/person-picker.tsx:214
 msgid "Directory"
 msgstr "Directory"
+
+#: ../../../lib/web/src/components/comment-composer.tsx:300
+msgid "Discard"
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:298
+msgid "Discard draft?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -790,7 +812,7 @@ msgstr "Impossibile inviare"
 msgid "Failed to send verification code"
 msgstr "Impossibile inviare il codice di verifica"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:111
+#: ../../../lib/web/src/components/notification-category-button.tsx:114
 msgid "Failed to update category"
 msgstr "Impossibile aggiornare la categoria"
 
@@ -932,6 +954,10 @@ msgstr "Incassato"
 msgid "Interests"
 msgstr "Interessi"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Etichetta non valida: solo lettere, numeri, spazi, trattini e barre (massimo 50 caratteri)"
@@ -1037,7 +1063,7 @@ msgstr "Medio"
 msgid "Menu"
 msgstr "Menu"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Messaggio"
 
@@ -1074,9 +1100,9 @@ msgstr "Errore di rete"
 msgid "New"
 msgstr "Nuovo"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:34
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:46
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Nuova partita"
@@ -1102,7 +1128,7 @@ msgstr "Nessun amico trovato"
 msgid "No friends yet"
 msgstr "Ancora nessun amico"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:43
 msgid "No games yet"
 msgstr "Ancora nessuna partita"
 
@@ -1118,6 +1144,7 @@ msgstr "Ancora nessun messaggio"
 msgid "No notifications yet"
 msgstr "Ancora nessuna notifica"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Nessuna persona trovata"
@@ -1144,7 +1171,7 @@ msgstr "Nessun risultato trovato."
 msgid "No time zone found."
 msgstr "Nessun fuso orario trovato."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:147
+#: ../../../lib/web/src/components/notification-category-button.tsx:150
 msgid "No topic record yet — try again after the next notification."
 msgstr "Ancora nessun record dell'argomento — riprova dopo la prossima notifica."
 
@@ -1276,6 +1303,7 @@ msgstr "Passkey"
 msgid "Pick a date"
 msgstr "Scegli una data"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
 msgid "Please check your internet connection and try again."
@@ -1366,6 +1394,7 @@ msgstr "Relativo entro 24 ore, altrimenti assoluto"
 msgid "Rematch"
 msgstr "Rivincita"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:232
 #: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
@@ -1395,6 +1424,10 @@ msgstr "Rimuovere l'accesso?"
 #: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "Rimuovi interesse"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
@@ -1426,6 +1459,10 @@ msgstr "Abbandonare la partita?"
 #: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Abbandono in corso..."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:249
+msgid "Retry"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1499,7 +1536,7 @@ msgstr "Seleziona {0}"
 msgid "Select a friend..."
 msgstr "Seleziona un amico..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:29
 msgid "Select a game"
 msgstr "Seleziona una partita"
 
@@ -1547,6 +1584,11 @@ msgstr "Seleziona direzione del sito"
 msgid "Select theme preference"
 msgstr "Seleziona preferenza del tema"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "selezionati"
@@ -1564,8 +1606,8 @@ msgstr "Invia di nuovo"
 msgid "Send email"
 msgstr "Invia email"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Invia messaggio"
 
@@ -1795,7 +1837,7 @@ msgstr "Martedì"
 msgid "Type a command or search..."
 msgstr "Digita un comando o cerca..."
 
-#: src/features/go/components/chat-input.tsx:34
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
 msgid "Type a message..."
 msgstr "Scrivi un messaggio..."
 
@@ -1816,7 +1858,7 @@ msgstr "Impossibile connettersi al server remoto"
 msgid "Unable to redirect to login. Please try again."
 msgstr "Impossibile reindirizzare al login. Riprova."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:155
+#: ../../../lib/web/src/components/notification-category-button.tsx:158
 msgid "Unassigned"
 msgstr "Non assegnato"
 
@@ -1959,3 +2001,15 @@ msgstr "Sei aggiornato!"
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Il tuo account è stato spostato qui da {source}. Finché non lo elimini lì, i messaggi e le notifiche possono raggiungere entrambi i server, parte dei tuoi contenuti continua a essere servita dal vecchio server e i follower potrebbero impiegare qualche minuto per trovarti qui."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:291
+msgid "Your attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:289
+msgid "Your text and attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:292
+msgid "Your text will be lost."
+msgstr ""

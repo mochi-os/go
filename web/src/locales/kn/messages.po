@@ -52,7 +52,7 @@ msgstr "{name} ಶರಣಾದರು"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} ಸಹ ಪಾಸ್ ಮಾಡಿದ್ದಾರೆ. ದೃಢೀಕರಿಸುವುದರಿಂದ ಆಟ ಮುಗಿಯುತ್ತದೆ ಮತ್ತು ಬೋರ್ಡ್‌ಗೆ ಸ್ಕೋರ್ ಆಗುತ್ತದೆ."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ಡ್ರಾ ನೀಡಿದರು"
 
@@ -92,6 +92,11 @@ msgstr "{subject} <0>{moveLabel}</0> ಆಡಿದರು"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {ಮೆನು ತೆರೆಯಿರಿ (# ಓದದ ಅಧಿಸೂಚನೆ)} other {ಮೆನು ತೆರೆಯಿರಿ (# ಓದದ ಅಧಿಸೂಚನೆಗಳು)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 ಗಂಟೆಗಳು"
@@ -104,7 +109,7 @@ msgstr "24 ಗಂಟೆಗಳು"
 msgid "Absolute (date and time)"
 msgstr "ಸಂಪೂರ್ಣ (ದಿನಾಂಕ ಮತ್ತು ಸಮಯ)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "ಸ್ವೀಕರಿಸಿ"
 
@@ -140,6 +145,7 @@ msgstr "ಖಾತೆ ಪರಿಶೀಲಿಸಲಾಗಿದೆ"
 msgid "Active games"
 msgstr "ಸಕ್ರಿಯ ಆಟಗಳು"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -162,6 +168,10 @@ msgstr "ಖಾತೆ ಸೇರಿಸಿ"
 msgid "Add an account to receive notifications and use services."
 msgstr "ಅಧಿಸೂಚನೆಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ಮತ್ತು ಸೇವೆಗಳನ್ನು ಬಳಸಲು ಖಾತೆಯನ್ನು ಸೇರಿಸಿ."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "ಸ್ನೇಹಿತರನ್ನು ಸೇರಿಸಿ"
@@ -169,6 +179,10 @@ msgstr "ಸ್ನೇಹಿತರನ್ನು ಸೇರಿಸಿ"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "ಆಡಲು ಪ್ರಾರಂಭಿಸಲು People ಆ್ಯಪ್‌ನಲ್ಲಿ ಸ್ನೇಹಿತರನ್ನು ಸೇರಿಸಿ"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -323,12 +337,12 @@ msgstr "ಬ್ರೌಸರ್ ಅಧಿಸೂಚನೆಗಳು"
 msgid "Cancel"
 msgstr "ರದ್ದುಮಾಡಿ"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:146
 msgid "Category for this notification"
 msgstr "ಈ ಅಧಿಸೂಚನೆಗಾಗಿ ವರ್ಗ"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:124
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:127
+#: ../../../lib/web/src/components/notification-category-button.tsx:138
 msgid "Change notification category"
 msgstr "ಅಧಿಸೂಚನೆ ವರ್ಗವನ್ನು ಬದಲಾಯಿಸಿ"
 
@@ -341,7 +355,7 @@ msgstr "ಚಾಟ್"
 msgid "Check \"All\" to see your past notifications."
 msgstr "ಹಿಂದಿನ ಅಧಿಸೂಚನೆಗಳನ್ನು ನೋಡಲು \"ಎಲ್ಲಾ\" ಆಯ್ಕೆಮಾಡಿ."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:30
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "ಸೈಡ್‌ಬಾರ್‌ನಿಂದ ಆಟವನ್ನು ಆಯ್ಕೆಮಾಡಿ ಅಥವಾ ಹೊಸದನ್ನು ಪ್ರಾರಂಭಿಸಿ."
 
@@ -555,7 +569,7 @@ msgstr "ಡಾರ್ಕ್ ಮೋಡ್"
 msgid "Data conflict"
 msgstr "ಡೇಟಾ ಸಂಘರ್ಷ"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "ತಿರಸ್ಕರಿಸಿ"
 
@@ -621,6 +635,14 @@ msgstr "ದಿಕ್ಕು"
 #: ../../../lib/web/src/components/person-picker.tsx:214
 msgid "Directory"
 msgstr "ಡೈರೆಕ್ಟರಿ"
+
+#: ../../../lib/web/src/components/comment-composer.tsx:300
+msgid "Discard"
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:298
+msgid "Discard draft?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -790,7 +812,7 @@ msgstr "ಕಳುಹಿಸಲು ವಿಫಲವಾಗಿದೆ"
 msgid "Failed to send verification code"
 msgstr "ಪರಿಶೀಲನಾ ಕೋಡ್ ಕಳುಹಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:111
+#: ../../../lib/web/src/components/notification-category-button.tsx:114
 msgid "Failed to update category"
 msgstr "ವರ್ಗ ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
 
@@ -932,6 +954,10 @@ msgstr "ಇನ್‌ಸೆಟ್"
 msgid "Interests"
 msgstr "ಆಸಕ್ತಿಗಳು"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "ಅಮಾನ್ಯ ಟ್ಯಾಗ್: ಅಕ್ಷರಗಳು, ಸಂಖ್ಯೆಗಳು, ಸ್ಥಳಗಳು, ಹೈಫನ್‌ಗಳು ಮತ್ತು ಸ್ಲ್ಯಾಶ್‌ಗಳು ಮಾತ್ರ (ಗರಿಷ್ಠ 50 ಅಕ್ಷರಗಳು)"
@@ -1037,7 +1063,7 @@ msgstr "ಮಧ್ಯಮ"
 msgid "Menu"
 msgstr "ಮೆನು"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "ಸಂದೇಶ"
 
@@ -1074,9 +1100,9 @@ msgstr "ನೆಟ್‌ವರ್ಕ್ ದೋಷ"
 msgid "New"
 msgstr "ಹೊಸ"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:34
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:46
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "ಹೊಸ ಆಟ"
@@ -1102,7 +1128,7 @@ msgstr "ಯಾವುದೇ ಸ್ನೇಹಿತರು ಸಿಗಲಿಲ್ಲ"
 msgid "No friends yet"
 msgstr "ಇನ್ನೂ ಯಾವುದೇ ಸ್ನೇಹಿತರಿಲ್ಲ"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:43
 msgid "No games yet"
 msgstr "ಇನ್ನೂ ಯಾವುದೇ ಆಟಗಳಿಲ್ಲ"
 
@@ -1118,6 +1144,7 @@ msgstr "ಇನ್ನೂ ಯಾವುದೇ ಸಂದೇಶಗಳಿಲ್ಲ"
 msgid "No notifications yet"
 msgstr "ಇನ್ನೂ ಯಾವುದೇ ಅಧಿಸೂಚನೆಗಳಿಲ್ಲ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "ಯಾವುದೇ ಜನರು ಸಿಗಲಿಲ್ಲ"
@@ -1144,7 +1171,7 @@ msgstr "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಸಿಗಲಿಲ್�
 msgid "No time zone found."
 msgstr "ಯಾವುದೇ ಟೈಮ್ ಜೋನ್ ಸಿಗಲಿಲ್ಲ."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:147
+#: ../../../lib/web/src/components/notification-category-button.tsx:150
 msgid "No topic record yet — try again after the next notification."
 msgstr "ಇನ್ನೂ ಯಾವುದೇ ಟಾಪಿಕ್ ರೆಕಾರ್ಡ್ ಇಲ್ಲ — ಮುಂದಿನ ನೋಟಿಫಿಕೇಶನ್ ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
 
@@ -1276,6 +1303,7 @@ msgstr "ಪಾಸ್‌ಕೀಗಳು"
 msgid "Pick a date"
 msgstr "ದಿನಾಂಕ ಆಯ್ಕೆಮಾಡಿ"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
 msgid "Please check your internet connection and try again."
@@ -1366,6 +1394,7 @@ msgstr "24 ಗಂಟೆಗಳ ಒಳಗೆ ಸಾಪೇಕ್ಷ, ಇಲ್ಲ�
 msgid "Rematch"
 msgstr "ಮರು-ಪಂದ್ಯ"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:232
 #: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
@@ -1395,6 +1424,10 @@ msgstr "ಪ್ರವೇಶ ತೆಗೆದುಹಾಕಬೇಕೆ?"
 #: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "ಆಸಕ್ತಿ ತೆಗೆದುಹಾಕಿ"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
@@ -1426,6 +1459,10 @@ msgstr "ಆಟಕ್ಕೆ ರಾಜೀನಾಮೆ ನೀಡಬೇಕೆ?"
 #: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "ರಾಜೀನಾಮೆ ನೀಡಲಾಗುತ್ತಿದೆ..."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:249
+msgid "Retry"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1499,7 +1536,7 @@ msgstr "{0} ಆಯ್ಕೆಮಾಡಿ"
 msgid "Select a friend..."
 msgstr "ಸ್ನೇಹಿತರನ್ನು ಆಯ್ಕೆಮಾಡಿ..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:29
 msgid "Select a game"
 msgstr "ಆಟವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
@@ -1547,6 +1584,11 @@ msgstr "ಸೈಟ್ ದಿಕ್ಕನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 msgid "Select theme preference"
 msgstr "ಥೀಮ್ ಆದ್ಯತೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ"
@@ -1564,8 +1606,8 @@ msgstr "ಮತ್ತೆ ಕಳುಹಿಸಿ"
 msgid "Send email"
 msgstr "ಇಮೇಲ್ ಕಳುಹಿಸಿ"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "ಸಂದೇಶ ಕಳುಹಿಸಿ"
 
@@ -1795,7 +1837,7 @@ msgstr "ಮಂಗಳವಾರ"
 msgid "Type a command or search..."
 msgstr "ಆಜ್ಞೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ಹುಡುಕಿ..."
 
-#: src/features/go/components/chat-input.tsx:34
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
 msgid "Type a message..."
 msgstr "ಸಂದೇಶವನ್ನು ಟೈಪ್ ಮಾಡಿ..."
 
@@ -1816,7 +1858,7 @@ msgstr "ರಿಮೋಟ್ ಸರ್ವರ್‌ಗೆ ಸಂಪರ್ಕಿಸ�
 msgid "Unable to redirect to login. Please try again."
 msgstr "ಲಾಗಿನ್‌ಗೆ ಮರುನಿರ್ದೇಶಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:155
+#: ../../../lib/web/src/components/notification-category-button.tsx:158
 msgid "Unassigned"
 msgstr "ನಿಯೋಜಿಸದ"
 
@@ -1959,3 +2001,15 @@ msgstr "ನೀವು ಎಲ್ಲವನ್ನೂ ನೋಡಿದ್ದೀರಿ!
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "ನಿಮ್ಮ ಖಾತೆಯನ್ನು {source} ನಿಂದ ಇಲ್ಲಿಗೆ ವರ್ಗಾಯಿಸಲಾಗಿದೆ. ಅಲ್ಲಿ ಅದನ್ನು ಅಳಿಸುವವರೆಗೆ, ಸಂದೇಶಗಳು ಮತ್ತು ಅಧಿಸೂಚನೆಗಳು ಎರಡೂ ಸರ್ವರ್‌ಗಳಿಗೆ ತಲುಪಬಹುದು, ನಿಮ್ಮ ಕೆಲವು ವಿಷಯಗಳು ಹಳೆಯ ಸರ್ವರ್‌ನಿಂದ ಮಾತ್ರ ಒದಗಿಸಲ್ಪಡುತ್ತಿರಬಹುದು, ಮತ್ತು ಅನುಯಾಯಿಗಳು ನಿಮ್ಮನ್ನು ಇಲ್ಲಿ ಹುಡುಕಲು ಕೆಲವು ನಿಮಿಷಗಳು ಬೇಕಾಗಬಹುದು."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:291
+msgid "Your attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:289
+msgid "Your text and attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:292
+msgid "Your text will be lost."
+msgstr ""

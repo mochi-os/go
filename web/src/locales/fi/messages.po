@@ -52,7 +52,7 @@ msgstr "{name} luovutti"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} myös passasi. Vahvistaminen päättää pelin ja laskee laudan pisteet."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} tarjosi tasapeliä"
 
@@ -92,6 +92,11 @@ msgstr "{subject} pelasi <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Avaa valikko (# lukematon ilmoitus)} other {Avaa valikko (# lukematonta ilmoitusta)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 tuntia"
@@ -104,7 +109,7 @@ msgstr "24 tuntia"
 msgid "Absolute (date and time)"
 msgstr "Absoluuttinen (päivämäärä ja kellonaika)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Hyväksy"
 
@@ -140,6 +145,7 @@ msgstr "Tili vahvistettu"
 msgid "Active games"
 msgstr "Aktiiviset pelit"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -162,6 +168,10 @@ msgstr "Lisää tili"
 msgid "Add an account to receive notifications and use services."
 msgstr "Lisää tili saadaksesi ilmoituksia ja käyttääksesi palveluita."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Lisää kavereita"
@@ -169,6 +179,10 @@ msgstr "Lisää kavereita"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Lisää kavereita People-sovelluksessa aloittaaksesi pelin"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -323,12 +337,12 @@ msgstr "Selaimen ilmoitukset"
 msgid "Cancel"
 msgstr "Peruuta"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:146
 msgid "Category for this notification"
 msgstr "Tämän ilmoituksen kategoria"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:124
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:127
+#: ../../../lib/web/src/components/notification-category-button.tsx:138
 msgid "Change notification category"
 msgstr "Vaihda ilmoituksen kategoria"
 
@@ -341,7 +355,7 @@ msgstr "Chat"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Valitse ”Kaikki” nähdäksesi aiemmat ilmoitukset."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:30
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Valitse peli sivupalkista tai aloita uusi."
 
@@ -555,7 +569,7 @@ msgstr "Tumma tila"
 msgid "Data conflict"
 msgstr "Tietoristiriita"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Hylkää"
 
@@ -621,6 +635,14 @@ msgstr "Suunta"
 #: ../../../lib/web/src/components/person-picker.tsx:214
 msgid "Directory"
 msgstr "Hakemisto"
+
+#: ../../../lib/web/src/components/comment-composer.tsx:300
+msgid "Discard"
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:298
+msgid "Discard draft?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -790,7 +812,7 @@ msgstr "Lähetys epäonnistui"
 msgid "Failed to send verification code"
 msgstr "Vahvistuskoodin lähetys epäonnistui"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:111
+#: ../../../lib/web/src/components/notification-category-button.tsx:114
 msgid "Failed to update category"
 msgstr "Kategorian päivitys epäonnistui"
 
@@ -932,6 +954,10 @@ msgstr "Sisennetty"
 msgid "Interests"
 msgstr "Kiinnostuksen kohteet"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Virheellinen tunniste: vain kirjaimet, numerot, välilyönnit, yhdysmerkit ja kauttaviivat (enintään 50 merkkiä)"
@@ -1037,7 +1063,7 @@ msgstr "Keskikoko"
 msgid "Menu"
 msgstr "Valikko"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Viesti"
 
@@ -1074,9 +1100,9 @@ msgstr "Verkkovirhe"
 msgid "New"
 msgstr "Uusi"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:34
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:46
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Uusi peli"
@@ -1102,7 +1128,7 @@ msgstr "Ystäviä ei löytynyt"
 msgid "No friends yet"
 msgstr "Ei vielä ystäviä"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:43
 msgid "No games yet"
 msgstr "Ei vielä pelejä"
 
@@ -1118,6 +1144,7 @@ msgstr "Ei vielä viestejä"
 msgid "No notifications yet"
 msgstr "Ei vielä ilmoituksia"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Henkilöitä ei löytynyt"
@@ -1144,7 +1171,7 @@ msgstr "Tuloksia ei löytynyt."
 msgid "No time zone found."
 msgstr "Aikavyöhykettä ei löytynyt."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:147
+#: ../../../lib/web/src/components/notification-category-button.tsx:150
 msgid "No topic record yet — try again after the next notification."
 msgstr "Ei vielä aihetietoa — yritä uudelleen seuraavan ilmoituksen jälkeen."
 
@@ -1276,6 +1303,7 @@ msgstr "Avainkoodit"
 msgid "Pick a date"
 msgstr "Valitse päivä"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
 msgid "Please check your internet connection and try again."
@@ -1366,6 +1394,7 @@ msgstr "Suhteellinen 24 tunnin sisällä, muuten absoluuttinen"
 msgid "Rematch"
 msgstr "Uusinta"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:232
 #: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
@@ -1395,6 +1424,10 @@ msgstr "Poistetaanko käyttöoikeus?"
 #: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "Poista kiinnostus"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
@@ -1426,6 +1459,10 @@ msgstr "Luovutatko pelin?"
 #: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Luovutetaan..."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:249
+msgid "Retry"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1499,7 +1536,7 @@ msgstr "Valitse {0}"
 msgid "Select a friend..."
 msgstr "Valitse kaveri..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:29
 msgid "Select a game"
 msgstr "Valitse peli"
 
@@ -1547,6 +1584,11 @@ msgstr "Valitse sivuston suunta"
 msgid "Select theme preference"
 msgstr "Valitse teeman asetus"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "valittu"
@@ -1564,8 +1606,8 @@ msgstr "Lähetä uudelleen"
 msgid "Send email"
 msgstr "Lähetä sähköposti"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Lähetä viesti"
 
@@ -1795,7 +1837,7 @@ msgstr "Tiistai"
 msgid "Type a command or search..."
 msgstr "Kirjoita komento tai hae..."
 
-#: src/features/go/components/chat-input.tsx:34
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
 msgid "Type a message..."
 msgstr "Kirjoita viesti..."
 
@@ -1816,7 +1858,7 @@ msgstr "Etäpalvelimeen ei saatu yhteyttä"
 msgid "Unable to redirect to login. Please try again."
 msgstr "Kirjautumiseen ei voi siirtyä. Yritä uudelleen."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:155
+#: ../../../lib/web/src/components/notification-category-button.tsx:158
 msgid "Unassigned"
 msgstr "Ei määritetty"
 
@@ -1959,3 +2001,15 @@ msgstr "Olet ajan tasalla!"
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Tilisi siirrettiin tänne kohteesta {source}. Kunnes poistat sen sieltä, viestit ja ilmoitukset voivat tavoittaa molemmat palvelimet, osa sisällöstäsi toimitetaan edelleen vanhalta palvelimelta ja seuraajillasi voi kestää muutama minuutti löytää sinut täältä."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:291
+msgid "Your attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:289
+msgid "Your text and attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:292
+msgid "Your text will be lost."
+msgstr ""

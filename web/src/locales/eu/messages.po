@@ -52,7 +52,7 @@ msgstr "{name} amore eman du"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName}-(e)k ere pasatu du. Berresteak partida amaituko du eta taula puntuatuko du."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName}-(e)k berdinketa eskaini du"
 
@@ -92,6 +92,11 @@ msgstr "{subject} jokalariak <0>{moveLabel}</0> jokatu du"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Ireki menua (irakurri gabeko # jakinarazpen)} other {Ireki menua (irakurri gabeko # jakinarazpen)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 ordu"
@@ -104,7 +109,7 @@ msgstr "24 ordu"
 msgid "Absolute (date and time)"
 msgstr "Absolutua (data eta ordua)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Onartu"
 
@@ -140,6 +145,7 @@ msgstr "Kontua egiaztatua"
 msgid "Active games"
 msgstr "Joko aktiboak"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -162,6 +168,10 @@ msgstr "Gehitu kontua"
 msgid "Add an account to receive notifications and use services."
 msgstr "Gehitu kontu bat jakinarazpenak jasotzeko eta zerbitzuak erabiltzeko."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Gehitu lagunak"
@@ -169,6 +179,10 @@ msgstr "Gehitu lagunak"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Gehitu lagunak Pertsonak aplikazioan jokatzen hasteko"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -323,12 +337,12 @@ msgstr "Nabigatzaile jakinarazpenak"
 msgid "Cancel"
 msgstr "Utzi"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:146
 msgid "Category for this notification"
 msgstr "Jakinarazpen honentzako kategoria"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:124
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:127
+#: ../../../lib/web/src/components/notification-category-button.tsx:138
 msgid "Change notification category"
 msgstr "Aldatu jakinarazpen kategoria"
 
@@ -341,7 +355,7 @@ msgstr "Txata"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Markatu «Guztiak» aurreko jakinarazpenak ikusteko."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:30
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Aukeratu joko bat alboko barratik edo hasi berri bat."
 
@@ -555,7 +569,7 @@ msgstr "Modu iluna"
 msgid "Data conflict"
 msgstr "Datu-gatazka"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Ukatu"
 
@@ -621,6 +635,14 @@ msgstr "Norabidea"
 #: ../../../lib/web/src/components/person-picker.tsx:214
 msgid "Directory"
 msgstr "Direktorioa"
+
+#: ../../../lib/web/src/components/comment-composer.tsx:300
+msgid "Discard"
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:298
+msgid "Discard draft?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -790,7 +812,7 @@ msgstr "Ezin izan da bidali"
 msgid "Failed to send verification code"
 msgstr "Ezin izan da egiaztapen-kodea bidali"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:111
+#: ../../../lib/web/src/components/notification-category-button.tsx:114
 msgid "Failed to update category"
 msgstr "Ezin izan da kategoria eguneratu"
 
@@ -932,6 +954,10 @@ msgstr "Sartzea"
 msgid "Interests"
 msgstr "Interesak"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Etiketa baliogabea: letrak, zenbakiak, zuriuneak, marratxoak eta barrak soilik (gehienez 50 karaktere)"
@@ -1037,7 +1063,7 @@ msgstr "Ertaina"
 msgid "Menu"
 msgstr "Menua"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Mezua"
 
@@ -1074,9 +1100,9 @@ msgstr "Sareko errorea"
 msgid "New"
 msgstr "Berria"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:34
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:46
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Joko berria"
@@ -1102,7 +1128,7 @@ msgstr "Ez da lagunik aurkitu"
 msgid "No friends yet"
 msgstr "Oraindik lagunik ez"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:43
 msgid "No games yet"
 msgstr "Oraindik jokorik ez"
 
@@ -1118,6 +1144,7 @@ msgstr "Oraindik mezurik ez"
 msgid "No notifications yet"
 msgstr "Oraindik ez dago jakinarazpenik"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Ez da pertsonarik aurkitu"
@@ -1144,7 +1171,7 @@ msgstr "Ez da emaitzarik aurkitu."
 msgid "No time zone found."
 msgstr "Ez da ordu-zonarik aurkitu."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:147
+#: ../../../lib/web/src/components/notification-category-button.tsx:150
 msgid "No topic record yet — try again after the next notification."
 msgstr "Oraindik gairik ez — saiatu berriro hurrengo jakinarazpenaren ondoren."
 
@@ -1276,6 +1303,7 @@ msgstr "Passkey-ak"
 msgid "Pick a date"
 msgstr "Hautatu data bat"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
 msgid "Please check your internet connection and try again."
@@ -1366,6 +1394,7 @@ msgstr "Erlatiboa 24 ordu barruan, bestela absolutua"
 msgid "Rematch"
 msgstr "Itzulketa-partida"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:232
 #: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
@@ -1395,6 +1424,10 @@ msgstr "Sarbidea kendu?"
 #: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "Kendu interesa"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
@@ -1426,6 +1459,10 @@ msgstr "Jokoan amore eman?"
 #: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Amore ematen..."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:249
+msgid "Retry"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1499,7 +1536,7 @@ msgstr "Hautatu {0}"
 msgid "Select a friend..."
 msgstr "Hautatu lagun bat..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:29
 msgid "Select a game"
 msgstr "Hautatu joko bat"
 
@@ -1547,6 +1584,11 @@ msgstr "Hautatu gunearen norabidea"
 msgid "Select theme preference"
 msgstr "Hautatu gaiaren hobespena"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "hautatuta"
@@ -1564,8 +1606,8 @@ msgstr "Bidali berriz"
 msgid "Send email"
 msgstr "Bidali emaila"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Bidali mezua"
 
@@ -1795,7 +1837,7 @@ msgstr "Asteartea"
 msgid "Type a command or search..."
 msgstr "Idatzi komando bat edo bilatu..."
 
-#: src/features/go/components/chat-input.tsx:34
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
 msgid "Type a message..."
 msgstr "Idatzi mezu bat..."
 
@@ -1816,7 +1858,7 @@ msgstr "Ezin izan da urruneko zerbitzarira konektatu"
 msgid "Unable to redirect to login. Please try again."
 msgstr "Ezin da saio-hasierara birbideratu. Saiatu berriro."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:155
+#: ../../../lib/web/src/components/notification-category-button.tsx:158
 msgid "Unassigned"
 msgstr "Esleitu gabe"
 
@@ -1959,3 +2001,15 @@ msgstr "Dena irakurri duzu!"
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Zure kontua {source}-etik hona mugitu da. Han ezabatu arte, mezuak eta jakinarazpenak bi zerbitzarietara irits daitezke, zure edukiaren zati bat zerbitzari zaharretik ematen jarraitzen du, eta jarraitzaileek minutu batzuk behar izan ditzakete zu hemen aurkitzeko."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:291
+msgid "Your attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:289
+msgid "Your text and attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:292
+msgid "Your text will be lost."
+msgstr ""

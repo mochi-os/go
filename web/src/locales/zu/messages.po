@@ -52,7 +52,7 @@ msgstr "{name} udedele"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "U-{opponentName} naye udlulile. Ukuqinisekisa kuzoqeda umdlalo futhi kubale ibhodi."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} unikeze idrowu"
 
@@ -92,6 +92,11 @@ msgstr "{subject} udlale <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Vula imenyu (# isaziso esingafundiwe)} other {Vula imenyu (# izaziso ezingafundiwe)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "Amahora angu-12"
@@ -104,7 +109,7 @@ msgstr "Amahora angu-24"
 msgid "Absolute (date and time)"
 msgstr "Okuphelele (usuku nesikhathi)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Yamukela"
 
@@ -140,6 +145,7 @@ msgstr "I-akhawunti iqinisekisiwe"
 msgid "Active games"
 msgstr "Imidlalo Esebenzayo"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -162,6 +168,10 @@ msgstr "Engeza i-akhawunti"
 msgid "Add an account to receive notifications and use services."
 msgstr "Engeza i-akhawunti ukuthola izaziso futhi usebenzise izinsizakalo."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Engeza abangane"
@@ -169,6 +179,10 @@ msgstr "Engeza abangane"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Engeza abangane ku-app yabantu ukuze uqale ukudlala"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -323,12 +337,12 @@ msgstr "Izaziso zebhrawuza"
 msgid "Cancel"
 msgstr "Khansela"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:146
 msgid "Category for this notification"
 msgstr "Isigaba salesi saziso"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:124
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:127
+#: ../../../lib/web/src/components/notification-category-button.tsx:138
 msgid "Change notification category"
 msgstr "Shintsha isigaba sesaziso"
 
@@ -341,7 +355,7 @@ msgstr "Ingxoxo"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Khetha \"Konke\" ukubona izaziso zakho zangaphambilini."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:30
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Khetha umdlalo kubha eseceleni noma uqale omusha."
 
@@ -555,7 +569,7 @@ msgstr "Imodi emnyama"
 msgid "Data conflict"
 msgstr "Ukungqubuzana kwedatha"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Yenqaba"
 
@@ -621,6 +635,14 @@ msgstr "Indlela"
 #: ../../../lib/web/src/components/person-picker.tsx:214
 msgid "Directory"
 msgstr "Uhlu"
+
+#: ../../../lib/web/src/components/comment-composer.tsx:300
+msgid "Discard"
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:298
+msgid "Discard draft?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -790,7 +812,7 @@ msgstr "Kuhlulekile ukuthumela"
 msgid "Failed to send verification code"
 msgstr "Kuhlulekile ukuthumela ikhodi yokuqinisekisa"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:111
+#: ../../../lib/web/src/components/notification-category-button.tsx:114
 msgid "Failed to update category"
 msgstr "Kuhlulekile ukubuyekeza isigaba"
 
@@ -932,6 +954,10 @@ msgstr "Okufakwe ngaphakathi"
 msgid "Interests"
 msgstr "Izintshisekelo"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Ithegi engavumelekile: izinhlamvu, izinombolo, izikhala, ohayifeni nemidwa kuphela (okuningi izinhlamvu ezingu-50)"
@@ -1037,7 +1063,7 @@ msgstr "Maphakathi"
 msgid "Menu"
 msgstr "Imenyu"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Umyalezo"
 
@@ -1074,9 +1100,9 @@ msgstr "Iphutha lenethiwekhi"
 msgid "New"
 msgstr "Okusha"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:34
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:46
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Umdlalo omusha"
@@ -1102,7 +1128,7 @@ msgstr "Abakho abangani abatholakele"
 msgid "No friends yet"
 msgstr "Abakho abangani okwamanje"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:43
 msgid "No games yet"
 msgstr "Ayikho imidlalo okwamanje"
 
@@ -1118,6 +1144,7 @@ msgstr "Ayikho imiyalezo okwamanje"
 msgid "No notifications yet"
 msgstr "Azikho izaziso okwamanje"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Abakho abantu abatholakele"
@@ -1144,7 +1171,7 @@ msgstr "Imiphumela ayitholakali."
 msgid "No time zone found."
 msgstr "Asikho isikhathi sendawo esitholakele."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:147
+#: ../../../lib/web/src/components/notification-category-button.tsx:150
 msgid "No topic record yet — try again after the next notification."
 msgstr "Awukho umbiko wesihloko okwamanje — zama futhi ngemva kwesaziso esilandelayo."
 
@@ -1276,6 +1303,7 @@ msgstr "Ama-passkey"
 msgid "Pick a date"
 msgstr "Khetha usuku"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
 msgid "Please check your internet connection and try again."
@@ -1366,6 +1394,7 @@ msgstr "Okuhlobene phakathi kwamahora angu-24, ngale kwalokho okuphelele"
 msgid "Rematch"
 msgstr "Phindela emdlalweni"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:232
 #: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
@@ -1395,6 +1424,10 @@ msgstr "Khipha ukufinyelela?"
 #: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "Khipha intshisekelo"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
@@ -1426,6 +1459,10 @@ msgstr "Yeka umdlalo?"
 #: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Iyayeka..."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:249
+msgid "Retry"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1499,7 +1536,7 @@ msgstr "Khetha {0}"
 msgid "Select a friend..."
 msgstr "Khetha umngani..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:29
 msgid "Select a game"
 msgstr "Khetha umdlalo"
 
@@ -1547,6 +1584,11 @@ msgstr "Khetha umkhondo wesayithi"
 msgid "Select theme preference"
 msgstr "Khetha okuncamelayo kwendikimba"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "okukhethiwe"
@@ -1564,8 +1606,8 @@ msgstr "Thumela futhi"
 msgid "Send email"
 msgstr "Thumela i-imeyili"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Thumela umyalezo"
 
@@ -1795,7 +1837,7 @@ msgstr "ULwesibili"
 msgid "Type a command or search..."
 msgstr "Thayipha umyalo noma sesha..."
 
-#: src/features/go/components/chat-input.tsx:34
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
 msgid "Type a message..."
 msgstr "Thayipha umyalezo..."
 
@@ -1816,7 +1858,7 @@ msgstr "Ayikwazi ukuxhuma kuseva ekude"
 msgid "Unable to redirect to login. Please try again."
 msgstr "Ayikwazi ukuqondisa kabusha ekungeneni. Sicela uzame futhi."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:155
+#: ../../../lib/web/src/components/notification-category-button.tsx:158
 msgid "Unassigned"
 msgstr "Akwabelwanga"
 
@@ -1959,3 +2001,15 @@ msgstr "Usubonile konke!"
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "I-akhawunti yakho isuswe lapha ivela ku-{source}. Uze uyisuse lapho, imilayezo nezaziso zingafika eziservereni zombili, ingxenye yomqukathi wakho iqhubeka inikezwa eservereni endala, futhi abalandeli bangathatha imizuzu embalwa ukukuthola lapha."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:291
+msgid "Your attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:289
+msgid "Your text and attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:292
+msgid "Your text will be lost."
+msgstr ""

@@ -52,7 +52,7 @@ msgstr "{name} đã xin thua"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} cũng đã bỏ lượt. Xác nhận sẽ kết thúc ván cờ và tính điểm bàn cờ."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} đã đề nghị hòa"
 
@@ -92,6 +92,11 @@ msgstr "{subject} đã đi <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Mở menu (# thông báo chưa đọc)} other {Mở menu (# thông báo chưa đọc)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 giờ"
@@ -104,7 +109,7 @@ msgstr "24 giờ"
 msgid "Absolute (date and time)"
 msgstr "Tuyệt đối (ngày và giờ)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Chấp nhận"
 
@@ -140,6 +145,7 @@ msgstr "Đã xác minh tài khoản"
 msgid "Active games"
 msgstr "Ván đang chơi"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -162,6 +168,10 @@ msgstr "Thêm tài khoản"
 msgid "Add an account to receive notifications and use services."
 msgstr "Thêm tài khoản để nhận thông báo và dùng dịch vụ."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Thêm bạn"
@@ -169,6 +179,10 @@ msgstr "Thêm bạn"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Thêm bạn trong ứng dụng People để bắt đầu chơi"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -323,12 +337,12 @@ msgstr "Thông báo trình duyệt"
 msgid "Cancel"
 msgstr "Hủy"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:146
 msgid "Category for this notification"
 msgstr "Danh mục cho thông báo này"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:124
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:127
+#: ../../../lib/web/src/components/notification-category-button.tsx:138
 msgid "Change notification category"
 msgstr "Đổi danh mục thông báo"
 
@@ -341,7 +355,7 @@ msgstr "Trò chuyện"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Chọn \"Tất cả\" để xem thông báo trước đây."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:30
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Chọn một ván chơi ở thanh bên hoặc bắt đầu ván mới."
 
@@ -555,7 +569,7 @@ msgstr "Chế độ tối"
 msgid "Data conflict"
 msgstr "Xung đột dữ liệu"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Từ chối"
 
@@ -621,6 +635,14 @@ msgstr "Hướng"
 #: ../../../lib/web/src/components/person-picker.tsx:214
 msgid "Directory"
 msgstr "Danh bạ"
+
+#: ../../../lib/web/src/components/comment-composer.tsx:300
+msgid "Discard"
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:298
+msgid "Discard draft?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -790,7 +812,7 @@ msgstr "Không gửi được"
 msgid "Failed to send verification code"
 msgstr "Không gửi mã xác minh được"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:111
+#: ../../../lib/web/src/components/notification-category-button.tsx:114
 msgid "Failed to update category"
 msgstr "Không cập nhật danh mục được"
 
@@ -932,6 +954,10 @@ msgstr "Lõm vào"
 msgid "Interests"
 msgstr "Sở thích"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Thẻ không hợp lệ: chỉ chữ cái, chữ số, dấu cách, dấu gạch nối và dấu gạch chéo (tối đa 50 ký tự)"
@@ -1037,7 +1063,7 @@ msgstr "Vừa"
 msgid "Menu"
 msgstr "Menu"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Tin nhắn"
 
@@ -1074,9 +1100,9 @@ msgstr "Lỗi mạng"
 msgid "New"
 msgstr "Mới"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:34
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:46
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Trò chơi mới"
@@ -1102,7 +1128,7 @@ msgstr "Không tìm thấy bạn bè"
 msgid "No friends yet"
 msgstr "Chưa có bạn bè"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:43
 msgid "No games yet"
 msgstr "Chưa có trò chơi"
 
@@ -1118,6 +1144,7 @@ msgstr "Chưa có tin nhắn"
 msgid "No notifications yet"
 msgstr "Chưa có thông báo"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Không tìm thấy người nào"
@@ -1144,7 +1171,7 @@ msgstr "Không tìm thấy kết quả nào."
 msgid "No time zone found."
 msgstr "Không tìm thấy múi giờ."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:147
+#: ../../../lib/web/src/components/notification-category-button.tsx:150
 msgid "No topic record yet — try again after the next notification."
 msgstr "Chưa có bản ghi chủ đề — hãy thử lại sau thông báo tiếp theo."
 
@@ -1276,6 +1303,7 @@ msgstr "Passkey"
 msgid "Pick a date"
 msgstr "Chọn ngày"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
 msgid "Please check your internet connection and try again."
@@ -1366,6 +1394,7 @@ msgstr "Tương đối trong vòng 24 giờ, ngoài ra dùng tuyệt đối"
 msgid "Rematch"
 msgstr "Đấu lại"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:232
 #: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
@@ -1395,6 +1424,10 @@ msgstr "Xoá quyền truy cập?"
 #: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "Xoá sở thích"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
@@ -1426,6 +1459,10 @@ msgstr "Đầu hàng trận đấu?"
 #: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "Đang đầu hàng..."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:249
+msgid "Retry"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1499,7 +1536,7 @@ msgstr "Chọn {0}"
 msgid "Select a friend..."
 msgstr "Chọn một người bạn..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:29
 msgid "Select a game"
 msgstr "Chọn một trò chơi"
 
@@ -1547,6 +1584,11 @@ msgstr "Chọn hướng trang web"
 msgid "Select theme preference"
 msgstr "Chọn tùy chọn giao diện"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "đã chọn"
@@ -1564,8 +1606,8 @@ msgstr "Gửi lại"
 msgid "Send email"
 msgstr "Gửi email"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Gửi tin nhắn"
 
@@ -1795,7 +1837,7 @@ msgstr "Thứ ba"
 msgid "Type a command or search..."
 msgstr "Nhập lệnh hoặc tìm kiếm..."
 
-#: src/features/go/components/chat-input.tsx:34
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
 msgid "Type a message..."
 msgstr "Nhập tin nhắn..."
 
@@ -1816,7 +1858,7 @@ msgstr "Không thể kết nối đến máy chủ từ xa"
 msgid "Unable to redirect to login. Please try again."
 msgstr "Không thể chuyển hướng đến trang đăng nhập. Vui lòng thử lại."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:155
+#: ../../../lib/web/src/components/notification-category-button.tsx:158
 msgid "Unassigned"
 msgstr "Chưa phân công"
 
@@ -1959,3 +2001,15 @@ msgstr "Bạn đã xem hết!"
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Tài khoản của bạn đã được chuyển đến đây từ {source}. Cho đến khi bạn xóa nó ở đó, tin nhắn và thông báo có thể đến cả hai máy chủ, một số nội dung của bạn vẫn được phục vụ từ máy chủ cũ và người theo dõi có thể mất vài phút để tìm thấy bạn ở đây."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:291
+msgid "Your attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:289
+msgid "Your text and attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:292
+msgid "Your text will be lost."
+msgstr ""

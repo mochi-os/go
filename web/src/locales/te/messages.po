@@ -52,7 +52,7 @@ msgstr "{name} ఓటమిని అంగీకరించారు"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} కూడా దాటవేశారు. నిర్ధారిస్తే ఆట ముగుస్తుంది మరియు బోర్డ్‌కు స్కోర్ ఇవ్వబడుతుంది."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} డ్రా అందించారు"
 
@@ -92,6 +92,11 @@ msgstr "{subject} <0>{moveLabel}</0> ఆడారు"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {మెనూ తెరవండి (# చదవని నోటిఫికేషన్)} other {మెనూ తెరవండి (# చదవని నోటిఫికేషన్‌లు)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 గంటలు"
@@ -104,7 +109,7 @@ msgstr "24 గంటలు"
 msgid "Absolute (date and time)"
 msgstr "సంపూర్ణ (తేదీ మరియు సమయం)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "అంగీకరించండి"
 
@@ -140,6 +145,7 @@ msgstr "ఖాతా ధృవీకరించబడింది"
 msgid "Active games"
 msgstr "క్రియాశీల ఆటలు"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -162,6 +168,10 @@ msgstr "ఖాతాను జోడించండి"
 msgid "Add an account to receive notifications and use services."
 msgstr "నోటిఫికేషన్‌లను అందుకోవడానికి మరియు సేవలను ఉపయోగించడానికి ఖాతాను జోడించండి."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "స్నేహితులను జోడించండి"
@@ -169,6 +179,10 @@ msgstr "స్నేహితులను జోడించండి"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "ఆడటం ప్రారంభించడానికి People యాప్‌లో స్నేహితులను జోడించండి"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -323,12 +337,12 @@ msgstr "బ్రౌజర్ నోటిఫికేషన్‌లు"
 msgid "Cancel"
 msgstr "రద్దు చేయండి"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:143
+#: ../../../lib/web/src/components/notification-category-button.tsx:146
 msgid "Category for this notification"
 msgstr "ఈ నోటిఫికేషన్ కోసం వర్గం"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:124
-#: ../../../lib/web/src/components/notification-category-button.tsx:135
+#: ../../../lib/web/src/components/notification-category-button.tsx:127
+#: ../../../lib/web/src/components/notification-category-button.tsx:138
 msgid "Change notification category"
 msgstr "నోటిఫికేషన్ వర్గాన్ని మార్చండి"
 
@@ -341,7 +355,7 @@ msgstr "చాట్"
 msgid "Check \"All\" to see your past notifications."
 msgstr "గత నోటిఫికేషన్‌లను చూడటానికి \"అన్నీ\" ఎంచుకోండి."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:30
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "సైడ్‌బార్ నుండి ఆటను ఎంచుకోండి లేదా కొత్తదాన్ని ప్రారంభించండి."
 
@@ -555,7 +569,7 @@ msgstr "డార్క్ మోడ్"
 msgid "Data conflict"
 msgstr "డేటా వైరుధ్యం"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "తిరస్కరించండి"
 
@@ -621,6 +635,14 @@ msgstr "దిశ"
 #: ../../../lib/web/src/components/person-picker.tsx:214
 msgid "Directory"
 msgstr "డైరెక్టరీ"
+
+#: ../../../lib/web/src/components/comment-composer.tsx:300
+msgid "Discard"
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:298
+msgid "Discard draft?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -790,7 +812,7 @@ msgstr "పంపడంలో విఫలమైంది"
 msgid "Failed to send verification code"
 msgstr "ధృవీకరణ కోడ్‌ను పంపడంలో విఫలమైంది"
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:111
+#: ../../../lib/web/src/components/notification-category-button.tsx:114
 msgid "Failed to update category"
 msgstr "విభాగాన్ని నవీకరించడంలో విఫలమైంది"
 
@@ -932,6 +954,10 @@ msgstr "ఇన్‌సెట్"
 msgid "Interests"
 msgstr "ఆసక్తులు"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "చెల్లని ట్యాగ్: అక్షరాలు, సంఖ్యలు, ఖాళీలు, హైఫన్‌లు, స్లాష్‌లు మాత్రమే (గరిష్ఠంగా 50 అక్షరాలు)"
@@ -1037,7 +1063,7 @@ msgstr "మధ్యస్థం"
 msgid "Menu"
 msgstr "మెను"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "సందేశం"
 
@@ -1074,9 +1100,9 @@ msgstr "నెట్‌వర్క్ లోపం"
 msgid "New"
 msgstr "కొత్తది"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:34
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:46
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "కొత్త గేమ్"
@@ -1102,7 +1128,7 @@ msgstr "స్నేహితులు ఎవరూ కనుగొనబడల�
 msgid "No friends yet"
 msgstr "ఇంకా స్నేహితులు లేరు"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:43
 msgid "No games yet"
 msgstr "ఇంకా గేమ్‌లు లేవు"
 
@@ -1118,6 +1144,7 @@ msgstr "ఇంకా సందేశాలు లేవు"
 msgid "No notifications yet"
 msgstr "ఇంకా నోటిఫికేషన్‌లు లేవు"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "ఎవరూ కనుగొనబడలేదు"
@@ -1144,7 +1171,7 @@ msgstr "ఫలితాలు ఏవీ కనుగొనబడలేదు."
 msgid "No time zone found."
 msgstr "టైం జోన్ కనుగొనబడలేదు."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:147
+#: ../../../lib/web/src/components/notification-category-button.tsx:150
 msgid "No topic record yet — try again after the next notification."
 msgstr "ఇంకా టాపిక్ రికార్డ్ లేదు — తదుపరి నోటిఫికేషన్ తర్వాత మళ్లీ ప్రయత్నించండి."
 
@@ -1276,6 +1303,7 @@ msgstr "పాస్‌కీలు"
 msgid "Pick a date"
 msgstr "తేదీని ఎంచుకోండి"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
 #: ../../../lib/web/src/lib/api-response-interceptors.ts:304
 msgid "Please check your internet connection and try again."
@@ -1366,6 +1394,7 @@ msgstr "24 గంటల్లో సాపేక్ష, లేకపోతే �
 msgid "Rematch"
 msgstr "రీమ్యాచ్"
 
+#: ../../../lib/web/src/components/comment-composer.tsx:232
 #: ../../../lib/web/src/features/access/access-list.tsx:270
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:180
 msgid "Remove"
@@ -1395,6 +1424,10 @@ msgstr "యాక్సెస్‌ను తొలగించాలా?"
 #: ../../../lib/web/src/components/post-tags.tsx:232
 msgid "Remove interest"
 msgstr "ఆసక్తిని తొలగించండి"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
@@ -1426,6 +1459,10 @@ msgstr "గేమ్‌ను రిజైన్ చేయాలా?"
 #: src/features/go/index.tsx:631
 msgid "Resigning..."
 msgstr "రిజైన్ చేస్తోంది..."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:249
+msgid "Retry"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1499,7 +1536,7 @@ msgstr "{0} ఎంచుకోండి"
 msgid "Select a friend..."
 msgstr "ఒక ఫ్రెండ్‌ను ఎంచుకోండి..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:29
 msgid "Select a game"
 msgstr "ఒక ఆటను ఎంచుకోండి"
 
@@ -1547,6 +1584,11 @@ msgstr "సైట్ దిశను ఎంచుకోండి"
 msgid "Select theme preference"
 msgstr "థీమ్ ప్రాధాన్యతను ఎంచుకోండి"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "ఎంచుకోబడింది"
@@ -1564,8 +1606,8 @@ msgstr "మళ్ళీ పంపండి"
 msgid "Send email"
 msgstr "ఇమెయిల్ పంపండి"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "సందేశాన్ని పంపండి"
 
@@ -1795,7 +1837,7 @@ msgstr "మంగళవారం"
 msgid "Type a command or search..."
 msgstr "ఒక కమాండ్‌ను టైప్ చేయండి లేదా శోధించండి..."
 
-#: src/features/go/components/chat-input.tsx:34
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
 msgid "Type a message..."
 msgstr "ఒక సందేశాన్ని టైప్ చేయండి..."
 
@@ -1816,7 +1858,7 @@ msgstr "రిమోట్ సర్వర్‌కు కనెక్ట్ చ
 msgid "Unable to redirect to login. Please try again."
 msgstr "లాగిన్‌కు రీడైరెక్ట్ చేయలేకపోయింది. దయచేసి మళ్ళీ ప్రయత్నించండి."
 
-#: ../../../lib/web/src/components/notification-category-button.tsx:155
+#: ../../../lib/web/src/components/notification-category-button.tsx:158
 msgid "Unassigned"
 msgstr "కేటాయించబడలేదు"
 
@@ -1959,3 +2001,15 @@ msgstr "మీరు అన్నీ చూశారు!"
 #: ../../../lib/web/src/components/restore-banner.tsx:91
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "మీ ఖాతా {source} నుండి ఇక్కడికి తరలించబడింది. మీరు అక్కడ దాన్ని తొలగించే వరకు, సందేశాలు మరియు నోటిఫికేషన్లు రెండు సర్వర్లకు చేరవచ్చు, మీ కొంత కంటెంట్ పాత సర్వర్ నుండి అందించబడుతూ ఉంటుంది, మరియు ఫాలోవర్లు మిమ్మల్ని ఇక్కడ కనుగొనడానికి కొన్ని నిమిషాలు పట్టవచ్చు."
+
+#: ../../../lib/web/src/components/comment-composer.tsx:291
+msgid "Your attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:289
+msgid "Your text and attachments will be lost."
+msgstr ""
+
+#: ../../../lib/web/src/components/comment-composer.tsx:292
+msgid "Your text will be lost."
+msgstr ""
