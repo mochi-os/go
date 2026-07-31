@@ -52,7 +52,7 @@ msgstr "{name} alijiuzulu"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} pia ameruka zamu. Kuthibitisha kutamaliza mchezo na kuhesabu ubao."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ametoa sare"
 
@@ -71,10 +71,6 @@ msgstr "{selectedCount, plural, one {# vimechaguliwa} other {# vimechaguliwa}}"
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
 msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
 msgstr "{selectedCount, plural, one {Vitendo vya wingi kwa {entityName} # iliyochaguliwa} other {Vitendo vya wingi kwa {manyName} # zilizochaguliwa}}"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:52
-msgid "{sentLabel} of {totalLabel}"
-msgstr "{sentLabel} kati ya {totalLabel}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -96,6 +92,11 @@ msgstr "{subject} alicheza <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Fungua menyu (arifa # ambayo haijasomwa)} other {Fungua menyu (arifa # ambazo hazijasomwa)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "Masaa 12"
@@ -108,7 +109,7 @@ msgstr "Masaa 24"
 msgid "Absolute (date and time)"
 msgstr "Kamili (tarehe na muda)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Kubali"
 
@@ -144,6 +145,7 @@ msgstr "Akaunti imethibitishwa"
 msgid "Active games"
 msgstr "Michezo Inayoendelea"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -166,6 +168,10 @@ msgstr "Ongeza akaunti"
 msgid "Add an account to receive notifications and use services."
 msgstr "Ongeza akaunti ili kupokea arifa na kutumia huduma."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Ongeza marafiki"
@@ -173,6 +179,10 @@ msgstr "Ongeza marafiki"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Ongeza marafiki katika programu ya Watu ili kuanza kucheza"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -345,7 +355,7 @@ msgstr "Gumzo"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Chagua \"Zote\" ili kuona arifa zako za awali."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Chagua mchezo kutoka upau wa pembeni au anzisha mpya."
 
@@ -559,7 +569,7 @@ msgstr "Hali ya giza"
 msgid "Data conflict"
 msgstr "Mgongano wa data"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Kataa"
 
@@ -628,11 +638,11 @@ msgstr "Saraka"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:300
 msgid "Discard"
-msgstr "Tupa"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:298
 msgid "Discard draft?"
-msgstr "Tupa rasimu?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -944,6 +954,10 @@ msgstr "Ndani"
 msgid "Interests"
 msgstr "Mivuto"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Lebo si sahihi: herufi, tarakimu, nafasi, vistari na mikwaju pekee (kiwango cha juu herufi 50)"
@@ -1049,7 +1063,7 @@ msgstr "Wastani"
 msgid "Menu"
 msgstr "Menyu"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Ujumbe"
 
@@ -1086,9 +1100,9 @@ msgstr "Hitilafu ya mtandao"
 msgid "New"
 msgstr "Mpya"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Mchezo mpya"
@@ -1114,7 +1128,7 @@ msgstr "Hakuna marafiki waliopatikana"
 msgid "No friends yet"
 msgstr "Hakuna marafiki bado"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 msgid "No games yet"
 msgstr "Hakuna michezo bado"
 
@@ -1130,6 +1144,7 @@ msgstr "Hakuna ujumbe bado"
 msgid "No notifications yet"
 msgstr "Bado hakuna arifa"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Hakuna watu waliopatikana"
@@ -1324,10 +1339,6 @@ msgstr "Picha iliyotangulia"
 msgid "Privacy"
 msgstr "Faragha"
 
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:50
-msgid "Processing…"
-msgstr "Inachakata…"
-
 #: ../../../lib/web/src/components/layout/nav-user.tsx:137
 #: ../../../lib/web/src/components/profile-dropdown.tsx:114
 msgid "Profile"
@@ -1414,6 +1425,10 @@ msgstr "Ondoa ufikiaji?"
 msgid "Remove interest"
 msgstr "Ondoa shauku"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "Tuma barua pepe tena"
@@ -1447,7 +1462,7 @@ msgstr "Inajiuzulu..."
 
 #: ../../../lib/web/src/components/comment-composer.tsx:249
 msgid "Retry"
-msgstr "Jaribu tena"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1521,7 +1536,7 @@ msgstr "Chagua {0}"
 msgid "Select a friend..."
 msgstr "Chagua rafiki..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
 msgid "Select a game"
 msgstr "Chagua mchezo"
 
@@ -1569,6 +1584,11 @@ msgstr "Chagua mwelekeo wa tovuti"
 msgid "Select theme preference"
 msgstr "Chagua mapendeleo ya mandhari"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "vimechaguliwa"
@@ -1586,8 +1606,8 @@ msgstr "Tuma tena"
 msgid "Send email"
 msgstr "Tuma barua pepe"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Tuma ujumbe"
 
@@ -1817,9 +1837,9 @@ msgstr "Jumanne"
 msgid "Type a command or search..."
 msgstr "Andika amri au tafuta..."
 
-#: src/features/go/components/chat-input.tsx:34
-msgid "Type a message..."
-msgstr "Andika ujumbe..."
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "Andika ujumbe…"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
@@ -1863,10 +1883,6 @@ msgstr "Haijulikani"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:135
 msgid "Unverified"
 msgstr "Haijathibitishwa"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:34
-msgid "Upload progress"
-msgstr "Maendeleo ya upakiaji"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:338
 msgid "Use your passkey"
@@ -1988,12 +2004,12 @@ msgstr "Akaunti yako ilihamishiwa hapa kutoka {source}. Mpaka uifute hapo, ujumb
 
 #: ../../../lib/web/src/components/comment-composer.tsx:291
 msgid "Your attachments will be lost."
-msgstr "Viambatisho vyako vitapotea."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:289
 msgid "Your text and attachments will be lost."
-msgstr "Maandishi na viambatisho vyako vitapotea."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:292
 msgid "Your text will be lost."
-msgstr "Maandishi yako yatapotea."
+msgstr ""

@@ -52,7 +52,7 @@ msgstr "{name} হার মেনে নিয়েছেন"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName}ও পাস করেছে। নিশ্চিত করলে খেলা শেষ হবে এবং বোর্ডের স্কোর হবে।"
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ড্র প্রস্তাব করেছে"
 
@@ -71,10 +71,6 @@ msgstr "{selectedCount, plural, one {# নির্বাচিত} other {# ন
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
 msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
 msgstr "{selectedCount, plural, one {# নির্বাচিত {entityName} এর জন্য বাল্ক ক্রিয়া} other {# নির্বাচিত {manyName} এর জন্য বাল্ক ক্রিয়া}}"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:52
-msgid "{sentLabel} of {totalLabel}"
-msgstr "{totalLabel}-এর মধ্যে {sentLabel}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -96,6 +92,11 @@ msgstr "{subject} <0>{moveLabel}</0> খেলেছেন"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {মেনু খুলুন (# অপঠিত বিজ্ঞপ্তি)} other {মেনু খুলুন (# অপঠিত বিজ্ঞপ্তি)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "১২ ঘণ্টা"
@@ -108,7 +109,7 @@ msgstr "২৪ ঘণ্টা"
 msgid "Absolute (date and time)"
 msgstr "নিরঙ্কুশ (তারিখ এবং সময়)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "গ্রহণ করুন"
 
@@ -144,6 +145,7 @@ msgstr "অ্যাকাউন্ট যাচাই করা হয়েছ
 msgid "Active games"
 msgstr "সক্রিয় গেম"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -166,6 +168,10 @@ msgstr "অ্যাকাউন্ট যোগ করুন"
 msgid "Add an account to receive notifications and use services."
 msgstr "নোটিফিকেশন পেতে এবং পরিষেবা ব্যবহার করতে একটি অ্যাকাউন্ট যোগ করুন।"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "বন্ধু যোগ করুন"
@@ -173,6 +179,10 @@ msgstr "বন্ধু যোগ করুন"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "খেলা শুরু করতে People অ্যাপে বন্ধু যোগ করুন"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -345,7 +355,7 @@ msgstr "চ্যাট"
 msgid "Check \"All\" to see your past notifications."
 msgstr "আপনার পুরনো বিজ্ঞপ্তি দেখতে \"সব\" নির্বাচন করুন।"
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "সাইডবার থেকে একটি গেম বেছে নিন বা একটি নতুন শুরু করুন।"
 
@@ -559,7 +569,7 @@ msgstr "ডার্ক মোড"
 msgid "Data conflict"
 msgstr "ডেটা দ্বন্দ্ব"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "প্রত্যাখ্যান করুন"
 
@@ -628,11 +638,11 @@ msgstr "ডিরেক্টরি"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:300
 msgid "Discard"
-msgstr "বাতিল করুন"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:298
 msgid "Discard draft?"
-msgstr "খসড়া বাতিল করবেন?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -944,6 +954,10 @@ msgstr "ইনসেট"
 msgid "Interests"
 msgstr "আগ্রহসমূহ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "অবৈধ ট্যাগ: শুধুমাত্র অক্ষর, সংখ্যা, স্পেস, হাইফেন ও স্ল্যাশ (সর্বোচ্চ ৫০ অক্ষর)"
@@ -1049,7 +1063,7 @@ msgstr "মাঝারি"
 msgid "Menu"
 msgstr "মেনু"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "বার্তা"
 
@@ -1086,9 +1100,9 @@ msgstr "নেটওয়ার্ক ত্রুটি"
 msgid "New"
 msgstr "নতুন"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "নতুন গেম"
@@ -1114,7 +1128,7 @@ msgstr "কোনো বন্ধু পাওয়া যায়নি"
 msgid "No friends yet"
 msgstr "এখনও কোনো বন্ধু নেই"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 msgid "No games yet"
 msgstr "এখনও কোনো গেম নেই"
 
@@ -1130,6 +1144,7 @@ msgstr "এখনও কোনো বার্তা নেই"
 msgid "No notifications yet"
 msgstr "এখনও কোনও বিজ্ঞপ্তি নেই"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "কোনো ব্যক্তি পাওয়া যায়নি"
@@ -1324,10 +1339,6 @@ msgstr "পূর্ববর্তী ছবি"
 msgid "Privacy"
 msgstr "গোপনীয়তা"
 
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:50
-msgid "Processing…"
-msgstr "প্রক্রিয়াকরণ চলছে…"
-
 #: ../../../lib/web/src/components/layout/nav-user.tsx:137
 #: ../../../lib/web/src/components/profile-dropdown.tsx:114
 msgid "Profile"
@@ -1414,6 +1425,10 @@ msgstr "অ্যাক্সেস সরাবেন?"
 msgid "Remove interest"
 msgstr "আগ্রহ সরান"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "ইমেল আবার পাঠান"
@@ -1447,7 +1462,7 @@ msgstr "পদত্যাগ করা হচ্ছে..."
 
 #: ../../../lib/web/src/components/comment-composer.tsx:249
 msgid "Retry"
-msgstr "আবার চেষ্টা করুন"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1521,7 +1536,7 @@ msgstr "{0} নির্বাচন করুন"
 msgid "Select a friend..."
 msgstr "একজন বন্ধু নির্বাচন করুন..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
 msgid "Select a game"
 msgstr "একটি গেম নির্বাচন করুন"
 
@@ -1569,6 +1584,11 @@ msgstr "সাইটের দিক নির্বাচন করুন"
 msgid "Select theme preference"
 msgstr "থিম পছন্দ নির্বাচন করুন"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "নির্বাচিত"
@@ -1586,8 +1606,8 @@ msgstr "আবার পাঠান"
 msgid "Send email"
 msgstr "ইমেইল পাঠান"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "বার্তা পাঠান"
 
@@ -1817,9 +1837,9 @@ msgstr "মঙ্গলবার"
 msgid "Type a command or search..."
 msgstr "একটি কমান্ড টাইপ করুন বা অনুসন্ধান করুন..."
 
-#: src/features/go/components/chat-input.tsx:34
-msgid "Type a message..."
-msgstr "একটি বার্তা টাইপ করুন..."
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "একটি বার্তা টাইপ করুন…"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
@@ -1863,10 +1883,6 @@ msgstr "অজানা"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:135
 msgid "Unverified"
 msgstr "যাচাই করা হয়নি"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:34
-msgid "Upload progress"
-msgstr "আপলোডের অগ্রগতি"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:338
 msgid "Use your passkey"
@@ -1988,12 +2004,12 @@ msgstr "আপনার অ্যাকাউন্ট {source} থেকে এ
 
 #: ../../../lib/web/src/components/comment-composer.tsx:291
 msgid "Your attachments will be lost."
-msgstr "আপনার সংযুক্তিগুলি হারিয়ে যাবে।"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:289
 msgid "Your text and attachments will be lost."
-msgstr "আপনার লেখা ও সংযুক্তিগুলি হারিয়ে যাবে।"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:292
 msgid "Your text will be lost."
-msgstr "আপনার লেখা হারিয়ে যাবে।"
+msgstr ""

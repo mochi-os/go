@@ -52,7 +52,7 @@ msgstr "{name} gav opp"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} sa også pass. Stadfesting avsluttar spelet og tel poenga på brettet."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} tilbaud uavgjort"
 
@@ -71,10 +71,6 @@ msgstr "{selectedCount, plural, one {# valde} other {# valde}}"
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
 msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
 msgstr "{selectedCount, plural, one {Massehandlingar for # vald {entityName}} other {Massehandlingar for # valde {manyName}}}"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:52
-msgid "{sentLabel} of {totalLabel}"
-msgstr "{sentLabel} av {totalLabel}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -96,6 +92,11 @@ msgstr "{subject} spelte <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Opne meny (# ulese varsel)} other {Opne meny (# ulesne varsel)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 timar"
@@ -108,7 +109,7 @@ msgstr "24 timar"
 msgid "Absolute (date and time)"
 msgstr "Absolutt (dato og tid)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Godta"
 
@@ -144,6 +145,7 @@ msgstr "Konto stadfesta"
 msgid "Active games"
 msgstr "Aktive spel"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -166,6 +168,10 @@ msgstr "Legg til konto"
 msgid "Add an account to receive notifications and use services."
 msgstr "Legg til ein konto for å motta varsel og bruke tenester."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Legg til vener"
@@ -173,6 +179,10 @@ msgstr "Legg til vener"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Legg til vener i Folk-appen for å byrje å spele"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -345,7 +355,7 @@ msgstr "Prat"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Vel «Alle» for å sjå tidlegare varsel."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Vel eit spel frå sidestolpen eller start eit nytt."
 
@@ -559,7 +569,7 @@ msgstr "Mørk modus"
 msgid "Data conflict"
 msgstr "Datakonflikt"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Avslå"
 
@@ -628,11 +638,11 @@ msgstr "Katalog"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:300
 msgid "Discard"
-msgstr "Forkast"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:298
 msgid "Discard draft?"
-msgstr "Vil du forkaste utkastet?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -944,6 +954,10 @@ msgstr "Innfelt"
 msgid "Interests"
 msgstr "Interesser"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Ugyldig etikett: berre bokstavar, tal, mellomrom, bindestrekar og skråstrekar (maks. 50 teikn)"
@@ -1049,7 +1063,7 @@ msgstr "Medium"
 msgid "Menu"
 msgstr "Meny"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Melding"
 
@@ -1086,9 +1100,9 @@ msgstr "Nettverksfeil"
 msgid "New"
 msgstr "Ny"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Nytt spel"
@@ -1114,7 +1128,7 @@ msgstr "Ingen vener funne"
 msgid "No friends yet"
 msgstr "Ingen vener enno"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 msgid "No games yet"
 msgstr "Ingen spel enno"
 
@@ -1130,6 +1144,7 @@ msgstr "Ingen meldingar enno"
 msgid "No notifications yet"
 msgstr "Ingen varsel enno"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Ingen personar funne"
@@ -1324,10 +1339,6 @@ msgstr "Førre bilete"
 msgid "Privacy"
 msgstr "Privacy"
 
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:50
-msgid "Processing…"
-msgstr "Handsamar…"
-
 #: ../../../lib/web/src/components/layout/nav-user.tsx:137
 #: ../../../lib/web/src/components/profile-dropdown.tsx:114
 msgid "Profile"
@@ -1414,6 +1425,10 @@ msgstr "Fjern tilgang?"
 msgid "Remove interest"
 msgstr "Fjern interesse"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "Send e-posten på nytt"
@@ -1447,7 +1462,7 @@ msgstr "Gjev opp..."
 
 #: ../../../lib/web/src/components/comment-composer.tsx:249
 msgid "Retry"
-msgstr "Prøv igjen"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1521,7 +1536,7 @@ msgstr "Vel {0}"
 msgid "Select a friend..."
 msgstr "Vel ein ven..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
 msgid "Select a game"
 msgstr "Vel eit spel"
 
@@ -1569,6 +1584,11 @@ msgstr "Vel sideretning"
 msgid "Select theme preference"
 msgstr "Vel temapreferanse"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "valde"
@@ -1586,8 +1606,8 @@ msgstr "Send igjen"
 msgid "Send email"
 msgstr "Send e-post"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Send melding"
 
@@ -1817,9 +1837,9 @@ msgstr "Tysdag"
 msgid "Type a command or search..."
 msgstr "Skriv ein kommando eller søk..."
 
-#: src/features/go/components/chat-input.tsx:34
-msgid "Type a message..."
-msgstr "Skriv ei melding..."
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "Skriv ei melding…"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
@@ -1863,10 +1883,6 @@ msgstr "Ukjend"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:135
 msgid "Unverified"
 msgstr "Ikkje stadfesta"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:34
-msgid "Upload progress"
-msgstr "Framdrift for opplasting"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:338
 msgid "Use your passkey"
@@ -1988,12 +2004,12 @@ msgstr "Kontoen din vart flytta hit frå {source}. Inntil du slettar han der, ka
 
 #: ../../../lib/web/src/components/comment-composer.tsx:291
 msgid "Your attachments will be lost."
-msgstr "Vedlegga dine går tapt."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:289
 msgid "Your text and attachments will be lost."
-msgstr "Teksten og vedlegga dine går tapt."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:292
 msgid "Your text will be lost."
-msgstr "Teksten din går tapt."
+msgstr ""

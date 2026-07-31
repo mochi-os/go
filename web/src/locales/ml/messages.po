@@ -52,7 +52,7 @@ msgstr "{name} കീഴടങ്ങി"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} ഉം പാസ് ചെയ്തു. സ്ഥിരീകരിച്ചാൽ ഗെയിം അവസാനിക്കുകയും ബോർഡ് സ്കോർ ചെയ്യുകയും ചെയ്യും."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} സമനില വാഗ്ദാനം ചെയ്തു"
 
@@ -71,10 +71,6 @@ msgstr "{selectedCount, plural, one {# തിരഞ്ഞെടുത്തു} 
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
 msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
 msgstr "{selectedCount, plural, one {# തിരഞ്ഞെടുത്ത {entityName} എന്നതിനുള്ള ബൾക്ക് പ്രവർത്തനങ്ങൾ} other {# തിരഞ്ഞെടുത്ത {manyName} എന്നതിനുള്ള ബൾക്ക് പ്രവർത്തനങ്ങൾ}}"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:52
-msgid "{sentLabel} of {totalLabel}"
-msgstr "{totalLabel}-ൽ {sentLabel}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -96,6 +92,11 @@ msgstr "{subject} <0>{moveLabel}</0> കളിച്ചു"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {മെനു തുറക്കുക (# വായിക്കാത്ത അറിയിപ്പ്)} other {മെനു തുറക്കുക (# വായിക്കാത്ത അറിയിപ്പുകൾ)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 മണിക്കൂർ"
@@ -108,7 +109,7 @@ msgstr "24 മണിക്കൂർ"
 msgid "Absolute (date and time)"
 msgstr "സമ്പൂർണ്ണം (തീയതിയും സമയവും)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "സ്വീകരിക്കുക"
 
@@ -144,6 +145,7 @@ msgstr "അക്കൗണ്ട് പരിശോധിച്ചുറപ്�
 msgid "Active games"
 msgstr "സജീവ ഗെയിമുകൾ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -166,6 +168,10 @@ msgstr "അക്കൗണ്ട് ചേർക്കുക"
 msgid "Add an account to receive notifications and use services."
 msgstr "അറിയിപ്പുകൾ സ്വീകരിക്കാനും സേവനങ്ങൾ ഉപയോഗിക്കാനും ഒരു അക്കൗണ്ട് ചേർക്കുക."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "സുഹൃത്തുക്കളെ ചേർക്കുക"
@@ -173,6 +179,10 @@ msgstr "സുഹൃത്തുക്കളെ ചേർക്കുക"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "കളി തുടങ്ങാൻ People ആപ്പിൽ സുഹൃത്തുക്കളെ ചേർക്കുക"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -345,7 +355,7 @@ msgstr "ചാറ്റ്"
 msgid "Check \"All\" to see your past notifications."
 msgstr "മുൻ അറിയിപ്പുകൾ കാണാൻ \"എല്ലാം\" തിരഞ്ഞെടുക്കുക."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "സൈഡ്ബാറിൽ നിന്ന് ഒരു ഗെയിം തിരഞ്ഞെടുക്കുക അല്ലെങ്കിൽ ഒരു പുതിയത് ആരംഭിക്കുക."
 
@@ -559,7 +569,7 @@ msgstr "ഡാർക്ക് മോഡ്"
 msgid "Data conflict"
 msgstr "ഡാറ്റ വൈരുദ്ധ്യം"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "നിരസിക്കുക"
 
@@ -628,11 +638,11 @@ msgstr "ഡയറക്ടറി"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:300
 msgid "Discard"
-msgstr "ഉപേക്ഷിക്കുക"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:298
 msgid "Discard draft?"
-msgstr "ഡ്രാഫ്റ്റ് ഉപേക്ഷിക്കണോ?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -944,6 +954,10 @@ msgstr "ഇൻസെറ്റ്"
 msgid "Interests"
 msgstr "താൽപ്പര്യങ്ങൾ"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "അസാധുവായ ടാഗ്: അക്ഷരങ്ങൾ, അക്കങ്ങൾ, സ്പേസുകൾ, ഹൈഫനുകൾ, സ്ലാഷുകൾ മാത്രം (പരമാവധി 50 അക്ഷരങ്ങൾ)"
@@ -1049,7 +1063,7 @@ msgstr "ഇടത്തരം"
 msgid "Menu"
 msgstr "മെനു"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "സന്ദേശം"
 
@@ -1086,9 +1100,9 @@ msgstr "നെറ്റ്‌വർക്ക് പിശക്"
 msgid "New"
 msgstr "പുതിയത്"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "പുതിയ ഗെയിം"
@@ -1114,7 +1128,7 @@ msgstr "സുഹൃത്തുക്കളെ കണ്ടെത്തിയ�
 msgid "No friends yet"
 msgstr "സുഹൃത്തുക്കളാരും ഇതുവരെ ഇല്ല"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 msgid "No games yet"
 msgstr "ഗെയിമുകളൊന്നും ഇതുവരെ ഇല്ല"
 
@@ -1130,6 +1144,7 @@ msgstr "സന്ദേശങ്ങളൊന്നും ഇതുവരെ ഇ�
 msgid "No notifications yet"
 msgstr "ഇതുവരെ അറിയിപ്പുകളൊന്നുമില്ല"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "ആളുകളെ കണ്ടെത്തിയില്ല"
@@ -1324,10 +1339,6 @@ msgstr "മുമ്പത്തെ ഫോട്ടോ"
 msgid "Privacy"
 msgstr "സ്വകാര്യതാ നയം"
 
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:50
-msgid "Processing…"
-msgstr "പ്രോസസ്സ് ചെയ്യുന്നു…"
-
 #: ../../../lib/web/src/components/layout/nav-user.tsx:137
 #: ../../../lib/web/src/components/profile-dropdown.tsx:114
 msgid "Profile"
@@ -1414,6 +1425,10 @@ msgstr "അക്കൗണ്ട് നീക്കം ചെയ്യണോ?"
 msgid "Remove interest"
 msgstr "item നീക്കം ചെയ്യുക"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "ഇമെയിൽ വീണ്ടും അയയ്ക്കുക"
@@ -1447,7 +1462,7 @@ msgstr "റെസല്യൂഷൻ"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:249
 msgid "Retry"
-msgstr "വീണ്ടും ശ്രമിക്കുക"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1521,7 +1536,7 @@ msgstr "{0} തിരഞ്ഞെടുക്കുക"
 msgid "Select a friend..."
 msgstr "ഒരു സുഹൃത്തിനെ തിരഞ്ഞെടുക്കുക..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
 msgid "Select a game"
 msgstr "ഒരു ഗെയിം തിരഞ്ഞെടുക്കുക"
 
@@ -1569,6 +1584,11 @@ msgstr "സൈറ്റ് ദിശ തിരഞ്ഞെടുക്കുക"
 msgid "Select theme preference"
 msgstr "തീം മുൻഗണന തിരഞ്ഞെടുക്കുക"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "തിരഞ്ഞെടുത്തു"
@@ -1586,8 +1606,8 @@ msgstr "വീണ്ടും അയയ്ക്കുക"
 msgid "Send email"
 msgstr "ഇമെയിൽ അയയ്ക്കുക"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "സന്ദേശം അയയ്ക്കുക"
 
@@ -1817,9 +1837,9 @@ msgstr "ചൊവ്വാഴ്ച"
 msgid "Type a command or search..."
 msgstr "ഒരു കമാൻഡ് ടൈപ്പ് ചെയ്യുക അല്ലെങ്കിൽ തിരയുക..."
 
-#: src/features/go/components/chat-input.tsx:34
-msgid "Type a message..."
-msgstr "ഒരു സന്ദേശം ടൈപ്പ് ചെയ്യുക..."
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "ഒരു സന്ദേശം ടൈപ്പ് ചെയ്യുക…"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
@@ -1863,10 +1883,6 @@ msgstr "അജ്ഞാതം"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:135
 msgid "Unverified"
 msgstr "സ്ഥിരീകരിച്ചിട്ടില്ല"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:34
-msgid "Upload progress"
-msgstr "അപ്‌ലോഡ് പുരോഗതി"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:338
 msgid "Use your passkey"
@@ -1988,12 +2004,12 @@ msgstr "നിങ്ങളുടെ അക്കൗണ്ട് {source} ൽ ന
 
 #: ../../../lib/web/src/components/comment-composer.tsx:291
 msgid "Your attachments will be lost."
-msgstr "നിങ്ങളുടെ അറ്റാച്ചുമെന്റുകൾ നഷ്ടപ്പെടും."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:289
 msgid "Your text and attachments will be lost."
-msgstr "നിങ്ങളുടെ ടെക്സ്റ്റും അറ്റാച്ചുമെന്റുകളും നഷ്ടപ്പെടും."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:292
 msgid "Your text will be lost."
-msgstr "നിങ്ങളുടെ ടെക്സ്റ്റ് നഷ്ടപ്പെടും."
+msgstr ""

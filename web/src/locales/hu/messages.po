@@ -52,7 +52,7 @@ msgstr "{name} feladta"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} is passzolt. A megerősítés befejezi a játékot és kiértékeli a táblát."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} döntetlent ajánlott"
 
@@ -71,10 +71,6 @@ msgstr "{selectedCount, plural, one {# kiválasztva} other {# kiválasztva}}"
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
 msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
 msgstr "{selectedCount, plural, one {Tömeges műveletek # kiválasztott {entityName} elemre} other {Tömeges műveletek # kiválasztott {manyName} elemre}}"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:52
-msgid "{sentLabel} of {totalLabel}"
-msgstr "{sentLabel} / {totalLabel}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -96,6 +92,11 @@ msgstr "{subject} lépett: <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Menü megnyitása (# olvasatlan értesítés)} other {Menü megnyitása (# olvasatlan értesítés)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 óra"
@@ -108,7 +109,7 @@ msgstr "24 óra"
 msgid "Absolute (date and time)"
 msgstr "Abszolút (dátum és idő)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Elfogadás"
 
@@ -144,6 +145,7 @@ msgstr "Fiók ellenőrizve"
 msgid "Active games"
 msgstr "Aktív játékok"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -166,6 +168,10 @@ msgstr "Fiók hozzáadása"
 msgid "Add an account to receive notifications and use services."
 msgstr "Adjon hozzá egy fiókot az értesítések fogadásához és a szolgáltatások használatához."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Barátok hozzáadása"
@@ -173,6 +179,10 @@ msgstr "Barátok hozzáadása"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "A játék megkezdéséhez vegyen fel barátokat az Emberek alkalmazásban"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -345,7 +355,7 @@ msgstr "Chat"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Jelölje be az „Összes” lehetőséget a korábbi értesítésekhez."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Válasszon egy játékot az oldalsávból, vagy kezdjen újat."
 
@@ -559,7 +569,7 @@ msgstr "Sötét mód"
 msgid "Data conflict"
 msgstr "Adatütközés"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Elutasítás"
 
@@ -628,11 +638,11 @@ msgstr "Címtár"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:300
 msgid "Discard"
-msgstr "Elvetés"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:298
 msgid "Discard draft?"
-msgstr "Elveted a piszkozatot?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -944,6 +954,10 @@ msgstr "Beillesztett"
 msgid "Interests"
 msgstr "Érdeklődések"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Érvénytelen címke: csak betűk, számok, szóközök, kötőjelek és perjelek (legfeljebb 50 karakter)"
@@ -1049,7 +1063,7 @@ msgstr "Közepes"
 msgid "Menu"
 msgstr "Menü"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Üzenet"
 
@@ -1086,9 +1100,9 @@ msgstr "Hálózati hiba"
 msgid "New"
 msgstr "Új"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Új játék"
@@ -1114,7 +1128,7 @@ msgstr "Nem találhatók barátok"
 msgid "No friends yet"
 msgstr "Még nincsenek barátok"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 msgid "No games yet"
 msgstr "Még nincsenek játékok"
 
@@ -1130,6 +1144,7 @@ msgstr "Még nincsenek üzenetek"
 msgid "No notifications yet"
 msgstr "Még nincsenek értesítések"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Nem találhatók személyek"
@@ -1324,10 +1339,6 @@ msgstr "Előző kép"
 msgid "Privacy"
 msgstr "Adatvédelem"
 
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:50
-msgid "Processing…"
-msgstr "Feldolgozás…"
-
 #: ../../../lib/web/src/components/layout/nav-user.tsx:137
 #: ../../../lib/web/src/components/profile-dropdown.tsx:114
 msgid "Profile"
@@ -1414,6 +1425,10 @@ msgstr "Eltávolítja a hozzáférést?"
 msgid "Remove interest"
 msgstr "Érdeklődés eltávolítása"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "E-mail újraküldése"
@@ -1447,7 +1462,7 @@ msgstr "Feladás..."
 
 #: ../../../lib/web/src/components/comment-composer.tsx:249
 msgid "Retry"
-msgstr "Újra"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1521,7 +1536,7 @@ msgstr "{0} kiválasztása"
 msgid "Select a friend..."
 msgstr "Válasszon barátot..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
 msgid "Select a game"
 msgstr "Játék kiválasztása"
 
@@ -1569,6 +1584,11 @@ msgstr "Oldalirány kiválasztása"
 msgid "Select theme preference"
 msgstr "Téma beállításának kiválasztása"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "kiválasztva"
@@ -1586,8 +1606,8 @@ msgstr "Újraküldés"
 msgid "Send email"
 msgstr "E-mail küldése"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Üzenet küldése"
 
@@ -1817,9 +1837,9 @@ msgstr "Kedd"
 msgid "Type a command or search..."
 msgstr "Adjon meg egy parancsot vagy keressen..."
 
-#: src/features/go/components/chat-input.tsx:34
-msgid "Type a message..."
-msgstr "Írjon egy üzenetet..."
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "Írjon egy üzenetet…"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
@@ -1863,10 +1883,6 @@ msgstr "Ismeretlen"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:135
 msgid "Unverified"
 msgstr "Nem ellenőrzött"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:34
-msgid "Upload progress"
-msgstr "Feltöltés folyamata"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:338
 msgid "Use your passkey"
@@ -1988,12 +2004,12 @@ msgstr "Fiókja ide lett áthelyezve innen: {source}. Amíg nem törli onnan, az
 
 #: ../../../lib/web/src/components/comment-composer.tsx:291
 msgid "Your attachments will be lost."
-msgstr "A mellékletei elvesznek."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:289
 msgid "Your text and attachments will be lost."
-msgstr "A szövege és a mellékletei elvesznek."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:292
 msgid "Your text will be lost."
-msgstr "A szöveged elvész."
+msgstr ""

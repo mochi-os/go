@@ -52,7 +52,7 @@ msgstr "{name} resigned"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} also passed. Confirming will end the game and score the board."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} offered a draw"
 
@@ -96,6 +96,11 @@ msgstr "{subject} played <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr "+{0} nested"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 hours"
@@ -108,7 +113,7 @@ msgstr "24 hours"
 msgid "Absolute (date and time)"
 msgstr "Absolute (date and time)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Accept"
 
@@ -144,6 +149,7 @@ msgstr "Account verified"
 msgid "Active games"
 msgstr "Active games"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -166,6 +172,10 @@ msgstr "Add account"
 msgid "Add an account to receive notifications and use services."
 msgstr "Add an account to receive notifications and use services."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr "Add checklist item"
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Add friends"
@@ -173,6 +183,10 @@ msgstr "Add friends"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Add friends in the People app to start playing"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr "Add item..."
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -345,7 +359,7 @@ msgstr "Chat"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Check \"All\" to see your past notifications."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Choose a game from the sidebar or start a new one."
 
@@ -559,7 +573,7 @@ msgstr "Dark mode"
 msgid "Data conflict"
 msgstr "Data conflict"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Decline"
 
@@ -944,6 +958,10 @@ msgstr "Inset"
 msgid "Interests"
 msgstr "Interests"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr "Invalid date"
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
@@ -1049,7 +1067,7 @@ msgstr "Medium"
 msgid "Menu"
 msgstr "Menu"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Message"
 
@@ -1086,9 +1104,9 @@ msgstr "Network error"
 msgid "New"
 msgstr "New"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "New game"
@@ -1114,7 +1132,7 @@ msgstr "No friends found"
 msgid "No friends yet"
 msgstr "No friends yet"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 msgid "No games yet"
 msgstr "No games yet"
 
@@ -1130,6 +1148,7 @@ msgstr "No messages yet"
 msgid "No notifications yet"
 msgstr "No notifications yet"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "No people found"
@@ -1414,6 +1433,10 @@ msgstr "Remove access?"
 msgid "Remove interest"
 msgstr "Remove interest"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr "Remove item"
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "Resend email"
@@ -1521,7 +1544,7 @@ msgstr "Select {0}"
 msgid "Select a friend..."
 msgstr "Select a friend..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
 msgid "Select a game"
 msgstr "Select a game"
 
@@ -1569,6 +1592,11 @@ msgstr "Select site direction"
 msgid "Select theme preference"
 msgstr "Select theme preference"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr "Select..."
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "selected"
@@ -1586,8 +1614,8 @@ msgstr "Send again"
 msgid "Send email"
 msgstr "Send email"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Send message"
 
@@ -1817,9 +1845,9 @@ msgstr "Tuesday"
 msgid "Type a command or search..."
 msgstr "Type a command or search..."
 
-#: src/features/go/components/chat-input.tsx:34
-msgid "Type a message..."
-msgstr "Type a message..."
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "Type a message…"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"

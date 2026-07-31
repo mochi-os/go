@@ -52,7 +52,7 @@ msgstr ""
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr ""
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr ""
 
@@ -96,6 +96,11 @@ msgstr ""
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr ""
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr ""
@@ -108,7 +113,7 @@ msgstr ""
 msgid "Absolute (date and time)"
 msgstr ""
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr ""
 
@@ -144,6 +149,7 @@ msgstr ""
 msgid "Active games"
 msgstr ""
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -166,12 +172,20 @@ msgstr ""
 msgid "Add an account to receive notifications and use services."
 msgstr ""
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr ""
 
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
+msgstr ""
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
 msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
@@ -345,7 +359,7 @@ msgstr ""
 msgid "Check \"All\" to see your past notifications."
 msgstr ""
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
 msgid "Choose a game from the sidebar or start a new one."
 msgstr ""
 
@@ -559,7 +573,7 @@ msgstr ""
 msgid "Data conflict"
 msgstr ""
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr ""
 
@@ -944,6 +958,10 @@ msgstr ""
 msgid "Interests"
 msgstr ""
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr ""
@@ -1049,7 +1067,7 @@ msgstr "Medium"
 msgid "Menu"
 msgstr ""
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Message"
 
@@ -1086,9 +1104,9 @@ msgstr ""
 msgid "New"
 msgstr ""
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr ""
@@ -1114,7 +1132,7 @@ msgstr ""
 msgid "No friends yet"
 msgstr ""
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 msgid "No games yet"
 msgstr ""
 
@@ -1130,6 +1148,7 @@ msgstr ""
 msgid "No notifications yet"
 msgstr ""
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr ""
@@ -1414,6 +1433,10 @@ msgstr ""
 msgid "Remove interest"
 msgstr ""
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr ""
@@ -1521,7 +1544,7 @@ msgstr ""
 msgid "Select a friend..."
 msgstr ""
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
 msgid "Select a game"
 msgstr ""
 
@@ -1569,6 +1592,11 @@ msgstr ""
 msgid "Select theme preference"
 msgstr ""
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr ""
@@ -1586,8 +1614,8 @@ msgstr ""
 msgid "Send email"
 msgstr ""
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr ""
 
@@ -1817,8 +1845,8 @@ msgstr ""
 msgid "Type a command or search..."
 msgstr ""
 
-#: src/features/go/components/chat-input.tsx:34
-msgid "Type a message..."
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
 msgstr ""
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191

@@ -52,7 +52,7 @@ msgstr "{name} се предаде"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} исто така прескокна. Потврдувањето ќе ја заврши играта и ќе ја оцени таблата."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} понуди реми"
 
@@ -71,10 +71,6 @@ msgstr "{selectedCount, plural, one {# избрани} other {# избрани}}
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
 msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
 msgstr "{selectedCount, plural, one {Групни дејства за # избран {entityName}} other {Групни дејства за # избрани {manyName}}}"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:52
-msgid "{sentLabel} of {totalLabel}"
-msgstr "{sentLabel} од {totalLabel}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -96,6 +92,11 @@ msgstr "{subject} одигра <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Отвори мени (# непрочитано известување)} other {Отвори мени (# непрочитани известувања)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 часа"
@@ -108,7 +109,7 @@ msgstr "24 часа"
 msgid "Absolute (date and time)"
 msgstr "Апсолутно (датум и време)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "Прифати"
 
@@ -144,6 +145,7 @@ msgstr "Сметката е верификувана"
 msgid "Active games"
 msgstr "Активни игри"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -166,6 +168,10 @@ msgstr "Додај сметка"
 msgid "Add an account to receive notifications and use services."
 msgstr "Додај сметка за да примаш известувања и да користиш услуги."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "Додај пријатели"
@@ -173,6 +179,10 @@ msgstr "Додај пријатели"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "Додај пријатели во апликацијата People за да започнеш да играш"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -345,7 +355,7 @@ msgstr "Разговор"
 msgid "Check \"All\" to see your past notifications."
 msgstr "Означете „Сè“ за да ги видите претходните известувања."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Избери игра од страничната лента или започни нова."
 
@@ -559,7 +569,7 @@ msgstr "Темен режим"
 msgid "Data conflict"
 msgstr "Конфликт на податоци"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "Одбиј"
 
@@ -628,11 +638,11 @@ msgstr "Именик"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:300
 msgid "Discard"
-msgstr "Отфрли"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:298
 msgid "Discard draft?"
-msgstr "Да се отфрли нацртот?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -944,6 +954,10 @@ msgstr "Inset"
 msgid "Interests"
 msgstr "Интереси"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "Неважечка ознака: само букви, бројки, празни места, цртички и коси црти (најмногу 50 знаци)"
@@ -1049,7 +1063,7 @@ msgstr "Средно"
 msgid "Menu"
 msgstr "Мени"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "Порака"
 
@@ -1086,9 +1100,9 @@ msgstr "Грешка во мрежата"
 msgid "New"
 msgstr "Ново"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "Нова игра"
@@ -1114,7 +1128,7 @@ msgstr "Не се пронајдени пријатели"
 msgid "No friends yet"
 msgstr "Сè уште нема пријатели"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 msgid "No games yet"
 msgstr "Сè уште нема игри"
 
@@ -1130,6 +1144,7 @@ msgstr "Сè уште нема пораки"
 msgid "No notifications yet"
 msgstr "Сè уште нема известувања"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "Не се пронајдени луѓе"
@@ -1324,10 +1339,6 @@ msgstr "Претходна слика"
 msgid "Privacy"
 msgstr "Приватност"
 
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:50
-msgid "Processing…"
-msgstr "Се обработува…"
-
 #: ../../../lib/web/src/components/layout/nav-user.tsx:137
 #: ../../../lib/web/src/components/profile-dropdown.tsx:114
 msgid "Profile"
@@ -1414,6 +1425,10 @@ msgstr "Да го отстраниме пристапот?"
 msgid "Remove interest"
 msgstr "Отстрани интерес"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "Испрати ја е-поштата повторно"
@@ -1447,7 +1462,7 @@ msgstr "Откажување..."
 
 #: ../../../lib/web/src/components/comment-composer.tsx:249
 msgid "Retry"
-msgstr "Обиди се повторно"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1521,7 +1536,7 @@ msgstr "Избери {0}"
 msgid "Select a friend..."
 msgstr "Изберете пријател..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
 msgid "Select a game"
 msgstr "Изберете игра"
 
@@ -1569,6 +1584,11 @@ msgstr "Изберете насока на страницата"
 msgid "Select theme preference"
 msgstr "Изберете преференца за тема"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "избрани"
@@ -1586,8 +1606,8 @@ msgstr "Испрати повторно"
 msgid "Send email"
 msgstr "Испрати е-пошта"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "Испрати порака"
 
@@ -1817,9 +1837,9 @@ msgstr "Вторник"
 msgid "Type a command or search..."
 msgstr "Внесете команда или пребарувајте..."
 
-#: src/features/go/components/chat-input.tsx:34
-msgid "Type a message..."
-msgstr "Внесете порака..."
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "Внесете порака…"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
@@ -1863,10 +1883,6 @@ msgstr "Непознато"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:135
 msgid "Unverified"
 msgstr "Непотврдено"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:34
-msgid "Upload progress"
-msgstr "Напредок на прикачувањето"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:338
 msgid "Use your passkey"
@@ -1988,12 +2004,12 @@ msgstr "Вашиот профил беше преместен овде од {sou
 
 #: ../../../lib/web/src/components/comment-composer.tsx:291
 msgid "Your attachments will be lost."
-msgstr "Вашите прилози ќе бидат изгубени."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:289
 msgid "Your text and attachments will be lost."
-msgstr "Вашиот текст и прилозите ќе бидат изгубени."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:292
 msgid "Your text will be lost."
-msgstr "Твојот текст ќе биде изгубен."
+msgstr ""

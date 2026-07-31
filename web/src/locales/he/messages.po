@@ -52,7 +52,7 @@ msgstr "{name} פרש"
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} גם ויתר על תורו. אישור יסיים את המשחק וינקד את הלוח."
 
-#: src/features/go/components/draw-offer-banner.tsx:30
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} הציע תיקו"
 
@@ -71,10 +71,6 @@ msgstr "{selectedCount, plural, one {# נבחרו} two {# נבחרו} many {# נ
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:149
 msgid "{selectedCount, plural, one {Bulk actions for # selected {entityName}} other {Bulk actions for # selected {manyName}}}"
 msgstr "{selectedCount, plural, one {פעולות קבוצתיות עבור {entityName} אחד שנבחר} two {פעולות קבוצתיות עבור שני {manyName} שנבחרו} many {פעולות קבוצתיות עבור # {manyName} שנבחרו} other {פעולות קבוצתיות עבור # {manyName} שנבחרו}}"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:52
-msgid "{sentLabel} of {totalLabel}"
-msgstr "{sentLabel} מתוך {totalLabel}"
 
 #: src/features/go/components/go-board.tsx:136
 msgid "{size}×{size} Go board"
@@ -96,6 +92,11 @@ msgstr "{subject} שיחק <0>{moveLabel}</0>"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {פתיחת התפריט (התראה אחת שלא נקראה)} two {פתיחת התפריט (# התראות שלא נקראו)} many {פתיחת התפריט (# התראות שלא נקראו)} other {פתיחת התפריט (# התראות שלא נקראו)}}"
 
+#. placeholder {0}: countDeepChildren(object.id)
+#: ../../../lib/web/src/components/entity/entity-board-card.tsx:421
+msgid "+{0} nested"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:42
 msgid "12 hours"
 msgstr "12 שעות"
@@ -108,7 +109,7 @@ msgstr "24 שעות"
 msgid "Absolute (date and time)"
 msgstr "מוחלט (תאריך ושעה)"
 
-#: src/features/go/components/draw-offer-banner.tsx:46
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:45
 msgid "Accept"
 msgstr "אישור"
 
@@ -144,6 +145,7 @@ msgstr "החשבון אומת"
 msgid "Active games"
 msgstr "משחקים פעילים"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:717
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
 #: ../../../lib/web/src/features/accounts/account-add.tsx:196
 msgid "Add"
@@ -166,6 +168,10 @@ msgstr "הוסף חשבון"
 msgid "Add an account to receive notifications and use services."
 msgstr "הוסף חשבון כדי לקבל התראות ולהשתמש בשירותים."
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:687
+msgid "Add checklist item"
+msgstr ""
+
 #: src/features/go/components/new-game.tsx:150
 msgid "Add friends"
 msgstr "הוסף חברים"
@@ -173,6 +179,10 @@ msgstr "הוסף חברים"
 #: src/features/go/components/new-game.tsx:143
 msgid "Add friends in the People app to start playing"
 msgstr "הוסף חברים באפליקציית האנשים כדי להתחיל לשחק"
+
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:705
+msgid "Add item..."
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-picker.tsx:102
 msgid "Add new account"
@@ -345,7 +355,7 @@ msgstr "צ'אט"
 msgid "Check \"All\" to see your past notifications."
 msgstr "סמן \"הכול\" כדי לראות התראות קודמות."
 
-#: src/features/go/components/game-empty-state.tsx:23
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:38
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "בחר משחק מהסרגל הצדדי או התחל אחד חדש."
 
@@ -559,7 +569,7 @@ msgstr "מצב כהה"
 msgid "Data conflict"
 msgstr "התנגשות נתונים"
 
-#: src/features/go/components/draw-offer-banner.tsx:39
+#: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:41
 msgid "Decline"
 msgstr "דחייה"
 
@@ -628,11 +638,11 @@ msgstr "מדריך"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:300
 msgid "Discard"
-msgstr "מחיקה"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:298
 msgid "Discard draft?"
-msgstr "למחוק את הטיוטה?"
+msgstr ""
 
 #: ../../../lib/web/src/lib/chat-ui.ts:25
 #: ../../../lib/web/src/lib/chat-ui.ts:29
@@ -944,6 +954,10 @@ msgstr "פנימי"
 msgid "Interests"
 msgstr "תחומי עניין"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:550
+msgid "Invalid date"
+msgstr ""
+
 #: ../../../lib/web/src/components/tag-input.tsx:38
 msgid "Invalid tag: letters, numbers, spaces, hyphens, and slashes only (max 50 chars)"
 msgstr "תגית לא חוקית: אותיות, ספרות, רווחים, מקפים ולוכסנים בלבד (עד 50 תווים)"
@@ -1049,7 +1063,7 @@ msgstr "בינוני"
 msgid "Menu"
 msgstr "תפריט"
 
-#: src/features/go/components/chat-input.tsx:31
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:35
 msgid "Message"
 msgstr "הודעה"
 
@@ -1086,9 +1100,9 @@ msgstr "שגיאת רשת"
 msgid "New"
 msgstr "חדש"
 
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:42
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:54
 #: src/components/layout/go-layout.tsx:141
-#: src/features/go/components/game-empty-state.tsx:27
-#: src/features/go/components/game-empty-state.tsx:43
 #: src/features/go/components/new-game.tsx:125
 msgid "New game"
 msgstr "משחק חדש"
@@ -1114,7 +1128,7 @@ msgstr "לא נמצאו חברים"
 msgid "No friends yet"
 msgstr "עדיין אין חברים"
 
-#: src/features/go/components/game-empty-state.tsx:38
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 msgid "No games yet"
 msgstr "עדיין אין משחקים"
 
@@ -1130,6 +1144,7 @@ msgstr "עדיין אין הודעות"
 msgid "No notifications yet"
 msgstr "אין עדיין התראות"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:336
 #: ../../../lib/web/src/components/person-picker.tsx:84
 msgid "No people found"
 msgstr "לא נמצאו אנשים"
@@ -1324,10 +1339,6 @@ msgstr "התמונה הקודמת"
 msgid "Privacy"
 msgstr "פרטיות"
 
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:50
-msgid "Processing…"
-msgstr "מעבד…"
-
 #: ../../../lib/web/src/components/layout/nav-user.tsx:137
 #: ../../../lib/web/src/components/profile-dropdown.tsx:114
 msgid "Profile"
@@ -1414,6 +1425,10 @@ msgstr "להסיר גישה?"
 msgid "Remove interest"
 msgstr "הסר עניין"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:671
+msgid "Remove item"
+msgstr ""
+
 #: ../../../lib/web/src/components/step-up-dialog.tsx:367
 msgid "Resend email"
 msgstr "שלח את האימייל שוב"
@@ -1447,7 +1462,7 @@ msgstr "פורש..."
 
 #: ../../../lib/web/src/components/comment-composer.tsx:249
 msgid "Retry"
-msgstr "נסה שוב"
+msgstr ""
 
 #: ../../../lib/web/src/components/config-drawer.tsx:362
 msgid "Right to Left"
@@ -1521,7 +1536,7 @@ msgstr "בחר {0}"
 msgid "Select a friend..."
 msgstr "בחר חבר..."
 
-#: src/features/go/components/game-empty-state.tsx:22
+#: ../../../lib/web/src/components/game/game-empty-state.tsx:37
 msgid "Select a game"
 msgstr "בחר משחק"
 
@@ -1569,6 +1584,11 @@ msgstr "בחר כיוון אתר"
 msgid "Select theme preference"
 msgstr "בחר העדפת ערכת נושא"
 
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:252
+#: ../../../lib/web/src/components/entity/entity-field-editor.tsx:335
+msgid "Select..."
+msgstr ""
+
 #: ../../../lib/web/src/components/data-table/bulk-actions.tsx:216
 msgid "selected"
 msgstr "נבחרו"
@@ -1586,8 +1606,8 @@ msgstr "שלח שוב"
 msgid "Send email"
 msgstr "שלח אימייל"
 
-#: src/features/go/components/chat-input.tsx:47
-#: src/features/go/components/chat-input.tsx:56
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:52
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:61
 msgid "Send message"
 msgstr "שלח הודעה"
 
@@ -1817,9 +1837,9 @@ msgstr "יום שלישי"
 msgid "Type a command or search..."
 msgstr "הקלד פקודה או חיפוש..."
 
-#: src/features/go/components/chat-input.tsx:34
-msgid "Type a message..."
-msgstr "הקלד הודעה..."
+#: ../../../lib/web/src/components/game/game-chat-input.tsx:39
+msgid "Type a message…"
+msgstr "הקלד הודעה…"
 
 #: ../../../lib/web/src/features/access/access-dialog.tsx:191
 msgid "Type to search users"
@@ -1863,10 +1883,6 @@ msgstr "לא ידוע"
 #: ../../../lib/web/src/features/accounts/account-manager.tsx:135
 msgid "Unverified"
 msgstr "לא מאומת"
-
-#: ../../../lib/web/src/components/ui/upload-progress.tsx:34
-msgid "Upload progress"
-msgstr "התקדמות ההעלאה"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:338
 msgid "Use your passkey"
@@ -1988,12 +2004,12 @@ msgstr "חשבונך הועבר לכאן מ-{source}. עד שתמחק אותו �
 
 #: ../../../lib/web/src/components/comment-composer.tsx:291
 msgid "Your attachments will be lost."
-msgstr "הקבצים המצורפים שלך יאבדו."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:289
 msgid "Your text and attachments will be lost."
-msgstr "הטקסט והקבצים המצורפים שלך יאבדו."
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx:292
 msgid "Your text will be lost."
-msgstr "הטקסט שלכם יאבד."
+msgstr ""
