@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: ../../../lib/web/src/lib/error-normalizer.ts:204
+#: ../../../lib/web/src/lib/error-normalizer.ts:236
 msgid "Please check your internet connection and try again."
 msgstr "インターネット接続を確認して、もう一度お試しください。"
 
@@ -48,7 +48,7 @@ msgstr "{name}が引き分けを提案しました"
 msgid "{name} resigned"
 msgstr "{name}が投了しました"
 
-#: src/features/go/index.tsx:670
+#: src/features/go/index.tsx:680
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName}もパスしました。確認すると対局が終了し、盤面を集計します。"
 
@@ -92,7 +92,7 @@ msgstr "{size}×{size}囲碁盤、あなたの番です。矢印キーで移動�
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject}が<0>{moveLabel}</0>を指しました"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:132
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:148
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {メニューを開く（未読の通知 # 件）} other {メニューを開く（未読の通知 # 件）}}"
 
@@ -231,11 +231,11 @@ msgstr "すべて"
 msgid "Allow anyone to search for {0}"
 msgstr "誰でも{0}を検索できるようにする"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:159
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:178
 msgid "An error occurred"
 msgstr "エラーが発生しました"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:256
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:275
 msgid "An unexpected error occurred"
 msgstr "予期しないエラーが発生しました"
 
@@ -256,7 +256,7 @@ msgstr "ログインしている全員"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "本当にログアウトしますか？再度アクセスするにはログインが必要です。"
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:636
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "本当に投了しますか?{opponentName}の勝ちになります。"
 
@@ -299,11 +299,11 @@ msgstr "ホームに戻る"
 msgid "Banner"
 msgstr "バナー"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "Black"
 msgstr "黒"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:465
 msgid "Black captures:"
 msgstr "黒のアゲハマ:"
 
@@ -355,8 +355,8 @@ msgstr "この通知のカテゴリ"
 msgid "Change notification category"
 msgstr "通知カテゴリを変更"
 
-#: src/features/go/index.tsx:564
-#: src/features/go/index.tsx:597
+#: src/features/go/index.tsx:574
+#: src/features/go/index.tsx:607
 msgid "Chat"
 msgstr "チャット"
 
@@ -574,7 +574,7 @@ msgstr "ダーク"
 msgid "Dark mode"
 msgstr "ダークモード"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:240
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:259
 msgid "Data conflict"
 msgstr "データの競合"
 
@@ -590,15 +590,15 @@ msgstr "デフォルト"
 msgid "Default AI account"
 msgstr "デフォルト AI アカウント"
 
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:665
 msgid "Delete"
 msgstr "削除"
 
-#: src/features/go/index.tsx:517
+#: src/features/go/index.tsx:527
 msgid "Delete game"
 msgstr "ゲームを削除"
 
-#: src/features/go/index.tsx:646
+#: src/features/go/index.tsx:656
 msgid "Delete game?"
 msgstr "ゲームを削除しますか?"
 
@@ -606,7 +606,7 @@ msgstr "ゲームを削除しますか?"
 msgid "Delete your account on the old server"
 msgstr "旧サーバーのアカウントを削除する"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:662
 msgid "Deleting..."
 msgstr "削除中..."
 
@@ -680,7 +680,7 @@ msgstr "ダウンロードに失敗しました"
 msgid "Draw agreed"
 msgstr "引き分けが成立しました"
 
-#: src/features/go/index.tsx:530
+#: src/features/go/index.tsx:540
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "引き分けを提案しました — {opponentName}の応答を待っています"
 
@@ -708,11 +708,11 @@ msgstr "空の交点 {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "空の交点 {colLabel}{rowLabel}、クリックまたはEnterで配置"
 
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:690
 msgid "End game"
 msgstr "ゲーム終了"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "End game?"
 msgstr "ゲームを終了しますか?"
 
@@ -747,7 +747,7 @@ msgstr "外部 URL"
 msgid "Extra large"
 msgstr "特大"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Failed to accept draw"
 msgstr "引き分けの承諾に失敗しました"
 
@@ -768,15 +768,15 @@ msgstr "コピーに失敗しました"
 msgid "Failed to create game"
 msgstr "ゲームの作成に失敗しました"
 
-#: src/features/go/index.tsx:234
+#: src/features/go/index.tsx:240
 msgid "Failed to create rematch"
 msgstr "再戦の作成に失敗しました"
 
-#: src/features/go/index.tsx:224
+#: src/features/go/index.tsx:230
 msgid "Failed to decline draw"
 msgstr "引き分けの拒否に失敗しました"
 
-#: src/features/go/index.tsx:246
+#: src/features/go/index.tsx:252
 msgid "Failed to delete game"
 msgstr "ゲームの削除に失敗しました"
 
@@ -792,15 +792,15 @@ msgstr "画像を読み込めませんでした"
 msgid "Failed to load video"
 msgstr "動画を読み込めませんでした"
 
-#: src/features/go/index.tsx:190
+#: src/features/go/index.tsx:196
 msgid "Failed to make move"
 msgstr "着手に失敗しました"
 
-#: src/features/go/index.tsx:214
+#: src/features/go/index.tsx:220
 msgid "Failed to offer draw"
 msgstr "引き分けの申し出に失敗しました"
 
-#: src/features/go/index.tsx:197
+#: src/features/go/index.tsx:203
 msgid "Failed to pass"
 msgstr "パスに失敗しました"
 
@@ -808,12 +808,12 @@ msgstr "パスに失敗しました"
 msgid "Failed to remove account"
 msgstr "アカウントの削除に失敗しました"
 
-#: src/features/go/index.tsx:207
+#: src/features/go/index.tsx:213
 msgid "Failed to resign"
 msgstr "投了に失敗しました"
 
-#: src/features/go/index.tsx:581
-#: src/features/go/index.tsx:614
+#: src/features/go/index.tsx:591
+#: src/features/go/index.tsx:624
 msgid "Failed to send"
 msgstr "送信に失敗しました"
 
@@ -870,13 +870,13 @@ msgstr "フルレイアウト"
 msgid "Game created"
 msgstr "ゲームを作成しました"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:248
 msgid "Game deleted"
 msgstr "ゲームを削除しました"
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:371
-#: src/features/go/index.tsx:383
+#: src/features/go/index.tsx:104
+#: src/features/go/index.tsx:381
+#: src/features/go/index.tsx:393
 msgid "Go"
 msgstr "囲碁"
 
@@ -924,7 +924,7 @@ msgid "Hide password"
 msgstr "パスワードを非表示"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:90
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:175
 #: ../../../lib/web/src/components/layout/top-bar.tsx:71
 #: ../../../lib/web/src/components/layout/top-bar.tsx:100
 msgid "Home"
@@ -1068,7 +1068,7 @@ msgstr "MCP サーバー"
 msgid "Medium"
 msgstr "中"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:190
 msgid "Menu"
 msgstr "メニュー"
 
@@ -1101,7 +1101,7 @@ msgid "Name must be 1000 characters or less"
 msgstr "名前は1000文字以下にしてください"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:53
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:303
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:322
 msgid "Network error"
 msgstr "ネットワークエラー"
 
@@ -1220,7 +1220,7 @@ msgstr "通知"
 msgid "Notifications: {0}"
 msgstr "通知: {0}"
 
-#: src/features/go/index.tsx:501
+#: src/features/go/index.tsx:511
 msgid "Offer draw"
 msgstr "引き分けを申し出る"
 
@@ -1242,15 +1242,15 @@ msgstr "アカウントのアクションを開く"
 msgid "Open actions"
 msgstr "操作メニューを開く"
 
-#: src/features/go/index.tsx:472
+#: src/features/go/index.tsx:482
 msgid "Open chat panel"
 msgstr "チャットパネルを開く"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:490
 msgid "Open game actions"
 msgstr "ゲーム操作を開く"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:149
 msgid "Open menu"
 msgstr "メニューを開く"
 
@@ -1283,16 +1283,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "{totalPages} ページ中 {currentPage} ページ"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:493
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:503
+#: src/features/go/index.tsx:690
 msgid "Pass"
 msgstr "パス"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "Pass turn?"
 msgstr "ターンを渡しますか?"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:687
 msgid "Passing..."
 msgstr "パス中..."
 
@@ -1314,7 +1314,7 @@ msgstr "日付を選択"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:304
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:323
 msgid "Please check your internet connection and try again."
 msgstr "インターネット接続を確認して、もう一度お試しください。"
 
@@ -1403,7 +1403,7 @@ msgstr "相対 (5分、3時間、2日)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24時間以内は相対、それ以外は絶対"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:524
 msgid "Rematch"
 msgstr "再戦"
 
@@ -1460,16 +1460,16 @@ msgstr "{title}をリセット"
 msgid "Reset all settings to default values"
 msgstr "すべての設定をデフォルト値にリセット"
 
-#: src/features/go/index.tsx:505
-#: src/features/go/index.tsx:634
+#: src/features/go/index.tsx:515
+#: src/features/go/index.tsx:644
 msgid "Resign"
 msgstr "投了"
 
-#: src/features/go/index.tsx:625
+#: src/features/go/index.tsx:635
 msgid "Resign game?"
 msgstr "ゲームを投了しますか?"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:641
 msgid "Resigning..."
 msgstr "投了中..."
 
@@ -1628,8 +1628,8 @@ msgstr "メッセージを送信"
 msgid "Serif"
 msgstr "セリフ"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:260
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:286
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:279
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:305
 msgid "Server error"
 msgstr "サーバーエラー"
 
@@ -1638,7 +1638,7 @@ msgstr "サーバーエラー"
 msgid "Server rules"
 msgstr "サーバーのルール"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:210
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:229
 msgid "Session expired. Please log in again."
 msgstr "セッションの有効期限が切れました。もう一度ログインしてください。"
 
@@ -1646,8 +1646,8 @@ msgstr "セッションの有効期限が切れました。もう一度ログイ
 msgid "Set origin and destination"
 msgstr "出発地と目的地を設定"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:93
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:99
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:109
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:115
 #: ../../../lib/web/src/components/layout/nav-user.tsx:84
 #: ../../../lib/web/src/components/layout/nav-user.tsx:148
 #: ../../../lib/web/src/components/layout/nav-user.tsx:198
@@ -1668,8 +1668,8 @@ msgstr "{total}件中{totalShown}件を表示"
 msgid "Sidebar"
 msgstr "サイドバー"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:105
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:111
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:121
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:127
 msgid "Sign out"
 msgstr "ログアウト"
 
@@ -1681,7 +1681,7 @@ msgstr "サインアウト中..."
 msgid "Skip to Main"
 msgstr "メインコンテンツへスキップ"
 
-#: src/features/go/index.tsx:671
+#: src/features/go/index.tsx:681
 msgid "Skip your turn and pass to your opponent."
 msgstr "自分の番をパスして相手に渡します。"
 
@@ -1760,6 +1760,14 @@ msgstr "そのコードは正しくないか、有効期限が切れています
 msgid "The requested content could not be found."
 msgstr "リクエストされたコンテンツが見つかりませんでした。"
 
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+#~ msgid "The server returned a web page instead of data, which usually means the address was wrong."
+#~ msgstr ""
+
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+msgid "The server returned a web page instead of data."
+msgstr "サーバーがデータではなくウェブページを返しました。"
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
 msgid "The site is not available at the moment."
 msgstr "現在サイトをご利用いただけません。"
@@ -1776,7 +1784,7 @@ msgstr "テーマ設定"
 msgid "This page has not been created yet."
 msgstr "このページはまだ作成されていません。"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:657
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "この操作でゲームとそのチャットが完全に削除されます。この操作は元に戻せません。"
 
@@ -1862,7 +1870,7 @@ msgstr "入力してユーザーを検索"
 msgid "Type to search..."
 msgstr "入力して検索…"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:282
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:301
 msgid "Unable to connect to remote server"
 msgstr "リモートサーバーに接続できません"
 
@@ -1905,7 +1913,7 @@ msgstr "アップロードの進行状況"
 msgid "Use your passkey"
 msgstr "パスキーを使用"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:102
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "ユーザー"
@@ -1979,11 +1987,11 @@ msgstr "ウェブサイトはメンテナンス中です!"
 msgid "Wednesday"
 msgstr "水曜日"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "White"
 msgstr "白"
 
-#: src/features/go/index.tsx:460
+#: src/features/go/index.tsx:470
 msgid "White captures:"
 msgstr "白のアゲハマ:"
 

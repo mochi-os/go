@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: ../../../lib/web/src/lib/error-normalizer.ts:204
+#: ../../../lib/web/src/lib/error-normalizer.ts:236
 msgid "Please check your internet connection and try again."
 msgstr "请检查您的网络连接后重试。"
 
@@ -48,7 +48,7 @@ msgstr "{name} 提出和棋"
 msgid "{name} resigned"
 msgstr "{name} 认输"
 
-#: src/features/go/index.tsx:670
+#: src/features/go/index.tsx:680
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} 也已停一手。确认将结束对局并计算棋盘得分。"
 
@@ -92,7 +92,7 @@ msgstr "{size}×{size} 围棋棋盘,轮到你了。使用方向键导航,按 Ent
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject}走了<0>{moveLabel}</0>"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:132
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:148
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {打开菜单（# 条未读通知）} other {打开菜单（# 条未读通知）}}"
 
@@ -231,11 +231,11 @@ msgstr "全部"
 msgid "Allow anyone to search for {0}"
 msgstr "允许任何人搜索{0}"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:159
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:178
 msgid "An error occurred"
 msgstr "发生错误"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:256
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:275
 msgid "An unexpected error occurred"
 msgstr "发生意外错误"
 
@@ -256,7 +256,7 @@ msgstr "任何已登录的人"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "确定要退出登录吗?你需要重新登录才能访问账户。"
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:636
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "确定要认输吗?{opponentName} 将赢得比赛。"
 
@@ -299,11 +299,11 @@ msgstr "返回首页"
 msgid "Banner"
 msgstr "横幅"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "Black"
 msgstr "黑色"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:465
 msgid "Black captures:"
 msgstr "黑提子："
 
@@ -355,8 +355,8 @@ msgstr "该通知的分类"
 msgid "Change notification category"
 msgstr "更改通知分类"
 
-#: src/features/go/index.tsx:564
-#: src/features/go/index.tsx:597
+#: src/features/go/index.tsx:574
+#: src/features/go/index.tsx:607
 msgid "Chat"
 msgstr "聊天"
 
@@ -574,7 +574,7 @@ msgstr "深色"
 msgid "Dark mode"
 msgstr "深色模式"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:240
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:259
 msgid "Data conflict"
 msgstr "数据冲突"
 
@@ -590,15 +590,15 @@ msgstr "默认"
 msgid "Default AI account"
 msgstr "默认 AI 账户"
 
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:665
 msgid "Delete"
 msgstr "删除"
 
-#: src/features/go/index.tsx:517
+#: src/features/go/index.tsx:527
 msgid "Delete game"
 msgstr "删除游戏"
 
-#: src/features/go/index.tsx:646
+#: src/features/go/index.tsx:656
 msgid "Delete game?"
 msgstr "删除对局?"
 
@@ -606,7 +606,7 @@ msgstr "删除对局?"
 msgid "Delete your account on the old server"
 msgstr "删除旧服务器上的账户"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:662
 msgid "Deleting..."
 msgstr "删除中..."
 
@@ -680,7 +680,7 @@ msgstr "下载失败"
 msgid "Draw agreed"
 msgstr "同意和棋"
 
-#: src/features/go/index.tsx:530
+#: src/features/go/index.tsx:540
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "已提议和棋 — 等待 {opponentName}"
 
@@ -708,11 +708,11 @@ msgstr "空交叉点 {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "空交叉点 {colLabel}{rowLabel}，点击或按 Enter 放置"
 
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:690
 msgid "End game"
 msgstr "结束游戏"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "End game?"
 msgstr "结束游戏?"
 
@@ -747,7 +747,7 @@ msgstr "外部 URL"
 msgid "Extra large"
 msgstr "特大"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Failed to accept draw"
 msgstr "接受和棋失败"
 
@@ -768,15 +768,15 @@ msgstr "复制失败"
 msgid "Failed to create game"
 msgstr "创建游戏失败"
 
-#: src/features/go/index.tsx:234
+#: src/features/go/index.tsx:240
 msgid "Failed to create rematch"
 msgstr "创建再赛失败"
 
-#: src/features/go/index.tsx:224
+#: src/features/go/index.tsx:230
 msgid "Failed to decline draw"
 msgstr "拒绝和棋失败"
 
-#: src/features/go/index.tsx:246
+#: src/features/go/index.tsx:252
 msgid "Failed to delete game"
 msgstr "删除游戏失败"
 
@@ -792,15 +792,15 @@ msgstr "无法加载图片"
 msgid "Failed to load video"
 msgstr "无法加载视频"
 
-#: src/features/go/index.tsx:190
+#: src/features/go/index.tsx:196
 msgid "Failed to make move"
 msgstr "走子失败"
 
-#: src/features/go/index.tsx:214
+#: src/features/go/index.tsx:220
 msgid "Failed to offer draw"
 msgstr "提议和棋失败"
 
-#: src/features/go/index.tsx:197
+#: src/features/go/index.tsx:203
 msgid "Failed to pass"
 msgstr "跳过失败"
 
@@ -808,12 +808,12 @@ msgstr "跳过失败"
 msgid "Failed to remove account"
 msgstr "移除账户失败"
 
-#: src/features/go/index.tsx:207
+#: src/features/go/index.tsx:213
 msgid "Failed to resign"
 msgstr "认输失败"
 
-#: src/features/go/index.tsx:581
-#: src/features/go/index.tsx:614
+#: src/features/go/index.tsx:591
+#: src/features/go/index.tsx:624
 msgid "Failed to send"
 msgstr "发送失败"
 
@@ -870,13 +870,13 @@ msgstr "完整布局"
 msgid "Game created"
 msgstr "已创建游戏"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:248
 msgid "Game deleted"
 msgstr "已删除游戏"
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:371
-#: src/features/go/index.tsx:383
+#: src/features/go/index.tsx:104
+#: src/features/go/index.tsx:381
+#: src/features/go/index.tsx:393
 msgid "Go"
 msgstr "前往"
 
@@ -924,7 +924,7 @@ msgid "Hide password"
 msgstr "隐藏密码"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:90
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:175
 #: ../../../lib/web/src/components/layout/top-bar.tsx:71
 #: ../../../lib/web/src/components/layout/top-bar.tsx:100
 msgid "Home"
@@ -1068,7 +1068,7 @@ msgstr "MCP 服务器"
 msgid "Medium"
 msgstr "中"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:190
 msgid "Menu"
 msgstr "菜单"
 
@@ -1101,7 +1101,7 @@ msgid "Name must be 1000 characters or less"
 msgstr "名称不能超过 1000 个字符"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:53
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:303
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:322
 msgid "Network error"
 msgstr "网络错误"
 
@@ -1220,7 +1220,7 @@ msgstr "通知"
 msgid "Notifications: {0}"
 msgstr "通知：{0}"
 
-#: src/features/go/index.tsx:501
+#: src/features/go/index.tsx:511
 msgid "Offer draw"
 msgstr "提议和棋"
 
@@ -1242,15 +1242,15 @@ msgstr "打开账户操作"
 msgid "Open actions"
 msgstr "打开操作"
 
-#: src/features/go/index.tsx:472
+#: src/features/go/index.tsx:482
 msgid "Open chat panel"
 msgstr "打开聊天面板"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:490
 msgid "Open game actions"
 msgstr "打开游戏操作"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:149
 msgid "Open menu"
 msgstr "打开菜单"
 
@@ -1283,16 +1283,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "第 {currentPage} 页，共 {totalPages} 页"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:493
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:503
+#: src/features/go/index.tsx:690
 msgid "Pass"
 msgstr "跳过"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "Pass turn?"
 msgstr "跳过本回合?"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:687
 msgid "Passing..."
 msgstr "正在跳过..."
 
@@ -1314,7 +1314,7 @@ msgstr "选择日期"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:304
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:323
 msgid "Please check your internet connection and try again."
 msgstr "请检查您的网络连接后重试。"
 
@@ -1403,7 +1403,7 @@ msgstr "相对时间(5分钟、3小时、2天)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 小时内显示相对时间,否则显示绝对时间"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:524
 msgid "Rematch"
 msgstr "再来一局"
 
@@ -1460,16 +1460,16 @@ msgstr "重置{title}"
 msgid "Reset all settings to default values"
 msgstr "将所有设置重置为默认值"
 
-#: src/features/go/index.tsx:505
-#: src/features/go/index.tsx:634
+#: src/features/go/index.tsx:515
+#: src/features/go/index.tsx:644
 msgid "Resign"
 msgstr "认输"
 
-#: src/features/go/index.tsx:625
+#: src/features/go/index.tsx:635
 msgid "Resign game?"
 msgstr "认输?"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:641
 msgid "Resigning..."
 msgstr "正在认输..."
 
@@ -1628,8 +1628,8 @@ msgstr "发送消息"
 msgid "Serif"
 msgstr "衬线体"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:260
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:286
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:279
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:305
 msgid "Server error"
 msgstr "服务器错误"
 
@@ -1638,7 +1638,7 @@ msgstr "服务器错误"
 msgid "Server rules"
 msgstr "服务器规则"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:210
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:229
 msgid "Session expired. Please log in again."
 msgstr "会话已过期，请重新登录。"
 
@@ -1646,8 +1646,8 @@ msgstr "会话已过期，请重新登录。"
 msgid "Set origin and destination"
 msgstr "设置起点和终点"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:93
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:99
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:109
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:115
 #: ../../../lib/web/src/components/layout/nav-user.tsx:84
 #: ../../../lib/web/src/components/layout/nav-user.tsx:148
 #: ../../../lib/web/src/components/layout/nav-user.tsx:198
@@ -1668,8 +1668,8 @@ msgstr "显示 {total} 中的 {totalShown} 条"
 msgid "Sidebar"
 msgstr "侧边栏"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:105
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:111
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:121
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:127
 msgid "Sign out"
 msgstr "退出登录"
 
@@ -1681,7 +1681,7 @@ msgstr "正在退出..."
 msgid "Skip to Main"
 msgstr "跳至主内容"
 
-#: src/features/go/index.tsx:671
+#: src/features/go/index.tsx:681
 msgid "Skip your turn and pass to your opponent."
 msgstr "跳过你的回合,让给对手。"
 
@@ -1760,6 +1760,14 @@ msgstr "该代码不正确或已过期。"
 msgid "The requested content could not be found."
 msgstr "找不到请求的内容。"
 
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+#~ msgid "The server returned a web page instead of data, which usually means the address was wrong."
+#~ msgstr ""
+
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+msgid "The server returned a web page instead of data."
+msgstr "服务器返回了网页而不是数据。"
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
 msgid "The site is not available at the moment."
 msgstr "网站目前不可用。"
@@ -1776,7 +1784,7 @@ msgstr "主题设置"
 msgid "This page has not been created yet."
 msgstr "此页面尚未创建。"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:657
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "此操作将永久删除对局及其聊天记录，且无法撤销。"
 
@@ -1862,7 +1870,7 @@ msgstr "输入以搜索用户"
 msgid "Type to search..."
 msgstr "输入以搜索..."
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:282
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:301
 msgid "Unable to connect to remote server"
 msgstr "无法连接到远程服务器"
 
@@ -1905,7 +1913,7 @@ msgstr "上传进度"
 msgid "Use your passkey"
 msgstr "使用您的通行密钥"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:102
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "用户"
@@ -1979,11 +1987,11 @@ msgstr "网站正在维护中!"
 msgid "Wednesday"
 msgstr "星期三"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "White"
 msgstr "白"
 
-#: src/features/go/index.tsx:460
+#: src/features/go/index.tsx:470
 msgid "White captures:"
 msgstr "白提子："
 

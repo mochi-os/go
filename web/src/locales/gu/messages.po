@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: ../../../lib/web/src/lib/error-normalizer.ts:204
+#: ../../../lib/web/src/lib/error-normalizer.ts:236
 msgid "Please check your internet connection and try again."
 msgstr "કૃપા કરી તમારું ઇન્ટરનેટ કનેક્શન તપાસો અને ફરી પ્રયાસ કરો."
 
@@ -48,7 +48,7 @@ msgstr "{name}એ ડ્રોની દરખાસ્ત કરી"
 msgid "{name} resigned"
 msgstr "{name}એ રાજીનામું આપ્યું"
 
-#: src/features/go/index.tsx:670
+#: src/features/go/index.tsx:680
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName}એ પણ પાસ કર્યું. પુષ્ટિ કરવાથી રમત સમાપ્ત થશે અને બોર્ડનો સ્કોર થશે."
 
@@ -92,7 +92,7 @@ msgstr "{size}×{size} Go બોર્ડ, તમારી પાળી. ને�
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} એ <0>{moveLabel}</0> રમ્યું"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:132
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:148
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {મેનૂ ખોલો (# વણવાંચેલ સૂચના)} other {મેનૂ ખોલો (# વણવાંચેલ સૂચનાઓ)}}"
 
@@ -231,11 +231,11 @@ msgstr "બધા"
 msgid "Allow anyone to search for {0}"
 msgstr "કોઈપણને {0} શોધવાની મંજૂરી આપો"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:159
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:178
 msgid "An error occurred"
 msgstr "ભૂલ આવી"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:256
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:275
 msgid "An unexpected error occurred"
 msgstr "અણધારી ભૂલ આવી"
 
@@ -256,7 +256,7 @@ msgstr "લોગ ઇન થયેલ કોઈપણ"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "શું તમે ખરેખર લૉગ આઉટ કરવા માંગો છો? તમારા ખાતાને ઍક્સેસ કરવા તમારે ફરી લૉગ ઇન કરવું પડશે."
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:636
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "શું તમે ખરેખર રાજીનામું આપવા માંગો છો? {opponentName} રમત જીતી જશે."
 
@@ -299,11 +299,11 @@ msgstr "મુખ્ય પૃષ્ઠ પર પાછા જાઓ"
 msgid "Banner"
 msgstr "બૅનર"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "Black"
 msgstr "કાળું"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:465
 msgid "Black captures:"
 msgstr "કાળાએ પકડ્યા:"
 
@@ -355,8 +355,8 @@ msgstr "આ સૂચના માટેની શ્રેણી"
 msgid "Change notification category"
 msgstr "સૂચના શ્રેણી બદલો"
 
-#: src/features/go/index.tsx:564
-#: src/features/go/index.tsx:597
+#: src/features/go/index.tsx:574
+#: src/features/go/index.tsx:607
 msgid "Chat"
 msgstr "ચેટ"
 
@@ -574,7 +574,7 @@ msgstr "ડાર્ક"
 msgid "Dark mode"
 msgstr "ડાર્ક મોડ"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:240
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:259
 msgid "Data conflict"
 msgstr "ડેટા સંઘર્ષ"
 
@@ -590,15 +590,15 @@ msgstr "ડિફૉલ્ટ"
 msgid "Default AI account"
 msgstr "ડિફૉલ્ટ AI ખાતું"
 
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:665
 msgid "Delete"
 msgstr "કાઢી નાખો"
 
-#: src/features/go/index.tsx:517
+#: src/features/go/index.tsx:527
 msgid "Delete game"
 msgstr "રમત કાઢી નાખો"
 
-#: src/features/go/index.tsx:646
+#: src/features/go/index.tsx:656
 msgid "Delete game?"
 msgstr "ગેમ કાઢી નાખવી છે?"
 
@@ -606,7 +606,7 @@ msgstr "ગેમ કાઢી નાખવી છે?"
 msgid "Delete your account on the old server"
 msgstr "જૂના સર્વર પર તમારું ખાતું કાઢી નાખો"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:662
 msgid "Deleting..."
 msgstr "કાઢી રહ્યું છે..."
 
@@ -680,7 +680,7 @@ msgstr "ડાઉનલોડ નિષ્ફળ"
 msgid "Draw agreed"
 msgstr "ડ્રો સ્વીકારાયો"
 
-#: src/features/go/index.tsx:530
+#: src/features/go/index.tsx:540
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "ડ્રોની ઓફર કરી — {opponentName}ની રાહ જોઈ રહ્યા છીએ"
 
@@ -708,11 +708,11 @@ msgstr "ખાલી છેદ {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ખાલી છેદ {colLabel}{rowLabel}, મૂકવા માટે ક્લિક કરો અથવા Enter દબાવો"
 
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:690
 msgid "End game"
 msgstr "ગેમ સમાપ્ત કરો"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "End game?"
 msgstr "ગેમ સમાપ્ત કરવી છે?"
 
@@ -747,7 +747,7 @@ msgstr "બાહ્ય URL"
 msgid "Extra large"
 msgstr "વધારાનું મોટું"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Failed to accept draw"
 msgstr "ડ્રો સ્વીકારવામાં નિષ્ફળ"
 
@@ -768,15 +768,15 @@ msgstr "કૉપિ કરવામાં નિષ્ફળ"
 msgid "Failed to create game"
 msgstr "ગેમ બનાવવામાં નિષ્ફળ"
 
-#: src/features/go/index.tsx:234
+#: src/features/go/index.tsx:240
 msgid "Failed to create rematch"
 msgstr "રિમેચ બનાવવામાં નિષ્ફળ"
 
-#: src/features/go/index.tsx:224
+#: src/features/go/index.tsx:230
 msgid "Failed to decline draw"
 msgstr "ડ્રો નકારવામાં નિષ્ફળ"
 
-#: src/features/go/index.tsx:246
+#: src/features/go/index.tsx:252
 msgid "Failed to delete game"
 msgstr "ગેમ કાઢી નાખવામાં નિષ્ફળ"
 
@@ -792,15 +792,15 @@ msgstr "છબી લોડ કરવામાં નિષ્ફળ"
 msgid "Failed to load video"
 msgstr "વિડિઓ લોડ કરવામાં નિષ્ફળ"
 
-#: src/features/go/index.tsx:190
+#: src/features/go/index.tsx:196
 msgid "Failed to make move"
 msgstr "ચાલ કરવામાં નિષ્ફળ"
 
-#: src/features/go/index.tsx:214
+#: src/features/go/index.tsx:220
 msgid "Failed to offer draw"
 msgstr "ડ્રો ઑફર કરવામાં નિષ્ફળ"
 
-#: src/features/go/index.tsx:197
+#: src/features/go/index.tsx:203
 msgid "Failed to pass"
 msgstr "પાસ કરવામાં નિષ્ફળ"
 
@@ -808,12 +808,12 @@ msgstr "પાસ કરવામાં નિષ્ફળ"
 msgid "Failed to remove account"
 msgstr "એકાઉન્ટ દૂર કરવામાં નિષ્ફળ"
 
-#: src/features/go/index.tsx:207
+#: src/features/go/index.tsx:213
 msgid "Failed to resign"
 msgstr "રિઝાઇન કરવામાં નિષ્ફળ"
 
-#: src/features/go/index.tsx:581
-#: src/features/go/index.tsx:614
+#: src/features/go/index.tsx:591
+#: src/features/go/index.tsx:624
 msgid "Failed to send"
 msgstr "મોકલવામાં નિષ્ફળ"
 
@@ -870,13 +870,13 @@ msgstr "સંપૂર્ણ લેઆઉટ"
 msgid "Game created"
 msgstr "ગેમ બનાવી"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:248
 msgid "Game deleted"
 msgstr "ગેમ કાઢી નાખી"
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:371
-#: src/features/go/index.tsx:383
+#: src/features/go/index.tsx:104
+#: src/features/go/index.tsx:381
+#: src/features/go/index.tsx:393
 msgid "Go"
 msgstr "જાઓ"
 
@@ -924,7 +924,7 @@ msgid "Hide password"
 msgstr "પાસવર્ડ છુપાવો"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:90
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:175
 #: ../../../lib/web/src/components/layout/top-bar.tsx:71
 #: ../../../lib/web/src/components/layout/top-bar.tsx:100
 msgid "Home"
@@ -1068,7 +1068,7 @@ msgstr "MCP સર્વર"
 msgid "Medium"
 msgstr "મધ્યમ"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:190
 msgid "Menu"
 msgstr "મેનૂ"
 
@@ -1101,7 +1101,7 @@ msgid "Name must be 1000 characters or less"
 msgstr "નામ 1000 અક્ષરો અથવા તેથી ઓછું હોવું જોઈએ"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:53
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:303
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:322
 msgid "Network error"
 msgstr "નેટવર્ક ભૂલ"
 
@@ -1220,7 +1220,7 @@ msgstr "સૂચનાઓ"
 msgid "Notifications: {0}"
 msgstr "સૂચનાઓ: {0}"
 
-#: src/features/go/index.tsx:501
+#: src/features/go/index.tsx:511
 msgid "Offer draw"
 msgstr "ડ્રો ઑફર કરો"
 
@@ -1242,15 +1242,15 @@ msgstr "ખાતાની ક્રિયાઓ ખોલો"
 msgid "Open actions"
 msgstr "ક્રિયાઓ ખોલો"
 
-#: src/features/go/index.tsx:472
+#: src/features/go/index.tsx:482
 msgid "Open chat panel"
 msgstr "ચેટ પેનલ ખોલો"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:490
 msgid "Open game actions"
 msgstr "ગેમ ક્રિયાઓ ખોલો"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:149
 msgid "Open menu"
 msgstr "મેનૂ ખોલો"
 
@@ -1283,16 +1283,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "પૃષ્ઠ {currentPage} / {totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:493
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:503
+#: src/features/go/index.tsx:690
 msgid "Pass"
 msgstr "પાસ"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "Pass turn?"
 msgstr "ટર્ન પાસ કરો?"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:687
 msgid "Passing..."
 msgstr "પાસ થઈ રહ્યું છે..."
 
@@ -1314,7 +1314,7 @@ msgstr "તારીખ પસંદ કરો"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:304
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:323
 msgid "Please check your internet connection and try again."
 msgstr "કૃપા કરી તમારું ઇન્ટરનેટ કનેક્શન તપાસો અને ફરી પ્રયાસ કરો."
 
@@ -1403,7 +1403,7 @@ msgstr "સાપેક્ષ (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 કલાકની અંદર સાપેક્ષ, અન્યથા સંપૂર્ણ"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:524
 msgid "Rematch"
 msgstr "ફરી મેચ"
 
@@ -1460,16 +1460,16 @@ msgstr "{title} રીસેટ કરો"
 msgid "Reset all settings to default values"
 msgstr "તમામ સેટિંગ્સને ડિફૉલ્ટ મૂલ્યો પર રીસેટ કરો"
 
-#: src/features/go/index.tsx:505
-#: src/features/go/index.tsx:634
+#: src/features/go/index.tsx:515
+#: src/features/go/index.tsx:644
 msgid "Resign"
 msgstr "રિઝાઇન કરો"
 
-#: src/features/go/index.tsx:625
+#: src/features/go/index.tsx:635
 msgid "Resign game?"
 msgstr "ગેમ રિઝાઇન કરો?"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:641
 msgid "Resigning..."
 msgstr "રિઝાઇન કરી રહ્યું છે..."
 
@@ -1628,8 +1628,8 @@ msgstr "સંદેશ મોકલો"
 msgid "Serif"
 msgstr "સેરિફ"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:260
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:286
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:279
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:305
 msgid "Server error"
 msgstr "સર્વર ભૂલ"
 
@@ -1638,7 +1638,7 @@ msgstr "સર્વર ભૂલ"
 msgid "Server rules"
 msgstr "સર્વર નિયમો"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:210
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:229
 msgid "Session expired. Please log in again."
 msgstr "સત્ર સમાપ્ત થયું છે. કૃપા કરીને ફરીથી લૉગ ઇન કરો."
 
@@ -1646,8 +1646,8 @@ msgstr "સત્ર સમાપ્ત થયું છે. કૃપા કર
 msgid "Set origin and destination"
 msgstr "મૂળ અને ગંતવ્ય સેટ કરો"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:93
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:99
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:109
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:115
 #: ../../../lib/web/src/components/layout/nav-user.tsx:84
 #: ../../../lib/web/src/components/layout/nav-user.tsx:148
 #: ../../../lib/web/src/components/layout/nav-user.tsx:198
@@ -1668,8 +1668,8 @@ msgstr "{total} માંથી {totalShown} બતાવી રહ્યું 
 msgid "Sidebar"
 msgstr "સાઇડબાર"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:105
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:111
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:121
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:127
 msgid "Sign out"
 msgstr "સાઇન આઉટ કરો"
 
@@ -1681,7 +1681,7 @@ msgstr "સાઇન આઉટ થઈ રહ્યું છે..."
 msgid "Skip to Main"
 msgstr "મુખ્ય પર જાઓ"
 
-#: src/features/go/index.tsx:671
+#: src/features/go/index.tsx:681
 msgid "Skip your turn and pass to your opponent."
 msgstr "તમારી પાળી છોડો અને તમારા પ્રતિસ્પર્ધીને પાસ કરો."
 
@@ -1760,6 +1760,14 @@ msgstr "તે કોડ ખોટો છે અથવા સમયસમાપ�
 msgid "The requested content could not be found."
 msgstr "વિનંતી કરેલી સામગ્રી મળી શકી નથી."
 
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+#~ msgid "The server returned a web page instead of data, which usually means the address was wrong."
+#~ msgstr ""
+
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+msgid "The server returned a web page instead of data."
+msgstr "સર્વરે ડેટાને બદલે વેબ પેજ પરત કર્યું."
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
 msgid "The site is not available at the moment."
 msgstr "સાઇટ આ ક્ષણે ઉપલબ્ધ નથી."
@@ -1776,7 +1784,7 @@ msgstr "થીમ સેટિંગ્સ"
 msgid "This page has not been created yet."
 msgstr "આ પૃષ્ઠ હજુ સુધી બનાવવામાં આવ્યું નથી."
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:657
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "આ ગેમ અને તેની ચેટને કાયમ માટે કાઢી નાખશે. આ ક્રિયા પાછી લઈ શકાશે નહીં."
 
@@ -1862,7 +1870,7 @@ msgstr "વપરાશકર્તાઓ શોધવા માટે ટાઇ
 msgid "Type to search..."
 msgstr "શોધવા માટે ટાઇપ કરો..."
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:282
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:301
 msgid "Unable to connect to remote server"
 msgstr "રિમોટ સર્વર સાથે કનેક્ટ કરી શકાયું નથી"
 
@@ -1905,7 +1913,7 @@ msgstr "અપલોડ પ્રગતિ"
 msgid "Use your passkey"
 msgstr "તમારી પાસકીનો ઉપયોગ કરો"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:102
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "વપરાશકર્તા"
@@ -1979,11 +1987,11 @@ msgstr "વેબસાઇટ જાળવણી હેઠળ છે!"
 msgid "Wednesday"
 msgstr "બુધવાર"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "White"
 msgstr "સફેદ"
 
-#: src/features/go/index.tsx:460
+#: src/features/go/index.tsx:470
 msgid "White captures:"
 msgstr "સફેદે પકડ્યા:"
 

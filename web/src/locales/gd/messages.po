@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: ../../../lib/web/src/lib/error-normalizer.ts:204
+#: ../../../lib/web/src/lib/error-normalizer.ts:236
 msgid "Please check your internet connection and try again."
 msgstr "Thoir sùil air a' cheangal eadar-lìn agad agus feuch ris a-rithist."
 
@@ -48,7 +48,7 @@ msgstr "Thairg {name} geall-cothrom"
 msgid "{name} resigned"
 msgstr "Ghèill {name}"
 
-#: src/features/go/index.tsx:670
+#: src/features/go/index.tsx:680
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "Leig {opponentName} seachad cuideachd. Dearbhaidh seo crìoch a' gheama agus sgòraidh e am bòrd."
 
@@ -92,7 +92,7 @@ msgstr "Bòrd Go {size}×{size}, do chuairt. Cleachd na h-iuchraichean saighde a
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "Chluich {subject} <0>{moveLabel}</0>"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:132
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:148
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Fosgail an clàr-taice (# bhrath gun leughadh)} two {Fosgail an clàr-taice (# bhrath gun leughadh)} few {Fosgail an clàr-taice (# brathan gun leughadh)} other {Fosgail an clàr-taice (# brath gun leughadh)}}"
 
@@ -231,11 +231,11 @@ msgstr "Na h-uile"
 msgid "Allow anyone to search for {0}"
 msgstr "Leig le neach sam bith {0} a lorg"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:159
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:178
 msgid "An error occurred"
 msgstr "Thachair mearachd"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:256
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:275
 msgid "An unexpected error occurred"
 msgstr "Thachair mearachd ris nach robh dùil"
 
@@ -256,7 +256,7 @@ msgstr "Neach sam bith a tha air clàradh a-steach"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "A bheil thu cinnteach gu bheil thu airson clàradh a-mach? Feumaidh tu clàradh a-steach a-rithist gus do chunntas inntrigeadh."
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:636
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "A bheil thu cinnteach gu bheil thu airson dreuchd a leigeil dhìot? Buannaichidh {opponentName} an geama."
 
@@ -299,11 +299,11 @@ msgstr "Air ais dhan dachaigh"
 msgid "Banner"
 msgstr "Bratach"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "Black"
 msgstr "Dubh"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:465
 msgid "Black captures:"
 msgstr "Glacaidhean dubha:"
 
@@ -355,8 +355,8 @@ msgstr "Roinn airson a' bhratha seo"
 msgid "Change notification category"
 msgstr "Atharraich roinn nam brathan"
 
-#: src/features/go/index.tsx:564
-#: src/features/go/index.tsx:597
+#: src/features/go/index.tsx:574
+#: src/features/go/index.tsx:607
 msgid "Chat"
 msgstr "Còmhradh"
 
@@ -574,7 +574,7 @@ msgstr "Dorcha"
 msgid "Dark mode"
 msgstr "Modh dorcha"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:240
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:259
 msgid "Data conflict"
 msgstr "Còmhstri dàta"
 
@@ -590,15 +590,15 @@ msgstr "Bunaiteach"
 msgid "Default AI account"
 msgstr "Cunntas AI bunaiteach"
 
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:665
 msgid "Delete"
 msgstr "Sguab às"
 
-#: src/features/go/index.tsx:517
+#: src/features/go/index.tsx:527
 msgid "Delete game"
 msgstr "Sguab às geama"
 
-#: src/features/go/index.tsx:646
+#: src/features/go/index.tsx:656
 msgid "Delete game?"
 msgstr "A bheil thu airson an geama a sguabadh às?"
 
@@ -606,7 +606,7 @@ msgstr "A bheil thu airson an geama a sguabadh às?"
 msgid "Delete your account on the old server"
 msgstr "Sguab às do chunntas air an t-seann fhrithealaiche"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:662
 msgid "Deleting..."
 msgstr "A' sguabadh às..."
 
@@ -680,7 +680,7 @@ msgstr "Dh’fhàillig an luchdadh a-nuas"
 msgid "Draw agreed"
 msgstr "Geall-cothrom aontaichte"
 
-#: src/features/go/index.tsx:530
+#: src/features/go/index.tsx:540
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Tarraing air a thabhann — a' feitheamh ri {opponentName}"
 
@@ -708,11 +708,11 @@ msgstr "Tar-rathad falamh {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Tar-rathad falamh {colLabel}{rowLabel}, briog no brùth Enter gus a chur"
 
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:690
 msgid "End game"
 msgstr "Crìochnaich an geama"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "End game?"
 msgstr "Crìochnaich an geama?"
 
@@ -747,7 +747,7 @@ msgstr "URL on taobh a-muigh"
 msgid "Extra large"
 msgstr "A bharrachd mòr"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Failed to accept draw"
 msgstr "Cha do ghabh ri tarraing"
 
@@ -768,15 +768,15 @@ msgstr "Cha b' urrainn copaigeadh"
 msgid "Failed to create game"
 msgstr "Cha b' urrainn geama a chruthachadh"
 
-#: src/features/go/index.tsx:234
+#: src/features/go/index.tsx:240
 msgid "Failed to create rematch"
 msgstr "Cha b' urrainn ath-mhaids a chruthachadh"
 
-#: src/features/go/index.tsx:224
+#: src/features/go/index.tsx:230
 msgid "Failed to decline draw"
 msgstr "Cha do ghabh ri diùltadh tarraing"
 
-#: src/features/go/index.tsx:246
+#: src/features/go/index.tsx:252
 msgid "Failed to delete game"
 msgstr "Cha b' urrainn geama a sguabadh às"
 
@@ -792,15 +792,15 @@ msgstr "Dh'fhàillig luchdachadh an deilbh"
 msgid "Failed to load video"
 msgstr "Dh'fhàillig luchdachadh a' video"
 
-#: src/features/go/index.tsx:190
+#: src/features/go/index.tsx:196
 msgid "Failed to make move"
 msgstr "Cha b' urrainn an gluasad a dhèanamh"
 
-#: src/features/go/index.tsx:214
+#: src/features/go/index.tsx:220
 msgid "Failed to offer draw"
 msgstr "Cha b' urrainn tarraing a thabhann"
 
-#: src/features/go/index.tsx:197
+#: src/features/go/index.tsx:203
 msgid "Failed to pass"
 msgstr "Cha b' urrainn dol seachad"
 
@@ -808,12 +808,12 @@ msgstr "Cha b' urrainn dol seachad"
 msgid "Failed to remove account"
 msgstr "Cha b' urrainn an cunntas a thoirt air falbh"
 
-#: src/features/go/index.tsx:207
+#: src/features/go/index.tsx:213
 msgid "Failed to resign"
 msgstr "Cha b' urrainn gèilleadh"
 
-#: src/features/go/index.tsx:581
-#: src/features/go/index.tsx:614
+#: src/features/go/index.tsx:591
+#: src/features/go/index.tsx:624
 msgid "Failed to send"
 msgstr "Cha b' urrainn cur"
 
@@ -870,13 +870,13 @@ msgstr "Làn-chruth"
 msgid "Game created"
 msgstr "Chaidh an geama a chruthachadh"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:248
 msgid "Game deleted"
 msgstr "Chaidh an geama a sguabadh às"
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:371
-#: src/features/go/index.tsx:383
+#: src/features/go/index.tsx:104
+#: src/features/go/index.tsx:381
+#: src/features/go/index.tsx:393
 msgid "Go"
 msgstr "Falbh"
 
@@ -924,7 +924,7 @@ msgid "Hide password"
 msgstr "Falaich am facal-faire"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:90
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:175
 #: ../../../lib/web/src/components/layout/top-bar.tsx:71
 #: ../../../lib/web/src/components/layout/top-bar.tsx:100
 msgid "Home"
@@ -1068,7 +1068,7 @@ msgstr "Frithealaiche MCP"
 msgid "Medium"
 msgstr "Meadhanach"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:190
 msgid "Menu"
 msgstr "Clàr-taice"
 
@@ -1101,7 +1101,7 @@ msgid "Name must be 1000 characters or less"
 msgstr "Feumaidh an t-ainm a bhith 1000 caractaran no nas lugha"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:53
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:303
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:322
 msgid "Network error"
 msgstr "Mearachd lìonraidh"
 
@@ -1220,7 +1220,7 @@ msgstr "Brathan"
 msgid "Notifications: {0}"
 msgstr "Brathan: {0}"
 
-#: src/features/go/index.tsx:501
+#: src/features/go/index.tsx:511
 msgid "Offer draw"
 msgstr "Tairg co-ionnan"
 
@@ -1242,15 +1242,15 @@ msgstr "Fosgail gnìomhan a' chunntais"
 msgid "Open actions"
 msgstr "Fosgail na gnìomhan"
 
-#: src/features/go/index.tsx:472
+#: src/features/go/index.tsx:482
 msgid "Open chat panel"
 msgstr "Fosgail panail na cabadaich"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:490
 msgid "Open game actions"
 msgstr "Fosgail gnìomhan a' gheama"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:149
 msgid "Open menu"
 msgstr "Fosgail an clàr-taice"
 
@@ -1283,16 +1283,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "Duilleag {currentPage} à {totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:493
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:503
+#: src/features/go/index.tsx:690
 msgid "Pass"
 msgstr "Soirbheachail"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "Pass turn?"
 msgstr "Cuir an cuairt seachad?"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:687
 msgid "Passing..."
 msgstr "A' cur seachad..."
 
@@ -1314,7 +1314,7 @@ msgstr "Tagh ceann-latha"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:304
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:323
 msgid "Please check your internet connection and try again."
 msgstr "Thoir sùil air a' cheangal eadar-lìn agad agus feuch ris a-rithist."
 
@@ -1403,7 +1403,7 @@ msgstr "Coimeasach (5m, 3u, 2l)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Coimeasach taobh a-staigh 24 uair, no fuirich absoluteach"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:524
 msgid "Rematch"
 msgstr "Geama ùr"
 
@@ -1460,16 +1460,16 @@ msgstr "Ath-shuidhich {title}"
 msgid "Reset all settings to default values"
 msgstr "Ath-shuidhich a h-uile roghainn chun a' bhun-tuiteamais"
 
-#: src/features/go/index.tsx:505
-#: src/features/go/index.tsx:634
+#: src/features/go/index.tsx:515
+#: src/features/go/index.tsx:644
 msgid "Resign"
 msgstr "Leig seachad"
 
-#: src/features/go/index.tsx:625
+#: src/features/go/index.tsx:635
 msgid "Resign game?"
 msgstr "An leig thu seachad an geama?"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:641
 msgid "Resigning..."
 msgstr "A' leigeil seachad..."
 
@@ -1628,8 +1628,8 @@ msgstr "Cuir teachdaireachd"
 msgid "Serif"
 msgstr "Serif"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:260
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:286
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:279
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:305
 msgid "Server error"
 msgstr "Mearachd frithealaiche"
 
@@ -1638,7 +1638,7 @@ msgstr "Mearachd frithealaiche"
 msgid "Server rules"
 msgstr "Riaghailtean an fhrithealaiche"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:210
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:229
 msgid "Session expired. Please log in again."
 msgstr "Dh'fhalbh an ùine air an t-seisean. Log a-steach a-rithist."
 
@@ -1646,8 +1646,8 @@ msgstr "Dh'fhalbh an ùine air an t-seisean. Log a-steach a-rithist."
 msgid "Set origin and destination"
 msgstr "Suidhich tùs is ceann-uidhe"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:93
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:99
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:109
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:115
 #: ../../../lib/web/src/components/layout/nav-user.tsx:84
 #: ../../../lib/web/src/components/layout/nav-user.tsx:148
 #: ../../../lib/web/src/components/layout/nav-user.tsx:198
@@ -1668,8 +1668,8 @@ msgstr "A' sealltainn {totalShown} de {total}"
 msgid "Sidebar"
 msgstr "Bàr-taoibh"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:105
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:111
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:121
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:127
 msgid "Sign out"
 msgstr "Clàraich a-mach"
 
@@ -1681,7 +1681,7 @@ msgstr "A' soidhnigeadh a-mach..."
 msgid "Skip to Main"
 msgstr "Gearr-shlighe dhan phrìomh"
 
-#: src/features/go/index.tsx:671
+#: src/features/go/index.tsx:681
 msgid "Skip your turn and pass to your opponent."
 msgstr "Leum thairis air do chuairt is rach gun chàraid agad."
 
@@ -1760,6 +1760,14 @@ msgstr "Tha an còd sin ceàrr no air a dhol à bann."
 msgid "The requested content could not be found."
 msgstr "Cha b' urrainn dhuinn an t-susbaint a chaidh iarraidh a lorg."
 
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+#~ msgid "The server returned a web page instead of data, which usually means the address was wrong."
+#~ msgstr ""
+
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+msgid "The server returned a web page instead of data."
+msgstr "Thill am frithealaiche duilleag-lìn an àite dàta."
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
 msgid "The site is not available at the moment."
 msgstr "Chan eil an làrach ri fhaighinn an-dràsta."
@@ -1776,7 +1784,7 @@ msgstr "Roghainnean an ùrlair"
 msgid "This page has not been created yet."
 msgstr "Cha deach an duilleag seo a chruthachadh fhathast."
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:657
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Sguabaidh seo às an geama agus an cabadaich aige gu buan. Chan urrainn seo a neo-dhèanamh."
 
@@ -1862,7 +1870,7 @@ msgstr "Sgrìobh airson cleachdaichean a lorg"
 msgid "Type to search..."
 msgstr "Sgrìobh airson lorg..."
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:282
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:301
 msgid "Unable to connect to remote server"
 msgstr "Cha ghabh ceangal ris an fhrithealaiche chèin"
 
@@ -1905,7 +1913,7 @@ msgstr "Adhartas an luchdaidh suas"
 msgid "Use your passkey"
 msgstr "Cleachd an iuchair-inntrigidh agad"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:102
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "Cleachdaiche"
@@ -1979,11 +1987,11 @@ msgstr "Tha an làrach-lìn fo obair-càraidh!"
 msgid "Wednesday"
 msgstr "Diciadain"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "White"
 msgstr "Geal"
 
-#: src/features/go/index.tsx:460
+#: src/features/go/index.tsx:470
 msgid "White captures:"
 msgstr "Glacaidhean Geal:"
 

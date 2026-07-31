@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: ../../../lib/web/src/lib/error-normalizer.ts:204
+#: ../../../lib/web/src/lib/error-normalizer.ts:236
 msgid "Please check your internet connection and try again."
 msgstr "దయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
 
@@ -48,7 +48,7 @@ msgstr "{name} డ్రా ప్రతిపాదించారు"
 msgid "{name} resigned"
 msgstr "{name} ఓటమిని అంగీకరించారు"
 
-#: src/features/go/index.tsx:670
+#: src/features/go/index.tsx:680
 msgid "{opponentName} also passed. Confirming will end the game and score the board."
 msgstr "{opponentName} కూడా దాటవేశారు. నిర్ధారిస్తే ఆట ముగుస్తుంది మరియు బోర్డ్‌కు స్కోర్ ఇవ్వబడుతుంది."
 
@@ -92,7 +92,7 @@ msgstr "{size}×{size} Go బోర్డ్, మీ వంతు. నావి�
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} <0>{moveLabel}</0> ఆడారు"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:132
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:148
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {మెనూ తెరవండి (# చదవని నోటిఫికేషన్)} other {మెనూ తెరవండి (# చదవని నోటిఫికేషన్‌లు)}}"
 
@@ -231,11 +231,11 @@ msgstr "అన్నీ"
 msgid "Allow anyone to search for {0}"
 msgstr "ఎవరైనా {0} కోసం వెతకడానికి అనుమతించండి"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:159
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:178
 msgid "An error occurred"
 msgstr "లోపం సంభవించింది"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:256
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:275
 msgid "An unexpected error occurred"
 msgstr "ఊహించని లోపం సంభవించింది"
 
@@ -256,7 +256,7 @@ msgstr "లాగిన్ అయిన ఎవరైనా"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "మీరు లాగ్ అవుట్ చేయాలనుకుంటున్నారా? మీ ఖాతాను యాక్సెస్ చేయడానికి మీరు మళ్లీ లాగిన్ చేయవలసి ఉంటుంది."
 
-#: src/features/go/index.tsx:626
+#: src/features/go/index.tsx:636
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "మీరు నిజంగా రాజీనామా చేయాలనుకుంటున్నారా? {opponentName} ఆటను గెలుస్తాడు."
 
@@ -299,11 +299,11 @@ msgstr "హోమ్‌కు తిరిగి వెళ్ళండి"
 msgid "Banner"
 msgstr "బ్యానర్"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "Black"
 msgstr "నలుపు"
 
-#: src/features/go/index.tsx:455
+#: src/features/go/index.tsx:465
 msgid "Black captures:"
 msgstr "నలుపు పట్టుకున్నవి:"
 
@@ -355,8 +355,8 @@ msgstr "ఈ నోటిఫికేషన్ కోసం వర్గం"
 msgid "Change notification category"
 msgstr "నోటిఫికేషన్ వర్గాన్ని మార్చండి"
 
-#: src/features/go/index.tsx:564
-#: src/features/go/index.tsx:597
+#: src/features/go/index.tsx:574
+#: src/features/go/index.tsx:607
 msgid "Chat"
 msgstr "చాట్"
 
@@ -574,7 +574,7 @@ msgstr "డార్క్"
 msgid "Dark mode"
 msgstr "డార్క్ మోడ్"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:240
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:259
 msgid "Data conflict"
 msgstr "డేటా వైరుధ్యం"
 
@@ -590,15 +590,15 @@ msgstr "డిఫాల్ట్"
 msgid "Default AI account"
 msgstr "డిఫాల్ట్ AI ఖాతా"
 
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:665
 msgid "Delete"
 msgstr "తొలగించండి"
 
-#: src/features/go/index.tsx:517
+#: src/features/go/index.tsx:527
 msgid "Delete game"
 msgstr "ఆటను తొలగించండి"
 
-#: src/features/go/index.tsx:646
+#: src/features/go/index.tsx:656
 msgid "Delete game?"
 msgstr "గేమ్‌ను తొలగించాలా?"
 
@@ -606,7 +606,7 @@ msgstr "గేమ్‌ను తొలగించాలా?"
 msgid "Delete your account on the old server"
 msgstr "పాత సర్వర్‌లో మీ ఖాతాను తొలగించండి"
 
-#: src/features/go/index.tsx:652
+#: src/features/go/index.tsx:662
 msgid "Deleting..."
 msgstr "తొలగిస్తోంది..."
 
@@ -680,7 +680,7 @@ msgstr "డౌన్‌లోడ్ విఫలమైంది"
 msgid "Draw agreed"
 msgstr "డ్రాకు అంగీకరించారు"
 
-#: src/features/go/index.tsx:530
+#: src/features/go/index.tsx:540
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "డ్రా అందించబడింది — {opponentName} కోసం వేచి ఉంది"
 
@@ -708,11 +708,11 @@ msgstr "ఖాళీ ఖండన {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ఖాళీ ఖండన {colLabel}{rowLabel}, ఉంచడానికి క్లిక్ చేయండి లేదా Enter నొక్కండి"
 
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:690
 msgid "End game"
 msgstr "ఆట ముగించండి"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "End game?"
 msgstr "ఆట ముగించాలా?"
 
@@ -747,7 +747,7 @@ msgstr "బాహ్య URL"
 msgid "Extra large"
 msgstr "అదనపు పెద్దది"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Failed to accept draw"
 msgstr "డ్రాను అంగీకరించడంలో విఫలమైంది"
 
@@ -768,15 +768,15 @@ msgstr "కాపీ చేయడంలో విఫలమైంది"
 msgid "Failed to create game"
 msgstr "ఆటను సృష్టించడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:234
+#: src/features/go/index.tsx:240
 msgid "Failed to create rematch"
 msgstr "రీమ్యాచ్‌ను సృష్టించడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:224
+#: src/features/go/index.tsx:230
 msgid "Failed to decline draw"
 msgstr "డ్రాను తిరస్కరించడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:246
+#: src/features/go/index.tsx:252
 msgid "Failed to delete game"
 msgstr "ఆటను తొలగించడంలో విఫలమైంది"
 
@@ -792,15 +792,15 @@ msgstr "చిత్రాన్ని లోడ్ చేయడంలో వి
 msgid "Failed to load video"
 msgstr "వీడియోను లోడ్ చేయడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:190
+#: src/features/go/index.tsx:196
 msgid "Failed to make move"
 msgstr "ఎత్తు వేయడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:214
+#: src/features/go/index.tsx:220
 msgid "Failed to offer draw"
 msgstr "డ్రాను ఆఫర్ చేయడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:197
+#: src/features/go/index.tsx:203
 msgid "Failed to pass"
 msgstr "పాస్ చేయడంలో విఫలమైంది"
 
@@ -808,12 +808,12 @@ msgstr "పాస్ చేయడంలో విఫలమైంది"
 msgid "Failed to remove account"
 msgstr "ఖాతాను తీసివేయడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:207
+#: src/features/go/index.tsx:213
 msgid "Failed to resign"
 msgstr "రాజీనామా చేయడంలో విఫలమైంది"
 
-#: src/features/go/index.tsx:581
-#: src/features/go/index.tsx:614
+#: src/features/go/index.tsx:591
+#: src/features/go/index.tsx:624
 msgid "Failed to send"
 msgstr "పంపడంలో విఫలమైంది"
 
@@ -870,13 +870,13 @@ msgstr "పూర్తి లేఅవుట్"
 msgid "Game created"
 msgstr "ఆట సృష్టించబడింది"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:248
 msgid "Game deleted"
 msgstr "ఆట తొలగించబడింది"
 
-#: src/features/go/index.tsx:98
-#: src/features/go/index.tsx:371
-#: src/features/go/index.tsx:383
+#: src/features/go/index.tsx:104
+#: src/features/go/index.tsx:381
+#: src/features/go/index.tsx:393
 msgid "Go"
 msgstr "వెళ్ళండి"
 
@@ -924,7 +924,7 @@ msgid "Hide password"
 msgstr "పాస్‌వర్డ్‌ను దాచు"
 
 #: ../../../lib/web/src/components/layout/app-sidebar.tsx:90
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:175
 #: ../../../lib/web/src/components/layout/top-bar.tsx:71
 #: ../../../lib/web/src/components/layout/top-bar.tsx:100
 msgid "Home"
@@ -1068,7 +1068,7 @@ msgstr "MCP సర్వర్"
 msgid "Medium"
 msgstr "మధ్యస్థం"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:173
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:190
 msgid "Menu"
 msgstr "మెను"
 
@@ -1101,7 +1101,7 @@ msgid "Name must be 1000 characters or less"
 msgstr "పేరు 1000 క్యారెక్టర్‌లు లేదా అంతకంటే తక్కువ ఉండాలి"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx:53
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:303
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:322
 msgid "Network error"
 msgstr "నెట్‌వర్క్ లోపం"
 
@@ -1220,7 +1220,7 @@ msgstr "నోటిఫికేషన్‌లు"
 msgid "Notifications: {0}"
 msgstr "నోటిఫికేషన్‌లు: {0}"
 
-#: src/features/go/index.tsx:501
+#: src/features/go/index.tsx:511
 msgid "Offer draw"
 msgstr "డ్రా ఆఫర్ చేయండి"
 
@@ -1242,15 +1242,15 @@ msgstr "ఖాతా చర్యలను ఓపెన్ చేయండి"
 msgid "Open actions"
 msgstr "చర్యలను తెరవండి"
 
-#: src/features/go/index.tsx:472
+#: src/features/go/index.tsx:482
 msgid "Open chat panel"
 msgstr "చాట్ ప్యానెల్‌ను ఓపెన్ చేయండి"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:490
 msgid "Open game actions"
 msgstr "గేమ్ చర్యలను ఓపెన్ చేయండి"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:133
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:149
 msgid "Open menu"
 msgstr "మెనుని ఓపెన్ చేయండి"
 
@@ -1283,16 +1283,16 @@ msgid "Page {currentPage} of {totalPages}"
 msgstr "పేజీ {currentPage} / {totalPages}"
 
 #: src/features/go/components/chat-message-list.tsx:210
-#: src/features/go/index.tsx:493
-#: src/features/go/index.tsx:680
+#: src/features/go/index.tsx:503
+#: src/features/go/index.tsx:690
 msgid "Pass"
 msgstr "పాస్"
 
-#: src/features/go/index.tsx:667
+#: src/features/go/index.tsx:677
 msgid "Pass turn?"
 msgstr "టర్న్ పాస్ చేయాలా?"
 
-#: src/features/go/index.tsx:677
+#: src/features/go/index.tsx:687
 msgid "Passing..."
 msgstr "పాస్ చేస్తోంది..."
 
@@ -1314,7 +1314,7 @@ msgstr "తేదీని ఎంచుకోండి"
 
 #: ../../../lib/web/src/components/comment-composer.tsx:95
 #: ../../../lib/web/src/features/errors/general-error.tsx:54
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:304
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:323
 msgid "Please check your internet connection and try again."
 msgstr "దయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
 
@@ -1403,7 +1403,7 @@ msgstr "సాపేక్ష (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 గంటల్లో సాపేక్ష, లేకపోతే నిరపేక్ష"
 
-#: src/features/go/index.tsx:514
+#: src/features/go/index.tsx:524
 msgid "Rematch"
 msgstr "రీమ్యాచ్"
 
@@ -1460,16 +1460,16 @@ msgstr "{title} రీసెట్ చేయండి"
 msgid "Reset all settings to default values"
 msgstr "అన్ని సెట్టింగ్‌లను డిఫాల్ట్ విలువలకు రీసెట్ చేయండి"
 
-#: src/features/go/index.tsx:505
-#: src/features/go/index.tsx:634
+#: src/features/go/index.tsx:515
+#: src/features/go/index.tsx:644
 msgid "Resign"
 msgstr "రిజైన్"
 
-#: src/features/go/index.tsx:625
+#: src/features/go/index.tsx:635
 msgid "Resign game?"
 msgstr "గేమ్‌ను రిజైన్ చేయాలా?"
 
-#: src/features/go/index.tsx:631
+#: src/features/go/index.tsx:641
 msgid "Resigning..."
 msgstr "రిజైన్ చేస్తోంది..."
 
@@ -1628,8 +1628,8 @@ msgstr "సందేశాన్ని పంపండి"
 msgid "Serif"
 msgstr "సెరిఫ్"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:260
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:286
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:279
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:305
 msgid "Server error"
 msgstr "సర్వర్ లోపం"
 
@@ -1638,7 +1638,7 @@ msgstr "సర్వర్ లోపం"
 msgid "Server rules"
 msgstr "సర్వర్ నియమాలు"
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:210
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:229
 msgid "Session expired. Please log in again."
 msgstr "సెషన్ గడువు ముగిసింది. దయచేసి మళ్లీ లాగిన్ చేయండి."
 
@@ -1646,8 +1646,8 @@ msgstr "సెషన్ గడువు ముగిసింది. దయచ�
 msgid "Set origin and destination"
 msgstr "మూలం మరియు గమ్యస్థానాన్ని సెట్ చేయండి"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:93
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:99
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:109
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:115
 #: ../../../lib/web/src/components/layout/nav-user.tsx:84
 #: ../../../lib/web/src/components/layout/nav-user.tsx:148
 #: ../../../lib/web/src/components/layout/nav-user.tsx:198
@@ -1668,8 +1668,8 @@ msgstr "{total}లో {totalShown} చూపిస్తోంది"
 msgid "Sidebar"
 msgstr "సైడ్‌బార్"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:105
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:111
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:121
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:127
 msgid "Sign out"
 msgstr "సైన్ అవుట్"
 
@@ -1681,7 +1681,7 @@ msgstr "సైన్ అవుట్ అవుతోంది..."
 msgid "Skip to Main"
 msgstr "మెయిన్‌కు దాటవేయండి"
 
-#: src/features/go/index.tsx:671
+#: src/features/go/index.tsx:681
 msgid "Skip your turn and pass to your opponent."
 msgstr "మీ వంతు దాటవేసి మీ ప్రత్యర్థికి పంపండి."
 
@@ -1760,6 +1760,14 @@ msgstr "ఆ కోడ్ తప్పు లేదా గడువు ముగ�
 msgid "The requested content could not be found."
 msgstr "అభ్యర్థించిన కంటెంట్ కనుగొనబడలేదు."
 
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+#~ msgid "The server returned a web page instead of data, which usually means the address was wrong."
+#~ msgstr ""
+
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:152
+msgid "The server returned a web page instead of data."
+msgstr "సర్వర్ డేటాకు బదులుగా వెబ్ పేజీని అందించింది."
+
 #: ../../../lib/web/src/features/errors/maintenance-error.tsx:15
 msgid "The site is not available at the moment."
 msgstr "సైట్ ప్రస్తుతం అందుబాటులో లేదు."
@@ -1776,7 +1784,7 @@ msgstr "థీమ్ సెట్టింగ్‌లు"
 msgid "This page has not been created yet."
 msgstr "ఈ పేజీ ఇంకా సృష్టించబడలేదు."
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:657
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ఇది గేమ్‌ను మరియు దాని చాట్‌ను శాశ్వతంగా తొలగిస్తుంది. ఈ చర్యను తిరిగి మార్చలేరు."
 
@@ -1862,7 +1870,7 @@ msgstr "యూజర్లను శోధించడానికి టైప�
 msgid "Type to search..."
 msgstr "శోధించడానికి టైప్ చేయండి..."
 
-#: ../../../lib/web/src/lib/api-response-interceptors.ts:282
+#: ../../../lib/web/src/lib/api-response-interceptors.ts:301
 msgid "Unable to connect to remote server"
 msgstr "రిమోట్ సర్వర్‌కు కనెక్ట్ చేయడం సాధ్యం కాలేదు"
 
@@ -1905,7 +1913,7 @@ msgstr "అప్‌లోడ్ పురోగతి"
 msgid "Use your passkey"
 msgstr "మీ పాస్‌కీని ఉపయోగించండి"
 
-#: ../../../lib/web/src/components/layout/mochi-menu.tsx:86
+#: ../../../lib/web/src/components/layout/mochi-menu.tsx:102
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "యూజర్"
@@ -1979,11 +1987,11 @@ msgstr "వెబ్‌సైట్ మెయింటెనెన్స్‌�
 msgid "Wednesday"
 msgstr "బుధవారం"
 
-#: src/features/go/index.tsx:448
+#: src/features/go/index.tsx:458
 msgid "White"
 msgstr "తెలుపు"
 
-#: src/features/go/index.tsx:460
+#: src/features/go/index.tsx:470
 msgid "White captures:"
 msgstr "తెలుపు పట్టుకున్నవి:"
 
