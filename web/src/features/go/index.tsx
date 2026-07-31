@@ -63,14 +63,20 @@ function goStatusText(
   game: Game,
   myIdentity: string,
   isMyTurn: boolean,
-  score?: { black: number; white: number; winner: 'black' | 'white' } | null
+  score?: { black: number; white: number; winner: 'black' | 'white' | null } | null
 ): string {
   const opponentName = getOpponentName(game, myIdentity)
 
   if (game.status === 'finished') {
-    if (score) {
+    if (score?.winner) {
       const winnerColor = score.winner === 'black' ? t`Black` : t`White`
       return t`${winnerColor} wins — B:${score.black} W:${score.white}`
+    }
+
+    // A tie now records status 'draw', but a peer on an older build still
+    // writes 'finished' with a winner nobody earned. Read the score, not it.
+    if (score) {
+      return t`Draw`
     }
 
     if (game.winner) {
@@ -302,19 +308,23 @@ export function GoGameView() {
     const isGameOver = newGame.consecutivePasses >= 2
     const scoreResult = isGameOver ? newGame.score(game.komi) : null
 
+    // A tie scores with no winning colour, so it records status 'draw' and no
+    // winner identity - both of which the server accepts. Resolving a tie to a
+    // colour would write a real player as the winner of a game nobody won.
+    const winnerColor = scoreResult?.winner ?? null
     let winner = ''
-    if (isGameOver && scoreResult) {
-      const winnerColor = scoreResult.winner
+    if (isGameOver && winnerColor) {
       winner = game.black === game.identity
         ? (winnerColor === 'black' ? game.identity : game.opponent)
         : (winnerColor === 'black' ? game.opponent : game.identity)
     }
+    const finalStatus = !isGameOver ? undefined : winnerColor ? 'finished' : 'draw'
 
     passMutation.mutate({
       gameId: selectedGame.id,
       fen: newGame.board,
       sgf: newSgf,
-      status: isGameOver ? 'finished' : undefined,
+      status: finalStatus,
       winner: isGameOver ? winner : undefined,
       score_black: scoreResult?.black,
       score_white: scoreResult?.white,
