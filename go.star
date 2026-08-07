@@ -311,6 +311,29 @@ def game_players(game):
 	"""Entities entitled to write this game's state."""
 	return [game["identity"], game["opponent"]]
 
+def event_name(value):
+	"""Peer-supplied display name, held to core's name rules.
+
+	Rejects angle brackets and line breaks and caps at 1000 characters, so a
+	peer cannot store an unbounded string or smuggle markup into the label
+	shown beside their moves."""
+	value = str(value or "")
+	if not value or not mochi.text.valid(value, "name"):
+		return "Opponent"
+	return value
+
+def event_body(value, maximum, fallback):
+	"""Peer-supplied display text, held to the bound the local path uses.
+
+	Clamped rather than rejected. The board in the same event is validated
+	separately and is the real state; dropping an otherwise-good move over a
+	bad label would leave us behind the sender with no way to catch up, which
+	is a worse outcome than showing a fallback for one move."""
+	value = str(value or "")
+	if not value or len(value) > maximum:
+		return fallback
+	return value
+
 def event_created(e, now):
 	"""Peer-supplied message timestamp, clamped to our clock.
 
@@ -474,6 +497,17 @@ def valid_fen(fen):
 	if not fen or len(fen) > 1000:
 		return False
 	parts = fen.split(" ")
+	# All six fields, not just the board. action_move and action_pass read
+	# parts[1] for the turn and fall back to "b" when it is absent, so a
+	# board-only FEN freezes White out of the game permanently while Black
+	# keeps playing, and an unrecognised colour freezes both. Neither is
+	# recoverable in-app: every move checks the turn before doing anything.
+	# chess.valid_fen has required the full field set since the equivalent
+	# bug there.
+	if len(parts) != 6:
+		return False
+	if parts[1] not in ["b", "w"]:
+		return False
 	rows = parts[0].split("/")
 	size = len(rows)
 	if size not in [9, 13, 19]:
@@ -773,6 +807,14 @@ def action_move(a):
 		return
 
 	if not mochi.text.valid(captures_black, "integer") or not mochi.text.valid(captures_white, "integer"):
+		a.error.label(400, "errors.invalid_captures")
+		return
+	# The same 0..361 bound the inbound path applies. Accepting a wider range
+	# here writes a value into the games row that every peer then rejects, and
+	# since each event carries a complete snapshot the rejection is not
+	# one-off: every later snapshot carries the value forward, so the game
+	# forks permanently with no way back.
+	if int(captures_black) < 0 or int(captures_black) > 361 or int(captures_white) < 0 or int(captures_white) > 361:
 		a.error.label(400, "errors.invalid_captures")
 		return
 
@@ -1211,7 +1253,7 @@ def event_move(e):
 
 	fen = e.content("fen")
 	sgf = e.content("sgf") or ""
-	body = e.content("body") or ""
+	body = event_body(e.content("body"), 10000, "")
 	status = e.content("status") or "active"
 	winner = e.content("winner") or None
 	previous_fen = e.content("previous_fen") or None
@@ -1267,7 +1309,7 @@ def event_move(e):
 	if created == None:
 		created = now
 
-	name = e.content("name") or "Opponent"
+	name = event_name(e.content("name"))
 
 	mochi.db.execute("insert or ignore into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'move', ? )", id, game["id"], sender, name, body, created)
 
@@ -1304,7 +1346,7 @@ def event_message(e):
 	if len(str(body)) > 10000:
 		return
 
-	name = e.content("name") or "Opponent"
+	name = event_name(e.content("name"))
 
 	go_ensure_commit_hook()
 	mochi.db.execute("insert or ignore into messages ( id, game, member, name, body, type, created ) values ( ?, ?, ?, ?, ?, 'message', ? )", id, game["id"], sender, name, body, created)
@@ -1326,7 +1368,7 @@ def event_resign(e):
 		return
 
 	winner = e.content("winner")
-	body = e.content("body") or mochi.app.label("notifications.body.opponent_resigned")
+	body = event_body(e.content("body"), 10000, mochi.app.label("notifications.body.opponent_resigned"))
 	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
 
 	# Derive winner: the other player (not the one who resigned)
@@ -1365,7 +1407,7 @@ def event_draw_offer(e):
 	if sender != game["identity"] and sender != game["opponent"]:
 		return
 
-	body = e.content("body") or mochi.app.label("notifications.body.draw_offered")
+	body = event_body(e.content("body"), 10000, mochi.app.label("notifications.body.draw_offered"))
 	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
 
 	# Ordering is the version tuple, not the wall clock. The gate that used
@@ -1407,7 +1449,7 @@ def event_draw_accept(e):
 	if sender != game["identity"] and sender != game["opponent"]:
 		return
 
-	body = e.content("body") or mochi.app.label("notifications.body.draw_agreed")
+	body = event_body(e.content("body"), 10000, mochi.app.label("notifications.body.draw_agreed"))
 	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
 
 	now = mochi.time.now()
@@ -1438,7 +1480,7 @@ def event_draw_decline(e):
 	if sender != game["identity"] and sender != game["opponent"]:
 		return
 
-	body = e.content("body") or mochi.app.label("notifications.body.draw_declined")
+	body = event_body(e.content("body"), 10000, mochi.app.label("notifications.body.draw_declined"))
 	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
 
 	now = mochi.time.now()
