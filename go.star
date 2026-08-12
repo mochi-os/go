@@ -1253,7 +1253,12 @@ def event_move(e):
 
 	fen = e.content("fen")
 	sgf = e.content("sgf") or ""
-	body = event_body(e.content("body"), 10000, "")
+	# The move label, at the cap the LOCAL move path applies (20). 10000 is the
+	# chat/notification body cap and was wrong here: a peer could send a move
+	# label five hundred times longer than this app will accept from its own
+	# player, and it lands in the kill feed and the notification. chess caps
+	# the same field on the same inbound path (event_body(san, 10, "?")).
+	body = event_body(e.content("body"), 20, "")
 	status = e.content("status") or "active"
 	winner = e.content("winner") or None
 	previous_fen = e.content("previous_fen") or None
