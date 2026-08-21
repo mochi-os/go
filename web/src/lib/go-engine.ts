@@ -357,11 +357,8 @@ export class GoGame {
     return this.state.consecutivePasses >= 2
   }
 
-  // `winner` is null for a tie (jigo). Reachable because the new-game dialog
-  // offers a komi of 0, and integer komi makes equal totals possible. Resolving
-  // a tie to a colour is not just a wrong status line: the caller turns the
-  // colour into a player identity and writes it as the game's winner, so a game
-  // nobody won records a real person as having won it.
+  // `winner` is null for a tie (reachable with komi 0). Never resolve a tie to
+  // a colour: the caller records it as a player identity.
   score(komi: number = 6.5): {
     black: number
     white: number
