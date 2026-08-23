@@ -211,6 +211,15 @@ def load_game(a):
 GAME_COLUMNS = ["fen", "previous_fen", "sgf", "captures_black", "captures_white", "status", "winner", "draw_offer"]
 GAME_TERMINAL = ["finished", "resigned", "draw"]
 
+# Statuses a move, a pass, or an inbound move event may declare. Both terminal
+# states a player reaches by PLAYING belong here: 'finished' when someone won on
+# the board, and 'draw' when the score tied - two passes with an integral komi.
+# 'resigned' is absent because it has its own action, and anything else is
+# absent so a peer cannot invent a status. One list, used at all three sites:
+# it was three copies, 'draw' was added to GAME_TERMINAL and to game_state's
+# validation but to none of the copies, and a tied game was silently reopened.
+GAME_DECLARABLE = ["active", "finished", "draw"]
+
 # Columns a websocket payload may carry. Everything this game holds is
 # visible to both players, so the public set is the whole snapshot -
 # unlike words, which must hold back racks and the bag.
@@ -684,8 +693,7 @@ def action_move(a):
 		return
 
 	# Validate status and winner
-	valid_statuses = ["active", "finished"]
-	new_status = status if status in valid_statuses else "active"
+	new_status = status if status in GAME_DECLARABLE else "active"
 	players = [game["identity"], game["opponent"]]
 	new_winner = winner if winner in players else None
 
@@ -775,8 +783,7 @@ def action_pass(a):
 		a.error.label(400, "errors.invalid_score")
 		return
 
-	valid_statuses = ["active", "finished"]
-	new_status = status if status in valid_statuses else "active"
+	new_status = status if status in GAME_DECLARABLE else "active"
 	players = [game["identity"], game["opponent"]]
 	new_winner = winner if winner in players else None
 
@@ -1122,8 +1129,7 @@ def event_move(e):
 	if len(sgf) > 10000:
 		return
 
-	valid_statuses = ["active", "finished"]
-	if status not in valid_statuses:
+	if status not in GAME_DECLARABLE:
 		status = "active"
 	players = [game["identity"], game["opponent"]]
 	if winner and winner not in players:
