@@ -17,13 +17,9 @@ const endpoints = {
     drawOffer: (gameId: string) => `/${gameId}/-/draw-offer`,
     drawAccept: (gameId: string) => `/${gameId}/-/draw-accept`,
     drawDecline: (gameId: string) => `/${gameId}/-/draw-decline`,
+    scoreAccept: (gameId: string) => `/${gameId}/-/score-accept`,
+    scoreResume: (gameId: string) => `/${gameId}/-/score-resume`,
     delete: (gameId: string) => `/${gameId}/-/delete`,
-  },
-  auth: {
-    code: '/_/code',
-    verify: '/_/verify',
-    identity: '/_/identity',
-    logout: '/_/logout',
   },
 } as const
 

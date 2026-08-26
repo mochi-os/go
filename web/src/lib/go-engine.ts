@@ -35,6 +35,11 @@ function emptyGrid(size: number): Stone[][] {
   return Array.from({ length: size }, () => Array(size).fill('.') as Stone[])
 }
 
+function sameGrid(a: Stone[][], b: Stone[][]): boolean {
+  if (a.length !== b.length) return false
+  return a.every((row, r) => row.length === b[r].length && row.every((cell, c) => cell === b[r][c]))
+}
+
 function cloneGrid(grid: Stone[][]): Stone[][] {
   return grid.map((row) => [...row])
 }
@@ -98,29 +103,22 @@ function removeGroup(grid: Stone[][], stones: [number, number][]): number {
   return stones.length
 }
 
-// Count territory using area scoring (Chinese rules)
-function scoreTerritory(grid: Stone[][]): { black: number; white: number } {
+// One walk over the empty regions, shared by scoreTerritory and
+// GoGame.territory - they were the same flood fill written twice, so a scoring
+// fix could land in one and not the other. `owner` is 'B'/'W' when the region
+// touches exactly one colour, 'N' (dame) otherwise.
+function emptyRegions(
+  grid: Stone[][]
+): { cells: [number, number][]; owner: 'B' | 'W' | 'N' }[] {
   const size = grid.length
   const visited = new Set<string>()
-  let blackTerritory = 0
-  let whiteTerritory = 0
+  const regions: { cells: [number, number][]; owner: 'B' | 'W' | 'N' }[] = []
 
-  // Count stones on board
   for (let r = 0; r < size; r++) {
     for (let c = 0; c < size; c++) {
-      if (grid[r][c] === 'B') blackTerritory++
-      else if (grid[r][c] === 'W') whiteTerritory++
-    }
-  }
+      if (grid[r][c] !== '.' || visited.has(`${r},${c}`)) continue
 
-  // Flood fill empty regions to determine territory
-  for (let r = 0; r < size; r++) {
-    for (let c = 0; c < size; c++) {
-      const key = `${r},${c}`
-      if (grid[r][c] !== '.' || visited.has(key)) continue
-
-      // BFS to find connected empty region
-      const region: [number, number][] = []
+      const cells: [number, number][] = []
       const stack: [number, number][] = [[r, c]]
       let touchesBlack = false
       let touchesWhite = false
@@ -130,41 +128,62 @@ function scoreTerritory(grid: Stone[][]): { black: number; white: number } {
         const ck = `${cr},${cc}`
         if (visited.has(ck)) continue
         visited.add(ck)
+        if (grid[cr][cc] !== '.') continue
 
-        if (grid[cr][cc] === '.') {
-          region.push([cr, cc])
-          for (const [nr, nc] of neighbors(cr, cc, size)) {
-            const nk = `${nr},${nc}`
-            if (!visited.has(nk)) {
-              if (grid[nr][nc] === '.') {
-                stack.push([nr, nc])
-              } else if (grid[nr][nc] === 'B') {
-                touchesBlack = true
-              } else if (grid[nr][nc] === 'W') {
-                touchesWhite = true
-              }
-            }
-          }
+        cells.push([cr, cc])
+        for (const [nr, nc] of neighbors(cr, cc, size)) {
+          if (visited.has(`${nr},${nc}`)) continue
+          if (grid[nr][nc] === '.') stack.push([nr, nc])
+          else if (grid[nr][nc] === 'B') touchesBlack = true
+          else if (grid[nr][nc] === 'W') touchesWhite = true
         }
       }
 
-      // Territory belongs to a color only if it touches ONLY that color
-      if (touchesBlack && !touchesWhite) {
-        blackTerritory += region.length
-      } else if (touchesWhite && !touchesBlack) {
-        whiteTerritory += region.length
-      }
+      regions.push({
+        cells,
+        owner:
+          touchesBlack && !touchesWhite ? 'B'
+          : touchesWhite && !touchesBlack ? 'W'
+          : 'N',
+      })
     }
   }
 
-  return { black: blackTerritory, white: whiteTerritory }
+  return regions
+}
+
+// Count territory using area scoring (Chinese rules)
+function scoreTerritory(grid: Stone[][]): { black: number; white: number } {
+  const size = grid.length
+  let black = 0
+  let white = 0
+
+  for (let r = 0; r < size; r++) {
+    for (let c = 0; c < size; c++) {
+      if (grid[r][c] === 'B') black++
+      else if (grid[r][c] === 'W') white++
+    }
+  }
+
+  for (const region of emptyRegions(grid)) {
+    if (region.owner === 'B') black += region.cells.length
+    else if (region.owner === 'W') white += region.cells.length
+  }
+
+  return { black, white }
+
 }
 
 function parseBoard(fen: string): GoGameState {
   const parts = fen.split(' ')
   const boardStr = parts[0]
   const rows = boardStr.split('/')
-  const size = rows.length as 9 | 13 | 19
+  // Validated, not asserted: a malformed FEN otherwise yields a size every
+  // later bounds check trusts.
+  const size: 9 | 13 | 19 =
+    rows.length === 9 || rows.length === 13 || rows.length === 19
+      ? rows.length
+      : 19
 
   const grid: Stone[][] = rows.map((row) =>
     row.split('').map((ch) => {
@@ -207,6 +226,14 @@ function serializeBoard(state: GoGameState): string {
 }
 
 export class GoGame {
+  // Wraps an already-computed state without building a board the caller
+  // immediately discards.
+  static fromState(state: GoGameState): GoGame {
+    const game = new GoGame(state.size)
+    game.state = state
+    return game
+  }
+
   private state: GoGameState
 
   constructor(
@@ -300,9 +327,7 @@ export class GoGame {
     newState.consecutivePasses = 0
     newState.turn = oppositeColor(newState.turn)
 
-    const game = new GoGame(newState.size)
-    game.state = newState
-    return game
+    return GoGame.fromState(newState)
   }
 
   pass(): GoGame {
@@ -313,9 +338,7 @@ export class GoGame {
     newState.turn = oppositeColor(newState.turn)
     newState.previousGrid = cloneGrid(this.state.grid)
 
-    const game = new GoGame(newState.size)
-    game.state = newState
-    return game
+    return GoGame.fromState(newState)
   }
 
   isLegal(row: number, col: number): boolean {
@@ -350,12 +373,15 @@ export class GoGame {
     const placedGroup = findGroup(testGrid, row, col)
     if (placedGroup.liberties.size === 0) return false
 
+    // Positional superko: the resulting position must not repeat the one before
+    // this move. previousGrid is carried for exactly this and was read by
+    // nothing, so a repeat-position cycle was legal.
+    const { previousGrid } = this.state
+    if (previousGrid && sameGrid(testGrid, previousGrid)) return false
+
     return true
   }
 
-  isOver(): boolean {
-    return this.state.consecutivePasses >= 2
-  }
 
   // `winner` is null for a tie (reachable with komi 0). Never resolve a tie to
   // a colour: the caller records it as a player identity.
@@ -383,47 +409,8 @@ export class GoGame {
       () => Array<'B' | 'W' | 'N' | null>(size).fill(null)
     )
 
-    const visited = new Set<string>()
-
-    for (let r = 0; r < size; r++) {
-      for (let c = 0; c < size; c++) {
-        if (grid[r][c] !== '.') continue
-        const key = `${r},${c}`
-        if (visited.has(key)) continue
-
-        const region: [number, number][] = []
-        const stack: [number, number][] = [[r, c]]
-        let touchesBlack = false
-        let touchesWhite = false
-
-        while (stack.length > 0) {
-          const [cr, cc] = stack.pop()!
-          const ck = `${cr},${cc}`
-          if (visited.has(ck)) continue
-          visited.add(ck)
-
-          if (grid[cr][cc] === '.') {
-            region.push([cr, cc])
-            for (const [nr, nc] of neighbors(cr, cc, size)) {
-              const nk = `${nr},${nc}`
-              if (!visited.has(nk)) {
-                if (grid[nr][nc] === '.') stack.push([nr, nc])
-                else if (grid[nr][nc] === 'B') touchesBlack = true
-                else if (grid[nr][nc] === 'W') touchesWhite = true
-              }
-            }
-          }
-        }
-
-        const owner: 'B' | 'W' | 'N' =
-          touchesBlack && !touchesWhite ? 'B'
-          : touchesWhite && !touchesBlack ? 'W'
-          : 'N'
-
-        for (const [tr, tc] of region) {
-          result[tr][tc] = owner
-        }
-      }
+    for (const region of emptyRegions(grid)) {
+      for (const [tr, tc] of region.cells) result[tr][tc] = region.owner
     }
 
     return result
@@ -437,15 +424,6 @@ export class GoGame {
     return serializeBoard(this.state)
   }
 
-  get previousBoard(): string | null {
-    if (!this.state.previousGrid) return null
-    // Return just the board part serialized with current metadata isn't useful,
-    // so return full previous FEN if we have it
-    const boardStr = this.state.previousGrid
-      .map((row) => row.join(''))
-      .join('/')
-    return boardStr
-  }
 
   get captures(): { black: number; white: number } {
     return {
@@ -454,9 +432,6 @@ export class GoGame {
     }
   }
 
-  get lastMove(): [number, number] | null {
-    return this.state.lastMovePos
-  }
 
   get consecutivePasses(): number {
     return this.state.consecutivePasses
@@ -466,9 +441,6 @@ export class GoGame {
     return this.state.size
   }
 
-  get grid(): Stone[][] {
-    return this.state.grid
-  }
 
   getStone(row: number, col: number): Stone {
     return this.state.grid[row][col]

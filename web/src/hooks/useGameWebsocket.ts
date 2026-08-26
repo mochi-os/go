@@ -23,7 +23,7 @@ export const useGameWebsocket = (
   // rule, and both capture counts.
   const mergeMove = useCallback<MergeMovePayload<Game>>(
     (game, payload) => ({
-      previous_fen: (payload.previous_fen as string) || game.previous_fen,
+      previous_fen: (payload.previous_fen as string) ?? game.previous_fen,
       sgf: (payload.sgf as string) ?? game.sgf,
       captures_black:
         typeof payload.captures_black === 'number'

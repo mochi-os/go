@@ -54,7 +54,12 @@ export function GoBoard({
 
   const size = game.size
   const isActive = gameStatus === 'active'
-  const isFinished = gameStatus === 'finished'
+  // 'draw' is terminal too - a tie is reachable with komi 0, and the overlay
+  // and score are exactly what a drawn game needs to explain itself. 'scoring'
+  // is not terminal, but it is the state in which the count is being agreed,
+  // so the overlay is what the players are looking at when they decide.
+  const isFinished =
+    gameStatus === 'finished' || gameStatus === 'draw' || gameStatus === 'scoring'
   const starPoints = STAR_POINTS[size] ?? []
 
   const territoryMap = useMemo(
@@ -112,6 +117,10 @@ export function GoBoard({
         case ' ':
           e.preventDefault()
           if (keyboardPos) handleClick(keyboardPos[0], keyboardPos[1])
+          break
+        case 'Escape':
+          e.preventDefault()
+          setKeyboardPos(null)
           break
         default:
           break

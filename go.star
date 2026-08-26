@@ -23,7 +23,7 @@ def go_commit_hook(table, kind, row_uid):
 	message = mochi.db.row("select * from messages where id=?", row_uid)
 	if not message:
 		return
-	game = mochi.db.row("select key, fen, previous_fen, sgf, captures_black, captures_white, status, winner from games where id=?", message["game"])
+	game = mochi.db.row("select key, fen, previous_fen, sgf, captures_black, captures_white, status, winner, draw_offer, scoring, score_black, score_white from games where id=?", message["game"])
 	if not game:
 		return
 	if message["type"] == "message":
@@ -48,7 +48,10 @@ def go_commit_hook(table, kind, row_uid):
 			"captures_white": game["captures_white"],
 			"status": game["status"],
 			"winner": game["winner"] or "",
-			"draw_offer": "",
+			"draw_offer": game["draw_offer"] or "",
+			"scoring": game["scoring"] or "",
+			"score_black": game["score_black"] if game["score_black"] != None else "",
+			"score_white": game["score_white"] if game["score_white"] != None else "",
 		})
 
 # Lazy hook registration; the call to mochi.db.commit.hook needs a
@@ -59,6 +62,21 @@ def go_ensure_commit_hook():
 	mochi.db.commit.hook("go_commit_hook")
 
 def database_upgrade(version):
+	if version == 5:
+		# Scoring agreement. Two passes now propose a score rather than declaring
+		# a result: score_black/score_white hold the proposal, scoring holds the
+		# identity of whoever has accepted it. Both accept to finish; either
+		# resumes play, which is how the rules of Go settle a disagreement about
+		# which stones are dead.
+		columns = []
+		for column in mochi.db.table("games"):
+			columns.append(column["name"])
+		if "score_black" not in columns:
+			mochi.db.execute("alter table games add column score_black real")
+		if "score_white" not in columns:
+			mochi.db.execute("alter table games add column score_white real")
+		if "scoring" not in columns:
+			mochi.db.execute("alter table games add column scoring text")
 	if version == 4:
 		# Version tuple columns (writer, event) - see the concurrency block.
 		columns = []
@@ -104,6 +122,9 @@ def database_create():
 		captures_black integer not null default 0,
 		captures_white integer not null default 0,
 		draw_offer text,
+		score_black real,
+		score_white real,
+		scoring text,
 		key text not null,
 		revision integer not null default 0,
 		writer text not null default '',
@@ -208,7 +229,7 @@ def load_game(a):
 # games row is canonical and the messages table is an activity feed - never
 # reconstruct game state from message history.
 
-GAME_COLUMNS = ["fen", "previous_fen", "sgf", "captures_black", "captures_white", "status", "winner", "draw_offer"]
+GAME_COLUMNS = ["fen", "previous_fen", "sgf", "captures_black", "captures_white", "status", "winner", "draw_offer", "score_black", "score_white", "scoring"]
 GAME_TERMINAL = ["finished", "resigned", "draw"]
 
 # Statuses a move, a pass, or an inbound move event may declare. Both terminal
@@ -218,7 +239,10 @@ GAME_TERMINAL = ["finished", "resigned", "draw"]
 # absent so a peer cannot invent a status. One list, used at all three sites:
 # it was three copies, 'draw' was added to GAME_TERMINAL and to game_state's
 # validation but to none of the copies, and a tied game was silently reopened.
-GAME_DECLARABLE = ["active", "finished", "draw"]
+# 'scoring' is where two passes now land: the score is a proposal both players
+# must accept, not a result. It is deliberately NOT in GAME_TERMINAL - a game
+# being scored is still live, and either player can resume play from it.
+GAME_DECLARABLE = ["active", "finished", "draw", "scoring"]
 
 # Columns a websocket payload may carry. Everything this game holds is
 # visible to both players, so the public set is the whole snapshot -
@@ -275,6 +299,8 @@ def game_snapshot_valid(game, state):
 		return False
 	if state["previous_fen"] and not valid_fen(state["previous_fen"]):
 		return False
+	if not textual(state["sgf"]):
+		return False
 	if len(state["sgf"]) > 10000:
 		return False
 	if not mochi.text.valid(str(state["captures_black"]), "integer"):
@@ -287,13 +313,20 @@ def game_snapshot_valid(game, state):
 		return False
 	if int(state["captures_white"]) < 0 or int(state["captures_white"]) > 361:
 		return False
-	if state["status"] not in ["active", "finished", "resigned", "draw"]:
+	if state["status"] not in GAME_DECLARABLE + ["resigned"]:
 		return False
 	players = [game["identity"], game["opponent"]]
 	if state["winner"] and state["winner"] not in players:
 		return False
 	if state["draw_offer"] and state["draw_offer"] not in players:
 		return False
+	if state["scoring"] and state["scoring"] not in players:
+		return False
+	for score in [state["score_black"], state["score_white"]]:
+		if score == "":
+			continue
+		if not mochi.text.valid(str(score), "numeric"):
+			return False
 	return True
 
 def game_write(game, changes, writer, now):
@@ -381,7 +414,15 @@ def empty_board(size):
 	return rows + " b 0 0 - 0"
 
 # Validate a Go board FEN string
+# textual(value) -> bool: whether a peer-supplied value is a string. Event
+# content is decoded JSON, so a peer controls the types; len() on a number
+# raises, and Starlark has no try/except, so the handler aborts part-done.
+def textual(value):
+	return type(value) == "string"
+
 def valid_fen(fen):
+	if not textual(fen):
+		return False
 	if not fen or len(fen) > 1000:
 		return False
 	parts = fen.split(" ")
@@ -406,6 +447,11 @@ def valid_fen(fen):
 # Get friends list for new game
 def stream_asset(a, entity_id, service, asset):
 	if not entity_id:
+		a.error.label(404, "errors.asset_unavailable", asset=asset)
+		return None
+	# mochi.remote.stream aborts the action as a 500 on a malformed entity, so
+	# refuse one here as a 404 instead. Matches chess.
+	if not mochi.text.valid(entity_id, "entity"):
 		a.error.label(404, "errors.asset_unavailable", asset=asset)
 		return None
 	s = mochi.remote.stream(entity_id, service, asset, {})
@@ -789,8 +835,16 @@ def action_pass(a):
 
 	go_ensure_commit_hook()
 	now = mochi.time.now()
-	state = game_write(game, {"fen": fen, "previous_fen": game["fen"], "sgf": sgf,
-		"status": new_status, "winner": new_winner, "draw_offer": None}, a.user.identity.id, now)
+	changes = {"fen": fen, "previous_fen": game["fen"], "sgf": sgf,
+		"status": new_status, "winner": new_winner, "draw_offer": None}
+	if new_status == "scoring":
+		# The score is a proposal, so it has to be stored: both players confirm
+		# the same numbers, and the winner is derived from them on acceptance.
+		# No acceptance carries over from an earlier proposal.
+		changes["score_black"] = float(score_black) if score_black else None
+		changes["score_white"] = float(score_white) if score_white else None
+		changes["scoring"] = None
+	state = game_write(game, changes, a.user.identity.id, now)
 	if state == None:
 		a.error.label(409, "errors.game_state_changed")
 		return
@@ -999,6 +1053,126 @@ def action_draw_decline(a):
 		"data": {"success": True}
 	}
 
+# score_result(game) -> (status, winner): the outcome the stored proposal implies.
+# White's figure already carries komi (the client adds it before proposing), so
+# this is a plain comparison; equal scores are a draw with no winner.
+def score_result(game):
+	black = game["score_black"] or 0
+	white = game["score_white"] or 0
+	if black == white:
+		return "draw", None
+	winner_is_black = black > white
+	if game["black"] == game["identity"]:
+		return "finished", game["identity"] if winner_is_black else game["opponent"]
+	return "finished", game["opponent"] if winner_is_black else game["identity"]
+
+# fen_resumed(fen) -> string: the same position with the consecutive-pass count
+# (field 5) back to zero, so resuming play does not re-enter scoring on the spot.
+def fen_resumed(fen):
+	parts = fen.split(" ")
+	if len(parts) != 6:
+		return fen
+	parts[5] = "0"
+	return " ".join(parts)
+
+# Accept the proposed score. The game ends only when BOTH players have.
+def action_score_accept(a):
+	game = load_game(a)
+	if not game:
+		return
+
+	if game["status"] != "scoring":
+		a.error.label(400, "errors.game_is_not_being_scored")
+		return
+
+	if game["scoring"] == a.user.identity.id:
+		a.error.label(400, "errors.you_already_accepted_the_score")
+		return
+
+	other = get_opponent(game, a.user.identity.id)
+	now = mochi.time.now()
+
+	if game["scoring"] == other:
+		status, winner = score_result(game)
+		changes = {"status": status, "winner": winner, "scoring": None}
+		msg = mochi.app.label("notifications.body.score_agreed")
+		event = "score_agreed"
+	else:
+		changes = {"scoring": a.user.identity.id}
+		msg = mochi.app.label("notifications.body.score_accepted")
+		event = "score_accept"
+
+	go_ensure_commit_hook()
+	state = game_write(game, changes, a.user.identity.id, now)
+	if state == None:
+		a.error.label(409, "errors.game_state_changed")
+		return
+
+	id = mochi.uid()
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', ?, ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, event, now)
+
+	# Stays on direct write: same reason as action_resign above.
+	ws_data = {"type": "system", "event": event, "name": a.user.identity.name, "created": now, "body": msg}
+	for key, value in state.items():
+		ws_data[key] = value
+	mochi.websocket.write(game["key"], ws_data)
+
+	p2p_data = {"game": game["id"], "created": now, "body": msg}
+	for key, value in state.items():
+		p2p_data[key] = value
+	mochi.message.send(
+		{"from": a.user.identity.id, "to": other, "service": "go", "event": "score_accept"},
+		p2p_data
+	)
+
+	return {
+		"data": {"success": True}
+	}
+
+# Refuse the proposed score and play on. This is how the rules of Go settle a
+# disagreement about which stones are dead: you resume and capture them.
+def action_score_resume(a):
+	game = load_game(a)
+	if not game:
+		return
+
+	if game["status"] != "scoring":
+		a.error.label(400, "errors.game_is_not_being_scored")
+		return
+
+	other = get_opponent(game, a.user.identity.id)
+	now = mochi.time.now()
+
+	go_ensure_commit_hook()
+	state = game_write(game, {"status": "active", "scoring": None, "winner": None,
+		"score_black": None, "score_white": None, "fen": fen_resumed(game["fen"])},
+		a.user.identity.id, now)
+	if state == None:
+		a.error.label(409, "errors.game_state_changed")
+		return
+
+	id = mochi.uid()
+	msg = mochi.app.label("notifications.body.score_resumed")
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'score_resume', ? )", id, game["id"], a.user.identity.id, a.user.identity.name, msg, now)
+
+	# Stays on direct write: same reason as action_resign above.
+	ws_data = {"type": "system", "event": "score_resume", "name": a.user.identity.name, "created": now, "body": msg}
+	for key, value in state.items():
+		ws_data[key] = value
+	mochi.websocket.write(game["key"], ws_data)
+
+	p2p_data = {"game": game["id"], "created": now, "body": msg}
+	for key, value in state.items():
+		p2p_data[key] = value
+	mochi.message.send(
+		{"from": a.user.identity.id, "to": other, "service": "go", "event": "score_resume"},
+		p2p_data
+	)
+
+	return {
+		"data": {"success": True}
+	}
+
 # Delete a finished game
 def action_delete(a):
 	game = load_game(a)
@@ -1046,6 +1220,12 @@ def event_new(e):
 
 	black = e.content("black")
 	if not mochi.text.valid(black, "entity"):
+		return
+	# Bind black to this game's two players. Well-formed is not enough: a peer
+	# naming a third entity makes the recipient permanently white, so the sender
+	# always moves first regardless of the 50/50 draw. Matches the identity and
+	# opponent binds below, and every other peer-supplied identity in this file.
+	if black not in [identity, opponent]:
 		return
 
 	board_size = e.content("board_size")
@@ -1116,41 +1296,26 @@ def event_move(e):
 	# Cap the move label at 20, the limit the local move path applies; it lands in
 	# the kill feed and the notification.
 	body = event_body(e.content("body"), 20, "")
-	status = e.content("status") or "active"
-	winner = e.content("winner") or None
 	previous_fen = e.content("previous_fen") or None
-	captures_black = e.content("captures_black")
-	captures_white = e.content("captures_white")
 
+	# Everything below this point is a gate, not a value: game_apply re-reads and
+	# re-validates fen, previous_fen, sgf, status, winner and both capture counts
+	# from the snapshot, so a local copy would be discarded. Refuse a malformed
+	# event here rather than carrying it.
 	if not fen or not valid_fen(fen):
 		return
 	if previous_fen and not valid_fen(previous_fen):
 		return
-	if len(sgf) > 10000:
+	if not textual(sgf) or len(sgf) > 10000:
 		return
 
-	if status not in GAME_DECLARABLE:
-		status = "active"
-	players = [game["identity"], game["opponent"]]
-	if winner and winner not in players:
-		winner = None
-
-	if captures_black:
-		if not mochi.text.valid(str(captures_black), "integer"):
+	for count in [e.content("captures_black"), e.content("captures_white")]:
+		if count == None or count == "":
+			continue
+		if not mochi.text.valid(str(count), "integer"):
 			return
-		captures_black = int(captures_black)
-		if captures_black < 0 or captures_black > 361:
+		if int(count) < 0 or int(count) > 361:
 			return
-	else:
-		captures_black = game["captures_black"]
-	if captures_white:
-		if not mochi.text.valid(str(captures_white), "integer"):
-			return
-		captures_white = int(captures_white)
-		if captures_white < 0 or captures_white > 361:
-			return
-	else:
-		captures_white = game["captures_white"]
 
 	# Apply atomically, ordered by the sender's revision: a concurrent local move
 	# must not be erased, and revision orders a legitimately recurring position
@@ -1222,14 +1387,13 @@ def event_resign(e):
 	if sender != game["identity"] and sender != game["opponent"]:
 		return
 
-	winner = e.content("winner")
 	body = event_body(e.content("body"), 10000, mochi.app.label("notifications.body.opponent_resigned"))
 	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
 
-	# Derive winner: the other player (not the one who resigned)
-	players = [game["identity"], game["opponent"]]
-	if winner not in players:
-		winner = game["opponent"] if sender == game["identity"] else game["identity"]
+	# No local winner derivation: game_apply writes the snapshot, whose winner
+	# game_snapshot_valid has already bound to the two players, and the state
+	# loop below puts that same value on the wire. A derivation here would be
+	# overwritten by it, so it corrected nothing.
 
 	now = mochi.time.now()
 	state = game_apply(e, game, now)
@@ -1243,7 +1407,7 @@ def event_resign(e):
 	# shape across resign/draw_offer/draw_accept/draw_decline and the
 	# commit hook can't disambiguate from the row — see comment on
 	# go_commit_hook above.
-	ws_data = {"type": "system", "event": "resign", "name": sender_name, "created": now, "body": body, "winner": winner or ""}
+	ws_data = {"type": "system", "event": "resign", "name": sender_name, "created": now, "body": body}
 	# A snapshot may have repaired more than this event's own subject, so send
 	# the applied state rather than just this event's fields. Otherwise an open
 	# client keeps stale values until it refetches.
@@ -1320,6 +1484,68 @@ def event_draw_accept(e):
 		ws_data[key] = value
 	mochi.websocket.write(game["key"], ws_data)
 	notify("activity", "", mochi.app.label("notifications.title.go"), mochi.app.label("notifications.body.draw_agreed"), "/go/" + game["id"], event_id="draw_accept:" + game["id"])
+
+# Received a score-acceptance event. game_apply carries the whole agreed state,
+# including the terminal status when this was the second acceptance, so there is
+# nothing to re-derive here.
+def event_score_accept(e):
+	game = mochi.db.row("select * from games where id=?", e.content("game"))
+	if not game:
+		return
+
+	sender = e.header("from")
+	if sender != game["identity"] and sender != game["opponent"]:
+		return
+
+	body = event_body(e.content("body"), 10000, mochi.app.label("notifications.body.score_accepted"))
+	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
+
+	now = mochi.time.now()
+	state = game_apply(e, game, now)
+	if state == None:
+		return
+
+	agreed = state["status"] in GAME_TERMINAL
+	event = "score_agreed" if agreed else "score_accept"
+
+	id = mochi.uid()
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', ?, ? )", id, game["id"], sender, sender_name, body, event, now)
+
+	# Stays on direct write: same reason as event_resign above.
+	ws_data = {"type": "system", "event": event, "name": sender_name, "created": now, "body": body}
+	for key, value in state.items():
+		ws_data[key] = value
+	mochi.websocket.write(game["key"], ws_data)
+	title = "notifications.body.score_agreed" if agreed else "notifications.body.score_accepted"
+	notify("activity", "", mochi.app.label("notifications.title.go"), mochi.app.label(title), "/go/" + game["id"], event_id=event + ":" + game["id"])
+
+# Received a resume-play event: the opponent disagreed with the proposed score.
+def event_score_resume(e):
+	game = mochi.db.row("select * from games where id=?", e.content("game"))
+	if not game:
+		return
+
+	sender = e.header("from")
+	if sender != game["identity"] and sender != game["opponent"]:
+		return
+
+	body = event_body(e.content("body"), 10000, mochi.app.label("notifications.body.score_resumed"))
+	sender_name = game["identity_name"] if sender == game["identity"] else game["opponent_name"]
+
+	now = mochi.time.now()
+	state = game_apply(e, game, now)
+	if state == None:
+		return
+
+	id = mochi.uid()
+	mochi.db.execute("insert into messages ( id, game, member, name, body, type, event, created ) values ( ?, ?, ?, ?, ?, 'system', 'score_resume', ? )", id, game["id"], sender, sender_name, body, now)
+
+	# Stays on direct write: same reason as event_resign above.
+	ws_data = {"type": "system", "event": "score_resume", "name": sender_name, "created": now, "body": body}
+	for key, value in state.items():
+		ws_data[key] = value
+	mochi.websocket.write(game["key"], ws_data)
+	notify("activity", "", mochi.app.label("notifications.title.go"), mochi.app.label("notifications.body.score_resumed"), "/go/" + game["id"], event_id="score_resume:" + game["id"])
 
 # Received a draw decline event
 def event_draw_decline(e):

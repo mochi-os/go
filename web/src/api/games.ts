@@ -36,8 +36,8 @@ const unwrapData = <T>(raw: unknown): T => {
 export const gamesApi = {
   list: (): Promise<GetGamesResponse> =>
     client
-      .get<{ data: Game[] }>(endpoints.game.list)
-      .then((res) => ({ games: res.data })),
+      .get<{ data: Game[] } | Game[]>(endpoints.game.list)
+      .then((res) => ({ games: unwrapData<Game[]>(res) })),
 
   detail: (gameId: string) =>
     client
@@ -88,6 +88,12 @@ export const gamesApi = {
 
   drawDecline: (gameId: string) =>
     client.post<DrawOfferResponse>(endpoints.game.drawDecline(gameId)),
+
+  scoreAccept: (gameId: string) =>
+    client.post<DrawOfferResponse>(endpoints.game.scoreAccept(gameId)),
+
+  scoreResume: (gameId: string) =>
+    client.post<DrawOfferResponse>(endpoints.game.scoreResume(gameId)),
 
   delete: (gameId: string) =>
     client.post<DeleteResponse>(endpoints.game.delete(gameId)),

@@ -28,6 +28,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  useFormat,
 } from '@mochi/web'
 import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw, SkipForward, MessageCircle } from 'lucide-react'
 import { GoGame } from '@/lib/go-engine'
@@ -48,10 +49,13 @@ import {
   useDrawOfferMutation,
   useDrawAcceptMutation,
   useDrawDeclineMutation,
+  useScoreAcceptMutation,
+  useScoreResumeMutation,
 } from '@/hooks/useGames'
 import { GameEmptyState } from './components/game-empty-state'
 import { GoBoard } from './components/go-board'
 import { DrawOfferBanner } from './components/draw-offer-banner'
+import { ScoringBanner } from './components/scoring-banner'
 import { ChatMessageList } from './components/chat-message-list'
 import { ChatInput } from './components/chat-input'
 
@@ -60,6 +64,7 @@ import { ChatInput } from './components/chat-input'
 // component's own useLingui() call.
 function goStatusText(
   t: ReturnType<typeof useLingui>['t'],
+  formatNumber: ReturnType<typeof useFormat>['formatNumber'],
   game: Game,
   myIdentity: string,
   isMyTurn: boolean,
@@ -70,7 +75,11 @@ function goStatusText(
   if (game.status === 'finished') {
     if (score?.winner) {
       const winnerColor = score.winner === 'black' ? t`Black` : t`White`
-      return t`${winnerColor} wins — B:${score.black} W:${score.white}`
+      // Both through formatNumber: white's score includes komi and is
+      // fractional, so a raw interpolation renders 6.5 where 6,5 is expected.
+      const black = formatNumber(score.black)
+      const white = formatNumber(score.white)
+      return t`${winnerColor} wins — B:${black} W:${white}`
     }
 
     // A tie now records status 'draw', but a peer on an older build still
@@ -90,6 +99,10 @@ function goStatusText(
     return t`Draw`
   }
 
+  if (game.status === 'scoring') {
+    return t`Counting — agree the score or play on`
+  }
+
   if (game.status === 'resigned') {
     return game.winner === myIdentity
       ? t`${opponentName} resigned — you win!`
@@ -101,6 +114,7 @@ function goStatusText(
 
 export function GoGameView() {
   const { t } = useLingui()
+  const { formatNumber } = useFormat()
   usePageTitle(t`Go`)
 
   const navigate = useNavigate()
@@ -144,13 +158,20 @@ export function GoGameView() {
     [games, selectedGameId]
   )
 
+  // Cleared on switch and on the game's own position change: the marker is set
+  // only from our own play, so it is stale both on the next game (drawn
+  // wherever a stone/piece happens to sit) and once the opponent replies.
+  useEffect(() => {
+    setLastMove(null)
+  }, [selectedGameId, selectedGame?.fen])
+
   // Game detail
   const {
     data: gameDetail,
     isLoading: isLoadingDetail,
     error: gameDetailError,
     refetch: refetchGameDetail,
-  } = useGameDetailQuery(selectedGame?.id)
+  } = useGameDetailQuery(selectedGameId)
 
   const game = gameDetail?.game
   const myIdentity = gameDetail?.identity ?? currentUserIdentity
@@ -166,7 +187,8 @@ export function GoGameView() {
 
   // Score for finished games
   const score = useMemo(() => {
-    if (!game || !goGame || game.status !== 'finished') return null
+    const scored = ['finished', 'draw', 'scoring']
+    if (!game || !goGame || !scored.includes(game.status)) return null
     return goGame.score(game.komi)
   }, [game, goGame])
 
@@ -223,6 +245,17 @@ export function GoGameView() {
   const drawAcceptMutation = useDrawAcceptMutation({
     onError: (error) => {
       toast.error(getErrorMessage(error, t`Failed to accept draw`))
+    },
+  })
+  // Scoring agreement
+  const scoreAcceptMutation = useScoreAcceptMutation({
+    onError: (error) => {
+      toast.error(getErrorMessage(error, t`Failed to accept score`))
+    },
+  })
+  const scoreResumeMutation = useScoreResumeMutation({
+    onError: (error) => {
+      toast.error(getErrorMessage(error, t`Failed to resume play`))
     },
   })
   const drawDeclineMutation = useDrawDeclineMutation({
@@ -308,28 +341,15 @@ export function GoGameView() {
     const isGameOver = newGame.consecutivePasses >= 2
     const scoreResult = isGameOver ? newGame.score(game.komi) : null
 
-    // A tie scores with no winning colour, so it records status 'draw' and no
-    // winner identity - both of which the server accepts. Resolving a tie to a
-    // colour would write a real player as the winner of a game nobody won.
-    const winnerColor = scoreResult?.winner ?? null
-    let winner = ''
-    if (isGameOver && winnerColor) {
-      winner = game.black === game.identity
-        ? (winnerColor === 'black' ? game.identity : game.opponent)
-        : (winnerColor === 'black' ? game.opponent : game.identity)
-    }
-    const finalStatus = !isGameOver ? undefined : winnerColor ? 'finished' : 'draw'
-
     passMutation.mutate({
       gameId: selectedGame.id,
       fen: newGame.board,
       sgf: newSgf,
-      status: finalStatus,
-      winner: isGameOver ? winner : undefined,
+      status: isGameOver ? 'scoring' : undefined,
       score_black: scoreResult?.black,
       score_white: scoreResult?.white,
     })
-  }, [game, selectedGame, goGame, myColor, myIdentity, passMutation])
+  }, [game, selectedGame, goGame, myColor, passMutation])
 
   const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault()
@@ -357,6 +377,16 @@ export function GoGameView() {
   const handleDrawAccept = () => {
     if (!selectedGame) return
     drawAcceptMutation.mutate({ gameId: selectedGame.id })
+  }
+
+  const handleScoreAccept = () => {
+    if (!selectedGame) return
+    scoreAcceptMutation.mutate({ gameId: selectedGame.id })
+  }
+
+  const handleScoreResume = () => {
+    if (!selectedGame) return
+    scoreResumeMutation.mutate({ gameId: selectedGame.id })
   }
 
   const handleDrawDecline = () => {
@@ -450,7 +480,7 @@ export function GoGameView() {
                     }
                     opponentFingerprint={opponentFingerprint || undefined}
                     opponentName={opponentName}
-                    status={goStatusText(t, game, myIdentity, isMyTurn, score)}
+                    status={goStatusText(t, formatNumber, game, myIdentity, isMyTurn, score)}
                     stats={
                       <>
                         <GameHeaderStat
@@ -533,7 +563,25 @@ export function GoGameView() {
                       </>
                     }
                     banner={
-                      game.draw_offer
+                      game.status === 'scoring'
+                        ? game.scoring === myIdentity
+                          ? (
+                              <p className='text-sm text-muted-foreground'>
+                                <Trans>Score accepted — waiting for {opponentName}</Trans>
+                              </p>
+                            )
+                          : (
+                              <ScoringBanner
+                                black={game.score_black ?? 0}
+                                white={game.score_white ?? 0}
+                                waiting={Boolean(game.scoring)}
+                                onAccept={handleScoreAccept}
+                                onResume={handleScoreResume}
+                                isAccepting={scoreAcceptMutation.isPending}
+                                isResuming={scoreResumeMutation.isPending}
+                              />
+                            )
+                        : game.draw_offer
                         ? game.draw_offer === myIdentity
                           ? (
                               <p className='text-sm text-muted-foreground'>
@@ -677,7 +725,7 @@ export function GoGameView() {
         title={goGame?.consecutivePasses === 1 ? t`End game?` : t`Pass turn?`}
         desc={
           goGame?.consecutivePasses === 1
-            ? t`${opponentName} also passed. Confirming will end the game and score the board.`
+            ? t`${opponentName} also passed. Confirming will count the board and propose a score for you both to agree.`
             : t`Skip your turn and pass to your opponent.`
         }
         confirmText={

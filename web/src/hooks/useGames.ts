@@ -14,6 +14,7 @@ import {
   type CreateGameResponse,
   type MoveResponse,
   type PassRequest,
+  type DrawOfferResponse,
 } from '@/api/games'
 
 const shared = createGameHooks(gamesApi)
@@ -58,9 +59,52 @@ export const usePassMutation = (
       queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
       onSuccess?.(data, variables, context, mutation)
     },
+    onError: (error, variables, context, mutation) => {
+      // Mirror createGameHooks' useMoveMutation: a rejected pass otherwise
+      // leaves the client showing a position the server never took, and pass is
+      // where the client also computes the terminal status and score.
+      queryClient.invalidateQueries({
+        queryKey: gameKeys.detail(variables.gameId),
+        exact: true,
+      })
+      restOptions.onError?.(error, variables, context, mutation)
+    },
     ...restOptions,
   })
 }
+
+// Accepting or refusing the proposed score. Both change the game's status and
+// its message list, so they invalidate what a pass does.
+const useScoringMutation = (
+  call: (gameId: string) => Promise<DrawOfferResponse>,
+  options?: UseMutationOptions<DrawOfferResponse, Error, { gameId: string }, unknown>
+) => {
+  const queryClient = useQueryClient()
+  const { onSuccess, ...restOptions } = options ?? {}
+  return useMutation({
+    mutationFn: ({ gameId }: { gameId: string }) => call(gameId),
+    onSuccess: (data, variables, context, mutation) => {
+      queryClient.invalidateQueries({
+        queryKey: gameKeys.messages(variables.gameId),
+      })
+      queryClient.invalidateQueries({
+        queryKey: gameKeys.detail(variables.gameId),
+        exact: true,
+      })
+      queryClient.invalidateQueries({ queryKey: gameKeys.all(), exact: true })
+      onSuccess?.(data, variables, context, mutation)
+    },
+    ...restOptions,
+  })
+}
+
+export const useScoreAcceptMutation = (
+  options?: UseMutationOptions<DrawOfferResponse, Error, { gameId: string }, unknown>
+) => useScoringMutation(gamesApi.scoreAccept, options)
+
+export const useScoreResumeMutation = (
+  options?: UseMutationOptions<DrawOfferResponse, Error, { gameId: string }, unknown>
+) => useScoringMutation(gamesApi.scoreResume, options)
 
 interface CreateGameVariables {
   opponent: string

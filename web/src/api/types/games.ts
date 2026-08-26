@@ -16,11 +16,18 @@ export interface Game {
   black: string
   board_size: number
   komi: number
-  status: 'active' | 'finished' | 'draw' | 'resigned'
+  // 'scoring' is the agreement step after two passes: the score below is a
+  // proposal, not a result, and the game is still live until both players
+  // accept it. Either player can send it back to 'active' instead.
+  status: 'active' | 'finished' | 'draw' | 'resigned' | 'scoring'
   winner: string | null
   // Only on the detail response; list rows never carry it.
   key?: string
   draw_offer: string | null
+  // Identity of whoever has accepted the proposed score, or null.
+  scoring: string | null
+  score_black: number | null
+  score_white: number | null
   fen: string
   previous_fen: string | null
   sgf: string
@@ -94,8 +101,6 @@ export interface MoveRequest {
   captures_black: number
   captures_white: number
   move_label: string
-  status?: string
-  winner?: string
 }
 
 export interface PassRequest {
