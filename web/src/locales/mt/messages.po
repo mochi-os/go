@@ -70,13 +70,25 @@ msgstr "{name} offra draw"
 msgid "{name} resigned"
 msgstr "{name} irriżenja"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} ukoll għadda. Konferma se tgħodd il-bord u tipproponi score li t-tnejn li intom trid taqblu dwaru."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} offra draw"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} ċeda — rbaħt!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "Jirbaħ {opponentName}"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "Imiss lil {opponentName}"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# oġġett} few {# oġġetti} many {# oġġett
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Iftaħ il-menu (# notifika mhux moqrija)} few {Iftaħ il-menu (# notifiki mhux moqrija)} many {Iftaħ il-menu (# notifiki mhux moqrija)} other {Iftaħ il-menu (# notifiki mhux moqrija)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "Jirbaħ {winnerColor} — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Żgur trid tħassar dan il-kumment? Dan iħassar ukoll ir-risposti kollh
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Żgur trid toħroġ? Trid terġa' tidħol biex taċċessa l-kont tiegħek."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Żgur trid tirriżenja? {opponentName} tirbaħ il-logħba."
 
@@ -343,11 +359,12 @@ msgstr "Lura għall-paġna ewlenija"
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Iswed"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Qbid tal-iswed:"
 
@@ -434,8 +451,8 @@ msgstr "Kategorija għal dawn in-notifiki"
 msgid "Change notification category"
 msgstr "Ibdel il-kategorija tan-notifika"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Chat"
 
@@ -634,6 +651,10 @@ msgstr "Ma setgħetx tinbeda l-awtentikazzjoni mill-ġdid. Jekk jogħġbok erġa
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Ma stajniex nivverifikaw b'dak il-kont. Jekk jogħġbok erġa' pprova."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Għadd — aqblu dwar il-punteġġ jew kompli lagħbu"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Ssortjar default"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Ħassar"
 
@@ -723,11 +744,11 @@ msgstr "Ħassar kumment"
 msgid "Delete field"
 msgstr "Ħassar kamp"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Ħassar logħba"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Ħassar il-logħba?"
 
@@ -749,7 +770,7 @@ msgstr "Ħassar view"
 msgid "Delete your account on the old server"
 msgstr "Ħassar il-kont tiegħek fuq is-server il-qadim"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Qed iħassar..."
 
@@ -817,11 +838,16 @@ msgstr "Niżżel"
 msgid "Download failed"
 msgstr "It-tniżżil falla"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Draw"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Draw maqbul"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Patta offruta — qed nistenna lil {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Intersezzjoni vojta {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Intersezzjoni vojta {colLabel}{rowLabel}, ikklikkja jew agħfas Enter biex tpoġġi"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Temm il-logħba"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Temm il-logħba?"
 
@@ -927,11 +953,11 @@ msgstr "URL Estern"
 msgid "Extra large"
 msgstr "Kbir ħafna"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Ma rnexxiex jiġi aċċettat il-patta"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Ma rnexxiex jiġi aċċettat l-iscore"
 
@@ -949,11 +975,11 @@ msgstr "Ma rnexxiex tinħoloq il-logħba"
 msgid "Failed to create link"
 msgstr "Ma rnexxiex jinħoloq il-link"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Ma rnexxiex tinħoloq it-tieni partita"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Ma rnexxiex jiġi rrifjutat il-patta"
 
@@ -965,7 +991,7 @@ msgstr "Ma rnexxiex jitħassar l-attachment"
 msgid "Failed to delete comment"
 msgstr "Ma rnexxiex jitħassar il-kumment"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Ma rnexxiex titħassar il-logħba"
 
@@ -993,15 +1019,15 @@ msgstr "Ma rnexxielux jitgħabba l-istampa"
 msgid "Failed to load video"
 msgstr "Ma rnexxielux jitgħabba l-vidjo"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Ma rnexxiex isir il-mossa"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Ma rnexxiex jiġi offrut il-patta"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Ma rnexxiex jiġi pass"
 
@@ -1009,11 +1035,11 @@ msgstr "Ma rnexxiex jiġi pass"
 msgid "Failed to post comment"
 msgstr "Ma rnexxiex jiġi postjat il-kumment"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Ma rnexxiex jiġi rriżenjat"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Ma rnexxiex jitkompla l-logħob"
 
@@ -1021,8 +1047,8 @@ msgstr "Ma rnexxiex jitkompla l-logħob"
 msgid "Failed to revoke RSS access"
 msgstr "Ma rnexxiex jiġi rrevokat l-aċċess RSS"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Ma rnexxiex jintbagħat"
 
@@ -1076,13 +1102,17 @@ msgstr "Mit-tema"
 msgid "Game created"
 msgstr "Inħolqot il-logħba"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Tħassret il-logħba"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Il-logħba ntemmet"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Mur"
 
@@ -1459,7 +1489,7 @@ msgstr "Notifiki: {0}"
 msgid "Number"
 msgstr "Numru"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Offri draw"
 
@@ -1476,11 +1506,11 @@ msgstr "Oops! Paġna Mhux Misjuba!"
 msgid "Open actions"
 msgstr "Iftaħ l-azzjonijiet"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Iftaħ panel tal-chat"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Iftaħ azzjonijiet tal-logħba"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Ġenitur"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Pass"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Tgħaddi t-tour?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Tgħaddi..."
 
@@ -1667,7 +1697,7 @@ msgstr "Relattiv (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relattiv fi 24 siegħa, inkella assolut"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Logħba mill-ġdid"
 
@@ -1743,16 +1773,16 @@ msgstr "Meħtieġ"
 msgid "Resend email"
 msgstr "Erġa' ibgħat l-email"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Irriżenja"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Tirriżenja l-logħba?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Qed jirriżenja..."
 
@@ -1809,7 +1839,7 @@ msgstr "Is-Sibt"
 msgid "Save"
 msgstr "Issejvja"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Score aċċettat — qed nistenna lil {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Qed toħroġ..."
 msgid "Single line of text only"
 msgstr "Linja waħda biss ta' test"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Aqbeż id-dawra tiegħek u għaddi lill-avversarju."
 
@@ -2110,7 +2140,7 @@ msgstr "Il-kontenut mitlub ma setax jinstab."
 msgid "The server returned a web page instead of data."
 msgstr "Is-server irritorna paġna web minflok data."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Dan għad iħassar il-logħba u ċ-chat tagħha b'mod permanenti. Din l-azzjoni ma tistax titħassar."
 
@@ -2312,11 +2342,12 @@ msgstr "Bgħatna kodiċi ta' verifika lil <0>{0}</0>. Daħħal il-kodiċi hawn t
 msgid "Wednesday"
 msgstr "L-Erbgħa"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Abjad"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Abjad jaqbad:"
 
@@ -2336,6 +2367,14 @@ msgstr "Int"
 msgid "You do not have access to this section."
 msgstr "M'għandekx aċċess għal din it-taqsima."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Ċedejt — jirbaħ {opponentName}"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Rebaħt!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Il-kont tiegħek ġie miċċaqqlaq hawn minn {source}. Sakemm tħassru hemm, il-messaġġi u n-notifiki jistgħu jaslu fuq iż-żewġ servers, xi kontenut tiegħek jibqa' jingħata mis-server il-qadim, u s-segwaċi jistgħu jieħdu ftit minuti biex isibuk hawn."
@@ -2343,6 +2382,10 @@ msgstr "Il-kont tiegħek ġie miċċaqqlaq hawn minn {source}. Sakemm tħassru h
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "L-annessi tiegħek se jintilfu."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Il-mossa tiegħek"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

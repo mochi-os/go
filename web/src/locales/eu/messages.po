@@ -70,13 +70,25 @@ msgstr "{name}(e)k berdinketa eskaini du"
 msgid "{name} resigned"
 msgstr "{name} amore eman du"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName}-(e)k ere pasatu du. Berresteak taula zenbatuko du eta biok adostu beharreko puntuazio bat proposatuko du."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName}-(e)k berdinketa eskaini du"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName}(e)k amore eman du — irabazi duzu!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName}(e)k irabazi du"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName}(r)en txanda"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {elementu #} other {# elementu}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Ireki menua (irakurri gabeko # jakinarazpen)} other {Ireki menua (irakurri gabeko # jakinarazpen)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor}(e)k irabazi du — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Ziur al zaude iruzkin hau ezabatu nahi duzula? Honek erantzun guztiak er
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Ziur al zaude saioa amaitu nahi duzula? Berriro hasi beharko duzu saioa zure kontura sartzeko."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Ziur al zaude amore eman nahi duzula? {opponentName}-(e)k irabaziko du jokoa."
 
@@ -343,11 +359,12 @@ msgstr "Itzuli hasierara"
 msgid "Banner"
 msgstr "Iragarki-banda"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Beltza"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Beltzak hartuak:"
 
@@ -434,8 +451,8 @@ msgstr "Jakinarazpen hauentzako kategoria"
 msgid "Change notification category"
 msgstr "Aldatu jakinarazpen kategoria"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Txata"
 
@@ -634,6 +651,10 @@ msgstr "Ezin izan da berrautentifikazioa hasi. Saiatu berriro."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Ezin izan da kontu horrekin egiaztatu. Saiatu berriro."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Zenbaketa — adostu puntuazioa edo jarraitu jokatzen"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Lehenetsitako ordena"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Ezabatu"
 
@@ -723,11 +744,11 @@ msgstr "Ezabatu iruzkina"
 msgid "Delete field"
 msgstr "Ezabatu eremua"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Ezabatu jokoa"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Jokoa ezabatu?"
 
@@ -749,7 +770,7 @@ msgstr "Ezabatu ikuspegia"
 msgid "Delete your account on the old server"
 msgstr "Ezabatu zure kontua zerbitzari zaharrean"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Ezabatzen..."
 
@@ -817,11 +838,16 @@ msgstr "Deskargatu"
 msgid "Download failed"
 msgstr "Deskargak huts egin du"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Berdinketa"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Berdinketa adostuta"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Berdinketa eskainita — {opponentName} itxaroten"
 
@@ -888,11 +914,11 @@ msgstr "Ebakidura hutsa {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Ebakidura hutsa {colLabel}{rowLabel}, egin klik edo sakatu Enter jartzeko"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Amaitu jokoa"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Jokoa amaitu?"
 
@@ -927,11 +953,11 @@ msgstr "Kanpoko URL-a"
 msgid "Extra large"
 msgstr "Oso handia"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Ezin izan da berdinketa onartu"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Ezin izan da puntuazioa onartu"
 
@@ -949,11 +975,11 @@ msgstr "Ezin izan da jokoa sortu"
 msgid "Failed to create link"
 msgstr "Ezin izan da esteka sortu"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Ezin izan da errebantxa sortu"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Ezin izan da berdinketa errefusatu"
 
@@ -965,7 +991,7 @@ msgstr "Ezin izan da eranskina ezabatu"
 msgid "Failed to delete comment"
 msgstr "Ezin izan da iruzkina ezabatu"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Ezin izan da jokoa ezabatu"
 
@@ -993,15 +1019,15 @@ msgstr "Ezin izan da irudia kargatu"
 msgid "Failed to load video"
 msgstr "Ezin izan da bideoa kargatu"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Ezin izan da mugimendua egin"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Ezin izan da berdinketa eskaini"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Ezin izan da pasatu"
 
@@ -1009,11 +1035,11 @@ msgstr "Ezin izan da pasatu"
 msgid "Failed to post comment"
 msgstr "Ezin izan da iruzkina argitaratu"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Ezin izan da amore eman"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Ezin izan da partida berrekin"
 
@@ -1021,8 +1047,8 @@ msgstr "Ezin izan da partida berrekin"
 msgid "Failed to revoke RSS access"
 msgstr "Ezin izan da RSS sarbidea ezeztatu"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Ezin izan da bidali"
 
@@ -1076,13 +1102,17 @@ msgstr "Gaiatik"
 msgid "Game created"
 msgstr "Jokoa sortuta"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Jokoa ezabatuta"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Jokoa amaituta"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Joan"
 
@@ -1459,7 +1489,7 @@ msgstr "Jakinarazpenak: {0}"
 msgid "Number"
 msgstr "Zenbakia"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Eskaini berdinketa"
 
@@ -1476,11 +1506,11 @@ msgstr "Hutsegitea! Ez da orria aurkitu!"
 msgid "Open actions"
 msgstr "Ireki ekintzak"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Ireki txat-panela"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Ireki joko-ekintzak"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Gurasoa"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Pasa"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Txanda pasatu?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Pasatzen..."
 
@@ -1667,7 +1697,7 @@ msgstr "Erlatiboa (5m, 3o, 2e)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Erlatiboa 24 ordu barruan, bestela absolutua"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Itzulketa-partida"
 
@@ -1743,16 +1773,16 @@ msgstr "Beharrezkoa"
 msgid "Resend email"
 msgstr "Bidali mezua berriro"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Amore eman"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Jokoan amore eman?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Amore ematen..."
 
@@ -1809,7 +1839,7 @@ msgstr "Larunbata"
 msgid "Save"
 msgstr "Gorde"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Puntuazioa onartuta — {opponentName} itxaroten"
 
@@ -2002,7 +2032,7 @@ msgstr "Saioa amaitzen..."
 msgid "Single line of text only"
 msgstr "Lerro bakarreko testua soilik"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Saltatu zure txanda eta pasatu aurkariari."
 
@@ -2110,7 +2140,7 @@ msgstr "Eskatutako edukia ezin izan da aurkitu."
 msgid "The server returned a web page instead of data."
 msgstr "Zerbitzariak web-orri bat itzuli du datuen ordez."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Honek jokoa eta bere txata betiko ezabatuko ditu. Ekintza hau ezin da desegin."
 
@@ -2312,11 +2342,12 @@ msgstr "Egiaztapen-kode bat bidali dugu <0>{0}</0> helbidera. Sartu kodea behean
 msgid "Wednesday"
 msgstr "Asteazkena"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Zuria"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Zuriaren harrapaketak:"
 
@@ -2336,6 +2367,14 @@ msgstr "Zu"
 msgid "You do not have access to this section."
 msgstr "Ez duzu atal honetarako sarbiderik."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Amore eman duzu — {opponentName}(e)k irabazi du"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Irabazi duzu!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Zure kontua {source}-etik hona mugitu da. Han ezabatu arte, mezuak eta jakinarazpenak bi zerbitzarietara irits daitezke, zure edukiaren zati bat zerbitzari zaharretik ematen jarraitzen du, eta jarraitzaileek minutu batzuk behar izan ditzakete zu hemen aurkitzeko."
@@ -2343,6 +2382,10 @@ msgstr "Zure kontua {source}-etik hona mugitu da. Han ezabatu arte, mezuak eta j
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Zure eranskinak galduko dira."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Zure mugimendua"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

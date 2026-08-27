@@ -70,13 +70,25 @@ msgstr "{name}が引き分けを提案しました"
 msgid "{name} resigned"
 msgstr "{name}が投了しました"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName}もパスしました。確認すると盤面を集計し、二人で合意するスコアを提案します。"
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName}が引き分けを提案しました"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName}が投了しました — あなたの勝ちです"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName}の勝ちです"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName}の手番です"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# 件} other {# 件}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {メニューを開く（未読の通知 # 件）} other {メニューを開く（未読の通知 # 件）}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor}の勝ち — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "このコメントを削除しますか？すべての返信も削除さ
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "本当にログアウトしますか？再度アクセスするにはログインが必要です。"
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "本当に投了しますか?{opponentName}の勝ちになります。"
 
@@ -343,11 +359,12 @@ msgstr "ホームに戻る"
 msgid "Banner"
 msgstr "バナー"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "黒"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "黒のアゲハマ:"
 
@@ -434,8 +451,8 @@ msgstr "これらの通知のカテゴリ"
 msgid "Change notification category"
 msgstr "通知カテゴリを変更"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "チャット"
 
@@ -634,6 +651,10 @@ msgstr "再認証を開始できませんでした。もう一度お試しくだ
 msgid "Couldn't verify with that account. Please try again."
 msgstr "そのアカウントで確認できませんでした。もう一度お試しください。"
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "計算中 — 整地に合意するか対局を続けてください"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "デフォルトの並び順"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "削除"
 
@@ -723,11 +744,11 @@ msgstr "コメントを削除"
 msgid "Delete field"
 msgstr "フィールドを削除"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "ゲームを削除"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "ゲームを削除しますか?"
 
@@ -749,7 +770,7 @@ msgstr "ビューを削除"
 msgid "Delete your account on the old server"
 msgstr "旧サーバーのアカウントを削除する"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "削除中..."
 
@@ -817,11 +838,16 @@ msgstr "ダウンロード"
 msgid "Download failed"
 msgstr "ダウンロードに失敗しました"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "引き分け"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "引き分けが成立しました"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "引き分けを提案しました — {opponentName}の応答を待っています"
 
@@ -888,11 +914,11 @@ msgstr "空の交点 {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "空の交点 {colLabel}{rowLabel}、クリックまたはEnterで配置"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "ゲーム終了"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "ゲームを終了しますか?"
 
@@ -927,11 +953,11 @@ msgstr "外部 URL"
 msgid "Extra large"
 msgstr "特大"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "引き分けの承諾に失敗しました"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "スコアの承認に失敗しました"
 
@@ -949,11 +975,11 @@ msgstr "ゲームの作成に失敗しました"
 msgid "Failed to create link"
 msgstr "リンクの作成に失敗しました"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "再戦の作成に失敗しました"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "引き分けの拒否に失敗しました"
 
@@ -965,7 +991,7 @@ msgstr "添付ファイルの削除に失敗しました"
 msgid "Failed to delete comment"
 msgstr "コメントの削除に失敗しました"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "ゲームの削除に失敗しました"
 
@@ -993,15 +1019,15 @@ msgstr "画像を読み込めませんでした"
 msgid "Failed to load video"
 msgstr "動画を読み込めませんでした"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "着手に失敗しました"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "引き分けの申し出に失敗しました"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "パスに失敗しました"
 
@@ -1009,11 +1035,11 @@ msgstr "パスに失敗しました"
 msgid "Failed to post comment"
 msgstr "コメントの投稿に失敗しました"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "投了に失敗しました"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "対局の再開に失敗しました"
 
@@ -1021,8 +1047,8 @@ msgstr "対局の再開に失敗しました"
 msgid "Failed to revoke RSS access"
 msgstr "RSSアクセスの取り消しに失敗しました"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "送信に失敗しました"
 
@@ -1076,13 +1102,17 @@ msgstr "テーマから"
 msgid "Game created"
 msgstr "ゲームを作成しました"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "ゲームを削除しました"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "ゲーム終了"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "囲碁"
 
@@ -1459,7 +1489,7 @@ msgstr "通知: {0}"
 msgid "Number"
 msgstr "数値"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "引き分けを申し出る"
 
@@ -1476,11 +1506,11 @@ msgstr "ページが見つかりません!"
 msgid "Open actions"
 msgstr "操作メニューを開く"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "チャットパネルを開く"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "ゲーム操作を開く"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "親"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "パス"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "ターンを渡しますか?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "パス中..."
 
@@ -1667,7 +1697,7 @@ msgstr "相対 (5分、3時間、2日)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24時間以内は相対、それ以外は絶対"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "再戦"
 
@@ -1743,16 +1773,16 @@ msgstr "必須"
 msgid "Resend email"
 msgstr "メールを再送信"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "投了"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "ゲームを投了しますか?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "投了中..."
 
@@ -1809,7 +1839,7 @@ msgstr "土曜日"
 msgid "Save"
 msgstr "保存"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "スコアを受け入れました — {opponentName}の応答を待っています"
 
@@ -2002,7 +2032,7 @@ msgstr "サインアウト中..."
 msgid "Single line of text only"
 msgstr "1 行のテキストのみ"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "自分の番をパスして相手に渡します。"
 
@@ -2110,7 +2140,7 @@ msgstr "リクエストされたコンテンツが見つかりませんでした
 msgid "The server returned a web page instead of data."
 msgstr "サーバーがデータではなくウェブページを返しました。"
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "この操作でゲームとそのチャットが完全に削除されます。この操作は元に戻せません。"
 
@@ -2312,11 +2342,12 @@ msgstr "<0>{0}</0> に確認コードを送信しました。メールアドレ�
 msgid "Wednesday"
 msgstr "水曜日"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "白"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "白のアゲハマ:"
 
@@ -2336,6 +2367,14 @@ msgstr "あなた"
 msgid "You do not have access to this section."
 msgstr "このセクションへのアクセス権がありません。"
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "投了しました — {opponentName}の勝ちです"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "勝ちました！"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "アカウントが{source}からここに移行されました。そちらで削除するまで、メッセージや通知が両方のサーバーに届く場合があり、一部のコンテンツは旧サーバーから引き続き提供され、フォロワーがここであなたを見つけるまで数分かかる場合があります。"
@@ -2343,6 +2382,10 @@ msgstr "アカウントが{source}からここに移行されました。そち�
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "添付ファイルは失われます。"
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "あなたの番です"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

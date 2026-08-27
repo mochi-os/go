@@ -70,13 +70,25 @@ msgstr "{name} സമനില വാഗ്ദാനം ചെയ്തു"
 msgid "{name} resigned"
 msgstr "{name} കീഴടങ്ങി"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} ഉം പാസ് ചെയ്തു. സ്ഥിരീകരിച്ചാൽ ബോർഡ് എണ്ണുകയും നിങ്ങൾ ഇരുവരും അംഗീകരിക്കേണ്ട ഒരു സ്കോർ നിർദ്ദേശിക്കുകയും ചെയ്യും."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} സമനില വാഗ്ദാനം ചെയ്തു"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} കീഴടങ്ങി — നിങ്ങൾ ജയിച്ചു!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} ജയിച്ചു"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName}-ന്റെ ഊഴം"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# ഇനം} other {# ഇനങ്ങൾ}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {മെനു തുറക്കുക (# വായിക്കാത്ത അറിയിപ്പ്)} other {മെനു തുറക്കുക (# വായിക്കാത്ത അറിയിപ്പുകൾ)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} ജയിച്ചു — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "ഈ അഭിപ്രായം ഇല്ലാതാക്കണമെ�
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "ലോഗ് ഔട്ട് ചെയ്യണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ? നിങ്ങളുടെ അക്കൗണ്ട് ആക്സസ് ചെയ്യാൻ വീണ്ടും ലോഗിൻ ചെയ്യേണ്ടിവരും."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "നിങ്ങൾ കീഴടങ്ങാൻ തീർച്ചയാണോ? {opponentName} ഗെയിം ജയിക്കും."
 
@@ -343,11 +359,12 @@ msgstr "ഹോമിലേക്ക് മടങ്ങുക"
 msgid "Banner"
 msgstr "ബാനർ"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "കറുപ്പ്"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "കറുപ്പ് പിടിച്ചത്:"
 
@@ -434,8 +451,8 @@ msgstr "ഈ അറിയിപ്പുകൾക്കുള്ള വിഭാ�
 msgid "Change notification category"
 msgstr "അറിയിപ്പ് വിഭാഗം മാറ്റുക"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "ചാറ്റ്"
 
@@ -634,6 +651,10 @@ msgstr "വീണ്ടും പരിശോധന ആരംഭിക്കാ�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ആ അക്കൗണ്ട് ഉപയോഗിച്ച് പരിശോധിക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "എണ്ണൽ — സ്കോർ അംഗീകരിക്കുക അല്ലെങ്കിൽ കളി തുടരുക"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "ഡിഫോൾട്ട് സോർട്ട്"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "ഇല്ലാതാക്കുക"
 
@@ -723,11 +744,11 @@ msgstr "അഭിപ്രായം ഇല്ലാതാക്കുക"
 msgid "Delete field"
 msgstr "ഫീൽഡ് ഇല്ലാതാക്കുക"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "ഗെയിം ഇല്ലാതാക്കുക"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "ഗെയിം ഇല്ലാതാക്കണോ?"
 
@@ -749,7 +770,7 @@ msgstr "കാഴ്ച ഇല്ലാതാക്കുക"
 msgid "Delete your account on the old server"
 msgstr "പഴയ സെർവറിൽ നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കുക"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "ഇല്ലാതാക്കുന്നു..."
 
@@ -817,11 +838,16 @@ msgstr "ഡൗൺലോഡ്"
 msgid "Download failed"
 msgstr "ഡൗൺലോഡ് പരാജയപ്പെട്ടു"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "സമനില"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "സമനില അംഗീകരിച്ചു"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "സമനില വാഗ്ദാനം ചെയ്തു — {opponentName}-നായി കാത്തിരിക്കുന്നു"
 
@@ -888,11 +914,11 @@ msgstr "ശൂന്യമായ കവല {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ശൂന്യമായ കവല {colLabel}{rowLabel}, വയ്ക്കാൻ ക്ലിക്ക് ചെയ്യുക അല്ലെങ്കിൽ Enter അമർത്തുക"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "ഗെയിം അവസാനിപ്പിക്കുക"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "ഗെയിം അവസാനിപ്പിക്കണോ?"
 
@@ -927,11 +953,11 @@ msgstr "ബാഹ്യ URL"
 msgid "Extra large"
 msgstr "അധിക വലുത്"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "സമനില സ്വീകരിക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "സ്കോർ സ്വീകരിക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
@@ -949,11 +975,11 @@ msgstr "ഗെയിം സൃഷ്ടിക്കുന്നതിൽ പര�
 msgid "Failed to create link"
 msgstr "ലിങ്ക് സൃഷ്ടിക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "റീമാച്ച് സൃഷ്ടിക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "സമനില നിരസിക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
@@ -965,7 +991,7 @@ msgstr "അറ്റാച്ച്മെന്റ് ഇല്ലാതാക�
 msgid "Failed to delete comment"
 msgstr "അഭിപ്രായം ഇല്ലാതാക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "ഗെയിം ഇല്ലാതാക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
@@ -993,15 +1019,15 @@ msgstr "ചിത്രം ലോഡ് ചെയ്യാനായില്ല"
 msgid "Failed to load video"
 msgstr "വീഡിയോ ലോഡ് ചെയ്യാനായില്ല"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "നീക്കം നടത്തുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "സമനില വാഗ്ദാനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "പാസ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
 
@@ -1009,11 +1035,11 @@ msgstr "പാസ് ചെയ്യുന്നതിൽ പരാജയപ്�
 msgid "Failed to post comment"
 msgstr "അഭിപ്രായം പോസ്റ്റുചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "രാജിവയ്ക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "കളി പുനരാരംഭിക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
@@ -1021,8 +1047,8 @@ msgstr "കളി പുനരാരംഭിക്കുന്നതിൽ പ�
 msgid "Failed to revoke RSS access"
 msgstr "RSS ആക്‌സസ് പിൻവലിക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "അയയ്ക്കുന്നതിൽ പരാജയപ്പെട്ടു"
 
@@ -1076,13 +1102,17 @@ msgstr "തീമിൽ നിന്ന്"
 msgid "Game created"
 msgstr "ഗെയിം സൃഷ്ടിച്ചു"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "ഗെയിം ഇല്ലാതാക്കി"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "ഗെയിം അവസാനിച്ചു"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "പോകുക"
 
@@ -1459,7 +1489,7 @@ msgstr "അറിയിപ്പുകൾ: {0}"
 msgid "Number"
 msgstr "സംഖ്യ"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "സമനില വാഗ്ദാനം ചെയ്യുക"
 
@@ -1476,11 +1506,11 @@ msgstr "ഓ! പേജ് കണ്ടെത്തിയില്ല!"
 msgid "Open actions"
 msgstr "പ്രവർത്തനങ്ങൾ തുറക്കുക"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "ചാറ്റ് പാനൽ തുറക്കുക"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "ഗെയിം പ്രവർത്തനങ്ങൾ തുറക്കുക"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "parent"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "പാസ് ചെയ്യുക"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "ടേൺ പാസ് ചെയ്യണോ?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "പാസ് ചെയ്യുന്നു..."
 
@@ -1667,7 +1697,7 @@ msgstr "24 മണിക്കൂറിനുള്ളിൽ ആപേക്ഷ�
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 മണിക്കൂറിനുള്ളിൽ ആപേക്ഷികം, അല്ലാത്തപക്ഷം കൃത്യം"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "നീക്കം ചെയ്യുക"
 
@@ -1743,16 +1773,16 @@ msgstr "Reserve പൂർത്തിയായില്ല"
 msgid "Resend email"
 msgstr "ഇമെയിൽ വീണ്ടും അയയ്ക്കുക"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "ഗെയിം പിന്മാറണോ?"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "പിന്മാറുന്നു..."
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "റെസല്യൂഷൻ"
 
@@ -1809,7 +1839,7 @@ msgstr "ശനിയാഴ്ച"
 msgid "Save"
 msgstr "സേവ് ചെയ്യുക"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "സ്കോർ അംഗീകരിച്ചു — {opponentName}-നായി കാത്തിരിക്കുന്നു"
 
@@ -2002,7 +2032,7 @@ msgstr "സൈൻ ഔട്ട് ചെയ്യുന്നു..."
 msgid "Single line of text only"
 msgstr "ഒറ്റ വരി ടെക്സ്റ്റ് മാത്രം"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "നിങ്ങളുടെ ഊഴം ഒഴിവാക്കി എതിരാളിക്ക് കൈമാറുക."
 
@@ -2110,7 +2140,7 @@ msgstr "അഭ്യർത്ഥിച്ച ഉള്ളടക്കം കണ�
 msgid "The server returned a web page instead of data."
 msgstr "സെർവർ ഡാറ്റയ്ക്ക് പകരം ഒരു വെബ് പേജ് തിരികെ നൽകി."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ഇത് ഗെയിമും അതിന്റെ ചാറ്റും ശാശ്വതമായി ഇല്ലാതാക്കും. ഈ പ്രവർത്തി പഴയപടിയാക്കാൻ കഴിയില്ല."
 
@@ -2312,11 +2342,12 @@ msgstr "ഞങ്ങൾ <0>{0}</0> എന്നതിലേക്ക് ഒര�
 msgid "Wednesday"
 msgstr "ബുധനാഴ്ച"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "വെള്ള"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "വെള്ള പിടിച്ചത്:"
 
@@ -2336,6 +2367,14 @@ msgstr "നിങ്ങൾ"
 msgid "You do not have access to this section."
 msgstr "ഈ വിഭാഗത്തിലേക്ക് നിങ്ങൾക്ക് പ്രവേശനമില്ല."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "നിങ്ങൾ കീഴടങ്ങി — {opponentName} ജയിച്ചു"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "നിങ്ങൾ വിജയിച്ചു!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "നിങ്ങളുടെ അക്കൗണ്ട് {source} ൽ നിന്ന് ഇവിടേക്ക് മാറ്റി. അവിടെ ഇല്ലാതാക്കുന്നതുവരെ, സന്ദേശങ്ങളും അറിയിപ്പുകളും രണ്ട് സെർവറുകളിലും എത്തിയേക്കാം, നിങ്ങളുടെ ചില ഉള്ളടക്കം പഴയ സെർവറിൽ നിന്ന് വിതരണം ചെയ്യപ്പെടും, ഫോളോവർമാർ ഇവിടെ നിങ്ങളെ കണ്ടെത്താൻ ഏതാനും മിനിറ്റ് എടുക്കാം."
@@ -2343,6 +2382,10 @@ msgstr "നിങ്ങളുടെ അക്കൗണ്ട് {source} ൽ ന
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "നിങ്ങളുടെ അറ്റാച്ചുമെന്റുകൾ നഷ്ടപ്പെടും."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "നിങ്ങളുടെ നീക്കം"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

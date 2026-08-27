@@ -70,13 +70,25 @@ msgstr "{name} បានស្នើស្មើ"
 msgid "{name} resigned"
 msgstr "{name} បានចុះចាញ់"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} ក៏បានប្រគល់។ ការបញ្ជាក់នឹងរាប់ក្តារ ហើយស្នើពិន្ទុមួយដែលអ្នកទាំងពីរត្រូវយល់ព្រម។"
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} បានស្នើស្មើ"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} បានចុះចាញ់ — អ្នកឈ្នះ!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} ឈ្នះ"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "វេនរបស់ {opponentName}"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, other {# ធាតុ}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, other {បើកម៉ឺនុយ (ការជូនដំណឹងមិនទាន់អាន # )}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} ឈ្នះ — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "តើអ្នកប្រាកដថាចង់លុបមតិយ
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "តើអ្នកប្រាកដថាចង់ចាកចេញមែនទេ? អ្នកនឹងត្រូវចូលម្តងទៀតដើម្បីចូលប្រើគណនីរបស់អ្នក។"
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "តើអ្នកប្រាកដថាចង់លាលែងពីតំណែងមែនទេ? {opponentName} នឹងឈ្នះហ្គេម។"
 
@@ -343,11 +359,12 @@ msgstr "ត្រឡប់ទៅទំព័រដើម"
 msgid "Banner"
 msgstr "បដា"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "ខ្មៅ"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "ខ្មៅចាប់៖"
 
@@ -434,8 +451,8 @@ msgstr "ប្រភេទសម្រាប់ការជូនដំណឹង
 msgid "Change notification category"
 msgstr "ប្ដូរប្រភេទការជូនដំណឹង"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "ជជែក"
 
@@ -634,6 +651,10 @@ msgstr "មិនអាចចាប់ផ្ដើមការផ្ទៀងផ
 msgid "Couldn't verify with that account. Please try again."
 msgstr "មិនអាចផ្ទៀងផ្ទាត់ជាមួយគណនីនោះបានទេ។ សូមព្យាយាមម្តងទៀត។"
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "កំពុងរាប់ — ព្រមព្រៀងលើពិន្ទុ ឬលេងបន្ត"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "ការតម្រៀបលំនាំដើម"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "លុប"
 
@@ -723,11 +744,11 @@ msgstr "លុបមតិយោបល់"
 msgid "Delete field"
 msgstr "លុបប្រអប់"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "លុបហ្គេម"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "លុបហ្គេម?"
 
@@ -749,7 +770,7 @@ msgstr "លុបទិដ្ឋភាព"
 msgid "Delete your account on the old server"
 msgstr "លុបគណនីរបស់អ្នកនៅម៉ាស៊ីនមេចាស់"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "កំពុងលុប..."
 
@@ -817,11 +838,16 @@ msgstr "ទាញយក"
 msgid "Download failed"
 msgstr "ការទាញយកបានបរាជ័យ"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "ស្មើ"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "បានយល់ព្រមស្មើ"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "បានស្នើស្មើ — កំពុងរង់ចាំ {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "ប្រសព្វទទេ {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ប្រសព្វទទេ {colLabel}{rowLabel} ចុច ឬចុច Enter ដើម្បីដាក់"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "បញ្ចប់ហ្គេម"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "បញ្ចប់ហ្គេម?"
 
@@ -927,11 +953,11 @@ msgstr "URL ខាងក្រៅ"
 msgid "Extra large"
 msgstr "ធំពិសេស"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "បរាជ័យក្នុងការទទួលយកការស្មើ"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "បរាជ័យក្នុងការទទួលយកពិន្ទុ"
 
@@ -949,11 +975,11 @@ msgstr "បរាជ័យក្នុងការបង្កើតហ្គេ
 msgid "Failed to create link"
 msgstr "បរាជ័យក្នុងការបង្កើតតំណ"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "បរាជ័យក្នុងការបង្កើតការប្រកួតឡើងវិញ"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "បរាជ័យក្នុងការបដិសេធការស្មើ"
 
@@ -965,7 +991,7 @@ msgstr "បរាជ័យក្នុងការលុបឯកសារភ្
 msgid "Failed to delete comment"
 msgstr "បរាជ័យក្នុងការលុបមតិយោបល់"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "បរាជ័យក្នុងការលុបហ្គេម"
 
@@ -993,15 +1019,15 @@ msgstr "បរាជ័យក្នុងការផ្ទុករូបភា
 msgid "Failed to load video"
 msgstr "បរាជ័យក្នុងការផ្ទុកវីដេអូ"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "បរាជ័យក្នុងការផ្លាស់ទី"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "បរាជ័យក្នុងការស្នើស្មើ"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "បរាជ័យក្នុងការឆ្លងកាត់"
 
@@ -1009,11 +1035,11 @@ msgstr "បរាជ័យក្នុងការឆ្លងកាត់"
 msgid "Failed to post comment"
 msgstr "បរាជ័យក្នុងការបង្ហោះមតិយោបល់"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "បរាជ័យក្នុងការចុះចាញ់"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "បរាជ័យក្នុងការបន្តលេង"
 
@@ -1021,8 +1047,8 @@ msgstr "បរាជ័យក្នុងការបន្តលេង"
 msgid "Failed to revoke RSS access"
 msgstr "បរាជ័យក្នុងការដកហូតការចូលប្រើ RSS"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "បរាជ័យក្នុងការផ្ញើ"
 
@@ -1076,13 +1102,17 @@ msgstr "ពីរូបរាង"
 msgid "Game created"
 msgstr "បានបង្កើតហ្គេម"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "បានលុបហ្គេម"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "ហ្គេមបញ្ចប់"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "ទៅ"
 
@@ -1459,7 +1489,7 @@ msgstr "ការជូនដំណឹង៖ {0}"
 msgid "Number"
 msgstr "លេខ"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "ផ្តល់ជូនការស្មើ"
 
@@ -1476,11 +1506,11 @@ msgstr "អូ! រកមិនឃើញទំព័រ!"
 msgid "Open actions"
 msgstr "បើកសកម្មភាព"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "បើកបន្ទះសន្ទនា"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "បើកសកម្មភាពហ្គេម"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "មេ"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "ឆ្លងកាត់"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "ឆ្លងកាត់វេន?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "កំពុងឆ្លងកាត់..."
 
@@ -1667,7 +1697,7 @@ msgstr "ទាក់ទង (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "ទាក់ទងក្នុង 24 ម៉ោង បើមិនដូច្នេះទេដាច់ខាត"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "ប្រកួតឡើងវិញ"
 
@@ -1743,16 +1773,16 @@ msgstr "ត្រូវការ"
 msgid "Resend email"
 msgstr "ផ្ញើអ៊ីមែលឡើងវិញ"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "ចុះចាញ់"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "ចុះចាញ់ហ្គេម?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "កំពុងចុះចាញ់..."
 
@@ -1809,7 +1839,7 @@ msgstr "ថ្ងៃសៅរ៍"
 msgid "Save"
 msgstr "រក្សាទុក"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "បានទទួលយកពិន្ទុ — កំពុងរង់ចាំ {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "កំពុងចេញ..."
 msgid "Single line of text only"
 msgstr "តែបន្ទាត់អត្ថបទតែមួយប៉ុណ្ណោះ"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "រំលងវេនរបស់អ្នក ហើយបញ្ជូនទៅគូប្រកួតរបស់អ្នក។"
 
@@ -2110,7 +2140,7 @@ msgstr "រកមិនឃើញខ្លឹមសារដែលបានស្
 msgid "The server returned a web page instead of data."
 msgstr "ម៉ាស៊ីនមេបានបញ្ជូនត្រឡប់ទំព័របណ្តាញជំនួសឱ្យទិន្នន័យ។"
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "សកម្មភាពនេះនឹងលុបហ្គេម និងជជែកកំសាន្តរបស់វាជាអចិន្ត្រៃយ៍។ សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ។"
 
@@ -2312,11 +2342,12 @@ msgstr "យើងបានផ្ញើលេខកូដផ្ទៀងផ្ទ
 msgid "Wednesday"
 msgstr "ថ្ងៃពុធ"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "ស"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "ស ចាប់ៈ"
 
@@ -2336,6 +2367,14 @@ msgstr "អ្នក"
 msgid "You do not have access to this section."
 msgstr "អ្នកមិនមានសិទ្ធិចូលប្រើផ្នែកនេះទេ។"
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "អ្នកបានចុះចាញ់ — {opponentName} ឈ្នះ"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "អ្នកឈ្នះ!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "គណនីរបស់អ្នកត្រូវបានផ្លាស់ប្តូរមកទីនេះពី {source}។ រហូតដល់អ្នកលុបវានៅទីនោះ សារ និងការជូនដំណឹងអាចទៅដល់ម៉ាស៊ីនមេទាំងពីរ មាតិកាមួយចំនួនរបស់អ្នកនៅតែត្រូវបានបម្រើពីម៉ាស៊ីនមេចាស់ ហើយអ្នកតាមដានអាចចំណាយពេលប៉ុន្មាននាទីដើម្បីរកអ្នកនៅទីនេះ។"
@@ -2343,6 +2382,10 @@ msgstr "គណនីរបស់អ្នកត្រូវបានផ្លា
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "ឯកសារភ្ជាប់របស់អ្នកនឹងបាត់បង់។"
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "វេនរបស់អ្នក"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

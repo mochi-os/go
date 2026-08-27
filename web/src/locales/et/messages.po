@@ -70,13 +70,25 @@ msgstr "{name} pakkus viiki"
 msgid "{name} resigned"
 msgstr "{name} alistus"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} samuti loobus. Kinnitamine loeb laua kokku ja pakub skoori, milles peate mõlemad kokku leppima."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} pakkus viiki"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} andis alla — sa võitsid!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "Võidab {opponentName}"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName} käik"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# üksus} other {# üksust}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Ava menüü (# lugemata teatis)} other {Ava menüü (# lugemata teatist)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "Võidab {winnerColor} — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Kas oled kindel, et soovid selle kommentaari kustutada? See kustutab ka 
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Kas oled kindel, et soovid välja logida? Konto kasutamiseks pead uuesti sisse logima."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Kas oled kindel, et soovid alla anda? {opponentName} võidab mängu."
 
@@ -343,11 +359,12 @@ msgstr "Tagasi avalehele"
 msgid "Banner"
 msgstr "Bänner"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Must"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Mustad löögid:"
 
@@ -434,8 +451,8 @@ msgstr "Nende teavituste kategooria"
 msgid "Change notification category"
 msgstr "Muuda teavituse kategooriat"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Vestlus"
 
@@ -634,6 +651,10 @@ msgstr "Taasautentimist ei õnnestunud alustada. Proovige uuesti."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Selle kontoga ei õnnestunud kinnitada. Palun proovi uuesti."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Loendamine — leppige tulemus kokku või mängige edasi"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Vaikimisi sortimine"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Kustuta"
 
@@ -723,11 +744,11 @@ msgstr "Kustuta kommentaar"
 msgid "Delete field"
 msgstr "Kustuta väli"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Kustuta mäng"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Kas kustutada mäng?"
 
@@ -749,7 +770,7 @@ msgstr "Kustuta vaade"
 msgid "Delete your account on the old server"
 msgstr "Kustuta konto vanalt serverilt"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Kustutamine..."
 
@@ -817,11 +838,16 @@ msgstr "Laadi alla"
 msgid "Download failed"
 msgstr "Allalaadimine ebaõnnestus"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Viik"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Viik kokku lepitud"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Pakuti viiki — oodatakse kasutajat {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Tühi ristumiskoht {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Tühi ristumiskoht {colLabel}{rowLabel}, paigutamiseks kliki või vajuta Enter"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Lõpeta mäng"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Kas lõpetada mäng?"
 
@@ -927,11 +953,11 @@ msgstr "Väline URL"
 msgid "Extra large"
 msgstr "Eriti suur"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Viigi vastuvõtmine ebaõnnestus"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Skoori vastuvõtmine ebaõnnestus"
 
@@ -949,11 +975,11 @@ msgstr "Mängu loomine ebaõnnestus"
 msgid "Failed to create link"
 msgstr "Lingi loomine ebaõnnestus"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Korduva mängu loomine ebaõnnestus"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Viigist keeldumine ebaõnnestus"
 
@@ -965,7 +991,7 @@ msgstr "Manuse kustutamine ebaõnnestus"
 msgid "Failed to delete comment"
 msgstr "Kommentaari kustutamine ebaõnnestus"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Mängu kustutamine ebaõnnestus"
 
@@ -993,15 +1019,15 @@ msgstr "Pildi laadimine ebaõnnestus"
 msgid "Failed to load video"
 msgstr "Video laadimine ebaõnnestus"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Käigu tegemine ebaõnnestus"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Viigi pakkumine ebaõnnestus"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Vahelejätmine ebaõnnestus"
 
@@ -1009,11 +1035,11 @@ msgstr "Vahelejätmine ebaõnnestus"
 msgid "Failed to post comment"
 msgstr "Kommentaari postitamine ebaõnnestus"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Alistumine ebaõnnestus"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Mängu jätkamine ebaõnnestus"
 
@@ -1021,8 +1047,8 @@ msgstr "Mängu jätkamine ebaõnnestus"
 msgid "Failed to revoke RSS access"
 msgstr "RSS-juurdepääsu tühistamine ebaõnnestus"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Saatmine ebaõnnestus"
 
@@ -1076,13 +1102,17 @@ msgstr "Teemast"
 msgid "Game created"
 msgstr "Mäng loodud"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Mäng kustutatud"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Mäng on lõppenud"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Mine"
 
@@ -1459,7 +1489,7 @@ msgstr "Teatised: {0}"
 msgid "Number"
 msgstr "Number"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Paku viiki"
 
@@ -1476,11 +1506,11 @@ msgstr "Oih! Lehte ei leitud!"
 msgid "Open actions"
 msgstr "Ava toimingud"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Ava vestluse paneel"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Ava mängu tegevused"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Vanem"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Edasta"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Kas anda käik üle?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Edastamine..."
 
@@ -1667,7 +1697,7 @@ msgstr "Suhteline (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Suhteline 24 tunni jooksul, muidu absoluutne"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Korduv mäng"
 
@@ -1743,16 +1773,16 @@ msgstr "Kohustuslik"
 msgid "Resend email"
 msgstr "Saada e-kiri uuesti"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Anna alla"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Kas anda mäng alla?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Allaandmine..."
 
@@ -1809,7 +1839,7 @@ msgstr "Laupäev"
 msgid "Save"
 msgstr "Salvesta"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Skoor vastu võetud — oodatakse kasutajat {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Login välja..."
 msgid "Single line of text only"
 msgstr "Ainult üks rida teksti"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Jäta oma käik vahele ja anna vastasele."
 
@@ -2110,7 +2140,7 @@ msgstr "Soovitud sisu ei õnnestunud leida."
 msgid "The server returned a web page instead of data."
 msgstr "Server tagastas andmete asemel veebilehe."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "See kustutab mängu ja selle vestluse jäädavalt. Seda ei saa tagasi võtta."
 
@@ -2312,11 +2342,12 @@ msgstr "Saatsime kinnituskoodi aadressile <0>{0}</0>. Sisestage kood allpool, et
 msgid "Wednesday"
 msgstr "Kolmapäev"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Valge"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Valge püüdis:"
 
@@ -2336,6 +2367,14 @@ msgstr "Sina"
 msgid "You do not have access to this section."
 msgstr "Sul puudub juurdepääs sellele jaotisele."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Sa andsid alla — võidab {opponentName}"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Võitsid!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Sinu konto liideti siia asukohast {source}. Kuni sa selle sealt ei kustuta, võivad sõnumid ja teavitused jõuda mõlemale serverile, osa sinu sisust tarbitakse jätkuvalt vanalt serverilt ning jälgijatel võib kuluda mõni minut, et sind siit leida."
@@ -2343,6 +2382,10 @@ msgstr "Sinu konto liideti siia asukohast {source}. Kuni sa selle sealt ei kustu
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Teie manused lähevad kaotsi."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Sinu käik"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

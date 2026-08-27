@@ -70,13 +70,25 @@ msgstr "{name} durang taklif qildi"
 msgid "{name} resigned"
 msgstr "{name} taslim bo‘ldi"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} ham oʻtkazib yubordi. Tasdiqlash doskani sanaydi va ikkalangiz ham kelishishingiz kerak boʻlgan hisobni taklif qiladi."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} durang taklif qildi"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} taslim bo'ldi — siz yutdingiz!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} yutdi"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName} yurishi"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# element} other {# element}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Menyuni ochish (# o'qilmagan bildirishnoma)} other {Menyuni ochish (# o'qilmagan bildirishnoma)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} yutdi — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Bu izohni oʻchirmoqchimisiz? Bu barcha javoblarni ham oʻchiradi."
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Chiqishga ishonchingiz komilmi? Hisobingizga kirish uchun yana kirishingiz kerak boʻladi."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Taslim boʻlishga ishonchingiz komilmi? {opponentName} oʻyinda gʻalaba qozonadi."
 
@@ -343,11 +359,12 @@ msgstr "Bosh sahifaga qaytish"
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Qora"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Qora yutgan toshlar:"
 
@@ -434,8 +451,8 @@ msgstr "Bu bildirishnomalar uchun toifa"
 msgid "Change notification category"
 msgstr "Bildirishnoma toifasini oʻzgartirish"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Suhbat"
 
@@ -634,6 +651,10 @@ msgstr "Qayta autentifikatsiyani boshlab bo'lmadi. Iltimos, qaytadan urinib ko'r
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Ushbu hisob bilan tasdiqlab bo‘lmadi. Iltimos, qayta urinib ko‘ring."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Sanoq — hisob bo'yicha kelishing yoki o'ynashda davom eting"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Standart saralash"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Oʻchirish"
 
@@ -723,11 +744,11 @@ msgstr "Izohni oʻchirish"
 msgid "Delete field"
 msgstr "Maydonni oʻchirish"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Oʻyinni oʻchirish"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Oʻyin oʻchirilsinmi?"
 
@@ -749,7 +770,7 @@ msgstr "Koʻrinishni oʻchirish"
 msgid "Delete your account on the old server"
 msgstr "Eski serverdagi hisobingizni o'chiring"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Oʻchirilmoqda..."
 
@@ -817,11 +838,16 @@ msgstr "Yuklab olish"
 msgid "Download failed"
 msgstr "Yuklab olib boʻlmadi"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Durang"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Durang qabul qilindi"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Durang taklif qilindi — {opponentName} kutilmoqda"
 
@@ -888,11 +914,11 @@ msgstr "Boʻsh kesishma {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Boʻsh kesishma {colLabel}{rowLabel}, joylashtirish uchun bosing yoki Enter tugmasini bosing"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Oʻyinni tugatish"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Oʻyinni tugatasizmi?"
 
@@ -927,11 +953,11 @@ msgstr "Tashqi URL"
 msgid "Extra large"
 msgstr "Juda katta"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Durangni qabul qilib boʻlmadi"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Hisobni qabul qilib boʻlmadi"
 
@@ -949,11 +975,11 @@ msgstr "Oʻyin yaratib boʻlmadi"
 msgid "Failed to create link"
 msgstr "Havola yaratib boʻlmadi"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Qayta oʻyin yaratib boʻlmadi"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Durangni rad etib boʻlmadi"
 
@@ -965,7 +991,7 @@ msgstr "Ilovani oʻchirib boʻlmadi"
 msgid "Failed to delete comment"
 msgstr "Izohni oʻchirib boʻlmadi"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Oʻyinni oʻchirib boʻlmadi"
 
@@ -993,15 +1019,15 @@ msgstr "Rasmni yuklab bo'lmadi"
 msgid "Failed to load video"
 msgstr "Videoni yuklab bo'lmadi"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Yurish qilib boʻlmadi"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Durang taklif qilib boʻlmadi"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Oʻtib boʻlmadi"
 
@@ -1009,11 +1035,11 @@ msgstr "Oʻtib boʻlmadi"
 msgid "Failed to post comment"
 msgstr "Izoh joylashtirib boʻlmadi"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Taslim boʻlib boʻlmadi"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Oʻyinni davom ettirib boʻlmadi"
 
@@ -1021,8 +1047,8 @@ msgstr "Oʻyinni davom ettirib boʻlmadi"
 msgid "Failed to revoke RSS access"
 msgstr "RSS kirishini bekor qilib bo'lmadi"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Yuborib boʻlmadi"
 
@@ -1076,13 +1102,17 @@ msgstr "Mavzudan"
 msgid "Game created"
 msgstr "Oʻyin yaratildi"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Oʻyin oʻchirildi"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Oʻyin tugadi"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Oʻtish"
 
@@ -1459,7 +1489,7 @@ msgstr "Bildirishnomalar: {0}"
 msgid "Number"
 msgstr "Raqam"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Durang taklif qilish"
 
@@ -1476,11 +1506,11 @@ msgstr "Voy! Sahifa topilmadi!"
 msgid "Open actions"
 msgstr "Amallarni ochish"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Suhbat panelini ochish"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Oʻyin amallarini ochish"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Ota"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Oʻtish"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Yurishdan voz kechilsinmi?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Oʻtilmoqda..."
 
@@ -1667,7 +1697,7 @@ msgstr "Nisbiy (5d, 3s, 2k)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 soat ichida nisbiy, aks holda mutlaq"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Qayta oʻyin"
 
@@ -1743,16 +1773,16 @@ msgstr "Talab qilinadi"
 msgid "Resend email"
 msgstr "Xatni qayta yuborish"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Taslim boʻlish"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Oʻyindan voz kechilsinmi?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Taslim boʻlinmoqda..."
 
@@ -1809,7 +1839,7 @@ msgstr "Shanba"
 msgid "Save"
 msgstr "Saqlash"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Hisob qabul qilindi — {opponentName} kutilmoqda"
 
@@ -2002,7 +2032,7 @@ msgstr "Chiqilmoqda..."
 msgid "Single line of text only"
 msgstr "Faqat bir qator matn"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Navbatingizni oʻtkazib yuboring va raqibingizga oʻtkazing."
 
@@ -2110,7 +2140,7 @@ msgstr "Soʻralgan kontent topilmadi."
 msgid "The server returned a web page instead of data."
 msgstr "Server ma'lumot o'rniga veb-sahifani qaytardi."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Bu oʻyin va uning chatini butunlay oʻchirib tashlaydi. Bu amalni bekor qilib boʻlmaydi."
 
@@ -2312,11 +2342,12 @@ msgstr "Biz <0>{0}</0> manziliga tasdiqlash kodini yubordik. Elektron pochta man
 msgid "Wednesday"
 msgstr "Chorshanba"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Oq"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Oq oladi:"
 
@@ -2336,6 +2367,14 @@ msgstr "Siz"
 msgid "You do not have access to this section."
 msgstr "Bu boʻlimga kirish huquqingiz yoʻq."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Siz taslim bo'ldingiz — {opponentName} yutdi"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Siz yutdingiz!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Hisobingiz {source} dan bu yerga ko'chirildi. U yerdan o'chirmaguncha, xabarlar va bildirishnomalar ikkala serverga ham yetishi mumkin, ba'zi kontentingiz eski serverdan erilib berilishda davom etadi va kuzatuvchilar sizni bu yerda topish uchun bir necha daqiqa vaqt ketishi mumkin."
@@ -2343,6 +2382,10 @@ msgstr "Hisobingiz {source} dan bu yerga ko'chirildi. U yerdan o'chirmaguncha, x
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Biriktirmalaringiz yo‘qoladi."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Sizning yurishingiz"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

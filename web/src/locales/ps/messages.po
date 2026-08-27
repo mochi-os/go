@@ -70,13 +70,25 @@ msgstr "{name} د مساوي وړاندیز وکړ"
 msgid "{name} resigned"
 msgstr "{name} ماتې ومنله"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} هم تېر کړ. تایید به بورډ وشمېري او یو سکور به وړاندیز کړي چې تاسو دواړه باید پرې اتفاق وکړئ."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} مساوي وړاندیز کړل"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} تسلیم شو — تاسو وګټله!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} وګټله"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "د {opponentName} وار دی"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# توکی} other {# توکي}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {مینو خلاص کړئ (# نالوستې خبرتیا)} other {مینو خلاص کړئ (# نالوستې خبرتیاوې)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} وګټله — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "ایا تاسو ډاډه یاست چې غواړئ دا تبصره ړنګ
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "ایا تاسو ډاډه یاست چې غواړئ وتل وکړئ؟ تاسو به اړتیا ولرئ بیا ننوځئ ترڅو خپل حساب ته لاسرسی ولرئ."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "ایا تاسو ډاډه یاست چې غواړئ استعفا ورکړئ؟ {opponentName} به لوبه وګټي."
 
@@ -343,11 +359,12 @@ msgstr "کور ته بېرته"
 msgid "Banner"
 msgstr "بانر"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "تور"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "د تور نیولې مهرې:"
 
@@ -434,8 +451,8 @@ msgstr "د دې خبرتیاوو لپاره کټګورۍ"
 msgid "Change notification category"
 msgstr "د خبرتیا کټګورۍ بدله کړه"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "چټ"
 
@@ -634,6 +651,10 @@ msgstr "بیا تصدیق پیلیدلی نشو. مهرباني وکړئ بیا 
 msgid "Couldn't verify with that account. Please try again."
 msgstr "د دغه حساب سره تصدیق ونشو. مهرباني وکړئ بیا هڅه وکړئ."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "شمېرل — پر پایله سره سلا شئ یا لوبه ته دوام ورکړئ"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "ډیفالټ ترتیب"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "ړنګ کړئ"
 
@@ -723,11 +744,11 @@ msgstr "تبصره ړنګه کړئ"
 msgid "Delete field"
 msgstr "ساحه ړنګه کړئ"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "لوبه ړنګه کړئ"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "لوبه ړنګه شي؟"
 
@@ -749,7 +770,7 @@ msgstr "لید ړنګ کړئ"
 msgid "Delete your account on the old server"
 msgstr "د پخوانی سرور پر سر خپل حساب ړنګ کړئ"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "ړنګیږي..."
 
@@ -817,11 +838,16 @@ msgstr "ډاونلوډ"
 msgid "Download failed"
 msgstr "ډاونلوډ ناکام شو"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "برابر"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "په مساوي موافقه وشوه"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "مساوي وړاندیز شو — د {opponentName} په تمه"
 
@@ -888,11 +914,11 @@ msgstr "خالي تقاطع {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "خالي تقاطع {colLabel}{rowLabel}، د ځای پر ځای کولو لپاره کلیک وکړئ یا Enter فشار کړئ"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "لوبه پای ته ورسوئ"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "لوبه پای ته ورسوئ؟"
 
@@ -927,11 +953,11 @@ msgstr "بهرنی URL"
 msgid "Extra large"
 msgstr "ډېر لوی"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "د مساوي قبلولو پاتې راغلل"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "د سکور منل پاتې راغلل"
 
@@ -949,11 +975,11 @@ msgstr "د لوبې جوړولو پاتې راغلل"
 msgid "Failed to create link"
 msgstr "د لینک جوړولو پاتې راغلل"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "د بیا میچ جوړولو پاتې راغلل"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "د مساوي ردولو پاتې راغلل"
 
@@ -965,7 +991,7 @@ msgstr "د ضمیمې حذف کولو پاتې راغلل"
 msgid "Failed to delete comment"
 msgstr "د تبصرې حذف کولو پاتې راغلل"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "د لوبې حذف کولو پاتې راغلل"
 
@@ -993,15 +1019,15 @@ msgstr "انځور بار نه شو"
 msgid "Failed to load video"
 msgstr "ویډیو بار نه شو"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "د حرکت کولو پاتې راغلل"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "د مساوي وړاندیز کولو پاتې راغلل"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "د تېرېدو پاتې راغلل"
 
@@ -1009,11 +1035,11 @@ msgstr "د تېرېدو پاتې راغلل"
 msgid "Failed to post comment"
 msgstr "د تبصرې پوسټ کولو پاتې راغلل"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "د استعفا پاتې راغلل"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "د لوبې بیا پیلول پاتې راغلل"
 
@@ -1021,8 +1047,8 @@ msgstr "د لوبې بیا پیلول پاتې راغلل"
 msgid "Failed to revoke RSS access"
 msgstr "د RSS لاسرسي لغوه کول ناکام شول"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "د لیږلو پاتې راغلل"
 
@@ -1076,13 +1102,17 @@ msgstr "د ښکارندوی څخه"
 msgid "Game created"
 msgstr "لوبه جوړه شوه"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "لوبه وشلیده"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "لوبه پای ته ورسیده"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "ولاړ شه"
 
@@ -1459,7 +1489,7 @@ msgstr "خبرتیاوې: {0}"
 msgid "Number"
 msgstr "شمیره"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "د مساوي وړاندیز"
 
@@ -1476,11 +1506,11 @@ msgstr "اوه! پاڼه ونه موندل شوه!"
 msgid "Open actions"
 msgstr "کړنې پرانیزئ"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "د چټ پینل خلاص کړئ"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "د لوبې کړنې خلاصې کړئ"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "مور"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "تېرول"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "وار تېر کړئ؟"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "د تېرولو په حال کې..."
 
@@ -1667,7 +1697,7 @@ msgstr "نسبي (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "په 24 ساعتونو کې نسبي، که نه نو مطلق"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "بیا لوبه"
 
@@ -1743,16 +1773,16 @@ msgstr "اړین دی"
 msgid "Resend email"
 msgstr "بریښنالیک بیا واستوئ"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "تسلیمیدل"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "لوبه تسلیم کړو؟"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "د تسلیمیدو په حال کې..."
 
@@ -1809,7 +1839,7 @@ msgstr "شنبه"
 msgid "Save"
 msgstr "خوندي کول"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "سکور ومنل شو — د {opponentName} په تمه"
 
@@ -2002,7 +2032,7 @@ msgstr "د وتلو په حال کې..."
 msgid "Single line of text only"
 msgstr "یوازې د متن یوه کرښه"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "خپل وار تېر کړئ او خپل مخالف ته یې ورکړئ."
 
@@ -2110,7 +2140,7 @@ msgstr "غوښتل شوې منځپانګه ونه موندل شوه."
 msgid "The server returned a web page instead of data."
 msgstr "سرور د معلوماتو پر ځای یوه ویب پاڼه راستنه کړه."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "دا به لوبه او د هغې چیټ د تل لپاره ړنګ کړي. دا کړنه بیرته نشي کیدی."
 
@@ -2312,11 +2342,12 @@ msgstr "موږ تصدیق کوډ <0>{0}</0> ته ولیږه. د خپل بریښ�
 msgid "Wednesday"
 msgstr "چهارشنبه"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "سپین"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "سپینې نیولې:"
 
@@ -2336,6 +2367,14 @@ msgstr "تاسو"
 msgid "You do not have access to this section."
 msgstr "تاسو دې برخې ته لاسرسی نه لرئ."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "تاسو تسلیم شوئ — {opponentName} وګټله"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "تاسو وګټل!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "ستاسو حساب له {source} دلته لیږدول شوی. تر هغه چې تاسو هلته یې ړنګ نه کړئ، پیغامونه او خبرتیاوې ممکن دواړه سرورونو ته ورسیږي، ستاسو د مینځپانګې یوه برخه لاهم له پخوانی سرور نه چمتو کیږي، او تعقیبونکي ممکن دلته ستاسو موندلو لپاره یو شیبه وخت ولري."
@@ -2343,6 +2382,10 @@ msgstr "ستاسو حساب له {source} دلته لیږدول شوی. تر ه�
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "ستاسو ضمیمې به له لاسه ولاړې شي."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "ستاسو حرکت"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

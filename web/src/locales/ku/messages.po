@@ -70,13 +70,25 @@ msgstr "{name} pêşniyara wekheviyê kir"
 msgid "{name} resigned"
 msgstr "{name} dev kir"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} jî bihurî. Pejirandin dê tabloyê bijmêre û skorek pêşniyar bike ku divê hûn herdu li ser lihev bikin."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} pêşniyara wekheviyê kir"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} dev jê berda — te bir!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} bir"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "Dora {opponentName} e"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# hêman} other {# hêman}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Pêşek veke (# agahdariya nexwendî)} other {Pêşek veke (# agahdariyên nexwendî)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} bir — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Tu bawer î ku dixwazî vê şîroveyê jê bibî? Hemû bersiv jî dê 
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Tu bawer î ku dixwazî derkevî? Tu ê hewce bikî ku ji nû ve têkevî da ku gihîştina hesabê xwe bibî."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Tu bawer î ku dixwazî teslîm bibî? {opponentName} dê di lîstikê de bi ser bikeve."
 
@@ -343,11 +359,12 @@ msgstr "Vegere ser malê"
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Reş"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Girtinên reş:"
 
@@ -434,8 +451,8 @@ msgstr "Kategoriya van agahdariyan"
 msgid "Change notification category"
 msgstr "Kategoriya agahdariyê biguherîne"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Chat"
 
@@ -634,6 +651,10 @@ msgstr "Verastkirina ji nû ve nehate destpêkirin. Ji kerema xwe dîsa bicerib�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Bi wê hesabê re piştrastkirin pêk nehat. Ji kerema xwe dîsa biceribîne."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Jimartin — li ser encamê li hev bikin an bilîzin"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Rêzkirina standard"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Jê bibe"
 
@@ -723,11 +744,11 @@ msgstr "Şîroveyê jê bibe"
 msgid "Delete field"
 msgstr "Qadê jê bibe"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Lîstikê jê bibe"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Lîstik jê bibe?"
 
@@ -749,7 +770,7 @@ msgstr "Dîtinê jê bibe"
 msgid "Delete your account on the old server"
 msgstr "Hesabê xwe li ser serverê kevn jêbirin"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Tê jêbirin..."
 
@@ -817,11 +838,16 @@ msgstr "Daxe"
 msgid "Download failed"
 msgstr "Daxistin têk çû"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Wekhev"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Li ser wekheviyê li hev hat"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Wekheviyek hat pêşniyarkirin — li bendê ye {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Hevbendiya vala {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Hevbendiya vala {colLabel}{rowLabel}, ji bo danînê bitikîne an Enter bike"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Lîstik biqedîne"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Lîstik biqede?"
 
@@ -927,11 +953,11 @@ msgstr "URL ya derveyî"
 msgid "Extra large"
 msgstr "Pir mezin"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Qebûlkirina wekheviyê neserkeftî bû"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Qebûlkirina skorê neserkeftî bû"
 
@@ -949,11 +975,11 @@ msgstr "Çêkirina lîstikê neserkeftî bû"
 msgid "Failed to create link"
 msgstr "Çêkirina lînkê neserkeftî bû"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Çêkirina lîstika nû neserkeftî bû"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Redkirina wekheviyê neserkeftî bû"
 
@@ -965,7 +991,7 @@ msgstr "Jêbirina pêvekê neserkeftî bû"
 msgid "Failed to delete comment"
 msgstr "Jêbirina şîroveyê neserkeftî bû"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Jêbirina lîstikê neserkeftî bû"
 
@@ -993,15 +1019,15 @@ msgstr "Wêne nehat barkirin"
 msgid "Failed to load video"
 msgstr "Vîdyo nehat barkirin"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Tevger neserkeftî bû"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Pêşniyarkirina wekheviyê neserkeftî bû"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Derbas neserkeftî bû"
 
@@ -1009,11 +1035,11 @@ msgstr "Derbas neserkeftî bû"
 msgid "Failed to post comment"
 msgstr "Şandina şîroveyê neserkeftî bû"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Dest tê de hilanîn neserkeftî bû"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Domandina lîstikê neserkeftî bû"
 
@@ -1021,8 +1047,8 @@ msgstr "Domandina lîstikê neserkeftî bû"
 msgid "Failed to revoke RSS access"
 msgstr "Betalkirina gihîştina RSS bi ser neket"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Şandin neserkeftî bû"
 
@@ -1076,13 +1102,17 @@ msgstr "Ji temayê"
 msgid "Game created"
 msgstr "Lîstik hat çêkirin"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Lîstik hat jêbirin"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Lîstik xilas bû"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Biçe"
 
@@ -1459,7 +1489,7 @@ msgstr "Agahdarî: {0}"
 msgid "Number"
 msgstr "Hejmar"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Wekheviyê pêşniyar bike"
 
@@ -1476,11 +1506,11 @@ msgstr "Wey! Rûpel nehat dîtin!"
 msgid "Open actions"
 msgstr "Kiryaran veke"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Panela chatê veke"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Çalakiyên lîstikê veke"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Dêûbav"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Bibihure"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Dora xwe bibihurî?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Dibihurîne..."
 
@@ -1667,7 +1697,7 @@ msgstr "Goreyî (5d, 3s, 2r)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Goreyî di nav 24 saetan de, ne wisa be mutleq"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Lîstika ji nû"
 
@@ -1743,16 +1773,16 @@ msgstr "Pêwîst"
 msgid "Resend email"
 msgstr "Dîsa e-nameyê bişîne"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Dest jê berde"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Dest ji lîstikê berde?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Dest jê tê berdan..."
 
@@ -1809,7 +1839,7 @@ msgstr "Şemî"
 msgid "Save"
 msgstr "Tomar bike"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Skor hate qebûlkirin — li bendê ye {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Derketin tê kirin..."
 msgid "Single line of text only"
 msgstr "Tenê rêza yek a nivîsê"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Dora xwe bibihure û bide hember."
 
@@ -2110,7 +2140,7 @@ msgstr "Naveroka xwestî nehat dîtin."
 msgid "The server returned a web page instead of data."
 msgstr "Rajekar li şûna daneyan rûpeleke webê vegerand."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Ev ê lîstik û sohbeta wê bi awayekî domdar jê bibe. Ev kirin nayê vegerandin."
 
@@ -2312,11 +2342,12 @@ msgstr "Me kodek pejirandinê şand bo <0>{0}</0>. Ji bo pejirandina navnîşana
 msgid "Wednesday"
 msgstr "Çarşem"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Spî"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Spî digire:"
 
@@ -2336,6 +2367,14 @@ msgstr "Tu"
 msgid "You do not have access to this section."
 msgstr "Destûra te ya gihîştina vê beşê tune ye."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Te dev jê berda — {opponentName} bir"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Tu bi serket î!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Hesabê we ji {source} hat vir veguheztin. Heya ku hûn wê li wir jênebin, peyam û agahdarî dikarin gihîjin her du servaran, hin naveroka we ji serverê kevn tê dayîn û şopîner dibe ku çend hûrdeman hewce bikin ku we li vir bibînin."
@@ -2343,6 +2382,10 @@ msgstr "Hesabê we ji {source} hat vir veguheztin. Heya ku hûn wê li wir jêne
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Pêvekên te wê winda bibin."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Tevgera te"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

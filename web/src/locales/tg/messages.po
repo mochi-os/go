@@ -70,13 +70,25 @@ msgstr "{name} баробариро пешниҳод кард"
 msgid "{name} resigned"
 msgstr "{name} таслим шуд"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} низ гузашт. Тасдиқ кардан тахтаро ҳисоб мекунад ва натиҷаеро пешниҳод мекунад, ки ҳар дуи шумо бояд ба он розӣ шавед."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} баробариро пешниҳод кард"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} таслим шуд — шумо ғолиб омадед!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} ғолиб омад"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "Навбати {opponentName}"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# ҷузъ} other {# ҷузъ}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Менюро кушоед (# огоҳиномаи хонданашуда)} other {Менюро кушоед (# огоҳиномаи хонданашуда)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} ғолиб омад — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Шумо мутмаин ҳастед, ки мехоҳед ин шарҳ�
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Шумо мутмаин ҳастед, ки мехоҳед хориҷ шавед? Барои дастрасӣ ба ҳисоб бояд аз нав ворид шавед."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Шумо мутмаин ҳастед, ки мехоҳед таслим шавед? {opponentName} бозиро мебарад."
 
@@ -343,11 +359,12 @@ msgstr "Бозгашт ба саҳифаи асосӣ"
 msgid "Banner"
 msgstr "Баннер"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Сиёҳ"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Гирифтаҳои сиёҳ:"
 
@@ -434,8 +451,8 @@ msgstr "Категория барои ин огоҳиномаҳо"
 msgid "Change notification category"
 msgstr "Тағйири категорияи огоҳинома"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Чат"
 
@@ -634,6 +651,10 @@ msgstr "Аз нав аутентификатсияро оғоз кардан и�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Бо он ҳисоб тасдиқ кардан имконнопазир буд. Лутфан, бори дигар кӯшиш кунед."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Ҳисоб — дар бораи натиҷа розӣ шавед ё бозиро идома диҳед"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Ҷобаҷогузории пешфарз"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Нест кардан"
 
@@ -723,11 +744,11 @@ msgstr "Нест кардани шарҳ"
 msgid "Delete field"
 msgstr "Нест кардани майдон"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Нест кардани бозӣ"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Бозӣ нест карда шавад?"
 
@@ -749,7 +770,7 @@ msgstr "Нест кардани намуд"
 msgid "Delete your account on the old server"
 msgstr "Ҳисоби худро дар сервери кӯҳна нест кунед"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Нест карда истодааст..."
 
@@ -817,11 +838,16 @@ msgstr "Боргирӣ"
 msgid "Download failed"
 msgstr "Боргирӣ ноком шуд"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Баробар"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Баробарӣ қабул шуд"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Қарор пешниҳод шуд — мунтазири {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Буриши холии {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Буриши холии {colLabel}{rowLabel}, барои гузоштан зер кунед ё Enter-ро пахш кунед"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Бозиро ба охир расонед"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Бозиро ба охир расонем?"
 
@@ -927,11 +953,11 @@ msgstr "URL-и берунӣ"
 msgid "Extra large"
 msgstr "Хеле калон"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Қабули қарор ба анҷом нарасид"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Қабули натиҷа ба анҷом нарасид"
 
@@ -949,11 +975,11 @@ msgstr "Эҷоди бозӣ ба анҷом нарасид"
 msgid "Failed to create link"
 msgstr "Эҷоди пайванд ба анҷом нарасид"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Эҷоди бозии нав ба анҷом нарасид"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Рад кардани қарор ба анҷом нарасид"
 
@@ -965,7 +991,7 @@ msgstr "Ҳазфи замима ба анҷом нарасид"
 msgid "Failed to delete comment"
 msgstr "Ҳазфи шарҳ ба анҷом нарасид"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Ҳазфи бозӣ ба анҷом нарасид"
 
@@ -993,15 +1019,15 @@ msgstr "Тасвир бор карда нашуд"
 msgid "Failed to load video"
 msgstr "Видео бор карда нашуд"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Кардани ҳаракат ба анҷом нарасид"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Пешниҳоди қарор ба анҷом нарасид"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Гузаштан ба анҷом нарасид"
 
@@ -1009,11 +1035,11 @@ msgstr "Гузаштан ба анҷом нарасид"
 msgid "Failed to post comment"
 msgstr "Гузоштани шарҳ ба анҷом нарасид"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Истеъфо ба анҷом нарасид"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Идома додани бозӣ ба анҷом нарасид"
 
@@ -1021,8 +1047,8 @@ msgstr "Идома додани бозӣ ба анҷом нарасид"
 msgid "Failed to revoke RSS access"
 msgstr "Бекор кардани дастрасии RSS ноком шуд"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Ирсол ба анҷом нарасид"
 
@@ -1076,13 +1102,17 @@ msgstr "Аз мавзӯъ"
 msgid "Game created"
 msgstr "Бозӣ сохта шуд"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Бозӣ ҳазф шуд"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Бозӣ ба охир расид"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Рафтан"
 
@@ -1459,7 +1489,7 @@ msgstr "Огоҳиномаҳо: {0}"
 msgid "Number"
 msgstr "Рақам"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Пешниҳоди дуруст"
 
@@ -1476,11 +1506,11 @@ msgstr "Эҳ! Саҳифа ёфт нашуд!"
 msgid "Open actions"
 msgstr "Кушодани амалҳо"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Кушодани панели чат"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Кушодани амалҳои бозӣ"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Волидайн"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Гузар"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Навбатро гузаронед?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Гузаронидан..."
 
@@ -1667,7 +1697,7 @@ msgstr "Нисбӣ (5д, 3с, 2р)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Нисбӣ дар 24 соат, дар акси ҳол мутлақ"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Бозиҳои такрорӣ"
 
@@ -1743,16 +1773,16 @@ msgstr "Талаб карда мешавад"
 msgid "Resend email"
 msgstr "Мактубро дубора фиристед"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Таслим"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Аз бозӣ таслим шудан?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Таслим шудан..."
 
@@ -1809,7 +1839,7 @@ msgstr "Шанбе"
 msgid "Save"
 msgstr "Захира"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Натиҷа қабул шуд — мунтазири {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Аз ҳисоб баромадан..."
 msgid "Single line of text only"
 msgstr "Танҳо як сатри матн"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Навбати худро гузаронед ва ба ҳариф диҳед."
 
@@ -2110,7 +2140,7 @@ msgstr "Муҳтавои дархостшуда ёфт нашуд."
 msgid "The server returned a web page instead of data."
 msgstr "Сервер ба ҷои маълумот саҳифаи вебро баргардонд."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Ин бозӣ ва чати онро якумра нест мекунад. Ин амалро баргардонидан мумкин нест."
 
@@ -2312,11 +2342,12 @@ msgstr "Мо рамзи тасдиқро ба <0>{0}</0> фиристодем. �
 msgid "Wednesday"
 msgstr "Чоршанбе"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Сафед"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Гирифтаҳои сафед:"
 
@@ -2336,6 +2367,14 @@ msgstr "Шумо"
 msgid "You do not have access to this section."
 msgstr "Шумо ба ин бахш дастрасӣ надоред."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Шумо таслим шудед — {opponentName} ғолиб омад"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Шумо мебаред!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ҳисоби шумо аз {source} ба ин ҷо интиқол дода шуд. То он гоҳ, ки онро дар он ҷо нест накунед, паёмҳо ва огоҳиҳо метавонанд ба ҳарду сервер расанд, қисмати муайяни мазмуни шумо аз сервери кӯҳна хизмат медиҳад ва пайравон метавонанд чанд дақиқа вақт барои ёфтани шумо дар ин ҷо сарф кунанд."
@@ -2343,6 +2382,10 @@ msgstr "Ҳисоби шумо аз {source} ба ин ҷо интиқол дод
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Замимаҳои шумо гум мешаванд."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Ҳаракати шумо"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

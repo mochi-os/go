@@ -70,13 +70,25 @@ msgstr "{name}-მა ფრე შესთავაზა"
 msgid "{name} resigned"
 msgstr "{name}-მა დანებდა"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName}-მაც გაატარა. დასტური დაითვლის დაფას და შემოგთავაზებთ ქულას, რომელსაც ორივემ უნდა დაეთანხმოთ."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName}-მა ფრე შემოგთავაზათ"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} დანებდა — თქვენ გაიმარჯვეთ!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "იმარჯვებს {opponentName}"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName}-ის სვლაა"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, other {# ერთეული}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, other {მენიუს გახსნა (# წაუკითხავი შეტყობინება)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "იმარჯვებს {winnerColor} — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "დარწმუნებული ხართ, რომ გსუ�
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "დარწმუნებული ხართ, რომ გსურთ გასვლა? ანგარიშზე წვდომისთვის ხელახლა შესვლა მოგიწევთ."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "დარწმუნებული ხართ, რომ გსურთ დათმობა? {opponentName} მოიგებს თამაშს."
 
@@ -343,11 +359,12 @@ msgstr "მთავარზე დაბრუნება"
 msgid "Banner"
 msgstr "ბანერი"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "შავი"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "შავის აღება:"
 
@@ -434,8 +451,8 @@ msgstr "ამ შეტყობინებების კატეგორ�
 msgid "Change notification category"
 msgstr "შეტყობინების კატეგორიის შეცვლა"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "ჩატი"
 
@@ -634,6 +651,10 @@ msgstr "ხელახალი ავთენტიფიკაციის �
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ამ ანგარიშით ვერ მოხერხდა გადამოწმება. გთხოვთ, სცადოთ თავიდან."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "დათვლა — შეთანხმდით ქულებზე ან განაგრძეთ თამაში"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "ნაგულისხმევი დახარისხება"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "წაშლა"
 
@@ -723,11 +744,11 @@ msgstr "კომენტარის წაშლა"
 msgid "Delete field"
 msgstr "ველის წაშლა"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "თამაშის წაშლა"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "თამაშის წაშლა?"
 
@@ -749,7 +770,7 @@ msgstr "ხედის წაშლა"
 msgid "Delete your account on the old server"
 msgstr "წაშალეთ თქვენი ანგარიში ძველ სერვერზე"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "იშლება..."
 
@@ -817,11 +838,16 @@ msgstr "ჩამოტვირთვა"
 msgid "Download failed"
 msgstr "ჩამოტვირთვა ვერ მოხერხდა"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "ფრე"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "ფრე შეთანხმდა"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "შემოთავაზებულია ფრე — ველოდები {opponentName}-ს"
 
@@ -888,11 +914,11 @@ msgstr "ცარიელი გადაკვეთა {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ცარიელი გადაკვეთა {colLabel}{rowLabel}, დააწკაპუნეთ ან დააჭირეთ Enter მოსათავსებლად"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "თამაშის დასრულება"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "დაასრულოთ თამაში?"
 
@@ -927,11 +953,11 @@ msgstr "გარე URL"
 msgid "Extra large"
 msgstr "ძალიან დიდი"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "ფრეს მიღება ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "ქულის მიღება ვერ მოხერხდა"
 
@@ -949,11 +975,11 @@ msgstr "თამაშის შექმნა ვერ მოხერხდ
 msgid "Failed to create link"
 msgstr "ბმულის შექმნა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "რევანშის შექმნა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "ფრეზე უარის თქმა ვერ მოხერხდა"
 
@@ -965,7 +991,7 @@ msgstr "დანართის წაშლა ვერ მოხერხდ
 msgid "Failed to delete comment"
 msgstr "კომენტარის წაშლა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "თამაშის წაშლა ვერ მოხერხდა"
 
@@ -993,15 +1019,15 @@ msgstr "სურათის ჩატვირთვა ვერ მოხე
 msgid "Failed to load video"
 msgstr "ვიდეოს ჩატვირთვა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "სვლის გაკეთება ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "ფრეს შეთავაზება ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "პასი ვერ მოხერხდა"
 
@@ -1009,11 +1035,11 @@ msgstr "პასი ვერ მოხერხდა"
 msgid "Failed to post comment"
 msgstr "კომენტარის გამოქვეყნება ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "თანამდებობიდან გადადგომა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "თამაშის გაგრძელება ვერ მოხერხდა"
 
@@ -1021,8 +1047,8 @@ msgstr "თამაშის გაგრძელება ვერ მოხ
 msgid "Failed to revoke RSS access"
 msgstr "RSS წვდომის გაუქმება ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "გაგზავნა ვერ მოხერხდა"
 
@@ -1076,13 +1102,17 @@ msgstr "თემიდან"
 msgid "Game created"
 msgstr "თამაში შეიქმნა"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "თამაში წაიშალა"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "თამაში დასრულდა"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "გადასვლა"
 
@@ -1459,7 +1489,7 @@ msgstr "შეტყობინებები: {0}"
 msgid "Number"
 msgstr "ნომერი"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "ფრის შეთავაზება"
 
@@ -1476,11 +1506,11 @@ msgstr "უპს! გვერდი ვერ მოიძებნა!"
 msgid "Open actions"
 msgstr "მოქმედებების გახსნა"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "ჩატის პანელის გახსნა"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "თამაშის მოქმედებების გახსნა"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "მშობელი"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "გამოტოვება"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "გამოტოვება?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "გამოტოვება..."
 
@@ -1667,7 +1697,7 @@ msgstr "ფარდობითი (5წ, 3ს, 2დ)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "ფარდობითი 24 საათში, წინააღმდეგ შემთხვევაში აბსოლუტური"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "რევანში"
 
@@ -1743,16 +1773,16 @@ msgstr "აუცილებელი"
 msgid "Resend email"
 msgstr "ელფოსტის ხელახლა გაგზავნა"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "ჩაბარება"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "თამაშის ჩაბარება?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "ჩაბარება..."
 
@@ -1809,7 +1839,7 @@ msgstr "შაბათი"
 msgid "Save"
 msgstr "შენახვა"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "ქულა მიღებულია — ველოდები {opponentName}-ს"
 
@@ -2002,7 +2032,7 @@ msgstr "გასვლა მიმდინარეობს..."
 msgid "Single line of text only"
 msgstr "მხოლოდ ერთი სტრიქონი ტექსტი"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "გამოტოვეთ თქვენი სვლა და გადაეცით მოწინააღმდეგეს."
 
@@ -2110,7 +2140,7 @@ msgstr "მოთხოვნილი კონტენტი ვერ მო
 msgid "The server returned a web page instead of data."
 msgstr "სერვერმა მონაცემების ნაცვლად ვებგვერდი დააბრუნა."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ეს სამუდამოდ წაშლის თამაშსა და მის ჩატს. ამ მოქმედების გაუქმება შეუძლებელია."
 
@@ -2312,11 +2342,12 @@ msgstr "გავაგზავნეთ დამადასტურებ�
 msgid "Wednesday"
 msgstr "ოთხშაბათი"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "თეთრი"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "თეთრის აღებულები:"
 
@@ -2336,6 +2367,14 @@ msgstr "დიახ, ძალით"
 msgid "You do not have access to this section."
 msgstr "ამ განყოფილებაზე წვდომა არ გაქვთ."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "თქვენ დანებდით — იმარჯვებს {opponentName}"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "თქვენ გაიმარჯვეთ!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "თქვენი ანგარიში გადმოტანილია {source}-დან. სანამ იქ წაშლით, შეტყობინებები და ნოტიფიკაციები შეიძლება ორივე სერვერს მიაღწიოს, თქვენი კონტენტის ნაწილი კვლავ ძველი სერვერიდან ხელმისაწვდომია, ხოლო მიმდევრებს შეიძლება რამდენიმე წუთი დასჭირდეთ თქვენი პოვნისთვის."
@@ -2343,6 +2382,10 @@ msgstr "თქვენი ანგარიში გადმოტანი�
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "თქვენი დანართები დაიკარგება."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "თქვენი სვლა"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

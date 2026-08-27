@@ -35,7 +35,6 @@ import { GoGame } from '@/lib/go-engine'
 import { useSidebarContext } from '@/context/sidebar-context'
 import { setLastGame } from '@/hooks/useGameStorage'
 import { useGameWebsocket } from '@/hooks/useGameWebsocket'
-import { getOpponentName, type Game } from '@/api/games'
 import {
   useInfiniteMessagesQuery,
   useGamesQuery,
@@ -59,58 +58,6 @@ import { ScoringBanner } from './components/scoring-banner'
 import { ChatMessageList } from './components/chat-message-list'
 import { ChatInput } from './components/chat-input'
 
-// Plain function (not a hook) so it can be called from inside conditional JSX
-// without violating the rules of hooks. The `t` tag is passed in from the
-// component's own useLingui() call.
-function goStatusText(
-  t: ReturnType<typeof useLingui>['t'],
-  formatNumber: ReturnType<typeof useFormat>['formatNumber'],
-  game: Game,
-  myIdentity: string,
-  isMyTurn: boolean,
-  score?: { black: number; white: number; winner: 'black' | 'white' | null } | null
-): string {
-  const opponentName = getOpponentName(game, myIdentity)
-
-  if (game.status === 'finished') {
-    if (score?.winner) {
-      const winnerColor = score.winner === 'black' ? t`Black` : t`White`
-      // Both through formatNumber: white's score includes komi and is
-      // fractional, so a raw interpolation renders 6.5 where 6,5 is expected.
-      const black = formatNumber(score.black)
-      const white = formatNumber(score.white)
-      return t`${winnerColor} wins — B:${black} W:${white}`
-    }
-
-    // A tie now records status 'draw', but a peer on an older build still
-    // writes 'finished' with a winner nobody earned. Read the score, not it.
-    if (score) {
-      return t`Draw`
-    }
-
-    if (game.winner) {
-      return game.winner === myIdentity ? t`You win!` : t`${opponentName} wins`
-    }
-
-    return t`Game over`
-  }
-
-  if (game.status === 'draw') {
-    return t`Draw`
-  }
-
-  if (game.status === 'scoring') {
-    return t`Counting — agree the score or play on`
-  }
-
-  if (game.status === 'resigned') {
-    return game.winner === myIdentity
-      ? t`${opponentName} resigned — you win!`
-      : t`You resigned — ${opponentName} wins`
-  }
-
-  return isMyTurn ? t`Your move` : t`${opponentName}'s move`
-}
 
 export function GoGameView() {
   const { t } = useLingui()
@@ -446,6 +393,47 @@ export function GoGameView() {
       : game.identity_name
     : ''
 
+  // Inline rather than a helper taking `t`: the Lingui macro only rewrites
+  // templates tagged with the identifier destructured from useLingui(), so a
+  // `t` passed as a parameter is a different binding and none of these is
+  // extracted or rendered.
+  const headline = (() => {
+    if (!game) return ''
+
+    if (game.status === 'finished') {
+      if (score?.winner) {
+        const winnerColor = score.winner === 'black' ? t`Black` : t`White`
+        // Both through formatNumber: white's score includes komi and is
+        // fractional, so a raw interpolation renders 6.5 where 6,5 is expected.
+        const black = formatNumber(score.black)
+        const white = formatNumber(score.white)
+        return t`${winnerColor} wins — B:${black} W:${white}`
+      }
+
+      // A tie now records status 'draw', but a peer on an older build still
+      // writes 'finished' with a winner nobody earned. Read the score, not it.
+      if (score) return t`Draw`
+
+      if (game.winner) {
+        return game.winner === myIdentity ? t`You win!` : t`${opponentName} wins`
+      }
+
+      return t`Game over`
+    }
+
+    if (game.status === 'draw') return t`Draw`
+
+    if (game.status === 'scoring') return t`Counting — agree the score or play on`
+
+    if (game.status === 'resigned') {
+      return game.winner === myIdentity
+        ? t`${opponentName} resigned — you win!`
+        : t`You resigned — ${opponentName} wins`
+    }
+
+    return isMyTurn ? t`Your move` : t`${opponentName}'s move`
+  })()
+
   const opponentFingerprint = game
     ? game.identity === myIdentity
       ? game.opponent
@@ -480,7 +468,7 @@ export function GoGameView() {
                     }
                     opponentFingerprint={opponentFingerprint || undefined}
                     opponentName={opponentName}
-                    status={goStatusText(t, formatNumber, game, myIdentity, isMyTurn, score)}
+                    status={headline}
                     stats={
                       <>
                         <GameHeaderStat

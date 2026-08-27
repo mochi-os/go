@@ -70,13 +70,25 @@ msgstr "{name} ಡ್ರಾ ಪ್ರಸ್ತಾಪಿಸಿದರು"
 msgid "{name} resigned"
 msgstr "{name} ಶರಣಾದರು"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} ಸಹ ಪಾಸ್ ಮಾಡಿದ್ದಾರೆ. ದೃಢೀಕರಿಸುವುದರಿಂದ ಬೋರ್ಡ್ ಎಣಿಕೆಯಾಗುತ್ತದೆ ಮತ್ತು ನೀವಿಬ್ಬರೂ ಒಪ್ಪಬೇಕಾದ ಸ್ಕೋರ್ ಪ್ರಸ್ತಾಪಿಸಲಾಗುತ್ತದೆ."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ಡ್ರಾ ನೀಡಿದರು"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} ಶರಣಾದರು — ನೀವು ಗೆದ್ದಿರಿ!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} ಗೆದ್ದರು"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName} ಅವರ ಸರದಿ"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# ಐಟಂ} other {# ಐಟಂಗಳು}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {ಮೆನು ತೆರೆಯಿರಿ (# ಓದದ ಅಧಿಸೂಚನೆ)} other {ಮೆನು ತೆರೆಯಿರಿ (# ಓದದ ಅಧಿಸೂಚನೆಗಳು)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} ಗೆದ್ದಿತು — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "ಈ ಕಾಮೆಂಟ್ ಅನ್ನು ಅಳಿಸಲು ನೀವ�
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "ಲಾಗ್ ಔಟ್ ಮಾಡಲು ನೀವು ಖಚಿತವಾಗಿದ್ದೀರಾ? ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಪ್ರವೇಶಿಸಲು ನೀವು ಮತ್ತೆ ಲಾಗ್ ಇನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "ನೀವು ಶರಣಾಗಲು ಖಚಿತವಾಗಿದ್ದೀರಾ? {opponentName} ಆಟವನ್ನು ಗೆಲ್ಲುತ್ತಾರೆ."
 
@@ -343,11 +359,12 @@ msgstr "ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ"
 msgid "Banner"
 msgstr "ಬ್ಯಾನರ್"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "ಕಪ್ಪು"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "ಕಪ್ಪು ಹಿಡಿತಗಳು:"
 
@@ -434,8 +451,8 @@ msgstr "ಈ ಅಧಿಸೂಚನೆಗಳಿಗಾಗಿ ವರ್ಗ"
 msgid "Change notification category"
 msgstr "ಅಧಿಸೂಚನೆ ವರ್ಗವನ್ನು ಬದಲಾಯಿಸಿ"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "ಚಾಟ್"
 
@@ -634,6 +651,10 @@ msgstr "ಮರು-ದೃಢೀಕರಣವನ್ನು ಪ್ರಾರಂಭಿ�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ಆ ಖಾತೆಯೊಂದಿಗೆ ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "ಎಣಿಕೆ — ಅಂಕದ ಬಗ್ಗೆ ಒಪ್ಪಿಕೊಳ್ಳಿ ಅಥವಾ ಆಟ ಮುಂದುವರಿಸಿ"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "ಡೀಫಾಲ್ಟ್ ವಿಂಗಡಣೆ"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "ಅಳಿಸಿ"
 
@@ -723,11 +744,11 @@ msgstr "ಕಾಮೆಂಟ್ ಅಳಿಸಿ"
 msgid "Delete field"
 msgstr "ಫೀಲ್ಡ್ ಅಳಿಸಿ"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "ಆಟ ಅಳಿಸಿ"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "ಆಟವನ್ನು ಅಳಿಸಬೇಕೆ?"
 
@@ -749,7 +770,7 @@ msgstr "ವೀಕ್ಷಣೆ ಅಳಿಸಿ"
 msgid "Delete your account on the old server"
 msgstr "ಹಳೆಯ ಸರ್ವರ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅಳಿಸಿ"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "ಅಳಿಸಲಾಗುತ್ತಿದೆ..."
 
@@ -817,11 +838,16 @@ msgstr "ಡೌನ್‌ಲೋಡ್"
 msgid "Download failed"
 msgstr "ಡೌನ್‌ಲೋಡ್ ವಿಫಲವಾಗಿದೆ"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "ಡ್ರಾ"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "ಡ್ರಾ ಒಪ್ಪಿಗೆಯಾಯಿತು"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "ಡ್ರಾ ನೀಡಲಾಗಿದೆ — {opponentName} ಗಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ"
 
@@ -888,11 +914,11 @@ msgstr "ಖಾಲಿ ಛೇದನ {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ಖಾಲಿ ಛೇದನ {colLabel}{rowLabel}, ಇರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ ಅಥವಾ Enter ಒತ್ತಿರಿ"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "ಆಟ ಮುಗಿಸಿ"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "ಆಟ ಮುಗಿಸಬೇಕೆ?"
 
@@ -927,11 +953,11 @@ msgstr "ಬಾಹ್ಯ URL"
 msgid "Extra large"
 msgstr "ಹೆಚ್ಚುವರಿ ದೊಡ್ಡದು"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "ಡ್ರಾ ಸ್ವೀಕರಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "ಸ್ಕೋರ್ ಸ್ವೀಕರಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
@@ -949,11 +975,11 @@ msgstr "ಆಟ ರಚಿಸಲು ವಿಫಲವಾಗಿದೆ"
 msgid "Failed to create link"
 msgstr "ಲಿಂಕ್ ರಚಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "ಮರು-ಪಂದ್ಯ ರಚಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "ಡ್ರಾ ನಿರಾಕರಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
@@ -965,7 +991,7 @@ msgstr "ಲಗತ್ತು ಅಳಿಸಲು ವಿಫಲವಾಗಿದೆ"
 msgid "Failed to delete comment"
 msgstr "ಕಾಮೆಂಟ್ ಅಳಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "ಆಟ ಅಳಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
@@ -993,15 +1019,15 @@ msgstr "ಚಿತ್ರವನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲ
 msgid "Failed to load video"
 msgstr "ವೀಡಿಯೊ ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "ಚಲನೆ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "ಡ್ರಾ ಆಫರ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "ಪಾಸ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
 
@@ -1009,11 +1035,11 @@ msgstr "ಪಾಸ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
 msgid "Failed to post comment"
 msgstr "ಕಾಮೆಂಟ್ ಪೋಸ್ಟ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "ರಾಜೀನಾಮೆ ನೀಡಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "ಆಟ ಮುಂದುವರಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
@@ -1021,8 +1047,8 @@ msgstr "ಆಟ ಮುಂದುವರಿಸಲು ವಿಫಲವಾಗಿದೆ"
 msgid "Failed to revoke RSS access"
 msgstr "RSS ಪ್ರವೇಶವನ್ನು ಹಿಂಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "ಕಳುಹಿಸಲು ವಿಫಲವಾಗಿದೆ"
 
@@ -1076,13 +1102,17 @@ msgstr "ಥೀಮ್‌ನಿಂದ"
 msgid "Game created"
 msgstr "ಆಟ ರಚಿಸಲಾಗಿದೆ"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "ಆಟ ಅಳಿಸಲಾಗಿದೆ"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "ಆಟ ಮುಗಿಯಿತು"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "ಹೋಗಿ"
 
@@ -1459,7 +1489,7 @@ msgstr "ಅಧಿಸೂಚನೆಗಳು: {0}"
 msgid "Number"
 msgstr "ಸಂಖ್ಯೆ"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "ಡ್ರಾ ಆಫರ್ ಮಾಡಿ"
 
@@ -1476,11 +1506,11 @@ msgstr "ಓ! ಪುಟ ಸಿಗಲಿಲ್ಲ!"
 msgid "Open actions"
 msgstr "ಕ್ರಿಯೆಗಳನ್ನು ತೆರೆಯಿರಿ"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "ಚಾಟ್ ಪ್ಯಾನೆಲ್ ತೆರೆಯಿರಿ"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "ಆಟದ ಆಕ್ಷನ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "ಪೋಷಕ"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "ಪಾಸ್"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "ಸರದಿ ಪಾಸ್ ಮಾಡಬೇಕೆ?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "ಪಾಸ್ ಮಾಡಲಾಗುತ್ತಿದೆ..."
 
@@ -1667,7 +1697,7 @@ msgstr "ಸಾಪೇಕ್ಷ (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 ಗಂಟೆಗಳ ಒಳಗೆ ಸಾಪೇಕ್ಷ, ಇಲ್ಲದಿದ್ದರೆ ಸಂಪೂರ್ಣ"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "ಮರು-ಪಂದ್ಯ"
 
@@ -1743,16 +1773,16 @@ msgstr "ಅಗತ್ಯವಿದೆ"
 msgid "Resend email"
 msgstr "ಇಮೇಲ್ ಮತ್ತೆ ಕಳುಹಿಸಿ"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "ರಾಜೀನಾಮೆ"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "ಆಟಕ್ಕೆ ರಾಜೀನಾಮೆ ನೀಡಬೇಕೆ?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "ರಾಜೀನಾಮೆ ನೀಡಲಾಗುತ್ತಿದೆ..."
 
@@ -1809,7 +1839,7 @@ msgstr "ಶನಿವಾರ"
 msgid "Save"
 msgstr "ಉಳಿಸಿ"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "ಸ್ಕೋರ್ ಒಪ್ಪಲಾಗಿದೆ — {opponentName} ಗಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ"
 
@@ -2002,7 +2032,7 @@ msgstr "ಸೈನ್ ಔಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ..."
 msgid "Single line of text only"
 msgstr "ಒಂದೇ ಸಾಲಿನ ಪಠ್ಯ ಮಾತ್ರ"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "ನಿಮ್ಮ ಸರದಿಯನ್ನು ಬಿಟ್ಟು ನಿಮ್ಮ ಎದುರಾಳಿಗೆ ರವಾನಿಸಿ."
 
@@ -2110,7 +2140,7 @@ msgstr "ವಿನಂತಿಸಿದ ವಿಷಯವನ್ನು ಹುಡುಕ�
 msgid "The server returned a web page instead of data."
 msgstr "ಸರ್ವರ್ ಡೇಟಾ ಬದಲಿಗೆ ವೆಬ್ ಪುಟವನ್ನು ಹಿಂತಿರುಗಿಸಿತು."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ಇದು ಆಟ ಮತ್ತು ಅದರ ಚಾಟ್ ಅನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ. ಈ ಕ್ರಿಯೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ."
 
@@ -2312,11 +2342,12 @@ msgstr "ನಾವು <0>{0}</0> ಗೆ ಪರಿಶೀಲನಾ ಕೋಡ್ ಕ
 msgid "Wednesday"
 msgstr "ಬುಧವಾರ"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "ಬಿಳಿ"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "ಬಿಳಿ ಹಿಡಿತಗಳು:"
 
@@ -2336,6 +2367,14 @@ msgstr "ನೀವು"
 msgid "You do not have access to this section."
 msgstr "ಈ ವಿಭಾಗಕ್ಕೆ ನಿಮಗೆ ಪ್ರವೇಶವಿಲ್ಲ."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "ನೀವು ಶರಣಾದಿರಿ — {opponentName} ಗೆದ್ದರು"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "ನೀವು ಗೆದ್ದಿದ್ದೀರಿ!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "ನಿಮ್ಮ ಖಾತೆಯನ್ನು {source} ನಿಂದ ಇಲ್ಲಿಗೆ ವರ್ಗಾಯಿಸಲಾಗಿದೆ. ಅಲ್ಲಿ ಅದನ್ನು ಅಳಿಸುವವರೆಗೆ, ಸಂದೇಶಗಳು ಮತ್ತು ಅಧಿಸೂಚನೆಗಳು ಎರಡೂ ಸರ್ವರ್‌ಗಳಿಗೆ ತಲುಪಬಹುದು, ನಿಮ್ಮ ಕೆಲವು ವಿಷಯಗಳು ಹಳೆಯ ಸರ್ವರ್‌ನಿಂದ ಮಾತ್ರ ಒದಗಿಸಲ್ಪಡುತ್ತಿರಬಹುದು, ಮತ್ತು ಅನುಯಾಯಿಗಳು ನಿಮ್ಮನ್ನು ಇಲ್ಲಿ ಹುಡುಕಲು ಕೆಲವು ನಿಮಿಷಗಳು ಬೇಕಾಗಬಹುದು."
@@ -2343,6 +2382,10 @@ msgstr "ನಿಮ್ಮ ಖಾತೆಯನ್ನು {source} ನಿಂದ ಇಲ
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "ನಿಮ್ಮ ಲಗತ್ತುಗಳು ಕಳೆದುಹೋಗುತ್ತವೆ."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "ನಿಮ್ಮ ಚಲನೆ"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

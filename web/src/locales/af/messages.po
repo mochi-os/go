@@ -70,13 +70,25 @@ msgstr "{name} het 'n gelykop aangebied"
 msgid "{name} resigned"
 msgstr "{name} het oorgegee"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} het ook oorgegee. Bevestiging sal die bord tel en 'n telling voorstel waaroor julle albei moet saamstem."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} het gelykop aangebied"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} het tou opgegooi — jy wen!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} wen"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName} se beurt"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# item} other {# items}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Open kieslys (# ongeleeste kennisgewing)} other {Open kieslys (# ongeleeste kennisgewings)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} wen — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Is jy seker jy wil hierdie kommentaar verwyder? Dit sal ook alle antwoor
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Is jy seker jy wil afmeld? Jy sal weer moet aanmeld om toegang tot jou rekening te kry."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Is jy seker jy wil oorgee? {opponentName} sal die spel wen."
 
@@ -343,11 +359,12 @@ msgstr "Terug na tuis"
 msgid "Banner"
 msgstr "Banier"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Swart"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Swart vang:"
 
@@ -434,8 +451,8 @@ msgstr "Kategorie vir hierdie kennisgewings"
 msgid "Change notification category"
 msgstr "Verander kennisgewingkategorie"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Klets"
 
@@ -634,6 +651,10 @@ msgstr "Kon nie herverifikasie begin nie. Probeer asseblief weer."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Kon nie met daardie rekening verifieer nie. Probeer asseblief weer."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Tel — stem saam oor die telling of speel voort"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Verstek sortering"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Verwyder"
 
@@ -723,11 +744,11 @@ msgstr "Verwyder kommentaar"
 msgid "Delete field"
 msgstr "Verwyder veld"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Verwyder speletjie"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Verwyder spel?"
 
@@ -749,7 +770,7 @@ msgstr "Verwyder aansig"
 msgid "Delete your account on the old server"
 msgstr "Vee jou rekening op die ou bediener uit"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Verwyder..."
 
@@ -817,11 +838,16 @@ msgstr "Laai af"
 msgid "Download failed"
 msgstr "Aflaai het misluk"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Gelykop"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Gelykop ooreengekom"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Gelykop aangebied — wag vir {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Leë kruising {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Leë kruising {colLabel}{rowLabel}, klik of druk Enter om te plaas"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Beëindig spel"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Beëindig spel?"
 
@@ -927,11 +953,11 @@ msgstr "Eksterne URL"
 msgid "Extra large"
 msgstr "Ekstra groot"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Kon nie gelykop aanvaar nie"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Kon nie telling aanvaar nie"
 
@@ -949,11 +975,11 @@ msgstr "Kon nie spel skep nie"
 msgid "Failed to create link"
 msgstr "Kon nie skakel skep nie"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Kon nie herwedstryd skep nie"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Kon nie gelykop afwys nie"
 
@@ -965,7 +991,7 @@ msgstr "Kon nie aanhangsel verwyder nie"
 msgid "Failed to delete comment"
 msgstr "Kon nie kommentaar verwyder nie"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Kon nie spel verwyder nie"
 
@@ -993,15 +1019,15 @@ msgstr "Kon nie prent laai nie"
 msgid "Failed to load video"
 msgstr "Kon nie video laai nie"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Kon nie skuif maak nie"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Kon nie gelykop aanbied nie"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Kon nie verbygaan nie"
 
@@ -1009,11 +1035,11 @@ msgstr "Kon nie verbygaan nie"
 msgid "Failed to post comment"
 msgstr "Kon nie kommentaar plaas nie"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Kon nie bedank nie"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Kon nie spel hervat nie"
 
@@ -1021,8 +1047,8 @@ msgstr "Kon nie spel hervat nie"
 msgid "Failed to revoke RSS access"
 msgstr "Kon nie RSS-toegang herroep nie"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Kon nie stuur nie"
 
@@ -1076,13 +1102,17 @@ msgstr "Vanaf tema"
 msgid "Game created"
 msgstr "Spel geskep"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Spel verwyder"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Spel verby"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Gaan"
 
@@ -1459,7 +1489,7 @@ msgstr "Kennisgewings: {0}"
 msgid "Number"
 msgstr "Nommer"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Bied gelykop aan"
 
@@ -1476,11 +1506,11 @@ msgstr "Oeps! Bladsy nie gevind nie!"
 msgid "Open actions"
 msgstr "Maak aksies oop"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Maak geselsiepaneel oop"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Maak spelaksies oop"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Ouer"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Slaag oor"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Slaag beurt oor?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Besig om oor te slaan..."
 
@@ -1667,7 +1697,7 @@ msgstr "Relatief (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relatief binne 24 uur, andersins absoluut"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Hernuwe wedstryd"
 
@@ -1743,16 +1773,16 @@ msgstr "Vereis"
 msgid "Resend email"
 msgstr "Stuur e-pos weer"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Bedank"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Bedank spel?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Besig om te bedank..."
 
@@ -1809,7 +1839,7 @@ msgstr "Saterdag"
 msgid "Save"
 msgstr "Stoor"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Telling aanvaar — wag vir {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Besig om af te meld..."
 msgid "Single line of text only"
 msgstr "Slegs enkelreël teks"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Slaan jou beurt oor en gee oor aan jou teenstander."
 
@@ -2110,7 +2140,7 @@ msgstr "Die aangevraagde inhoud kon nie gevind word nie."
 msgid "The server returned a web page instead of data."
 msgstr "Die bediener het 'n webblad in plaas van data teruggestuur."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Dit verwyder die spel en die klets permanent. Dit kan nie ontdaan word nie."
 
@@ -2312,11 +2342,12 @@ msgstr "Ons het 'n verifikasiekode na <0>{0}</0> gestuur. Voer die kode hieronde
 msgid "Wednesday"
 msgstr "Woensdag"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Wit"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Wit vang:"
 
@@ -2336,6 +2367,14 @@ msgstr "Jy"
 msgid "You do not have access to this section."
 msgstr "Jy het nie toegang tot hierdie afdeling nie."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Jy het tou opgegooi — {opponentName} wen"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Jy wen!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Jou rekening is hierheen geskuif vanaf {source}. Totdat jy dit daar uitvee, kan boodskappe en kennisgewings albei bedieners bereik, word sommige van jou inhoud steeds vanaf die ou bediener bedien, en kan volgelinge 'n paar minute neem om jou hier te vind."
@@ -2343,6 +2382,10 @@ msgstr "Jou rekening is hierheen geskuif vanaf {source}. Totdat jy dit daar uitv
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Jou aanhegsels sal verlore gaan."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Jou skuif"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

@@ -70,13 +70,25 @@ msgstr "{name} 提出和棋"
 msgid "{name} resigned"
 msgstr "{name} 認輸"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} 也已停一手。確認將計算棋盤並提出一個需要雙方同意的分數。"
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} 提議和棋"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} 已認輸 — 你贏了！"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} 獲勝"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "輪到 {opponentName} 了"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# 項} other {# 項}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {開啟選單（# 則未讀通知）} other {開啟選單（# 則未讀通知）}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} 獲勝 — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "您確定要刪除此留言嗎?這也會刪除所有回覆。"
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "您確定要登出嗎?您將需要再次登入才能存取您的帳戶。"
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "確定要認輸嗎?{opponentName} 將贏得比賽。"
 
@@ -343,11 +359,12 @@ msgstr "返回首頁"
 msgid "Banner"
 msgstr "橫幅"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "黑色"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "黑提子："
 
@@ -434,8 +451,8 @@ msgstr "這些通知的類別"
 msgid "Change notification category"
 msgstr "變更通知類別"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "聊天"
 
@@ -634,6 +651,10 @@ msgstr "無法開始重新驗證。請再試一次。"
 msgid "Couldn't verify with that account. Please try again."
 msgstr "無法使用該帳戶進行驗證。請重試。"
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "點目 — 就目數達成一致或繼續對局"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "預設排序"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "刪除"
 
@@ -723,11 +744,11 @@ msgstr "刪除留言"
 msgid "Delete field"
 msgstr "刪除欄位"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "刪除遊戲"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "刪除對局?"
 
@@ -749,7 +770,7 @@ msgstr "刪除檢視"
 msgid "Delete your account on the old server"
 msgstr "刪除您在舊伺服器上的帳號"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "刪除中..."
 
@@ -817,11 +838,16 @@ msgstr "下載"
 msgid "Download failed"
 msgstr "下載失敗"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "和局"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "同意和棋"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "已提議和棋 — 等待 {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "空交叉點 {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "空交叉點 {colLabel}{rowLabel},點擊或按 Enter 放置"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "結束遊戲"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "結束遊戲?"
 
@@ -927,11 +953,11 @@ msgstr "外部網址"
 msgid "Extra large"
 msgstr "特大"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "接受和局失敗"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "接受分數失敗"
 
@@ -949,11 +975,11 @@ msgstr "建立遊戲失敗"
 msgid "Failed to create link"
 msgstr "建立連結失敗"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "建立再戰失敗"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "拒絕和局失敗"
 
@@ -965,7 +991,7 @@ msgstr "刪除附件失敗"
 msgid "Failed to delete comment"
 msgstr "刪除留言失敗"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "刪除遊戲失敗"
 
@@ -993,15 +1019,15 @@ msgstr "無法載入圖片"
 msgid "Failed to load video"
 msgstr "無法載入影片"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "下棋失敗"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "提議和局失敗"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "略過失敗"
 
@@ -1009,11 +1035,11 @@ msgstr "略過失敗"
 msgid "Failed to post comment"
 msgstr "張貼留言失敗"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "認輸失敗"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "恢復對局失敗"
 
@@ -1021,8 +1047,8 @@ msgstr "恢復對局失敗"
 msgid "Failed to revoke RSS access"
 msgstr "撤銷 RSS 存取權限失敗"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "傳送失敗"
 
@@ -1076,13 +1102,17 @@ msgstr "來自主題"
 msgid "Game created"
 msgstr "遊戲已建立"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "遊戲已刪除"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "遊戲結束"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "圍棋"
 
@@ -1459,7 +1489,7 @@ msgstr "通知：{0}"
 msgid "Number"
 msgstr "數字"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "提議和局"
 
@@ -1476,11 +1506,11 @@ msgstr "糟糕!找不到頁面!"
 msgid "Open actions"
 msgstr "開啟動作選單"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "開啟聊天面板"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "開啟遊戲動作"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "父項"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "略過"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "略過回合?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "略過中..."
 
@@ -1667,7 +1697,7 @@ msgstr "相對(5m、3h、2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 小時內相對,否則絕對"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "再戰一場"
 
@@ -1743,16 +1773,16 @@ msgstr "必填"
 msgid "Resend email"
 msgstr "重新發送電郵"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "認輸"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "認輸?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "認輸中..."
 
@@ -1809,7 +1839,7 @@ msgstr "星期六"
 msgid "Save"
 msgstr "儲存"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "已接受分數 — 等待 {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "登出中..."
 msgid "Single line of text only"
 msgstr "僅限單行文字"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "跳過你的回合,讓給對手。"
 
@@ -2110,7 +2140,7 @@ msgstr "找不到要求的內容。"
 msgid "The server returned a web page instead of data."
 msgstr "伺服器傳回網頁而非資料。"
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "此操作將永久刪除對局及其聊天記錄，且無法復原。"
 
@@ -2312,11 +2342,12 @@ msgstr "我們已將驗證碼傳送至 <0>{0}</0>。請在下方輸入驗證碼�
 msgid "Wednesday"
 msgstr "星期三"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "白方"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "白提子："
 
@@ -2336,6 +2367,14 @@ msgstr "您"
 msgid "You do not have access to this section."
 msgstr "您沒有存取此區段的權限。"
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "你已認輸 — {opponentName} 獲勝"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "您贏了!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "您的帳號已從 {source} 遷移至此。在您於該處刪除帳號之前，訊息和通知可能會同時到達兩個伺服器，部分內容仍由舊伺服器提供，追蹤者可能需要幾分鐘才能在此找到您。"
@@ -2343,6 +2382,10 @@ msgstr "您的帳號已從 {source} 遷移至此。在您於該處刪除帳號�
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "您的附件將遺失。"
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "輪到您"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

@@ -70,13 +70,25 @@ msgstr "{name} понудио реми"
 msgid "{name} resigned"
 msgstr "{name} се предао"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} је такође пасирао. Потврђивање ће пребројати таблу и предложити резултат са којим обоје морате да се сложите."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} је понудио нерешено"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} се предао — победили сте!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "Побеђује {opponentName}"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName} је на потезу"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# ставка} few {# ставке} other {# 
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Отвори мени (# непрочитано обавештење)} few {Отвори мени (# непрочитана обавештења)} other {Отвори мени (# непрочитаних обавештења)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "Побеђује {winnerColor} — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Да ли сте сигурни да желите да обришете 
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Да ли сте сигурни да желите да се одјавите? Мораћете поново да се пријавите да приступите свом налогу."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Да ли сте сигурни да желите да предате? {opponentName} ће победити у игри."
 
@@ -343,11 +359,12 @@ msgstr "Назад на почетну"
 msgid "Banner"
 msgstr "Банер"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Црно"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Црно заробљава:"
 
@@ -434,8 +451,8 @@ msgstr "Категорија за ова обавештења"
 msgid "Change notification category"
 msgstr "Промени категорију обавештења"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Разговор"
 
@@ -634,6 +651,10 @@ msgstr "Поновна потврда идентитета није могла �
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Није било могуће извршити проверу са тим налогом. Покушајте поново."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Бројање — сложите се око резултата или наставите игру"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Подразумевано сортирање"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Обриши"
 
@@ -723,11 +744,11 @@ msgstr "Обриши коментар"
 msgid "Delete field"
 msgstr "Обриши поље"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Обриши игру"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Обрисати игру?"
 
@@ -749,7 +770,7 @@ msgstr "Обриши приказ"
 msgid "Delete your account on the old server"
 msgstr "Обришите свој налог на старом серверу"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Брисање..."
 
@@ -817,11 +838,16 @@ msgstr "Преузми"
 msgid "Download failed"
 msgstr "Преузимање није успело"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Реми"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Реми прихваћен"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Понуђен реми — чека се {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Празан пресек {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Празан пресек {colLabel}{rowLabel}, кликните или притисните Enter да поставите"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Заврши игру"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Завршити игру?"
 
@@ -927,11 +953,11 @@ msgstr "Спољни URL"
 msgid "Extra large"
 msgstr "Веома велико"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Прихватање ремија није успело"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Прихватање резултата није успело"
 
@@ -949,11 +975,11 @@ msgstr "Креирање игре није успело"
 msgid "Failed to create link"
 msgstr "Креирање везе није успело"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Креирање реванша није успело"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Одбијање ремија није успело"
 
@@ -965,7 +991,7 @@ msgstr "Брисање прилога није успело"
 msgid "Failed to delete comment"
 msgstr "Брисање коментара није успело"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Брисање игре није успело"
 
@@ -993,15 +1019,15 @@ msgstr "Слика није могла да се учита"
 msgid "Failed to load video"
 msgstr "Видео није могао да се учита"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Прављење потеза није успело"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Понуда ремија није успела"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Прескакање није успело"
 
@@ -1009,11 +1035,11 @@ msgstr "Прескакање није успело"
 msgid "Failed to post comment"
 msgstr "Објављивање коментара није успело"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Предаја није успела"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Настављање игре није успело"
 
@@ -1021,8 +1047,8 @@ msgstr "Настављање игре није успело"
 msgid "Failed to revoke RSS access"
 msgstr "Опозивање RSS приступа није успело"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Слање није успело"
 
@@ -1076,13 +1102,17 @@ msgstr "Из теме"
 msgid "Game created"
 msgstr "Игра креирана"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Игра обрисана"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Крај игре"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Иди"
 
@@ -1459,7 +1489,7 @@ msgstr "Обавештења: {0}"
 msgid "Number"
 msgstr "Број"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Понуди реми"
 
@@ -1476,11 +1506,11 @@ msgstr "Упс! Страница није пронађена!"
 msgid "Open actions"
 msgstr "Отвори радње"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Отвори панел чета"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Отвори акције игре"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Родитељ"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Прескочи"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Прескочити потез?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Прескакање..."
 
@@ -1667,7 +1697,7 @@ msgstr "Релативно (5м, 3ч, 2д)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Релативно у оквиру 24 сата, иначе апсолутно"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Реванш"
 
@@ -1743,16 +1773,16 @@ msgstr "Обавезно"
 msgid "Resend email"
 msgstr "Поново пошаљи имејл"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Предај се"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Предати игру?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Предавање..."
 
@@ -1809,7 +1839,7 @@ msgstr "Субота"
 msgid "Save"
 msgstr "Сачувај"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Резултат је прихваћен — чека се {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Одјављивање..."
 msgid "Single line of text only"
 msgstr "Само један ред текста"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Прескочи свој потез и пребаци га противнику."
 
@@ -2110,7 +2140,7 @@ msgstr "Тражени садржај није пронађен."
 msgid "The server returned a web page instead of data."
 msgstr "Сервер је вратио веб страницу уместо података."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Ово ће трајно обрисати игру и њено ћаскање. Ова радња се не може опозвати."
 
@@ -2312,11 +2342,12 @@ msgstr "Послали смо кôд за потврду на <0>{0}</0>. Уне
 msgid "Wednesday"
 msgstr "Среда"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Бели"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Бели хвата:"
 
@@ -2336,6 +2367,14 @@ msgstr "Ти"
 msgid "You do not have access to this section."
 msgstr "Немате приступ овом одељку."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Предали сте се — побеђује {opponentName}"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Победио си!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ваш налог је премештен овде са {source}. Све док га тамо не обришете, поруке и обавештења могу стизати на оба сервера, неки ваш садржај ће и даље бити сервиран са старог сервера, а пратиоцима може требати неколико минута да вас пронађу овде."
@@ -2343,6 +2382,10 @@ msgstr "Ваш налог је премештен овде са {source}. Све
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Ваши прилози ће бити изгубљени."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Твој потез"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

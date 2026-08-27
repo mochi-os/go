@@ -70,13 +70,25 @@ msgstr "{name} dábàá ìfòyebánilọ́pọ̀"
 msgid "{name} resigned"
 msgstr "{name} jọwọ́ ara rẹ̀"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} náà ti kọjá. Ìfìdíjámọ́ yóò ka pátákó náà yóò sì dábàá àmì kan tí ẹ̀yin méjèèjì gbọ́dọ̀ fọwọ́sí."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} fún ní ìdábọ̀"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} juwọ́ sílẹ̀ — o ṣẹ́gun!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} ṣẹ́gun"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "Ìgbà {opponentName} ni"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# nkan} other {# nkan}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Ṣí àkójọ àṣàyàn (# ìfitónilétí tí a kò kà)} other {Ṣí àkójọ àṣàyàn (# ìfitónilétí tí a kò kà)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} ṣẹ́gun — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Ṣé o dájú pé o fẹ́ pa àlàyé yìí rẹ́? Èyí yóò tún p
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Ṣé o dájú pé o fẹ́ jáde? Wàá nílò láti wọlé lẹ́ẹ̀kan sí i láti rí àkáǹtì rẹ."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Ǹjẹ́ ó dájú pé o fẹ́ jọ̀wọ́? {opponentName} yóò ṣẹ́gun ìdíje náà."
 
@@ -343,11 +359,12 @@ msgstr "Pada si ile"
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Dúdú"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Awọn tí dúdú mú:"
 
@@ -434,8 +451,8 @@ msgstr "Ẹ̀ka fún àwọn ìfitónilétí wọ̀nyí"
 msgid "Change notification category"
 msgstr "Yí ẹ̀ka ìfitónilétí padà"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Ìjíròrò"
 
@@ -634,6 +651,10 @@ msgstr "Kò lè bẹ̀rẹ̀ ìjẹ́rìísí-padà. Jọ̀wọ́ gbìyànjú l�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "A kò lè fọwọ́sí pẹ̀lú àkàùntì yẹn. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kansí."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Kíka — ẹ fohùn ṣọ̀kan lórí àmì tàbí ẹ máa bá eré lọ"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Ìtò àìpé"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Pa rẹ́"
 
@@ -723,11 +744,11 @@ msgstr "Pa àlàyé rẹ́"
 msgid "Delete field"
 msgstr "Pa pápá rẹ́"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Pa eré rẹ́"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Pa eré náà rẹ́?"
 
@@ -749,7 +770,7 @@ msgstr "Pa ìran rẹ́"
 msgid "Delete your account on the old server"
 msgstr "Pa akonti rẹ rẹ lori olupin atijọ"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Ó ń pa rẹ́..."
 
@@ -817,11 +838,16 @@ msgstr "Gbà sílẹ̀"
 msgid "Download failed"
 msgstr "Ìgbasílẹ̀ kùnà"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Ìdọ́gba"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Ìfòyebánilọ́pọ̀ ti gbà"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "A fún ní ìdábọ̀ — ń dúró de {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Ìkóra ṣófo {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Ìkóra ṣófo {colLabel}{rowLabel}, tẹ tàbí tẹ Enter láti gbé"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Parí eré"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Parí eré?"
 
@@ -927,11 +953,11 @@ msgstr "URL òde"
 msgid "Extra large"
 msgstr "Tóbi gan"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Kò lè gba ìbárapọ̀"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Kò lè gba àmì náà"
 
@@ -949,11 +975,11 @@ msgstr "Kò lè dá eré"
 msgid "Failed to create link"
 msgstr "Kò lè dá ìjápọ̀"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Kò lè dá ìbárapọ̀ tuntun"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Kò lè kọ ìbárapọ̀"
 
@@ -965,7 +991,7 @@ msgstr "Kò lè pa àfikún rẹ́"
 msgid "Failed to delete comment"
 msgstr "Kò lè pa ọ̀rọ̀-ìṣàlàyé rẹ́"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Kò lè pa eré rẹ́"
 
@@ -993,15 +1019,15 @@ msgstr "Kò ṣeé gbé àwòrán wọlé"
 msgid "Failed to load video"
 msgstr "Kò ṣeé gbé fídíò wọlé"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Kò lè ṣe ìṣíkiri"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Kò lè dábàá ìbárapọ̀"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Kò lè kọjá"
 
@@ -1009,11 +1035,11 @@ msgstr "Kò lè kọjá"
 msgid "Failed to post comment"
 msgstr "Kò lè fi ọ̀rọ̀-ìṣàlàyé ránṣẹ́"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Kò lè jọ̀wọ́"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Kò lè tẹ̀síwájú eré náà"
 
@@ -1021,8 +1047,8 @@ msgstr "Kò lè tẹ̀síwájú eré náà"
 msgid "Failed to revoke RSS access"
 msgstr "Ìkùnà láti fagilé ìwọlé RSS"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Kò lè firanṣẹ́"
 
@@ -1076,13 +1102,17 @@ msgstr "Lát'ọ̀dọ̀ Theme"
 msgid "Game created"
 msgstr "A ti dá eré"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "A ti pa eré rẹ́"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Eré ti parí"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Lọ"
 
@@ -1459,7 +1489,7 @@ msgstr "Àwọn ìfitónilétí: {0}"
 msgid "Number"
 msgstr "Nọ́mbà"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Pèsè ìdọ́gba"
 
@@ -1476,11 +1506,11 @@ msgstr "Aàá! A Kò Rí Ojú-ìwé!"
 msgid "Open actions"
 msgstr "Ṣí àwọn ìṣe"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Ṣí àwòrán chat"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Ṣí àwọn iṣẹ́ eré"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Òbí"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Kọjá"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Kọjá ìgbà?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Ń kọjá..."
 
@@ -1667,7 +1697,7 @@ msgstr "Pẹ̀lú ìbáṣepọ̀ (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Pẹ̀lú ìbáṣepọ̀ nínú wákàtí 24, bí ó ṣíkù absolute"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Tún bá"
 
@@ -1743,16 +1773,16 @@ msgstr "Pọn dandan"
 msgid "Resend email"
 msgstr "Tún ìmélì náà ránṣẹ́"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Fi sílẹ̀"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Fi eré sílẹ̀?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Ń fi sílẹ̀..."
 
@@ -1809,7 +1839,7 @@ msgstr "Ọjọ́ Àbámẹ́ta"
 msgid "Save"
 msgstr "Fi pamọ́"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "A gba àmì — ń dúró de {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Ń jáde..."
 msgid "Single line of text only"
 msgstr "Ila ọ̀rọ̀ kan ṣoṣo"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Fò ìyípo rẹ kí o sì gbé fún alátakò rẹ."
 
@@ -2110,7 +2140,7 @@ msgstr "A kò rí àkóónú tí o béèrè fún."
 msgid "The server returned a web page instead of data."
 msgstr "Olupin naa da oju-ìwé wẹ́ẹ̀bù padà dípò data."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Èyí yóò pa eré náà àti ìjíròrò rẹ̀ rẹ́ pátápátá. A kò lè yí ìṣe yìí padà."
 
@@ -2312,11 +2342,12 @@ msgstr "A rán kóòdù ìjẹ́rìísí sí <0>{0}</0>. Tẹ kóòdù náà sí
 msgid "Wednesday"
 msgstr "Ọjọ́rú"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Funfun"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Awọn tí funfun mú:"
 
@@ -2336,6 +2367,14 @@ msgstr "Ìwọ"
 msgid "You do not have access to this section."
 msgstr "O kò ní ààyè sí abala yìí."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "O juwọ́ sílẹ̀ — {opponentName} ṣẹ́gun"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "O borí!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "A gbe akonti rẹ wá ibi lati {source}. Titi iwọ o fi pa rẹ nibẹ, awọn ifiranṣẹ ati awọn iwifunni le de olupin mejeeji, diẹ ninu akoonu rẹ tẹsiwaju lati sin lati olupin atijọ, ati awọn olutẹle le gba iṣẹju diẹ lati wa ọ nibi."
@@ -2343,6 +2382,10 @@ msgstr "A gbe akonti rẹ wá ibi lati {source}. Titi iwọ o fi pa rẹ nibẹ,
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Àwọn fáìlì àsomọ́ rẹ yóò sọnù."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Ìṣíkiri rẹ"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

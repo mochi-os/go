@@ -70,13 +70,25 @@ msgstr "{name} piedāvāja neizšķirtu"
 msgid "{name} resigned"
 msgstr "{name} padevās"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} arī izlaida. Apstiprinot dēlis tiks saskaitīts un tiks piedāvāts rezultāts, par kuru jums abiem jāvienojas."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} piedāvāja neizšķirtu"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} padevās — jūs uzvarējāt!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "Uzvar {opponentName}"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName} gājiens"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, zero {# vienumu} one {# vienums} other {# vienumi}}
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, zero {Atvērt izvēlni (# neizlasītu paziņojumu)} one {Atvērt izvēlni (# neizlasīts paziņojums)} other {Atvērt izvēlni (# neizlasīti paziņojumi)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "Uzvar {winnerColor} — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Vai tiešām vēlies dzēst šo komentāru? Tas dzēsīs arī visas atbi
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Vai tiešām vēlies izrakstīties? Lai piekļūtu kontam, būs jāpierakstās vēlreiz."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Vai tiešām vēlies padoties? {opponentName} uzvarēs spēli."
 
@@ -343,11 +359,12 @@ msgstr "Atpakaļ uz sākumu"
 msgid "Banner"
 msgstr "Baneris"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Melnais"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Melnā paņemtie:"
 
@@ -434,8 +451,8 @@ msgstr "Šo paziņojumu kategorija"
 msgid "Change notification category"
 msgstr "Mainīt paziņojuma kategoriju"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Saruna"
 
@@ -634,6 +651,10 @@ msgstr "Neizdevās sākt atkārtotu autentifikāciju. Lūdzu, mēģiniet vēlrei
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Neizdevās verificēt ar šo kontu. Lūdzu, mēģiniet vēlreiz."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Skaitīšana — vienojieties par rezultātu vai turpiniet spēli"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Noklusētā kārtošana"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Dzēst"
 
@@ -723,11 +744,11 @@ msgstr "Dzēst komentāru"
 msgid "Delete field"
 msgstr "Dzēst lauku"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Dzēst spēli"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Dzēst spēli?"
 
@@ -749,7 +770,7 @@ msgstr "Dzēst skatu"
 msgid "Delete your account on the old server"
 msgstr "Dzēsiet savu kontu vecajā serverī"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Dzēš..."
 
@@ -817,11 +838,16 @@ msgstr "Lejupielādēt"
 msgid "Download failed"
 msgstr "Lejupielāde neizdevās"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Neizšķirts"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Neizšķirts pieņemts"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Piedāvāts neizšķirts — gaida {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Tukšs krustojums {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Tukšs krustojums {colLabel}{rowLabel}, noklikšķiniet vai nospiediet Enter, lai novietotu"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Beigt spēli"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Beigt spēli?"
 
@@ -927,11 +953,11 @@ msgstr "Ārējs URL"
 msgid "Extra large"
 msgstr "Ļoti liels"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Neizdevās pieņemt neizšķirtu"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Neizdevās pieņemt rezultātu"
 
@@ -949,11 +975,11 @@ msgstr "Neizdevās izveidot spēli"
 msgid "Failed to create link"
 msgstr "Neizdevās izveidot saiti"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Neizdevās izveidot atkārtotu spēli"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Neizdevās noraidīt neizšķirtu"
 
@@ -965,7 +991,7 @@ msgstr "Neizdevās dzēst pielikumu"
 msgid "Failed to delete comment"
 msgstr "Neizdevās dzēst komentāru"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Neizdevās dzēst spēli"
 
@@ -993,15 +1019,15 @@ msgstr "Neizdevās ielādēt attēlu"
 msgid "Failed to load video"
 msgstr "Neizdevās ielādēt video"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Neizdevās izdarīt gājienu"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Neizdevās piedāvāt neizšķirtu"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Neizdevās izlaist gājienu"
 
@@ -1009,11 +1035,11 @@ msgstr "Neizdevās izlaist gājienu"
 msgid "Failed to post comment"
 msgstr "Neizdevās publicēt komentāru"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Neizdevās padoties"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Neizdevās atsākt spēli"
 
@@ -1021,8 +1047,8 @@ msgstr "Neizdevās atsākt spēli"
 msgid "Failed to revoke RSS access"
 msgstr "Neizdevās atsaukt RSS piekļuvi"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Neizdevās nosūtīt"
 
@@ -1076,13 +1102,17 @@ msgstr "No motīva"
 msgid "Game created"
 msgstr "Spēle izveidota"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Spēle dzēsta"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Spēle beigusies"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Iet"
 
@@ -1459,7 +1489,7 @@ msgstr "Paziņojumi: {0}"
 msgid "Number"
 msgstr "Numurs"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Piedāvāt neizšķirtu"
 
@@ -1476,11 +1506,11 @@ msgstr "Hops! Lapa nav atrasta!"
 msgid "Open actions"
 msgstr "Atvērt darbības"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Atvērt čata paneli"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Atvērt spēles darbības"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Vecāks"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Izlaist"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Izlaist gājienu?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Izlaiž..."
 
@@ -1667,7 +1697,7 @@ msgstr "Relatīvs (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relatīvs 24 stundu laikā, citādi absolūts"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Atkārtota spēle"
 
@@ -1743,16 +1773,16 @@ msgstr "Obligāts"
 msgid "Resend email"
 msgstr "Sūtīt e-pastu vēlreiz"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Padoties"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Padoties spēlē?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Padodas..."
 
@@ -1809,7 +1839,7 @@ msgstr "Sestdiena"
 msgid "Save"
 msgstr "Saglabāt"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Rezultāts pieņemts — gaida {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Notiek izrakstīšanās..."
 msgid "Single line of text only"
 msgstr "Tikai viena teksta rinda"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Izlaist savu gājienu un nodot to pretiniekam."
 
@@ -2110,7 +2140,7 @@ msgstr "Pieprasīto saturu neizdevās atrast."
 msgid "The server returned a web page instead of data."
 msgstr "Serveris atgrieza tīmekļa lapu, nevis datus."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Tas neatgriezeniski dzēsīs spēli un tās tērzēšanu. Šo darbību nevar atsaukt."
 
@@ -2312,11 +2342,12 @@ msgstr "Nosūtījām verifikācijas kodu uz <0>{0}</0>. Ievadiet kodu zemāk, la
 msgid "Wednesday"
 msgstr "Trešdiena"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Baltais"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Baltais sagrābj:"
 
@@ -2336,6 +2367,14 @@ msgstr "Jūs"
 msgid "You do not have access to this section."
 msgstr "Jums nav piekļuves šai sadaļai."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Jūs padevāties — uzvar {opponentName}"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Jūs uzvarējāt!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Jūsu konts tika pārvietots šeit no {source}. Kamēr to tur nedzēšat, ziņojumi un paziņojumi var sasniegt abus serverus, daļa jūsu satura joprojām tiek apkalpota no vecā servera un sekotājiem var paiet dažas minūtes, lai atrastu jūs šeit."
@@ -2343,6 +2382,10 @@ msgstr "Jūsu konts tika pārvietots šeit no {source}. Kamēr to tur nedzēšat
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Jūsu pielikumi tiks zaudēti."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Jūsu gājiens"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

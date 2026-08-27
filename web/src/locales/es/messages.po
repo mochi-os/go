@@ -70,13 +70,25 @@ msgstr "{name} ofreció tablas"
 msgid "{name} resigned"
 msgstr "{name} abandonó"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} también pasó. Confirmar contará el tablero y propondrá una puntuación que ambos debéis acordar."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ha ofrecido tablas"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} se ha rendido — ¡has ganado!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "Gana {opponentName}"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "Le toca a {opponentName}"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# elemento} other {# elementos}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Abrir menú (# notificación sin leer)} other {Abrir menú (# notificaciones sin leer)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "Gana {winnerColor} — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "¿Seguro que quieres eliminar este comentario? También se eliminarán t
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "¿Seguro que quieres cerrar sesión? Necesitarás volver a iniciar sesión para acceder a tu cuenta."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "¿Estás seguro de que quieres rendirte? {opponentName} ganará la partida."
 
@@ -343,11 +359,12 @@ msgstr "Volver al inicio"
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Negro"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Capturas de negras:"
 
@@ -434,8 +451,8 @@ msgstr "Categoría para estas notificaciones"
 msgid "Change notification category"
 msgstr "Cambiar la categoría de la notificación"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Chat"
 
@@ -634,6 +651,10 @@ msgstr "No se ha podido iniciar la reautenticación. Inténtalo de nuevo."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "No se pudo verificar con esa cuenta. Inténtalo de nuevo."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Recuento — acordad la puntuación o seguid jugando"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Orden predeterminado"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -723,11 +744,11 @@ msgstr "Eliminar comentario"
 msgid "Delete field"
 msgstr "Eliminar campo"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Eliminar partida"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "¿Eliminar la partida?"
 
@@ -749,7 +770,7 @@ msgstr "Eliminar vista"
 msgid "Delete your account on the old server"
 msgstr "Elimina tu cuenta en el servidor antiguo"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Eliminando..."
 
@@ -817,11 +838,16 @@ msgstr "Descargar"
 msgid "Download failed"
 msgstr "Error al descargar"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Tablas"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Tablas acordadas"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Tablas ofrecidas — esperando a {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Intersección vacía {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Intersección vacía {colLabel}{rowLabel}, haz clic o pulsa Intro para colocar"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Terminar partida"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "¿Terminar partida?"
 
@@ -927,11 +953,11 @@ msgstr "URL externa"
 msgid "Extra large"
 msgstr "Extra grande"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Error al aceptar las tablas"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Error al aceptar la puntuación"
 
@@ -949,11 +975,11 @@ msgstr "Error al crear la partida"
 msgid "Failed to create link"
 msgstr "Error al crear el enlace"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Error al crear la revancha"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Error al rechazar las tablas"
 
@@ -965,7 +991,7 @@ msgstr "Error al eliminar el adjunto"
 msgid "Failed to delete comment"
 msgstr "Error al eliminar el comentario"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Error al eliminar la partida"
 
@@ -993,15 +1019,15 @@ msgstr "No se pudo cargar la imagen"
 msgid "Failed to load video"
 msgstr "No se pudo cargar el vídeo"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Error al realizar el movimiento"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Error al ofrecer tablas"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Error al pasar"
 
@@ -1009,11 +1035,11 @@ msgstr "Error al pasar"
 msgid "Failed to post comment"
 msgstr "Error al publicar el comentario"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Error al abandonar"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Error al reanudar la partida"
 
@@ -1021,8 +1047,8 @@ msgstr "Error al reanudar la partida"
 msgid "Failed to revoke RSS access"
 msgstr "No se pudo revocar el acceso RSS"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Error al enviar"
 
@@ -1076,13 +1102,17 @@ msgstr "Del tema"
 msgid "Game created"
 msgstr "Partida creada"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Partida eliminada"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Fin de la partida"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Ir"
 
@@ -1459,7 +1489,7 @@ msgstr "Notificaciones: {0}"
 msgid "Number"
 msgstr "Número"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Ofrecer tablas"
 
@@ -1476,11 +1506,11 @@ msgstr "¡Vaya! Página no encontrada"
 msgid "Open actions"
 msgstr "Abrir acciones"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Abrir panel de chat"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Abrir acciones de la partida"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Principal"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Pasar"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "¿Pasar turno?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Pasando..."
 
@@ -1667,7 +1697,7 @@ msgstr "Relativo (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Relativo en las últimas 24 horas; de lo contrario, absoluto"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Revancha"
 
@@ -1743,16 +1773,16 @@ msgstr "Obligatorio"
 msgid "Resend email"
 msgstr "Reenviar correo"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Rendirse"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "¿Rendir la partida?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Rindiéndose..."
 
@@ -1809,7 +1839,7 @@ msgstr "Sábado"
 msgid "Save"
 msgstr "Guardar"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Puntuación aceptada — esperando a {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Cerrando sesión..."
 msgid "Single line of text only"
 msgstr "Solo una línea de texto"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Salta tu turno y pasa a tu oponente."
 
@@ -2110,7 +2140,7 @@ msgstr "No se ha podido encontrar el contenido solicitado."
 msgid "The server returned a web page instead of data."
 msgstr "El servidor devolvió una página web en lugar de datos."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Esto elimina permanentemente la partida y su chat. Esta acción no se puede deshacer."
 
@@ -2312,11 +2342,12 @@ msgstr "Hemos enviado un código de verificación a <0>{0}</0>. Introduce el có
 msgid "Wednesday"
 msgstr "Miércoles"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Blanco"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Capturas de blancas:"
 
@@ -2336,6 +2367,14 @@ msgstr "Tú"
 msgid "You do not have access to this section."
 msgstr "No tienes acceso a esta sección."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Te has rendido — gana {opponentName}"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "¡Has ganado!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Tu cuenta fue trasladada aquí desde {source}. Hasta que la elimines allí, los mensajes y notificaciones pueden llegar a ambos servidores, parte de tu contenido seguirá siendo servido desde el servidor antiguo y tus seguidores pueden tardar unos minutos en encontrarte aquí."
@@ -2343,6 +2382,10 @@ msgstr "Tu cuenta fue trasladada aquí desde {source}. Hasta que la elimines all
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Se perderán los archivos adjuntos."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Tu turno"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

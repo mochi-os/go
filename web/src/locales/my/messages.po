@@ -70,13 +70,25 @@ msgstr "{name} သရေကျရန် ကမ်းလှမ်းသည်"
 msgid "{name} resigned"
 msgstr "{name} အရှုံးပေးလိုက်သည်"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} လည်း ကျော်ခဲ့သည်။ အတည်ပြုခြင်းသည် board ကို ရေတွက်ပြီး နှစ်ဦးစလုံး သဘောတူရမည့် ရမှတ်တစ်ခုကို အဆိုပြုပါမည်။"
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} က သရေ ပေးခဲ့သည်"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} လက်လျှော့လိုက်သည် — သင်နိုင်သည်!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} နိုင်သည်"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName} ၏အလှည့်"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, other {# ခု}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, other {မီနူးဖွင့်ရန် (မဖတ်ရသေးသော အကြောင်းကြားချက် # ခု)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} နိုင်သည် — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "ဤမှတ်ချက်ကို ဖျက်မှာသေချ�
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "log out လုပ်မှာသေချာပါသလား? သင့်အကောင့်ကို ပြန်ဝင်ရန် log in ပြန်လုပ်ရမည်။"
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "လက်လျှော့မှာသေချာပါသလား? {opponentName} က ပွဲကို နိုင်မည်ဖြစ်သည်။"
 
@@ -343,11 +359,12 @@ msgstr "ပင်မစာမျက်နှာ သို့ပြန်သွ�
 msgid "Banner"
 msgstr "ပိုစတာ"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "အနက်"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "အနက် ဖမ်းယူရရှိ:"
 
@@ -434,8 +451,8 @@ msgstr "ဤအကြောင်းကြားချက်များအတွ
 msgid "Change notification category"
 msgstr "အကြောင်းကြားချက် အမျိုးအစား ပြောင်းမည်"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "စကားပြောခန်း"
 
@@ -634,6 +651,10 @@ msgstr "ပြန်လည်အတည်ပြုခြင်းကို စ�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ထိုအကောင့်ဖြင့် အတည်ပြု၍မရပါ။ ကျေးဇူးပြု၍ ထပ်မံကြိုးစားပါ။"
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "ရေတွက်နေသည် — ရမှတ်ကို သဘောတူပါ သို့မဟုတ် ဆက်ကစားပါ"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "မူရင်း sort"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "ဖျက်မည်"
 
@@ -723,11 +744,11 @@ msgstr "မှတ်ချက် ဖျက်မည်"
 msgid "Delete field"
 msgstr "field ဖျက်မည်"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "ဂိမ်း ဖျက်မည်"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "ဂိမ်းကို ဖျက်မလား?"
 
@@ -749,7 +770,7 @@ msgstr "ကြည့်ရှုမှု ဖျက်မည်"
 msgid "Delete your account on the old server"
 msgstr "ဟောင်းသောဆာဗာမှ သင်၏အကောင့်ကို ဖျက်ပါ"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "ဖျက်နေသည်..."
 
@@ -817,11 +838,16 @@ msgstr "ဒေါင်းလုဒ်"
 msgid "Download failed"
 msgstr "ဒေါင်းလုဒ် မအောင်မြင်ပါ"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "သရေ"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "သရေကျရန် သဘောတူသည်"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "သရေ ကမ်းလှမ်းထားသည် — {opponentName} ကို စောင့်နေသည်"
 
@@ -888,11 +914,11 @@ msgstr "ဆုံချက် ဗလာ {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ဆုံချက် ဗလာ {colLabel}{rowLabel}၊ နှိပ်ပါ သို့မဟုတ် Enter ကိုနှိပ်၍ ချပါ"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "ဂိမ်း အဆုံးသတ်"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "ဂိမ်း အဆုံးသတ်မလား"
 
@@ -927,11 +953,11 @@ msgstr "ပြင်ပ URL"
 msgid "Extra large"
 msgstr "အလွန်ကြီး"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "သရေ လက်ခံ၍ မရပါ"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "ရမှတ်ကို လက်ခံ၍ မရပါ"
 
@@ -949,11 +975,11 @@ msgstr "ဂိမ်း ဖန်တီး၍ မရပါ"
 msgid "Failed to create link"
 msgstr "လင့် ဖန်တီး၍ မရပါ"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "ပြန်ပြိုင်ပွဲ ဖန်တီး၍ မရပါ"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "သရေ ငြင်းပယ်၍ မရပါ"
 
@@ -965,7 +991,7 @@ msgstr "တွဲဖက်ဖိုင် ဖျက်၍ မရပါ"
 msgid "Failed to delete comment"
 msgstr "မှတ်ချက် ဖျက်၍ မရပါ"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "ဂိမ်း ဖျက်၍ မရပါ"
 
@@ -993,15 +1019,15 @@ msgstr "ပုံကို ဖွင့်၍မရပါ"
 msgid "Failed to load video"
 msgstr "ဗီဒီယိုကို ဖွင့်၍မရပါ"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "ရွှေ့ခြင်း လုပ်၍ မရပါ"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "သရေ ကမ်းလှမ်း၍ မရပါ"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "ဖြတ်သန်း၍ မရပါ"
 
@@ -1009,11 +1035,11 @@ msgstr "ဖြတ်သန်း၍ မရပါ"
 msgid "Failed to post comment"
 msgstr "မှတ်ချက် တင်၍ မရပါ"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "ရှုံးရန် ထုတ်ပြန်၍ မရပါ"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "ကစားခြင်း ဆက်လုပ်၍ မရပါ"
 
@@ -1021,8 +1047,8 @@ msgstr "ကစားခြင်း ဆက်လုပ်၍ မရပါ"
 msgid "Failed to revoke RSS access"
 msgstr "RSS အသုံးပြုခွင့် ရုပ်သိမ်း၍ မရပါ"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "ပို့၍ မရပါ"
 
@@ -1076,13 +1102,17 @@ msgstr "အပြင်အဆင်မှ"
 msgid "Game created"
 msgstr "ဂိမ်း ဖန်တီးပြီးပါပြီ"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "ဂိမ်း ဖျက်ပြီးပါပြီ"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "ဂိမ်း ပြီးဆုံး"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "သွား"
 
@@ -1459,7 +1489,7 @@ msgstr "အကြောင်းကြားချက်များ- {0}"
 msgid "Number"
 msgstr "နံပါတ်"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "ထိုးကွက် ပြန်မျှခြင်း ကမ်းလှမ်း"
 
@@ -1476,11 +1506,11 @@ msgstr "အိုး! စာမျက်နှာ မတွေ့ပါ!"
 msgid "Open actions"
 msgstr "လုပ်ဆောင်ချက်များ ဖွင့်ရန်"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "ချတ် panel ကို ဖွင့်"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "ဂိမ်း လုပ်ဆောင်ချက်များကို ဖွင့်"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Parent"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "ကျော်"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "လှည့်ကို ကျော်မလား?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "ကျော်နေသည်..."
 
@@ -1667,7 +1697,7 @@ msgstr "ဆက်စပ် (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "၂၄ နာရီအတွင်း ဆက်စပ်၊ ပြင်ပတွင် တိကျသော"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "ပြန်ကစား"
 
@@ -1743,16 +1773,16 @@ msgstr "လိုအပ်"
 msgid "Resend email"
 msgstr "အီးမေးလ်ပြန်ပို့ရန်"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "ရှုံးကြောင်းပြော"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "ဂိမ်း ရှုံးကြောင်းပြောမလား?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "ရှုံးကြောင်းပြောနေသည်..."
 
@@ -1809,7 +1839,7 @@ msgstr "စနေနေ့"
 msgid "Save"
 msgstr "သိမ်းမည်"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "ရမှတ်ကို လက်ခံပြီး — {opponentName} ကို စောင့်နေသည်"
 
@@ -2002,7 +2032,7 @@ msgstr "ထွက်နေသည်..."
 msgid "Single line of text only"
 msgstr "စာသား တစ်ကြောင်းတည်းသာ"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "သင့်အလှည့်ကို ကျော်ပြီး တစ်ဖက်လူသို့ လွှဲပေးမည်။"
 
@@ -2110,7 +2140,7 @@ msgstr "တောင်းဆိုထားသော အကြောင်း�
 msgid "The server returned a web page instead of data."
 msgstr "ဆာဗာသည် ဒေတာအစား ဝဘ်စာမျက်နှာကို ပြန်ပေးခဲ့သည်။"
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ဤလုပ်ဆောင်ချက်သည် ဂိမ်းနှင့် ၎င်း၏ ချတ်ကို အပြီးအပိုင် ဖျက်ပစ်မည်ဖြစ်သည်။ ဤလုပ်ဆောင်ချက်ကို ပြန်ပြောင်း၍မရပါ။"
 
@@ -2312,11 +2342,12 @@ msgstr "<0>{0}</0> သို့ အတည်ပြုကုဒ် ပို့�
 msgid "Wednesday"
 msgstr "ဗုဒ္ဓဟူး"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "အဖြူ"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "အဖြူဖမ်းစားမှု:"
 
@@ -2336,6 +2367,14 @@ msgstr "သင်"
 msgid "You do not have access to this section."
 msgstr "ဤအပိုင်းသို့ သင့်တွင် ဝင်ရောက်ခွင့်မရှိပါ။"
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "သင်လက်လျှော့လိုက်သည် — {opponentName} နိုင်သည်"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "သင်နိုင်ပြီ!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "သင်၏အကောင့်ကို {source} မှ ဤနေရာသို့ ရွှေ့ပြောင်းခဲ့သည်။ သင်ကာကိုဖျက်မသည်အထိ၊ မက်ဆေ့ချ်များနှင့် အကြောင်းကြားချက်များ ဆာဗာနှစ်ခုလုံးသို့ ရောက်နိုင်သည်၊ သင်၏အချို့သောအကြောင်းအရာများကို ဟောင်းသောဆာဗာမှ ဆက်လက်ပေးဆောင်နေမည်ဖြစ်ပြီး ကြည့်ရှုသူများ သင်ကိုဤနေရာတွင် ရှာဖွေရန် မိနစ်အနည်းငယ် ကြာနိုင်သည်။"
@@ -2343,6 +2382,10 @@ msgstr "သင်၏အကောင့်ကို {source} မှ ဤနေရ�
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "သင့်ပူးတွဲဖိုင်များ ပျောက်ဆုံးသွားပါမည်။"
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "သင်၏ အလှည့်"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

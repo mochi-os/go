@@ -70,13 +70,25 @@ msgstr "{name} oikuave'ẽ pe'ã"
 msgid "{name} resigned"
 msgstr "{name} oñembotove"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} avei ohasáma. Embokuave'ẽvo ojepapáta tabla ha oñemboguapýta peteĩ puntaje mokõivéva pemoneĩ vaʼerã."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} oikuave'ẽ empate"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} oheja — repu'aka!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} opu'aka"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName} pu'ãha"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# mba'e} other {# mba'e}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Embojuruja menu (# marandu ojeleeʼỹva)} other {Embojuruja menu (# marandu ojeleeʼỹva)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} opu'aka — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Añetehápe ehundise ko comentario? Ehundíta avei opa mbohovái."
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Añetehápe esẽse? Eñepyrũjeýta hag̃ua eike ne tetãyguápe."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Añetehápe eikese? {opponentName} ogana ñembosarái."
 
@@ -343,11 +359,12 @@ msgstr "Eju jey ógape"
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Hũ"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Hũ ipoguypegua:"
 
@@ -434,8 +451,8 @@ msgstr "Categoría ko'ã ñe'ẽmondo-pegua"
 msgid "Change notification category"
 msgstr "Embojere ñe'ẽmondo categoría"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Chat"
 
@@ -634,6 +651,10 @@ msgstr "Ndaikatúi oñepyrũ ñemoneʼẽ jey. Eñehaʼã jey."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Ndaikatúi ojehechajey upe mba'ete ndive. Eha'ã jey."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Papapy — peñemoĩ peteĩ ñe'ẽme térã peñembosarái gueteri"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Default sort"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Hundi"
 
@@ -723,11 +744,11 @@ msgstr "Hundi comentario"
 msgid "Delete field"
 msgstr "Hundi campo"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Hundi ñembosarái"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Ehundi ñembosarái?"
 
@@ -749,7 +770,7 @@ msgstr "Hundi view"
 msgid "Delete your account on the old server"
 msgstr "Emomba'apo nde cuenta ypykue servidor-pe"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Hundihína..."
 
@@ -817,11 +838,16 @@ msgstr "Emboguejy"
 msgid "Download failed"
 msgstr "Ndaikatúi oñemboguejy"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Peteĩcha"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Pe'ã oñemoneĩ"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Oñeñeʼẽ pyhuỹire — oñehaʼarõ {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "Intersección nandi {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Intersección nandi {colLabel}{rowLabel}, eikutu térã eikutu Enter emoĩ haguã"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Emomba mbosaraitápe"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "¿Emomba mbosaraitápe?"
 
@@ -927,11 +953,11 @@ msgstr "URL okápe"
 msgid "Extra large"
 msgstr "Tuichavéva"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Ndaikatúi oñeñe'ẽ pyhuỹire"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Ndaikatúi oñemoneĩ puntaje"
 
@@ -949,11 +975,11 @@ msgstr "Ndaikatúi oñembojuaju mbosaraita"
 msgid "Failed to create link"
 msgstr "Ndaikatúi oñembojuaju link"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Ndaikatúi oñembojuaju ñembosarai jey"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Ndaikatúi ojeheja pyhuỹi"
 
@@ -965,7 +991,7 @@ msgstr "Ndaikatúi ojejuka archivo"
 msgid "Failed to delete comment"
 msgstr "Ndaikatúi ojejuka comentario"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Ndaikatúi ojejuka mbosaraita"
 
@@ -993,15 +1019,15 @@ msgstr "Ndaikatúi omyanyhẽ ta'anga"
 msgid "Failed to load video"
 msgstr "Ndaikatúi omyanyhẽ video"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Ndaikatúi ojeku'e"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Ndaikatúi oñeñe'ẽ pyhuỹire"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Ndaikatúi oñehasa"
 
@@ -1009,11 +1035,11 @@ msgstr "Ndaikatúi oñehasa"
 msgid "Failed to post comment"
 msgstr "Ndaikatúi oñemonde comentario"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Ndaikatúi oñerrendi"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Ndaikatúi oñepyrũ jey ñembosarái"
 
@@ -1021,8 +1047,8 @@ msgstr "Ndaikatúi oñepyrũ jey ñembosarái"
 msgid "Failed to revoke RSS access"
 msgstr "Ndaikatúi omboyke RSS jeike"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Ndaikatúi oñemondo"
 
@@ -1076,13 +1102,17 @@ msgstr "Téma guive"
 msgid "Game created"
 msgstr "Oñembojuaju mbosaraita"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Oñembogue mbosaraita"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Mbosaraita opa"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Eha"
 
@@ -1459,7 +1489,7 @@ msgstr "Marandu: {0}"
 msgid "Number"
 msgstr "Papapy"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Eme'ẽ jehecha"
 
@@ -1476,11 +1506,11 @@ msgstr "Hetia'epa! ¡Kuatiarogue ndojejuhúi!"
 msgid "Open actions"
 msgstr "Eipe'a tembiaporã"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Eipe'a ñe'ẽ panel"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Eipe'a ñembosarái tembiapo"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Sy/ru"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Ehasa"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Ehasa torno?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Ohasahína..."
 
@@ -1667,7 +1697,7 @@ msgstr "Mbytetégua (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "Mbytetégua 24 hora ndive, ambue tiempo absoluto"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Eha'ã jey"
 
@@ -1743,16 +1773,16 @@ msgstr "Oñeikotevẽ"
 msgid "Resend email"
 msgstr "Embou jey ñe'ẽveve"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Ehasa"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Ehasa ñembosarái?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Ohasahína..."
 
@@ -1809,7 +1839,7 @@ msgstr "Saturday"
 msgid "Save"
 msgstr "Ñongatu"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Puntaje ojeguerohory — oñehaʼarõ {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "Sesionhápe oñesẽva..."
 msgid "Single line of text only"
 msgstr "Petei tai mante"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Eheja ne pa'ũ ha ehasa angirũre."
 
@@ -2110,7 +2140,7 @@ msgstr "Ndaikatúi ojejuhu tetepy ojejeruréva."
 msgid "The server returned a web page instead of data."
 msgstr "Servidor ombohovái peteĩ web rogue, datos rangue."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Kóva ohundíta opa árape g̃uarã ñembosarái ha ijoayhuháicha. Ndaikatuvéima ojejapo jey."
 
@@ -2312,11 +2342,12 @@ msgstr "Romondo peteĩ código jehechajeýva <0>{0}</0> peg̃uarã. Emoinge cód
 msgid "Wednesday"
 msgstr "Mba'embohopapa"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Morotĩ"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Morotĩ ohupi:"
 
@@ -2336,6 +2367,14 @@ msgstr "Nde"
 msgid "You do not have access to this section."
 msgstr "Ndereguerekói jeike ko vorépe."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Reheja — {opponentName} opu'aka"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Repu'aka!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Nde cuenta oiko ko'ápe {source} guive. Peve reipe'a upépe, marandu ha mba'emimi ikatu ogueru servidor mokõive-pe, nde mba'e mba'eapo ambuéva ohasave ypykue servidor guive, ha erekopy'araka'e minutopi peve reko'ata ko'ápe."
@@ -2343,6 +2382,10 @@ msgstr "Nde cuenta oiko ko'ápe {source} guive. Peve reipe'a upépe, marandu ha 
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Ne archivo mbojoapypyre okañýta."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Ne pyenda"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

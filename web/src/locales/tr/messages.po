@@ -70,13 +70,25 @@ msgstr "{name} beraberlik teklif etti"
 msgid "{name} resigned"
 msgstr "{name} pes etti"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} de pas geçti. Onaylamak tahtayı sayacak ve ikinizin de üzerinde anlaşması gereken bir skor önerecek."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} beraberlik teklif etti"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} pes etti — kazandınız!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} kazandı"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "Sıra {opponentName} oyuncusunda"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# öğe} other {# öğe}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Menüyü aç (# okunmamış bildirim)} other {Menüyü aç (# okunmamış bildirim)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} kazandı — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "Bu yorumu silmek istediğinizden emin misiniz? Bu, tüm yanıtları da s
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Çıkış yapmak istediğinizden emin misiniz? Hesabınıza erişmek için tekrar giriş yapmanız gerekecek."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Çekilmek istediğinizden emin misiniz? {opponentName} oyunu kazanacak."
 
@@ -343,11 +359,12 @@ msgstr "Ana sayfaya dön"
 msgid "Banner"
 msgstr "Afiş"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "Siyah"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "Siyah esirleri:"
 
@@ -434,8 +451,8 @@ msgstr "Bu bildirimler için kategori"
 msgid "Change notification category"
 msgstr "Bildirim kategorisini değiştir"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "Sohbet"
 
@@ -634,6 +651,10 @@ msgstr "Yeniden kimlik doğrulama başlatılamadı. Lütfen tekrar deneyin."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Bu hesapla doğrulama yapılamadı. Lütfen tekrar deneyin."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "Sayım — skor üzerinde anlaşın veya oynamaya devam edin"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "Varsayılan sıralama"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "Sil"
 
@@ -723,11 +744,11 @@ msgstr "Yorumu sil"
 msgid "Delete field"
 msgstr "Alanı sil"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "Oyunu sil"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "Oyun silinsin mi?"
 
@@ -749,7 +770,7 @@ msgstr "Görünümü sil"
 msgid "Delete your account on the old server"
 msgstr "Eski sunucudaki hesabınızı silin"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "Siliniyor..."
 
@@ -817,11 +838,16 @@ msgstr "İndir"
 msgid "Download failed"
 msgstr "İndirme başarısız oldu"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "Beraberlik"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "Beraberlik kabul edildi"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Beraberlik teklif edildi — {opponentName} bekleniyor"
 
@@ -888,11 +914,11 @@ msgstr "Boş kesişim {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Boş kesişim {colLabel}{rowLabel}, yerleştirmek için tıklayın veya Enter'a basın"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "Oyunu bitir"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "Oyun bitsin mi?"
 
@@ -927,11 +953,11 @@ msgstr "Harici URL"
 msgid "Extra large"
 msgstr "Çok büyük"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "Beraberlik kabul edilemedi"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "Skor kabul edilemedi"
 
@@ -949,11 +975,11 @@ msgstr "Oyun oluşturulamadı"
 msgid "Failed to create link"
 msgstr "Bağlantı oluşturulamadı"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "Rövanş oluşturulamadı"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "Beraberlik reddedilemedi"
 
@@ -965,7 +991,7 @@ msgstr "Ek silinemedi"
 msgid "Failed to delete comment"
 msgstr "Yorum silinemedi"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "Oyun silinemedi"
 
@@ -993,15 +1019,15 @@ msgstr "Görsel yüklenemedi"
 msgid "Failed to load video"
 msgstr "Video yüklenemedi"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "Hamle yapılamadı"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "Beraberlik teklif edilemedi"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "Pas geçilemedi"
 
@@ -1009,11 +1035,11 @@ msgstr "Pas geçilemedi"
 msgid "Failed to post comment"
 msgstr "Yorum gönderilemedi"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "Çekilinemedi"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "Oyun sürdürülemedi"
 
@@ -1021,8 +1047,8 @@ msgstr "Oyun sürdürülemedi"
 msgid "Failed to revoke RSS access"
 msgstr "RSS erişimi iptal edilemedi"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "Gönderilemedi"
 
@@ -1076,13 +1102,17 @@ msgstr "Temadan"
 msgid "Game created"
 msgstr "Oyun oluşturuldu"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "Oyun silindi"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "Oyun bitti"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "Git"
 
@@ -1459,7 +1489,7 @@ msgstr "Bildirimler: {0}"
 msgid "Number"
 msgstr "Sayı"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "Beraberlik öner"
 
@@ -1476,11 +1506,11 @@ msgstr "Hata! Sayfa bulunamadı!"
 msgid "Open actions"
 msgstr "İşlemleri aç"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "Sohbet panelini aç"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "Oyun eylemlerini aç"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "Üst"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "Pas"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "Sıra geçilsin mi?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "Pas geçiliyor..."
 
@@ -1667,7 +1697,7 @@ msgstr "Göreceli (5d, 3s, 2g)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 saat içinde göreceli, aksi halde mutlak"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "Yeniden eşleş"
 
@@ -1743,16 +1773,16 @@ msgstr "Gerekli"
 msgid "Resend email"
 msgstr "E-postayı yeniden gönder"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "Çekil"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "Oyundan çekilsin mi?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "Çekiliyor..."
 
@@ -1809,7 +1839,7 @@ msgstr "Cumartesi"
 msgid "Save"
 msgstr "Kaydet"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Skor kabul edildi — {opponentName} bekleniyor"
 
@@ -2002,7 +2032,7 @@ msgstr "Çıkış yapılıyor..."
 msgid "Single line of text only"
 msgstr "Yalnızca tek satır metin"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "Sıranı atla ve rakibine geç."
 
@@ -2110,7 +2140,7 @@ msgstr "İstenen içerik bulunamadı."
 msgid "The server returned a web page instead of data."
 msgstr "Sunucu veri yerine bir web sayfası döndürdü."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Bu işlem oyunu ve sohbetini kalıcı olarak siler. Bu işlem geri alınamaz."
 
@@ -2312,11 +2342,12 @@ msgstr "<0>{0}</0> adresine bir doğrulama kodu gönderdik. E-posta adresinizi d
 msgid "Wednesday"
 msgstr "Çarşamba"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "Beyaz"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "Beyazın aldıkları:"
 
@@ -2336,6 +2367,14 @@ msgstr "Sen"
 msgid "You do not have access to this section."
 msgstr "Bu bölüme erişiminiz yok."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "Pes ettiniz — {opponentName} kazandı"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "Kazandın!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Hesabınız {source} adresinden buraya taşındı. Orada silene kadar mesajlar ve bildirimler her iki sunucuya da ulaşabilir, bazı içerikleriniz eski sunucudan sunulmaya devam eder ve takipçileriniz sizi burada bulmak için birkaç dakika bekleyebilir."
@@ -2343,6 +2382,10 @@ msgstr "Hesabınız {source} adresinden buraya taşındı. Orada silene kadar me
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "Ekleriniz kaybolacak."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "Senin sıran"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

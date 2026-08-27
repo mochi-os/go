@@ -70,13 +70,25 @@ msgstr "{name} 무승부 제안함"
 msgid "{name} resigned"
 msgstr "{name} 기권함"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName}도 패스했습니다. 확인하면 판을 계가하고 두 사람이 합의할 점수를 제안합니다."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName}이(가) 무승부를 제안했습니다"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName}이(가) 기권했습니다 — 당신이 이겼습니다!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} 승리"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName}의 차례입니다"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# 개} other {# 개}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {메뉴 열기(읽지 않은 알림 #개)} other {메뉴 열기(읽지 않은 알림 #개)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} 승리 — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "이 댓글을 삭제할까요? 모든 답글도 함께 삭제돼요."
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "로그아웃할까요? 계정에 다시 접근하려면 다시 로그인해야 해요."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "정말 기권하시겠습니까? {opponentName}이(가) 게임에서 이깁니다."
 
@@ -343,11 +359,12 @@ msgstr "홈으로 돌아가기"
 msgid "Banner"
 msgstr "배너"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "검정"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "흑 잡은 돌:"
 
@@ -434,8 +451,8 @@ msgstr "이 알림들의 카테고리"
 msgid "Change notification category"
 msgstr "알림 카테고리 변경"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "채팅"
 
@@ -634,6 +651,10 @@ msgstr "재인증을 시작할 수 없습니다. 다시 시도해 주세요."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "해당 계정으로 인증하지 못했습니다. 다시 시도해 주세요."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "계가 — 집을 합의하거나 대국을 계속하세요"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "기본 정렬"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "삭제"
 
@@ -723,11 +744,11 @@ msgstr "댓글 삭제"
 msgid "Delete field"
 msgstr "필드 삭제"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "게임 삭제"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "게임을 삭제할까요?"
 
@@ -749,7 +770,7 @@ msgstr "뷰 삭제"
 msgid "Delete your account on the old server"
 msgstr "이전 서버에서 계정 삭제"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "삭제 중..."
 
@@ -817,11 +838,16 @@ msgstr "다운로드"
 msgid "Download failed"
 msgstr "다운로드 실패"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "무승부"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "무승부 합의됨"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "무승부 제안됨 — {opponentName}의 응답을 기다리는 중"
 
@@ -888,11 +914,11 @@ msgstr "빈 교차점 {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "빈 교차점 {colLabel}{rowLabel}, 클릭하거나 Enter를 눌러 놓기"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "게임 종료"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "게임을 종료할까요?"
 
@@ -927,11 +953,11 @@ msgstr "외부 URL"
 msgid "Extra large"
 msgstr "아주 크게"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "무승부 수락에 실패했어요"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "점수 수락에 실패했어요"
 
@@ -949,11 +975,11 @@ msgstr "게임 생성에 실패했어요"
 msgid "Failed to create link"
 msgstr "링크 생성에 실패했어요"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "재대결 생성에 실패했어요"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "무승부 거절에 실패했어요"
 
@@ -965,7 +991,7 @@ msgstr "첨부 파일 삭제에 실패했어요"
 msgid "Failed to delete comment"
 msgstr "댓글 삭제에 실패했어요"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "게임 삭제에 실패했어요"
 
@@ -993,15 +1019,15 @@ msgstr "이미지를 불러오지 못했어요"
 msgid "Failed to load video"
 msgstr "동영상을 불러오지 못했어요"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "수를 두지 못했어요"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "무승부 제안에 실패했어요"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "패스에 실패했어요"
 
@@ -1009,11 +1035,11 @@ msgstr "패스에 실패했어요"
 msgid "Failed to post comment"
 msgstr "댓글 게시에 실패했어요"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "기권에 실패했어요"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "대국 재개에 실패했어요"
 
@@ -1021,8 +1047,8 @@ msgstr "대국 재개에 실패했어요"
 msgid "Failed to revoke RSS access"
 msgstr "RSS 액세스 취소에 실패했습니다"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "전송에 실패했어요"
 
@@ -1076,13 +1102,17 @@ msgstr "테마에서"
 msgid "Game created"
 msgstr "게임이 생성되었어요"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "게임이 삭제되었어요"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "게임 종료"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "이동"
 
@@ -1459,7 +1489,7 @@ msgstr "알림: {0}"
 msgid "Number"
 msgstr "숫자"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "무승부 제안"
 
@@ -1476,11 +1506,11 @@ msgstr "이런! 페이지를 찾을 수 없어요!"
 msgid "Open actions"
 msgstr "작업 열기"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "채팅 패널 열기"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "게임 작업 열기"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "상위"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "패스"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "차례를 넘길까요?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "패스 중..."
 
@@ -1667,7 +1697,7 @@ msgstr "상대적 (5분, 3시간, 2일)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24시간 이내는 상대적, 그 외는 절대적"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "재대결"
 
@@ -1743,16 +1773,16 @@ msgstr "필수"
 msgid "Resend email"
 msgstr "이메일 다시 보내기"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "기권"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "게임을 기권할까요?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "기권 중..."
 
@@ -1809,7 +1839,7 @@ msgstr "토요일"
 msgid "Save"
 msgstr "저장"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "점수 수락됨 — {opponentName}의 응답을 기다리는 중"
 
@@ -2002,7 +2032,7 @@ msgstr "로그아웃 중..."
 msgid "Single line of text only"
 msgstr "한 줄 텍스트만"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "차례를 건너뛰고 상대에게 넘깁니다."
 
@@ -2110,7 +2140,7 @@ msgstr "요청한 콘텐츠를 찾을 수 없습니다."
 msgid "The server returned a web page instead of data."
 msgstr "서버가 데이터 대신 웹 페이지를 반환했습니다."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "이 작업은 게임과 채팅을 영구적으로 삭제합니다. 이 작업은 되돌릴 수 없습니다."
 
@@ -2312,11 +2342,12 @@ msgstr "<0>{0}</0>(으)로 인증 코드를 보냈어요. 이메일 주소를 �
 msgid "Wednesday"
 msgstr "수요일"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "백"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "백 잡은 돌:"
 
@@ -2336,6 +2367,14 @@ msgstr "본인"
 msgid "You do not have access to this section."
 msgstr "이 섹션에 대한 접근 권한이 없습니다."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "기권했습니다 — {opponentName} 승리"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "승리했어요!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "계정이 {source}에서 이곳으로 이전되었습니다. 거기서 삭제할 때까지 메시지와 알림이 두 서버 모두에 전달될 수 있으며, 일부 콘텐츠는 이전 서버에서 계속 제공되고 팔로워가 이곳에서 나를 찾는 데 몇 분이 걸릴 수 있습니다."
@@ -2343,6 +2382,10 @@ msgstr "계정이 {source}에서 이곳으로 이전되었습니다. 거기서 �
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "첨부 파일이 사라집니다."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "본인의 차례"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

@@ -70,13 +70,25 @@ msgstr "{name} ສະເໜີເສມີ"
 msgid "{name} resigned"
 msgstr "{name} ຍອມແພ້"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} ກໍ່ຜ່ານເຊັ່ນກັນ. ການຢືນຢັນຈະນັບກະດານແລະສະເໜີຄະແນນທີ່ທ່ານທັງສອງຕ້ອງຕົກລົງກັນ."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ສະເໜີສະເໝີ"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} ຍອມແພ້ — ເຈົ້າຊະນະ!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} ຊະນະ"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "ຮອດເວນຂອງ {opponentName}"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, other {# ລາຍການ}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, other {ເປີດເມນູ (ການແຈ້ງເຕືອນທີ່ຍັງບໍ່ໄດ້ອ່ານ # ລາຍການ)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} ຊະນະ — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "ທ່ານແນ່ໃຈບໍວ່າຕ້ອງການລົບ
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "ທ່ານແນ່ໃຈບໍວ່າຕ້ອງການອອກຈາກລະບົບ? ທ່ານຈະຕ້ອງເຂົ້າສູ່ລະບົບອີກຄັ້ງເພື່ອເຂົ້າເຖິງບັນຊີຂອງທ່ານ."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "ທ່ານແນ່ໃຈບໍວ່າຕ້ອງການຍອມແພ້? {opponentName} ຈະຊະນະເກມ."
 
@@ -343,11 +359,12 @@ msgstr "ກັບໄປໜ້າຫຼັກ"
 msgid "Banner"
 msgstr "ປ້າຍ"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "ດຳ"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "ດຳຈັບໄດ້:"
 
@@ -434,8 +451,8 @@ msgstr "ໝວດໝູ່ສຳລັບການແຈ້ງເຕືອນເ
 msgid "Change notification category"
 msgstr "ປ່ຽນໝວດໝູ່ການແຈ້ງເຕືອນ"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "ແຊັດ"
 
@@ -634,6 +651,10 @@ msgstr "ບໍ່ສາມາດເລີ່ມການຢືນຢັນຕົ
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ບໍ່ສາມາດຢືນຢັນດ້ວຍບັນຊີນັ້ນໄດ້. ກະລຸນາລອງໃໝ່ອີກຄັ້ງ."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "ນັບຄະແນນ — ຕົກລົງກັນເລື່ອງຄະແນນ ຫຼື ຫຼິ້ນຕໍ່"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "ການຈັດລຽງເລີ່ມຕົ້ນ"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "ລົບ"
 
@@ -723,11 +744,11 @@ msgstr "ລົບຄຳເຫັນ"
 msgid "Delete field"
 msgstr "ລົບຊ່ອງຂໍ້ມູນ"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "ລົບເກມ"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "ລົບເກມ?"
 
@@ -749,7 +770,7 @@ msgstr "ລົບມຸມມອງ"
 msgid "Delete your account on the old server"
 msgstr "ລຶບບັນຊີຂອງທ່ານໃນເຊີຟເວີເກົ່າ"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "ກຳລັງລົບ..."
 
@@ -817,11 +838,16 @@ msgstr "ດາວໂຫຼດ"
 msgid "Download failed"
 msgstr "ດາວໂຫຼດບໍ່ສຳເລັດ"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "ເສມີ"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "ຕົກລົງເສມີ"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "ສະເໜີສະເໝີ — ກຳລັງລໍຖ້າ {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "ຈຸດຕັດກັນວ່າງ {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ຈຸດຕັດກັນວ່າງ {colLabel}{rowLabel}, ຄລິກ ຫຼື ກົດ Enter ເພື່ອວາງ"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "ຈົບເກມ"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "ຈົບເກມບໍ?"
 
@@ -927,11 +953,11 @@ msgstr "URL ພາຍນອກ"
 msgid "Extra large"
 msgstr "ໃຫຍ່ພິເສດ"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "ຮັບການສະເໜີສະເໝີລົ້ມເຫຼວ"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "ຮັບເອົາຄະແນນລົ້ມເຫຼວ"
 
@@ -949,11 +975,11 @@ msgstr "ສ້າງເກມລົ້ມເຫຼວ"
 msgid "Failed to create link"
 msgstr "ສ້າງລິ້ງລົ້ມເຫຼວ"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "ສ້າງການແຂ່ງຂັນຄືນໃໝ່ລົ້ມເຫຼວ"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "ປະຕິເສດການສະເໜີສະເໝີລົ້ມເຫຼວ"
 
@@ -965,7 +991,7 @@ msgstr "ລຶບໄຟລ໌ແນບລົ້ມເຫຼວ"
 msgid "Failed to delete comment"
 msgstr "ລຶບຄຳເຫັນລົ້ມເຫຼວ"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "ລຶບເກມລົ້ມເຫຼວ"
 
@@ -993,15 +1019,15 @@ msgstr "ໂຫຼດຮູບພາບບໍ່ສຳເລັດ"
 msgid "Failed to load video"
 msgstr "ໂຫຼດວິດີໂອບໍ່ສຳເລັດ"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "ເຄື່ອນໄຫວລົ້ມເຫຼວ"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "ສະເໜີສະເໝີລົ້ມເຫຼວ"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "ຜ່ານລົ້ມເຫຼວ"
 
@@ -1009,11 +1035,11 @@ msgstr "ຜ່ານລົ້ມເຫຼວ"
 msgid "Failed to post comment"
 msgstr "ໂພສຄຳເຫັນລົ້ມເຫຼວ"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "ລາອອກລົ້ມເຫຼວ"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "ສືບຕໍ່ຫຼິ້ນລົ້ມເຫຼວ"
 
@@ -1021,8 +1047,8 @@ msgstr "ສືບຕໍ່ຫຼິ້ນລົ້ມເຫຼວ"
 msgid "Failed to revoke RSS access"
 msgstr "ຖອນການເຂົ້າເຖິງ RSS ບໍ່ສຳເລັດ"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "ສົ່ງລົ້ມເຫຼວ"
 
@@ -1076,13 +1102,17 @@ msgstr "ຈາກຮູບແບບ"
 msgid "Game created"
 msgstr "ສ້າງເກມແລ້ວ"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "ລຶບເກມແລ້ວ"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "ເກມຈົບແລ້ວ"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "ໄປ"
 
@@ -1459,7 +1489,7 @@ msgstr "ການແຈ້ງເຕືອນ: {0}"
 msgid "Number"
 msgstr "ຕົວເລກ"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "ສະເໜີການເສະໜາ"
 
@@ -1476,11 +1506,11 @@ msgstr "ອຸບຍ! ບໍ່ພົບໜ້າ!"
 msgid "Open actions"
 msgstr "ເປີດການກະທຳ"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "ເປີດແຜງສົນທະນາ"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "ເປີດການກະທຳເກມ"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "ແມ່"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "ຜ່ານ"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "ຜ່ານຕາ?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "ກຳລັງຜ່ານ..."
 
@@ -1667,7 +1697,7 @@ msgstr "ສຳພັດ (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "ສຳພັດພາຍໃນ 24 ຊົ່ວໂມງ, ຖ້າບໍ່ດັ່ງນັ້ນສົມບູນ"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "ແຂ່ງຄືນ"
 
@@ -1743,16 +1773,16 @@ msgstr "ຕ້ອງການ"
 msgid "Resend email"
 msgstr "ສົ່ງອີເມວອີກຄັ້ງ"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "ຍອມແພ້"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "ຍອມແພ້ເກມ?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "ກຳລັງຍອມແພ້..."
 
@@ -1809,7 +1839,7 @@ msgstr "ວັນເສົາ"
 msgid "Save"
 msgstr "ບັນທຶກ"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "ຮັບເອົາຄະແນນແລ້ວ — ກຳລັງລໍຖ້າ {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "ກຳລັງອອກຈາກລະບົບ..."
 msgid "Single line of text only"
 msgstr "ບັນທັດດຽວຂອງຂໍ້ຄວາມເທົ່ານັ້ນ"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "ຂ້າມເທື່ອຂອງທ່ານແລະຜ່ານໄປໃຫ້ຄູ່ແຂ່ງ."
 
@@ -2110,7 +2140,7 @@ msgstr "ບໍ່ພົບເນື້ອຫາທີ່ຮ້ອງຂໍ."
 msgid "The server returned a web page instead of data."
 msgstr "ເຊີບເວີສົ່ງຄືນໜ້າເວັບແທນຂໍ້ມູນ."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ການດຳເນີນການນີ້ຈະລົບເກມ ແລະ ການສົນທະນາຂອງມັນຖາວອນ. ບໍ່ສາມາດຍົກເລີກການດຳເນີນການນີ້ໄດ້."
 
@@ -2312,11 +2342,12 @@ msgstr "ພວກເຮົາໄດ້ສົ່ງລະຫັດຢືນຢັ
 msgid "Wednesday"
 msgstr "ວັນພຸດ"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "ຂາວ"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "ຂາວຈັບ:"
 
@@ -2336,6 +2367,14 @@ msgstr "ທ່ານ"
 msgid "You do not have access to this section."
 msgstr "ທ່ານບໍ່ມີສິດເຂົ້າເຖິງພາກສ່ວນນີ້."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "ເຈົ້າຍອມແພ້ — {opponentName} ຊະນະ"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "ທ່ານຊະນະ!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "ບັນຊີຂອງທ່ານໄດ້ຍ້າຍມາທີ່ນີ້ຈາກ {source}. ຈົນກວ່າທ່ານຈະລຶບມັນທີ່ນັ້ນ, ຂໍ້ຄວາມ ແລະ ການແຈ້ງເຕືອນອາດຈະໄປຮອດທັງສອງເຊີຟເວີ, ບາງເນື້ອຫາຂອງທ່ານຍັງຄົງໃຫ້ບໍລິການຈາກເຊີຟເວີເກົ່າ, ແລະ ຜູ້ຕິດຕາມອາດຈະໃຊ້ເວລາສອງສາມນາທີເພື່ອຊອກຫາທ່ານທີ່ນີ້."
@@ -2343,6 +2382,10 @@ msgstr "ບັນຊີຂອງທ່ານໄດ້ຍ້າຍມາທີ່
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "ໄຟລ໌ແນບຂອງທ່ານຈະສູນຫາຍ."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "ການເຄື່ອນໄຫວຂອງທ່ານ"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

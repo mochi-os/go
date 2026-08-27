@@ -70,13 +70,25 @@ msgstr "{name} ড্র-এর প্রস্তাব দিয়েছে�
 msgid "{name} resigned"
 msgstr "{name} হার মেনে নিয়েছেন"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName}ও পাস করেছে। নিশ্চিত করলে বোর্ড গণনা করা হবে এবং একটি স্কোর প্রস্তাব করা হবে যাতে আপনাদের দুজনকেই সম্মত হতে হবে।"
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ড্র প্রস্তাব করেছে"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} হার মেনেছেন — আপনি জিতেছেন!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} জিতেছেন"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "{opponentName}-এর চাল"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# আইটেম} other {# আইটেম}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {মেনু খুলুন (# অপঠিত বিজ্ঞপ্তি)} other {মেনু খুলুন (# অপঠিত বিজ্ঞপ্তি)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} জিতেছে — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "আপনি কি নিশ্চিত এই মন্তব্য�
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "আপনি কি নিশ্চিত লগআউট করতে চান? আপনার অ্যাকাউন্টে অ্যাক্সেস করতে আবার লগইন করতে হবে।"
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "আপনি কি নিশ্চিত যে আপনি হার মানতে চান? {opponentName} খেলায় জিতবে।"
 
@@ -343,11 +359,12 @@ msgstr "হোমে ফিরে যান"
 msgid "Banner"
 msgstr "ব্যানার"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "কালো"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "কালো ধরেছে:"
 
@@ -434,8 +451,8 @@ msgstr "এই নোটিফিকেশনগুলির ক্যাটে�
 msgid "Change notification category"
 msgstr "নোটিফিকেশন ক্যাটেগরি পরিবর্তন করুন"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "চ্যাট"
 
@@ -634,6 +651,10 @@ msgstr "পুনরায় প্রমাণীকরণ শুরু কর
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ওই অ্যাকাউন্ট দিয়ে যাচাই করা যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।"
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "গণনা — স্কোরে সম্মত হন বা খেলা চালিয়ে যান"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "ডিফল্ট সাজানো"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "মুছুন"
 
@@ -723,11 +744,11 @@ msgstr "মন্তব্য মুছুন"
 msgid "Delete field"
 msgstr "ফিল্ড মুছুন"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "গেম মুছুন"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "গেম মুছবেন?"
 
@@ -749,7 +770,7 @@ msgstr "ভিউ মুছুন"
 msgid "Delete your account on the old server"
 msgstr "পুরানো সার্ভারে আপনার অ্যাকাউন্ট মুছুন"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "মুছে ফেলা হচ্ছে..."
 
@@ -817,11 +838,16 @@ msgstr "ডাউনলোড"
 msgid "Download failed"
 msgstr "ডাউনলোড ব্যর্থ হয়েছে"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "ড্র"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "ড্র মেনে নেওয়া হয়েছে"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "ড্র প্রস্তাব করা হয়েছে — {opponentName}-এর জন্য অপেক্ষা করা হচ্ছে"
 
@@ -888,11 +914,11 @@ msgstr "খালি ছেদবিন্দু {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "খালি ছেদবিন্দু {colLabel}{rowLabel}, রাখতে ক্লিক করুন বা Enter চাপুন"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "গেম শেষ করুন"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "গেম শেষ করবেন?"
 
@@ -927,11 +953,11 @@ msgstr "বাহ্যিক URL"
 msgid "Extra large"
 msgstr "অতিরিক্ত বড়"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "ড্র গ্রহণ করতে ব্যর্থ"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "স্কোর গ্রহণ করতে ব্যর্থ"
 
@@ -949,11 +975,11 @@ msgstr "গেম তৈরি করতে ব্যর্থ"
 msgid "Failed to create link"
 msgstr "লিঙ্ক তৈরি করতে ব্যর্থ"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "পুনঃম্যাচ তৈরি করতে ব্যর্থ"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "ড্র প্রত্যাখ্যান করতে ব্যর্থ"
 
@@ -965,7 +991,7 @@ msgstr "সংযুক্তি মুছতে ব্যর্থ"
 msgid "Failed to delete comment"
 msgstr "মন্তব্য মুছতে ব্যর্থ"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "গেম মুছতে ব্যর্থ"
 
@@ -993,15 +1019,15 @@ msgstr "ছবি লোড করা যায়নি"
 msgid "Failed to load video"
 msgstr "ভিডিও লোড করা যায়নি"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "চাল দিতে ব্যর্থ"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "ড্র প্রস্তাব করতে ব্যর্থ"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "পাস করতে ব্যর্থ"
 
@@ -1009,11 +1035,11 @@ msgstr "পাস করতে ব্যর্থ"
 msgid "Failed to post comment"
 msgstr "মন্তব্য পোস্ট করতে ব্যর্থ"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "রিজাইন করতে ব্যর্থ"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "খেলা পুনরায় শুরু করতে ব্যর্থ"
 
@@ -1021,8 +1047,8 @@ msgstr "খেলা পুনরায় শুরু করতে ব্য�
 msgid "Failed to revoke RSS access"
 msgstr "RSS অ্যাক্সেস প্রত্যাহার করা ব্যর্থ হয়েছে"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "পাঠাতে ব্যর্থ"
 
@@ -1076,13 +1102,17 @@ msgstr "থিম থেকে"
 msgid "Game created"
 msgstr "গেম তৈরি করা হয়েছে"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "গেম মুছে ফেলা হয়েছে"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "গেম শেষ"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "যান"
 
@@ -1459,7 +1489,7 @@ msgstr "বিজ্ঞপ্তি: {0}"
 msgid "Number"
 msgstr "সংখ্যা"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "ড্র অফার করুন"
 
@@ -1476,11 +1506,11 @@ msgstr "ওহ! পৃষ্ঠাটি পাওয়া যায়নি!"
 msgid "Open actions"
 msgstr "অ্যাকশন খুলুন"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "চ্যাট প্যানেল খুলুন"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "গেম অ্যাকশন খুলুন"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "প্যারেন্ট"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "পাস"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "টার্ন পাস করবেন?"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "পাস করা হচ্ছে..."
 
@@ -1667,7 +1697,7 @@ msgstr "আপেক্ষিক (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "২৪ ঘণ্টার মধ্যে আপেক্ষিক, অন্যথায় পরম"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "পুনরায় খেলুন"
 
@@ -1743,16 +1773,16 @@ msgstr "প্রয়োজনীয়"
 msgid "Resend email"
 msgstr "ইমেল আবার পাঠান"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "পদত্যাগ"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "গেম থেকে পদত্যাগ করবেন?"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "পদত্যাগ করা হচ্ছে..."
 
@@ -1809,7 +1839,7 @@ msgstr "শনিবার"
 msgid "Save"
 msgstr "সংরক্ষণ করুন"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "স্কোর গৃহীত হয়েছে — {opponentName}-এর জন্য অপেক্ষা করা হচ্ছে"
 
@@ -2002,7 +2032,7 @@ msgstr "সাইন আউট করা হচ্ছে..."
 msgid "Single line of text only"
 msgstr "শুধুমাত্র একক লাইনের টেক্সট"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "আপনার পালা এড়িয়ে যান এবং প্রতিপক্ষের কাছে পাস করুন।"
 
@@ -2110,7 +2140,7 @@ msgstr "অনুরোধ করা কনটেন্ট খুঁজে প�
 msgid "The server returned a web page instead of data."
 msgstr "সার্ভার ডেটার পরিবর্তে একটি ওয়েব পেজ ফেরত দিয়েছে।"
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "এটি গেম এবং এর চ্যাট স্থায়ীভাবে মুছে ফেলবে। এটি ফিরিয়ে আনা যাবে না।"
 
@@ -2312,11 +2342,12 @@ msgstr "আমরা <0>{0}</0> এ একটি যাচাইকরণ কো
 msgid "Wednesday"
 msgstr "বুধবার"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "সাদা"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "সাদা ধরেছে:"
 
@@ -2336,6 +2367,14 @@ msgstr "আপনি"
 msgid "You do not have access to this section."
 msgstr "এই বিভাগে আপনার অ্যাক্সেস নেই।"
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "আপনি হার মেনেছেন — {opponentName} জিতেছেন"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "আপনি জিতেছেন!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "আপনার অ্যাকাউন্ট {source} থেকে এখানে স্থানান্তরিত হয়েছে। আপনি সেখানে এটি মুছে না দেওয়া পর্যন্ত, বার্তা ও বিজ্ঞপ্তি উভয় সার্ভারে পৌঁছাতে পারে, আপনার কিছু বিষয়বস্তু পুরানো সার্ভার থেকে পরিবেশিত হতে পারে, এবং অনুসরণকারীদের আপনাকে এখানে খুঁজে পেতে কয়েক মিনিট লাগতে পারে।"
@@ -2343,6 +2382,10 @@ msgstr "আপনার অ্যাকাউন্ট {source} থেকে এ
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "আপনার সংযুক্তিগুলি হারিয়ে যাবে।"
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "আপনার চাল"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)

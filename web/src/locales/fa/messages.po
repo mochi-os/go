@@ -70,13 +70,25 @@ msgstr "{name} پیشنهاد تساوی داد"
 msgid "{name} resigned"
 msgstr "{name} تسلیم شد"
 
-#: src/features/go/index.tsx:728
+#: src/features/go/index.tsx:716
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} هم رد کرد. تأیید تخته را می‌شمارد و امتیازی پیشنهاد می‌دهد که هر دو باید بر سر آن توافق کنید."
 
 #: ../../../lib/web/src/components/game/game-draw-offer-banner.tsx:29
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} پیشنهاد مساوی داد"
+
+#: src/features/go/index.tsx:430
+msgid "{opponentName} resigned — you win!"
+msgstr "{opponentName} تسلیم شد — شما بردید!"
+
+#: src/features/go/index.tsx:418
+msgid "{opponentName} wins"
+msgstr "{opponentName} برد"
+
+#: src/features/go/index.tsx:434
+msgid "{opponentName}'s move"
+msgstr "نوبت {opponentName}"
 
 #: ../../../lib/web/src/components/attachment-composer.tsx:248
 #: ../../../lib/web/src/components/ui/upload-progress.tsx:52
@@ -106,6 +118,10 @@ msgstr "{totalCount, plural, one {# مورد} other {# مورد}}"
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx:158
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {باز کردن منو (# اعلان خوانده‌نشده)} other {باز کردن منو (# اعلان خوانده‌نشده)}}"
+
+#: src/features/go/index.tsx:410
+msgid "{winnerColor} wins — B:{black} W:{white}"
+msgstr "{winnerColor} برد — B:{black} W:{white}"
 
 #. placeholder {0}: countDeepChildren(object.id)
 #: ../../../lib/web/src/components/entity/entity-board-card.tsx:418
@@ -293,7 +309,7 @@ msgstr "آیا از حذف این نظر مطمئن هستید؟ همهٔ پاس
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "آیا از خروج از حساب مطمئن هستید؟ برای دسترسی به حساب باید دوباره وارد شوید."
 
-#: src/features/go/index.tsx:684
+#: src/features/go/index.tsx:672
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "آیا از تسلیم شدن مطمئن هستید؟ {opponentName} برندهٔ بازی می‌شود."
 
@@ -343,11 +359,12 @@ msgstr "بازگشت به خانه"
 msgid "Banner"
 msgstr "بنر"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "Black"
 msgstr "سیاه"
 
-#: src/features/go/index.tsx:495
+#: src/features/go/index.tsx:483
 msgid "Black captures:"
 msgstr "اسیرهای سیاه:"
 
@@ -434,8 +451,8 @@ msgstr "دستهٔ این اعلان‌ها"
 msgid "Change notification category"
 msgstr "تغییر دستهٔ اعلان"
 
-#: src/features/go/index.tsx:622
-#: src/features/go/index.tsx:655
+#: src/features/go/index.tsx:610
+#: src/features/go/index.tsx:643
 msgid "Chat"
 msgstr "گفت‌وگو"
 
@@ -634,6 +651,10 @@ msgstr "شروع احراز هویت مجدد ممکن نشد. لطفاً دوب
 msgid "Couldn't verify with that account. Please try again."
 msgstr "تأیید با آن حساب ممکن نشد. لطفاً دوباره تلاش کنید."
 
+#: src/features/go/index.tsx:426
+msgid "Counting — agree the score or play on"
+msgstr "شمارش — بر سر امتیاز توافق کنید یا به بازی ادامه دهید"
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
@@ -703,7 +724,7 @@ msgstr "مرتب‌سازی پیش‌فرض"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:701
 msgid "Delete"
 msgstr "حذف"
 
@@ -723,11 +744,11 @@ msgstr "حذف نظر"
 msgid "Delete field"
 msgstr "حذف فیلد"
 
-#: src/features/go/index.tsx:557
+#: src/features/go/index.tsx:545
 msgid "Delete game"
 msgstr "حذف بازی"
 
-#: src/features/go/index.tsx:704
+#: src/features/go/index.tsx:692
 msgid "Delete game?"
 msgstr "بازی حذف شود؟"
 
@@ -749,7 +770,7 @@ msgstr "حذف نما"
 msgid "Delete your account on the old server"
 msgstr "حساب کاربری خود را در سرور قدیمی حذف کنید"
 
-#: src/features/go/index.tsx:710
+#: src/features/go/index.tsx:698
 msgid "Deleting..."
 msgstr "در حال حذف..."
 
@@ -817,11 +838,16 @@ msgstr "دانلود"
 msgid "Download failed"
 msgstr "دانلود ناموفق بود"
 
+#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:424
+msgid "Draw"
+msgstr "مساوی"
+
 #: src/features/go/components/chat-message-list.tsx:45
 msgid "Draw agreed"
 msgstr "تساوی پذیرفته شد"
 
-#: src/features/go/index.tsx:588
+#: src/features/go/index.tsx:576
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "پیشنهاد تساوی داده شد — در انتظار {opponentName}"
 
@@ -888,11 +914,11 @@ msgstr "تقاطع خالی {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "تقاطع خالی {colLabel}{rowLabel}، برای قرار دادن کلیک کنید یا Enter را فشار دهید"
 
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:726
 msgid "End game"
 msgstr "پایان بازی"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "End game?"
 msgstr "پایان بازی؟"
 
@@ -927,11 +953,11 @@ msgstr "آدرس خارجی"
 msgid "Extra large"
 msgstr "خیلی بزرگ"
 
-#: src/features/go/index.tsx:247
+#: src/features/go/index.tsx:194
 msgid "Failed to accept draw"
 msgstr "پذیرش تساوی ناموفق بود"
 
-#: src/features/go/index.tsx:253
+#: src/features/go/index.tsx:200
 msgid "Failed to accept score"
 msgstr "پذیرش امتیاز ناموفق بود"
 
@@ -949,11 +975,11 @@ msgstr "ایجاد بازی ناموفق بود"
 msgid "Failed to create link"
 msgstr "ایجاد لینک ناموفق بود"
 
-#: src/features/go/index.tsx:273
+#: src/features/go/index.tsx:220
 msgid "Failed to create rematch"
 msgstr "ایجاد بازی مجدد ناموفق بود"
 
-#: src/features/go/index.tsx:263
+#: src/features/go/index.tsx:210
 msgid "Failed to decline draw"
 msgstr "رد تساوی ناموفق بود"
 
@@ -965,7 +991,7 @@ msgstr "حذف پیوست ناموفق بود"
 msgid "Failed to delete comment"
 msgstr "حذف دیدگاه ناموفق بود"
 
-#: src/features/go/index.tsx:285
+#: src/features/go/index.tsx:232
 msgid "Failed to delete game"
 msgstr "حذف بازی ناموفق بود"
 
@@ -993,15 +1019,15 @@ msgstr "بارگذاری تصویر ناموفق بود"
 msgid "Failed to load video"
 msgstr "بارگذاری ویدیو ناموفق بود"
 
-#: src/features/go/index.tsx:218
+#: src/features/go/index.tsx:165
 msgid "Failed to make move"
 msgstr "انجام حرکت ناموفق بود"
 
-#: src/features/go/index.tsx:242
+#: src/features/go/index.tsx:189
 msgid "Failed to offer draw"
 msgstr "پیشنهاد تساوی ناموفق بود"
 
-#: src/features/go/index.tsx:225
+#: src/features/go/index.tsx:172
 msgid "Failed to pass"
 msgstr "پاس دادن ناموفق بود"
 
@@ -1009,11 +1035,11 @@ msgstr "پاس دادن ناموفق بود"
 msgid "Failed to post comment"
 msgstr "ارسال دیدگاه ناموفق بود"
 
-#: src/features/go/index.tsx:235
+#: src/features/go/index.tsx:182
 msgid "Failed to resign"
 msgstr "تسلیم شدن ناموفق بود"
 
-#: src/features/go/index.tsx:258
+#: src/features/go/index.tsx:205
 msgid "Failed to resume play"
 msgstr "از سرگیری بازی ناموفق بود"
 
@@ -1021,8 +1047,8 @@ msgstr "از سرگیری بازی ناموفق بود"
 msgid "Failed to revoke RSS access"
 msgstr "لغو دسترسی RSS ناموفق بود"
 
-#: src/features/go/index.tsx:639
-#: src/features/go/index.tsx:672
+#: src/features/go/index.tsx:627
+#: src/features/go/index.tsx:660
 msgid "Failed to send"
 msgstr "ارسال ناموفق بود"
 
@@ -1076,13 +1102,17 @@ msgstr "از تم"
 msgid "Game created"
 msgstr "بازی ایجاد شد"
 
-#: src/features/go/index.tsx:281
+#: src/features/go/index.tsx:228
 msgid "Game deleted"
 msgstr "بازی حذف شد"
 
-#: src/features/go/index.tsx:118
-#: src/features/go/index.tsx:411
-#: src/features/go/index.tsx:423
+#: src/features/go/index.tsx:421
+msgid "Game over"
+msgstr "بازی تمام شد"
+
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:358
+#: src/features/go/index.tsx:370
 msgid "Go"
 msgstr "برو"
 
@@ -1459,7 +1489,7 @@ msgstr "اعلان‌ها: {0}"
 msgid "Number"
 msgstr "شماره"
 
-#: src/features/go/index.tsx:541
+#: src/features/go/index.tsx:529
 msgid "Offer draw"
 msgstr "پیشنهاد تساوی"
 
@@ -1476,11 +1506,11 @@ msgstr "اوه! صفحه پیدا نشد!"
 msgid "Open actions"
 msgstr "باز کردن عملیات"
 
-#: src/features/go/index.tsx:512
+#: src/features/go/index.tsx:500
 msgid "Open chat panel"
 msgstr "باز کردن پنل گفت‌وگو"
 
-#: src/features/go/index.tsx:520
+#: src/features/go/index.tsx:508
 msgid "Open game actions"
 msgstr "باز کردن اقدامات بازی"
 
@@ -1535,16 +1565,16 @@ msgid "Parent"
 msgstr "والد"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:738
+#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:726
 msgid "Pass"
 msgstr "رد کردن"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:713
 msgid "Pass turn?"
 msgstr "نوبت را رد می‌کنید؟"
 
-#: src/features/go/index.tsx:735
+#: src/features/go/index.tsx:723
 msgid "Passing..."
 msgstr "در حال رد کردن..."
 
@@ -1667,7 +1697,7 @@ msgstr "نسبی (۵د، ۳س، ۲ر)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "در ۲۴ ساعت نسبی، در غیر این صورت مطلق"
 
-#: src/features/go/index.tsx:554
+#: src/features/go/index.tsx:542
 msgid "Rematch"
 msgstr "بازی مجدد"
 
@@ -1743,16 +1773,16 @@ msgstr "الزامی"
 msgid "Resend email"
 msgstr "ارسال مجدد ایمیل"
 
-#: src/features/go/index.tsx:545
-#: src/features/go/index.tsx:692
+#: src/features/go/index.tsx:533
+#: src/features/go/index.tsx:680
 msgid "Resign"
 msgstr "تسلیم"
 
-#: src/features/go/index.tsx:683
+#: src/features/go/index.tsx:671
 msgid "Resign game?"
 msgstr "بازی را تسلیم می‌شوید؟"
 
-#: src/features/go/index.tsx:689
+#: src/features/go/index.tsx:677
 msgid "Resigning..."
 msgstr "در حال تسلیم..."
 
@@ -1809,7 +1839,7 @@ msgstr "شنبه"
 msgid "Save"
 msgstr "ذخیره"
 
-#: src/features/go/index.tsx:570
+#: src/features/go/index.tsx:558
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "امتیاز پذیرفته شد — در انتظار {opponentName}"
 
@@ -2002,7 +2032,7 @@ msgstr "در حال خروج..."
 msgid "Single line of text only"
 msgstr "فقط یک خط متن"
 
-#: src/features/go/index.tsx:729
+#: src/features/go/index.tsx:717
 msgid "Skip your turn and pass to your opponent."
 msgstr "نوبت خود را رد کنید و به حریف بسپارید."
 
@@ -2110,7 +2140,7 @@ msgstr "محتوای درخواستی یافت نشد."
 msgid "The server returned a web page instead of data."
 msgstr "سرور به‌جای داده، یک صفحهٔ وب برگرداند."
 
-#: src/features/go/index.tsx:705
+#: src/features/go/index.tsx:693
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "این کار بازی و گفتگوی آن را برای همیشه حذف می‌کند. این عمل قابل بازگشت نیست."
 
@@ -2312,11 +2342,12 @@ msgstr "کد تأیید را به <0>{0}</0> ارسال کردیم. برای ت�
 msgid "Wednesday"
 msgstr "چهارشنبه"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:405
+#: src/features/go/index.tsx:476
 msgid "White"
 msgstr "سفید"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:488
 msgid "White captures:"
 msgstr "سفید گرفت:"
 
@@ -2336,6 +2367,14 @@ msgstr "شما"
 msgid "You do not have access to this section."
 msgstr "شما به این بخش دسترسی ندارید."
 
+#: src/features/go/index.tsx:431
+msgid "You resigned — {opponentName} wins"
+msgstr "شما تسلیم شدید — {opponentName} برد"
+
+#: src/features/go/index.tsx:418
+msgid "You win!"
+msgstr "شما برنده شدید!"
+
 #: ../../../lib/web/src/components/restore-banner.tsx:100
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "حساب کاربری شما از {source} به اینجا منتقل شده است. تا زمانی که آن را آنجا حذف نکنید، پیام‌ها و اعلان‌ها ممکن است به هر دو سرور برسند، بخشی از محتوای شما همچنان از سرور قدیمی ارائه می‌شود، و دنبال‌کنندگان ممکن است چند دقیقه‌ای طول بکشد تا شما را اینجا پیدا کنند."
@@ -2343,6 +2382,10 @@ msgstr "حساب کاربری شما از {source} به اینجا منتقل ش
 #: ../../../lib/web/src/components/comment-composer.tsx:302
 msgid "Your attachments will be lost."
 msgstr "پیوست‌های شما از دست خواهند رفت."
+
+#: src/features/go/index.tsx:434
+msgid "Your move"
+msgstr "نوبت شما"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)
