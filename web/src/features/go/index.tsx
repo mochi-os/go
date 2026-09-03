@@ -29,6 +29,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
   useFormat,
+  getAppPath,
 } from '@mochi/web'
 import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw, SkipForward, MessageCircle } from 'lucide-react'
 import { GoGame } from '@/lib/go-engine'
@@ -439,6 +440,12 @@ export function GoGameView() {
       ? game.opponent
       : game.identity
     : ''
+  // The opponent's avatar and style come through this app's own game-bound
+  // player-asset route, never a cross-app fetch from the people app.
+  const opponentAssetUrl = (asset: 'avatar' | 'style') =>
+    opponentFingerprint && selectedGameId
+      ? `${getAppPath()}/${selectedGameId}/-/user/${opponentFingerprint}/asset/${asset}`
+      : null
 
   return (
     <>
@@ -466,8 +473,9 @@ export function GoGameView() {
                         ? opponentName
                         : `${opponentName} (${game.board_size}×${game.board_size})`
                     }
-                    opponentFingerprint={opponentFingerprint || undefined}
                     opponentName={opponentName}
+                    opponentAvatarUrl={opponentAssetUrl('avatar')}
+                    opponentStyleUrl={opponentAssetUrl('style')}
                     status={headline}
                     stats={
                       <>
