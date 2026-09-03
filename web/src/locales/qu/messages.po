@@ -18,7 +18,7 @@ msgstr ""
 msgid "Please check your internet connection and try again."
 msgstr "Internet tinkiyniykita qhaway, kutiykachimuy."
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:301
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:295
 msgid " or "
 msgstr " utaq "
 
@@ -70,7 +70,7 @@ msgstr "{name} kikllachakuyta rikuchirqa"
 msgid "{name} resigned"
 msgstr "{name} haykurqa"
 
-#: src/features/go/index.tsx:716
+#: src/features/go/index.tsx:642
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName}pas pasarqan. Confirmaspaqa boardta yupanqa hinaspa iskayniykichik rimanaykichikpaq puntajeta haywanqa."
 
@@ -78,15 +78,15 @@ msgstr "{opponentName}pas pasarqan. Confirmaspaqa boardta yupanqa hinaspa iskayn
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} kuska kayta nirqan"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:414
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} saqirqan — atipanki!"
 
-#: src/features/go/index.tsx:418
+#: src/features/go/index.tsx:402
 msgid "{opponentName} wins"
 msgstr "{opponentName} atipan"
 
-#: src/features/go/index.tsx:434
+#: src/features/go/index.tsx:418
 msgid "{opponentName}'s move"
 msgstr "{opponentName} mit'an"
 
@@ -119,7 +119,7 @@ msgstr "{totalCount, plural, one {# ima} other {# imakuna}}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Menuta kichay (# mana ñawinchasqa willakuy)} other {Menuta kichay (# mana ñawinchasqa willakuykuna)}}"
 
-#: src/features/go/index.tsx:410
+#: src/features/go/index.tsx:394
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} atipan — B:{black} W:{white}"
 
@@ -168,9 +168,13 @@ msgstr "Yaykuy patachan"
 msgid "Account type"
 msgstr "Cuenta laya"
 
-#: src/components/layout/go-layout.tsx:66
+#: src/components/layout/go-layout.tsx:50
 msgid "Active games"
 msgstr "Kawsachkan Pukllaykuna"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:413
+msgid "Activity"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx:720
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
@@ -211,11 +215,11 @@ msgstr "Lista item yapay"
 msgid "Add field"
 msgstr "Campo yapay"
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:174
 msgid "Add friends"
 msgstr "Wawqikuna yapay"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:173
 msgid "Add friends in the People app to start playing"
 msgstr "Wawqikunata People app-pi yapay pukllayta qallarinaykipaq"
 
@@ -223,7 +227,7 @@ msgstr "Wawqikunata People app-pi yapay pukllayta qallarinaykipaq"
 msgid "Add item..."
 msgstr "Item yapay..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:320
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:314
 msgid "Add link"
 msgstr "Link yapay"
 
@@ -297,6 +301,10 @@ msgstr "Kay feed-ta suscribisqa tukuy imapas manaña chaskinqachu. Chaymanta mus
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "\"{0}\"-ta wischuyta munanki?"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:660
+msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
+msgstr ""
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:629
 msgid "Are you sure you want to delete the \"{name}\" column? This cannot be undone."
 msgstr "\"{name}\" columna-ta wischuyta munanki? Kayqa mana kutichipuy atinmanchu."
@@ -309,7 +317,11 @@ msgstr "Kay comentario-ta wischuyta munanki? Kayqa kutichikunatapas wischunqa."
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Lluqsiyta munanki? Kutichiy yaykunaykipaq cuenta-yki-pi."
 
-#: src/features/go/index.tsx:672
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:39
+msgid "Are you sure you want to resign?"
+msgstr ""
+
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:38
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Saqiyta munanki? {opponentName} pukllayta atipanqa."
 
@@ -355,16 +367,25 @@ msgstr "Kutichiy"
 msgid "Back to home"
 msgstr "Wasiman kutiy"
 
+#: ../../../lib/web/src/components/banner-section.tsx:80
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:405
-#: src/features/go/index.tsx:476
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner removed"
+msgstr ""
+
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner updated"
+msgstr ""
+
+#: src/features/go/index.tsx:389
+#: src/features/go/index.tsx:460
 msgid "Black"
 msgstr "Yana"
 
-#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:467
 msgid "Black captures:"
 msgstr "Yana hap'isqakuna:"
 
@@ -376,8 +397,8 @@ msgstr "Yana rumi {colLabel}{rowLabel}-pi"
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "Yana hallp'a {colLabel}{rowLabel}-pi"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:68
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:215
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:72
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:209
 msgid "Blocked by"
 msgstr "Hark'aq"
 
@@ -386,7 +407,7 @@ msgstr "Hark'aq"
 msgid "Blocked navigation to untrusted link"
 msgstr "Mana iñikuq link-man yaykuy hark'asqa"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:66
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:70
 msgid "Blocks"
 msgstr "Bloques"
 
@@ -394,7 +415,7 @@ msgstr "Bloques"
 msgid "Board"
 msgstr "Tabla"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:114
 msgid "Board size"
 msgstr "Tabla sayay"
 
@@ -425,7 +446,7 @@ msgstr "Browser willaykuna"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:177
 msgid "Cancel"
 msgstr "Mana ruway"
 
@@ -451,8 +472,7 @@ msgstr "Kay willaykunapaq categoría"
 msgid "Change notification category"
 msgstr "Willaykuna categoría tikray"
 
-#: src/features/go/index.tsx:610
-#: src/features/go/index.tsx:643
+#: src/features/go/index.tsx:594
 msgid "Chat"
 msgstr "Chat"
 
@@ -468,15 +488,16 @@ msgstr "Lista"
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "Pukllay akllay sidebar-manta utaq musuq qallariy."
 
-#: ../../../lib/web/src/components/language-picker.tsx:264
-#: ../../../lib/web/src/components/language-picker.tsx:271
+#: ../../../lib/web/src/components/language-picker.tsx:267
+#: ../../../lib/web/src/components/language-picker.tsx:274
 msgid "Choose language"
 msgstr "Simi akllay"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:171
 msgid "Choose opponent"
 msgstr "Atipaq akllay"
 
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:164
@@ -494,8 +515,8 @@ msgstr "Llapan pichay"
 msgid "Clear search"
 msgstr "Maskhay pichay"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:501
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:506
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:495
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:500
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:468
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:471
@@ -570,11 +591,16 @@ msgstr "Rimanakuy ruraykuna"
 msgid "Comments"
 msgstr "Comentarios"
 
+#. placeholder {0}: data.comment_count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:409
+msgid "Comments ({0})"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:90
 msgid "Compact"
 msgstr "Pisi"
 
-#: src/components/layout/go-layout.tsx:67
+#: src/components/layout/go-layout.tsx:51
 msgid "Completed"
 msgstr "Tukusqa"
 
@@ -651,14 +677,14 @@ msgstr "Kutin yaykuy mana qallariy atikurqanchu. Ama hina kaspa watiqmanta ruway
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Chay cuentawanqa mana takyachiyta atikurqachu. Ama hina kaspa watiqmanta llamk'apuy."
 
-#: src/features/go/index.tsx:426
+#: src/features/go/index.tsx:410
 msgid "Counting — agree the score or play on"
 msgstr "Yupay — puntajemanta huñunakuychik utaq pukllaspa kaychik"
 
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:656
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:485
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:650
 #: ../../../lib/web/src/components/entity/entity-tree-view.tsx:675
 msgid "Create"
 msgstr "Kamariy"
@@ -677,9 +703,9 @@ msgstr "Musuq item kamariy"
 msgid "Created"
 msgstr "Kamarisqa"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:656
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:650
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:258
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:179
 msgid "Creating..."
 msgstr "Kamarispa..."
 
@@ -687,6 +713,7 @@ msgstr "Kamarispa..."
 msgid "Current location"
 msgstr "Kunan cheqa"
 
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:132
 #: ../../../lib/web/src/components/colour-picker.tsx:265
 msgid "Custom"
 msgstr "Sapankuq"
@@ -707,6 +734,10 @@ msgstr "P'unchaw"
 msgid "Decline"
 msgstr "Mana chaskiy"
 
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:129
+msgid "Default"
+msgstr ""
+
 #: ../../../lib/web/src/features/accounts/account-add.tsx:185
 msgid "Default AI account"
 msgstr "Default AI cuenta"
@@ -724,7 +755,8 @@ msgstr "Default sort"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:701
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:661
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Wischuy"
 
@@ -744,13 +776,19 @@ msgstr "Comentario wischuy"
 msgid "Delete field"
 msgstr "Campo wischuy"
 
-#: src/features/go/index.tsx:545
+#: src/features/go/index.tsx:529
 msgid "Delete game"
 msgstr "Pukllay wischuy"
 
-#: src/features/go/index.tsx:692
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:69
 msgid "Delete game?"
 msgstr "Pukllayta wischuy?"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:478
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:483
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:659
+msgid "Delete item"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:116
 msgid "Delete option"
@@ -770,7 +808,7 @@ msgstr "Vista wischuy"
 msgid "Delete your account on the old server"
 msgstr "Ñawpaq serverpi cuenta-ykita qichuy"
 
-#: src/features/go/index.tsx:698
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:75
 msgid "Deleting..."
 msgstr "Wischuspa..."
 
@@ -786,7 +824,7 @@ msgstr "Willariy"
 msgid "Details Panel"
 msgstr "Willariykuna Panel"
 
-#: ../../../lib/web/src/components/language-picker.tsx:240
+#: ../../../lib/web/src/components/language-picker.tsx:243
 #: ../../../lib/web/src/components/timezone-select.tsx:46
 #: ../../../lib/web/src/components/timezone-select.tsx:83
 #: ../../../lib/web/src/lib/preference-utils.ts:23
@@ -824,6 +862,7 @@ msgid "Displays the mobile sidebar."
 msgstr "Movil sidebar qhawachin."
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:305
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:487
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:518
 msgid "Done"
 msgstr "Tukurqun"
@@ -838,8 +877,8 @@ msgstr "Uray chaskiy"
 msgid "Download failed"
 msgstr "Urayachiy mana atikurqanchu"
 
-#: src/features/go/index.tsx:415
-#: src/features/go/index.tsx:424
+#: src/features/go/index.tsx:399
+#: src/features/go/index.tsx:408
 msgid "Draw"
 msgstr "Kikin"
 
@@ -847,11 +886,11 @@ msgstr "Kikin"
 msgid "Draw agreed"
 msgstr "Kikllachakuy ari nisqa"
 
-#: src/features/go/index.tsx:576
+#: src/features/go/index.tsx:560
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Chiqansipaña haywasqa — {opponentName} suyaspa"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:67
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:71
 msgid "Duplicates"
 msgstr "Iskaynisqakuna"
 
@@ -914,17 +953,21 @@ msgstr "Ch'usaq taripay {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Ch'usaq taripay {colLabel}{rowLabel}, llamiy utaq Enter ñitiy churanaykipaq"
 
-#: src/features/go/index.tsx:726
+#: src/features/go/index.tsx:652
 msgid "End game"
 msgstr "Pukllayta tukuchiy"
 
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:639
 msgid "End game?"
 msgstr "¿Pukllayta tukuchiy?"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:69
 msgid "Enter a valid number"
 msgstr "Allin yupayta qillqay"
+
+#: ../../../lib/web/src/components/banner-section.tsx:88
+msgid "Enter banner text (markdown supported)..."
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:302
 msgid "Enter the code from your email"
@@ -933,6 +976,10 @@ msgstr "Email nikiymanta hamuq código yaykuchiy"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:327
 msgid "Enter your authenticator code"
 msgstr "Takyachiqniykiq codigonta yaykuchiy"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:379
+msgid "Error"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
@@ -953,11 +1000,11 @@ msgstr "Hawa URL"
 msgid "Extra large"
 msgstr "Sinchi hatun"
 
-#: src/features/go/index.tsx:194
+#: src/features/go/index.tsx:184
 msgid "Failed to accept draw"
 msgstr "Mana chiqansipañata chaskiyta atinchu"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:190
 msgid "Failed to accept score"
 msgstr "Puntajeta chaskiyta mana atinchu"
 
@@ -966,22 +1013,26 @@ msgstr "Puntajeta chaskiyta mana atinchu"
 msgid "Failed to copy"
 msgstr "Mana kikinchayta atinchu"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:56
 msgid "Failed to create game"
 msgstr "Mana pukllayta paqarichiyta atinchu"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:137
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:131
 #: ../../../lib/web/src/components/options-menu.tsx:98
 msgid "Failed to create link"
 msgstr "Mana enlaceta paqarichiyta atinchu"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:210
 msgid "Failed to create rematch"
 msgstr "Mana watiqmanta pukllayta paqarichiyta atinchu"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:200
 msgid "Failed to decline draw"
 msgstr "Mana chiqansipañata mana munayta atinchu"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:301
+msgid "Failed to delete"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:130
 msgid "Failed to delete attachment"
@@ -991,11 +1042,11 @@ msgstr "Mana adjuntota pichayta atinchu"
 msgid "Failed to delete comment"
 msgstr "Mana comentariota pichayta atinchu"
 
-#: src/features/go/index.tsx:232
+#: src/features/go/index.tsx:222
 msgid "Failed to delete game"
 msgstr "Mana pukllayta pichayta atinchu"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:159
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:153
 msgid "Failed to delete link"
 msgstr "Mana enlaceta pichayta atinchu"
 
@@ -1015,19 +1066,32 @@ msgstr "Mana historiata wichachiyta atinchu"
 msgid "Failed to load image"
 msgstr "Manam rikchata cargayta atikunchu"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:380
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:383
+msgid "Failed to load item"
+msgstr ""
+
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:213
+msgid "Failed to load prompts"
+msgstr ""
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
 msgid "Failed to load video"
 msgstr "Manam videota cargayta atikunchu"
 
-#: src/features/go/index.tsx:165
+#: src/features/go/index.tsx:155
 msgid "Failed to make move"
 msgstr "Mana kuyuyta ruwayta atinchu"
 
-#: src/features/go/index.tsx:189
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:315
+msgid "Failed to move"
+msgstr ""
+
+#: src/features/go/index.tsx:179
 msgid "Failed to offer draw"
 msgstr "Mana chiqansipañata haywayta atinchu"
 
-#: src/features/go/index.tsx:172
+#: src/features/go/index.tsx:162
 msgid "Failed to pass"
 msgstr "Mana pasayta atinchu"
 
@@ -1035,11 +1099,15 @@ msgstr "Mana pasayta atinchu"
 msgid "Failed to post comment"
 msgstr "Mana comentariota willakuyta atinchu"
 
-#: src/features/go/index.tsx:182
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:90
+msgid "Failed to reset prompt"
+msgstr ""
+
+#: src/features/go/index.tsx:172
 msgid "Failed to resign"
 msgstr "Mana saqiyta atinchu"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:195
 msgid "Failed to resume play"
 msgstr "Pukllayta qatiyta mana atinchu"
 
@@ -1047,20 +1115,35 @@ msgstr "Pukllayta qatiyta mana atinchu"
 msgid "Failed to revoke RSS access"
 msgstr "Mana atikunchu RSS yaykuyta chinkachiy"
 
-#: src/features/go/index.tsx:627
-#: src/features/go/index.tsx:660
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:271
+msgid "Failed to save"
+msgstr ""
+
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:111
+msgid "Failed to save prompt"
+msgstr ""
+
+#: src/features/go/index.tsx:611
 msgid "Failed to send"
 msgstr "Mana apachiyta atinchu"
+
+#: ../../../lib/web/src/components/banner-section.tsx:71
+msgid "Failed to update banner"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:174
 msgid "Failed to update comment"
 msgstr "Mana comentariota musuqyachiyta atinchu"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:286
+msgid "Failed to update watching"
+msgstr ""
+
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:114
 msgid "Failed to upload attachment"
 msgstr "Mana adjuntota wichachiyta atinchu"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:589
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:583
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:155
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:175
 msgid "Files"
@@ -1098,21 +1181,21 @@ msgstr "Manta"
 msgid "From theme"
 msgstr "Temamanta"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:52
 msgid "Game created"
 msgstr "Pukllay paqarichisqa"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:218
 msgid "Game deleted"
 msgstr "Pukllay pichasqa"
 
-#: src/features/go/index.tsx:421
+#: src/features/go/index.tsx:405
 msgid "Game over"
 msgstr "Pukllay tukurqun"
 
-#: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:358
-#: src/features/go/index.tsx:370
+#: src/features/go/index.tsx:64
+#: src/features/go/index.tsx:347
+#: src/features/go/index.tsx:356
 msgid "Go"
 msgstr "Kachkay"
 
@@ -1186,6 +1269,10 @@ msgstr "Mana allin pacha"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Maskasqayki p'anqaqa <0/>manam kanchu icha qichusqam."
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:433
+msgid "Item details"
+msgstr ""
+
 #: ../../../lib/web/src/lib/locale-format.ts:165
 msgid "Just now"
 msgstr "Kunanlla"
@@ -1194,7 +1281,7 @@ msgstr "Kunanlla"
 msgid "Keyboard shortcuts"
 msgstr "Teclado pisi ñankuna"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:132
 msgid "Komi"
 msgstr "Komi"
 
@@ -1219,7 +1306,7 @@ msgstr "Sut'i"
 msgid "Link"
 msgstr "T'inki"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:279
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:273
 msgid "Links"
 msgstr "Enlacekuna"
 
@@ -1234,6 +1321,14 @@ msgstr "Aswan wichachiy"
 #: ../../../lib/web/src/components/ui/loading-content.tsx:26
 msgid "Loading content…"
 msgstr "Contenido kargachkan…"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:363
+msgid "Loading item"
+msgstr ""
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:364
+msgid "Loading item details"
+msgstr ""
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:88
@@ -1315,7 +1410,7 @@ msgstr "Lunes"
 msgid "More options"
 msgstr "Astawan akllaykuna"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:70
 msgid "Must be between 0 and 10"
 msgstr "0 hinaspa 10 chawpipi kanan"
 
@@ -1340,15 +1435,15 @@ msgstr "Sutinmi 1000 letrayoq utaq pisi kanan"
 msgid "Network error"
 msgstr "Redpi pantay"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:476
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:470
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:43
 msgid "New"
 msgstr "Musuq"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
-#: src/components/layout/go-layout.tsx:68
-#: src/features/go/components/new-game.tsx:125
+#: src/components/layout/go-layout.tsx:52
+#: src/features/go/components/new-game.tsx:169
 msgid "New game"
 msgstr "Musuq pukllay"
 
@@ -1357,7 +1452,7 @@ msgstr "Musuq pukllay"
 msgid "Next image"
 msgstr "Qatiqnin imagen"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:555
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:549
 msgid "No {parentClassNames} to add to"
 msgstr "Mana yapanapaq {parentClassNames}"
 
@@ -1373,11 +1468,11 @@ msgstr "Manaraq ruwaykuna"
 msgid "No comments yet"
 msgstr "Manaraq comentariokuna"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:176
 msgid "No friends found"
 msgstr "Mana amigokuna tarisqachu"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends yet"
 msgstr "Manaraq amigokuna"
 
@@ -1389,11 +1484,11 @@ msgstr "Manaraq pukllaykuna"
 msgid "No groups available"
 msgstr "Mana grupokuna atikuq"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:522
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:516
 msgid "No item types can be created yet. Create the required parent items first."
 msgstr "Manaraq item niraqkuna ruwakuyta atin. Ñawpaqta munasqa parent itemkunata ruway."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:360
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:354
 msgid "No matching objects"
 msgstr "Mana tupaq objetokuna"
 
@@ -1446,9 +1541,13 @@ msgid "No views"
 msgstr "Mana qhawaykuna"
 
 #: ../../../lib/web/src/components/colour-picker.tsx:349
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:538
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:541
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:545
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:532
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:535
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:539
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:548
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:562
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:566
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:359
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:382
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
@@ -1489,7 +1588,7 @@ msgstr "Willakuykuna: {0}"
 msgid "Number"
 msgstr "Yupay"
 
-#: src/features/go/index.tsx:529
+#: src/features/go/index.tsx:513
 msgid "Offer draw"
 msgstr "Empate ofrecey"
 
@@ -1506,11 +1605,11 @@ msgstr "¡Ay! ¡Página Mana Tarisqachu!"
 msgid "Open actions"
 msgstr "Ruwaykunata kichay"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:484
 msgid "Open chat panel"
 msgstr "Chat panelta kichay"
 
-#: src/features/go/index.tsx:508
+#: src/features/go/index.tsx:492
 msgid "Open game actions"
 msgstr "Pukllay ruwaykunata kichay"
 
@@ -1560,21 +1659,22 @@ msgstr "Huk"
 msgid "Owner"
 msgstr "Apuq"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:530
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:524
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:544
 msgid "Parent"
 msgstr "Yaya"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:521
-#: src/features/go/index.tsx:726
+#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:652
 msgid "Pass"
 msgstr "Saqi"
 
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:639
 msgid "Pass turn?"
 msgstr "Pasayniyta saqiy?"
 
-#: src/features/go/index.tsx:723
+#: src/features/go/index.tsx:649
 msgid "Passing..."
 msgstr "Pasashan..."
 
@@ -1604,7 +1704,7 @@ msgstr "Internet tinkiyniykita qhaway, kutiykachimuy."
 msgid "Please log in with the appropriate credentials <0/> to access this resource."
 msgstr "Kay ruwanaman yaykunaykipaq <0/> allin willakuywan yaykuy."
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:76
 msgid "Please select a friend"
 msgstr "Ama hina, amigota akllay"
 
@@ -1616,7 +1716,7 @@ msgstr "Ama hina kaspa, huk kutita ruway."
 msgid "Please wait a moment and try again."
 msgstr "Ama hina kaspa, huk ratulla suyaykuy, hinaspa watiqmanta ruwaykuy."
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:162
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Yana ñawpaqta puriqmanta compensanapaq Yuraqpa puntajeman yapasqa puntakuna"
 
@@ -1645,6 +1745,14 @@ msgstr "Ruwakuchkan…"
 #: ../../../lib/web/src/components/person-picker.tsx:200
 msgid "Project members"
 msgstr "Proyectop ayllunkuna"
+
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:108
+msgid "Prompt saved"
+msgstr ""
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:406
+msgid "Properties"
+msgstr ""
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)
@@ -1685,7 +1793,7 @@ msgstr "Yaykuyman redirigshan."
 msgid "Reduce interest"
 msgstr "Munayta pisichiy"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:65
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:69
 msgid "Relates"
 msgstr "Tupachikun"
 
@@ -1697,7 +1805,7 @@ msgstr "Relativo (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "24 horas ukhupi relativo, mana chayqa absoluto"
 
-#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:526
 msgid "Rematch"
 msgstr "Watiqmanta pukllay"
 
@@ -1737,8 +1845,8 @@ msgstr "Munayta qichuy"
 msgid "Remove item"
 msgstr "Itemta qichuy"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:304
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:298
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:303
 msgid "Remove link"
 msgstr "Tinkita qichuy"
 
@@ -1773,16 +1881,16 @@ msgstr "Munasqa"
 msgid "Resend email"
 msgstr "Correota kutiy apachiy"
 
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:680
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
+#: src/features/go/index.tsx:517
 msgid "Resign"
 msgstr "Saqirakapuy"
 
-#: src/features/go/index.tsx:671
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:35
 msgid "Resign game?"
 msgstr "Pukllayta saqirakapuy?"
 
-#: src/features/go/index.tsx:677
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:45
 msgid "Resigning..."
 msgstr "Saqirakapushan..."
 
@@ -1831,7 +1939,9 @@ msgstr "RSS URL clipboardman copiasqa"
 msgid "Saturday"
 msgstr "Sábado"
 
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
+#: ../../../lib/web/src/components/banner-section.tsx:99
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:170
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:122
@@ -1839,7 +1949,11 @@ msgstr "Sábado"
 msgid "Save"
 msgstr "Waqaychay"
 
-#: src/features/go/index.tsx:558
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
+msgid "Saving..."
+msgstr ""
+
+#: src/features/go/index.tsx:542
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Puntaje chaskisqa — {opponentName} suyaspa"
 
@@ -1870,7 +1984,7 @@ msgstr "Destinopaq maskay..."
 msgid "Search for origin..."
 msgstr "Origenpaq maskay..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:337
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:331
 msgid "Search objects..."
 msgstr "Objetokunata maskay..."
 
@@ -1907,7 +2021,7 @@ msgstr "Akllay"
 msgid "Select a field"
 msgstr "Fieldta akllay"
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:175
 msgid "Select a friend..."
 msgstr "Amigota akllay..."
 
@@ -2032,7 +2146,7 @@ msgstr "Lluqsichkan..."
 msgid "Single line of text only"
 msgstr "Huk siqi qillqayllata"
 
-#: src/features/go/index.tsx:717
+#: src/features/go/index.tsx:643
 msgid "Skip your turn and pass to your opponent."
 msgstr "Mit'aykita saqiy hinaspa awqayman quy."
 
@@ -2053,17 +2167,22 @@ msgstr "Pukyukuna"
 msgid "Spacious"
 msgstr "Hatun"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:170
 msgid "Start a new Go game"
 msgstr "Musuq Go pukllayta qallariy"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:178
 msgid "Start game"
 msgstr "Pukllayta qallariy"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:323
 msgid "Start the discussion by adding the first comment."
 msgstr "Ñawpaq comentariota churaspa rimanakuyta qallariy."
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:463
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:468
+msgid "Stop watching"
+msgstr ""
 
 #: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
@@ -2140,7 +2259,7 @@ msgstr "Mañakusqa willaykuna mana tarikunchu."
 msgid "The server returned a web page instead of data."
 msgstr "Servidorqa mana willakuykunatachu kutichirqan, huk web p'anqatam."
 
-#: src/features/go/index.tsx:693
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:70
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Kayqa pukllayta rimanakuywantin wiñaypaq wischun. Kayta mana kutichinachu."
 
@@ -2263,9 +2382,8 @@ msgstr "Mana riqsisqa"
 msgid "Unsubscribe"
 msgstr "Suscripcionta saqiy"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:285
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:103
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:184
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:178
+#: ../../../lib/web/src/lib/entity-title.ts:40
 msgid "Untitled"
 msgstr "Mana sutinchayniyuq"
 
@@ -2274,7 +2392,7 @@ msgstr "Mana sutinchayniyuq"
 msgid "Updated"
 msgstr "Musuqchasqa"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:639
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:633
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:301
 msgid "Upload"
 msgstr "Upload"
@@ -2292,6 +2410,10 @@ msgstr "Yaykuna llaveykita llamk'achiy"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "Apaykachaq"
+
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:159
+msgid "Variables: {variables}"
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:73
 msgid "Verification code"
@@ -2320,9 +2442,18 @@ msgstr "Video qhawana: {0}"
 msgid "View all notifications"
 msgstr "Llapan willakuykunata qhaway"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:434
+msgid "View and edit item details"
+msgstr ""
+
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:170
 msgid "View controls"
 msgstr "Qhaway controlkuna"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:463
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:468
+msgid "Watch"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:269
 #: ../../../lib/web/src/components/filter-bar.tsx:35
@@ -2342,12 +2473,12 @@ msgstr "<0>{0}</0> nisqaman huk verificación código apachirqayku. Correo elect
 msgid "Wednesday"
 msgstr "Quyllurchaw"
 
-#: src/features/go/index.tsx:405
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:389
+#: src/features/go/index.tsx:460
 msgid "White"
 msgstr "Yuraq"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:472
 msgid "White captures:"
 msgstr "Yuraq hap'iyninkuna:"
 
@@ -2367,11 +2498,11 @@ msgstr "Qan"
 msgid "You do not have access to this section."
 msgstr "Kay t'aqamanqa mana yaykuyta atinkichu."
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:415
 msgid "You resigned — {opponentName} wins"
 msgstr "Saqirqanki — {opponentName} atipan"
 
-#: src/features/go/index.tsx:418
+#: src/features/go/index.tsx:402
 msgid "You win!"
 msgstr "Llallinki!"
 
@@ -2383,7 +2514,7 @@ msgstr "Cuenta-yki {source} llaqtamanta kaypi churasqa karqan. Chaypeqa manaraj 
 msgid "Your attachments will be lost."
 msgstr "Ratachisqaykikuna chinkapunqa."
 
-#: src/features/go/index.tsx:434
+#: src/features/go/index.tsx:418
 msgid "Your move"
 msgstr "Movimientoyki"
 

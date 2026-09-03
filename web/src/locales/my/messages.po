@@ -18,7 +18,7 @@ msgstr ""
 msgid "Please check your internet connection and try again."
 msgstr "သင့်အင်တာနက်ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်မံကြိုးစားပါ။"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:301
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:295
 msgid " or "
 msgstr " သို့မဟုတ် "
 
@@ -70,7 +70,7 @@ msgstr "{name} သရေကျရန် ကမ်းလှမ်းသည်"
 msgid "{name} resigned"
 msgstr "{name} အရှုံးပေးလိုက်သည်"
 
-#: src/features/go/index.tsx:716
+#: src/features/go/index.tsx:642
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} လည်း ကျော်ခဲ့သည်။ အတည်ပြုခြင်းသည် board ကို ရေတွက်ပြီး နှစ်ဦးစလုံး သဘောတူရမည့် ရမှတ်တစ်ခုကို အဆိုပြုပါမည်။"
 
@@ -78,15 +78,15 @@ msgstr "{opponentName} လည်း ကျော်ခဲ့သည်။ အတ�
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} က သရေ ပေးခဲ့သည်"
 
-#: src/features/go/index.tsx:430
+#: src/features/go/index.tsx:414
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} လက်လျှော့လိုက်သည် — သင်နိုင်သည်!"
 
-#: src/features/go/index.tsx:418
+#: src/features/go/index.tsx:402
 msgid "{opponentName} wins"
 msgstr "{opponentName} နိုင်သည်"
 
-#: src/features/go/index.tsx:434
+#: src/features/go/index.tsx:418
 msgid "{opponentName}'s move"
 msgstr "{opponentName} ၏အလှည့်"
 
@@ -119,7 +119,7 @@ msgstr "{totalCount, plural, other {# ခု}}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, other {မီနူးဖွင့်ရန် (မဖတ်ရသေးသော အကြောင်းကြားချက် # ခု)}}"
 
-#: src/features/go/index.tsx:410
+#: src/features/go/index.tsx:394
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} နိုင်သည် — B:{black} W:{white}"
 
@@ -168,9 +168,13 @@ msgstr "ဝင်ရောက်ခွင့်အဆင့်"
 msgid "Account type"
 msgstr "အကောင့်အမျိုးအစား"
 
-#: src/components/layout/go-layout.tsx:66
+#: src/components/layout/go-layout.tsx:50
 msgid "Active games"
 msgstr "လက်ရှိ Games"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:413
+msgid "Activity"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx:720
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
@@ -211,11 +215,11 @@ msgstr "checklist အရာ ထည့်မည်"
 msgid "Add field"
 msgstr "field ထည့်မည်"
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:174
 msgid "Add friends"
 msgstr "သူငယ်ချင်းများ ထည့်မည်"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:173
 msgid "Add friends in the People app to start playing"
 msgstr "ကစားစတင်ရန် People app တွင် သူငယ်ချင်းများ ထည့်ပါ"
 
@@ -223,7 +227,7 @@ msgstr "ကစားစတင်ရန် People app တွင် သူငယ�
 msgid "Add item..."
 msgstr "အရာ ထည့်ရန်..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:320
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:314
 msgid "Add link"
 msgstr "လင့်ခ် ထည့်မည်"
 
@@ -297,6 +301,10 @@ msgstr "ဤဖိဒ်ကို စာရင်းသွင်းထားသ�
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "\"{0}\" ကို ဖျက်မှာသေချာပါသလား?"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:660
+msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
+msgstr ""
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:629
 msgid "Are you sure you want to delete the \"{name}\" column? This cannot be undone."
 msgstr "\"{name}\" ကော်လံကို ဖျက်မှာသေချာပါသလား? ပြန်လည်ပြုပြင်၍မရပါ။"
@@ -309,7 +317,11 @@ msgstr "ဤမှတ်ချက်ကို ဖျက်မှာသေချ�
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "log out လုပ်မှာသေချာပါသလား? သင့်အကောင့်ကို ပြန်ဝင်ရန် log in ပြန်လုပ်ရမည်။"
 
-#: src/features/go/index.tsx:672
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:39
+msgid "Are you sure you want to resign?"
+msgstr ""
+
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:38
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "လက်လျှော့မှာသေချာပါသလား? {opponentName} က ပွဲကို နိုင်မည်ဖြစ်သည်။"
 
@@ -355,16 +367,25 @@ msgstr "နောက်သို့"
 msgid "Back to home"
 msgstr "ပင်မစာမျက်နှာ သို့ပြန်သွားရန်"
 
+#: ../../../lib/web/src/components/banner-section.tsx:80
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "ပိုစတာ"
 
-#: src/features/go/index.tsx:405
-#: src/features/go/index.tsx:476
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner removed"
+msgstr ""
+
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner updated"
+msgstr ""
+
+#: src/features/go/index.tsx:389
+#: src/features/go/index.tsx:460
 msgid "Black"
 msgstr "အနက်"
 
-#: src/features/go/index.tsx:483
+#: src/features/go/index.tsx:467
 msgid "Black captures:"
 msgstr "အနက် ဖမ်းယူရရှိ:"
 
@@ -376,8 +397,8 @@ msgstr "{colLabel}{rowLabel} တွင် အနက်ကျောက်တု�
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "{colLabel}{rowLabel} တွင် အနက်နယ်မြေ"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:68
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:215
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:72
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:209
 msgid "Blocked by"
 msgstr "ပိတ်ဆို့သူ"
 
@@ -386,7 +407,7 @@ msgstr "ပိတ်ဆို့သူ"
 msgid "Blocked navigation to untrusted link"
 msgstr "မယုံကြည်ရသော လင့်ခ်သို့ သွားရောက်ခြင်းကို ပိတ်ဆို့ထားသည်"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:66
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:70
 msgid "Blocks"
 msgstr "ပိတ်ဆို့မှုများ"
 
@@ -394,7 +415,7 @@ msgstr "ပိတ်ဆို့မှုများ"
 msgid "Board"
 msgstr "ဘုတ်"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:114
 msgid "Board size"
 msgstr "ဘုတ်အရွယ်အစား"
 
@@ -425,7 +446,7 @@ msgstr "Browser အကြောင်းကြားချက်များ"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:177
 msgid "Cancel"
 msgstr "မလုပ်တော့ပါ"
 
@@ -451,8 +472,7 @@ msgstr "ဤအကြောင်းကြားချက်များအတွ
 msgid "Change notification category"
 msgstr "အကြောင်းကြားချက် အမျိုးအစား ပြောင်းမည်"
 
-#: src/features/go/index.tsx:610
-#: src/features/go/index.tsx:643
+#: src/features/go/index.tsx:594
 msgid "Chat"
 msgstr "စကားပြောခန်း"
 
@@ -468,15 +488,16 @@ msgstr "Checklist"
 msgid "Choose a game from the sidebar or start a new one."
 msgstr "ဘေးဘားမှ ဂိမ်းတစ်ခုကို ရွေးချယ်ပါ သို့မဟုတ် အသစ်တစ်ခု စတင်ပါ။"
 
-#: ../../../lib/web/src/components/language-picker.tsx:264
-#: ../../../lib/web/src/components/language-picker.tsx:271
+#: ../../../lib/web/src/components/language-picker.tsx:267
+#: ../../../lib/web/src/components/language-picker.tsx:274
 msgid "Choose language"
 msgstr "ဘာသာစကား ရွေးချယ်ပါ"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:171
 msgid "Choose opponent"
 msgstr "ပြိုင်ဘက် ရွေးချယ်ပါ"
 
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:164
@@ -494,8 +515,8 @@ msgstr "အားလုံး ရှင်းမည်"
 msgid "Clear search"
 msgstr "ရှာဖွေမှု ရှင်းမည်"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:501
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:506
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:495
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:500
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:468
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:471
@@ -570,11 +591,16 @@ msgstr "မှတ်ချက် လုပ်ဆောင်ချက်မျ�
 msgid "Comments"
 msgstr "မှတ်ချက်များ"
 
+#. placeholder {0}: data.comment_count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:409
+msgid "Comments ({0})"
+msgstr ""
+
 #: ../../../lib/web/src/lib/preference-utils.ts:90
 msgid "Compact"
 msgstr "ကျစ်လျစ်"
 
-#: src/components/layout/go-layout.tsx:67
+#: src/components/layout/go-layout.tsx:51
 msgid "Completed"
 msgstr "ပြီးစီးပြီး"
 
@@ -651,14 +677,14 @@ msgstr "ပြန်လည်အတည်ပြုခြင်းကို စ�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ထိုအကောင့်ဖြင့် အတည်ပြု၍မရပါ။ ကျေးဇူးပြု၍ ထပ်မံကြိုးစားပါ။"
 
-#: src/features/go/index.tsx:426
+#: src/features/go/index.tsx:410
 msgid "Counting — agree the score or play on"
 msgstr "ရေတွက်နေသည် — ရမှတ်ကို သဘောတူပါ သို့မဟုတ် ဆက်ကစားပါ"
 
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:550
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:689
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:491
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:656
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:485
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:650
 #: ../../../lib/web/src/components/entity/entity-tree-view.tsx:675
 msgid "Create"
 msgstr "ဖန်တီးမည်"
@@ -677,9 +703,9 @@ msgstr "အရာအသစ် ဖန်တီးမည်"
 msgid "Created"
 msgstr "ဖန်တီးပြီး"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:656
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:650
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:258
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:179
 msgid "Creating..."
 msgstr "ဖန်တီးနေသည်..."
 
@@ -687,6 +713,7 @@ msgstr "ဖန်တီးနေသည်..."
 msgid "Current location"
 msgstr "လက်ရှိတည်နေရာ"
 
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:132
 #: ../../../lib/web/src/components/colour-picker.tsx:265
 msgid "Custom"
 msgstr "စိတ်ကြိုက်"
@@ -707,6 +734,10 @@ msgstr "ရက်စွဲ"
 msgid "Decline"
 msgstr "ငြင်းပယ်မည်"
 
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:129
+msgid "Default"
+msgstr ""
+
 #: ../../../lib/web/src/features/accounts/account-add.tsx:185
 msgid "Default AI account"
 msgstr "မူရင်း AI အကောင့်"
@@ -724,7 +755,8 @@ msgstr "မူရင်း sort"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:203
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:252
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:314
-#: src/features/go/index.tsx:701
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:661
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "ဖျက်မည်"
 
@@ -744,13 +776,19 @@ msgstr "မှတ်ချက် ဖျက်မည်"
 msgid "Delete field"
 msgstr "field ဖျက်မည်"
 
-#: src/features/go/index.tsx:545
+#: src/features/go/index.tsx:529
 msgid "Delete game"
 msgstr "ဂိမ်း ဖျက်မည်"
 
-#: src/features/go/index.tsx:692
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:69
 msgid "Delete game?"
 msgstr "ဂိမ်းကို ဖျက်မလား?"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:478
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:483
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:659
+msgid "Delete item"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:116
 msgid "Delete option"
@@ -770,7 +808,7 @@ msgstr "ကြည့်ရှုမှု ဖျက်မည်"
 msgid "Delete your account on the old server"
 msgstr "ဟောင်းသောဆာဗာမှ သင်၏အကောင့်ကို ဖျက်ပါ"
 
-#: src/features/go/index.tsx:698
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:75
 msgid "Deleting..."
 msgstr "ဖျက်နေသည်..."
 
@@ -786,7 +824,7 @@ msgstr "ဖော်ပြချက်"
 msgid "Details Panel"
 msgstr "အသေးစိတ် Panel"
 
-#: ../../../lib/web/src/components/language-picker.tsx:240
+#: ../../../lib/web/src/components/language-picker.tsx:243
 #: ../../../lib/web/src/components/timezone-select.tsx:46
 #: ../../../lib/web/src/components/timezone-select.tsx:83
 #: ../../../lib/web/src/lib/preference-utils.ts:23
@@ -824,6 +862,7 @@ msgid "Displays the mobile sidebar."
 msgstr "မိုဘိုင်း ဘေးဘားကို ပြသသည်။"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:305
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:487
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:518
 msgid "Done"
 msgstr "ပြီးပါပြီ"
@@ -838,8 +877,8 @@ msgstr "ဒေါင်းလုဒ်"
 msgid "Download failed"
 msgstr "ဒေါင်းလုဒ် မအောင်မြင်ပါ"
 
-#: src/features/go/index.tsx:415
-#: src/features/go/index.tsx:424
+#: src/features/go/index.tsx:399
+#: src/features/go/index.tsx:408
 msgid "Draw"
 msgstr "သရေ"
 
@@ -847,11 +886,11 @@ msgstr "သရေ"
 msgid "Draw agreed"
 msgstr "သရေကျရန် သဘောတူသည်"
 
-#: src/features/go/index.tsx:576
+#: src/features/go/index.tsx:560
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "သရေ ကမ်းလှမ်းထားသည် — {opponentName} ကို စောင့်နေသည်"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:67
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:71
 msgid "Duplicates"
 msgstr "ထပ်နေသော"
 
@@ -914,17 +953,21 @@ msgstr "ဆုံချက် ဗလာ {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ဆုံချက် ဗလာ {colLabel}{rowLabel}၊ နှိပ်ပါ သို့မဟုတ် Enter ကိုနှိပ်၍ ချပါ"
 
-#: src/features/go/index.tsx:726
+#: src/features/go/index.tsx:652
 msgid "End game"
 msgstr "ဂိမ်း အဆုံးသတ်"
 
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:639
 msgid "End game?"
 msgstr "ဂိမ်း အဆုံးသတ်မလား"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:69
 msgid "Enter a valid number"
 msgstr "မှန်ကန်သော နံပါတ်ထည့်ပါ"
+
+#: ../../../lib/web/src/components/banner-section.tsx:88
+msgid "Enter banner text (markdown supported)..."
+msgstr ""
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:302
 msgid "Enter the code from your email"
@@ -933,6 +976,10 @@ msgstr "သင့်အီးမေးလ်မှ ကုဒ်ကို ထည�
 #: ../../../lib/web/src/components/step-up-dialog.tsx:327
 msgid "Enter your authenticator code"
 msgstr "သင့်အထောက်အထားစိစစ်ရေးကုဒ်ကို ထည့်ပါ"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:379
+msgid "Error"
+msgstr ""
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
@@ -953,11 +1000,11 @@ msgstr "ပြင်ပ URL"
 msgid "Extra large"
 msgstr "အလွန်ကြီး"
 
-#: src/features/go/index.tsx:194
+#: src/features/go/index.tsx:184
 msgid "Failed to accept draw"
 msgstr "သရေ လက်ခံ၍ မရပါ"
 
-#: src/features/go/index.tsx:200
+#: src/features/go/index.tsx:190
 msgid "Failed to accept score"
 msgstr "ရမှတ်ကို လက်ခံ၍ မရပါ"
 
@@ -966,22 +1013,26 @@ msgstr "ရမှတ်ကို လက်ခံ၍ မရပါ"
 msgid "Failed to copy"
 msgstr "ကူးယူ၍ မရပါ"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:56
 msgid "Failed to create game"
 msgstr "ဂိမ်း ဖန်တီး၍ မရပါ"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:137
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:131
 #: ../../../lib/web/src/components/options-menu.tsx:98
 msgid "Failed to create link"
 msgstr "လင့် ဖန်တီး၍ မရပါ"
 
-#: src/features/go/index.tsx:220
+#: src/features/go/index.tsx:210
 msgid "Failed to create rematch"
 msgstr "ပြန်ပြိုင်ပွဲ ဖန်တီး၍ မရပါ"
 
-#: src/features/go/index.tsx:210
+#: src/features/go/index.tsx:200
 msgid "Failed to decline draw"
 msgstr "သရေ ငြင်းပယ်၍ မရပါ"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:301
+msgid "Failed to delete"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:130
 msgid "Failed to delete attachment"
@@ -991,11 +1042,11 @@ msgstr "တွဲဖက်ဖိုင် ဖျက်၍ မရပါ"
 msgid "Failed to delete comment"
 msgstr "မှတ်ချက် ဖျက်၍ မရပါ"
 
-#: src/features/go/index.tsx:232
+#: src/features/go/index.tsx:222
 msgid "Failed to delete game"
 msgstr "ဂိမ်း ဖျက်၍ မရပါ"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:159
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:153
 msgid "Failed to delete link"
 msgstr "လင့် ဖျက်၍ မရပါ"
 
@@ -1015,19 +1066,32 @@ msgstr "မှတ်တမ်း တင်၍ မရပါ"
 msgid "Failed to load image"
 msgstr "ပုံကို ဖွင့်၍မရပါ"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:380
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:383
+msgid "Failed to load item"
+msgstr ""
+
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:213
+msgid "Failed to load prompts"
+msgstr ""
+
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:338
 msgid "Failed to load video"
 msgstr "ဗီဒီယိုကို ဖွင့်၍မရပါ"
 
-#: src/features/go/index.tsx:165
+#: src/features/go/index.tsx:155
 msgid "Failed to make move"
 msgstr "ရွှေ့ခြင်း လုပ်၍ မရပါ"
 
-#: src/features/go/index.tsx:189
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:315
+msgid "Failed to move"
+msgstr ""
+
+#: src/features/go/index.tsx:179
 msgid "Failed to offer draw"
 msgstr "သရေ ကမ်းလှမ်း၍ မရပါ"
 
-#: src/features/go/index.tsx:172
+#: src/features/go/index.tsx:162
 msgid "Failed to pass"
 msgstr "ဖြတ်သန်း၍ မရပါ"
 
@@ -1035,11 +1099,15 @@ msgstr "ဖြတ်သန်း၍ မရပါ"
 msgid "Failed to post comment"
 msgstr "မှတ်ချက် တင်၍ မရပါ"
 
-#: src/features/go/index.tsx:182
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:90
+msgid "Failed to reset prompt"
+msgstr ""
+
+#: src/features/go/index.tsx:172
 msgid "Failed to resign"
 msgstr "ရှုံးရန် ထုတ်ပြန်၍ မရပါ"
 
-#: src/features/go/index.tsx:205
+#: src/features/go/index.tsx:195
 msgid "Failed to resume play"
 msgstr "ကစားခြင်း ဆက်လုပ်၍ မရပါ"
 
@@ -1047,20 +1115,35 @@ msgstr "ကစားခြင်း ဆက်လုပ်၍ မရပါ"
 msgid "Failed to revoke RSS access"
 msgstr "RSS အသုံးပြုခွင့် ရုပ်သိမ်း၍ မရပါ"
 
-#: src/features/go/index.tsx:627
-#: src/features/go/index.tsx:660
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:271
+msgid "Failed to save"
+msgstr ""
+
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:111
+msgid "Failed to save prompt"
+msgstr ""
+
+#: src/features/go/index.tsx:611
 msgid "Failed to send"
 msgstr "ပို့၍ မရပါ"
+
+#: ../../../lib/web/src/components/banner-section.tsx:71
+msgid "Failed to update banner"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:174
 msgid "Failed to update comment"
 msgstr "မှတ်ချက် ပြင်ဆင်၍ မရပါ"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:286
+msgid "Failed to update watching"
+msgstr ""
+
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:114
 msgid "Failed to upload attachment"
 msgstr "တွဲဖက်ဖိုင် တင်၍ မရပါ"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:589
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:583
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:155
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:175
 msgid "Files"
@@ -1098,21 +1181,21 @@ msgstr "မှ"
 msgid "From theme"
 msgstr "အပြင်အဆင်မှ"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:52
 msgid "Game created"
 msgstr "ဂိမ်း ဖန်တီးပြီးပါပြီ"
 
-#: src/features/go/index.tsx:228
+#: src/features/go/index.tsx:218
 msgid "Game deleted"
 msgstr "ဂိမ်း ဖျက်ပြီးပါပြီ"
 
-#: src/features/go/index.tsx:421
+#: src/features/go/index.tsx:405
 msgid "Game over"
 msgstr "ဂိမ်း ပြီးဆုံး"
 
-#: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:358
-#: src/features/go/index.tsx:370
+#: src/features/go/index.tsx:64
+#: src/features/go/index.tsx:347
+#: src/features/go/index.tsx:356
 msgid "Go"
 msgstr "သွား"
 
@@ -1186,6 +1269,10 @@ msgstr "မမှန်ကန်သော ရက်စွဲ"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "သင်ရှာဖွေနေသော စာမျက်နှာသည် <0/>မရှိတော့ပါ သို့မဟုတ် ဖယ်ရှားခံရပုံရသည်။"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:433
+msgid "Item details"
+msgstr ""
+
 #: ../../../lib/web/src/lib/locale-format.ts:165
 msgid "Just now"
 msgstr "အခုပဲ"
@@ -1194,7 +1281,7 @@ msgstr "အခုပဲ"
 msgid "Keyboard shortcuts"
 msgstr "ကီးဘုတ် ဖြတ်လမ်းများ"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:132
 msgid "Komi"
 msgstr "Komi"
 
@@ -1219,7 +1306,7 @@ msgstr "အလင်း"
 msgid "Link"
 msgstr "လင့်ခ်"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:279
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:273
 msgid "Links"
 msgstr "လင့်များ"
 
@@ -1234,6 +1321,14 @@ msgstr "ထပ်တင်"
 #: ../../../lib/web/src/components/ui/loading-content.tsx:26
 msgid "Loading content…"
 msgstr "အကြောင်းအရာ ဖွင့်နေသည်…"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:363
+msgid "Loading item"
+msgstr ""
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:364
+msgid "Loading item details"
+msgstr ""
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:35
 #: ../../../lib/web/src/features/document/document-page.tsx:88
@@ -1315,7 +1410,7 @@ msgstr "တနင်္လာ"
 msgid "More options"
 msgstr "နောက်ထပ် ရွေးချယ်စရာများ"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:70
 msgid "Must be between 0 and 10"
 msgstr "0 နှင့် 10 ကြားတွင် ဖြစ်ရမည်"
 
@@ -1340,15 +1435,15 @@ msgstr "အမည်သည် စာလုံး ၁၀၀၀ သို့မဟ
 msgid "Network error"
 msgstr "ကွန်ရက် အမှား"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:476
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:470
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:43
 msgid "New"
 msgstr "အသစ်"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
-#: src/components/layout/go-layout.tsx:68
-#: src/features/go/components/new-game.tsx:125
+#: src/components/layout/go-layout.tsx:52
+#: src/features/go/components/new-game.tsx:169
 msgid "New game"
 msgstr "ဂိမ်းအသစ်"
 
@@ -1357,7 +1452,7 @@ msgstr "ဂိမ်းအသစ်"
 msgid "Next image"
 msgstr "နောက်ပုံ"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:555
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:549
 msgid "No {parentClassNames} to add to"
 msgstr "ထည့်ရန် {parentClassNames} မရှိပါ"
 
@@ -1373,11 +1468,11 @@ msgstr "လှုပ်ရှားမှုများ မရှိသေး�
 msgid "No comments yet"
 msgstr "comment များ မရှိသေးပါ"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:176
 msgid "No friends found"
 msgstr "သူငယ်ချင်းများ မတွေ့ပါ"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends yet"
 msgstr "သူငယ်ချင်းများ မရှိသေးပါ"
 
@@ -1389,11 +1484,11 @@ msgstr "ဂိမ်းများ မရှိသေးပါ"
 msgid "No groups available"
 msgstr "အုပ်စုများ မရရှိနိုင်ပါ"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:522
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:516
 msgid "No item types can be created yet. Create the required parent items first."
 msgstr "item အမျိုးအစားအသစ်များ မဖန်တီးနိုင်သေးပါ။ လိုအပ်သော parent item များကို ဦးစွာဖန်တီးပါ။"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:360
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:354
 msgid "No matching objects"
 msgstr "ကိုက်ညီသော object များ မရှိပါ"
 
@@ -1446,9 +1541,13 @@ msgid "No views"
 msgstr "view များ မရှိ"
 
 #: ../../../lib/web/src/components/colour-picker.tsx:349
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:538
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:541
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:545
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:532
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:535
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:539
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:548
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:562
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:566
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:359
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:382
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
@@ -1489,7 +1588,7 @@ msgstr "အကြောင်းကြားချက်များ- {0}"
 msgid "Number"
 msgstr "နံပါတ်"
 
-#: src/features/go/index.tsx:529
+#: src/features/go/index.tsx:513
 msgid "Offer draw"
 msgstr "ထိုးကွက် ပြန်မျှခြင်း ကမ်းလှမ်း"
 
@@ -1506,11 +1605,11 @@ msgstr "အိုး! စာမျက်နှာ မတွေ့ပါ!"
 msgid "Open actions"
 msgstr "လုပ်ဆောင်ချက်များ ဖွင့်ရန်"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:484
 msgid "Open chat panel"
 msgstr "ချတ် panel ကို ဖွင့်"
 
-#: src/features/go/index.tsx:508
+#: src/features/go/index.tsx:492
 msgid "Open game actions"
 msgstr "ဂိမ်း လုပ်ဆောင်ချက်များကို ဖွင့်"
 
@@ -1560,21 +1659,22 @@ msgstr "အခြား"
 msgid "Owner"
 msgstr "ပိုင်ရှင်"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:530
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:524
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:544
 msgid "Parent"
 msgstr "Parent"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:521
-#: src/features/go/index.tsx:726
+#: src/features/go/index.tsx:505
+#: src/features/go/index.tsx:652
 msgid "Pass"
 msgstr "ကျော်"
 
-#: src/features/go/index.tsx:713
+#: src/features/go/index.tsx:639
 msgid "Pass turn?"
 msgstr "လှည့်ကို ကျော်မလား?"
 
-#: src/features/go/index.tsx:723
+#: src/features/go/index.tsx:649
 msgid "Passing..."
 msgstr "ကျော်နေသည်..."
 
@@ -1604,7 +1704,7 @@ msgstr "သင့်အင်တာနက်ချိတ်ဆက်မှုက
 msgid "Please log in with the appropriate credentials <0/> to access this resource."
 msgstr "ဤအရင်းအမြစ်ကို ဝင်ရောက်ရန် <0/> သင့်လျော်သော အထောက်အထားများဖြင့် ဝင်ရောက်ပါ။"
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:76
 msgid "Please select a friend"
 msgstr "သူငယ်ချင်းတစ်ဦး ရွေးချယ်ပါ"
 
@@ -1616,7 +1716,7 @@ msgstr "ကျေးဇူးပြု၍ ထပ်ကြိုးစားပ�
 msgid "Please wait a moment and try again."
 msgstr "ကျေးဇူးပြု၍ ခဏစောင့်ပြီး ထပ်စမ်းကြည့်ပါ။"
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:162
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "အဖြူ ဦးစားပေး စတင်ခြင်းအတွက် အနက်ကို လျော်ကြေးပေးရန် ထပ်ဖြည့်သော အမှတ်များ"
 
@@ -1645,6 +1745,14 @@ msgstr "လုပ်ဆောင်နေသည်…"
 #: ../../../lib/web/src/components/person-picker.tsx:200
 msgid "Project members"
 msgstr "ပရောဂျက်အဖွဲ့ဝင်များ"
+
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:108
+msgid "Prompt saved"
+msgstr ""
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:406
+msgid "Properties"
+msgstr ""
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)
@@ -1685,7 +1793,7 @@ msgstr "Login သို့ redirect လုပ်နေသည်။"
 msgid "Reduce interest"
 msgstr "စိတ်ဝင်စားမှု လျှော့ချ"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:65
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:69
 msgid "Relates"
 msgstr "ဆက်စပ်"
 
@@ -1697,7 +1805,7 @@ msgstr "ဆက်စပ် (5m, 3h, 2d)"
 msgid "Relative within 24 hours, else absolute"
 msgstr "၂၄ နာရီအတွင်း ဆက်စပ်၊ ပြင်ပတွင် တိကျသော"
 
-#: src/features/go/index.tsx:542
+#: src/features/go/index.tsx:526
 msgid "Rematch"
 msgstr "ပြန်ကစား"
 
@@ -1737,8 +1845,8 @@ msgstr "စိတ်ဝင်စားမှု ဖယ်ရှား"
 msgid "Remove item"
 msgstr "item ဖယ်ရှား"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:304
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:298
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:303
 msgid "Remove link"
 msgstr "လင့်ခ် ဖယ်ရှားရန်"
 
@@ -1773,16 +1881,16 @@ msgstr "လိုအပ်"
 msgid "Resend email"
 msgstr "အီးမေးလ်ပြန်ပို့ရန်"
 
-#: src/features/go/index.tsx:533
-#: src/features/go/index.tsx:680
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
+#: src/features/go/index.tsx:517
 msgid "Resign"
 msgstr "ရှုံးကြောင်းပြော"
 
-#: src/features/go/index.tsx:671
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:35
 msgid "Resign game?"
 msgstr "ဂိမ်း ရှုံးကြောင်းပြောမလား?"
 
-#: src/features/go/index.tsx:677
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:45
 msgid "Resigning..."
 msgstr "ရှုံးကြောင်းပြောနေသည်..."
 
@@ -1831,7 +1939,9 @@ msgstr "RSS URL ကို clipboard သို့ ကူးယူပြီးပ�
 msgid "Saturday"
 msgstr "စနေနေ့"
 
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
+#: ../../../lib/web/src/components/banner-section.tsx:99
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:170
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:122
@@ -1839,7 +1949,11 @@ msgstr "စနေနေ့"
 msgid "Save"
 msgstr "သိမ်းမည်"
 
-#: src/features/go/index.tsx:558
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
+msgid "Saving..."
+msgstr ""
+
+#: src/features/go/index.tsx:542
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "ရမှတ်ကို လက်ခံပြီး — {opponentName} ကို စောင့်နေသည်"
 
@@ -1870,7 +1984,7 @@ msgstr "destination ရှာဖွေ..."
 msgid "Search for origin..."
 msgstr "Origin ရှာဖွေ..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:337
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:331
 msgid "Search objects..."
 msgstr "Object များ ရှာဖွေ..."
 
@@ -1907,7 +2021,7 @@ msgstr "ရွေးချယ်"
 msgid "Select a field"
 msgstr "field တစ်ခုကို ရွေးချယ်ပါ"
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:175
 msgid "Select a friend..."
 msgstr "သူငယ်ချင်းတစ်ဦးကို ရွေးချယ်ပါ..."
 
@@ -2032,7 +2146,7 @@ msgstr "ထွက်နေသည်..."
 msgid "Single line of text only"
 msgstr "စာသား တစ်ကြောင်းတည်းသာ"
 
-#: src/features/go/index.tsx:717
+#: src/features/go/index.tsx:643
 msgid "Skip your turn and pass to your opponent."
 msgstr "သင့်အလှည့်ကို ကျော်ပြီး တစ်ဖက်လူသို့ လွှဲပေးမည်။"
 
@@ -2053,17 +2167,22 @@ msgstr "မူရင်းများ"
 msgid "Spacious"
 msgstr "ကျယ်ပြန့်သော"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:170
 msgid "Start a new Go game"
 msgstr "Go ဂိမ်းအသစ် စတင်ပါ"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:178
 msgid "Start game"
 msgstr "ဂိမ်း စတင်မည်"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:323
 msgid "Start the discussion by adding the first comment."
 msgstr "ပထမမှတ်ချက် ထည့်၍ ဆွေးနွေးချက် စတင်ပါ။"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:463
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:468
+msgid "Stop watching"
+msgstr ""
 
 #: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
@@ -2140,7 +2259,7 @@ msgstr "တောင်းဆိုထားသော အကြောင်း�
 msgid "The server returned a web page instead of data."
 msgstr "ဆာဗာသည် ဒေတာအစား ဝဘ်စာမျက်နှာကို ပြန်ပေးခဲ့သည်။"
 
-#: src/features/go/index.tsx:693
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:70
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "ဤလုပ်ဆောင်ချက်သည် ဂိမ်းနှင့် ၎င်း၏ ချတ်ကို အပြီးအပိုင် ဖျက်ပစ်မည်ဖြစ်သည်။ ဤလုပ်ဆောင်ချက်ကို ပြန်ပြောင်း၍မရပါ။"
 
@@ -2263,9 +2382,8 @@ msgstr "မသိရသော"
 msgid "Unsubscribe"
 msgstr "Subscribe ဖြုတ်မည်"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:285
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:103
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:184
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:178
+#: ../../../lib/web/src/lib/entity-title.ts:40
 msgid "Untitled"
 msgstr "ခေါင်းစဉ်မရှိ"
 
@@ -2274,7 +2392,7 @@ msgstr "ခေါင်းစဉ်မရှိ"
 msgid "Updated"
 msgstr "အပ်ဒိတ်လုပ်ပြီး"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:639
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:633
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:301
 msgid "Upload"
 msgstr "Upload လုပ်မည်"
@@ -2292,6 +2410,10 @@ msgstr "သင့်ပတ်စ်ကီးကို သုံးပါ"
 #: ../../../lib/web/src/features/access/access-dialog.tsx:158
 msgid "User"
 msgstr "သုံးစွဲသူ"
+
+#: ../../../lib/web/src/components/ai-prompts-editor.tsx:159
+msgid "Variables: {variables}"
+msgstr ""
 
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:73
 msgid "Verification code"
@@ -2320,9 +2442,18 @@ msgstr "ဗီဒီယိုကြည့်ရှုစနစ်- {0}"
 msgid "View all notifications"
 msgstr "အသိပေးချက်များ အားလုံး ကြည့်ရှုမည်"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:434
+msgid "View and edit item details"
+msgstr ""
+
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:170
 msgid "View controls"
 msgstr "ထိန်းချုပ်မှုများ ကြည့်ရှုမည်"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:463
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:468
+msgid "Watch"
+msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:269
 #: ../../../lib/web/src/components/filter-bar.tsx:35
@@ -2342,12 +2473,12 @@ msgstr "<0>{0}</0> သို့ အတည်ပြုကုဒ် ပို့�
 msgid "Wednesday"
 msgstr "ဗုဒ္ဓဟူး"
 
-#: src/features/go/index.tsx:405
-#: src/features/go/index.tsx:476
+#: src/features/go/index.tsx:389
+#: src/features/go/index.tsx:460
 msgid "White"
 msgstr "အဖြူ"
 
-#: src/features/go/index.tsx:488
+#: src/features/go/index.tsx:472
 msgid "White captures:"
 msgstr "အဖြူဖမ်းစားမှု:"
 
@@ -2367,11 +2498,11 @@ msgstr "သင်"
 msgid "You do not have access to this section."
 msgstr "ဤအပိုင်းသို့ သင့်တွင် ဝင်ရောက်ခွင့်မရှိပါ။"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:415
 msgid "You resigned — {opponentName} wins"
 msgstr "သင်လက်လျှော့လိုက်သည် — {opponentName} နိုင်သည်"
 
-#: src/features/go/index.tsx:418
+#: src/features/go/index.tsx:402
 msgid "You win!"
 msgstr "သင်နိုင်ပြီ!"
 
@@ -2383,7 +2514,7 @@ msgstr "သင်၏အကောင့်ကို {source} မှ ဤနေရ�
 msgid "Your attachments will be lost."
 msgstr "သင့်ပူးတွဲဖိုင်များ ပျောက်ဆုံးသွားပါမည်။"
 
-#: src/features/go/index.tsx:434
+#: src/features/go/index.tsx:418
 msgid "Your move"
 msgstr "သင်၏ အလှည့်"
 
