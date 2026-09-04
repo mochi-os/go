@@ -72,7 +72,7 @@ msgstr "{name} a oferit remiză"
 msgid "{name} resigned"
 msgstr "{name} a abandonat"
 
-#: src/features/go/index.tsx:724
+#: src/features/go/index.tsx:650
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} a trecut de asemenea. Confirmarea va număra tabla și va propune un scor asupra căruia trebuie să conveniți amândoi."
 
@@ -80,15 +80,15 @@ msgstr "{opponentName} a trecut de asemenea. Confirmarea va număra tabla și va
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} a oferit egalitate"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:415
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} a abandonat — ai câștigat!"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:403
 msgid "{opponentName} wins"
 msgstr "Câștigă {opponentName}"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:419
 msgid "{opponentName}'s move"
 msgstr "Este rândul lui {opponentName}"
 
@@ -125,7 +125,7 @@ msgstr "{totalDescendants, plural, one {# răspuns} few {+# răspunsuri în plus
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Deschideți meniul (# notificare necitită)} few {Deschideți meniul (# notificări necitite)} other {Deschideți meniul (# de notificări necitite)}}"
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:395
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "Câștigă {winnerColor} — B:{black} W:{white}"
 
@@ -166,9 +166,13 @@ msgstr "Nivel de acces"
 msgid "Account type"
 msgstr "Tip de cont"
 
-#: src/components/layout/go-layout.tsx:66
+#: src/components/layout/go-layout.tsx:50
 msgid "Active games"
 msgstr "Jocuri active"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+msgid "Activity"
+msgstr "Activitate"
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx:758
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
@@ -209,11 +213,11 @@ msgstr "Adaugă element în listă"
 msgid "Add field"
 msgstr "Adaugă câmp"
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:174
 msgid "Add friends"
 msgstr "Adaugă prieteni"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:173
 msgid "Add friends in the People app to start playing"
 msgstr "Adaugă prieteni în aplicația People pentru a începe să joci"
 
@@ -221,7 +225,7 @@ msgstr "Adaugă prieteni în aplicația People pentru a începe să joci"
 msgid "Add item..."
 msgstr "Adaugă element..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:320
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:314
 msgid "Add link"
 msgstr "Adaugă link"
 
@@ -295,6 +299,10 @@ msgstr "Tot ce este abonat la acest flux va înceta să îl primească. Puteți 
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Sigur vrei să ștergi „{0}”?"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
+msgstr "Sigur vrei să ștergi „{title}”? Această acțiune nu poate fi anulată."
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:631
 msgid "Are you sure you want to delete the \"{name}\" column? This cannot be undone."
 msgstr "Sigur vrei să ștergi coloana „{name}”? Această acțiune nu poate fi anulată."
@@ -307,7 +315,11 @@ msgstr "Sigur vrei să ștergi acest comentariu? Asta va șterge și toate răsp
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Sigur vrei să te deconectezi? Va trebui să te autentifici din nou pentru a accesa contul."
 
-#: src/features/go/index.tsx:680
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:39
+msgid "Are you sure you want to resign?"
+msgstr "Sigur vrei să te retragi?"
+
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:38
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Sigur vrei să te retragi? {opponentName} va câștiga jocul."
 
@@ -353,16 +365,25 @@ msgstr "Înapoi"
 msgid "Back to home"
 msgstr "Înapoi la pornire"
 
+#: ../../../lib/web/src/components/banner-section.tsx:80
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:406
-#: src/features/go/index.tsx:484
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner removed"
+msgstr "Banner eliminat"
+
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner updated"
+msgstr "Banner actualizat"
+
+#: src/features/go/index.tsx:390
+#: src/features/go/index.tsx:468
 msgid "Black"
 msgstr "Negru"
 
-#: src/features/go/index.tsx:491
+#: src/features/go/index.tsx:475
 msgid "Black captures:"
 msgstr "Capturile negrului:"
 
@@ -374,8 +395,8 @@ msgstr "Piatră neagră la {colLabel}{rowLabel}"
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "Teritoriu negru la {colLabel}{rowLabel}"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:68
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:215
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:72
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:209
 msgid "Blocked by"
 msgstr "Blocat de"
 
@@ -384,7 +405,7 @@ msgstr "Blocat de"
 msgid "Blocked navigation to untrusted link"
 msgstr "Navigare blocată către un link nesigur"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:66
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:70
 msgid "Blocks"
 msgstr "Blocuri"
 
@@ -392,7 +413,7 @@ msgstr "Blocuri"
 msgid "Board"
 msgstr "Tablă"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:114
 msgid "Board size"
 msgstr "Dimensiunea tablei"
 
@@ -431,7 +452,7 @@ msgstr "Camera nu este disponibilă"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:177
 msgid "Cancel"
 msgstr "Anulează"
 
@@ -471,8 +492,7 @@ msgstr "Modificat"
 msgid "Changed {field}"
 msgstr "Modificat {field}"
 
-#: src/features/go/index.tsx:618
-#: src/features/go/index.tsx:651
+#: src/features/go/index.tsx:602
 msgid "Chat"
 msgstr "Chat"
 
@@ -493,10 +513,11 @@ msgstr "Alege un joc din bara laterală sau începe unul nou."
 msgid "Choose language"
 msgstr "Alege limba"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:171
 msgid "Choose opponent"
 msgstr "Alege adversarul"
 
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -514,8 +535,8 @@ msgstr "Golește tot"
 msgid "Clear search"
 msgstr "Golește căutarea"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:523
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:528
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:517
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:522
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:480
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:483
@@ -590,11 +611,16 @@ msgstr "Acțiuni comentariu"
 msgid "Comments"
 msgstr "Comentarii"
 
+#. placeholder {0}: data.comment_count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+msgid "Comments ({0})"
+msgstr "Comentarii ({0})"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:90
 msgid "Compact"
 msgstr "Compact"
 
-#: src/components/layout/go-layout.tsx:67
+#: src/components/layout/go-layout.tsx:51
 msgid "Completed"
 msgstr "Finalizat"
 
@@ -671,14 +697,14 @@ msgstr "Reautentificarea nu a putut fi inițiată. Încearcă din nou."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Nu s-a putut verifica cu acel cont. Încearcă din nou."
 
-#: src/features/go/index.tsx:427
+#: src/features/go/index.tsx:411
 msgid "Counting — agree the score or play on"
 msgstr "Numărare — puneți-vă de acord asupra scorului sau continuați partida"
 
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:551
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:691
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:513
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:682
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:507
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/entity/entity-tree-view.tsx:672
 msgid "Create"
 msgstr "Creează"
@@ -701,9 +727,9 @@ msgstr "Creat"
 msgid "Created {field}"
 msgstr "Creat {field}"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:682
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:179
 msgid "Creating..."
 msgstr "Se creează..."
 
@@ -753,7 +779,8 @@ msgstr "Sortare implicită"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: src/features/go/index.tsx:709
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Șterge"
 
@@ -773,13 +800,19 @@ msgstr "Șterge comentariul"
 msgid "Delete field"
 msgstr "Șterge câmpul"
 
-#: src/features/go/index.tsx:553
+#: src/features/go/index.tsx:537
 msgid "Delete game"
 msgstr "Șterge jocul"
 
-#: src/features/go/index.tsx:700
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:69
 msgid "Delete game?"
 msgstr "Ștergi jocul?"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+msgid "Delete item"
+msgstr "Șterge elementul"
 
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:117
 msgid "Delete option"
@@ -807,7 +840,7 @@ msgstr "Șters"
 msgid "Deleted {field}"
 msgstr "Șters {field}"
 
-#: src/features/go/index.tsx:706
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:75
 msgid "Deleting..."
 msgstr "Se șterge..."
 
@@ -865,6 +898,7 @@ msgid "Does not match the required pattern"
 msgstr "Nu corespunde modelului necesar"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "Terminat"
@@ -880,8 +914,8 @@ msgstr "Descarcă"
 msgid "Download failed"
 msgstr "Descărcarea a eșuat"
 
-#: src/features/go/index.tsx:416
-#: src/features/go/index.tsx:425
+#: src/features/go/index.tsx:400
+#: src/features/go/index.tsx:409
 msgid "Draw"
 msgstr "Remiză"
 
@@ -889,11 +923,11 @@ msgstr "Remiză"
 msgid "Draw agreed"
 msgstr "Remiză acceptată"
 
-#: src/features/go/index.tsx:584
+#: src/features/go/index.tsx:568
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Remiză oferită — se așteaptă {opponentName}"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:67
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:71
 msgid "Duplicates"
 msgstr "Duplicate"
 
@@ -956,17 +990,21 @@ msgstr "Intersecție goală {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Intersecție goală {colLabel}{rowLabel}, apasă clic sau Enter pentru a plasa"
 
-#: src/features/go/index.tsx:734
+#: src/features/go/index.tsx:660
 msgid "End game"
 msgstr "Termină jocul"
 
-#: src/features/go/index.tsx:721
+#: src/features/go/index.tsx:647
 msgid "End game?"
 msgstr "Termini jocul?"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:69
 msgid "Enter a valid number"
 msgstr "Introdu un număr valid"
+
+#: ../../../lib/web/src/components/banner-section.tsx:88
+msgid "Enter banner text (markdown supported)..."
+msgstr "Introdu textul bannerului (markdown acceptat)..."
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:290
 msgid "Enter the code from your email"
@@ -975,6 +1013,10 @@ msgstr "Introduceți codul din e-mailul dumneavoastră"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Enter your authenticator code"
 msgstr "Introdu codul din aplicația de autentificare"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+msgid "Error"
+msgstr "Eroare"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
@@ -995,11 +1037,11 @@ msgstr "URL extern"
 msgid "Extra large"
 msgstr "Extra mare"
 
-#: src/features/go/index.tsx:195
+#: src/features/go/index.tsx:185
 msgid "Failed to accept draw"
 msgstr "Acceptarea remizei a eșuat"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:191
 msgid "Failed to accept score"
 msgstr "Acceptarea scorului a eșuat"
 
@@ -1012,22 +1054,26 @@ msgstr "Adăugarea contului a eșuat"
 msgid "Failed to copy"
 msgstr "Copierea a eșuat"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:56
 msgid "Failed to create game"
 msgstr "Crearea jocului a eșuat"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:137
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:131
 #: ../../../lib/web/src/components/options-menu.tsx:98
 msgid "Failed to create link"
 msgstr "Crearea linkului a eșuat"
 
-#: src/features/go/index.tsx:221
+#: src/features/go/index.tsx:211
 msgid "Failed to create rematch"
 msgstr "Crearea revanșei a eșuat"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:201
 msgid "Failed to decline draw"
 msgstr "Refuzul remizei a eșuat"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:303
+msgid "Failed to delete"
+msgstr "Ștergerea a eșuat"
 
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:130
 msgid "Failed to delete attachment"
@@ -1037,11 +1083,11 @@ msgstr "Ștergerea atașamentului a eșuat"
 msgid "Failed to delete comment"
 msgstr "Ștergerea comentariului a eșuat"
 
-#: src/features/go/index.tsx:233
+#: src/features/go/index.tsx:223
 msgid "Failed to delete game"
 msgstr "Ștergerea jocului a eșuat"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:159
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:153
 msgid "Failed to delete link"
 msgstr "Ștergerea linkului a eșuat"
 
@@ -1061,6 +1107,11 @@ msgstr "Încărcarea istoricului a eșuat"
 msgid "Failed to load image"
 msgstr "Imaginea nu a putut fi încărcată"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+msgid "Failed to load item"
+msgstr "Încărcarea elementului a eșuat"
+
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:213
 msgid "Failed to load prompts"
 msgstr "Încărcarea prompturilor a eșuat"
@@ -1069,15 +1120,19 @@ msgstr "Încărcarea prompturilor a eșuat"
 msgid "Failed to load video"
 msgstr "Videoclipul nu a putut fi încărcat"
 
-#: src/features/go/index.tsx:166
+#: src/features/go/index.tsx:156
 msgid "Failed to make move"
 msgstr "Efectuarea mutării a eșuat"
 
-#: src/features/go/index.tsx:190
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:317
+msgid "Failed to move"
+msgstr "Mutarea a eșuat"
+
+#: src/features/go/index.tsx:180
 msgid "Failed to offer draw"
 msgstr "Oferirea remizei a eșuat"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:163
 msgid "Failed to pass"
 msgstr "Trecerea a eșuat"
 
@@ -1089,11 +1144,11 @@ msgstr "Postarea comentariului a eșuat"
 msgid "Failed to reset prompt"
 msgstr "Resetarea promptului a eșuat"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:173
 msgid "Failed to resign"
 msgstr "Abandonul a eșuat"
 
-#: src/features/go/index.tsx:206
+#: src/features/go/index.tsx:196
 msgid "Failed to resume play"
 msgstr "Reluarea jocului a eșuat"
 
@@ -1101,24 +1156,35 @@ msgstr "Reluarea jocului a eșuat"
 msgid "Failed to revoke RSS access"
 msgstr "Revocarea accesului RSS a eșuat"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:273
+msgid "Failed to save"
+msgstr "Salvarea a eșuat"
+
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:111
 msgid "Failed to save prompt"
 msgstr "Salvarea promptului a eșuat"
 
-#: src/features/go/index.tsx:635
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:619
 msgid "Failed to send"
 msgstr "Trimiterea a eșuat"
+
+#: ../../../lib/web/src/components/banner-section.tsx:71
+msgid "Failed to update banner"
+msgstr "Actualizarea bannerului a eșuat"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:175
 msgid "Failed to update comment"
 msgstr "Actualizarea comentariului a eșuat"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:288
+msgid "Failed to update watching"
+msgstr "Actualizarea urmăririi a eșuat"
+
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:114
 msgid "Failed to upload attachment"
 msgstr "Încărcarea atașamentului a eșuat"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:611
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:605
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:160
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:180
 msgid "Files"
@@ -1156,21 +1222,21 @@ msgstr "De la"
 msgid "From theme"
 msgstr "Din temă"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:52
 msgid "Game created"
 msgstr "Joc creat"
 
-#: src/features/go/index.tsx:229
+#: src/features/go/index.tsx:219
 msgid "Game deleted"
 msgstr "Joc șters"
 
-#: src/features/go/index.tsx:422
+#: src/features/go/index.tsx:406
 msgid "Game over"
 msgstr "Joc terminat"
 
-#: src/features/go/index.tsx:66
-#: src/features/go/index.tsx:359
-#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:348
+#: src/features/go/index.tsx:357
 msgid "Go"
 msgstr "Mergi"
 
@@ -1248,6 +1314,10 @@ msgstr "Dată invalidă"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Se pare că pagina pe care o căutați <0/>nu există sau a fost eliminată."
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+msgid "Item details"
+msgstr "Detalii element"
+
 #: ../../../lib/web/src/lib/locale-format.ts:180
 msgid "Just now"
 msgstr "Chiar acum"
@@ -1256,7 +1326,7 @@ msgstr "Chiar acum"
 msgid "Keyboard shortcuts"
 msgstr "Scurtături de tastatură"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:132
 msgid "Komi"
 msgstr "Komi"
 
@@ -1281,7 +1351,7 @@ msgstr "Luminos"
 msgid "Link"
 msgstr "Link"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:279
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:273
 msgid "Links"
 msgstr "Linkuri"
 
@@ -1296,6 +1366,14 @@ msgstr "Încarcă mai multe"
 #: ../../../lib/web/src/components/ui/loading-content.tsx:26
 msgid "Loading content…"
 msgstr "Se încarcă conținutul…"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+msgid "Loading item"
+msgstr "Se încarcă elementul"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+msgid "Loading item details"
+msgstr "Se încarcă detaliile elementului"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:39
 #: ../../../lib/web/src/features/document/document-page.tsx:88
@@ -1393,7 +1471,7 @@ msgstr "Mutat"
 msgid "Moved {field}"
 msgstr "Mutat {field}"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:70
 msgid "Must be between 0 and 10"
 msgstr "Trebuie să fie între 0 și 10"
 
@@ -1422,15 +1500,15 @@ msgstr "Numele trebuie să aibă cel mult 1000 de caractere"
 msgid "Network error"
 msgstr "Eroare de rețea"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:498
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:492
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:43
 msgid "New"
 msgstr "Nou"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
-#: src/components/layout/go-layout.tsx:68
-#: src/features/go/components/new-game.tsx:125
+#: src/components/layout/go-layout.tsx:52
+#: src/features/go/components/new-game.tsx:169
 msgid "New game"
 msgstr "Joc nou"
 
@@ -1439,7 +1517,7 @@ msgstr "Joc nou"
 msgid "Next image"
 msgstr "Imaginea următoare"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:577
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:571
 msgid "No {parentClassNames} to add to"
 msgstr "Niciun {parentClassNames} la care să adaugi"
 
@@ -1455,11 +1533,11 @@ msgstr "Încă nicio activitate"
 msgid "No comments yet"
 msgstr "Încă niciun comentariu"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:176
 msgid "No friends found"
 msgstr "Nu s-au găsit prieteni"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends yet"
 msgstr "Încă niciun prieten"
 
@@ -1471,11 +1549,11 @@ msgstr "Încă niciun joc"
 msgid "No groups available"
 msgstr "Niciun grup disponibil"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:544
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:538
 msgid "No item types can be created yet. Create the required parent items first."
 msgstr "Încă nu pot fi create tipuri de elemente. Creează mai întâi elementele părinte necesare."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:360
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:354
 msgid "No matching objects"
 msgstr "Niciun obiect potrivit"
 
@@ -1528,9 +1606,13 @@ msgid "No views"
 msgstr "Nicio vizualizare"
 
 #: ../../../lib/web/src/components/colour-picker.tsx:349
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:560
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:563
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:567
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1571,7 +1653,7 @@ msgstr "Notificări: {0}"
 msgid "Number"
 msgstr "Număr"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:521
 msgid "Offer draw"
 msgstr "Oferă remiză"
 
@@ -1588,11 +1670,11 @@ msgstr "Hopa! Pagina nu a fost găsită!"
 msgid "Open actions"
 msgstr "Deschide acțiunile"
 
-#: src/features/go/index.tsx:508
+#: src/features/go/index.tsx:492
 msgid "Open chat panel"
 msgstr "Deschide panoul de conversație"
 
-#: src/features/go/index.tsx:516
+#: src/features/go/index.tsx:500
 msgid "Open game actions"
 msgstr "Deschide acțiuni joc"
 
@@ -1642,21 +1724,23 @@ msgstr "Altele"
 msgid "Owner"
 msgstr "Proprietar"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:552
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
 msgid "Parent"
 msgstr "Părinte"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:529
-#: src/features/go/index.tsx:734
+#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:660
 msgid "Pass"
 msgstr "Pasează"
 
-#: src/features/go/index.tsx:721
+#: src/features/go/index.tsx:647
 msgid "Pass turn?"
 msgstr "Pasezi tura?"
 
-#: src/features/go/index.tsx:731
+#: src/features/go/index.tsx:657
 msgid "Passing..."
 msgstr "Se pasează..."
 
@@ -1691,7 +1775,7 @@ msgstr "Persoane"
 msgid "Please check your internet connection and try again."
 msgstr "Verifică conexiunea la internet și încearcă din nou."
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:76
 msgid "Please select a friend"
 msgstr "Selectează un prieten"
 
@@ -1703,7 +1787,7 @@ msgstr "Încearcă din nou."
 msgid "Please wait a moment and try again."
 msgstr "Așteptați un moment și încercați din nou."
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:162
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Puncte adăugate la scorul Albului pentru a compensa faptul că Negrul mută primul"
 
@@ -1732,6 +1816,10 @@ msgstr "Se procesează…"
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:108
 msgid "Prompt saved"
 msgstr "Prompt salvat"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+msgid "Properties"
+msgstr "Proprietăți"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)
@@ -1780,7 +1868,7 @@ msgstr "Se redirecționează către autentificare."
 msgid "Reduce interest"
 msgstr "Reduce interesul"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:65
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:69
 msgid "Relates"
 msgstr "Are legătură"
 
@@ -1800,7 +1888,7 @@ msgstr "Relevanță {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Relevanță {relevance}, interes {weight}"
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:534
 msgid "Rematch"
 msgstr "Revanșă"
 
@@ -1840,8 +1928,8 @@ msgstr "Elimină interesul"
 msgid "Remove item"
 msgstr "Elimină articolul"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:304
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:298
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:303
 msgid "Remove link"
 msgstr "Elimină linkul"
 
@@ -1876,16 +1964,16 @@ msgstr "Obligatoriu"
 msgid "Resend email"
 msgstr "Retrimite e-mailul"
 
-#: src/features/go/index.tsx:541
-#: src/features/go/index.tsx:688
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
+#: src/features/go/index.tsx:525
 msgid "Resign"
 msgstr "Abandonează"
 
-#: src/features/go/index.tsx:679
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:35
 msgid "Resign game?"
 msgstr "Abandonezi jocul?"
 
-#: src/features/go/index.tsx:685
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:45
 msgid "Resigning..."
 msgstr "Se abandonează..."
 
@@ -1936,6 +2024,7 @@ msgstr "Sâmbătă"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
+#: ../../../lib/web/src/components/banner-section.tsx:99
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -1947,7 +2036,7 @@ msgstr "Salvează"
 msgid "Saving..."
 msgstr "Se salvează..."
 
-#: src/features/go/index.tsx:566
+#: src/features/go/index.tsx:550
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Scor acceptat — se așteaptă {opponentName}"
 
@@ -1978,7 +2067,7 @@ msgstr "Caută o destinație..."
 msgid "Search for origin..."
 msgstr "Caută o origine..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:337
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:331
 msgid "Search objects..."
 msgstr "Caută obiecte..."
 
@@ -2015,7 +2104,7 @@ msgstr "Selectează"
 msgid "Select a field"
 msgstr "Selectează un câmp"
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:175
 msgid "Select a friend..."
 msgstr "Selectează un prieten..."
 
@@ -2144,7 +2233,7 @@ msgstr "Se deconectează..."
 msgid "Single line of text only"
 msgstr "Doar o singură linie de text"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:651
 msgid "Skip your turn and pass to your opponent."
 msgstr "Omite-ți tura și predă-i adversarului."
 
@@ -2165,17 +2254,22 @@ msgstr "Surse"
 msgid "Spacious"
 msgstr "Spațios"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:170
 msgid "Start a new Go game"
 msgstr "Începe un joc Go nou"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:178
 msgid "Start game"
 msgstr "Începe jocul"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:325
 msgid "Start the discussion by adding the first comment."
 msgstr "Începe discuția adăugând primul comentariu."
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+msgid "Stop watching"
+msgstr "Nu mai urmări"
 
 #: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
@@ -2272,7 +2366,7 @@ msgstr "Serverul a returnat o pagină web în loc de date."
 msgid "This app is not allowed to use your passkey. Allow it in Settings, under Permissions."
 msgstr "Această aplicație nu are permisiunea de a folosi cheia dvs. de acces. Permiteți-o în Setări, la Permisiuni."
 
-#: src/features/go/index.tsx:701
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:70
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Aceasta va șterge definitiv jocul și discuția asociată. Această acțiune nu poate fi anulată."
 
@@ -2393,9 +2487,8 @@ msgstr "Necunoscut"
 msgid "Unsubscribe"
 msgstr "Dezabonează-te"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:299
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:103
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:184
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:178
+#: ../../../lib/web/src/lib/entity-title.ts:40
 msgid "Untitled"
 msgstr "Fără titlu"
 
@@ -2409,7 +2502,7 @@ msgstr "Actualizat"
 msgid "Updated {field}"
 msgstr "Actualizat {field}"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:661
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:655
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:304
 msgid "Upload"
 msgstr "Încarcă"
@@ -2459,6 +2552,10 @@ msgstr "Vizualizator video: {0}"
 msgid "View all notifications"
 msgstr "Vizualizează toate notificările"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+msgid "View and edit item details"
+msgstr "Vizualizează și editează detaliile elementului"
+
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:170
 msgid "View controls"
 msgstr "Controale de vizualizare"
@@ -2466,6 +2563,11 @@ msgstr "Controale de vizualizare"
 #: ../../../lib/web/src/lib/shell-errors.ts:33
 msgid "Voice recording is not supported in this browser"
 msgstr "Înregistrarea vocală nu este acceptată în acest browser"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+msgid "Watch"
+msgstr "Urmărește"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:269
 #: ../../../lib/web/src/components/filter-bar.tsx:35
@@ -2485,12 +2587,12 @@ msgstr "Am trimis un cod de verificare la <0>{0}</0>. Introduceți codul mai jos
 msgid "Wednesday"
 msgstr "Miercuri"
 
-#: src/features/go/index.tsx:406
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:390
+#: src/features/go/index.tsx:468
 msgid "White"
 msgstr "Alb"
 
-#: src/features/go/index.tsx:496
+#: src/features/go/index.tsx:480
 msgid "White captures:"
 msgstr "Capturi albe:"
 
@@ -2510,11 +2612,11 @@ msgstr "Tu"
 msgid "You do not have access to this section."
 msgstr "Nu aveți acces la această secțiune."
 
-#: src/features/go/index.tsx:432
+#: src/features/go/index.tsx:416
 msgid "You resigned — {opponentName} wins"
 msgstr "Ai abandonat — câștigă {opponentName}"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:403
 msgid "You win!"
 msgstr "Ai câștigat!"
 
@@ -2526,7 +2628,7 @@ msgstr "Contul dvs. a fost mutat aici de la {source}. Până când îl ștergeț
 msgid "Your attachments will be lost."
 msgstr "Atașamentele tale se vor pierde."
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:419
 msgid "Your move"
 msgstr "Mutarea ta"
 

@@ -72,7 +72,7 @@ msgstr "{name} ජය පරාජයක් නැති බව යෝජනා 
 msgid "{name} resigned"
 msgstr "{name} ඉල්ලා අස්විය"
 
-#: src/features/go/index.tsx:724
+#: src/features/go/index.tsx:650
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} ද වාරය මඟහැරියා. තහවුරු කිරීමෙන් පුවරුව ගණන් කර ඔබ දෙදෙනාම එකඟ විය යුතු ලකුණු ප්‍රමාණයක් යෝජනා කරයි."
 
@@ -80,15 +80,15 @@ msgstr "{opponentName} ද වාරය මඟහැරියා. තහවු�
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ජය පරාජය ඉදිරිපත් කළා"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:415
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} අත්හැරියා — ඔබ දිනුවා!"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:403
 msgid "{opponentName} wins"
 msgstr "{opponentName} දිනුවා"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:419
 msgid "{opponentName}'s move"
 msgstr "{opponentName}ගේ වාරයයි"
 
@@ -125,7 +125,7 @@ msgstr "{totalDescendants, plural, one {# පිළිතුර} other {+# ත�
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {මෙනුව විවෘත කරන්න (කියවා නැති දැනුම්දීම් #)} other {මෙනුව විවෘත කරන්න (කියවා නැති දැනුම්දීම් #)}}"
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:395
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} දිනුවා — B:{black} W:{white}"
 
@@ -166,9 +166,13 @@ msgstr "ප්‍රවේශ මට්ටම"
 msgid "Account type"
 msgstr "ගිණුම් වර්ගය"
 
-#: src/components/layout/go-layout.tsx:66
+#: src/components/layout/go-layout.tsx:50
 msgid "Active games"
 msgstr "සක්‍රීය ක්‍රීඩා"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+msgid "Activity"
+msgstr "ක්‍රියාකාරකම"
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx:758
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
@@ -209,11 +213,11 @@ msgstr "පරීක්ෂා ලැයිස්තු අයිතමයක් 
 msgid "Add field"
 msgstr "ක්ෂේත්‍රයක් එක් කරන්න"
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:174
 msgid "Add friends"
 msgstr "මිතුරන් එක් කරන්න"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:173
 msgid "Add friends in the People app to start playing"
 msgstr "ක්‍රීඩා කිරීම ආරම්භ කිරීමට People app එකේ මිතුරන් එක් කරන්න"
 
@@ -221,7 +225,7 @@ msgstr "ක්‍රීඩා කිරීම ආරම්භ කිරීමට
 msgid "Add item..."
 msgstr "අයිතමයක් එක් කරන්න..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:320
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:314
 msgid "Add link"
 msgstr "සබැඳියක් එක් කරන්න"
 
@@ -295,6 +299,10 @@ msgstr "මෙම සංග්‍රහයට දායක වූ සියල�
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "ඔබට \"{0}\" මැකීමට අවශ්‍ය බව විශ්වාසද?"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
+msgstr "ඔබට \"{title}\" මැකීමට අවශ්‍ය බව විශ්වාසද? මෙම ක්‍රියාව අහෝසි කළ නොහැක."
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:631
 msgid "Are you sure you want to delete the \"{name}\" column? This cannot be undone."
 msgstr "ඔබට \"{name}\" තීරුව මැකීමට අවශ්‍ය බව විශ්වාසද? මෙය අහෝසි කළ නොහැක."
@@ -307,7 +315,11 @@ msgstr "ඔබට මෙම අදහස මැකීමට අවශ්‍ය �
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "ඔබට පිටවීමට අවශ්‍ය බව විශ්වාසද? ඔබේ ගිණුමට ප්‍රවේශ වීමට ඔබට නැවත පුරනය විය යුතුය."
 
-#: src/features/go/index.tsx:680
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:39
+msgid "Are you sure you want to resign?"
+msgstr "ඔබට ඇත්තටම අත්හැරීමට අවශ්‍යද?"
+
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:38
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "ඔබට ඉල්ලා අස්වීමට අවශ්‍ය බව ස්ථිරද? {opponentName} ක්‍රීඩාව ජයගන්නෙයි."
 
@@ -353,16 +365,25 @@ msgstr "ආපසු"
 msgid "Back to home"
 msgstr "මුල් පිටුවට ආපසු"
 
+#: ../../../lib/web/src/components/banner-section.tsx:80
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "බැනරය"
 
-#: src/features/go/index.tsx:406
-#: src/features/go/index.tsx:484
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner removed"
+msgstr "බැනරය ඉවත් කළා"
+
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner updated"
+msgstr "බැනරය යාවත්කාලීන කළා"
+
+#: src/features/go/index.tsx:390
+#: src/features/go/index.tsx:468
 msgid "Black"
 msgstr "කළු"
 
-#: src/features/go/index.tsx:491
+#: src/features/go/index.tsx:475
 msgid "Black captures:"
 msgstr "කළු අල්ලාගත්:"
 
@@ -374,8 +395,8 @@ msgstr "{colLabel}{rowLabel} හි කළු ගල"
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "{colLabel}{rowLabel} හි කළු ප්‍රදේශය"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:68
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:215
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:72
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:209
 msgid "Blocked by"
 msgstr "අවහිර කළ"
 
@@ -384,7 +405,7 @@ msgstr "අවහිර කළ"
 msgid "Blocked navigation to untrusted link"
 msgstr "විශ්වාස නොකළ සබැඳියකට සංචාලනය අවහිර කරන ලදී"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:66
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:70
 msgid "Blocks"
 msgstr "අවහිර කරයි"
 
@@ -392,7 +413,7 @@ msgstr "අවහිර කරයි"
 msgid "Board"
 msgstr "පුවරුව"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:114
 msgid "Board size"
 msgstr "පුවරු ප්‍රමාණය"
 
@@ -431,7 +452,7 @@ msgstr "කැමරාව නොමැත"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:177
 msgid "Cancel"
 msgstr "අවලංගු කරන්න"
 
@@ -471,8 +492,7 @@ msgstr "වෙනස් කරන ලදී"
 msgid "Changed {field}"
 msgstr "{field} වෙනස් කරන ලදී"
 
-#: src/features/go/index.tsx:618
-#: src/features/go/index.tsx:651
+#: src/features/go/index.tsx:602
 msgid "Chat"
 msgstr "චැට්"
 
@@ -493,10 +513,11 @@ msgstr "පැති තීරුවෙන් ක්‍රීඩාවක් ත
 msgid "Choose language"
 msgstr "භාෂාව තෝරන්න"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:171
 msgid "Choose opponent"
 msgstr "ප්‍රතිවාදියා තෝරන්න"
 
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -514,8 +535,8 @@ msgstr "සියල්ල හිස් කරන්න"
 msgid "Clear search"
 msgstr "සෙවුම හිස් කරන්න"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:523
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:528
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:517
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:522
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:480
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:483
@@ -590,11 +611,16 @@ msgstr "අදහස් ක්‍රියා"
 msgid "Comments"
 msgstr "අදහස්"
 
+#. placeholder {0}: data.comment_count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+msgid "Comments ({0})"
+msgstr "අදහස් ({0})"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:90
 msgid "Compact"
 msgstr "සංයුක්ත"
 
-#: src/components/layout/go-layout.tsx:67
+#: src/components/layout/go-layout.tsx:51
 msgid "Completed"
 msgstr "සම්පූර්ණයි"
 
@@ -671,14 +697,14 @@ msgstr "නැවත සත්‍යාපනය ආරම්භ කළ නො�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "එම ගිණුම සමඟ සත්‍යාපනය කළ නොහැකි විය. කරුණාකර නැවත උත්සාහ කරන්න."
 
-#: src/features/go/index.tsx:427
+#: src/features/go/index.tsx:411
 msgid "Counting — agree the score or play on"
 msgstr "ගණන් කිරීම — ලකුණු ගැන එකඟ වන්න හෝ දිගටම ක්‍රීඩා කරන්න"
 
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:551
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:691
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:513
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:682
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:507
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/entity/entity-tree-view.tsx:672
 msgid "Create"
 msgstr "නිර්මාණය කරන්න"
@@ -701,9 +727,9 @@ msgstr "නිර්මාණය කරන ලදී"
 msgid "Created {field}"
 msgstr "{field} සාදන ලදී"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:682
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:179
 msgid "Creating..."
 msgstr "නිර්මාණය කරමින්..."
 
@@ -753,7 +779,8 @@ msgstr "පෙරනිමි වර්ග කිරීම"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: src/features/go/index.tsx:709
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "මකන්න"
 
@@ -773,13 +800,19 @@ msgstr "අදහස මකන්න"
 msgid "Delete field"
 msgstr "ක්ෂේත්‍රය මකන්න"
 
-#: src/features/go/index.tsx:553
+#: src/features/go/index.tsx:537
 msgid "Delete game"
 msgstr "ක්‍රීඩාව මකන්න"
 
-#: src/features/go/index.tsx:700
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:69
 msgid "Delete game?"
 msgstr "ක්‍රීඩාව මකන්නද?"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+msgid "Delete item"
+msgstr "අයිතමය මකන්න"
 
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:117
 msgid "Delete option"
@@ -807,7 +840,7 @@ msgstr "මකා දමන ලදී"
 msgid "Deleted {field}"
 msgstr "{field} මකා දමන ලදී"
 
-#: src/features/go/index.tsx:706
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:75
 msgid "Deleting..."
 msgstr "මකමින්..."
 
@@ -865,6 +898,7 @@ msgid "Does not match the required pattern"
 msgstr "අවශ්‍ය රටාවට නොගැළපේ"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "නිමයි"
@@ -880,8 +914,8 @@ msgstr "බාගත කරන්න"
 msgid "Download failed"
 msgstr "බාගත කිරීම අසාර්ථක විය"
 
-#: src/features/go/index.tsx:416
-#: src/features/go/index.tsx:425
+#: src/features/go/index.tsx:400
+#: src/features/go/index.tsx:409
 msgid "Draw"
 msgstr "සම"
 
@@ -889,11 +923,11 @@ msgstr "සම"
 msgid "Draw agreed"
 msgstr "ජය පරාජයක් නැති බව එකඟ විය"
 
-#: src/features/go/index.tsx:584
+#: src/features/go/index.tsx:568
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "ජය පරාජය ඉදිරිපත් කළා — {opponentName} සඳහා බලා සිටිමින්"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:67
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:71
 msgid "Duplicates"
 msgstr "අනුපිටපත්"
 
@@ -956,17 +990,21 @@ msgstr "හිස් මංසන්ධිය {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "හිස් මංසන්ධිය {colLabel}{rowLabel}, තැබීමට ක්ලික් කරන්න හෝ Enter ඔබන්න"
 
-#: src/features/go/index.tsx:734
+#: src/features/go/index.tsx:660
 msgid "End game"
 msgstr "ක්‍රීඩාව අවසන් කරන්න"
 
-#: src/features/go/index.tsx:721
+#: src/features/go/index.tsx:647
 msgid "End game?"
 msgstr "ක්‍රීඩාව අවසන් කරනවාද?"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:69
 msgid "Enter a valid number"
 msgstr "වලංගු අංකයක් ඇතුළත් කරන්න"
+
+#: ../../../lib/web/src/components/banner-section.tsx:88
+msgid "Enter banner text (markdown supported)..."
+msgstr "බැනර් පෙළ ඇතුළු කරන්න (markdown සහාය දක්වයි)..."
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:290
 msgid "Enter the code from your email"
@@ -975,6 +1013,10 @@ msgstr "ඔබේ විද්‍යුත් තැපෑලෙහි ඇති
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Enter your authenticator code"
 msgstr "ඔබගේ සත්‍යාපන කේතය ඇතුළත් කරන්න"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+msgid "Error"
+msgstr "දෝෂයක්"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
@@ -995,11 +1037,11 @@ msgstr "බාහිර URL"
 msgid "Extra large"
 msgstr "අමතර විශාල"
 
-#: src/features/go/index.tsx:195
+#: src/features/go/index.tsx:185
 msgid "Failed to accept draw"
 msgstr "සමතයක් පිළිගැනීමට අසමත් විය"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:191
 msgid "Failed to accept score"
 msgstr "ලකුණු පිළිගැනීමට අසමත් විය"
 
@@ -1012,22 +1054,26 @@ msgstr "ගිණුම එක් කිරීමට අසමත් විය"
 msgid "Failed to copy"
 msgstr "පිටපත් කිරීමට අසමත් විය"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:56
 msgid "Failed to create game"
 msgstr "ක්‍රීඩාවක් සෑදීමට අසමත් විය"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:137
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:131
 #: ../../../lib/web/src/components/options-menu.tsx:98
 msgid "Failed to create link"
 msgstr "සබැඳියක් සෑදීමට අසමත් විය"
 
-#: src/features/go/index.tsx:221
+#: src/features/go/index.tsx:211
 msgid "Failed to create rematch"
 msgstr "නැවත තරඟයක් සෑදීමට අසමත් විය"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:201
 msgid "Failed to decline draw"
 msgstr "සමතය ප්‍රතික්ෂේප කිරීමට අසමත් විය"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:303
+msgid "Failed to delete"
+msgstr "මැකීමට අසමත් විය"
 
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:130
 msgid "Failed to delete attachment"
@@ -1037,11 +1083,11 @@ msgstr "ඇමුණුම මැකීමට අසමත් විය"
 msgid "Failed to delete comment"
 msgstr "අදහස මැකීමට අසමත් විය"
 
-#: src/features/go/index.tsx:233
+#: src/features/go/index.tsx:223
 msgid "Failed to delete game"
 msgstr "ක්‍රීඩාව මැකීමට අසමත් විය"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:159
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:153
 msgid "Failed to delete link"
 msgstr "සබැඳිය මැකීමට අසමත් විය"
 
@@ -1061,6 +1107,11 @@ msgstr "ඉතිහාසය පූරණය කිරීමට අසමත්
 msgid "Failed to load image"
 msgstr "රූපය පූරණය කිරීමට අසමත් විය"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+msgid "Failed to load item"
+msgstr "අයිතමය පූරණය කිරීමට අසමත් විය"
+
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:213
 msgid "Failed to load prompts"
 msgstr "prompt පූරණය කිරීමට අසමත් විය"
@@ -1069,15 +1120,19 @@ msgstr "prompt පූරණය කිරීමට අසමත් විය"
 msgid "Failed to load video"
 msgstr "වීඩියෝව පූරණය කිරීමට අසමත් විය"
 
-#: src/features/go/index.tsx:166
+#: src/features/go/index.tsx:156
 msgid "Failed to make move"
 msgstr "ගමන සිදු කිරීමට අසමත් විය"
 
-#: src/features/go/index.tsx:190
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:317
+msgid "Failed to move"
+msgstr "ගෙනයාම අසාර්ථකයි"
+
+#: src/features/go/index.tsx:180
 msgid "Failed to offer draw"
 msgstr "සමතය ඉදිරිපත් කිරීමට අසමත් විය"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:163
 msgid "Failed to pass"
 msgstr "මඟ හැරීමට අසමත් විය"
 
@@ -1089,11 +1144,11 @@ msgstr "අදහස පළ කිරීමට අසමත් විය"
 msgid "Failed to reset prompt"
 msgstr "prompt එක යළි පිහිටුවීමට අසමත් විය"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:173
 msgid "Failed to resign"
 msgstr "ඉල්ලා අස්වීමට අසමත් විය"
 
-#: src/features/go/index.tsx:206
+#: src/features/go/index.tsx:196
 msgid "Failed to resume play"
 msgstr "ක්‍රීඩාව නැවත ආරම්භ කිරීමට අසමත් විය"
 
@@ -1101,24 +1156,35 @@ msgstr "ක්‍රීඩාව නැවත ආරම්භ කිරීමට
 msgid "Failed to revoke RSS access"
 msgstr "RSS ප්‍රවේශය අවලංගු කිරීමට අසමත් විය"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:273
+msgid "Failed to save"
+msgstr "සුරැකීමට අසමත් විය"
+
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:111
 msgid "Failed to save prompt"
 msgstr "prompt එක සුරැකීමට අසමත් විය"
 
-#: src/features/go/index.tsx:635
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:619
 msgid "Failed to send"
 msgstr "යැවීමට අසමත් විය"
+
+#: ../../../lib/web/src/components/banner-section.tsx:71
+msgid "Failed to update banner"
+msgstr "බැනරය යාවත්කාලීන කිරීමට අසමත් විය"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:175
 msgid "Failed to update comment"
 msgstr "අදහස යාවත්කාලීන කිරීමට අසමත් විය"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:288
+msgid "Failed to update watching"
+msgstr "නිරීක්ෂණය යාවත්කාලීන කිරීම අසාර්ථකයි"
+
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:114
 msgid "Failed to upload attachment"
 msgstr "ඇමුණුම උඩුගත කිරීමට අසමත් විය"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:611
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:605
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:160
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:180
 msgid "Files"
@@ -1156,21 +1222,21 @@ msgstr "සිට"
 msgid "From theme"
 msgstr "තේමාවෙන්"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:52
 msgid "Game created"
 msgstr "ක්‍රීඩාව සාදන ලදී"
 
-#: src/features/go/index.tsx:229
+#: src/features/go/index.tsx:219
 msgid "Game deleted"
 msgstr "ක්‍රීඩාව මකන ලදී"
 
-#: src/features/go/index.tsx:422
+#: src/features/go/index.tsx:406
 msgid "Game over"
 msgstr "ක්‍රීඩාව අවසන්"
 
-#: src/features/go/index.tsx:66
-#: src/features/go/index.tsx:359
-#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:348
+#: src/features/go/index.tsx:357
 msgid "Go"
 msgstr "යන්න"
 
@@ -1248,6 +1314,10 @@ msgstr "අවලංගු දිනය"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "ඔබ සොයන පිටුව <0/>නොපවතින බවක් හෝ ඉවත් කර ඇති බවක් පෙනේ."
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+msgid "Item details"
+msgstr "අයිතම විස්තර"
+
 #: ../../../lib/web/src/lib/locale-format.ts:180
 msgid "Just now"
 msgstr "මේ දැන්"
@@ -1256,7 +1326,7 @@ msgstr "මේ දැන්"
 msgid "Keyboard shortcuts"
 msgstr "යතුරුපුවරු කෙටි මං"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:132
 msgid "Komi"
 msgstr "කෝමි"
 
@@ -1281,7 +1351,7 @@ msgstr "ලා"
 msgid "Link"
 msgstr "සබැඳිය"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:279
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:273
 msgid "Links"
 msgstr "සබැඳි"
 
@@ -1296,6 +1366,14 @@ msgstr "තවත් පූරණය කරන්න"
 #: ../../../lib/web/src/components/ui/loading-content.tsx:26
 msgid "Loading content…"
 msgstr "අන්තර්ගතය පූරණය වෙමින්…"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+msgid "Loading item"
+msgstr "අයිතමය පූරණය වෙමින්"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+msgid "Loading item details"
+msgstr "අයිතම විස්තර පූරණය වෙමින්"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:39
 #: ../../../lib/web/src/features/document/document-page.tsx:88
@@ -1393,7 +1471,7 @@ msgstr "ගෙන යන ලදී"
 msgid "Moved {field}"
 msgstr "{field} ගෙන යන ලදී"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:70
 msgid "Must be between 0 and 10"
 msgstr "0 සහ 10 අතර විය යුතුය"
 
@@ -1422,15 +1500,15 @@ msgstr "නම අක්ෂර 1000 ක් හෝ ඊට අඩු විය ය
 msgid "Network error"
 msgstr "ජාල දෝෂය"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:498
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:492
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:43
 msgid "New"
 msgstr "අලුත්"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
-#: src/components/layout/go-layout.tsx:68
-#: src/features/go/components/new-game.tsx:125
+#: src/components/layout/go-layout.tsx:52
+#: src/features/go/components/new-game.tsx:169
 msgid "New game"
 msgstr "නව ක්‍රීඩාවක්"
 
@@ -1439,7 +1517,7 @@ msgstr "නව ක්‍රීඩාවක්"
 msgid "Next image"
 msgstr "ඊළඟ පින්තූරය"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:577
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:571
 msgid "No {parentClassNames} to add to"
 msgstr "එක් කිරීමට {parentClassNames} නොමැත"
 
@@ -1455,11 +1533,11 @@ msgstr "තවම ක්‍රියාකාරකම් නැත"
 msgid "No comments yet"
 msgstr "තවම අදහස් නැත"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:176
 msgid "No friends found"
 msgstr "මිතුරන් හමු නොවීය"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends yet"
 msgstr "තවම මිතුරන් නැත"
 
@@ -1471,11 +1549,11 @@ msgstr "තවම ක්‍රීඩා නැත"
 msgid "No groups available"
 msgstr "කණ්ඩායම් ලබා ගත නොහැක"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:544
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:538
 msgid "No item types can be created yet. Create the required parent items first."
 msgstr "තවම අයිතම වර්ග සෑදිය නොහැක. අවශ්‍ය මූලික අයිතම පළමුව සාදන්න."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:360
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:354
 msgid "No matching objects"
 msgstr "ගැලපෙන objects නැත"
 
@@ -1528,9 +1606,13 @@ msgid "No views"
 msgstr "බැලීම් නැත"
 
 #: ../../../lib/web/src/components/colour-picker.tsx:349
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:560
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:563
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:567
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1571,7 +1653,7 @@ msgstr "දැනුම්දීම්: {0}"
 msgid "Number"
 msgstr "අංකය"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:521
 msgid "Offer draw"
 msgstr "draw එකක් යෝජනා කරන්න"
 
@@ -1588,11 +1670,11 @@ msgstr "අහෝ! පිටුව හමු නොවීය!"
 msgid "Open actions"
 msgstr "ක්‍රියා විවෘත කරන්න"
 
-#: src/features/go/index.tsx:508
+#: src/features/go/index.tsx:492
 msgid "Open chat panel"
 msgstr "චැට් පැනලය විවෘත කරන්න"
 
-#: src/features/go/index.tsx:516
+#: src/features/go/index.tsx:500
 msgid "Open game actions"
 msgstr "ක්‍රීඩා ක්‍රියා විවෘත කරන්න"
 
@@ -1642,21 +1724,23 @@ msgstr "වෙනත්"
 msgid "Owner"
 msgstr "හිමිකරු"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:552
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
 msgid "Parent"
 msgstr "මව්"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:529
-#: src/features/go/index.tsx:734
+#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:660
 msgid "Pass"
 msgstr "pass කරන්න"
 
-#: src/features/go/index.tsx:721
+#: src/features/go/index.tsx:647
 msgid "Pass turn?"
 msgstr "වාරය pass කරන්නද?"
 
-#: src/features/go/index.tsx:731
+#: src/features/go/index.tsx:657
 msgid "Passing..."
 msgstr "pass කරමින්..."
 
@@ -1691,7 +1775,7 @@ msgstr "පුද්ගලයන්"
 msgid "Please check your internet connection and try again."
 msgstr "කරුණාකර ඔබගේ අන්තර්ජාල සම්බන්ධතාවය පරීක්ෂා කර නැවත උත්සාහ කරන්න."
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:76
 msgid "Please select a friend"
 msgstr "කරුණාකර මිතුරෙකු තෝරන්න"
 
@@ -1703,7 +1787,7 @@ msgstr "කරුණාකර නැවත උත්සාහ කරන්න."
 msgid "Please wait a moment and try again."
 msgstr "කරුණාකර මොහොතක් රැඳී සිට නැවත උත්සාහ කරන්න."
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:162
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "කලුවා පළමුව යාම සඳහා වන්දි ලෙස සුදු පැත්තේ ලකුණු වලට එක් කළ ලකුණු"
 
@@ -1732,6 +1816,10 @@ msgstr "සකසමින්…"
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:108
 msgid "Prompt saved"
 msgstr "prompt එක සුරකින ලදී"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+msgid "Properties"
+msgstr "ගුණාංග"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)
@@ -1780,7 +1868,7 @@ msgstr "පිවිසුම වෙත redirect කරමින්."
 msgid "Reduce interest"
 msgstr "උනන්දුව අඩු කරන්න"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:65
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:69
 msgid "Relates"
 msgstr "සම්බන්ධ වේ"
 
@@ -1800,7 +1888,7 @@ msgstr "අදාළත්වය {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "අදාළත්වය {relevance}, උනන්දුව {weight}"
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:534
 msgid "Rematch"
 msgstr "නැවත ක්‍රීඩාව"
 
@@ -1840,8 +1928,8 @@ msgstr "උනන්දුව ඉවත් කරන්න"
 msgid "Remove item"
 msgstr "අයිතමය ඉවත් කරන්න"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:304
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:298
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:303
 msgid "Remove link"
 msgstr "සබැඳිය ඉවත් කරන්න"
 
@@ -1876,16 +1964,16 @@ msgstr "අවශ්‍යයි"
 msgid "Resend email"
 msgstr "විද්‍යුත් තැපෑල නැවත එවන්න"
 
-#: src/features/go/index.tsx:541
-#: src/features/go/index.tsx:688
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
+#: src/features/go/index.tsx:525
 msgid "Resign"
 msgstr "ඉල්ලා අස්වන්න"
 
-#: src/features/go/index.tsx:679
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:35
 msgid "Resign game?"
 msgstr "ක්‍රීඩාවෙන් ඉල්ලා අස්වන්නද?"
 
-#: src/features/go/index.tsx:685
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:45
 msgid "Resigning..."
 msgstr "ඉල්ලා අස්වෙමින්..."
 
@@ -1936,6 +2024,7 @@ msgstr "සෙනසුරාදා"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
+#: ../../../lib/web/src/components/banner-section.tsx:99
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -1947,7 +2036,7 @@ msgstr "සුරකින්න"
 msgid "Saving..."
 msgstr "සුරකිමින්..."
 
-#: src/features/go/index.tsx:566
+#: src/features/go/index.tsx:550
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "ලකුණු පිළිගැනිණි — {opponentName} සඳහා බලා සිටිමින්"
 
@@ -1978,7 +2067,7 @@ msgstr "ගමනාන්තය සොයන්න..."
 msgid "Search for origin..."
 msgstr "මූලාරම්භය සොයන්න..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:337
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:331
 msgid "Search objects..."
 msgstr "වස්තූන් සොයන්න..."
 
@@ -2015,7 +2104,7 @@ msgstr "තෝරන්න"
 msgid "Select a field"
 msgstr "ක්ෂේත්‍රයක් තෝරන්න"
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:175
 msgid "Select a friend..."
 msgstr "මිතුරෙක් තෝරන්න..."
 
@@ -2144,7 +2233,7 @@ msgstr "පිට වෙමින්..."
 msgid "Single line of text only"
 msgstr "පෙළ එක් පේළියක් පමණි"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:651
 msgid "Skip your turn and pass to your opponent."
 msgstr "ඔබේ වාරය මඟහරවා ඔබේ විරුද්ධවාදියාට පවරන්න."
 
@@ -2165,17 +2254,22 @@ msgstr "මූලාරම්භ"
 msgid "Spacious"
 msgstr "විශාල"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:170
 msgid "Start a new Go game"
 msgstr "නව Go ක්‍රීඩාවක් ආරම්භ කරන්න"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:178
 msgid "Start game"
 msgstr "ක්‍රීඩාව ආරම්භ කරන්න"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:325
 msgid "Start the discussion by adding the first comment."
 msgstr "පළමු අදහස එක් කිරීමෙන් සාකච්ඡාව ආරම්භ කරන්න."
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+msgid "Stop watching"
+msgstr "නැරඹීම නවත්වන්න"
 
 #: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
@@ -2272,7 +2366,7 @@ msgstr "සේවාදායකය දත්ත වෙනුවට වෙබ්
 msgid "This app is not allowed to use your passkey. Allow it in Settings, under Permissions."
 msgstr "මෙම යෙදුමට ඔබගේ passkey භාවිතා කිරීමට අවසර නැත. සැකසුම් තුළ, අවසර යටතේ එයට ඉඩ දෙන්න."
 
-#: src/features/go/index.tsx:701
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:70
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "මෙය ක්‍රීඩාව සහ එහි කතාබස් ස්ථිරවම මකා දමයි. මෙම ක්‍රියාව අහෝසි කළ නොහැක."
 
@@ -2393,9 +2487,8 @@ msgstr "නොදන්නා"
 msgid "Unsubscribe"
 msgstr "දායකත්වය ඉවත් කරන්න"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:299
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:103
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:184
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:178
+#: ../../../lib/web/src/lib/entity-title.ts:40
 msgid "Untitled"
 msgstr "මාතෘකා රහිත"
 
@@ -2409,7 +2502,7 @@ msgstr "යාවත්කාලීන කරන ලදී"
 msgid "Updated {field}"
 msgstr "{field} යාවත්කාලීන කරන ලදී"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:661
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:655
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:304
 msgid "Upload"
 msgstr "උඩුගත කරන්න"
@@ -2459,6 +2552,10 @@ msgstr "වීඩියෝ දර්ශකය: {0}"
 msgid "View all notifications"
 msgstr "සියලුම දැනුම්දීම් බලන්න"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+msgid "View and edit item details"
+msgstr "අයිතමයේ විස්තර බලන්න සහ සංස්කරණය කරන්න"
+
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:170
 msgid "View controls"
 msgstr "පාලන බලන්න"
@@ -2466,6 +2563,11 @@ msgstr "පාලන බලන්න"
 #: ../../../lib/web/src/lib/shell-errors.ts:33
 msgid "Voice recording is not supported in this browser"
 msgstr "මෙම බ්‍රව්සරයේ හඬ පටිගත කිරීමට සහාය නැත"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+msgid "Watch"
+msgstr "නරඹන්න"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:269
 #: ../../../lib/web/src/components/filter-bar.tsx:35
@@ -2485,12 +2587,12 @@ msgstr "අපි <0>{0}</0> වෙත සත්‍යාපන කේතයක�
 msgid "Wednesday"
 msgstr "බදාදා"
 
-#: src/features/go/index.tsx:406
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:390
+#: src/features/go/index.tsx:468
 msgid "White"
 msgstr "සුදු"
 
-#: src/features/go/index.tsx:496
+#: src/features/go/index.tsx:480
 msgid "White captures:"
 msgstr "සුදු අල්ලාගත්:"
 
@@ -2510,11 +2612,11 @@ msgstr "ඔබ"
 msgid "You do not have access to this section."
 msgstr "ඔබට මෙම කොටසට ප්‍රවේශය නොමැත."
 
-#: src/features/go/index.tsx:432
+#: src/features/go/index.tsx:416
 msgid "You resigned — {opponentName} wins"
 msgstr "ඔබ අත්හැරියා — {opponentName} දිනුවා"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:403
 msgid "You win!"
 msgstr "ඔබ ජයග්‍රහණය කරයි!"
 
@@ -2526,7 +2628,7 @@ msgstr "ඔබේ ගිණුම {source} සිට මෙහි ගෙන ආ�
 msgid "Your attachments will be lost."
 msgstr "ඔබගේ ඇමුණුම් නැති වනු ඇත."
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:419
 msgid "Your move"
 msgstr "ඔබේ ගමන"
 

@@ -72,7 +72,7 @@ msgstr "{name} erbjöd remi"
 msgid "{name} resigned"
 msgstr "{name} gav upp"
 
-#: src/features/go/index.tsx:724
+#: src/features/go/index.tsx:650
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} passade också. Att bekräfta räknar brädet och föreslår poäng som ni båda måste komma överens om."
 
@@ -80,15 +80,15 @@ msgstr "{opponentName} passade också. Att bekräfta räknar brädet och föresl
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} erbjöd remi"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:415
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} gav upp — du vinner!"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:403
 msgid "{opponentName} wins"
 msgstr "{opponentName} vinner"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:419
 msgid "{opponentName}'s move"
 msgstr "{opponentName}s tur"
 
@@ -125,7 +125,7 @@ msgstr "{totalDescendants, plural, one {# svar} other {+# fler svar}}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Öppna meny (# oläst avisering)} other {Öppna meny (# olästa aviseringar)}}"
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:395
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} vinner — B:{black} W:{white}"
 
@@ -166,9 +166,13 @@ msgstr "Åtkomstnivå"
 msgid "Account type"
 msgstr "Kontotyp"
 
-#: src/components/layout/go-layout.tsx:66
+#: src/components/layout/go-layout.tsx:50
 msgid "Active games"
 msgstr "Aktiva spel"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+msgid "Activity"
+msgstr "Aktivitet"
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx:758
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
@@ -209,11 +213,11 @@ msgstr "Lägg till checklistpunkt"
 msgid "Add field"
 msgstr "Lägg till fält"
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:174
 msgid "Add friends"
 msgstr "Lägg till vänner"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:173
 msgid "Add friends in the People app to start playing"
 msgstr "Lägg till vänner i People-appen för att börja spela"
 
@@ -221,7 +225,7 @@ msgstr "Lägg till vänner i People-appen för att börja spela"
 msgid "Add item..."
 msgstr "Lägg till objekt..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:320
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:314
 msgid "Add link"
 msgstr "Lägg till länk"
 
@@ -295,6 +299,10 @@ msgstr "Allt som prenumererar på det här flödet slutar ta emot det. Du kan ko
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Är du säker på att du vill ta bort \"{0}\"?"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
+msgstr "Är du säker på att du vill ta bort \"{title}\"? Denna åtgärd kan inte ångras."
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:631
 msgid "Are you sure you want to delete the \"{name}\" column? This cannot be undone."
 msgstr "Är du säker på att du vill ta bort kolumnen \"{name}\"? Detta kan inte ångras."
@@ -307,7 +315,11 @@ msgstr "Är du säker på att du vill ta bort denna kommentar? Detta tar även b
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Är du säker på att du vill logga ut? Du behöver logga in igen för att komma åt ditt konto."
 
-#: src/features/go/index.tsx:680
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:39
+msgid "Are you sure you want to resign?"
+msgstr "Är du säker på att du vill ge upp?"
+
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:38
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Är du säker på att du vill ge upp? {opponentName} kommer att vinna partiet."
 
@@ -353,16 +365,25 @@ msgstr "Tillbaka"
 msgid "Back to home"
 msgstr "Tillbaka till start"
 
+#: ../../../lib/web/src/components/banner-section.tsx:80
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:406
-#: src/features/go/index.tsx:484
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner removed"
+msgstr "Banner borttagen"
+
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner updated"
+msgstr "Banner uppdaterad"
+
+#: src/features/go/index.tsx:390
+#: src/features/go/index.tsx:468
 msgid "Black"
 msgstr "Svart"
 
-#: src/features/go/index.tsx:491
+#: src/features/go/index.tsx:475
 msgid "Black captures:"
 msgstr "Svart fångade:"
 
@@ -374,8 +395,8 @@ msgstr "Svart sten på {colLabel}{rowLabel}"
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "Svart territorium på {colLabel}{rowLabel}"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:68
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:215
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:72
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:209
 msgid "Blocked by"
 msgstr "Blockerad av"
 
@@ -384,7 +405,7 @@ msgstr "Blockerad av"
 msgid "Blocked navigation to untrusted link"
 msgstr "Blockerade navigering till opålitlig länk"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:66
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:70
 msgid "Blocks"
 msgstr "Blockerar"
 
@@ -392,7 +413,7 @@ msgstr "Blockerar"
 msgid "Board"
 msgstr "Bräde"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:114
 msgid "Board size"
 msgstr "Brädstorlek"
 
@@ -431,7 +452,7 @@ msgstr "Kameran är inte tillgänglig"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:177
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -471,8 +492,7 @@ msgstr "Ändrade"
 msgid "Changed {field}"
 msgstr "Ändrade {field}"
 
-#: src/features/go/index.tsx:618
-#: src/features/go/index.tsx:651
+#: src/features/go/index.tsx:602
 msgid "Chat"
 msgstr "Chatt"
 
@@ -493,10 +513,11 @@ msgstr "Välj ett spel från sidofältet eller starta ett nytt."
 msgid "Choose language"
 msgstr "Välj språk"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:171
 msgid "Choose opponent"
 msgstr "Välj motståndare"
 
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -514,8 +535,8 @@ msgstr "Rensa allt"
 msgid "Clear search"
 msgstr "Rensa sökning"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:523
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:528
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:517
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:522
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:480
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:483
@@ -590,11 +611,16 @@ msgstr "Kommentarsåtgärder"
 msgid "Comments"
 msgstr "Kommentarer"
 
+#. placeholder {0}: data.comment_count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+msgid "Comments ({0})"
+msgstr "Kommentarer ({0})"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:90
 msgid "Compact"
 msgstr "Kompakt"
 
-#: src/components/layout/go-layout.tsx:67
+#: src/components/layout/go-layout.tsx:51
 msgid "Completed"
 msgstr "Slutförd"
 
@@ -671,14 +697,14 @@ msgstr "Det gick inte att starta omautentiseringen. Försök igen."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Det gick inte att verifiera med det kontot. Försök igen."
 
-#: src/features/go/index.tsx:427
+#: src/features/go/index.tsx:411
 msgid "Counting — agree the score or play on"
 msgstr "Räkning — kom överens om ställningen eller spela vidare"
 
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:551
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:691
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:513
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:682
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:507
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/entity/entity-tree-view.tsx:672
 msgid "Create"
 msgstr "Skapa"
@@ -701,9 +727,9 @@ msgstr "Skapad"
 msgid "Created {field}"
 msgstr "Skapade {field}"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:682
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:179
 msgid "Creating..."
 msgstr "Skapar..."
 
@@ -753,7 +779,8 @@ msgstr "Standardsortering"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: src/features/go/index.tsx:709
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -773,13 +800,19 @@ msgstr "Ta bort kommentar"
 msgid "Delete field"
 msgstr "Ta bort fält"
 
-#: src/features/go/index.tsx:553
+#: src/features/go/index.tsx:537
 msgid "Delete game"
 msgstr "Ta bort spel"
 
-#: src/features/go/index.tsx:700
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:69
 msgid "Delete game?"
 msgstr "Ta bort partiet?"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+msgid "Delete item"
+msgstr "Ta bort objekt"
 
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:117
 msgid "Delete option"
@@ -807,7 +840,7 @@ msgstr "Raderade"
 msgid "Deleted {field}"
 msgstr "Raderade {field}"
 
-#: src/features/go/index.tsx:706
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:75
 msgid "Deleting..."
 msgstr "Tar bort..."
 
@@ -865,6 +898,7 @@ msgid "Does not match the required pattern"
 msgstr "Matchar inte det obligatoriska mönstret"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "Klar"
@@ -880,8 +914,8 @@ msgstr "Ladda ner"
 msgid "Download failed"
 msgstr "Nedladdningen misslyckades"
 
-#: src/features/go/index.tsx:416
-#: src/features/go/index.tsx:425
+#: src/features/go/index.tsx:400
+#: src/features/go/index.tsx:409
 msgid "Draw"
 msgstr "Remi"
 
@@ -889,11 +923,11 @@ msgstr "Remi"
 msgid "Draw agreed"
 msgstr "Remi överenskommen"
 
-#: src/features/go/index.tsx:584
+#: src/features/go/index.tsx:568
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Remi erbjuden — väntar på {opponentName}"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:67
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:71
 msgid "Duplicates"
 msgstr "Duplicerar"
 
@@ -956,17 +990,21 @@ msgstr "Tom skärningspunkt {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Tom skärningspunkt {colLabel}{rowLabel}, klicka eller tryck på Retur för att placera"
 
-#: src/features/go/index.tsx:734
+#: src/features/go/index.tsx:660
 msgid "End game"
 msgstr "Avsluta spel"
 
-#: src/features/go/index.tsx:721
+#: src/features/go/index.tsx:647
 msgid "End game?"
 msgstr "Avsluta spel?"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:69
 msgid "Enter a valid number"
 msgstr "Ange ett giltigt nummer"
+
+#: ../../../lib/web/src/components/banner-section.tsx:88
+msgid "Enter banner text (markdown supported)..."
+msgstr "Ange bannertext (markdown stöds)..."
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:290
 msgid "Enter the code from your email"
@@ -975,6 +1013,10 @@ msgstr "Ange koden från ditt e-postmeddelande"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Enter your authenticator code"
 msgstr "Ange din autentiseringskod"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+msgid "Error"
+msgstr "Fel"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
@@ -995,11 +1037,11 @@ msgstr "Extern URL"
 msgid "Extra large"
 msgstr "Extra stor"
 
-#: src/features/go/index.tsx:195
+#: src/features/go/index.tsx:185
 msgid "Failed to accept draw"
 msgstr "Kunde inte acceptera remi"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:191
 msgid "Failed to accept score"
 msgstr "Kunde inte godkänna poängen"
 
@@ -1012,22 +1054,26 @@ msgstr "Kunde inte lägga till konto"
 msgid "Failed to copy"
 msgstr "Kunde inte kopiera"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:56
 msgid "Failed to create game"
 msgstr "Kunde inte skapa spel"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:137
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:131
 #: ../../../lib/web/src/components/options-menu.tsx:98
 msgid "Failed to create link"
 msgstr "Kunde inte skapa länk"
 
-#: src/features/go/index.tsx:221
+#: src/features/go/index.tsx:211
 msgid "Failed to create rematch"
 msgstr "Kunde inte skapa returmatch"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:201
 msgid "Failed to decline draw"
 msgstr "Kunde inte avböja remi"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:303
+msgid "Failed to delete"
+msgstr "Kunde inte radera"
 
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:130
 msgid "Failed to delete attachment"
@@ -1037,11 +1083,11 @@ msgstr "Kunde inte radera bilaga"
 msgid "Failed to delete comment"
 msgstr "Kunde inte radera kommentar"
 
-#: src/features/go/index.tsx:233
+#: src/features/go/index.tsx:223
 msgid "Failed to delete game"
 msgstr "Kunde inte radera spel"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:159
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:153
 msgid "Failed to delete link"
 msgstr "Kunde inte radera länk"
 
@@ -1061,6 +1107,11 @@ msgstr "Kunde inte läsa in historik"
 msgid "Failed to load image"
 msgstr "Det gick inte att läsa in bilden"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+msgid "Failed to load item"
+msgstr "Kunde inte läsa in objekt"
+
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:213
 msgid "Failed to load prompts"
 msgstr "Kunde inte läsa in uppmaningar"
@@ -1069,15 +1120,19 @@ msgstr "Kunde inte läsa in uppmaningar"
 msgid "Failed to load video"
 msgstr "Det gick inte att läsa in videon"
 
-#: src/features/go/index.tsx:166
+#: src/features/go/index.tsx:156
 msgid "Failed to make move"
 msgstr "Kunde inte göra drag"
 
-#: src/features/go/index.tsx:190
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:317
+msgid "Failed to move"
+msgstr "Kunde inte flytta"
+
+#: src/features/go/index.tsx:180
 msgid "Failed to offer draw"
 msgstr "Kunde inte erbjuda remi"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:163
 msgid "Failed to pass"
 msgstr "Kunde inte passa"
 
@@ -1089,11 +1144,11 @@ msgstr "Kunde inte publicera kommentar"
 msgid "Failed to reset prompt"
 msgstr "Kunde inte återställa uppmaning"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:173
 msgid "Failed to resign"
 msgstr "Kunde inte ge upp"
 
-#: src/features/go/index.tsx:206
+#: src/features/go/index.tsx:196
 msgid "Failed to resume play"
 msgstr "Kunde inte återuppta partiet"
 
@@ -1101,24 +1156,35 @@ msgstr "Kunde inte återuppta partiet"
 msgid "Failed to revoke RSS access"
 msgstr "Det gick inte att återkalla RSS-åtkomst"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:273
+msgid "Failed to save"
+msgstr "Kunde inte spara"
+
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:111
 msgid "Failed to save prompt"
 msgstr "Kunde inte spara uppmaning"
 
-#: src/features/go/index.tsx:635
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:619
 msgid "Failed to send"
 msgstr "Kunde inte skicka"
+
+#: ../../../lib/web/src/components/banner-section.tsx:71
+msgid "Failed to update banner"
+msgstr "Kunde inte uppdatera banner"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:175
 msgid "Failed to update comment"
 msgstr "Kunde inte uppdatera kommentar"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:288
+msgid "Failed to update watching"
+msgstr "Kunde inte uppdatera bevakning"
+
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:114
 msgid "Failed to upload attachment"
 msgstr "Kunde inte ladda upp bilaga"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:611
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:605
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:160
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:180
 msgid "Files"
@@ -1156,21 +1222,21 @@ msgstr "Från"
 msgid "From theme"
 msgstr "Från tema"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:52
 msgid "Game created"
 msgstr "Spel skapat"
 
-#: src/features/go/index.tsx:229
+#: src/features/go/index.tsx:219
 msgid "Game deleted"
 msgstr "Spel raderat"
 
-#: src/features/go/index.tsx:422
+#: src/features/go/index.tsx:406
 msgid "Game over"
 msgstr "Spelet är slut"
 
-#: src/features/go/index.tsx:66
-#: src/features/go/index.tsx:359
-#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:348
+#: src/features/go/index.tsx:357
 msgid "Go"
 msgstr "Gå"
 
@@ -1248,6 +1314,10 @@ msgstr "Ogiltigt datum"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Det verkar som att sidan du letar efter <0/>inte finns eller har tagits bort."
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+msgid "Item details"
+msgstr "Objektsdetaljer"
+
 #: ../../../lib/web/src/lib/locale-format.ts:180
 msgid "Just now"
 msgstr "Nyss"
@@ -1256,7 +1326,7 @@ msgstr "Nyss"
 msgid "Keyboard shortcuts"
 msgstr "Tangentbordsgenvägar"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:132
 msgid "Komi"
 msgstr "Komi"
 
@@ -1281,7 +1351,7 @@ msgstr "Ljust"
 msgid "Link"
 msgstr "Länk"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:279
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:273
 msgid "Links"
 msgstr "Länkar"
 
@@ -1296,6 +1366,14 @@ msgstr "Läs in fler"
 #: ../../../lib/web/src/components/ui/loading-content.tsx:26
 msgid "Loading content…"
 msgstr "Läser in innehåll…"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+msgid "Loading item"
+msgstr "Läser in objekt"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+msgid "Loading item details"
+msgstr "Läser in objektsdetaljer"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:39
 #: ../../../lib/web/src/features/document/document-page.tsx:88
@@ -1393,7 +1471,7 @@ msgstr "Flyttade"
 msgid "Moved {field}"
 msgstr "Flyttade {field}"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:70
 msgid "Must be between 0 and 10"
 msgstr "Måste vara mellan 0 och 10"
 
@@ -1422,15 +1500,15 @@ msgstr "Namnet får vara högst 1000 tecken"
 msgid "Network error"
 msgstr "Nätverksfel"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:498
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:492
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:43
 msgid "New"
 msgstr "Ny"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
-#: src/components/layout/go-layout.tsx:68
-#: src/features/go/components/new-game.tsx:125
+#: src/components/layout/go-layout.tsx:52
+#: src/features/go/components/new-game.tsx:169
 msgid "New game"
 msgstr "Nytt spel"
 
@@ -1439,7 +1517,7 @@ msgstr "Nytt spel"
 msgid "Next image"
 msgstr "Nästa bild"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:577
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:571
 msgid "No {parentClassNames} to add to"
 msgstr "Inga {parentClassNames} att lägga till"
 
@@ -1455,11 +1533,11 @@ msgstr "Ingen aktivitet ännu"
 msgid "No comments yet"
 msgstr "Inga kommentarer ännu"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:176
 msgid "No friends found"
 msgstr "Inga vänner hittades"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends yet"
 msgstr "Inga vänner ännu"
 
@@ -1471,11 +1549,11 @@ msgstr "Inga spel ännu"
 msgid "No groups available"
 msgstr "Inga grupper tillgängliga"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:544
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:538
 msgid "No item types can be created yet. Create the required parent items first."
 msgstr "Inga objekttyper kan skapas ännu. Skapa de obligatoriska överordnade objekten först."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:360
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:354
 msgid "No matching objects"
 msgstr "Inga matchande objekt"
 
@@ -1528,9 +1606,13 @@ msgid "No views"
 msgstr "Inga vyer"
 
 #: ../../../lib/web/src/components/colour-picker.tsx:349
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:560
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:563
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:567
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1571,7 +1653,7 @@ msgstr "Aviseringar: {0}"
 msgid "Number"
 msgstr "Nummer"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:521
 msgid "Offer draw"
 msgstr "Erbjud remi"
 
@@ -1588,11 +1670,11 @@ msgstr "Hoppsan! Sidan hittades inte!"
 msgid "Open actions"
 msgstr "Öppna åtgärder"
 
-#: src/features/go/index.tsx:508
+#: src/features/go/index.tsx:492
 msgid "Open chat panel"
 msgstr "Öppna chattpanel"
 
-#: src/features/go/index.tsx:516
+#: src/features/go/index.tsx:500
 msgid "Open game actions"
 msgstr "Öppna spelåtgärder"
 
@@ -1642,21 +1724,23 @@ msgstr "Övrigt"
 msgid "Owner"
 msgstr "Ägare"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:552
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
 msgid "Parent"
 msgstr "Överordnad"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:529
-#: src/features/go/index.tsx:734
+#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:660
 msgid "Pass"
 msgstr "Passa"
 
-#: src/features/go/index.tsx:721
+#: src/features/go/index.tsx:647
 msgid "Pass turn?"
 msgstr "Passa draget?"
 
-#: src/features/go/index.tsx:731
+#: src/features/go/index.tsx:657
 msgid "Passing..."
 msgstr "Passar..."
 
@@ -1691,7 +1775,7 @@ msgstr "Personer"
 msgid "Please check your internet connection and try again."
 msgstr "Kontrollera din internetanslutning och försök igen."
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:76
 msgid "Please select a friend"
 msgstr "Välj en vän"
 
@@ -1703,7 +1787,7 @@ msgstr "Försök igen."
 msgid "Please wait a moment and try again."
 msgstr "Vänta en stund och försök igen."
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:162
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Poäng som läggs till Vits resultat för att kompensera för att Svart börjar"
 
@@ -1732,6 +1816,10 @@ msgstr "Bearbetar…"
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:108
 msgid "Prompt saved"
 msgstr "Prompt sparad"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+msgid "Properties"
+msgstr "Egenskaper"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)
@@ -1780,7 +1868,7 @@ msgstr "Omdirigerar till inloggning."
 msgid "Reduce interest"
 msgstr "Minska intresse"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:65
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:69
 msgid "Relates"
 msgstr "Relaterar"
 
@@ -1800,7 +1888,7 @@ msgstr "Relevans {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Relevans {relevance}, intresse {weight}"
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:534
 msgid "Rematch"
 msgstr "Revansch"
 
@@ -1840,8 +1928,8 @@ msgstr "Ta bort intresse"
 msgid "Remove item"
 msgstr "Ta bort objekt"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:304
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:298
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:303
 msgid "Remove link"
 msgstr "Ta bort länk"
 
@@ -1876,16 +1964,16 @@ msgstr "Obligatorisk"
 msgid "Resend email"
 msgstr "Skicka e-post igen"
 
-#: src/features/go/index.tsx:541
-#: src/features/go/index.tsx:688
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
+#: src/features/go/index.tsx:525
 msgid "Resign"
 msgstr "Ge upp"
 
-#: src/features/go/index.tsx:679
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:35
 msgid "Resign game?"
 msgstr "Ge upp partiet?"
 
-#: src/features/go/index.tsx:685
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:45
 msgid "Resigning..."
 msgstr "Ger upp..."
 
@@ -1936,6 +2024,7 @@ msgstr "Lördag"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
+#: ../../../lib/web/src/components/banner-section.tsx:99
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -1947,7 +2036,7 @@ msgstr "Spara"
 msgid "Saving..."
 msgstr "Sparar..."
 
-#: src/features/go/index.tsx:566
+#: src/features/go/index.tsx:550
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Poäng godkända — väntar på {opponentName}"
 
@@ -1978,7 +2067,7 @@ msgstr "Sök efter destination..."
 msgid "Search for origin..."
 msgstr "Sök efter ursprung..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:337
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:331
 msgid "Search objects..."
 msgstr "Sök objekt..."
 
@@ -2015,7 +2104,7 @@ msgstr "Välj"
 msgid "Select a field"
 msgstr "Välj ett fält"
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:175
 msgid "Select a friend..."
 msgstr "Välj en vän..."
 
@@ -2144,7 +2233,7 @@ msgstr "Loggar ut..."
 msgid "Single line of text only"
 msgstr "Endast en rad text"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:651
 msgid "Skip your turn and pass to your opponent."
 msgstr "Hoppa över din tur och skicka vidare till din motståndare."
 
@@ -2165,17 +2254,22 @@ msgstr "Källor"
 msgid "Spacious"
 msgstr "Rymlig"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:170
 msgid "Start a new Go game"
 msgstr "Starta ett nytt Go-spel"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:178
 msgid "Start game"
 msgstr "Starta spel"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:325
 msgid "Start the discussion by adding the first comment."
 msgstr "Starta diskussionen genom att lägga till den första kommentaren."
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+msgid "Stop watching"
+msgstr "Sluta bevaka"
 
 #: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
@@ -2272,7 +2366,7 @@ msgstr "Servern returnerade en webbsida i stället för data."
 msgid "This app is not allowed to use your passkey. Allow it in Settings, under Permissions."
 msgstr "Den här appen får inte använda din passkey. Tillåt det i Inställningar under Behörigheter."
 
-#: src/features/go/index.tsx:701
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:70
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Detta tar bort partiet och dess chatt permanent. Detta går inte att ångra."
 
@@ -2393,9 +2487,8 @@ msgstr "Okänd"
 msgid "Unsubscribe"
 msgstr "Avsluta prenumeration"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:299
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:103
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:184
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:178
+#: ../../../lib/web/src/lib/entity-title.ts:40
 msgid "Untitled"
 msgstr "Namnlös"
 
@@ -2409,7 +2502,7 @@ msgstr "Uppdaterad"
 msgid "Updated {field}"
 msgstr "Uppdaterade {field}"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:661
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:655
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:304
 msgid "Upload"
 msgstr "Ladda upp"
@@ -2459,6 +2552,10 @@ msgstr "Videovisare: {0}"
 msgid "View all notifications"
 msgstr "Visa alla aviseringar"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+msgid "View and edit item details"
+msgstr "Visa och redigera artikeldetaljer"
+
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:170
 msgid "View controls"
 msgstr "Visningskontroller"
@@ -2466,6 +2563,11 @@ msgstr "Visningskontroller"
 #: ../../../lib/web/src/lib/shell-errors.ts:33
 msgid "Voice recording is not supported in this browser"
 msgstr "Röstinspelning stöds inte i den här webbläsaren"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+msgid "Watch"
+msgstr "Bevaka"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:269
 #: ../../../lib/web/src/components/filter-bar.tsx:35
@@ -2485,12 +2587,12 @@ msgstr "Vi skickade en verifieringskod till <0>{0}</0>. Ange koden nedan för at
 msgid "Wednesday"
 msgstr "Onsdag"
 
-#: src/features/go/index.tsx:406
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:390
+#: src/features/go/index.tsx:468
 msgid "White"
 msgstr "Vit"
 
-#: src/features/go/index.tsx:496
+#: src/features/go/index.tsx:480
 msgid "White captures:"
 msgstr "Vit fångade:"
 
@@ -2510,11 +2612,11 @@ msgstr "Du"
 msgid "You do not have access to this section."
 msgstr "Du har inte åtkomst till det här avsnittet."
 
-#: src/features/go/index.tsx:432
+#: src/features/go/index.tsx:416
 msgid "You resigned — {opponentName} wins"
 msgstr "Du gav upp — {opponentName} vinner"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:403
 msgid "You win!"
 msgstr "Du vinner!"
 
@@ -2526,7 +2628,7 @@ msgstr "Ditt konto flyttades hit från {source}. Tills du tar bort det där kan 
 msgid "Your attachments will be lost."
 msgstr "Dina bilagor går förlorade."
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:419
 msgid "Your move"
 msgstr "Ditt drag"
 

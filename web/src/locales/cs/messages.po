@@ -72,7 +72,7 @@ msgstr "{name} nabídl/a remízu"
 msgid "{name} resigned"
 msgstr "{name} se vzdal/a"
 
-#: src/features/go/index.tsx:724
+#: src/features/go/index.tsx:650
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} také pasoval. Potvrzení spočítá desku a navrhne skóre, na kterém se oba musíte shodnout."
 
@@ -80,15 +80,15 @@ msgstr "{opponentName} také pasoval. Potvrzení spočítá desku a navrhne skó
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} nabídl remízu"
 
-#: src/features/go/index.tsx:431
+#: src/features/go/index.tsx:415
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} se vzdal — vyhráli jste!"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:403
 msgid "{opponentName} wins"
 msgstr "Vyhrává {opponentName}"
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:419
 msgid "{opponentName}'s move"
 msgstr "Na tahu je {opponentName}"
 
@@ -125,7 +125,7 @@ msgstr "{totalDescendants, plural, one {# odpověď} few {+# dalších odpověd�
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Otevřít nabídku (# nepřečtené oznámení)} few {Otevřít nabídku (# nepřečtená oznámení)} other {Otevřít nabídku (# nepřečtených oznámení)}}"
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:395
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "Vyhrává {winnerColor} — B:{black} W:{white}"
 
@@ -166,9 +166,13 @@ msgstr "Úroveň přístupu"
 msgid "Account type"
 msgstr "Typ účtu"
 
-#: src/components/layout/go-layout.tsx:66
+#: src/components/layout/go-layout.tsx:50
 msgid "Active games"
 msgstr "Aktivní hry"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+msgid "Activity"
+msgstr "Aktivita"
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx:758
 #: ../../../lib/web/src/features/access/access-dialog.tsx:332
@@ -209,11 +213,11 @@ msgstr "Přidat položku checklistu"
 msgid "Add field"
 msgstr "Přidat pole"
 
-#: src/features/go/components/new-game.tsx:150
+#: src/features/go/components/new-game.tsx:174
 msgid "Add friends"
 msgstr "Přidat přátele"
 
-#: src/features/go/components/new-game.tsx:143
+#: src/features/go/components/new-game.tsx:173
 msgid "Add friends in the People app to start playing"
 msgstr "Přidejte přátele v aplikaci Lidé a začněte hrát"
 
@@ -221,7 +225,7 @@ msgstr "Přidejte přátele v aplikaci Lidé a začněte hrát"
 msgid "Add item..."
 msgstr "Přidat položku..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:320
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:314
 msgid "Add link"
 msgstr "Přidat odkaz"
 
@@ -295,6 +299,10 @@ msgstr "Vše, co je k tomuto kanálu přihlášeno, jej přestane dostávat. Pot
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Opravdu chcete smazat „{0}“?"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
+msgstr "Opravdu chcete smazat „{title}“? Tuto akci nelze vrátit zpět."
+
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:631
 msgid "Are you sure you want to delete the \"{name}\" column? This cannot be undone."
 msgstr "Opravdu chcete smazat sloupec „{name}“? Tuto akci nelze vrátit zpět."
@@ -307,7 +315,11 @@ msgstr "Opravdu chcete smazat tento komentář? Smažou se i všechny odpovědi.
 msgid "Are you sure you want to log out? You will need to log in again to access your account."
 msgstr "Opravdu se chcete odhlásit? Pro přístup ke svému účtu se budete muset znovu přihlásit."
 
-#: src/features/go/index.tsx:680
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:39
+msgid "Are you sure you want to resign?"
+msgstr "Opravdu chcete vzdát hru?"
+
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:38
 msgid "Are you sure you want to resign? {opponentName} will win the game."
 msgstr "Opravdu se chcete vzdát? {opponentName} vyhraje hru."
 
@@ -353,16 +365,25 @@ msgstr "Zpět"
 msgid "Back to home"
 msgstr "Zpět na úvod"
 
+#: ../../../lib/web/src/components/banner-section.tsx:80
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Banner"
 
-#: src/features/go/index.tsx:406
-#: src/features/go/index.tsx:484
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner removed"
+msgstr "Banner odstraněn"
+
+#: ../../../lib/web/src/components/banner-section.tsx:69
+msgid "Banner updated"
+msgstr "Banner aktualizován"
+
+#: src/features/go/index.tsx:390
+#: src/features/go/index.tsx:468
 msgid "Black"
 msgstr "Černá"
 
-#: src/features/go/index.tsx:491
+#: src/features/go/index.tsx:475
 msgid "Black captures:"
 msgstr "Černý zajal:"
 
@@ -374,8 +395,8 @@ msgstr "Černý kámen na {colLabel}{rowLabel}"
 msgid "Black territory at {colLabel}{rowLabel}"
 msgstr "Černé území na {colLabel}{rowLabel}"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:68
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:215
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:72
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:209
 msgid "Blocked by"
 msgstr "Blokováno"
 
@@ -384,7 +405,7 @@ msgstr "Blokováno"
 msgid "Blocked navigation to untrusted link"
 msgstr "Navigace na nedůvěryhodný odkaz zablokována"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:66
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:70
 msgid "Blocks"
 msgstr "Blokuje"
 
@@ -392,7 +413,7 @@ msgstr "Blokuje"
 msgid "Board"
 msgstr "Deska"
 
-#: src/features/go/components/new-game.tsx:168
+#: src/features/go/components/new-game.tsx:114
 msgid "Board size"
 msgstr "Velikost desky"
 
@@ -431,7 +452,7 @@ msgstr "Kamera není k dispozici"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:228
+#: src/features/go/components/new-game.tsx:177
 msgid "Cancel"
 msgstr "Zrušit"
 
@@ -471,8 +492,7 @@ msgstr "Změněno"
 msgid "Changed {field}"
 msgstr "Změněno {field}"
 
-#: src/features/go/index.tsx:618
-#: src/features/go/index.tsx:651
+#: src/features/go/index.tsx:602
 msgid "Chat"
 msgstr "Chat"
 
@@ -493,10 +513,11 @@ msgstr "Vyberte hru z postranního panelu nebo začněte novou."
 msgid "Choose language"
 msgstr "Vyberte jazyk"
 
-#: src/features/go/components/new-game.tsx:134
+#: src/features/go/components/new-game.tsx:171
 msgid "Choose opponent"
 msgstr "Vyberte soupeře"
 
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -514,8 +535,8 @@ msgstr "Vymazat vše"
 msgid "Clear search"
 msgstr "Vymazat hledání"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:523
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:528
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:517
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:522
 #: ../../../lib/web/src/components/ui/dialog.tsx:78
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:480
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx:483
@@ -590,11 +611,16 @@ msgstr "Akce komentáře"
 msgid "Comments"
 msgstr "Komentáře"
 
+#. placeholder {0}: data.comment_count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+msgid "Comments ({0})"
+msgstr "Komentáře ({0})"
+
 #: ../../../lib/web/src/lib/preference-utils.ts:90
 msgid "Compact"
 msgstr "Kompaktní"
 
-#: src/components/layout/go-layout.tsx:67
+#: src/components/layout/go-layout.tsx:51
 msgid "Completed"
 msgstr "Dokončeno"
 
@@ -671,14 +697,14 @@ msgstr "Opětovné ověření se nepodařilo zahájit. Zkuste to prosím znovu."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "S tímto účtem se nepodařilo ověřit. Zkuste to prosím znovu."
 
-#: src/features/go/index.tsx:427
+#: src/features/go/index.tsx:411
 msgid "Counting — agree the score or play on"
 msgstr "Počítání — shodněte se na skóre nebo hrajte dál"
 
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:551
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx:691
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:513
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:682
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:507
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/entity/entity-tree-view.tsx:672
 msgid "Create"
 msgstr "Vytvořit"
@@ -701,9 +727,9 @@ msgstr "Vytvořeno"
 msgid "Created {field}"
 msgstr "Vytvořeno {field}"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:682
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:179
 msgid "Creating..."
 msgstr "Vytváření..."
 
@@ -753,7 +779,8 @@ msgstr "Výchozí řazení"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: src/features/go/index.tsx:709
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Smazat"
 
@@ -773,13 +800,19 @@ msgstr "Smazat komentář"
 msgid "Delete field"
 msgstr "Smazat pole"
 
-#: src/features/go/index.tsx:553
+#: src/features/go/index.tsx:537
 msgid "Delete game"
 msgstr "Smazat hru"
 
-#: src/features/go/index.tsx:700
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:69
 msgid "Delete game?"
 msgstr "Smazat hru?"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+msgid "Delete item"
+msgstr "Smazat položku"
 
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:117
 msgid "Delete option"
@@ -807,7 +840,7 @@ msgstr "Smazáno"
 msgid "Deleted {field}"
 msgstr "Smazáno {field}"
 
-#: src/features/go/index.tsx:706
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:75
 msgid "Deleting..."
 msgstr "Mazání..."
 
@@ -865,6 +898,7 @@ msgid "Does not match the required pattern"
 msgstr "Neodpovídá požadovanému vzoru"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "Hotovo"
@@ -880,8 +914,8 @@ msgstr "Stáhnout"
 msgid "Download failed"
 msgstr "Stahování se nezdařilo"
 
-#: src/features/go/index.tsx:416
-#: src/features/go/index.tsx:425
+#: src/features/go/index.tsx:400
+#: src/features/go/index.tsx:409
 msgid "Draw"
 msgstr "Remíza"
 
@@ -889,11 +923,11 @@ msgstr "Remíza"
 msgid "Draw agreed"
 msgstr "Remíza dohodnuta"
 
-#: src/features/go/index.tsx:584
+#: src/features/go/index.tsx:568
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Nabídnuta remíza — čeká se na {opponentName}"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:67
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:71
 msgid "Duplicates"
 msgstr "Duplikuje"
 
@@ -956,17 +990,21 @@ msgstr "Prázdné křížení {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Prázdné křížení {colLabel}{rowLabel}, klikněte nebo stiskněte Enter pro umístění"
 
-#: src/features/go/index.tsx:734
+#: src/features/go/index.tsx:660
 msgid "End game"
 msgstr "Ukončit hru"
 
-#: src/features/go/index.tsx:721
+#: src/features/go/index.tsx:647
 msgid "End game?"
 msgstr "Ukončit hru?"
 
-#: src/features/go/components/new-game.tsx:80
+#: src/features/go/components/new-game.tsx:69
 msgid "Enter a valid number"
 msgstr "Zadejte platné číslo"
+
+#: ../../../lib/web/src/components/banner-section.tsx:88
+msgid "Enter banner text (markdown supported)..."
+msgstr "Zadejte text banneru (podporuje markdown)..."
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx:290
 msgid "Enter the code from your email"
@@ -975,6 +1013,10 @@ msgstr "Zadejte kód z vašeho e-mailu"
 #: ../../../lib/web/src/components/step-up-dialog.tsx:315
 msgid "Enter your authenticator code"
 msgstr "Zadejte kód z autentizační aplikace"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+msgid "Error"
+msgstr "Chyba"
 
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:101
 #: ../../../lib/web/src/components/comment-tree-layout.tsx:110
@@ -995,11 +1037,11 @@ msgstr "Externí URL"
 msgid "Extra large"
 msgstr "Velmi velké"
 
-#: src/features/go/index.tsx:195
+#: src/features/go/index.tsx:185
 msgid "Failed to accept draw"
 msgstr "Nepodařilo se přijmout remízu"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:191
 msgid "Failed to accept score"
 msgstr "Nepodařilo se přijmout skóre"
 
@@ -1012,22 +1054,26 @@ msgstr "Nepodařilo se přidat účet"
 msgid "Failed to copy"
 msgstr "Nepodařilo se zkopírovat"
 
-#: src/features/go/components/new-game.tsx:67
+#: src/features/go/components/new-game.tsx:56
 msgid "Failed to create game"
 msgstr "Nepodařilo se vytvořit hru"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:137
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:131
 #: ../../../lib/web/src/components/options-menu.tsx:98
 msgid "Failed to create link"
 msgstr "Nepodařilo se vytvořit odkaz"
 
-#: src/features/go/index.tsx:221
+#: src/features/go/index.tsx:211
 msgid "Failed to create rematch"
 msgstr "Nepodařilo se vytvořit odvetu"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:201
 msgid "Failed to decline draw"
 msgstr "Nepodařilo se odmítnout remízu"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:303
+msgid "Failed to delete"
+msgstr "Nepodařilo se smazat"
 
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:130
 msgid "Failed to delete attachment"
@@ -1037,11 +1083,11 @@ msgstr "Nepodařilo se smazat přílohu"
 msgid "Failed to delete comment"
 msgstr "Nepodařilo se smazat komentář"
 
-#: src/features/go/index.tsx:233
+#: src/features/go/index.tsx:223
 msgid "Failed to delete game"
 msgstr "Nepodařilo se smazat hru"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:159
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:153
 msgid "Failed to delete link"
 msgstr "Nepodařilo se smazat odkaz"
 
@@ -1061,6 +1107,11 @@ msgstr "Nepodařilo se načíst historii"
 msgid "Failed to load image"
 msgstr "Obrázek se nepodařilo načíst"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+msgid "Failed to load item"
+msgstr "Nepodařilo se načíst položku"
+
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:213
 msgid "Failed to load prompts"
 msgstr "Nepodařilo se načíst prompty"
@@ -1069,15 +1120,19 @@ msgstr "Nepodařilo se načíst prompty"
 msgid "Failed to load video"
 msgstr "Video se nepodařilo načíst"
 
-#: src/features/go/index.tsx:166
+#: src/features/go/index.tsx:156
 msgid "Failed to make move"
 msgstr "Nepodařilo se provést tah"
 
-#: src/features/go/index.tsx:190
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:317
+msgid "Failed to move"
+msgstr "Přesunutí se nezdařilo"
+
+#: src/features/go/index.tsx:180
 msgid "Failed to offer draw"
 msgstr "Nepodařilo se nabídnout remízu"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:163
 msgid "Failed to pass"
 msgstr "Nepodařilo se předat"
 
@@ -1089,11 +1144,11 @@ msgstr "Nepodařilo se odeslat komentář"
 msgid "Failed to reset prompt"
 msgstr "Nepodařilo se obnovit prompt"
 
-#: src/features/go/index.tsx:183
+#: src/features/go/index.tsx:173
 msgid "Failed to resign"
 msgstr "Nepodařilo se vzdát se"
 
-#: src/features/go/index.tsx:206
+#: src/features/go/index.tsx:196
 msgid "Failed to resume play"
 msgstr "Nepodařilo se pokračovat ve hře"
 
@@ -1101,24 +1156,35 @@ msgstr "Nepodařilo se pokračovat ve hře"
 msgid "Failed to revoke RSS access"
 msgstr "Zrušení přístupu RSS se nezdařilo"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:273
+msgid "Failed to save"
+msgstr "Nepodařilo se uložit"
+
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:111
 msgid "Failed to save prompt"
 msgstr "Nepodařilo se uložit prompt"
 
-#: src/features/go/index.tsx:635
-#: src/features/go/index.tsx:668
+#: src/features/go/index.tsx:619
 msgid "Failed to send"
 msgstr "Nepodařilo se odeslat"
+
+#: ../../../lib/web/src/components/banner-section.tsx:71
+msgid "Failed to update banner"
+msgstr "Nepodařilo se aktualizovat banner"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:175
 msgid "Failed to update comment"
 msgstr "Nepodařilo se aktualizovat komentář"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:288
+msgid "Failed to update watching"
+msgstr "Sledování se nepodařilo aktualizovat"
+
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:114
 msgid "Failed to upload attachment"
 msgstr "Nepodařilo se nahrát přílohu"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:611
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:605
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:160
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:180
 msgid "Files"
@@ -1156,21 +1222,21 @@ msgstr "Od"
 msgid "From theme"
 msgstr "Z motivu"
 
-#: src/features/go/components/new-game.tsx:63
+#: src/features/go/components/new-game.tsx:52
 msgid "Game created"
 msgstr "Hra vytvořena"
 
-#: src/features/go/index.tsx:229
+#: src/features/go/index.tsx:219
 msgid "Game deleted"
 msgstr "Hra smazána"
 
-#: src/features/go/index.tsx:422
+#: src/features/go/index.tsx:406
 msgid "Game over"
 msgstr "Konec hry"
 
-#: src/features/go/index.tsx:66
-#: src/features/go/index.tsx:359
-#: src/features/go/index.tsx:371
+#: src/features/go/index.tsx:65
+#: src/features/go/index.tsx:348
+#: src/features/go/index.tsx:357
 msgid "Go"
 msgstr "Go"
 
@@ -1248,6 +1314,10 @@ msgstr "Neplatné datum"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Zdá se, že stránka, kterou hledáte, <0/>neexistuje nebo byla odebrána."
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+msgid "Item details"
+msgstr "Podrobnosti položky"
+
 #: ../../../lib/web/src/lib/locale-format.ts:180
 msgid "Just now"
 msgstr "Právě teď"
@@ -1256,7 +1326,7 @@ msgstr "Právě teď"
 msgid "Keyboard shortcuts"
 msgstr "Klávesové zkratky"
 
-#: src/features/go/components/new-game.tsx:186
+#: src/features/go/components/new-game.tsx:132
 msgid "Komi"
 msgstr "Komi"
 
@@ -1281,7 +1351,7 @@ msgstr "Světlý"
 msgid "Link"
 msgstr "Odkaz"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:279
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:273
 msgid "Links"
 msgstr "Odkazy"
 
@@ -1296,6 +1366,14 @@ msgstr "Načíst další"
 #: ../../../lib/web/src/components/ui/loading-content.tsx:26
 msgid "Loading content…"
 msgstr "Načítání obsahu…"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+msgid "Loading item"
+msgstr "Načítám položku"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+msgid "Loading item details"
+msgstr "Načítám podrobnosti položky"
 
 #: ../../../lib/web/src/components/ui/load-more.tsx:39
 #: ../../../lib/web/src/features/document/document-page.tsx:88
@@ -1393,7 +1471,7 @@ msgstr "Přesunuto"
 msgid "Moved {field}"
 msgstr "Přesunuto {field}"
 
-#: src/features/go/components/new-game.tsx:81
+#: src/features/go/components/new-game.tsx:70
 msgid "Must be between 0 and 10"
 msgstr "Musí být mezi 0 a 10"
 
@@ -1422,15 +1500,15 @@ msgstr "Název smí mít nejvýše 1000 znaků"
 msgid "Network error"
 msgstr "Chyba sítě"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:498
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:492
 #: ../../../lib/web/src/components/ui/sort-selector.tsx:43
 msgid "New"
 msgstr "Nové"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
-#: src/components/layout/go-layout.tsx:68
-#: src/features/go/components/new-game.tsx:125
+#: src/components/layout/go-layout.tsx:52
+#: src/features/go/components/new-game.tsx:169
 msgid "New game"
 msgstr "Nová hra"
 
@@ -1439,7 +1517,7 @@ msgstr "Nová hra"
 msgid "Next image"
 msgstr "Další obrázek"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:577
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:571
 msgid "No {parentClassNames} to add to"
 msgstr "Žádné {parentClassNames} pro přidání"
 
@@ -1455,11 +1533,11 @@ msgstr "Zatím žádná aktivita"
 msgid "No comments yet"
 msgstr "Zatím žádné komentáře"
 
-#: src/features/go/components/new-game.tsx:160
+#: src/features/go/components/new-game.tsx:176
 msgid "No friends found"
 msgstr "Žádní přátelé nenalezeni"
 
-#: src/features/go/components/new-game.tsx:142
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends yet"
 msgstr "Zatím žádní přátelé"
 
@@ -1471,11 +1549,11 @@ msgstr "Zatím žádné hry"
 msgid "No groups available"
 msgstr "Žádné skupiny k dispozici"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:544
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:538
 msgid "No item types can be created yet. Create the required parent items first."
 msgstr "Zatím nelze vytvořit žádné typy položek. Nejprve vytvořte potřebné nadřazené položky."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:360
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:354
 msgid "No matching objects"
 msgstr "Žádné odpovídající objekty"
 
@@ -1528,9 +1606,13 @@ msgid "No views"
 msgstr "Žádná zobrazení"
 
 #: ../../../lib/web/src/components/colour-picker.tsx:349
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:560
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:563
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:567
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1571,7 +1653,7 @@ msgstr "Oznámení: {0}"
 msgid "Number"
 msgstr "Číslo"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:521
 msgid "Offer draw"
 msgstr "Nabídnout remízu"
 
@@ -1588,11 +1670,11 @@ msgstr "Jejda! Stránka nenalezena!"
 msgid "Open actions"
 msgstr "Otevřít akce"
 
-#: src/features/go/index.tsx:508
+#: src/features/go/index.tsx:492
 msgid "Open chat panel"
 msgstr "Otevřít panel chatu"
 
-#: src/features/go/index.tsx:516
+#: src/features/go/index.tsx:500
 msgid "Open game actions"
 msgstr "Otevřít akce hry"
 
@@ -1642,21 +1724,23 @@ msgstr "Ostatní"
 msgid "Owner"
 msgstr "Vlastník"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:552
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
 msgid "Parent"
 msgstr "Rodič"
 
 #: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:529
-#: src/features/go/index.tsx:734
+#: src/features/go/index.tsx:513
+#: src/features/go/index.tsx:660
 msgid "Pass"
 msgstr "Vynechat"
 
-#: src/features/go/index.tsx:721
+#: src/features/go/index.tsx:647
 msgid "Pass turn?"
 msgstr "Vynechat tah?"
 
-#: src/features/go/index.tsx:731
+#: src/features/go/index.tsx:657
 msgid "Passing..."
 msgstr "Vynechávání…"
 
@@ -1691,7 +1775,7 @@ msgstr "Lidé"
 msgid "Please check your internet connection and try again."
 msgstr "Zkontrolujte připojení k internetu a zkuste to znovu."
 
-#: src/features/go/components/new-game.tsx:89
+#: src/features/go/components/new-game.tsx:76
 msgid "Please select a friend"
 msgstr "Vyberte přítele"
 
@@ -1703,7 +1787,7 @@ msgstr "Zkuste to prosím znovu."
 msgid "Please wait a moment and try again."
 msgstr "Chvíli počkejte a zkuste to znovu."
 
-#: src/features/go/components/new-game.tsx:216
+#: src/features/go/components/new-game.tsx:162
 msgid "Points added to White's score to compensate for Black going first"
 msgstr "Body přidané ke skóre bílého jako kompenzace za to, že černý začíná"
 
@@ -1732,6 +1816,10 @@ msgstr "Zpracovává se…"
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:108
 msgid "Prompt saved"
 msgstr "Prompt uložen"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+msgid "Properties"
+msgstr "Vlastnosti"
 
 #. placeholder {0}: formatNumber(black)
 #. placeholder {1}: formatNumber(white)
@@ -1780,7 +1868,7 @@ msgstr "Přesměrování na přihlášení."
 msgid "Reduce interest"
 msgstr "Snížit zájem"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:65
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:69
 msgid "Relates"
 msgstr "Souvisí s"
 
@@ -1800,7 +1888,7 @@ msgstr "Relevance {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Relevance {relevance}, zájem {weight}"
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:534
 msgid "Rematch"
 msgstr "Odveta"
 
@@ -1840,8 +1928,8 @@ msgstr "Odebrat zájem"
 msgid "Remove item"
 msgstr "Odebrat položku"
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:304
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:309
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:298
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:303
 msgid "Remove link"
 msgstr "Odebrat odkaz"
 
@@ -1876,16 +1964,16 @@ msgstr "Povinné"
 msgid "Resend email"
 msgstr "Odeslat e-mail znovu"
 
-#: src/features/go/index.tsx:541
-#: src/features/go/index.tsx:688
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
+#: src/features/go/index.tsx:525
 msgid "Resign"
 msgstr "Vzdát"
 
-#: src/features/go/index.tsx:679
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:35
 msgid "Resign game?"
 msgstr "Vzdát hru?"
 
-#: src/features/go/index.tsx:685
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:45
 msgid "Resigning..."
 msgstr "Vzdávání…"
 
@@ -1936,6 +2024,7 @@ msgstr "Sobota"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
+#: ../../../lib/web/src/components/banner-section.tsx:99
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -1947,7 +2036,7 @@ msgstr "Uložit"
 msgid "Saving..."
 msgstr "Ukládá se..."
 
-#: src/features/go/index.tsx:566
+#: src/features/go/index.tsx:550
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Skóre přijato — čeká se na {opponentName}"
 
@@ -1978,7 +2067,7 @@ msgstr "Hledat cíl..."
 msgid "Search for origin..."
 msgstr "Hledat výchozí bod..."
 
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:337
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:331
 msgid "Search objects..."
 msgstr "Hledat objekty..."
 
@@ -2015,7 +2104,7 @@ msgstr "Vybrat"
 msgid "Select a field"
 msgstr "Vyberte pole"
 
-#: src/features/go/components/new-game.tsx:159
+#: src/features/go/components/new-game.tsx:175
 msgid "Select a friend..."
 msgstr "Vyberte přítele..."
 
@@ -2144,7 +2233,7 @@ msgstr "Odhlašování..."
 msgid "Single line of text only"
 msgstr "Pouze jeden řádek textu"
 
-#: src/features/go/index.tsx:725
+#: src/features/go/index.tsx:651
 msgid "Skip your turn and pass to your opponent."
 msgstr "Přeskočte svůj tah a předejte soupeři."
 
@@ -2165,17 +2254,22 @@ msgstr "Zdroje"
 msgid "Spacious"
 msgstr "Prostorné"
 
-#: src/features/go/components/new-game.tsx:128
+#: src/features/go/components/new-game.tsx:170
 msgid "Start a new Go game"
 msgstr "Začít novou hru Go"
 
-#: src/features/go/components/new-game.tsx:236
+#: src/features/go/components/new-game.tsx:178
 msgid "Start game"
 msgstr "Začít hru"
 
 #: ../../../lib/web/src/components/entity/entity-comment-list.tsx:325
 msgid "Start the discussion by adding the first comment."
 msgstr "Začněte diskusi přidáním prvního komentáře."
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+msgid "Stop watching"
+msgstr "Přestat sledovat"
 
 #: ../../../lib/web/src/features/access/access-list.tsx:196
 msgid "Subject"
@@ -2272,7 +2366,7 @@ msgstr "Server vrátil webovou stránku místo dat."
 msgid "This app is not allowed to use your passkey. Allow it in Settings, under Permissions."
 msgstr "Tato aplikace nemá povolení používat váš passkey. Povolte ji v Nastavení v části Oprávnění."
 
-#: src/features/go/index.tsx:701
+#: ../../../lib/web/src/components/game/game-end-dialogs.tsx:70
 msgid "This permanently deletes the game and its chat. This cannot be undone."
 msgstr "Tímto trvale smažete hru a její chat. Tuto akci nelze vzít zpět."
 
@@ -2393,9 +2487,8 @@ msgstr "Neznámý"
 msgid "Unsubscribe"
 msgstr "Zrušit odběr"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:299
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:103
-#: ../../../lib/web/src/components/entity/entity-object-links.tsx:184
+#: ../../../lib/web/src/components/entity/entity-object-links.tsx:178
+#: ../../../lib/web/src/lib/entity-title.ts:40
 msgid "Untitled"
 msgstr "Bez názvu"
 
@@ -2409,7 +2502,7 @@ msgstr "Aktualizováno"
 msgid "Updated {field}"
 msgstr "Aktualizováno {field}"
 
-#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:661
+#: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:655
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:304
 msgid "Upload"
 msgstr "Nahrát"
@@ -2459,6 +2552,10 @@ msgstr "Přehrávač videa: {0}"
 msgid "View all notifications"
 msgstr "Zobrazit všechna oznámení"
 
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+msgid "View and edit item details"
+msgstr "Zobrazit a upravit detaily položky"
+
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:170
 msgid "View controls"
 msgstr "Zobrazit ovládací prvky"
@@ -2466,6 +2563,11 @@ msgstr "Zobrazit ovládací prvky"
 #: ../../../lib/web/src/lib/shell-errors.ts:33
 msgid "Voice recording is not supported in this browser"
 msgstr "Nahrávání hlasu není v tomto prohlížeči podporováno"
+
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+msgid "Watch"
+msgstr "Sledovat"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:269
 #: ../../../lib/web/src/components/filter-bar.tsx:35
@@ -2485,12 +2587,12 @@ msgstr "Ověřovací kód jsme odeslali na <0>{0}</0>. Zadejte kód níže pro o
 msgid "Wednesday"
 msgstr "Středa"
 
-#: src/features/go/index.tsx:406
-#: src/features/go/index.tsx:484
+#: src/features/go/index.tsx:390
+#: src/features/go/index.tsx:468
 msgid "White"
 msgstr "Bílé"
 
-#: src/features/go/index.tsx:496
+#: src/features/go/index.tsx:480
 msgid "White captures:"
 msgstr "Bílý zajal:"
 
@@ -2510,11 +2612,11 @@ msgstr "Vy"
 msgid "You do not have access to this section."
 msgstr "K této sekci nemáte přístup."
 
-#: src/features/go/index.tsx:432
+#: src/features/go/index.tsx:416
 msgid "You resigned — {opponentName} wins"
 msgstr "Vzdali jste se — vyhrává {opponentName}"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:403
 msgid "You win!"
 msgstr "Vyhráváte!"
 
@@ -2526,7 +2628,7 @@ msgstr "Váš účet byl přesunut sem z {source}. Dokud ho tam nesmažete, zpr�
 msgid "Your attachments will be lost."
 msgstr "Vaše přílohy budou ztraceny."
 
-#: src/features/go/index.tsx:435
+#: src/features/go/index.tsx:419
 msgid "Your move"
 msgstr "Váš tah"
 
