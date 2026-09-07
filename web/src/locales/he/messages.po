@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#שב} other {#שב}}"
 msgid "{entityLabel} name"
 msgstr "שם {entityLabel}"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} קיבל את התוצאה"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} דחה את התיקו"
@@ -72,7 +76,11 @@ msgstr "{name} הציע תיקו"
 msgid "{name} resigned"
 msgstr "{name} פרש"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} חידש את המשחק"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} גם ויתר על תורו. אישור ינקד את הלוח ויציע ניקוד ששניכם צריכים להסכים עליו."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} גם ויתר על תורו. אישור ינקד את ה�
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} הציע תיקו"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} פרש — ניצחת!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "{opponentName} ניצח"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "תורו של {opponentName}"
 
@@ -109,7 +117,7 @@ msgstr "לוח Go בגודל {size}×{size}, תורך. השתמש במקשי ה�
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "לוח Go בגודל {size}×{size}, תורך. השתמש במקשי החיצים לניווט ובמקש Enter או רווח להציב אבן לבנה."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} שיחק <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {תגובה אחת} two {+# תגובות 
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {פתיחת התפריט (התראה אחת שלא נקראה)} two {פתיחת התפריט (# התראות שלא נקראו)} many {פתיחת התפריט (# התראות שלא נקראו)} other {פתיחת התפריט (# התראות שלא נקראו)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} ניצח — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "סוג חשבון"
 msgid "Active games"
 msgstr "משחקים פעילים"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "פעילות"
 
@@ -213,11 +221,11 @@ msgstr "הוסף פריט לרשימת משימות"
 msgid "Add field"
 msgstr "הוסף שדה"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "הוסף חברים"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "הוסף חברים באפליקציית האנשים כדי להתחיל לשחק"
 
@@ -299,7 +307,7 @@ msgstr "כל מה שרשום להזנה הזו יפסיק לקבל אותה. א�
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "האם אתה בטוח שברצונך למחוק את \"{0}\"?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "האם אתה בטוח שברצונך למחוק את \"{title}\"? לא ניתן לבטל פעולה זו."
 
@@ -365,25 +373,25 @@ msgstr "חזור"
 msgid "Back to home"
 msgstr "חזרה לבית"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "באנר"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "הבאנר הוסר"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "הבאנר עודכן"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "שחור"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "שבויי שחור:"
 
@@ -452,7 +460,7 @@ msgstr "המצלמה אינה זמינה"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -492,7 +500,7 @@ msgstr "שונה"
 msgid "Changed {field}"
 msgstr "{field} שונה"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "צ'אט"
 
@@ -513,11 +521,11 @@ msgstr "בחר משחק מהסרגל הצדדי או התחל אחד חדש."
 msgid "Choose language"
 msgstr "בחר שפה"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "בחר יריב"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "פעולות תגובה"
 msgid "Comments"
 msgstr "תגובות"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "תגובות ({0})"
 
@@ -697,7 +705,7 @@ msgstr "לא ניתן היה להתחיל את האימות מחדש. נסה ש�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "לא ניתן היה לאמת עם החשבון הזה. נסה שוב."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "ספירה — הסכימו על התוצאה או המשיכו לשחק"
 
@@ -729,7 +737,7 @@ msgstr "{field} נוצר"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "יוצר..."
 
@@ -779,7 +787,7 @@ msgstr "מיון ברירת מחדל"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "מחק"
@@ -800,7 +808,7 @@ msgstr "מחק תגובה"
 msgid "Delete field"
 msgstr "מחק שדה"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "מחק משחק"
 
@@ -808,9 +816,9 @@ msgstr "מחק משחק"
 msgid "Delete game?"
 msgstr "למחוק את המשחק?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "מחק פריט"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "לא תואם לתבנית הנדרשת"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "בוצע"
@@ -914,8 +922,8 @@ msgstr "הורדה"
 msgid "Download failed"
 msgstr "ההורדה נכשלה"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "תיקו"
 
@@ -923,7 +931,7 @@ msgstr "תיקו"
 msgid "Draw agreed"
 msgstr "הוסכם על תיקו"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "הוצעה תיקו — ממתין ל-{opponentName}"
 
@@ -990,11 +998,11 @@ msgstr "צומת ריק {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "צומת ריק {colLabel}{rowLabel}, לחץ או הקש Enter כדי להציב"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "סיים משחק"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "לסיים את המשחק?"
 
@@ -1002,7 +1010,7 @@ msgstr "לסיים את המשחק?"
 msgid "Enter a valid number"
 msgstr "הזן מספר תקין"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "הזן טקסט באנר (יש תמיכה ב-markdown)..."
 
@@ -1014,7 +1022,7 @@ msgstr "הזן את הקוד מהאימייל שלך"
 msgid "Enter your authenticator code"
 msgstr "הזן את הקוד מאפליקציית האימות"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "שגיאה"
 
@@ -1037,11 +1045,11 @@ msgstr "כתובת URL חיצונית"
 msgid "Extra large"
 msgstr "גדול במיוחד"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "קבלת התיקו נכשלה"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "קבלת הניקוד נכשלה"
 
@@ -1063,11 +1071,11 @@ msgstr "יצירת המשחק נכשלה"
 msgid "Failed to create link"
 msgstr "יצירת הקישור נכשלה"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "יצירת המשחק החוזר נכשלה"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "דחיית התיקו נכשלה"
 
@@ -1083,7 +1091,7 @@ msgstr "מחיקת הקובץ המצורף נכשלה"
 msgid "Failed to delete comment"
 msgstr "מחיקת התגובה נכשלה"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "מחיקת המשחק נכשלה"
 
@@ -1099,7 +1107,11 @@ msgstr "קבלת טוקן RSS נכשלה"
 msgid "Failed to load"
 msgstr "הטעינה נכשלה"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "טעינת הבאנר נכשלה"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "טעינת ההיסטוריה נכשלה"
 
@@ -1107,8 +1119,8 @@ msgstr "טעינת ההיסטוריה נכשלה"
 msgid "Failed to load image"
 msgstr "טעינת התמונה נכשלה"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "טעינת הפריט נכשלה"
 
@@ -1120,7 +1132,7 @@ msgstr "טעינת ה-prompts נכשלה"
 msgid "Failed to load video"
 msgstr "טעינת הווידאו נכשלה"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "ביצוע המהלך נכשל"
 
@@ -1128,11 +1140,11 @@ msgstr "ביצוע המהלך נכשל"
 msgid "Failed to move"
 msgstr "ההעברה נכשלה"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "הצעת התיקו נכשלה"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "הוויתור נכשל"
 
@@ -1144,11 +1156,11 @@ msgstr "פרסום התגובה נכשל"
 msgid "Failed to reset prompt"
 msgstr "איפוס ה-prompt נכשל"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "ההתפטרות נכשלה"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "חידוש המשחק נכשל"
 
@@ -1164,11 +1176,11 @@ msgstr "השמירה נכשלה"
 msgid "Failed to save prompt"
 msgstr "שמירת ה-prompt נכשלה"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "השליחה נכשלה"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "עדכון הבאנר נכשל"
 
@@ -1226,17 +1238,17 @@ msgstr "מערכת נושא"
 msgid "Game created"
 msgstr "המשחק נוצר"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "המשחק נמחק"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "המשחק נגמר"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "Go"
 
@@ -1258,7 +1270,7 @@ msgstr "קבץ לפי"
 msgid "Group: {0}"
 msgstr "קבוצה: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "היסטוריה"
 
@@ -1314,7 +1326,7 @@ msgstr "תאריך לא תקין"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "נראה שהדף שאתה מחפש <0/>אינו קיים או שהוסר."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "פרטי פריט"
 
@@ -1367,11 +1379,11 @@ msgstr "טען עוד"
 msgid "Loading content…"
 msgstr "טוען תוכן…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "טוען פריט"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "טוען פרטי פריט"
 
@@ -1508,7 +1520,7 @@ msgstr "חדש"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "משחק חדש"
 
@@ -1533,11 +1545,11 @@ msgstr "עדיין אין פעילות"
 msgid "No comments yet"
 msgstr "עדיין אין תגובות"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "לא נמצאו חברים"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "עדיין אין חברים"
 
@@ -1609,10 +1621,10 @@ msgstr "אין תצוגות"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "התראות: {0}"
 msgid "Number"
 msgstr "מספר"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "הצע תיקו"
 
@@ -1670,11 +1682,11 @@ msgstr "אופס! הדף לא נמצא!"
 msgid "Open actions"
 msgstr "פתיחת פעולות"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "פתח פאנל צ'אט"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "פתח פעולות משחק"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "בעלים"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "אב"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "דלג"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "לדלג על התור?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "מדלג..."
 
@@ -1787,10 +1799,6 @@ msgstr "אנא נסה שוב."
 msgid "Please wait a moment and try again."
 msgstr "יש להמתין מעט ולנסות שוב."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "נקודות שנוספות לציון של הלבן כדי לפצות על כך שהשחור פותח"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "פוסטים"
@@ -1817,7 +1825,7 @@ msgstr "מעבד…"
 msgid "Prompt saved"
 msgstr "הפרומפט נשמר"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "מאפיינים"
 
@@ -1888,7 +1896,7 @@ msgstr "רלוונטיות {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "רלוונטיות {relevance}, עניין {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "משחק חוזר"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "שלח את האימייל שוב"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "פרוש"
 
@@ -2024,7 +2032,7 @@ msgstr "שבת"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "שמור"
 msgid "Saving..."
 msgstr "שומר..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "הניקוד התקבל — ממתין ל-{opponentName}"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "הוסכם על התוצאה"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "בחר"
 msgid "Select a field"
 msgstr "בחר שדה"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "בחר חבר..."
 
@@ -2233,10 +2245,6 @@ msgstr "מתנתק..."
 msgid "Single line of text only"
 msgstr "שורת טקסט בודדת בלבד"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "דלג על תורך ומסור ליריב."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "מקורות"
 msgid "Spacious"
 msgstr "מרווח"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "התחל משחק Go חדש"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "התחל משחק"
 
@@ -2266,8 +2274,8 @@ msgstr "התחל משחק"
 msgid "Start the discussion by adding the first comment."
 msgstr "התחל את הדיון על ידי הוספת התגובה הראשונה."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "הפסק לעקוב"
 
@@ -2297,7 +2305,7 @@ msgstr "יום ראשון"
 msgid "Switch to view 1-9"
 msgstr "עבור לתצוגה 1-9"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "שגיאת API בלתי צפויה"
 msgid "United States"
 msgstr "ארצות הברית"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "מציג וידאו: {0}"
 msgid "View all notifications"
 msgstr "הצג את כל ההתראות"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "הצג וערוך פרטי פריט"
 
@@ -2564,8 +2572,8 @@ msgstr "פקדי תצוגה"
 msgid "Voice recording is not supported in this browser"
 msgstr "הקלטה קולית אינה נתמכת בדפדפן זה"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "עקוב"
 
@@ -2587,12 +2595,12 @@ msgstr "שלחנו קוד אימות אל <0>{0}</0>. הזן את הקוד למ�
 msgid "Wednesday"
 msgstr "יום רביעי"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "לבן"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "שבויי לבן:"
 
@@ -2604,7 +2612,7 @@ msgstr "אבן לבנה ב-{colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "טריטוריה לבנה ב-{colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "אתה"
 
@@ -2612,11 +2620,11 @@ msgstr "אתה"
 msgid "You do not have access to this section."
 msgstr "אין לך גישה לאזור זה."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "פרשת — {opponentName} ניצח"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "ניצחת!"
 
@@ -2628,7 +2636,7 @@ msgstr "חשבונך הועבר לכאן מ-{source}. עד שתמחק אותו �
 msgid "Your attachments will be lost."
 msgstr "הקבצים המצורפים שלך יאבדו."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "התור שלך"
 

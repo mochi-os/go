@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#mgg} other {#mgg}}"
 msgid "{entityLabel} name"
 msgstr "Ngaran {entityLabel}"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} narima skor"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} nampik seri"
@@ -72,7 +76,11 @@ msgstr "{name} nawarkeun seri"
 msgid "{name} resigned"
 msgstr "{name} nyerah"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} neruskeun kaulinan"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} ogé liwat. Mastikeun bakal ngitung papan jeung ngusulkeun skor nu kudu disapuk ku anjeun duaan."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} ogé liwat. Mastikeun bakal ngitung papan jeung ngusulkeu
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} nawarkeun séri"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} nyerah — anjeun meunang!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "{opponentName} meunang"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "Giliran {opponentName}"
 
@@ -109,7 +117,7 @@ msgstr "Papan Go {size}×{size}, giliran anjeun. Paké tombol panah pikeun navig
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "Papan Go {size}×{size}, giliran anjeun. Paké tombol panah pikeun navigasi sarta Enter atawa Spasi pikeun nempatkeun batu bodas."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} maénkeun <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {# balesan} other {+# balesan deui}}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Buka menu (# wawaran anu can dibaca)} other {Buka menu (# wawaran anu can dibaca)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} meunang — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "Tipe akun"
 msgid "Active games"
 msgstr "Kaulinan Aktif"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "Aktivitas"
 
@@ -213,11 +221,11 @@ msgstr "Tambah item ceklis"
 msgid "Add field"
 msgstr "Tambah field"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "Tambah babaturan"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "Tambah babaturan dina aplikasi People pikeun mimitian maén"
 
@@ -299,7 +307,7 @@ msgstr "Sagala nu ngalanggan feed ieu bakal eureun narima. Anjeun bisa nyalin UR
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Anjeun yakin hayang ngahapus \"{0}\"?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "Anjeun yakin hayang ngahapus \"{title}\"? Aksi ieu teu bisa dibalikeun."
 
@@ -365,25 +373,25 @@ msgstr "Tukang"
 msgid "Back to home"
 msgstr "Balik ka imah"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Spanduk"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "Banner dipiceun"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "Banner diropéa"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "Hideung"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "Hideung néwak:"
 
@@ -452,7 +460,7 @@ msgstr "Kaméra teu sayogi"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "Batalkeun"
 
@@ -492,7 +500,7 @@ msgstr "Diganti"
 msgid "Changed {field}"
 msgstr "{field} diganti"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "Chat"
 
@@ -513,11 +521,11 @@ msgstr "Pilih kaulinan ti sidebar atawa mimitian nu anyar."
 msgid "Choose language"
 msgstr "Pilih basa"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "Pilih lawan"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "Peta koméntar"
 msgid "Comments"
 msgstr "Koméntar"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "Koméntar ({0})"
 
@@ -697,7 +705,7 @@ msgstr "Teu bisa ngamimitian pamariksaan deui. Mangga cobian deui."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Teu tiasa diverifikasi nganggo akun éta. Mangga cobian deui."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "Ngitung — sapuk kana peunteun atawa terus maén"
 
@@ -729,7 +737,7 @@ msgstr "{field} dijieun"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "Ngajieun..."
 
@@ -779,7 +787,7 @@ msgstr "Urutan standar"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Hapus"
@@ -800,7 +808,7 @@ msgstr "Hapus koméntar"
 msgid "Delete field"
 msgstr "Hapus field"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "Hapus kaulinan"
 
@@ -808,9 +816,9 @@ msgstr "Hapus kaulinan"
 msgid "Delete game?"
 msgstr "Hapus kaulinan?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "Hapus item"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "Teu cocog jeung pola nu diperlukeun"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "Beres"
@@ -914,8 +922,8 @@ msgstr "Unduh"
 msgid "Download failed"
 msgstr "Gagal ngunduh"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "Seri"
 
@@ -923,7 +931,7 @@ msgstr "Seri"
 msgid "Draw agreed"
 msgstr "Seri disatujuan"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Tawaran seri — ngantosan {opponentName}"
 
@@ -990,11 +998,11 @@ msgstr "Pasilangan kosong {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Pasilangan kosong {colLabel}{rowLabel}, klik atawa pencét Enter pikeun nempatkeun"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "Tungtungan kaulinan"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "Tungtungan kaulinan?"
 
@@ -1002,7 +1010,7 @@ msgstr "Tungtungan kaulinan?"
 msgid "Enter a valid number"
 msgstr "Asupkeun angka nu sah"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "Asupkeun téks spanduk (markdown didukung)..."
 
@@ -1014,7 +1022,7 @@ msgstr "Lebetkeun kode tina email anjeun"
 msgid "Enter your authenticator code"
 msgstr "Lebetkeun kode aplikasi pamariksa"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "Kasalahan"
 
@@ -1037,11 +1045,11 @@ msgstr "URL Éksternal"
 msgid "Extra large"
 msgstr "Gedé pisan"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "Gagal narima seri"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "Gagal narima skor"
 
@@ -1063,11 +1071,11 @@ msgstr "Gagal nyieun kaulinan"
 msgid "Failed to create link"
 msgstr "Gagal nyieun tautan"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "Gagal nyieun rematch"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "Gagal nampik seri"
 
@@ -1083,7 +1091,7 @@ msgstr "Gagal mupus lampiran"
 msgid "Failed to delete comment"
 msgstr "Gagal mupus koméntar"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "Gagal mupus kaulinan"
 
@@ -1099,7 +1107,11 @@ msgstr "Gagal meunangkeun token RSS"
 msgid "Failed to load"
 msgstr "Gagal mungkahan"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "Gagal ngamuat spanduk"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "Gagal mungkahan riwayat"
 
@@ -1107,8 +1119,8 @@ msgstr "Gagal mungkahan riwayat"
 msgid "Failed to load image"
 msgstr "Gagal ngamuat gambar"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "Gagal mungkahan item"
 
@@ -1120,7 +1132,7 @@ msgstr "Gagal mungkahan prompt"
 msgid "Failed to load video"
 msgstr "Gagal ngamuat video"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "Gagal ngalakukeun léngkah"
 
@@ -1128,11 +1140,11 @@ msgstr "Gagal ngalakukeun léngkah"
 msgid "Failed to move"
 msgstr "Gagal mindahkeun"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "Gagal nawarkeun seri"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "Gagal pas"
 
@@ -1144,11 +1156,11 @@ msgstr "Gagal ngirim koméntar"
 msgid "Failed to reset prompt"
 msgstr "Gagal ngareset prompt"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "Gagal eureun"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "Gagal neruskeun kaulinan"
 
@@ -1164,11 +1176,11 @@ msgstr "Gagal nyimpen"
 msgid "Failed to save prompt"
 msgstr "Gagal nyimpen prompt"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "Gagal ngirim"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "Gagal ngamutahirkeun spanduk"
 
@@ -1226,17 +1238,17 @@ msgstr "Tina téma"
 msgid "Game created"
 msgstr "Kaulinan dijieun"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "Kaulinan dihapus"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "Kaulinan réngsé"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "Go"
 
@@ -1258,7 +1270,7 @@ msgstr "Kelompokkeun dumasar"
 msgid "Group: {0}"
 msgstr "Grup: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "Riwayat"
 
@@ -1314,7 +1326,7 @@ msgstr "Tanggal teu sah"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Sigana kaca anu ditéangan ku anjeun <0/>henteu aya atawa geus dipiceun."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "Detil item"
 
@@ -1367,11 +1379,11 @@ msgstr "Muat leuwih loba"
 msgid "Loading content…"
 msgstr "Ngamuat eusi…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "Muat item"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "Muat detil item"
 
@@ -1508,7 +1520,7 @@ msgstr "Anyar"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "Game anyar"
 
@@ -1533,11 +1545,11 @@ msgstr "Tacan aya kagiatan"
 msgid "No comments yet"
 msgstr "Tacan aya koméntar"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "Teu manggih babaturan"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "Tacan aya babaturan"
 
@@ -1609,10 +1621,10 @@ msgstr "Teu aya tempoan"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "Wawaran: {0}"
 msgid "Number"
 msgstr "Wilangan"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "Tawarkeun seri"
 
@@ -1670,11 +1682,11 @@ msgstr "Aduh! Kaca Teu Kapanggih!"
 msgid "Open actions"
 msgstr "Buka aksi"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "Buka panel obrolan"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "Buka aksi game"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "Nu boga"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "Kolot"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "Lulus"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "Lewat giliran?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "Ngalewat..."
 
@@ -1787,10 +1799,6 @@ msgstr "Mangga cobian deui."
 msgid "Please wait a moment and try again."
 msgstr "Mangga antosan sakedap teras cobian deui."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "Poin ditambahkeun kana skor Bodas pikeun ngagantian Hideung nu maén heula"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "Pos"
@@ -1817,7 +1825,7 @@ msgstr "Ngolah…"
 msgid "Prompt saved"
 msgstr "Prompt disimpen"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "Sipat"
 
@@ -1888,7 +1896,7 @@ msgstr "Relevansi {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Relevansi {relevance}, minat {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "Tanding deui"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "Kirim deui email"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "Nyerah"
 
@@ -2024,7 +2032,7 @@ msgstr "Saptu"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "Simpen"
 msgid "Saving..."
 msgstr "Nyimpen..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Skor ditarima — ngantosan {opponentName}"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "Skor disatujuan"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "Pilih"
 msgid "Select a field"
 msgstr "Pilih field"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "Pilih babaturan..."
 
@@ -2233,10 +2245,6 @@ msgstr "Kaluar..."
 msgid "Single line of text only"
 msgstr "Hiji baris téks wungkul"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "Liwat giliran anjeun jeung pasrahkeun ka lawan."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "Sumber"
 msgid "Spacious"
 msgstr "Lega"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "Mimitian kaulinan Go anyar"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "Mimitian kaulinan"
 
@@ -2266,8 +2274,8 @@ msgstr "Mimitian kaulinan"
 msgid "Start the discussion by adding the first comment."
 msgstr "Mimitian diskusi ku nambahkeun koméntar nu munggaran."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "Eureun nempo"
 
@@ -2297,7 +2305,7 @@ msgstr "Minggu"
 msgid "Switch to view 1-9"
 msgstr "Pindah ka tampilan 1-9"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "Kasalahan API anu teu disangka"
 msgid "United States"
 msgstr "Amérika Serikat"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "Panempo video: {0}"
 msgid "View all notifications"
 msgstr "Tingali sagala bewara"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "Tingali sarta édit rincian item"
 
@@ -2564,8 +2572,8 @@ msgstr "Kontrol tampilan"
 msgid "Voice recording is not supported in this browser"
 msgstr "Rékaman sora teu dirojong dina browser ieu"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "Awas"
 
@@ -2587,12 +2595,12 @@ msgstr "Kami ngirim kode verifikasi ka <0>{0}</0>. Lebetkeun kode di handap pike
 msgid "Wednesday"
 msgstr "Rebo"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "Bodas"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "Bodas nyokot:"
 
@@ -2604,7 +2612,7 @@ msgstr "Batu bodas dina {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Wewengkon bodas dina {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "Anjeun"
 
@@ -2612,11 +2620,11 @@ msgstr "Anjeun"
 msgid "You do not have access to this section."
 msgstr "Anjeun teu gaduh aksés kana bagian ieu."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "Anjeun nyerah — {opponentName} meunang"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "Anjeun menang!"
 
@@ -2628,7 +2636,7 @@ msgstr "Akun anjeun dipindahkeun ka dieu ti {source}. Dugi ka anjeun mupus éta 
 msgid "Your attachments will be lost."
 msgstr "Lampiran anjeun bakal leungit."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "Lengkah anjeun"
 

@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#sett} other {#sett}}"
 msgid "{entityLabel} name"
 msgstr "Nome {entityLabel}"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} ha accettato il punteggio"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} ha rifiutato la patta"
@@ -72,7 +76,11 @@ msgstr "{name} ha proposto la patta"
 msgid "{name} resigned"
 msgstr "{name} ha abbandonato"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} ha ripreso la partita"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "Anche {opponentName} ha passato. Confermando si conterà la scacchiera e verrà proposto un punteggio su cui dovrete entrambi accordarvi."
 
@@ -80,15 +88,15 @@ msgstr "Anche {opponentName} ha passato. Confermando si conterà la scacchiera e
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ha offerto la patta"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} si è arreso — hai vinto!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "Vince {opponentName}"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "Tocca a {opponentName}"
 
@@ -109,7 +117,7 @@ msgstr "Goban {size}×{size}, è il tuo turno. Usa i tasti freccia per navigare 
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "Goban {size}×{size}, è il tuo turno. Usa i tasti freccia per navigare e Invio o Spazio per posizionare una pietra bianca."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} ha giocato <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {# risposta} other {+# altre risposte}}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Apri il menu (# notifica non letta)} other {Apri il menu (# notifiche non lette)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "Vince {winnerColor} — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "Tipo di account"
 msgid "Active games"
 msgstr "Partite attive"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "Attività"
 
@@ -213,11 +221,11 @@ msgstr "Aggiungi voce alla checklist"
 msgid "Add field"
 msgstr "Aggiungi campo"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "Aggiungi amici"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "Aggiungi amici nell'app Persone per iniziare a giocare"
 
@@ -299,7 +307,7 @@ msgstr "Tutto ciò che è iscritto a questo feed smetterà di riceverlo. Potrai 
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Sei sicuro di voler eliminare \"{0}\"?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "Sei sicuro di voler eliminare \"{title}\"? Questa azione non può essere annullata."
 
@@ -365,25 +373,25 @@ msgstr "Indietro"
 msgid "Back to home"
 msgstr "Torna alla home"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Banner"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "Banner rimosso"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "Banner aggiornato"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "Nero"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "Catture del nero:"
 
@@ -452,7 +460,7 @@ msgstr "Fotocamera non disponibile"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -492,7 +500,7 @@ msgstr "Modificato"
 msgid "Changed {field}"
 msgstr "Modificato {field}"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "Chat"
 
@@ -513,11 +521,11 @@ msgstr "Scegli una partita dalla barra laterale o avviane una nuova."
 msgid "Choose language"
 msgstr "Scegli la lingua"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "Scegli l'avversario"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "Azioni commento"
 msgid "Comments"
 msgstr "Commenti"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "Commenti ({0})"
 
@@ -697,7 +705,7 @@ msgstr "Impossibile avviare la nuova autenticazione. Riprova."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Impossibile verificare con quell'account. Riprova."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "Conteggio — accordatevi sul punteggio o continuate a giocare"
 
@@ -729,7 +737,7 @@ msgstr "Creato {field}"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "Creazione in corso..."
 
@@ -779,7 +787,7 @@ msgstr "Ordinamento predefinito"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Elimina"
@@ -800,7 +808,7 @@ msgstr "Elimina commento"
 msgid "Delete field"
 msgstr "Elimina campo"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "Elimina partita"
 
@@ -808,9 +816,9 @@ msgstr "Elimina partita"
 msgid "Delete game?"
 msgstr "Eliminare la partita?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "Elimina voce"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "Non corrisponde al modello richiesto"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "Fatto"
@@ -914,8 +922,8 @@ msgstr "Scarica"
 msgid "Download failed"
 msgstr "Download non riuscito"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "Patta"
 
@@ -923,7 +931,7 @@ msgstr "Patta"
 msgid "Draw agreed"
 msgstr "Patta concordata"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Patta offerta — in attesa di {opponentName}"
 
@@ -990,11 +998,11 @@ msgstr "Intersezione vuota {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Intersezione vuota {colLabel}{rowLabel}, clicca o premi Invio per posizionare"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "Termina partita"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "Terminare la partita?"
 
@@ -1002,7 +1010,7 @@ msgstr "Terminare la partita?"
 msgid "Enter a valid number"
 msgstr "Inserisci un numero valido"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "Inserisci il testo del banner (markdown supportato)..."
 
@@ -1014,7 +1022,7 @@ msgstr "Inserisci il codice ricevuto via email"
 msgid "Enter your authenticator code"
 msgstr "Inserisci il codice dell'app di autenticazione"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "Errore"
 
@@ -1037,11 +1045,11 @@ msgstr "URL esterno"
 msgid "Extra large"
 msgstr "Extra grande"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "Impossibile accettare la patta"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "Impossibile accettare il punteggio"
 
@@ -1063,11 +1071,11 @@ msgstr "Impossibile creare la partita"
 msgid "Failed to create link"
 msgstr "Impossibile creare il link"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "Impossibile creare la rivincita"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "Impossibile rifiutare la patta"
 
@@ -1083,7 +1091,7 @@ msgstr "Impossibile eliminare l'allegato"
 msgid "Failed to delete comment"
 msgstr "Impossibile eliminare il commento"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "Impossibile eliminare la partita"
 
@@ -1099,7 +1107,11 @@ msgstr "Impossibile ottenere il token RSS"
 msgid "Failed to load"
 msgstr "Impossibile caricare"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "Impossibile caricare il banner"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "Impossibile caricare la cronologia"
 
@@ -1107,8 +1119,8 @@ msgstr "Impossibile caricare la cronologia"
 msgid "Failed to load image"
 msgstr "Impossibile caricare l'immagine"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "Impossibile caricare l'elemento"
 
@@ -1120,7 +1132,7 @@ msgstr "Impossibile caricare i prompt"
 msgid "Failed to load video"
 msgstr "Impossibile caricare il video"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "Impossibile effettuare la mossa"
 
@@ -1128,11 +1140,11 @@ msgstr "Impossibile effettuare la mossa"
 msgid "Failed to move"
 msgstr "Spostamento non riuscito"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "Impossibile offrire la patta"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "Impossibile passare"
 
@@ -1144,11 +1156,11 @@ msgstr "Impossibile pubblicare il commento"
 msgid "Failed to reset prompt"
 msgstr "Impossibile reimpostare il prompt"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "Impossibile abbandonare"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "Impossibile riprendere la partita"
 
@@ -1164,11 +1176,11 @@ msgstr "Impossibile salvare"
 msgid "Failed to save prompt"
 msgstr "Impossibile salvare il prompt"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "Impossibile inviare"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "Impossibile aggiornare il banner"
 
@@ -1226,17 +1238,17 @@ msgstr "Dal tema"
 msgid "Game created"
 msgstr "Partita creata"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "Partita eliminata"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "Partita terminata"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "Vai"
 
@@ -1258,7 +1270,7 @@ msgstr "Raggruppa per"
 msgid "Group: {0}"
 msgstr "Gruppo: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "Cronologia"
 
@@ -1314,7 +1326,7 @@ msgstr "Data non valida"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Sembra che la pagina che stai cercando <0/>non esista o sia stata rimossa."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "Dettagli elemento"
 
@@ -1367,11 +1379,11 @@ msgstr "Carica altri"
 msgid "Loading content…"
 msgstr "Caricamento contenuti…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "Caricamento elemento"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "Caricamento dettagli elemento"
 
@@ -1508,7 +1520,7 @@ msgstr "Nuovo"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "Nuova partita"
 
@@ -1533,11 +1545,11 @@ msgstr "Ancora nessuna attività"
 msgid "No comments yet"
 msgstr "Ancora nessun commento"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "Nessun amico trovato"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "Ancora nessun amico"
 
@@ -1609,10 +1621,10 @@ msgstr "Nessuna visualizzazione"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "Notifiche: {0}"
 msgid "Number"
 msgstr "Numero"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "Proponi patta"
 
@@ -1670,11 +1682,11 @@ msgstr "Oops! Pagina non trovata!"
 msgid "Open actions"
 msgstr "Apri azioni"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "Apri pannello chat"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "Apri azioni partita"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "Proprietario"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "Padre"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "Passa"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "Passare il turno?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "Passaggio in corso..."
 
@@ -1787,10 +1799,6 @@ msgstr "Riprova."
 msgid "Please wait a moment and try again."
 msgstr "Attendi qualche istante e riprova."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "Punti aggiunti al punteggio del Bianco per compensare il fatto che il Nero muove per primo"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "Post"
@@ -1817,7 +1825,7 @@ msgstr "Elaborazione…"
 msgid "Prompt saved"
 msgstr "Prompt salvato"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "Proprietà"
 
@@ -1888,7 +1896,7 @@ msgstr "Pertinenza {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Pertinenza {relevance}, interesse {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "Rivincita"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "Invia di nuovo l'email"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "Abbandona"
 
@@ -2024,7 +2032,7 @@ msgstr "Sabato"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "Salva"
 msgid "Saving..."
 msgstr "Salvataggio in corso..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Punteggio accettato — in attesa di {opponentName}"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "Punteggio concordato"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "Seleziona"
 msgid "Select a field"
 msgstr "Seleziona un campo"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "Seleziona un amico..."
 
@@ -2233,10 +2245,6 @@ msgstr "Disconnessione in corso..."
 msgid "Single line of text only"
 msgstr "Solo una singola riga di testo"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "Salta il tuo turno e passa al tuo avversario."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "Sorgenti"
 msgid "Spacious"
 msgstr "Spazioso"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "Inizia una nuova partita di Go"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "Inizia partita"
 
@@ -2266,8 +2274,8 @@ msgstr "Inizia partita"
 msgid "Start the discussion by adding the first comment."
 msgstr "Avvia la discussione aggiungendo il primo commento."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "Smetti di seguire"
 
@@ -2297,7 +2305,7 @@ msgstr "Domenica"
 msgid "Switch to view 1-9"
 msgstr "Passa alla vista 1-9"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "Errore API imprevisto"
 msgid "United States"
 msgstr "Stati Uniti"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "Visualizzatore video: {0}"
 msgid "View all notifications"
 msgstr "Visualizza tutte le notifiche"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "Visualizza e modifica i dettagli dell'elemento"
 
@@ -2564,8 +2572,8 @@ msgstr "Controlli di visualizzazione"
 msgid "Voice recording is not supported in this browser"
 msgstr "La registrazione vocale non è supportata in questo browser"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "Segui"
 
@@ -2587,12 +2595,12 @@ msgstr "Abbiamo inviato un codice di verifica a <0>{0}</0>. Inserisci il codice 
 msgid "Wednesday"
 msgstr "Mercoledì"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "Bianco"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "Catture del bianco:"
 
@@ -2604,7 +2612,7 @@ msgstr "Pietra bianca in {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Territorio bianco in {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "Tu"
 
@@ -2612,11 +2620,11 @@ msgstr "Tu"
 msgid "You do not have access to this section."
 msgstr "Non hai accesso a questa sezione."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "Ti sei arreso — vince {opponentName}"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "Hai vinto!"
 
@@ -2628,7 +2636,7 @@ msgstr "Il tuo account è stato spostato qui da {source}. Finché non lo elimini
 msgid "Your attachments will be lost."
 msgstr "I tuoi allegati andranno persi."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "La tua mossa"
 

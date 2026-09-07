@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#ه} other {#ه}}"
 msgid "{entityLabel} name"
 msgstr "ناوی {entityLabel}"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} خاڵەکەی قبوڵ کرد"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} یەکسانیەکەی ڕەتکردەوە"
@@ -72,7 +76,11 @@ msgstr "{name} پێشنیاری یەکسانی کرد"
 msgid "{name} resigned"
 msgstr "{name} وازی هێنا"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} یاری دەستپێکردەوە"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} هەروەها تێپەڕاند. پشتڕاستکردنەوە تەختەکە دەژمێرێت و خاڵێک پێشنیار دەکات کە هەردووکتان دەبێت لەسەری ڕێک بکەون."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} هەروەها تێپەڕاند. پشتڕاستکردنە
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} پێشنیاری یەکسانی کرد"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} خۆی بەدەستەوەدا — تۆ بردت!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "{opponentName} بردی"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "نۆرەی {opponentName}"
 
@@ -109,7 +117,7 @@ msgstr "تەختەی Go-ی {size}×{size}، نۆرەی تۆیە. کلیلی تی
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "تەختەی Go-ی {size}×{size}، نۆرەی تۆیە. کلیلی تیرەکان بەکاربێنە بۆ گەشت و Enter یان Space بۆ دانانی بەردی سپی."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} یاری کرد <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {# وەڵام} other {+# وەڵامی ز�
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {پێڕست بکەرەوە (# ئاگادارکردنەوەی نەخوێندراو)} other {پێڕست بکەرەوە (# ئاگادارکردنەوەی نەخوێندراو)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} بردی — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "جۆری هەژمار"
 msgid "Active games"
 msgstr "یارییە چالاکەکان"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "چالاکی"
 
@@ -213,11 +221,11 @@ msgstr "زیادکردنی بڕگەی لیستی پشکنین"
 msgid "Add field"
 msgstr "زیادکردنی خانە"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "زیادکردنی هاوڕێیان"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "هاوڕێیان لە ئەپی خەڵک زیاد بکە بۆ دەستپێکردنی یاری"
 
@@ -299,7 +307,7 @@ msgstr "هەر شتێک بەم لێدوانە بەشداری کردبێت وەر
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "ئایا دڵنیایت لە سڕینەوەی \"{0}\"؟"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "ئایا دڵنیایت لە سڕینەوەی \"{title}\"؟ ئەم کردارە ناگەڕێتەوە."
 
@@ -365,25 +373,25 @@ msgstr "گەڕانەوە"
 msgid "Back to home"
 msgstr "گەڕانەوە بۆ ماڵەوە"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "بانەر"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "بانەر لابرا"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "بانەر نوێکرایەوە"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "ڕەش"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "گرتنی ڕەش:"
 
@@ -452,7 +460,7 @@ msgstr "کامێرا بەردەست نییە"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "هەڵوەشاندنەوە"
 
@@ -492,7 +500,7 @@ msgstr "گۆڕدرا"
 msgid "Changed {field}"
 msgstr "{field} گۆڕدرا"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "گفتوگۆ"
 
@@ -513,11 +521,11 @@ msgstr "یارییەک هەڵبژێرە لە لاتەنیشت یان نوێیە�
 msgid "Choose language"
 msgstr "زمان هەڵبژێرە"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "بەرامبەر هەڵبژێرە"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "کردارەکانی سەرنج"
 msgid "Comments"
 msgstr "لێدوانەکان"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "لێدوانەکان ({0})"
 
@@ -697,7 +705,7 @@ msgstr "نەکرا ڕاستاندنەوە دەست پێ بکات. تکایە د�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "نەتوانرا بەو هەژمارە پشتڕاست بکرێتەوە. تکایە دووبارە هەوڵ بدەرەوە."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "ژماردن — لەسەر ئەنجام ڕێک بکەون یان بەردەوام بن"
 
@@ -729,7 +737,7 @@ msgstr "{field} دروستکرا"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "دروستکردن..."
 
@@ -779,7 +787,7 @@ msgstr "ڕیزکردنی بنەڕەت"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "سڕینەوە"
@@ -800,7 +808,7 @@ msgstr "سڕینەوەی لێدوان"
 msgid "Delete field"
 msgstr "سڕینەوەی خانە"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "سڕینەوەی یاری"
 
@@ -808,9 +816,9 @@ msgstr "سڕینەوەی یاری"
 msgid "Delete game?"
 msgstr "یارییەکە بسڕدرێتەوە؟"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "سڕینەوەی بڕگە"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "لەگەڵ ئەو نەخشەیەی داواکراوە ناگونجێت"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "تەواوبوو"
@@ -914,8 +922,8 @@ msgstr "داگرتن"
 msgid "Download failed"
 msgstr "داگرتن سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "یەکسان"
 
@@ -923,7 +931,7 @@ msgstr "یەکسان"
 msgid "Draw agreed"
 msgstr "ڕێککەوتن لەسەر یەکسانی"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "یەکسانی پێشنیار کرا — چاوەڕێی {opponentName}"
 
@@ -990,11 +998,11 @@ msgstr "خاڵی یەکترگرتنی بەتاڵی {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "خاڵی یەکترگرتنی بەتاڵی {colLabel}{rowLabel}، کلیک یان Enter بکە بۆ دانان"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "کۆتایی یارییەکە"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "کۆتایی یارییەکە؟"
 
@@ -1002,7 +1010,7 @@ msgstr "کۆتایی یارییەکە؟"
 msgid "Enter a valid number"
 msgstr "ژمارەیەکی دروست بنووسە"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "دەقی پشتیوانی بنووسە (markdown پشتیوانی دەکرێت)..."
 
@@ -1014,7 +1022,7 @@ msgstr "ئەو کۆدە بنووسە کە لە ئیمەیڵەکەتدا هاتو
 msgid "Enter your authenticator code"
 msgstr "کۆدی ڕاستاندنەکەت بنووسە"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "هەڵە"
 
@@ -1037,11 +1045,11 @@ msgstr "URLی دەرەکی"
 msgid "Extra large"
 msgstr "زۆر گەورە"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "وەرگرتنی یەکسانی سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "وەرگرتنی خاڵ سەرکەوتوو نەبوو"
 
@@ -1063,11 +1071,11 @@ msgstr "دروستکردنی یاری سەرکەوتوو نەبوو"
 msgid "Failed to create link"
 msgstr "دروستکردنی بەستەر سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "دروستکردنی یاری دووبارە سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "ڕەتکردنەوەی یەکسانی سەرکەوتوو نەبوو"
 
@@ -1083,7 +1091,7 @@ msgstr "سڕینەوەی هاوپێچ سەرکەوتوو نەبوو"
 msgid "Failed to delete comment"
 msgstr "سڕینەوەی بۆچوون سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "سڕینەوەی یاری سەرکەوتوو نەبوو"
 
@@ -1099,7 +1107,11 @@ msgstr "وەرگرتنی Token ـی RSS سەرکەوتوو نەبوو"
 msgid "Failed to load"
 msgstr "بارکردن سەرکەوتوو نەبوو"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "بانەرەکە بار نەکرا"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "بارکردنی مێژوو سەرکەوتوو نەبوو"
 
@@ -1107,8 +1119,8 @@ msgstr "بارکردنی مێژوو سەرکەوتوو نەبوو"
 msgid "Failed to load image"
 msgstr "وێنەکە بار نەکرا"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "بارکردنی بڕگە سەرکەوتوو نەبوو"
 
@@ -1120,7 +1132,7 @@ msgstr "بارکردنی Promptـەکان سەرکەوتوو نەبوو"
 msgid "Failed to load video"
 msgstr "ڤیدیۆکە بار نەکرا"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "ئەنجامدانی جوڵە سەرکەوتوو نەبوو"
 
@@ -1128,11 +1140,11 @@ msgstr "ئەنجامدانی جوڵە سەرکەوتوو نەبوو"
 msgid "Failed to move"
 msgstr "گواستنەوە سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "پێشنیاری یەکسانی سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "تێپەڕاندن سەرکەوتوو نەبوو"
 
@@ -1144,11 +1156,11 @@ msgstr "ناردنی بۆچوون سەرکەوتوو نەبوو"
 msgid "Failed to reset prompt"
 msgstr "ڕێکخستنەوەی Prompt سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "وازهێنان سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "بەردەوامبوونی یاری سەرکەوتوو نەبوو"
 
@@ -1164,11 +1176,11 @@ msgstr "پاشەکەوتکردن سەرکەوتوو نەبوو"
 msgid "Failed to save prompt"
 msgstr "پاشەکەوتکردنی Prompt سەرکەوتوو نەبوو"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "ناردن سەرکەوتوو نەبوو"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "نوێکردنەوەی پشتیوانی سەرکەوتوو نەبوو"
 
@@ -1226,17 +1238,17 @@ msgstr "لە ڕووکارەوە"
 msgid "Game created"
 msgstr "یاری دروست کرا"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "یاری سڕایەوە"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "یاری کۆتایی هات"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "بڕۆ"
 
@@ -1258,7 +1270,7 @@ msgstr "گرووپکردن بەپێی"
 msgid "Group: {0}"
 msgstr "گروپ: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "مێژوو"
 
@@ -1314,7 +1326,7 @@ msgstr "بەرواری نادروست"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "وا دیارە ئەو پەڕەیەی بەدوایدا دەگەڕێیت <0/>بوونی نییە یان سڕاوەتەوە."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "وردەکارییەکانی بڕگە"
 
@@ -1367,11 +1379,11 @@ msgstr "زیاتر باربکە"
 msgid "Loading content…"
 msgstr "ناوەڕۆک باردەکرێت…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "بڕگە بار دەکرێت"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "وردەکارییەکانی بڕگە بار دەکرێن"
 
@@ -1508,7 +1520,7 @@ msgstr "نوێ"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "یاری نوێ"
 
@@ -1533,11 +1545,11 @@ msgstr "هێشتا هیچ چالاکییەک نییە"
 msgid "No comments yet"
 msgstr "هێشتا هیچ بۆچوونێک نییە"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "هیچ هاوڕێیەک نەدۆزرایەوە"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "هێشتا هیچ هاوڕێیەک نییە"
 
@@ -1609,10 +1621,10 @@ msgstr "هیچ بینینێک نییە"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "ئاگادارکردنەوەکان: {0}"
 msgid "Number"
 msgstr "ژمارە"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "پێشنیاری وەکیەکی"
 
@@ -1670,11 +1682,11 @@ msgstr "ئۆه! پەڕە نەدۆزرایەوە!"
 msgid "Open actions"
 msgstr "کردارەکان بکەرەوە"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "کردنەوەی پانێڵی گفتوگۆ"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "کردنەوەی کردارەکانی یاری"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "خاوەن"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "باوان"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "تێپەڕاندن"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "نۆرەکە تێپەڕێنیت؟"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "تێپەڕاندن..."
 
@@ -1787,10 +1799,6 @@ msgstr "تکایە دووبارە هەوڵ بدەرەوە."
 msgid "Please wait a moment and try again."
 msgstr "تکایە کەمێک چاوەڕوان بە و دووبارە هەوڵ بدەوە."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "خاڵەکان بۆ ئەنجامی سپی زیاد دەکرێن بۆ قەرەبووکردنەوەی ڕەش کە یەکەم هەنگاو دەنێت"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "پۆستەکان"
@@ -1817,7 +1825,7 @@ msgstr "پرۆسەکردن…"
 msgid "Prompt saved"
 msgstr "پرۆمپت پاشەکەوت کرا"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "تایبەتمەندییەکان"
 
@@ -1888,7 +1896,7 @@ msgstr "پەیوەندیدارێتی {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "پەیوەندیدارێتی {relevance}، ئارەزوو {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "یاری دووبارە"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "ئیمەیڵ دووبارە بنێرە"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "دەستلەکارکێشانەوە"
 
@@ -2024,7 +2032,7 @@ msgstr "شەممە"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "پاشەکەوتکردن"
 msgid "Saving..."
 msgstr "پاشەکەوتکردن..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "خاڵ قبووڵکرا — چاوەڕێی {opponentName}"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "خاڵ ڕێککەوتنی لەسەر کرا"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "هەڵبژاردن"
 msgid "Select a field"
 msgstr "خانەیەک هەڵبژێرە"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "هاوڕێیەک هەڵبژێرە..."
 
@@ -2233,10 +2245,6 @@ msgstr "چوونە دەرەوە..."
 msgid "Single line of text only"
 msgstr "تەنها یەک ڕیز دەق"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "نۆرەکەت تێپەڕێنە و بیدە بە بەرامبەرەکەت."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "سەرچاوەکان"
 msgid "Spacious"
 msgstr "فراوان"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "یارییەکی نوێی Go دەستپێبکە"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "یاری دەستپێبکە"
 
@@ -2266,8 +2274,8 @@ msgstr "یاری دەستپێبکە"
 msgid "Start the discussion by adding the first comment."
 msgstr "بە زیادکردنی یەکەم لێدوان گفتوگۆ دەستپێبکە."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "وازبهێنە لە چاودێری"
 
@@ -2297,7 +2305,7 @@ msgstr "یەکشەممە"
 msgid "Switch to view 1-9"
 msgstr "بگۆڕە بۆ پیشاندانی ١-٩"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "هەڵەیەکی چاوەڕواننەکراوی API"
 msgid "United States"
 msgstr "ویلایەتە یەکگرتووەکان"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "بینەری ڤیدیۆ: {0}"
 msgid "View all notifications"
 msgstr "هەموو ئاگادارکردنەوەکان ببینە"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "وردەکارییەکانی بابەت ببینە و دەستکاری بکە"
 
@@ -2564,8 +2572,8 @@ msgstr "کۆنترۆڵەکانی بینین"
 msgid "Voice recording is not supported in this browser"
 msgstr "تۆمارکردنی دەنگ لەم وێبگەڕەدا پشتگیری ناکرێت"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "چاودێری"
 
@@ -2587,12 +2595,12 @@ msgstr "کۆدی پشتڕاستکردنەوەمان نارد بۆ <0>{0}</0>. ب
 msgid "Wednesday"
 msgstr "چوارشەممە"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "سپی"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "سپی گرتن:"
 
@@ -2604,7 +2612,7 @@ msgstr "بەردی سپی لە {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "خاکی سپی لە {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "تۆ"
 
@@ -2612,11 +2620,11 @@ msgstr "تۆ"
 msgid "You do not have access to this section."
 msgstr "دەستپێگەیشتنت بەم بەشە نییە."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "تۆ خۆت بەدەستەوەدا — {opponentName} بردی"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "تۆ دەبیت بە براوە!"
 
@@ -2628,7 +2636,7 @@ msgstr "هەژمارەکەت لە {source} بۆ ئێرە گواستراوەتە�
 msgid "Your attachments will be lost."
 msgstr "هاوپێچەکانت لەدەست دەچن."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "نۆرەی تۆ"
 

@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#тыд} other {#тыд}}"
 msgid "{entityLabel} name"
 msgstr "Назва {entityLabel}"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} прыняў лік"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} адхіліў нічыю"
@@ -72,7 +76,11 @@ msgstr "{name} прапанаваў нічыю"
 msgid "{name} resigned"
 msgstr "{name} здаўся"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} узнавіў гульню"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} таксама прапусціў. Пацверджанне падлічыць дошку і прапануе лік, з якім вы абодва павінны пагадзіцца."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} таксама прапусціў. Пацверджанн
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} прапанаваў нічыю"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} здаўся — вы перамаглі!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "Перамог {opponentName}"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "Ход {opponentName}"
 
@@ -109,7 +117,7 @@ msgstr "Дошка для Го {size}×{size}, ваш ход. Выкарысто
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "Дошка для Го {size}×{size}, ваш ход. Выкарыстоўвайце клавішы са стрэлкамі для навігацыі і Enter або Space, каб паставіць белы камень."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} зрабіў ход <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {# адказ} few {+# больш адк�
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Адкрыць меню (# непрачытанае апавяшчэнне)} few {Адкрыць меню (# непрачытаных апавяшчэнні)} many {Адкрыць меню (# непрачытаных апавяшчэнняў)} other {Адкрыць меню (# непрачытанага апавяшчэння)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "Перамог {winnerColor} — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "Тып уліковага запісу"
 msgid "Active games"
 msgstr "Актыўныя гульні"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "Актыўнасць"
 
@@ -213,11 +221,11 @@ msgstr "Дадаць пункт спіса"
 msgid "Add field"
 msgstr "Дадаць поле"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "Дадаць сяброў"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "Дадайце сяброў у дадатку People, каб пачаць гуляць"
 
@@ -299,7 +307,7 @@ msgstr "Усё, што падпісана на гэтую стужку, пера
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Вы ўпэўнены, што хочаце выдаліць \"{0}\"?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "Вы ўпэўнены, што хочаце выдаліць \"{title}\"? Гэтае дзеянне нельга адмяніць."
 
@@ -365,25 +373,25 @@ msgstr "Назад"
 msgid "Back to home"
 msgstr "На галоўную"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Банер"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "Банер выдалены"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "Банер абноўлены"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "Чорныя"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "Узяцці чорных:"
 
@@ -452,7 +460,7 @@ msgstr "Камера недаступная"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "Адмена"
 
@@ -492,7 +500,7 @@ msgstr "Зменена"
 msgid "Changed {field}"
 msgstr "Зменена {field}"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "Чат"
 
@@ -513,11 +521,11 @@ msgstr "Выберыце гульню з бакавой панэлі або па
 msgid "Choose language"
 msgstr "Выберыце мову"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "Выберыце суперніка"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "Дзеянні з каментарыем"
 msgid "Comments"
 msgstr "Каментарыі"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "Каментарыі ({0})"
 
@@ -697,7 +705,7 @@ msgstr "Не ўдалося пачаць паўторную аўтэнтыфік
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Не ўдалося пацвердзіць з гэтым уліковым запісам. Калі ласка, паспрабуйце яшчэ раз."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "Падлік — пагадзіцеся з лікам або працягвайце гульню"
 
@@ -729,7 +737,7 @@ msgstr "Створана {field}"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "Стварэнне..."
 
@@ -779,7 +787,7 @@ msgstr "Сартаванне па змаўчанні"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Выдаліць"
@@ -800,7 +808,7 @@ msgstr "Выдаліць каментарый"
 msgid "Delete field"
 msgstr "Выдаліць поле"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "Выдаліць гульню"
 
@@ -808,9 +816,9 @@ msgstr "Выдаліць гульню"
 msgid "Delete game?"
 msgstr "Выдаліць гульню?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "Выдаліць элемент"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "Не адпавядае патрэбнаму шаблону"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "Гатова"
@@ -914,8 +922,8 @@ msgstr "Спампаваць"
 msgid "Download failed"
 msgstr "Не ўдалося спампаваць"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "Нічыя"
 
@@ -923,7 +931,7 @@ msgstr "Нічыя"
 msgid "Draw agreed"
 msgstr "Нічыя пагоджана"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Прапанавана нічыя — чаканне {opponentName}"
 
@@ -990,11 +998,11 @@ msgstr "Пустое перасячэнне {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Пустое перасячэнне {colLabel}{rowLabel}, націсніце або націсніце Enter, каб размясціць"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "Скончыць гульню"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "Скончыць гульню?"
 
@@ -1002,7 +1010,7 @@ msgstr "Скончыць гульню?"
 msgid "Enter a valid number"
 msgstr "Увядзіце сапраўдны нумар"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "Увядзіце тэкст банера (падтрымліваецца markdown)..."
 
@@ -1014,7 +1022,7 @@ msgstr "Увядзіце код з вашай электроннай пошты"
 msgid "Enter your authenticator code"
 msgstr "Увядзіце код з праграмы-аўтэнтыфікатара"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "Памылка"
 
@@ -1037,11 +1045,11 @@ msgstr "Знешні URL"
 msgid "Extra large"
 msgstr "Вельмі вялікі"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "Не ўдалося прыняць нічыю"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "Не ўдалося прыняць лік"
 
@@ -1063,11 +1071,11 @@ msgstr "Не ўдалося стварыць гульню"
 msgid "Failed to create link"
 msgstr "Не ўдалося стварыць спасылку"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "Не ўдалося стварыць перагульванне"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "Не ўдалося адхіліць нічыю"
 
@@ -1083,7 +1091,7 @@ msgstr "Не ўдалося выдаліць укладанне"
 msgid "Failed to delete comment"
 msgstr "Не ўдалося выдаліць каментарый"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "Не ўдалося выдаліць гульню"
 
@@ -1099,7 +1107,11 @@ msgstr "Не ўдалося атрымаць RSS токен"
 msgid "Failed to load"
 msgstr "Не ўдалося загрузіць"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "Не ўдалося загрузіць банер"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "Не ўдалося загрузіць гісторыю"
 
@@ -1107,8 +1119,8 @@ msgstr "Не ўдалося загрузіць гісторыю"
 msgid "Failed to load image"
 msgstr "Не ўдалося загрузіць відарыс"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "Не ўдалося загрузіць элемент"
 
@@ -1120,7 +1132,7 @@ msgstr "Не ўдалося загрузіць запыты"
 msgid "Failed to load video"
 msgstr "Не ўдалося загрузіць відэа"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "Не ўдалося зрабіць ход"
 
@@ -1128,11 +1140,11 @@ msgstr "Не ўдалося зрабіць ход"
 msgid "Failed to move"
 msgstr "Не ўдалося перамясціць"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "Не ўдалося прапанаваць нічыю"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "Не ўдалося прапусціць"
 
@@ -1144,11 +1156,11 @@ msgstr "Не ўдалося апублікаваць каментарый"
 msgid "Failed to reset prompt"
 msgstr "Не ўдалося скінуць запыт"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "Не ўдалося здацца"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "Не ўдалося працягнуць гульню"
 
@@ -1164,11 +1176,11 @@ msgstr "Не ўдалося захаваць"
 msgid "Failed to save prompt"
 msgstr "Не ўдалося захаваць запыт"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "Не ўдалося адправіць"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "Не ўдалося абнавіць банер"
 
@@ -1226,17 +1238,17 @@ msgstr "З тэмы"
 msgid "Game created"
 msgstr "Гульня створана"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "Гульня выдалена"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "Канец гульні"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "Перайсці"
 
@@ -1258,7 +1270,7 @@ msgstr "Групаваць па"
 msgid "Group: {0}"
 msgstr "Група: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "Гісторыя"
 
@@ -1314,7 +1326,7 @@ msgstr "Няправільная дата"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Здаецца, старонка, якую вы шукаеце, <0/>не існуе або была выдалена."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "Дэталі элемента"
 
@@ -1367,11 +1379,11 @@ msgstr "Загрузіць больш"
 msgid "Loading content…"
 msgstr "Загрузка змесціва…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "Загрузка элемента"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "Загрузка дэталяў элемента"
 
@@ -1508,7 +1520,7 @@ msgstr "Новы"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "Новая гульня"
 
@@ -1533,11 +1545,11 @@ msgstr "Пакуль няма актыўнасці"
 msgid "No comments yet"
 msgstr "Пакуль няма каментароў"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "Сяброў не знойдзена"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "Пакуль няма сяброў"
 
@@ -1609,10 +1621,10 @@ msgstr "Праглядаў няма"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "Апавяшчэнні: {0}"
 msgid "Number"
 msgstr "Лік"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "Прапанаваць нічыю"
 
@@ -1670,11 +1682,11 @@ msgstr "Вой! Старонка не знойдзена!"
 msgid "Open actions"
 msgstr "Адкрыць дзеянні"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "Адкрыць панэль чату"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "Адкрыць дзеянні гульні"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "Уладальнік"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "Бацькоўскі"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "Прапусціць"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "Прапусціць ход?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "Прапускаем..."
 
@@ -1787,10 +1799,6 @@ msgstr "Паспрабуйце яшчэ раз."
 msgid "Please wait a moment and try again."
 msgstr "Калі ласка, пачакайце крыху і паспрабуйце зноў."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "Балы, дададзеныя да рахунку Белых для кампенсацыі першага ходу Чорных"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "Пасты"
@@ -1817,7 +1825,7 @@ msgstr "Апрацоўка…"
 msgid "Prompt saved"
 msgstr "Падказка захавана"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "Уласцівасці"
 
@@ -1888,7 +1896,7 @@ msgstr "Рэлевантнасць {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Рэлевантнасць {relevance}, цікавасць {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "Reматч"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "Адправіць ліст паўторна"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "Здацца"
 
@@ -2024,7 +2032,7 @@ msgstr "Субота"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "Захаваць"
 msgid "Saving..."
 msgstr "Захаванне..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Лік прыняты — чаканне {opponentName}"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "Лік узгоднены"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "Абраць"
 msgid "Select a field"
 msgstr "Абярыце поле"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "Абярыце сябра..."
 
@@ -2233,10 +2245,6 @@ msgstr "Выхад..."
 msgid "Single line of text only"
 msgstr "Толькі адзін радок тэксту"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "Прапусціце свой ход і перадайце суперніку."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "Крыніцы"
 msgid "Spacious"
 msgstr "Прасторны"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "Пачаць новую гульню ў Го"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "Пачаць гульню"
 
@@ -2266,8 +2274,8 @@ msgstr "Пачаць гульню"
 msgid "Start the discussion by adding the first comment."
 msgstr "Пачніце абмеркаванне, дадаўшы першы каментарый."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "Спыніць сачэнне"
 
@@ -2297,7 +2305,7 @@ msgstr "Нядзеля"
 msgid "Switch to view 1-9"
 msgstr "Пераключыцца на выгляд 1-9"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "Нечаканая памылка API"
 msgid "United States"
 msgstr "Злучаныя Штаты"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "Прагляд відэа: {0}"
 msgid "View all notifications"
 msgstr "Паглядзець усе апавяшчэнні"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "Паглядзіце і адрэдагуйце дэталі элемента"
 
@@ -2564,8 +2572,8 @@ msgstr "Элементы кіравання выглядам"
 msgid "Voice recording is not supported in this browser"
 msgstr "Запіс голасу не падтрымліваецца ў гэтым браўзеры"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "Сачыць"
 
@@ -2587,12 +2595,12 @@ msgstr "Мы адправілі код пацвярджэння на <0>{0}</0>.
 msgid "Wednesday"
 msgstr "Серада"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "Белыя"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "Белыя ўзялі:"
 
@@ -2604,7 +2612,7 @@ msgstr "Белы камень на {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Тэрыторыя белых на {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "Вы"
 
@@ -2612,11 +2620,11 @@ msgstr "Вы"
 msgid "You do not have access to this section."
 msgstr "У вас няма доступу да гэтага раздзела."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "Вы здаліся — перамог {opponentName}"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "Вы перамаглі!"
 
@@ -2628,7 +2636,7 @@ msgstr "Ваш акаўнт быў перанесены сюды з {source}. П
 msgid "Your attachments will be lost."
 msgstr "Вашы ўкладанні будуць страчаны."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "Ваш ход"
 

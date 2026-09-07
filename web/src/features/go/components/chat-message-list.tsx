@@ -44,6 +44,9 @@ export function ChatMessageList({
         drawOffered: (name) => t`${name} offered a draw`,
         drawAgreed: t`Draw agreed`,
         drawDeclined: (name) => t`${name} declined the draw`,
+        scoreAccepted: (name) => t`${name} accepted the score`,
+        scoreAgreed: t`Score agreed`,
+        scoreResumed: (name) => t`${name} resumed play`,
       }}
       renderMove={(message, isSent) => {
         // "Pass" is a stored sentinel (engine/server marker); localise it for

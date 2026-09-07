@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#וואָך} other {#וואָך}}"
 msgid "{entityLabel} name"
 msgstr "{entityLabel} נאָמען"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} האָט אָנגענומען דעם סקאָר"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} האָט אָפּגעזאָגט דעם גלײַך"
@@ -72,7 +76,11 @@ msgstr "{name} האָט פֿאָרגעלייגט אַ גלײַך"
 msgid "{name} resigned"
 msgstr "{name} האָט זיך אונטערגעגעבן"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} האָט ווידער אָנגעהויבן שפּילן"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} האָט אויך פּאַסירט. צושטימען וועט רעכענען די ברעט און פֿאָרלייגן אַ צאָל וואָס איר ביידע דאַרפֿט אָפּמאַכן."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} האָט אויך פּאַסירט. צושטימען וו
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} האָט פֿאָרגעלייגט אַ תּיקו"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} האט זיך איבערגעגעבן — דו האסט געוואונען!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "{opponentName} געווינט"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "{opponentName}ס צוג"
 
@@ -109,7 +117,7 @@ msgstr "{size}×{size} Go־ברעט, אײַער ריי. ניצט פֿײַל־ט�
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "{size}×{size} Go־ברעט, אײַער ריי. ניצט פֿײַל־טאַסטן צו נאַווי און Enter אָדער Space צו לייגן אַ ווײַסן שטיין."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} האָט געשפּילט <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {# ענטפֿער} other {+# מער ענ�
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {עפֿנט מעניו (# אומגעלײענטע מעלדונג)} other {עפֿנט מעניו (# אומגעלײענטע מעלדונגען)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} געווינט — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "קאָנטע סאָרט"
 msgid "Active games"
 msgstr "אַקטיווע שפּילן"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "אַקטיוויטעט"
 
@@ -213,11 +221,11 @@ msgstr "צולייגן טשעקליסטע פּונקט"
 msgid "Add field"
 msgstr "צולייגן פֿעלד"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "צולייגן פֿרײַנד"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "צולייגט פֿרײַנד אין דער מענטשן אַפּ צו אָנהייבן שפּילן"
 
@@ -299,7 +307,7 @@ msgstr "אַלץ וואָס איז אַבאָנירט אויף דעם פֿיד �
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "זענט איר זיכער איר ווילט אויסמעקן \"{0}\"?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "זענט איר זיכער איר ווילט אויסמעקן \"{title}\"? די אַקציע קען נישט ווערן אומגעקערט."
 
@@ -365,25 +373,25 @@ msgstr "צוריק"
 msgid "Back to home"
 msgstr "צוריק צום הויז"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "באַנער"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "באַנער אַראָפּגענומען"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "באַנער באַנײַט"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "שוואַרץ"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "שוואַרץ כאַפּט:"
 
@@ -452,7 +460,7 @@ msgstr "די קאַמערע איז נישט פֿאַראַן"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "אָפּזאָגן"
 
@@ -492,7 +500,7 @@ msgstr "געענדערט"
 msgid "Changed {field}"
 msgstr "געענדערט {field}"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "שמועס"
 
@@ -513,11 +521,11 @@ msgstr "קלײַבט אַ שפּיל פֿון דער סײַדבאַר אָדער
 msgid "Choose language"
 msgstr "קלײַבט שפּראַך"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "קלײַבט קעגנער"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "קאָמענטאַר אַקציעס"
 msgid "Comments"
 msgstr "קאָמענטאַרן"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "קאָמענטאַרן ({0})"
 
@@ -697,7 +705,7 @@ msgstr "מע האָט נישט געקענט אָנהייבן ווידער־פֿ�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "מע האָט נישט געקענט באַשטעטיקן מיט יענעם קאָנטע. ביטע פּרובירט נאָך אַ מאָל."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "ציילן — קומט צו אן אפמאך וועגן די רעזולטאטן אדער שפילט ווייטער"
 
@@ -729,7 +737,7 @@ msgstr "באַשאַפֿן {field}"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "באַשאַפֿן..."
 
@@ -779,7 +787,7 @@ msgstr "פֿאַרשטאַנדלעך סאָרט"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "אויסמעקן"
@@ -800,7 +808,7 @@ msgstr "אויסמעקן קאָמענטאַר"
 msgid "Delete field"
 msgstr "אויסמעקן פֿעלד"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "אויסמעקן שפּיל"
 
@@ -808,9 +816,9 @@ msgstr "אויסמעקן שפּיל"
 msgid "Delete game?"
 msgstr "אויסמעקן דעם שפּיל?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "אויסמעקן פּונקט"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "פּאַסט נישט צום פֿאָדערטן מוסטער"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "געטאָן"
@@ -914,8 +922,8 @@ msgstr "אַראָפּלאָדן"
 msgid "Download failed"
 msgstr "אַראָפּלאָדן דורכגעפֿאַלן"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "גלייך"
 
@@ -923,7 +931,7 @@ msgstr "גלייך"
 msgid "Draw agreed"
 msgstr "מסכים געווען אויף אַ גלײַך"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "תּיקו פֿאָרגעלייגט — וואַרט אויף {opponentName}"
 
@@ -990,11 +998,11 @@ msgstr "ליידיקער קרײַצפּונקט {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ליידיקער קרײַצפּונקט {colLabel}{rowLabel}, קליקט אָדער דריקט Enter צו שטעלן"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "ענדיקן שפּיל"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "ענדיקן שפּיל?"
 
@@ -1002,7 +1010,7 @@ msgstr "ענדיקן שפּיל?"
 msgid "Enter a valid number"
 msgstr "גיט אַרײַן אַ גילטיקע נומער"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "גיט אַרײַן באַנער־טעקסט (markdown געשטיצט)..."
 
@@ -1014,7 +1022,7 @@ msgstr "גיט אַרײַן דעם קאָד פֿון אײַער בליצפּאָ
 msgid "Enter your authenticator code"
 msgstr "גיט אַרײַן אײַער אויטענטיפֿיקאַטאָר־קאָד"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "טעות"
 
@@ -1037,11 +1045,11 @@ msgstr "אינדרויסנדיקער URL"
 msgid "Extra large"
 msgstr "עקסטרא גרויס"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "ניט געלונגען אָנצונעמען תּיקו"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "ניט געלונגען אָנצונעמען די צאָל"
 
@@ -1063,11 +1071,11 @@ msgstr "ניט געלונגען צו שאַפֿן שפּיל"
 msgid "Failed to create link"
 msgstr "ניט געלונגען צו שאַפֿן לינק"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "ניט געלונגען צו שאַפֿן רעמאַטש"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "ניט געלונגען צו אָפּזאָגן תּיקו"
 
@@ -1083,7 +1091,7 @@ msgstr "ניט געלונגען צו מעקן בײַלאַגע"
 msgid "Failed to delete comment"
 msgstr "ניט געלונגען צו מעקן קאָמענטאַר"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "ניט געלונגען צו מעקן שפּיל"
 
@@ -1099,7 +1107,11 @@ msgstr "ניט געלונגען צו באַקומען RSS־טאָקען"
 msgid "Failed to load"
 msgstr "ניט געלונגען צו לאָדן"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "נישט געקאָנט לאָדן דעם באַנער"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "ניט געלונגען צו לאָדן היסטאָריע"
 
@@ -1107,8 +1119,8 @@ msgstr "ניט געלונגען צו לאָדן היסטאָריע"
 msgid "Failed to load image"
 msgstr "נישט געקאָנט לאָדן דאָס בילד"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "ניט געלונגען צו לאָדן פּונקט"
 
@@ -1120,7 +1132,7 @@ msgstr "ניט געלונגען צו לאָדן פּראָמפּטן"
 msgid "Failed to load video"
 msgstr "נישט געקאָנט לאָדן דעם ווידעאָ"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "ניט געלונגען צו טאָן גאַנג"
 
@@ -1128,11 +1140,11 @@ msgstr "ניט געלונגען צו טאָן גאַנג"
 msgid "Failed to move"
 msgstr "דורכפֿאַל צו באַוועגן"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "ניט געלונגען פֿאָרצולייגן תּיקו"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "ניט געלונגען צו פּאַסירן"
 
@@ -1144,11 +1156,11 @@ msgstr "ניט געלונגען צו פּאָסטן קאָמענטאַר"
 msgid "Failed to reset prompt"
 msgstr "ניט געלונגען צו אָפּשטעלן פּראָמפּט"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "ניט געלונגען צו רעזיגנירן"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "ניט געלונגען פֿאָרזעצן דאָס שפּיל"
 
@@ -1164,11 +1176,11 @@ msgstr "ניט געלונגען אויפֿצוהיטן"
 msgid "Failed to save prompt"
 msgstr "ניט געלונגען אויפֿצוהיטן פּראָמפּט"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "ניט געלונגען צו שיקן"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "ניט געלונגען צו דערהײַנטיקן באַנער"
 
@@ -1226,17 +1238,17 @@ msgstr "פֿון טעמע"
 msgid "Game created"
 msgstr "שפּיל געשאַפֿן"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "שפּיל אויסגעמעקט"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "שפּיל פֿאַרענדיקט"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "גיין"
 
@@ -1258,7 +1270,7 @@ msgstr "גרופּירן לויט"
 msgid "Group: {0}"
 msgstr "גרופּע: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "היסטאָריע"
 
@@ -1314,7 +1326,7 @@ msgstr "ניט גילטיקע דאַטע"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "עס װײַזט אױס אַז די זײַט װאָס איר זוכט <0/>עקזיסטירט נישט אָדער איז אַװעקגענומען געװאָרן."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "פּונקט־דעטאַלן"
 
@@ -1367,11 +1379,11 @@ msgstr "לאָדן מער"
 msgid "Loading content…"
 msgstr "לאָדט אינהאַלט…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "לאָדט פּונקט"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "לאָדט פּונקט־דעטאַלן"
 
@@ -1508,7 +1520,7 @@ msgstr "נײַ"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "נײַ שפּיל"
 
@@ -1533,11 +1545,11 @@ msgstr "נאָך קיין אַקטיוויטעט"
 msgid "No comments yet"
 msgstr "נאָך קיין באַמערקונגען"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "קיין פֿרײַנד ניט געפֿונען"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "נאָך קיין פֿרײַנד"
 
@@ -1609,10 +1621,10 @@ msgstr "קיין קוקן"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "מעלדונגען: {0}"
 msgid "Number"
 msgstr "נומער"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "פֿאָרשלאָג גלײַך"
 
@@ -1670,11 +1682,11 @@ msgstr "אױ! זײַטל ניט געפֿונען!"
 msgid "Open actions"
 msgstr "עפֿענען אַקציעס"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "עפֿן שמועס פּאַנעל"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "עפֿן שפּיל אַקציעס"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "אייגנטימער"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "עלטער"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "פּאַס"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "פּאַס דרײ?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "פּאַסירט..."
 
@@ -1787,10 +1799,6 @@ msgstr "ביטע פּרוביר ווידער."
 msgid "Please wait a moment and try again."
 msgstr "ביטע וואַרט אַ מאָמענט און פּרוּווט ווידער."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "פּונקטן צוגעלייגט צו ווײַסס צאָל צו קאָמפּענסירן פֿאַר שוואַרץ גייענדיק ערשט"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "פּאָסטן"
@@ -1817,7 +1825,7 @@ msgstr "פּראָצעסירונג…"
 msgid "Prompt saved"
 msgstr "פּראָמפּט אויפֿגעהיט"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "אייגנשאַפֿטן"
 
@@ -1888,7 +1896,7 @@ msgstr "רעלעוואַנץ {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "רעלעוואַנץ {relevance}, אינטערעס {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "ווידערמאַטש"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "שיק די בליצפּאָסט נאָך אַ מאָל"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "רעזיגנירן"
 
@@ -2024,7 +2032,7 @@ msgstr "שבת"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "היט אויף"
 msgid "Saving..."
 msgstr "היטן..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "צאָל אָנגענומען — וואַרט אויף {opponentName}"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "דער סקאָר איז אָפּגעמאַכט"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "קלײַב"
 msgid "Select a field"
 msgstr "קלײַב אַ פֿעלד"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "קלײַב אַ פֿרײַנד..."
 
@@ -2233,10 +2245,6 @@ msgstr "ארויסמעלדן זיך..."
 msgid "Single line of text only"
 msgstr "בלויז איין שורה טעקסט"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "איבערשפּרינג אײַער ריי און גיב איבער צום קעגנער."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "מקורים"
 msgid "Spacious"
 msgstr "ברייט"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "הייב אָן אַ נײַ Go־שפּיל"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "הייב אָן שפּיל"
 
@@ -2266,8 +2274,8 @@ msgstr "הייב אָן שפּיל"
 msgid "Start the discussion by adding the first comment."
 msgstr "הייב אָן די דיסקוסיע מיטן צולייגן דעם ערשטן קאָמענטאַר."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "הער אויף נאָכקוקן"
 
@@ -2297,7 +2305,7 @@ msgstr "זונטיק"
 msgid "Switch to view 1-9"
 msgstr "ביט איבער צו ראַם 1-9"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "אומדערװאַרטע API־טעות"
 msgid "United States"
 msgstr "פֿאַראייניקטע שטאַטן"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "ווידעאָ־ווײַזער: {0}"
 msgid "View all notifications"
 msgstr "זע אַלע נאָטיפֿיקאַציעס"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "זע און רעדאַקטיר אַרטיקל־פּרטים"
 
@@ -2564,8 +2572,8 @@ msgstr "בליק־קאָנטראָלן"
 msgid "Voice recording is not supported in this browser"
 msgstr "קול רעקאָרדירונג ווערט נישט געשטיצט אין דעם בלעטערער"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "נאָכקוק"
 
@@ -2587,12 +2595,12 @@ msgstr "מיר האָבן געשיקט אַ באַשטעטיקונג־קאָד �
 msgid "Wednesday"
 msgstr "מיטוואָך"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "ווײַס"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "ווײַס נעמט אַראָפּ:"
 
@@ -2604,7 +2612,7 @@ msgstr "ווײַסער שטיין אויף {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "ווײַסער טעריטאָריע אויף {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "איר"
 
@@ -2612,11 +2620,11 @@ msgstr "איר"
 msgid "You do not have access to this section."
 msgstr "איר האָט נישט קיין צוטריט צו דעם אָפּטייל."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "דו האסט זיך איבערגעגעבן — {opponentName} געווינט"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "איר געווינט!"
 
@@ -2628,7 +2636,7 @@ msgstr "דיין קאנטע איז אהערגעברענגט ווארן פון {s
 msgid "Your attachments will be lost."
 msgstr "דײַנע צוגעלייגטע טעקעס וועלן פֿאַרלוירן גיין."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "אײַער צוג"
 

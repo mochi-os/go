@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#w} other {#w}}"
 msgid "{entityLabel} name"
 msgstr "{entityLabel}-naam"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} het die telling aanvaar"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} het die gelykop van die hand gewys"
@@ -72,7 +76,11 @@ msgstr "{name} het 'n gelykop aangebied"
 msgid "{name} resigned"
 msgstr "{name} het oorgegee"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} het die spel hervat"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} het ook oorgegee. Bevestiging sal die bord tel en 'n telling voorstel waaroor julle albei moet saamstem."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} het ook oorgegee. Bevestiging sal die bord tel en 'n tell
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} het gelykop aangebied"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} het tou opgegooi — jy wen!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "{opponentName} wen"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "{opponentName} se beurt"
 
@@ -109,7 +117,7 @@ msgstr "{size}×{size} Go-bord, jou beurt. Gebruik pyltjiesleutels om te navigee
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "{size}×{size} Go-bord, jou beurt. Gebruik pyltjiesleutels om te navigeer en Enter of Spasie om 'n wit steen te plaas."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} het <0>{moveLabel}</0> gespeel"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {# antwoord} other {+# meer antwoorde}}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Open kieslys (# ongeleeste kennisgewing)} other {Open kieslys (# ongeleeste kennisgewings)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} wen — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "Rekeningtipe"
 msgid "Active games"
 msgstr "Aktiewe speletjies"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "Aktiwiteit"
 
@@ -213,11 +221,11 @@ msgstr "Voeg kontrolelysitem by"
 msgid "Add field"
 msgstr "Voeg veld by"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "Voeg vriende by"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "Voeg vriende by in die Mense-app om te begin speel"
 
@@ -299,7 +307,7 @@ msgstr "Enigiets wat op hierdie voer ingeteken is, sal dit nie meer ontvang nie.
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Is jy seker jy wil \"{0}\" verwyder?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "Is jy seker jy wil \"{title}\" verwyder? Hierdie aksie kan nie ongedaan gemaak word nie."
 
@@ -365,25 +373,25 @@ msgstr "Terug"
 msgid "Back to home"
 msgstr "Terug na tuis"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Banier"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "Banier verwyder"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "Banier bygewerk"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "Swart"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "Swart vang:"
 
@@ -452,7 +460,7 @@ msgstr "Kamera nie beskikbaar nie"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "Kanselleer"
 
@@ -492,7 +500,7 @@ msgstr "Verander"
 msgid "Changed {field}"
 msgstr "{field} verander"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "Klets"
 
@@ -513,11 +521,11 @@ msgstr "Kies 'n speletjie uit die sybalk of begin 'n nuwe een."
 msgid "Choose language"
 msgstr "Kies taal"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "Kies opponent"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "Kommentaaraksies"
 msgid "Comments"
 msgstr "Kommentare"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "Kommentaar ({0})"
 
@@ -697,7 +705,7 @@ msgstr "Kon nie herverifikasie begin nie. Probeer asseblief weer."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Kon nie met daardie rekening verifieer nie. Probeer asseblief weer."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "Tel — stem saam oor die telling of speel voort"
 
@@ -729,7 +737,7 @@ msgstr "{field} geskep"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "Skep..."
 
@@ -779,7 +787,7 @@ msgstr "Verstek sortering"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Verwyder"
@@ -800,7 +808,7 @@ msgstr "Verwyder kommentaar"
 msgid "Delete field"
 msgstr "Verwyder veld"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "Verwyder speletjie"
 
@@ -808,9 +816,9 @@ msgstr "Verwyder speletjie"
 msgid "Delete game?"
 msgstr "Verwyder spel?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "Verwyder item"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "Stem nie met die vereiste patroon ooreen nie"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "Klaar"
@@ -914,8 +922,8 @@ msgstr "Laai af"
 msgid "Download failed"
 msgstr "Aflaai het misluk"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "Gelykop"
 
@@ -923,7 +931,7 @@ msgstr "Gelykop"
 msgid "Draw agreed"
 msgstr "Gelykop ooreengekom"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Gelykop aangebied — wag vir {opponentName}"
 
@@ -990,11 +998,11 @@ msgstr "Leë kruising {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Leë kruising {colLabel}{rowLabel}, klik of druk Enter om te plaas"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "Beëindig spel"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "Beëindig spel?"
 
@@ -1002,7 +1010,7 @@ msgstr "Beëindig spel?"
 msgid "Enter a valid number"
 msgstr "Voer 'n geldige nommer in"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "Tik banierteks in (markdown ondersteun)..."
 
@@ -1014,7 +1022,7 @@ msgstr "Voer die kode uit jou e-pos in"
 msgid "Enter your authenticator code"
 msgstr "Voer jou verifikator-kode in"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "Fout"
 
@@ -1037,11 +1045,11 @@ msgstr "Eksterne URL"
 msgid "Extra large"
 msgstr "Ekstra groot"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "Kon nie gelykop aanvaar nie"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "Kon nie telling aanvaar nie"
 
@@ -1063,11 +1071,11 @@ msgstr "Kon nie spel skep nie"
 msgid "Failed to create link"
 msgstr "Kon nie skakel skep nie"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "Kon nie herwedstryd skep nie"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "Kon nie gelykop afwys nie"
 
@@ -1083,7 +1091,7 @@ msgstr "Kon nie aanhangsel verwyder nie"
 msgid "Failed to delete comment"
 msgstr "Kon nie kommentaar verwyder nie"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "Kon nie spel verwyder nie"
 
@@ -1099,7 +1107,11 @@ msgstr "Kon nie RSS-token kry nie"
 msgid "Failed to load"
 msgstr "Kon nie laai nie"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "Kon nie banier laai nie"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "Kon nie geskiedenis laai nie"
 
@@ -1107,8 +1119,8 @@ msgstr "Kon nie geskiedenis laai nie"
 msgid "Failed to load image"
 msgstr "Kon nie prent laai nie"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "Kon nie item laai nie"
 
@@ -1120,7 +1132,7 @@ msgstr "Kon nie aanwysings laai nie"
 msgid "Failed to load video"
 msgstr "Kon nie video laai nie"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "Kon nie skuif maak nie"
 
@@ -1128,11 +1140,11 @@ msgstr "Kon nie skuif maak nie"
 msgid "Failed to move"
 msgstr "Kon nie skuif nie"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "Kon nie gelykop aanbied nie"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "Kon nie verbygaan nie"
 
@@ -1144,11 +1156,11 @@ msgstr "Kon nie kommentaar plaas nie"
 msgid "Failed to reset prompt"
 msgstr "Kon nie aanwysing herstel nie"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "Kon nie bedank nie"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "Kon nie spel hervat nie"
 
@@ -1164,11 +1176,11 @@ msgstr "Kon nie stoor nie"
 msgid "Failed to save prompt"
 msgstr "Kon nie aanwysing stoor nie"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "Kon nie stuur nie"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "Kon nie banier opdateer nie"
 
@@ -1226,17 +1238,17 @@ msgstr "Vanaf tema"
 msgid "Game created"
 msgstr "Spel geskep"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "Spel verwyder"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "Spel verby"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "Gaan"
 
@@ -1258,7 +1270,7 @@ msgstr "Groepeer volgens"
 msgid "Group: {0}"
 msgstr "Groep: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "Geskiedenis"
 
@@ -1314,7 +1326,7 @@ msgstr "Ongeldige datum"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Dit lyk of die bladsy wat jy soek <0/>nie bestaan nie of verwyder is."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "Itembesonderhede"
 
@@ -1367,11 +1379,11 @@ msgstr "Laai meer"
 msgid "Loading content…"
 msgstr "Inhoud word gelaai…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "Laai item"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "Laai itembesonderhede"
 
@@ -1508,7 +1520,7 @@ msgstr "Nuut"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "Nuwe spel"
 
@@ -1533,11 +1545,11 @@ msgstr "Nog geen aktiwiteit nie"
 msgid "No comments yet"
 msgstr "Nog geen kommentaar nie"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "Geen vriende gevind nie"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "Nog geen vriende nie"
 
@@ -1609,10 +1621,10 @@ msgstr "Geen aansigte"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "Kennisgewings: {0}"
 msgid "Number"
 msgstr "Nommer"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "Bied gelykop aan"
 
@@ -1670,11 +1682,11 @@ msgstr "Oeps! Bladsy nie gevind nie!"
 msgid "Open actions"
 msgstr "Maak aksies oop"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "Maak geselsiepaneel oop"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "Maak spelaksies oop"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "Eienaar"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "Ouer"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "Slaag oor"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "Slaag beurt oor?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "Besig om oor te slaan..."
 
@@ -1787,10 +1799,6 @@ msgstr "Probeer asseblief weer."
 msgid "Please wait a moment and try again."
 msgstr "Wag asseblief 'n oomblik en probeer weer."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "Points wat by Wit se telling gevoeg word om te vergoed dat Swart eerste speel"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "Plasings"
@@ -1817,7 +1825,7 @@ msgstr "Verwerk…"
 msgid "Prompt saved"
 msgstr "Aanwysing gestoor"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "Eienskappe"
 
@@ -1888,7 +1896,7 @@ msgstr "Relevansie {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Relevansie {relevance}, belangstelling {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "Hernuwe wedstryd"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "Stuur e-pos weer"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "Bedank"
 
@@ -2024,7 +2032,7 @@ msgstr "Saterdag"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "Stoor"
 msgid "Saving..."
 msgstr "Besig om te stoor..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Telling aanvaar — wag vir {opponentName}"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "Telling ooreengekom"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "Kies"
 msgid "Select a field"
 msgstr "Kies 'n veld"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "Kies 'n vriend..."
 
@@ -2233,10 +2245,6 @@ msgstr "Besig om af te meld..."
 msgid "Single line of text only"
 msgstr "Slegs enkelreël teks"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "Slaan jou beurt oor en gee oor aan jou teenstander."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "Bronne"
 msgid "Spacious"
 msgstr "Ruim"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "Begin 'n nuwe Go-speletjie"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "Begin speletjie"
 
@@ -2266,8 +2274,8 @@ msgstr "Begin speletjie"
 msgid "Start the discussion by adding the first comment."
 msgstr "Begin die bespreking deur die eerste kommentaar by te voeg."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "Hou op kyk"
 
@@ -2297,7 +2305,7 @@ msgstr "Sondag"
 msgid "Switch to view 1-9"
 msgstr "Skakel oor na aansig 1-9"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "Onverwagte API-fout"
 msgid "United States"
 msgstr "Verenigde State"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "Videokyker: {0}"
 msgid "View all notifications"
 msgstr "Bekyk alle kennisgewings"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "Bekyk en wysig item-besonderhede"
 
@@ -2564,8 +2572,8 @@ msgstr "Bekyk-kontroles"
 msgid "Voice recording is not supported in this browser"
 msgstr "Stemopname word nie in hierdie blaaier ondersteun nie"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "Kyk"
 
@@ -2587,12 +2595,12 @@ msgstr "Ons het 'n verifikasiekode na <0>{0}</0> gestuur. Voer die kode hieronde
 msgid "Wednesday"
 msgstr "Woensdag"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "Wit"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "Wit vang:"
 
@@ -2604,7 +2612,7 @@ msgstr "Wit steen by {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Wit gebied by {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "Jy"
 
@@ -2612,11 +2620,11 @@ msgstr "Jy"
 msgid "You do not have access to this section."
 msgstr "Jy het nie toegang tot hierdie afdeling nie."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "Jy het tou opgegooi — {opponentName} wen"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "Jy wen!"
 
@@ -2628,7 +2636,7 @@ msgstr "Jou rekening is hierheen geskuif vanaf {source}. Totdat jy dit daar uitv
 msgid "Your attachments will be lost."
 msgstr "Jou aanhegsels sal verlore gaan."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "Jou skuif"
 

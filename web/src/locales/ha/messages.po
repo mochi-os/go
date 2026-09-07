@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#mk} other {#mk}}"
 msgid "{entityLabel} name"
 msgstr "Sunan {entityLabel}"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} ya karɓi maki"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} ya ki canjaras"
@@ -72,7 +76,11 @@ msgstr "{name} ya ba da shawarar canjaras"
 msgid "{name} resigned"
 msgstr "{name} ya ja da"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} ya ci gaba da wasa"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} ya kuma wuce. Tabbatarwa zai ƙidaya allon kuma ya gabatar da maki da dole ku duka biyu ku yarda da shi."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} ya kuma wuce. Tabbatarwa zai ƙidaya allon kuma ya gabata
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ya ba da kunnen doki"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} ya mika wuya — ka yi nasara!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "{opponentName} ya yi nasara"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "Lokacin {opponentName}"
 
@@ -109,7 +117,7 @@ msgstr "Allon Go na {size}×{size}, juyinka. Yi amfani da maɓallan kibiya don k
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "Allon Go na {size}×{size}, juyinka. Yi amfani da maɓallan kibiya don kewayawa kuma Enter ko Space don sanya farin dutse."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} ya buga <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {Amsa #} other {+# ƙarin amsoshi}}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Buɗe menu (# sanarwar da ba a karanta ba)} other {Buɗe menu (# sanarwar da ba a karanta ba)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} ya yi nasara — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "Nau'in asusu"
 msgid "Active games"
 msgstr "Wasannin da ke kan ci gaba"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "Aiki"
 
@@ -213,11 +221,11 @@ msgstr "Ƙara abun checklist"
 msgid "Add field"
 msgstr "Ƙara fili"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "Ƙara abokai"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "Ƙara abokai a app ɗin People don fara wasa"
 
@@ -299,7 +307,7 @@ msgstr "Duk abin da ya biyan kuɗin wannan ciyarwar zai daina karɓarta. Za ka i
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Ka tabbata kana son goge \"{0}\"?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "Ka tabbata kana son goge \"{title}\"? Ba za a iya juya wannan aiki ba."
 
@@ -365,25 +373,25 @@ msgstr "Komawa"
 msgid "Back to home"
 msgstr "Komawa gida"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Banner"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "An cire banner"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "An sabunta banner"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "Baƙi"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "Baƙar ya kama:"
 
@@ -452,7 +460,7 @@ msgstr "Babu kyamara"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "Soke"
 
@@ -492,7 +500,7 @@ msgstr "An canza"
 msgid "Changed {field}"
 msgstr "An canza {field}"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "Chat"
 
@@ -513,11 +521,11 @@ msgstr "Zaɓi wasa daga sidebar ko fara sabo."
 msgid "Choose language"
 msgstr "Zaɓi harshe"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "Zaɓi abokin gaba"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "Ayyukan sharhi"
 msgid "Comments"
 msgstr "Sharhi"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "Sharhi ({0})"
 
@@ -697,7 +705,7 @@ msgstr "An kasa fara sake tantancewa. Don Allah a sake gwadawa."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "An kasa tabbatar da wannan asusun. Da fatan za a sake gwadawa."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "Kirga — ku yarda kan maki ko ku ci gaba da wasa"
 
@@ -729,7 +737,7 @@ msgstr "An ƙirƙiri {field}"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "Ana ƙirƙira..."
 
@@ -779,7 +787,7 @@ msgstr "Default sort"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Goge"
@@ -800,7 +808,7 @@ msgstr "Goge sharhi"
 msgid "Delete field"
 msgstr "Goge fili"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "Goge wasa"
 
@@ -808,9 +816,9 @@ msgstr "Goge wasa"
 msgid "Delete game?"
 msgstr "A goge wasan?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "Goge abu"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "Bai dace da tsarin da ake buƙata ba"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "An gama"
@@ -914,8 +922,8 @@ msgstr "Sauke"
 msgid "Download failed"
 msgstr "Saukarwa ta gaza"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "Kunnen kai"
 
@@ -923,7 +931,7 @@ msgstr "Kunnen kai"
 msgid "Draw agreed"
 msgstr "An yarda da canjaras"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "An ba da kunnen doki — ana jiran {opponentName}"
 
@@ -990,11 +998,11 @@ msgstr "Mahaɗar babu komai {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Mahaɗar babu komai {colLabel}{rowLabel}, danna ko matsa Enter don sanyawa"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "Ƙare wasa"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "A ƙare wasa?"
 
@@ -1002,7 +1010,7 @@ msgstr "A ƙare wasa?"
 msgid "Enter a valid number"
 msgstr "Shigar da lamba mai inganci"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "Shigar da rubutun banner (markdown ana goyon baya)..."
 
@@ -1014,7 +1022,7 @@ msgstr "Shigar da lambar daga imel ɗinka"
 msgid "Enter your authenticator code"
 msgstr "Shigar da lambar mai tantancewarka"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "Kuskure"
 
@@ -1037,11 +1045,11 @@ msgstr "URL na waje"
 msgid "Extra large"
 msgstr "Babba sosai"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "An gaza karɓar canjaras"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "An gaza karɓar maki"
 
@@ -1063,11 +1071,11 @@ msgstr "An gaza ƙirƙirar wasa"
 msgid "Failed to create link"
 msgstr "An gaza ƙirƙirar link"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "An gaza ƙirƙirar rematch"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "An gaza ƙin canjaras"
 
@@ -1083,7 +1091,7 @@ msgstr "An gaza share attachment"
 msgid "Failed to delete comment"
 msgstr "An gaza share comment"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "An gaza share wasa"
 
@@ -1099,7 +1107,11 @@ msgstr "An gaza samun RSS token"
 msgid "Failed to load"
 msgstr "An gaza loading"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "An kasa loda banner"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "An gaza loading tarihi"
 
@@ -1107,8 +1119,8 @@ msgstr "An gaza loading tarihi"
 msgid "Failed to load image"
 msgstr "An kasa loda hoton"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "An gaza loading abu"
 
@@ -1120,7 +1132,7 @@ msgstr "An gaza loading prompts"
 msgid "Failed to load video"
 msgstr "An kasa loda bidiyon"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "An gaza yin motsi"
 
@@ -1128,11 +1140,11 @@ msgstr "An gaza yin motsi"
 msgid "Failed to move"
 msgstr "An kasa matsawa"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "An gaza ba da canjaras"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "An gaza pass"
 
@@ -1144,11 +1156,11 @@ msgstr "An gaza post comment"
 msgid "Failed to reset prompt"
 msgstr "An gaza sake saita prompt"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "An gaza yin murabus"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "An gaza ci gaba da wasa"
 
@@ -1164,11 +1176,11 @@ msgstr "An gaza ajiyewa"
 msgid "Failed to save prompt"
 msgstr "An gaza ajiye prompt"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "An gaza aikawa"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "An gaza sabunta banner"
 
@@ -1226,17 +1238,17 @@ msgstr "Daga jigo"
 msgid "Game created"
 msgstr "An ƙirƙiri wasa"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "An share wasa"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "Wasan ya ƙare"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "Tafi"
 
@@ -1258,7 +1270,7 @@ msgstr "Haɗa bisa"
 msgid "Group: {0}"
 msgstr "Rukuni: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "Tarihi"
 
@@ -1314,7 +1326,7 @@ msgstr "Kwanan wata mara inganci"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Da alama shafin da kake nema <0/>babu shi ko an cire shi."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "Bayanan abu"
 
@@ -1367,11 +1379,11 @@ msgstr "Saukar da ƙari"
 msgid "Loading content…"
 msgstr "Ana loda abun ciki…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "Ana saukar da abu"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "Ana saukar da bayanan abu"
 
@@ -1508,7 +1520,7 @@ msgstr "Sabon"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "Sabon wasa"
 
@@ -1533,11 +1545,11 @@ msgstr "Babu aiki tukuna"
 msgid "No comments yet"
 msgstr "Babu sharhi tukuna"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "Babu abokai da aka samu"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "Babu abokai tukuna"
 
@@ -1609,10 +1621,10 @@ msgstr "Babu views"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "Sanarwa: {0}"
 msgid "Number"
 msgstr "Lamba"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "Ba da tayin canjaras"
 
@@ -1670,11 +1682,11 @@ msgstr "Kai! Ba a Sami Shafi Ba!"
 msgid "Open actions"
 msgstr "Buɗe ayyuka"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "Buɗe panel ɗin chat"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "Buɗe ayyukan wasa"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "Mai shi"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "Iyaye"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "Pass"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "Pass turn?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "Ana passing..."
 
@@ -1787,10 +1799,6 @@ msgstr "Da fatan za a sake gwadawa."
 msgid "Please wait a moment and try again."
 msgstr "Da fatan za a jira ɗan lokaci sannan a sake gwadawa."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "Maki da aka ƙara ga maki na White don rama Black yana tafiya farko"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "Sakonni"
@@ -1817,7 +1825,7 @@ msgstr "Ana sarrafawa…"
 msgid "Prompt saved"
 msgstr "An adana prompt"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "Halaye"
 
@@ -1888,7 +1896,7 @@ msgstr "Dacewa {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Dacewa {relevance}, sha'awa {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "Sake wasa"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "Sake aika imel"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "Yi murabus"
 
@@ -2024,7 +2032,7 @@ msgstr "Asabar"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "Adana"
 msgid "Saving..."
 msgstr "Ana adanawa..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "An amince da maki — ana jiran {opponentName}"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "An amince da maki"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "Zaɓi"
 msgid "Select a field"
 msgstr "Zaɓi filin"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "Zaɓi aboki..."
 
@@ -2233,10 +2245,6 @@ msgstr "Ana fita..."
 msgid "Single line of text only"
 msgstr "Layi ɗaya ne kawai na rubutu"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "Tsallake juyinka kuma ka ba abokin hamayyarka."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "Tushe"
 msgid "Spacious"
 msgstr "Faffaka"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "Fara sabon wasan Go"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "Fara wasa"
 
@@ -2266,8 +2274,8 @@ msgstr "Fara wasa"
 msgid "Start the discussion by adding the first comment."
 msgstr "Fara tattaunawa ta hanyar ƙara sharhi na farko."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "Daina kallo"
 
@@ -2297,7 +2305,7 @@ msgstr "Lahadi"
 msgid "Switch to view 1-9"
 msgstr "Sauya zuwa ra'ayi 1-9"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "Kuskuren API da ba a tsammani ba"
 msgid "United States"
 msgstr "Amurka"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "Mai duba bidiyo: {0}"
 msgid "View all notifications"
 msgstr "Kalli duk sanarwa"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "Kalla kuma gyara cikakkun bayanan abu"
 
@@ -2564,8 +2572,8 @@ msgstr "View controls"
 msgid "Voice recording is not supported in this browser"
 msgstr "Ba a goyon bayan rikodin murya a wannan burauzar ba"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "Kalle"
 
@@ -2587,12 +2595,12 @@ msgstr "Mun aika lambar tabbatarwa zuwa <0>{0}</0>. Shigar da lambar a ƙasa don
 msgid "Wednesday"
 msgstr "Laraba"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "Fari"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "Farar ya kama:"
 
@@ -2604,7 +2612,7 @@ msgstr "Farin dutse a {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Yankin farar a {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "Kai"
 
@@ -2612,11 +2620,11 @@ msgstr "Kai"
 msgid "You do not have access to this section."
 msgstr "Ba ka da damar shiga wannan sashe ba."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "Ka mika wuya — {opponentName} ya yi nasara"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "Kun yi nasara!"
 
@@ -2628,7 +2636,7 @@ msgstr "An ƙauri asusunka zuwa nan daga {source}. Sai ka goge shi a can, saƙon
 msgid "Your attachments will be lost."
 msgstr "Za a rasa fayilolin da ka makala."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "Move ɗinku"
 

@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#კვ} other {#კვ}}"
 msgid "{entityLabel} name"
 msgstr "{entityLabel}-ის სახელი"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name}-მა ანგარიში მიიღო"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name}-მა ფრე უარყო"
@@ -72,7 +76,11 @@ msgstr "{name}-მა ფრე შესთავაზა"
 msgid "{name} resigned"
 msgstr "{name}-მა დანებდა"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name}-მა თამაში განაახლა"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName}-მაც გაატარა. დასტური დაითვლის დაფას და შემოგთავაზებთ ქულას, რომელსაც ორივემ უნდა დაეთანხმოთ."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName}-მაც გაატარა. დასტური �
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName}-მა ფრე შემოგთავაზათ"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} დანებდა — თქვენ გაიმარჯვეთ!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "იმარჯვებს {opponentName}"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "{opponentName}-ის სვლაა"
 
@@ -109,7 +117,7 @@ msgstr "{size}×{size} Go დაფა, თქვენი სვლაა. ნ�
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "{size}×{size} Go დაფა, თქვენი რიგია. გამოიყენეთ ისრის კლავიშები ნავიგაციისთვის და Enter ან Space შავი ქვის დასადებად."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject}-მა ითამაშა <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, other {# პასუხი}}"
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, other {მენიუს გახსნა (# წაუკითხავი შეტყობინება)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "იმარჯვებს {winnerColor} — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "ანგარიშის ტიპი"
 msgid "Active games"
 msgstr "აქტიური თამაშები"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "აქტივობა"
 
@@ -213,11 +221,11 @@ msgstr "ჩამონათვალის ერთეულის დამ�
 msgid "Add field"
 msgstr "ველის დამატება"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "მეგობრების დამატება"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "დაამატეთ მეგობრები People აპში სათამაშოდ დასაწყებად"
 
@@ -299,7 +307,7 @@ msgstr "ყველაფერი, რაც ამ არხზეა გა�
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "დარწმუნებული ხართ, რომ გსურთ „{0}“-ის წაშლა?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "დარწმუნებული ხართ, რომ გსურთ „{title}“-ის წაშლა? მოქმედება შეუქცევადია."
 
@@ -365,25 +373,25 @@ msgstr "უკან"
 msgid "Back to home"
 msgstr "მთავარზე დაბრუნება"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "ბანერი"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "ბანერი წაიშალა"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "ბანერი განახლდა"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "შავი"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "შავის აღება:"
 
@@ -452,7 +460,7 @@ msgstr "კამერა მიუწვდომელია"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "გაუქმება"
 
@@ -492,7 +500,7 @@ msgstr "შეიცვალა"
 msgid "Changed {field}"
 msgstr "შეიცვალა {field}"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "ჩატი"
 
@@ -513,11 +521,11 @@ msgstr "აირჩიეთ თამაში გვერდითა პა
 msgid "Choose language"
 msgstr "აირჩიეთ ენა"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "აირჩიეთ ოპონენტი"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "კომენტარის მოქმედებები"
 msgid "Comments"
 msgstr "კომენტარები"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "კომენტარები ({0})"
 
@@ -697,7 +705,7 @@ msgstr "ხელახალი ავთენტიფიკაციის �
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ამ ანგარიშით ვერ მოხერხდა გადამოწმება. გთხოვთ, სცადოთ თავიდან."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "დათვლა — შეთანხმდით ქულებზე ან განაგრძეთ თამაში"
 
@@ -729,7 +737,7 @@ msgstr "შეიქმნა {field}"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "იქმნება..."
 
@@ -779,7 +787,7 @@ msgstr "ნაგულისხმევი დახარისხება"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "წაშლა"
@@ -800,7 +808,7 @@ msgstr "კომენტარის წაშლა"
 msgid "Delete field"
 msgstr "ველის წაშლა"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "თამაშის წაშლა"
 
@@ -808,9 +816,9 @@ msgstr "თამაშის წაშლა"
 msgid "Delete game?"
 msgstr "თამაშის წაშლა?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "ერთეულის წაშლა"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "არ შეესაბამება საჭირო შაბლონს"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "მზადაა"
@@ -914,8 +922,8 @@ msgstr "ჩამოტვირთვა"
 msgid "Download failed"
 msgstr "ჩამოტვირთვა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "ფრე"
 
@@ -923,7 +931,7 @@ msgstr "ფრე"
 msgid "Draw agreed"
 msgstr "ფრე შეთანხმდა"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "შემოთავაზებულია ფრე — ველოდები {opponentName}-ს"
 
@@ -990,11 +998,11 @@ msgstr "ცარიელი გადაკვეთა {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "ცარიელი გადაკვეთა {colLabel}{rowLabel}, დააწკაპუნეთ ან დააჭირეთ Enter მოსათავსებლად"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "თამაშის დასრულება"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "დაასრულოთ თამაში?"
 
@@ -1002,7 +1010,7 @@ msgstr "დაასრულოთ თამაში?"
 msgid "Enter a valid number"
 msgstr "შეიყვანეთ მართებული რიცხვი"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "შეიყვანეთ ბანერის ტექსტი (markdown მხარდაჭერილია)..."
 
@@ -1014,7 +1022,7 @@ msgstr "შეიყვანეთ კოდი თქვენი ელფო
 msgid "Enter your authenticator code"
 msgstr "შეიყვანეთ თქვენი authenticator-ის კოდი"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "შეცდომა"
 
@@ -1037,11 +1045,11 @@ msgstr "გარე URL"
 msgid "Extra large"
 msgstr "ძალიან დიდი"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "ფრეს მიღება ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "ქულის მიღება ვერ მოხერხდა"
 
@@ -1063,11 +1071,11 @@ msgstr "თამაშის შექმნა ვერ მოხერხდ
 msgid "Failed to create link"
 msgstr "ბმულის შექმნა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "რევანშის შექმნა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "ფრეზე უარის თქმა ვერ მოხერხდა"
 
@@ -1083,7 +1091,7 @@ msgstr "დანართის წაშლა ვერ მოხერხდ
 msgid "Failed to delete comment"
 msgstr "კომენტარის წაშლა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "თამაშის წაშლა ვერ მოხერხდა"
 
@@ -1099,7 +1107,11 @@ msgstr "RSS ტოკენის მიღება ვერ მოხერ�
 msgid "Failed to load"
 msgstr "ჩატვირთვა ვერ მოხერხდა"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "ბანერის ჩატვირთვა ვერ მოხერხდა"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "ისტორიის ჩატვირთვა ვერ მოხერხდა"
 
@@ -1107,8 +1119,8 @@ msgstr "ისტორიის ჩატვირთვა ვერ მოხ
 msgid "Failed to load image"
 msgstr "სურათის ჩატვირთვა ვერ მოხერხდა"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "ელემენტის ჩატვირთვა ვერ მოხერხდა"
 
@@ -1120,7 +1132,7 @@ msgstr "მოთხოვნების ჩატვირთვა ვერ 
 msgid "Failed to load video"
 msgstr "ვიდეოს ჩატვირთვა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "სვლის გაკეთება ვერ მოხერხდა"
 
@@ -1128,11 +1140,11 @@ msgstr "სვლის გაკეთება ვერ მოხერხდ
 msgid "Failed to move"
 msgstr "გადატანა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "ფრეს შეთავაზება ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "პასი ვერ მოხერხდა"
 
@@ -1144,11 +1156,11 @@ msgstr "კომენტარის გამოქვეყნება ვ�
 msgid "Failed to reset prompt"
 msgstr "მოთხოვნის გადატვირთვა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "თანამდებობიდან გადადგომა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "თამაშის გაგრძელება ვერ მოხერხდა"
 
@@ -1164,11 +1176,11 @@ msgstr "შენახვა ვერ მოხერხდა"
 msgid "Failed to save prompt"
 msgstr "მოთხოვნის შენახვა ვერ მოხერხდა"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "გაგზავნა ვერ მოხერხდა"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "ბანერის განახლება ვერ მოხერხდა"
 
@@ -1226,17 +1238,17 @@ msgstr "თემიდან"
 msgid "Game created"
 msgstr "თამაში შეიქმნა"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "თამაში წაიშალა"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "თამაში დასრულდა"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "გადასვლა"
 
@@ -1258,7 +1270,7 @@ msgstr "დაჯგუფება"
 msgid "Group: {0}"
 msgstr "ჯგუფი: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "ისტორია"
 
@@ -1314,7 +1326,7 @@ msgstr "არასწორი თარიღი"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "როგორც ჩანს, გვერდი, რომელსაც ეძებთ, <0/>არ არსებობს ან წაშლილია."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "ელემენტის დეტალები"
 
@@ -1367,11 +1379,11 @@ msgstr "მეტის ჩატვირთვა"
 msgid "Loading content…"
 msgstr "შიგთავსის ჩატვირთვა…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "ელემენტის ჩატვირთვა"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "ელემენტის დეტალების ჩატვირთვა"
 
@@ -1508,7 +1520,7 @@ msgstr "ახალი"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "ახალი თამაში"
 
@@ -1533,11 +1545,11 @@ msgstr "აქტივობა ჯერ არ არის"
 msgid "No comments yet"
 msgstr "კომენტარები ჯერ არ არის"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "მეგობრები ვერ მოიძებნა"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "მეგობრები ჯერ არ არის"
 
@@ -1609,10 +1621,10 @@ msgstr "ნახვები არ არის"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "შეტყობინებები: {0}"
 msgid "Number"
 msgstr "ნომერი"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "ფრის შეთავაზება"
 
@@ -1670,11 +1682,11 @@ msgstr "უპს! გვერდი ვერ მოიძებნა!"
 msgid "Open actions"
 msgstr "მოქმედებების გახსნა"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "ჩატის პანელის გახსნა"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "თამაშის მოქმედებების გახსნა"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "მფლობელი"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "მშობელი"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "გამოტოვება"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "გამოტოვება?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "გამოტოვება..."
 
@@ -1787,10 +1799,6 @@ msgstr "გთხოვთ, კიდევ სცადეთ."
 msgid "Please wait a moment and try again."
 msgstr "გთხოვთ, ცოტა ხნით მოიცადოთ და ხელახლა სცადოთ."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "ქულები, რომლებიც ემატება თეთრის ქულას შავის პირველი სვლის კომპენსაციისთვის"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "პოსტები"
@@ -1817,7 +1825,7 @@ msgstr "მუშავდება…"
 msgid "Prompt saved"
 msgstr "მოთხოვნა შენახულია"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "თვისებები"
 
@@ -1888,7 +1896,7 @@ msgstr "რელევანტურობა {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "რელევანტურობა {relevance}, ინტერესი {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "რევანში"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "ელფოსტის ხელახლა გაგზავნა"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "ჩაბარება"
 
@@ -2024,7 +2032,7 @@ msgstr "შაბათი"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "შენახვა"
 msgid "Saving..."
 msgstr "შენახვა..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "ქულა მიღებულია — ველოდები {opponentName}-ს"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "ანგარიში შეთანხმებულია"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "არჩევა"
 msgid "Select a field"
 msgstr "ველის არჩევა"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "მეგობრის არჩევა..."
 
@@ -2233,10 +2245,6 @@ msgstr "გასვლა მიმდინარეობს..."
 msgid "Single line of text only"
 msgstr "მხოლოდ ერთი სტრიქონი ტექსტი"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "გამოტოვეთ თქვენი სვლა და გადაეცით მოწინააღმდეგეს."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "წყაროები"
 msgid "Spacious"
 msgstr "ფართო"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "დაიწყე ახალი Go თამაში"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "თამაშის დაწყება"
 
@@ -2266,8 +2274,8 @@ msgstr "თამაშის დაწყება"
 msgid "Start the discussion by adding the first comment."
 msgstr "დაიწყეთ დისკუსია პირველი კომენტარის დამატებით."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "ყურების შეწყვეტა"
 
@@ -2297,7 +2305,7 @@ msgstr "კვირა"
 msgid "Switch to view 1-9"
 msgstr "გადართვა 1-9 ხედზე"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "API-ის მოულოდნელი შეცდომა"
 msgid "United States"
 msgstr "ამ ვიკის უნიკალური იდენტიფიკატორები."
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "ვიდეოს მნახველი: {0}"
 msgid "View all notifications"
 msgstr "ყველას ნახვა"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "ყველა პოსტის ნახვა"
 
@@ -2564,8 +2572,8 @@ msgstr "ხედის მართვა"
 msgid "Voice recording is not supported in this browser"
 msgstr "ხმის ჩაწერა ამ ბრაუზერში მხარდაჭერილი არ არის"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "გაფრთხილება გამოიცა"
 
@@ -2587,12 +2595,12 @@ msgstr "გავაგზავნეთ დამადასტურებ�
 msgid "Wednesday"
 msgstr "ოთხშაბათი"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "თეთრი"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "თეთრის აღებულები:"
 
@@ -2604,7 +2612,7 @@ msgstr "თეთრი ქვა პოზიციაზე {colLabel}{rowLabe
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "თეთრი ქვა {colLabel}{rowLabel}-ზე"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "დიახ, ძალით"
 
@@ -2612,11 +2620,11 @@ msgstr "დიახ, ძალით"
 msgid "You do not have access to this section."
 msgstr "ამ განყოფილებაზე წვდომა არ გაქვთ."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "თქვენ დანებდით — იმარჯვებს {opponentName}"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "თქვენ გაიმარჯვეთ!"
 
@@ -2628,7 +2636,7 @@ msgstr "თქვენი ანგარიში გადმოტანი�
 msgid "Your attachments will be lost."
 msgstr "თქვენი დანართები დაიკარგება."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "თქვენი სვლა"
 

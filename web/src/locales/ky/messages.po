@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#жума} other {#жума}}"
 msgid "{entityLabel} name"
 msgstr "{entityLabel} аты"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} эсепти кабыл алды"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} тең оюндан баш тартты"
@@ -72,7 +76,11 @@ msgstr "{name} тең оюн сунуштады"
 msgid "{name} resigned"
 msgstr "{name} баш тартты"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} оюнду улантты"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} да өткөрүп жиберди. Тастыктоо тактайды санап, экөөңүз макул болууга тийиш упайды сунуштайт."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} да өткөрүп жиберди. Тастыктоо т
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} теңме-тең сунуш кылды"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} багынды — сиз жеңдиңиз!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "{opponentName} жеңди"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "{opponentName} жүрүшү"
 
@@ -109,7 +117,7 @@ msgstr "{size}×{size} Go тактайы, сиздин кезегиңиз. Ба�
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "{size}×{size} Go тактайы, сиздин кезегиңиз. Багыттоо үчүн жебе клавиштерин жана ак ташты коюу үчүн Enter же Space колдонуңуз."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} <0>{moveLabel}</0> жүрдү"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {# жооп} other {+# дагы жооп}
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Менюну ачуу (# окулбаган билдирүү)} other {Менюну ачуу (# окулбаган билдирүү)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} жеңди — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "Аккаунт түрү"
 msgid "Active games"
 msgstr "Активдүү оюндар"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "Активдүүлүк"
 
@@ -213,11 +221,11 @@ msgstr "Текшерүү тизмесине кошуу"
 msgid "Add field"
 msgstr "Талаа кошуу"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "Достор кошуу"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "Ойноо үчүн People колдонмосунан дос кошуңуз"
 
@@ -299,7 +307,7 @@ msgstr "Бул тасмага жазылган нерселердин баары
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "\"{0}\" жок кылууну каалайсызбы?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "\"{title}\" жок кылууну каалайсызбы? Бул аракетти артка кайтаруу мүмкүн эмес."
 
@@ -365,25 +373,25 @@ msgstr "Артка"
 msgid "Back to home"
 msgstr "Башкы бетке кайтуу"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Баннер"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "Баннер алынып салынды"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "Баннер жаңыланды"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "Кара"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "Кара кармагандары:"
 
@@ -452,7 +460,7 @@ msgstr "Камера жеткиликсиз"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "Жокко чыгаруу"
 
@@ -492,7 +500,7 @@ msgstr "Өзгөртүлдү"
 msgid "Changed {field}"
 msgstr "{field} өзгөртүлдү"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "Чат"
 
@@ -513,11 +521,11 @@ msgstr "Каптал тилкесинен оюнду тандаңыз же жа�
 msgid "Choose language"
 msgstr "Тилди тандоо"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "Атаандашты тандоо"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "Комментарий аракеттери"
 msgid "Comments"
 msgstr "Комментарийлер"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "Комментарийлер ({0})"
 
@@ -697,7 +705,7 @@ msgstr "Кайра аутентификацияны баштоо мүмкүн б
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Бул каттоо эсеби менен текшерүү мүмкүн болбоду. Кайра аракет кылыңыз."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "Эсептөө — упайга макул болуңуз же оюнду улантыңыз"
 
@@ -729,7 +737,7 @@ msgstr "{field} түзүлдү"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "Түзүлүүдө..."
 
@@ -779,7 +787,7 @@ msgstr "Демейки иргөө"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Жок кылуу"
@@ -800,7 +808,7 @@ msgstr "Комментарийди жок кылуу"
 msgid "Delete field"
 msgstr "Талааны жок кылуу"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "Оюнду жок кылуу"
 
@@ -808,9 +816,9 @@ msgstr "Оюнду жок кылуу"
 msgid "Delete game?"
 msgstr "Оюн жок кылынсынбы?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "Нерсени жок кылуу"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "Талап кылынган үлгүгө дал келбейт"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "Бүттү"
@@ -914,8 +922,8 @@ msgstr "Жүктөп алуу"
 msgid "Download failed"
 msgstr "Жүктөп алуу ишке ашкан жок"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "Тең оюн"
 
@@ -923,7 +931,7 @@ msgstr "Тең оюн"
 msgid "Draw agreed"
 msgstr "Тең оюнга макул болушту"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Теңтайлаш сунушталды — {opponentName} күтүлүүдө"
 
@@ -990,11 +998,11 @@ msgstr "Бош кесилиш {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Бош кесилиш {colLabel}{rowLabel}, жайгаштыруу үчүн басыңыз же Enter басыңыз"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "Оюнду аяктоо"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "Оюнду аяктайбы?"
 
@@ -1002,7 +1010,7 @@ msgstr "Оюнду аяктайбы?"
 msgid "Enter a valid number"
 msgstr "Жарактуу санды киргизиңиз"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "Баннер текстин киргизиңиз (markdown колдоого алынат)..."
 
@@ -1014,7 +1022,7 @@ msgstr "Электрондук почтаңыздагы кодду киргиз�
 msgid "Enter your authenticator code"
 msgstr "Authenticator кодун киргизиңиз"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "Ката"
 
@@ -1037,11 +1045,11 @@ msgstr "Тышкы URL"
 msgid "Extra large"
 msgstr "Өтө чоң"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "Теңтайлашты кабыл алуу ишке ашкан жок"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "Упайды кабыл алуу ишке ашкан жок"
 
@@ -1063,11 +1071,11 @@ msgstr "Оюн түзүү ишке ашкан жок"
 msgid "Failed to create link"
 msgstr "Шилтеме түзүү ишке ашкан жок"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "Кайра матч түзүү ишке ашкан жок"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "Теңтайлаштан баш тартуу ишке ашкан жок"
 
@@ -1083,7 +1091,7 @@ msgstr "Тиркемени өчүрүү ишке ашкан жок"
 msgid "Failed to delete comment"
 msgstr "Комментарийди өчүрүү ишке ашкан жок"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "Оюнду өчүрүү ишке ашкан жок"
 
@@ -1099,7 +1107,11 @@ msgstr "RSS токенин алуу ишке ашкан жок"
 msgid "Failed to load"
 msgstr "Жүктөө ишке ашкан жок"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "Баннерди жүктөө мүмкүн болбоду"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "Тарыхты жүктөө ишке ашкан жок"
 
@@ -1107,8 +1119,8 @@ msgstr "Тарыхты жүктөө ишке ашкан жок"
 msgid "Failed to load image"
 msgstr "Сүрөттү жүктөө мүмкүн болбоду"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "Нерсени жүктөө ишке ашкан жок"
 
@@ -1120,7 +1132,7 @@ msgstr "Сурамжылоолорду жүктөө ишке ашкан жок"
 msgid "Failed to load video"
 msgstr "Видеону жүктөө мүмкүн болбоду"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "Кадам жасоо ишке ашкан жок"
 
@@ -1128,11 +1140,11 @@ msgstr "Кадам жасоо ишке ашкан жок"
 msgid "Failed to move"
 msgstr "Жылдыруу ишке ашкан жок"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "Теңтайлаш сунуштоо ишке ашкан жок"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "Өткөрүп жиберүү ишке ашкан жок"
 
@@ -1144,11 +1156,11 @@ msgstr "Комментарий жазуу ишке ашкан жок"
 msgid "Failed to reset prompt"
 msgstr "Сурамжылоону баштапкы абалга кайтаруу ишке ашкан жок"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "Багынуу ишке ашкан жок"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "Оюнду улантуу ишке ашкан жок"
 
@@ -1164,11 +1176,11 @@ msgstr "Сактоо ишке ашкан жок"
 msgid "Failed to save prompt"
 msgstr "Сурамжылоону сактоо ишке ашкан жок"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "Жөнөтүү ишке ашкан жок"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "Баннерди жаңылоо ишке ашкан жок"
 
@@ -1226,17 +1238,17 @@ msgstr "Темадан"
 msgid "Game created"
 msgstr "Оюн түзүлдү"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "Оюн өчүрүлдү"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "Оюн бүттү"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "Өтүү"
 
@@ -1258,7 +1270,7 @@ msgstr "Топтоштуруу"
 msgid "Group: {0}"
 msgstr "Топ: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "Тарых"
 
@@ -1314,7 +1326,7 @@ msgstr "Жараксыз дата"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Сиз издеген бет <0/>жок же өчүрүлгөн окшойт."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "Нерсе чоо-жайы"
 
@@ -1367,11 +1379,11 @@ msgstr "Дагы жүктөө"
 msgid "Loading content…"
 msgstr "Мазмун жүктөлүүдө…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "Нерсе жүктөлүүдө"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "Нерсе чоо-жайы жүктөлүүдө"
 
@@ -1508,7 +1520,7 @@ msgstr "Жаңы"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "Жаңы оюн"
 
@@ -1533,11 +1545,11 @@ msgstr "Активдүүлүк азырынча жок"
 msgid "No comments yet"
 msgstr "Комментарийлер азырынча жок"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "Достор табылган жок"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "Достор азырынча жок"
 
@@ -1609,10 +1621,10 @@ msgstr "Көрүүлөр жок"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "Билдирүүлөр: {0}"
 msgid "Number"
 msgstr "Сан"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "Тең оюн сунуштоо"
 
@@ -1670,11 +1682,11 @@ msgstr "Аттиң! Барак табылган жок!"
 msgid "Open actions"
 msgstr "Аракеттерди ачуу"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "Чат панелин ачуу"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "Оюн аракеттерин ачуу"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "Ээси"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "Ата-эне"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "Өткөрүп жиберүү"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "Кезекти өткөрүп жибересизби?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "Өткөрүлүүдө..."
 
@@ -1787,10 +1799,6 @@ msgstr "Кайра аракет кылыңыз."
 msgid "Please wait a moment and try again."
 msgstr "Бир аз күтүп, кайра аракет кылыңыз."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "Кара биринчи жүргөнүн ордуна Актын упайына кошулган упайлар"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "Посттор"
@@ -1817,7 +1825,7 @@ msgstr "Иштетилүүдө…"
 msgid "Prompt saved"
 msgstr "Prompt сакталды"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "Касиеттер"
 
@@ -1888,7 +1896,7 @@ msgstr "Актуалдуулук {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Актуалдуулук {relevance}, кызыгуу {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "Кайра оюн"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "Катты кайра жөнөтүү"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "Баш тартуу"
 
@@ -2024,7 +2032,7 @@ msgstr "Ишемби"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "Сактоо"
 msgid "Saving..."
 msgstr "Сакталууда..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Упай кабыл алынды — {opponentName} күтүлүүдө"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "Эсеп макулдашылды"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "Тандоо"
 msgid "Select a field"
 msgstr "Талааны тандоо"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "Досту тандаңыз..."
 
@@ -2233,10 +2245,6 @@ msgstr "Чыгуу жүрүп жатат..."
 msgid "Single line of text only"
 msgstr "Жалгыз сап текст гана"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "Кезегиңизди өткөрүп, атаандашыңызга беришиңиз."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "Булактар"
 msgid "Spacious"
 msgstr "Кенен"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "Жаңы Go оюнун баштоо"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "Оюнду баштоо"
 
@@ -2266,8 +2274,8 @@ msgstr "Оюнду баштоо"
 msgid "Start the discussion by adding the first comment."
 msgstr "Биринчи комментарий жазып, талкууну баштаңыз."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "Көрүүнү токтотуу"
 
@@ -2297,7 +2305,7 @@ msgstr "Жекшемби"
 msgid "Switch to view 1-9"
 msgstr "1-9 көрүнүшкө которулуу"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "Күтүлбөгөн API катасы"
 msgid "United States"
 msgstr "Кошмо Штаттар"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "Видео көрсөткүч: {0}"
 msgid "View all notifications"
 msgstr "Бардык эскертүүлөрдү көрүү"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "Объекттин чоо-жайын көрүү жана түзөтүү"
 
@@ -2564,8 +2572,8 @@ msgstr "Көрүү башкаруусу"
 msgid "Voice recording is not supported in this browser"
 msgstr "Үн жазуу бул браузерде колдоого алынбайт"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "Көрүү"
 
@@ -2587,12 +2595,12 @@ msgstr "Биз <0>{0}</0> дарегине ырастоо кодун жөнөт�
 msgid "Wednesday"
 msgstr "Шаршемби"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "Ак"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "Ак басып алуулар:"
 
@@ -2604,7 +2612,7 @@ msgstr "{colLabel}{rowLabel} даректеги ак таш"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "{colLabel}{rowLabel} даректеги ак аймак"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "Сиз"
 
@@ -2612,11 +2620,11 @@ msgstr "Сиз"
 msgid "You do not have access to this section."
 msgstr "Сизде бул бөлүмгө кирүү мүмкүнчүлүгү жок."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "Сиз багындыңыз — {opponentName} жеңди"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "Сиз жеңдиңиз!"
 
@@ -2628,7 +2636,7 @@ msgstr "Аккаунтуңуз {source} дан бул жерге которул�
 msgid "Your attachments will be lost."
 msgstr "Тиркемелериңиз жоголот."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "Сиздин жүрүшүңүз"
 

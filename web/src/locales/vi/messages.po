@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#tu} other {#tu}}"
 msgid "{entityLabel} name"
 msgstr "Tên {entityLabel}"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} đã chấp nhận điểm số"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} đã từ chối hòa"
@@ -72,7 +76,11 @@ msgstr "{name} đã đề nghị hòa"
 msgid "{name} resigned"
 msgstr "{name} đã xin thua"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} đã chơi tiếp"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} cũng đã bỏ lượt. Xác nhận sẽ đếm bàn cờ và đề xuất một điểm số mà cả hai bạn phải đồng ý."
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} cũng đã bỏ lượt. Xác nhận sẽ đếm bàn c�
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} đã đề nghị hòa"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} đã xin thua — bạn thắng!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "{opponentName} thắng"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "Đến lượt {opponentName}"
 
@@ -109,7 +117,7 @@ msgstr "Bàn cờ Vây {size}×{size}, lượt của bạn. Dùng các phím mũ
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "Bàn cờ Vây {size}×{size}, lượt của bạn. Dùng các phím mũi tên để di chuyển và Enter hoặc Space để đặt quân trắng."
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} đã đi <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {# phản hồi} other {+# phản hồi n
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {Mở menu (# thông báo chưa đọc)} other {Mở menu (# thông báo chưa đọc)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} thắng — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "Loại tài khoản"
 msgid "Active games"
 msgstr "Ván đang chơi"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "Hoạt động"
 
@@ -213,11 +221,11 @@ msgstr "Thêm mục danh sách kiểm tra"
 msgid "Add field"
 msgstr "Thêm trường"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "Thêm bạn"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "Thêm bạn trong ứng dụng People để bắt đầu chơi"
 
@@ -299,7 +307,7 @@ msgstr "Mọi thứ đã đăng ký nguồn cấp này sẽ ngừng nhận. Bạ
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "Bạn có chắc muốn xóa \"{0}\"?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "Bạn có chắc muốn xóa \"{title}\"? Hành động này không thể hoàn tác."
 
@@ -365,25 +373,25 @@ msgstr "Quay lại"
 msgid "Back to home"
 msgstr "Về trang chủ"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "Biểu ngữ"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "Đã xóa banner"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "Đã cập nhật banner"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "Đen"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "Đen bắt được:"
 
@@ -452,7 +460,7 @@ msgstr "Camera không khả dụng"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "Hủy"
 
@@ -492,7 +500,7 @@ msgstr "Đã thay đổi"
 msgid "Changed {field}"
 msgstr "Đã thay đổi {field}"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "Trò chuyện"
 
@@ -513,11 +521,11 @@ msgstr "Chọn một ván chơi ở thanh bên hoặc bắt đầu ván mới."
 msgid "Choose language"
 msgstr "Chọn ngôn ngữ"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "Chọn đối thủ"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "Thao tác bình luận"
 msgid "Comments"
 msgstr "Bình luận"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "Bình luận ({0})"
 
@@ -697,7 +705,7 @@ msgstr "Không thể bắt đầu xác thực lại. Vui lòng thử lại."
 msgid "Couldn't verify with that account. Please try again."
 msgstr "Không thể xác minh bằng tài khoản đó. Vui lòng thử lại."
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "Đếm điểm — thống nhất tỉ số hoặc chơi tiếp"
 
@@ -729,7 +737,7 @@ msgstr "Đã tạo {field}"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "Đang tạo..."
 
@@ -779,7 +787,7 @@ msgstr "Sắp xếp mặc định"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "Xóa"
@@ -800,7 +808,7 @@ msgstr "Xóa bình luận"
 msgid "Delete field"
 msgstr "Xóa trường"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "Xóa ván"
 
@@ -808,9 +816,9 @@ msgstr "Xóa ván"
 msgid "Delete game?"
 msgstr "Xóa trận đấu?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "Xóa mục"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "Không khớp với mẫu bắt buộc"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "Xong"
@@ -914,8 +922,8 @@ msgstr "Tải xuống"
 msgid "Download failed"
 msgstr "Tải xuống thất bại"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "Hòa"
 
@@ -923,7 +931,7 @@ msgstr "Hòa"
 msgid "Draw agreed"
 msgstr "Đã đồng ý hòa"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "Đã đề nghị hòa — đang chờ {opponentName}"
 
@@ -990,11 +998,11 @@ msgstr "Giao điểm trống {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "Giao điểm trống {colLabel}{rowLabel}, nhấp hoặc nhấn Enter để đặt"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "Kết thúc trò chơi"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "Kết thúc trò chơi?"
 
@@ -1002,7 +1010,7 @@ msgstr "Kết thúc trò chơi?"
 msgid "Enter a valid number"
 msgstr "Nhập một số hợp lệ"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "Nhập nội dung biểu ngữ (hỗ trợ markdown)..."
 
@@ -1014,7 +1022,7 @@ msgstr "Nhập mã từ email của bạn"
 msgid "Enter your authenticator code"
 msgstr "Nhập mã từ ứng dụng xác thực của bạn"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "Lỗi"
 
@@ -1037,11 +1045,11 @@ msgstr "URL bên ngoài"
 msgid "Extra large"
 msgstr "Rất lớn"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "Không chấp nhận hoà được"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "Không chấp nhận điểm số được"
 
@@ -1063,11 +1071,11 @@ msgstr "Không tạo trò chơi được"
 msgid "Failed to create link"
 msgstr "Không tạo liên kết được"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "Không tạo trận tái đấu được"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "Không từ chối hoà được"
 
@@ -1083,7 +1091,7 @@ msgstr "Không xoá tệp đính kèm được"
 msgid "Failed to delete comment"
 msgstr "Không xoá bình luận được"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "Không xoá trò chơi được"
 
@@ -1099,7 +1107,11 @@ msgstr "Không lấy token RSS được"
 msgid "Failed to load"
 msgstr "Không tải được"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "Không tải được biểu ngữ"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "Không tải lịch sử được"
 
@@ -1107,8 +1119,8 @@ msgstr "Không tải lịch sử được"
 msgid "Failed to load image"
 msgstr "Không tải được hình ảnh"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "Không tải mục được"
 
@@ -1120,7 +1132,7 @@ msgstr "Không tải lời nhắc được"
 msgid "Failed to load video"
 msgstr "Không tải được video"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "Không thực hiện nước đi được"
 
@@ -1128,11 +1140,11 @@ msgstr "Không thực hiện nước đi được"
 msgid "Failed to move"
 msgstr "Không thể di chuyển"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "Không đề nghị hoà được"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "Không bỏ lượt được"
 
@@ -1144,11 +1156,11 @@ msgstr "Không đăng bình luận được"
 msgid "Failed to reset prompt"
 msgstr "Không đặt lại lời nhắc được"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "Không xin thua được"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "Không tiếp tục ván đấu được"
 
@@ -1164,11 +1176,11 @@ msgstr "Không lưu được"
 msgid "Failed to save prompt"
 msgstr "Không lưu lời nhắc được"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "Không gửi được"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "Không cập nhật biểu ngữ được"
 
@@ -1226,17 +1238,17 @@ msgstr "Từ giao diện"
 msgid "Game created"
 msgstr "Đã tạo trò chơi"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "Đã xoá trò chơi"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "Hết trò chơi"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "Đi"
 
@@ -1258,7 +1270,7 @@ msgstr "Nhóm theo"
 msgid "Group: {0}"
 msgstr "Nhóm: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "Lịch sử"
 
@@ -1314,7 +1326,7 @@ msgstr "Ngày không hợp lệ"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "Có vẻ như trang bạn đang tìm <0/>không tồn tại hoặc đã bị xóa."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "Chi tiết mục"
 
@@ -1367,11 +1379,11 @@ msgstr "Tải thêm"
 msgid "Loading content…"
 msgstr "Đang tải nội dung…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "Đang tải mục"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "Đang tải chi tiết mục"
 
@@ -1508,7 +1520,7 @@ msgstr "Mới"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "Trò chơi mới"
 
@@ -1533,11 +1545,11 @@ msgstr "Chưa có hoạt động"
 msgid "No comments yet"
 msgstr "Chưa có bình luận"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "Không tìm thấy bạn bè"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "Chưa có bạn bè"
 
@@ -1609,10 +1621,10 @@ msgstr "Không có lượt xem"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "Thông báo: {0}"
 msgid "Number"
 msgstr "Số"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "Đề nghị hoà"
 
@@ -1670,11 +1682,11 @@ msgstr "Rất tiếc! Không tìm thấy trang!"
 msgid "Open actions"
 msgstr "Mở thao tác"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "Mở bảng trò chuyện"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "Mở thao tác trò chơi"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "Chủ sở hữu"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "Cha"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "Bỏ qua"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "Bỏ qua lượt?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "Đang bỏ qua..."
 
@@ -1787,10 +1799,6 @@ msgstr "Vui lòng thử lại."
 msgid "Please wait a moment and try again."
 msgstr "Vui lòng đợi một lát rồi thử lại."
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "Điểm cộng vào điểm của Trắng để bù cho việc Đen đi trước"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "Bài viết"
@@ -1817,7 +1825,7 @@ msgstr "Đang xử lý…"
 msgid "Prompt saved"
 msgstr "Đã lưu prompt"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "Thuộc tính"
 
@@ -1888,7 +1896,7 @@ msgstr "Mức liên quan {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "Mức liên quan {relevance}, mức quan tâm {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "Đấu lại"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "Gửi lại email"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "Đầu hàng"
 
@@ -2024,7 +2032,7 @@ msgstr "Thứ bảy"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "Lưu"
 msgid "Saving..."
 msgstr "Đang lưu..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "Đã chấp nhận điểm số — đang chờ {opponentName}"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "Đã thống nhất điểm số"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "Chọn"
 msgid "Select a field"
 msgstr "Chọn một trường"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "Chọn một người bạn..."
 
@@ -2233,10 +2245,6 @@ msgstr "Đang đăng xuất..."
 msgid "Single line of text only"
 msgstr "Chỉ một dòng văn bản"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "Bỏ qua lượt của bạn và chuyển cho đối thủ."
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "Nguồn"
 msgid "Spacious"
 msgstr "Rộng rãi"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "Bắt đầu một ván cờ Vây mới"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "Bắt đầu trò chơi"
 
@@ -2266,8 +2274,8 @@ msgstr "Bắt đầu trò chơi"
 msgid "Start the discussion by adding the first comment."
 msgstr "Bắt đầu thảo luận bằng cách thêm bình luận đầu tiên."
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "Ngừng theo dõi"
 
@@ -2297,7 +2305,7 @@ msgstr "Chủ nhật"
 msgid "Switch to view 1-9"
 msgstr "Chuyển sang chế độ xem 1-9"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "Lỗi API không mong muốn"
 msgid "United States"
 msgstr "Hoa Kỳ"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "Trình xem video: {0}"
 msgid "View all notifications"
 msgstr "Xem tất cả thông báo"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "Xem và chỉnh sửa chi tiết mục"
 
@@ -2564,8 +2572,8 @@ msgstr "Điều khiển xem"
 msgid "Voice recording is not supported in this browser"
 msgstr "Trình duyệt này không hỗ trợ ghi âm giọng nói"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "Theo dõi"
 
@@ -2587,12 +2595,12 @@ msgstr "Chúng tôi đã gửi mã xác minh đến <0>{0}</0>. Nhập mã bên 
 msgid "Wednesday"
 msgstr "Thứ tư"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "Trắng"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "Trắng bắt được:"
 
@@ -2604,7 +2612,7 @@ msgstr "Quân trắng tại {colLabel}{rowLabel}"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Vùng trắng tại {colLabel}{rowLabel}"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "Bạn"
 
@@ -2612,11 +2620,11 @@ msgstr "Bạn"
 msgid "You do not have access to this section."
 msgstr "Bạn không có quyền truy cập vào phần này."
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "Bạn đã xin thua — {opponentName} thắng"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "Bạn thắng!"
 
@@ -2628,7 +2636,7 @@ msgstr "Tài khoản của bạn đã được chuyển đến đây từ {sourc
 msgid "Your attachments will be lost."
 msgstr "Tệp đính kèm của bạn sẽ bị mất."
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "Lượt của bạn"
 

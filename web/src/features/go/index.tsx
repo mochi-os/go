@@ -132,10 +132,16 @@ export function GoGameView() {
   const myColor: 'b' | 'w' = game && myIdentity ? (game.black === myIdentity ? 'b' : 'w') : 'b'
   const isMyTurn = goGame ? (goGame.turn === 'black' ? myColor === 'b' : myColor === 'w') : false
 
-  // Score for finished games
+  // Score for finished games: the agreed figures once both players accepted
+  // them, a recount only for rows that predate score agreement.
   const score = useMemo(() => {
     const scored = ['finished', 'draw', 'scoring']
     if (!game || !goGame || !scored.includes(game.status)) return null
+    if (game.score_black != null && game.score_white != null) {
+      const winner =
+        game.score_black > game.score_white ? 'black' : game.score_white > game.score_black ? 'white' : null
+      return { black: game.score_black, white: game.score_white, winner }
+    }
     return goGame.score(game.komi)
   }, [game, goGame])
 
@@ -513,7 +519,7 @@ export function GoGameView() {
                                     <SkipForward className='me-2 size-4' /> <Trans>Pass</Trans>
                                   </DropdownMenuItem>
                                 )}
-                                {game.draw_offer !== myIdentity && (
+                                {!game.draw_offer && (
                                   <DropdownMenuItem
                                     onClick={handleDrawOffer}
                                     disabled={drawOfferMutation.isPending}
@@ -648,7 +654,7 @@ export function GoGameView() {
         desc={
           goGame?.consecutivePasses === 1
             ? t`${opponentName} also passed. Confirming will count the board and propose a score for you both to agree.`
-            : t`Skip your turn and pass to your opponent.`
+            : ''
         }
         confirmText={
           passMutation.isPending ? (

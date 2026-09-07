@@ -60,6 +60,10 @@ msgstr "{count, plural, one {#सप्ता} other {#सप्ता}}"
 msgid "{entityLabel} name"
 msgstr "{entityLabel} के नाम"
 
+#: src/features/go/components/chat-message-list.tsx:47
+msgid "{name} accepted the score"
+msgstr "{name} स्कोर स्वीकार कइलें"
+
 #: src/features/go/components/chat-message-list.tsx:46
 msgid "{name} declined the draw"
 msgstr "{name} ड्रॉ ठुकरा दिहलें"
@@ -72,7 +76,11 @@ msgstr "{name} ड्रॉ के प्रस्ताव दिहलें"
 msgid "{name} resigned"
 msgstr "{name} हार मान लिहलें"
 
-#: src/features/go/index.tsx:650
+#: src/features/go/components/chat-message-list.tsx:49
+msgid "{name} resumed play"
+msgstr "{name} खेल फेर से शुरू कइलें"
+
+#: src/features/go/index.tsx:656
 msgid "{opponentName} also passed. Confirming will count the board and propose a score for you both to agree."
 msgstr "{opponentName} भी छोड़ दिहले। पुष्टि कइला से बोर्ड के गिनती होई आ एगो स्कोर के प्रस्ताव दिहल जाई जेकरा पर रउआ दुनो के सहमत होखे के पड़ी।"
 
@@ -80,15 +88,15 @@ msgstr "{opponentName} भी छोड़ दिहले। पुष्टि
 msgid "{opponentName} offered a draw"
 msgstr "{opponentName} ड्रॉ के प्रस्ताव दिहले"
 
-#: src/features/go/index.tsx:415
+#: src/features/go/index.tsx:421
 msgid "{opponentName} resigned — you win!"
 msgstr "{opponentName} हार मानले — रउआ जीतनी!"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "{opponentName} wins"
 msgstr "{opponentName} जीतले"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "{opponentName}'s move"
 msgstr "{opponentName} के चाल"
 
@@ -109,7 +117,7 @@ msgstr "{size}×{size} Go बोर्ड, आपके चाल। नेव�
 msgid "{size}×{size} Go board, your turn. Use arrow keys to navigate and Enter or Space to place a white stone."
 msgstr "{size}×{size} Go बोर्ड, आपके चाल। नेविगेट करे खातिर तीर कुंजी आ सफेद पत्थर रखे खातिर Enter या Space के उपयोग करीं।"
 
-#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/components/chat-message-list.tsx:57
 msgid "{subject} played <0>{moveLabel}</0>"
 msgstr "{subject} खेलले <0>{moveLabel}</0>"
 
@@ -125,7 +133,7 @@ msgstr "{totalDescendants, plural, one {# जवाब} other {+# अउरी �
 msgid "{unreadCount, plural, one {Open menu (# unread notification)} other {Open menu (# unread notifications)}}"
 msgstr "{unreadCount, plural, one {मेनू खोलीं (# बिना पढ़ल सूचना)} other {मेनू खोलीं (# बिना पढ़ल सूचना)}}"
 
-#: src/features/go/index.tsx:395
+#: src/features/go/index.tsx:401
 msgid "{winnerColor} wins — B:{black} W:{white}"
 msgstr "{winnerColor} जीतल — B:{black} W:{white}"
 
@@ -170,7 +178,7 @@ msgstr "खाता प्रकार"
 msgid "Active games"
 msgstr "सक्रिय खेल"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:415
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:423
 msgid "Activity"
 msgstr "गतिविधि"
 
@@ -213,11 +221,11 @@ msgstr "चेकलिस्ट आइटम जोड़ीं"
 msgid "Add field"
 msgstr "फील्ड जोड़ीं"
 
-#: src/features/go/components/new-game.tsx:174
+#: src/features/go/components/new-game.tsx:170
 msgid "Add friends"
 msgstr "दोस्तन के जोड़ीं"
 
-#: src/features/go/components/new-game.tsx:173
+#: src/features/go/components/new-game.tsx:169
 msgid "Add friends in the People app to start playing"
 msgstr "खेले शुरू करे खातिर People ऐप में दोस्तन के जोड़ीं"
 
@@ -299,7 +307,7 @@ msgstr "एह फीड के सब्सक्राइब कइल कव�
 msgid "Are you sure you want to delete \"{0}\"?"
 msgstr "का रउआ \"{0}\" के मेटावे चाहत बानी?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:671
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:679
 msgid "Are you sure you want to delete \"{title}\"? This action cannot be undone."
 msgstr "का रउआ \"{title}\" के मेटावे चाहत बानी? ई क्रिया वापस ना हो सकेला।"
 
@@ -365,25 +373,25 @@ msgstr "वापस"
 msgid "Back to home"
 msgstr "घर वापस जाईं"
 
-#: ../../../lib/web/src/components/banner-section.tsx:80
+#: ../../../lib/web/src/components/banner-section.tsx:91
 #: ../../../lib/web/src/components/entity-banner.tsx:17
 msgid "Banner"
 msgstr "बैनर"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner removed"
 msgstr "Banner हटा दिहल गइल"
 
-#: ../../../lib/web/src/components/banner-section.tsx:69
+#: ../../../lib/web/src/components/banner-section.tsx:73
 msgid "Banner updated"
 msgstr "Banner अद्यतन कइल गइल"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "Black"
 msgstr "करिया"
 
-#: src/features/go/index.tsx:475
+#: src/features/go/index.tsx:481
 msgid "Black captures:"
 msgstr "करिया कैप्चर:"
 
@@ -452,7 +460,7 @@ msgstr "कैमरा उपलब्ध नइखे"
 #: ../../../lib/web/src/features/access/access-list.tsx:268
 #: ../../../lib/web/src/features/accounts/account-add.tsx:201
 #: ../../../lib/web/src/features/accounts/account-verify.tsx:91
-#: src/features/go/components/new-game.tsx:177
+#: src/features/go/components/new-game.tsx:173
 msgid "Cancel"
 msgstr "रद्द करीं"
 
@@ -492,7 +500,7 @@ msgstr "बदलल गइल"
 msgid "Changed {field}"
 msgstr "{field} बदलल गइल"
 
-#: src/features/go/index.tsx:602
+#: src/features/go/index.tsx:608
 msgid "Chat"
 msgstr "चैट"
 
@@ -513,11 +521,11 @@ msgstr "साइडबार से एगो खेल चुनीं भा 
 msgid "Choose language"
 msgstr "भाषा चुनीं"
 
-#: src/features/go/components/new-game.tsx:171
+#: src/features/go/components/new-game.tsx:167
 msgid "Choose opponent"
 msgstr "विरोधी चुनीं"
 
-#: ../../../lib/web/src/components/banner-section.tsx:111
+#: ../../../lib/web/src/components/banner-section.tsx:123
 #: ../../../lib/web/src/components/colour-picker.tsx:274
 #: ../../../lib/web/src/components/colour-picker.tsx:355
 #: ../../../lib/web/src/components/travelling-picker.tsx:145
@@ -611,8 +619,8 @@ msgstr "टिप्पणी के कार्रवाई"
 msgid "Comments"
 msgstr "टिप्पणी"
 
-#. placeholder {0}: data.comment_count || 0
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:411
+#. placeholder {0}: data.comments.count || 0
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:419
 msgid "Comments ({0})"
 msgstr "टिप्पणी ({0})"
 
@@ -697,7 +705,7 @@ msgstr "फिर से प्रमाणीकरण शुरू ना ह�
 msgid "Couldn't verify with that account. Please try again."
 msgstr "ओह खाता से सत्यापन ना हो सकल। कृपया फेर से कोसिस करीं।"
 
-#: src/features/go/index.tsx:411
+#: src/features/go/index.tsx:417
 msgid "Counting — agree the score or play on"
 msgstr "गिनती — स्कोर पर सहमत होईं भा खेलल जारी राखीं"
 
@@ -729,7 +737,7 @@ msgstr "{field} बनावल गइल"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:676
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx:260
-#: src/features/go/components/new-game.tsx:179
+#: src/features/go/components/new-game.tsx:175
 msgid "Creating..."
 msgstr "बनावल जा रहल बा..."
 
@@ -779,7 +787,7 @@ msgstr "डिफ़ॉल्ट छंटाई"
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:208
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:255
 #: ../../../lib/web/src/components/entity/entity-object-attachments.tsx:317
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:672
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:680
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:78
 msgid "Delete"
 msgstr "मेटाईं"
@@ -800,7 +808,7 @@ msgstr "टिप्पणी मेटाईं"
 msgid "Delete field"
 msgstr "फील्ड मेटाईं"
 
-#: src/features/go/index.tsx:537
+#: src/features/go/index.tsx:543
 msgid "Delete game"
 msgstr "खेल मेटाईं"
 
@@ -808,9 +816,9 @@ msgstr "खेल मेटाईं"
 msgid "Delete game?"
 msgstr "खेल मेटाईं?"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:486
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:491
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:670
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:494
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:499
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:678
 msgid "Delete item"
 msgstr "आइटम मेटाईं"
 
@@ -898,7 +906,7 @@ msgid "Does not match the required pattern"
 msgstr "जरूरी पैटर्न से मेल ना खात बा"
 
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:309
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:495
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:503
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:523
 msgid "Done"
 msgstr "हो गइल"
@@ -914,8 +922,8 @@ msgstr "डाउनलोड"
 msgid "Download failed"
 msgstr "डाउनलोड असफल भइल"
 
-#: src/features/go/index.tsx:400
-#: src/features/go/index.tsx:409
+#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:415
 msgid "Draw"
 msgstr "बराबरी"
 
@@ -923,7 +931,7 @@ msgstr "बराबरी"
 msgid "Draw agreed"
 msgstr "ड्रॉ पर सहमति बनल"
 
-#: src/features/go/index.tsx:568
+#: src/features/go/index.tsx:574
 msgid "Draw offered — waiting for {opponentName}"
 msgstr "ड्रॉ के प्रस्ताव दिहल गइल — {opponentName} के इंतजार बा"
 
@@ -990,11 +998,11 @@ msgstr "खाली प्रतिच्छेदन {colLabel}{rowLabel}"
 msgid "Empty intersection {colLabel}{rowLabel}, click or press Enter to place"
 msgstr "खाली प्रतिच्छेदन {colLabel}{rowLabel}, रखे खातिर क्लिक करीं भा Enter दबाईं"
 
-#: src/features/go/index.tsx:660
+#: src/features/go/index.tsx:666
 msgid "End game"
 msgstr "खेल खतम करीं"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "End game?"
 msgstr "खेल खतम करीं?"
 
@@ -1002,7 +1010,7 @@ msgstr "खेल खतम करीं?"
 msgid "Enter a valid number"
 msgstr "एगो मान्य संख्या लिखीं"
 
-#: ../../../lib/web/src/components/banner-section.tsx:88
+#: ../../../lib/web/src/components/banner-section.tsx:99
 msgid "Enter banner text (markdown supported)..."
 msgstr "बैनर टेक्स्ट लिखीं (markdown समर्थित)..."
 
@@ -1014,7 +1022,7 @@ msgstr "आपन ईमेल से आइल कोड डालीं"
 msgid "Enter your authenticator code"
 msgstr "आपन प्रमाणक कोड डालीं"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:381
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:389
 msgid "Error"
 msgstr "त्रुटि"
 
@@ -1037,11 +1045,11 @@ msgstr "बाहरी URL"
 msgid "Extra large"
 msgstr "अतिरिक्त बड़ा"
 
-#: src/features/go/index.tsx:185
+#: src/features/go/index.tsx:191
 msgid "Failed to accept draw"
 msgstr "ड्रॉ स्वीकार करे में विफल"
 
-#: src/features/go/index.tsx:191
+#: src/features/go/index.tsx:197
 msgid "Failed to accept score"
 msgstr "स्कोर माने में विफल"
 
@@ -1063,11 +1071,11 @@ msgstr "खेल बनावे में विफल"
 msgid "Failed to create link"
 msgstr "लिंक बनावे में विफल"
 
-#: src/features/go/index.tsx:211
+#: src/features/go/index.tsx:217
 msgid "Failed to create rematch"
 msgstr "रीमैच बनावे में विफल"
 
-#: src/features/go/index.tsx:201
+#: src/features/go/index.tsx:207
 msgid "Failed to decline draw"
 msgstr "ड्रॉ अस्वीकार करे में विफल"
 
@@ -1083,7 +1091,7 @@ msgstr "अटैचमेंट मेटावे में विफल"
 msgid "Failed to delete comment"
 msgstr "टिप्पणी मेटावे में विफल"
 
-#: src/features/go/index.tsx:223
+#: src/features/go/index.tsx:229
 msgid "Failed to delete game"
 msgstr "खेल मेटावे में विफल"
 
@@ -1099,7 +1107,11 @@ msgstr "RSS टोकन पावे में विफल"
 msgid "Failed to load"
 msgstr "लोड करे में विफल"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:68
+#: ../../../lib/web/src/components/banner-section.tsx:85
+msgid "Failed to load banner"
+msgstr "बैनर लोड ना भइल"
+
+#: ../../../lib/web/src/components/audit-timeline.tsx:70
 msgid "Failed to load history"
 msgstr "इतिहास लोड करे में विफल"
 
@@ -1107,8 +1119,8 @@ msgstr "इतिहास लोड करे में विफल"
 msgid "Failed to load image"
 msgstr "चित्र लोड ना भइल"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:382
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:385
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:390
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:393
 msgid "Failed to load item"
 msgstr "आइटम लोड करे में विफल"
 
@@ -1120,7 +1132,7 @@ msgstr "प्रॉम्प्ट लोड करे में विफल"
 msgid "Failed to load video"
 msgstr "वीडियो लोड ना भइल"
 
-#: src/features/go/index.tsx:156
+#: src/features/go/index.tsx:162
 msgid "Failed to make move"
 msgstr "चाल चले में विफल"
 
@@ -1128,11 +1140,11 @@ msgstr "चाल चले में विफल"
 msgid "Failed to move"
 msgstr "हटावे में असफल"
 
-#: src/features/go/index.tsx:180
+#: src/features/go/index.tsx:186
 msgid "Failed to offer draw"
 msgstr "ड्रॉ के प्रस्ताव देवे में विफल"
 
-#: src/features/go/index.tsx:163
+#: src/features/go/index.tsx:169
 msgid "Failed to pass"
 msgstr "पास करे में विफल"
 
@@ -1144,11 +1156,11 @@ msgstr "टिप्पणी पोस्ट करे में विफल"
 msgid "Failed to reset prompt"
 msgstr "प्रॉम्प्ट रीसेट करे में विफल"
 
-#: src/features/go/index.tsx:173
+#: src/features/go/index.tsx:179
 msgid "Failed to resign"
 msgstr "इस्तीफा देवे में विफल"
 
-#: src/features/go/index.tsx:196
+#: src/features/go/index.tsx:202
 msgid "Failed to resume play"
 msgstr "खेल फिर से शुरू करे में विफल"
 
@@ -1164,11 +1176,11 @@ msgstr "सहेजे में विफल"
 msgid "Failed to save prompt"
 msgstr "प्रॉम्प्ट सहेजे में विफल"
 
-#: src/features/go/index.tsx:619
+#: src/features/go/index.tsx:625
 msgid "Failed to send"
 msgstr "भेजे में विफल"
 
-#: ../../../lib/web/src/components/banner-section.tsx:71
+#: ../../../lib/web/src/components/banner-section.tsx:75
 msgid "Failed to update banner"
 msgstr "बैनर अपडेट करे में विफल"
 
@@ -1226,17 +1238,17 @@ msgstr "थीम से"
 msgid "Game created"
 msgstr "खेल बन गइल"
 
-#: src/features/go/index.tsx:219
+#: src/features/go/index.tsx:225
 msgid "Game deleted"
 msgstr "खेल मेटा गइल"
 
-#: src/features/go/index.tsx:406
+#: src/features/go/index.tsx:412
 msgid "Game over"
 msgstr "खेल खतम"
 
 #: src/features/go/index.tsx:65
-#: src/features/go/index.tsx:348
-#: src/features/go/index.tsx:357
+#: src/features/go/index.tsx:354
+#: src/features/go/index.tsx:363
 msgid "Go"
 msgstr "जाईं"
 
@@ -1258,7 +1270,7 @@ msgstr "के अनुसार समूह"
 msgid "Group: {0}"
 msgstr "समूह: {0}"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:61
+#: ../../../lib/web/src/components/audit-timeline.tsx:63
 msgid "History"
 msgstr "इतिहास"
 
@@ -1314,7 +1326,7 @@ msgstr "अमान्य तिथि"
 msgid "It seems like the page you're looking for <0/>does not exist or might have been removed."
 msgstr "लागत बा कि रउआ जवन पन्ना खोजत बानी <0/>ऊ नइखे भा हटा दिहल गइल बा।"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:441
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:449
 msgid "Item details"
 msgstr "आइटम विवरण"
 
@@ -1367,11 +1379,11 @@ msgstr "अउरी लोड करीं"
 msgid "Loading content…"
 msgstr "सामग्री लोड हो रहल बा…"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:365
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:373
 msgid "Loading item"
 msgstr "आइटम लोड हो रहल बा"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:366
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:374
 msgid "Loading item details"
 msgstr "आइटम विवरण लोड हो रहल बा"
 
@@ -1508,7 +1520,7 @@ msgstr "नया"
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:39
 #: ../../../lib/web/src/components/game/game-empty-state.tsx:51
 #: src/components/layout/go-layout.tsx:52
-#: src/features/go/components/new-game.tsx:169
+#: src/features/go/components/new-game.tsx:165
 msgid "New game"
 msgstr "नया खेल"
 
@@ -1533,11 +1545,11 @@ msgstr "अबहीं तक कौनो गतिविधि नइखे"
 msgid "No comments yet"
 msgstr "अबहीं तक कौनो टिप्पणी नइखे"
 
-#: src/features/go/components/new-game.tsx:176
+#: src/features/go/components/new-game.tsx:172
 msgid "No friends found"
 msgstr "कौनो दोस्त ना मिलल"
 
-#: src/features/go/components/new-game.tsx:172
+#: src/features/go/components/new-game.tsx:168
 msgid "No friends yet"
 msgstr "अबहीं तक कौनो दोस्त नइखे"
 
@@ -1609,10 +1621,10 @@ msgstr "कौनो दृश्य नइखे"
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:554
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:557
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:561
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:557
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:570
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:571
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:575
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:565
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:578
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:579
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:583
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:362
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:385
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx:388
@@ -1653,7 +1665,7 @@ msgstr "सूचना: {0}"
 msgid "Number"
 msgstr "संख्या"
 
-#: src/features/go/index.tsx:521
+#: src/features/go/index.tsx:527
 msgid "Offer draw"
 msgstr "ड्रॉ के प्रस्ताव"
 
@@ -1670,11 +1682,11 @@ msgstr "ओह! पन्ना ना मिलल!"
 msgid "Open actions"
 msgstr "एक्शन खोलीं"
 
-#: src/features/go/index.tsx:492
+#: src/features/go/index.tsx:498
 msgid "Open chat panel"
 msgstr "चैट पैनल खोलीं"
 
-#: src/features/go/index.tsx:500
+#: src/features/go/index.tsx:506
 msgid "Open game actions"
 msgstr "खेल क्रिया खोलीं"
 
@@ -1725,22 +1737,22 @@ msgid "Owner"
 msgstr "मालिक"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx:546
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:553
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:569
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:561
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:577
 msgid "Parent"
 msgstr "मूल"
 
-#: src/features/go/components/chat-message-list.tsx:51
-#: src/features/go/index.tsx:513
-#: src/features/go/index.tsx:660
+#: src/features/go/components/chat-message-list.tsx:54
+#: src/features/go/index.tsx:519
+#: src/features/go/index.tsx:666
 msgid "Pass"
 msgstr "पास"
 
-#: src/features/go/index.tsx:647
+#: src/features/go/index.tsx:653
 msgid "Pass turn?"
 msgstr "बारी छोड़ीं?"
 
-#: src/features/go/index.tsx:657
+#: src/features/go/index.tsx:663
 msgid "Passing..."
 msgstr "पास कर रहल बा..."
 
@@ -1787,10 +1799,6 @@ msgstr "कृपया फेर से कोशिश करीं।"
 msgid "Please wait a moment and try again."
 msgstr "कृपया तनी देर रुकीं आ फेर से कोशिश करीं।"
 
-#: src/features/go/components/new-game.tsx:162
-msgid "Points added to White's score to compensate for Black going first"
-msgstr "Black के पहिले जाए के भरपाई खातिर White के स्कोर में अंक जोड़ल गइल"
-
 #: ../../../lib/web/src/components/options-menu.tsx:175
 msgid "Posts"
 msgstr "पोस्ट"
@@ -1817,7 +1825,7 @@ msgstr "प्रोसेस हो रहल बा…"
 msgid "Prompt saved"
 msgstr "प्रॉम्प्ट सहेजल गइल"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:408
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:416
 msgid "Properties"
 msgstr "गुण"
 
@@ -1888,7 +1896,7 @@ msgstr "प्रासंगिकता {relevance}"
 msgid "Relevance {relevance}, interest {weight}"
 msgstr "प्रासंगिकता {relevance}, रुचि {weight}"
 
-#: src/features/go/index.tsx:534
+#: src/features/go/index.tsx:540
 msgid "Rematch"
 msgstr "फेर मैच"
 
@@ -1965,7 +1973,7 @@ msgid "Resend email"
 msgstr "ईमेल फिर से भेजीं"
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx:48
-#: src/features/go/index.tsx:525
+#: src/features/go/index.tsx:531
 msgid "Resign"
 msgstr "हार मानीं"
 
@@ -2024,7 +2032,7 @@ msgstr "शनिवार"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx:156
 #: ../../../lib/web/src/components/attachment-composer.tsx:430
-#: ../../../lib/web/src/components/banner-section.tsx:99
+#: ../../../lib/web/src/components/banner-section.tsx:111
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx:231
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx:172
 #: ../../../lib/web/src/components/ui/editable-field-row.tsx:126
@@ -2036,9 +2044,13 @@ msgstr "सहेजीं"
 msgid "Saving..."
 msgstr "सहेज रहल बा..."
 
-#: src/features/go/index.tsx:550
+#: src/features/go/index.tsx:556
 msgid "Score accepted — waiting for {opponentName}"
 msgstr "स्कोर मानल गइल — {opponentName} के इंतजार बा"
+
+#: src/features/go/components/chat-message-list.tsx:48
+msgid "Score agreed"
+msgstr "स्कोर पर सहमति भइल"
 
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx:175
 #: ../../../lib/web/src/components/filter-bar.tsx:32
@@ -2104,7 +2116,7 @@ msgstr "चुनीं"
 msgid "Select a field"
 msgstr "फील्ड चुनीं"
 
-#: src/features/go/components/new-game.tsx:175
+#: src/features/go/components/new-game.tsx:171
 msgid "Select a friend..."
 msgstr "दोस्त चुनीं..."
 
@@ -2233,10 +2245,6 @@ msgstr "साइन आउट हो रहल बा..."
 msgid "Single line of text only"
 msgstr "बस एगो लाइन के टेक्स्ट"
 
-#: src/features/go/index.tsx:651
-msgid "Skip your turn and pass to your opponent."
-msgstr "अपना बारी छोड़ीं आ विरोधी के दे दीं।"
-
 #: ../../../lib/web/src/lib/preference-utils.ts:101
 #: ../../../lib/web/src/lib/preference-utils.ts:121
 msgid "Small"
@@ -2254,11 +2262,11 @@ msgstr "स्रोत सब"
 msgid "Spacious"
 msgstr "विशाल"
 
-#: src/features/go/components/new-game.tsx:170
+#: src/features/go/components/new-game.tsx:166
 msgid "Start a new Go game"
 msgstr "नया Go खेल शुरू करीं"
 
-#: src/features/go/components/new-game.tsx:178
+#: src/features/go/components/new-game.tsx:174
 msgid "Start game"
 msgstr "खेल शुरू करीं"
 
@@ -2266,8 +2274,8 @@ msgstr "खेल शुरू करीं"
 msgid "Start the discussion by adding the first comment."
 msgstr "पहिल टिप्पणी जोड़ के चर्चा शुरू करीं।"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Stop watching"
 msgstr "देखल बंद करीं"
 
@@ -2297,7 +2305,7 @@ msgstr "रविवार"
 msgid "Switch to view 1-9"
 msgstr "1-9 दृश्य पर स्विच करीं"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:107
+#: ../../../lib/web/src/components/audit-timeline.tsx:109
 #: ../../../lib/web/src/lib/preference-utils.ts:16
 #: ../../../lib/web/src/lib/preference-utils.ts:132
 msgid "System"
@@ -2473,7 +2481,7 @@ msgstr "अप्रत्याशित API त्रुटि"
 msgid "United States"
 msgstr "संयुक्त राज्य अमेरिका"
 
-#: ../../../lib/web/src/components/audit-timeline.tsx:103
+#: ../../../lib/web/src/components/audit-timeline.tsx:105
 #: ../../../lib/web/src/components/entity/entity-field-dialog.tsx:167
 #: ../../../lib/web/src/components/tree-row.tsx:219
 #: ../../../lib/web/src/components/tree-row.tsx:373
@@ -2552,7 +2560,7 @@ msgstr "वीडियो दर्शक: {0}"
 msgid "View all notifications"
 msgstr "सब सूचना देखीं"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:442
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:450
 msgid "View and edit item details"
 msgstr "वस्तु विवरण देखीं आ संपादित करीं"
 
@@ -2564,8 +2572,8 @@ msgstr "नियंत्रण देखीं"
 msgid "Voice recording is not supported in this browser"
 msgstr "ई ब्राउज़र में वॉयस रिकॉर्डिंग के समर्थन नइखे"
 
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:471
-#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:476
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:479
+#: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx:484
 msgid "Watch"
 msgstr "देखीं"
 
@@ -2587,12 +2595,12 @@ msgstr "हमनी <0>{0}</0> पर सत्यापन कोड भेज
 msgid "Wednesday"
 msgstr "बुधवार"
 
-#: src/features/go/index.tsx:390
-#: src/features/go/index.tsx:468
+#: src/features/go/index.tsx:396
+#: src/features/go/index.tsx:474
 msgid "White"
 msgstr "सफेद"
 
-#: src/features/go/index.tsx:480
+#: src/features/go/index.tsx:486
 msgid "White captures:"
 msgstr "सफेद कब्जा करेला:"
 
@@ -2604,7 +2612,7 @@ msgstr "{colLabel}{rowLabel} पर सफेद पत्थर"
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "{colLabel}{rowLabel} पर सफेद क्षेत्र"
 
-#: src/features/go/components/chat-message-list.tsx:52
+#: src/features/go/components/chat-message-list.tsx:55
 msgid "You"
 msgstr "आप"
 
@@ -2612,11 +2620,11 @@ msgstr "आप"
 msgid "You do not have access to this section."
 msgstr "रउआ के ए खंड तक पहुँच नइखे।"
 
-#: src/features/go/index.tsx:416
+#: src/features/go/index.tsx:422
 msgid "You resigned — {opponentName} wins"
 msgstr "रउआ हार माननी — {opponentName} जीतले"
 
-#: src/features/go/index.tsx:403
+#: src/features/go/index.tsx:409
 msgid "You win!"
 msgstr "आप जीत गइनीं!"
 
@@ -2628,7 +2636,7 @@ msgstr "आपन खाता {source} से इहाँ हिलावल �
 msgid "Your attachments will be lost."
 msgstr "राउर संलग्नक खतम हो जाई।"
 
-#: src/features/go/index.tsx:419
+#: src/features/go/index.tsx:425
 msgid "Your move"
 msgstr "आपके चाल"
 

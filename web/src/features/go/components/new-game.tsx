@@ -151,16 +151,12 @@ export function NewGame() {
                 max="10"
                 value={komi}
                 onChange={(e) => setKomi(e.target.value)}
-                aria-describedby={komiError ? 'komi-error' : 'komi-hint'}
+                aria-describedby={komiError ? 'komi-error' : undefined}
                 className="flex-1"
               />
             </div>
-            {komiError ? (
+            {komiError && (
               <p id="komi-error" className="text-xs text-destructive">{komiError}</p>
-            ) : (
-              <p id="komi-hint" className="text-xs text-muted-foreground">
-                <Trans>Points added to White's score to compensate for Black going first</Trans>
-              </p>
             )}
           </div>
         </>
