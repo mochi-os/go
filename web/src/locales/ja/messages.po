@@ -30,6 +30,11 @@ msgstr "(展開)"
 msgid "[not set]"
 msgstr "[未設定]"
 
+#. placeholder {0}: visible.length
+#: ../../../lib/web/src/components/inline-entity-search.tsx:179
+msgid "{0, plural, one {# result} other {# results}}"
+msgstr "{0, plural, one {#件の結果} other {#件の結果}}"
+
 #. placeholder {0}: displayInfo.count
 #: ../../../lib/web/src/components/person-picker.tsx:260
 msgid "{0, plural, one {# selected} other {# selected}}"
@@ -335,11 +340,11 @@ msgstr "本当に投了しますか?{opponentName}の勝ちになります。"
 msgid "Ascending"
 msgstr "昇順"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Attach comment files"
 msgstr "コメントにファイルを添付"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Attach reply files"
 msgstr "返信にファイルを添付"
 
@@ -464,11 +469,11 @@ msgstr "カメラを利用できません"
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Cancel comment"
 msgstr "コメントをキャンセル"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Cancel reply"
 msgstr "返信をキャンセル"
 
@@ -879,11 +884,11 @@ msgstr "ウェブブラウザから検出"
 msgid "Directory"
 msgstr "ディレクトリ"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:311
+#: ../../../lib/web/src/components/comment-composer.tsx:319
 msgid "Discard"
 msgstr "破棄"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:309
+#: ../../../lib/web/src/components/comment-composer.tsx:317
 msgid "Discard draft?"
 msgstr "下書きを破棄しますか？"
 
@@ -2283,11 +2288,11 @@ msgstr "ウォッチを停止"
 msgid "Subject"
 msgstr "件名"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Submit comment"
 msgstr "コメントを送信"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Submit reply"
 msgstr "返信を送信"
 
@@ -2632,7 +2637,7 @@ msgstr "勝ちました！"
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "アカウントが{source}からここに移行されました。そちらで削除するまで、メッセージや通知が両方のサーバーに届く場合があり、一部のコンテンツは旧サーバーから引き続き提供され、フォロワーがここであなたを見つけるまで数分かかる場合があります。"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:302
+#: ../../../lib/web/src/components/comment-composer.tsx:310
 msgid "Your attachments will be lost."
 msgstr "添付ファイルは失われます。"
 
@@ -2646,10 +2651,10 @@ msgstr "あなたの番です"
 msgid "Your opponent accepts this score: black {0}, white {1}"
 msgstr "対戦相手はこのスコアに同意しています: 黒 {0}、白 {1}"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:300
+#: ../../../lib/web/src/components/comment-composer.tsx:308
 msgid "Your text and attachments will be lost."
 msgstr "入力したテキストと添付ファイルは失われます。"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:303
+#: ../../../lib/web/src/components/comment-composer.tsx:311
 msgid "Your text will be lost."
 msgstr "入力したテキストは失われます。"

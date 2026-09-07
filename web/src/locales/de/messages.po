@@ -30,6 +30,11 @@ msgstr "(erweitern)"
 msgid "[not set]"
 msgstr "[nicht gesetzt]"
 
+#. placeholder {0}: visible.length
+#: ../../../lib/web/src/components/inline-entity-search.tsx:179
+msgid "{0, plural, one {# result} other {# results}}"
+msgstr "{0, plural, one {# Ergebnis} other {# Ergebnisse}}"
+
 #. placeholder {0}: displayInfo.count
 #: ../../../lib/web/src/components/person-picker.tsx:260
 msgid "{0, plural, one {# selected} other {# selected}}"
@@ -335,11 +340,11 @@ msgstr "Möchten Sie wirklich aufgeben? {opponentName} gewinnt die Partie."
 msgid "Ascending"
 msgstr "Aufsteigend"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Attach comment files"
 msgstr "Kommentardateien anhängen"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Attach reply files"
 msgstr "Antwortdateien anhängen"
 
@@ -464,11 +469,11 @@ msgstr "Kamera nicht verfügbar"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Cancel comment"
 msgstr "Kommentar abbrechen"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Cancel reply"
 msgstr "Antwort abbrechen"
 
@@ -879,11 +884,11 @@ msgstr "Aus Webbrowser ermitteln"
 msgid "Directory"
 msgstr "Verzeichnis"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:311
+#: ../../../lib/web/src/components/comment-composer.tsx:319
 msgid "Discard"
 msgstr "Verwerfen"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:309
+#: ../../../lib/web/src/components/comment-composer.tsx:317
 msgid "Discard draft?"
 msgstr "Entwurf verwerfen?"
 
@@ -2283,11 +2288,11 @@ msgstr "Nicht mehr beobachten"
 msgid "Subject"
 msgstr "Betreff"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Submit comment"
 msgstr "Kommentar absenden"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Submit reply"
 msgstr "Antwort absenden"
 
@@ -2632,7 +2637,7 @@ msgstr "Sie gewinnen!"
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Ihr Konto wurde von {source} hierher verschoben. Bis Sie es dort löschen, können Nachrichten und Benachrichtigungen beide Server erreichen, ein Teil Ihrer Inhalte wird weiterhin vom alten Server bereitgestellt, und Follower benötigen möglicherweise ein paar Minuten, um Sie hier zu finden."
 
-#: ../../../lib/web/src/components/comment-composer.tsx:302
+#: ../../../lib/web/src/components/comment-composer.tsx:310
 msgid "Your attachments will be lost."
 msgstr "Deine Anhänge gehen verloren."
 
@@ -2646,10 +2651,10 @@ msgstr "Ihr Zug"
 msgid "Your opponent accepts this score: black {0}, white {1}"
 msgstr "Ihr Gegner nimmt diese Punktzahl an: Schwarz {0}, Weiß {1}"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:300
+#: ../../../lib/web/src/components/comment-composer.tsx:308
 msgid "Your text and attachments will be lost."
 msgstr "Dein Text und deine Anhänge gehen verloren."
 
-#: ../../../lib/web/src/components/comment-composer.tsx:303
+#: ../../../lib/web/src/components/comment-composer.tsx:311
 msgid "Your text will be lost."
 msgstr "Dein Text geht verloren."

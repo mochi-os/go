@@ -30,6 +30,11 @@ msgstr "(proširi)"
 msgid "[not set]"
 msgstr "[nije postavljeno]"
 
+#. placeholder {0}: visible.length
+#: ../../../lib/web/src/components/inline-entity-search.tsx:179
+msgid "{0, plural, one {# result} other {# results}}"
+msgstr "{0, plural, one {# rezultat} few {# rezultata} other {# rezultata}}"
+
 #. placeholder {0}: displayInfo.count
 #: ../../../lib/web/src/components/person-picker.tsx:260
 msgid "{0, plural, one {# selected} other {# selected}}"
@@ -335,11 +340,11 @@ msgstr "Jeste li sigurni da želite predati partiju? {opponentName} će pobijedi
 msgid "Ascending"
 msgstr "Rastuće"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Attach comment files"
 msgstr "Priloži fajlove komentara"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Attach reply files"
 msgstr "Priloži fajlove odgovora"
 
@@ -464,11 +469,11 @@ msgstr "Kamera nije dostupna"
 msgid "Cancel"
 msgstr "Otkaži"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Cancel comment"
 msgstr "Otkaži komentar"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Cancel reply"
 msgstr "Otkaži odgovor"
 
@@ -879,11 +884,11 @@ msgstr "Detektuj iz web browsera"
 msgid "Directory"
 msgstr "Imenik"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:311
+#: ../../../lib/web/src/components/comment-composer.tsx:319
 msgid "Discard"
 msgstr "Odbaci"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:309
+#: ../../../lib/web/src/components/comment-composer.tsx:317
 msgid "Discard draft?"
 msgstr "Odbaciti nacrt?"
 
@@ -2283,11 +2288,11 @@ msgstr "Prestani pratiti"
 msgid "Subject"
 msgstr "Predmet"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Submit comment"
 msgstr "Pošalji komentar"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Submit reply"
 msgstr "Pošalji odgovor"
 
@@ -2632,7 +2637,7 @@ msgstr "Pobijedio si!"
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "Vaš račun je premješten ovdje s {source}. Dok ga tamo ne obrišete, poruke i obavještenja mogu stizati na oba servera, dio vašeg sadržaja nastavlja se posluživati sa starog servera, a pratiocima može trebati nekoliko minuta da vas ovdje pronađu."
 
-#: ../../../lib/web/src/components/comment-composer.tsx:302
+#: ../../../lib/web/src/components/comment-composer.tsx:310
 msgid "Your attachments will be lost."
 msgstr "Vaši prilozi će biti izgubljeni."
 
@@ -2646,10 +2651,10 @@ msgstr "Tvoj potez"
 msgid "Your opponent accepts this score: black {0}, white {1}"
 msgstr "Vaš protivnik prihvata ovaj rezultat: crni {0}, bijeli {1}"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:300
+#: ../../../lib/web/src/components/comment-composer.tsx:308
 msgid "Your text and attachments will be lost."
 msgstr "Vaš tekst i prilozi će biti izgubljeni."
 
-#: ../../../lib/web/src/components/comment-composer.tsx:303
+#: ../../../lib/web/src/components/comment-composer.tsx:311
 msgid "Your text will be lost."
 msgstr "Vaš tekst će biti izgubljen."

@@ -30,6 +30,11 @@ msgstr "(توسيع)"
 msgid "[not set]"
 msgstr "[غير محدد]"
 
+#. placeholder {0}: visible.length
+#: ../../../lib/web/src/components/inline-entity-search.tsx:179
+msgid "{0, plural, one {# result} other {# results}}"
+msgstr "{0, plural, zero {# نتائج} one {نتيجة واحدة} two {# نتائج} few {# نتائج} many {# نتائج} other {# نتائج}}"
+
 #. placeholder {0}: displayInfo.count
 #: ../../../lib/web/src/components/person-picker.tsx:260
 msgid "{0, plural, one {# selected} other {# selected}}"
@@ -335,11 +340,11 @@ msgstr "هل أنت متأكد أنك تريد الاستسلام؟ سيفوز {
 msgid "Ascending"
 msgstr "تصاعدي"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Attach comment files"
 msgstr "إرفاق ملفات التعليق"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Attach reply files"
 msgstr "إرفاق ملفات الرد"
 
@@ -464,11 +469,11 @@ msgstr "الكاميرا غير متاحة"
 msgid "Cancel"
 msgstr "إلغاء"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Cancel comment"
 msgstr "إلغاء التعليق"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Cancel reply"
 msgstr "إلغاء الرد"
 
@@ -879,11 +884,11 @@ msgstr "اكتشاف من متصفح الويب"
 msgid "Directory"
 msgstr "الدليل"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:311
+#: ../../../lib/web/src/components/comment-composer.tsx:319
 msgid "Discard"
 msgstr "تجاهل"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:309
+#: ../../../lib/web/src/components/comment-composer.tsx:317
 msgid "Discard draft?"
 msgstr "تجاهل المسودة؟"
 
@@ -2283,11 +2288,11 @@ msgstr "إيقاف المتابعة"
 msgid "Subject"
 msgstr "الموضوع"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:430
+#: ../../../lib/web/src/components/comment-composer.tsx:438
 msgid "Submit comment"
 msgstr "إرسال تعليق"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:429
+#: ../../../lib/web/src/components/comment-composer.tsx:437
 msgid "Submit reply"
 msgstr "إرسال رد"
 
@@ -2632,7 +2637,7 @@ msgstr "لقد فزت!"
 msgid "Your account was moved here from {source}. Until you delete it there, messages and notifications may reach both servers, some of your content keeps being served from the old server, and followers may take a few minutes to find you here."
 msgstr "تم نقل حسابك إلى هنا من {source}. حتى تحذفه من هناك، قد تصل الرسائل والإشعارات إلى كلا الخادمين، وقد يظل بعض محتواك يُقدَّم من الخادم القديم، وقد يستغرق المتابعون بضع دقائق للعثور عليك هنا."
 
-#: ../../../lib/web/src/components/comment-composer.tsx:302
+#: ../../../lib/web/src/components/comment-composer.tsx:310
 msgid "Your attachments will be lost."
 msgstr "سيتم فقدان مرفقاتك."
 
@@ -2646,10 +2651,10 @@ msgstr "دورك"
 msgid "Your opponent accepts this score: black {0}, white {1}"
 msgstr "خصمك يقبل هذه النتيجة: الأسود {0}، الأبيض {1}"
 
-#: ../../../lib/web/src/components/comment-composer.tsx:300
+#: ../../../lib/web/src/components/comment-composer.tsx:308
 msgid "Your text and attachments will be lost."
 msgstr "سيتم فقدان نصك ومرفقاتك."
 
-#: ../../../lib/web/src/components/comment-composer.tsx:303
+#: ../../../lib/web/src/components/comment-composer.tsx:311
 msgid "Your text will be lost."
 msgstr "سيُفقد النص."
