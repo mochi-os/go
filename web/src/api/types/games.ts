@@ -37,7 +37,7 @@ export interface Game {
   created: number
 }
 
-export type MessageType = 'message' | 'move' | 'system'
+type MessageType = 'message' | 'move' | 'system'
 
 export interface GameMessage {
   id: string
@@ -75,7 +75,7 @@ export interface CreateGameResponse {
   black: string
 }
 
-export interface NewGameFriend {
+interface NewGameFriend {
   class: string
   id: string
   identity: string
