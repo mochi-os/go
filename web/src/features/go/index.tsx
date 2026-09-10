@@ -2,10 +2,9 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
-
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { Trans, useLingui } from '@lingui/react/macro'
 import { useNavigate, useParams } from '@tanstack/react-router'
+import { Trans, useLingui } from '@lingui/react/macro'
 import {
   useAuthStore,
   usePageTitle,
@@ -31,7 +30,16 @@ import {
   useFormat,
   getAppPath,
 } from '@mochi/web'
-import { MoreHorizontal, Trash2, Loader2, Flag, Handshake, RotateCcw, SkipForward, MessageCircle } from 'lucide-react'
+import {
+  MoreHorizontal,
+  Trash2,
+  Loader2,
+  Flag,
+  Handshake,
+  RotateCcw,
+  SkipForward,
+  MessageCircle,
+} from 'lucide-react'
 import { GoGame } from '@/lib/go-engine'
 import { useSidebarContext } from '@/context/sidebar-context'
 import { setLastGame } from '@/hooks/useGameStorage'
@@ -52,12 +60,11 @@ import {
   useScoreAcceptMutation,
   useScoreResumeMutation,
 } from '@/hooks/useGames'
+import { ChatMessageList } from './components/chat-message-list'
+import { DrawOfferBanner } from './components/draw-offer-banner'
 import { GameEmptyState } from './components/game-empty-state'
 import { GoBoard } from './components/go-board'
-import { DrawOfferBanner } from './components/draw-offer-banner'
 import { ScoringBanner } from './components/scoring-banner'
-import { ChatMessageList } from './components/chat-message-list'
-
 
 export function GoGameView() {
   const { t } = useLingui()
@@ -72,10 +79,8 @@ export function GoGameView() {
   const [showPassDialog, setShowPassDialog] = useState(false)
   const [showMobileChat, setShowMobileChat] = useState(false)
   const [lastMove, setLastMove] = useState<[number, number] | null>(null)
-  const {
-    identity: currentUserIdentity,
-    initialize: initializeAuth,
-  } = useAuthStore()
+  const { identity: currentUserIdentity, initialize: initializeAuth } =
+    useAuthStore()
 
   useEffect(() => {
     initializeAuth()
@@ -98,10 +103,7 @@ export function GoGameView() {
   )
 
   const selectedGame = useMemo(
-    () =>
-      games.find(
-        (g) => g.id === selectedGameId
-      ) ?? null,
+    () => games.find((g) => g.id === selectedGameId) ?? null,
     [games, selectedGameId]
   )
 
@@ -129,8 +131,13 @@ export function GoGameView() {
     return new GoGame(undefined, game.fen, game.previous_fen ?? undefined)
   }, [game?.fen, game?.previous_fen])
 
-  const myColor: 'b' | 'w' = game && myIdentity ? (game.black === myIdentity ? 'b' : 'w') : 'b'
-  const isMyTurn = goGame ? (goGame.turn === 'black' ? myColor === 'b' : myColor === 'w') : false
+  const myColor: 'b' | 'w' =
+    game && myIdentity ? (game.black === myIdentity ? 'b' : 'w') : 'b'
+  const isMyTurn = goGame
+    ? goGame.turn === 'black'
+      ? myColor === 'b'
+      : myColor === 'w'
+    : false
 
   // Score for finished games: the agreed figures once both players accepted
   // them, a recount only for rows that predate score agreement.
@@ -139,7 +146,11 @@ export function GoGameView() {
     if (!game || !goGame || !scored.includes(game.status)) return null
     if (game.score_black != null && game.score_white != null) {
       const winner =
-        game.score_black > game.score_white ? 'black' : game.score_white > game.score_black ? 'white' : null
+        game.score_black > game.score_white
+          ? 'black'
+          : game.score_white > game.score_black
+            ? 'white'
+            : null
       return { black: game.score_black, white: game.score_white, winner }
     }
     return goGame.score(game.komi)
@@ -340,7 +351,8 @@ export function GoGameView() {
 
   const handleRematch = () => {
     if (!game || !myIdentity) return
-    const opponentId = game.identity === myIdentity ? game.opponent : game.identity
+    const opponentId =
+      game.identity === myIdentity ? game.opponent : game.identity
     rematchMutation.mutate({
       opponent: opponentId,
       boardSize: game.board_size as 9 | 13 | 19,
@@ -351,9 +363,9 @@ export function GoGameView() {
   // Loading / empty
   if (selectedGameId && gamesQuery.isLoading) {
     return (
-      <GamePlaceholderPage title={t`Go`} mainClassName="p-4">
-        <Skeleton className="h-8 w-48" />
-        <Skeleton className="aspect-square max-w-[560px] w-full" />
+      <GamePlaceholderPage title={t`Go`} mainClassName='p-4'>
+        <Skeleton className='h-8 w-48' />
+        <Skeleton className='aspect-square w-full max-w-[560px]' />
       </GamePlaceholderPage>
     )
   }
@@ -365,7 +377,7 @@ export function GoGameView() {
           <GeneralError
             error={gamesQuery.error}
             minimal
-            mode="inline"
+            mode='inline'
             reset={gamesQuery.refetch}
           />
         ) : (
@@ -406,7 +418,9 @@ export function GoGameView() {
       if (score) return t`Draw`
 
       if (game.winner) {
-        return game.winner === myIdentity ? t`You win!` : t`${opponentName} wins`
+        return game.winner === myIdentity
+          ? t`You win!`
+          : t`${opponentName} wins`
       }
 
       return t`Game over`
@@ -414,7 +428,8 @@ export function GoGameView() {
 
     if (game.status === 'draw') return t`Draw`
 
-    if (game.status === 'scoring') return t`Counting — agree the score or play on`
+    if (game.status === 'scoring')
+      return t`Counting — agree the score or play on`
 
     if (game.status === 'resigned') {
       return game.winner === myIdentity
@@ -439,22 +454,22 @@ export function GoGameView() {
 
   return (
     <>
-      <div className="flex h-full flex-col overflow-hidden">
-        <Main className="flex min-h-0 flex-1 overflow-hidden">
+      <div className='flex h-full flex-col overflow-hidden'>
+        <Main className='flex min-h-0 flex-1 overflow-hidden'>
           {/* Left: Board */}
-          <div className="flex flex-1 flex-col px-2 sm:px-4 pb-2 min-h-0">
+          <div className='flex min-h-0 flex-1 flex-col px-2 pb-2 sm:px-4'>
             {isLoadingDetail ? (
-              <Skeleton className="aspect-square max-w-[560px] w-full mx-auto" />
+              <Skeleton className='mx-auto aspect-square w-full max-w-[560px]' />
             ) : gameDetailError ? (
               <GeneralError
                 error={gameDetailError}
                 minimal
-                mode="inline"
+                mode='inline'
                 reset={refetchGameDetail}
               />
             ) : game && goGame ? (
               <>
-                <div className="shrink-0">
+                <div className='shrink-0'>
                   <GameHeader
                     variant='strip'
                     myTurn={game.status === 'active' ? isMyTurn : undefined}
@@ -470,7 +485,11 @@ export function GoGameView() {
                     stats={
                       <>
                         <GameHeaderStat
-                          icon={<GameHeaderStoneDot color={myColor === 'b' ? 'black' : 'white'} />}
+                          icon={
+                            <GameHeaderStoneDot
+                              color={myColor === 'b' ? 'black' : 'white'}
+                            />
+                          }
                           label={myColor === 'b' ? t`Black` : t`White`}
                         />
                         {game.status === 'active' && (
@@ -516,7 +535,8 @@ export function GoGameView() {
                                     onClick={() => setShowPassDialog(true)}
                                     disabled={passMutation.isPending}
                                   >
-                                    <SkipForward className='me-2 size-4' /> <Trans>Pass</Trans>
+                                    <SkipForward className='me-2 size-4' />{' '}
+                                    <Trans>Pass</Trans>
                                   </DropdownMenuItem>
                                 )}
                                 {!game.draw_offer && (
@@ -524,11 +544,15 @@ export function GoGameView() {
                                     onClick={handleDrawOffer}
                                     disabled={drawOfferMutation.isPending}
                                   >
-                                    <Handshake className='me-2 size-4' /> <Trans>Offer draw</Trans>
+                                    <Handshake className='me-2 size-4' />{' '}
+                                    <Trans>Offer draw</Trans>
                                   </DropdownMenuItem>
                                 )}
-                                <DropdownMenuItem onClick={() => setShowResignDialog(true)}>
-                                  <Flag className='me-2 size-4' /> <Trans>Resign</Trans>
+                                <DropdownMenuItem
+                                  onClick={() => setShowResignDialog(true)}
+                                >
+                                  <Flag className='me-2 size-4' />{' '}
+                                  <Trans>Resign</Trans>
                                 </DropdownMenuItem>
                               </>
                             ) : (
@@ -537,10 +561,14 @@ export function GoGameView() {
                                   onClick={handleRematch}
                                   disabled={rematchMutation.isPending}
                                 >
-                                  <RotateCcw className='me-2 size-4' /> <Trans>Rematch</Trans>
+                                  <RotateCcw className='me-2 size-4' />{' '}
+                                  <Trans>Rematch</Trans>
                                 </DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => setShowDeleteDialog(true)}>
-                                  <Trash2 className='me-2 size-4' /> <Trans>Delete game</Trans>
+                                <DropdownMenuItem
+                                  onClick={() => setShowDeleteDialog(true)}
+                                >
+                                  <Trash2 className='me-2 size-4' />{' '}
+                                  <Trans>Delete game</Trans>
                                 </DropdownMenuItem>
                               </>
                             )}
@@ -549,45 +577,48 @@ export function GoGameView() {
                       </>
                     }
                     banner={
-                      game.status === 'scoring'
-                        ? game.scoring === myIdentity
-                          ? (
-                              <p className='text-sm text-muted-foreground'>
-                                <Trans>Score accepted — waiting for {opponentName}</Trans>
-                              </p>
-                            )
-                          : (
-                              <ScoringBanner
-                                black={game.score_black ?? 0}
-                                white={game.score_white ?? 0}
-                                waiting={Boolean(game.scoring)}
-                                onAccept={handleScoreAccept}
-                                onResume={handleScoreResume}
-                                isAccepting={scoreAcceptMutation.isPending}
-                                isResuming={scoreResumeMutation.isPending}
-                              />
-                            )
-                        : game.draw_offer
-                        ? game.draw_offer === myIdentity
-                          ? (
-                              <p className='text-sm text-muted-foreground'>
-                                <Trans>Draw offered — waiting for {opponentName}</Trans>
-                              </p>
-                            )
-                          : (
-                              <DrawOfferBanner
-                                opponentName={opponentName}
-                                onAccept={handleDrawAccept}
-                                onDecline={handleDrawDecline}
-                                isAccepting={drawAcceptMutation.isPending}
-                                isDeclining={drawDeclineMutation.isPending}
-                              />
-                            )
-                        : undefined
+                      game.status === 'scoring' ? (
+                        game.scoring === myIdentity ? (
+                          <p className='text-muted-foreground text-sm'>
+                            <Trans>
+                              Score accepted — waiting for {opponentName}
+                            </Trans>
+                          </p>
+                        ) : (
+                          <ScoringBanner
+                            black={game.score_black ?? 0}
+                            white={game.score_white ?? 0}
+                            waiting={Boolean(game.scoring)}
+                            onAccept={handleScoreAccept}
+                            onResume={handleScoreResume}
+                            isAccepting={scoreAcceptMutation.isPending}
+                            isResuming={scoreResumeMutation.isPending}
+                          />
+                        )
+                      ) : game.draw_offer ? (
+                        game.draw_offer === myIdentity ? (
+                          <p className='text-muted-foreground text-sm'>
+                            <Trans>
+                              Draw offered — waiting for {opponentName}
+                            </Trans>
+                          </p>
+                        ) : (
+                          <DrawOfferBanner
+                            opponentName={opponentName}
+                            onAccept={handleDrawAccept}
+                            onDecline={handleDrawDecline}
+                            isAccepting={drawAcceptMutation.isPending}
+                            isDeclining={drawDeclineMutation.isPending}
+                          />
+                        )
+                      ) : undefined
                     }
                   />
                 </div>
-                <div className="flex-1 min-h-0 mt-3" style={{ containerType: 'size' }}>
+                <div
+                  className='mt-3 min-h-0 flex-1'
+                  style={{ containerType: 'size' }}
+                >
                   <GoBoard
                     fen={game.fen}
                     previousFen={game.previous_fen}
@@ -604,7 +635,7 @@ export function GoGameView() {
 
           {/* Right: Chat sidebar, plus the mobile sheet through its portal */}
           <GameChatPanels
-            sidebarClassName="hidden lg:flex w-72 xl:w-80"
+            sidebarClassName='hidden lg:flex w-72 xl:w-80'
             title={<Trans>Chat</Trans>}
             messageList={
               <ChatMessageList
@@ -659,18 +690,19 @@ export function GoGameView() {
         confirmText={
           passMutation.isPending ? (
             <>
-              <Loader2 className="me-2 size-4 animate-spin" />
+              <Loader2 className='me-2 size-4 animate-spin' />
               <Trans>Passing...</Trans>
             </>
+          ) : goGame?.consecutivePasses === 1 ? (
+            t`End game`
           ) : (
-            goGame?.consecutivePasses === 1 ? t`End game` : t`Pass`
+            t`Pass`
           )
         }
         destructive={goGame?.consecutivePasses === 1}
         handleConfirm={handlePass}
         isLoading={passMutation.isPending}
       />
-
     </>
   )
 }

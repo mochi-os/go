@@ -2,10 +2,9 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
-
 import { useEffect, useMemo, useState } from 'react'
-import { Trans, useLingui } from '@lingui/react/macro'
 import { useNavigate } from '@tanstack/react-router'
+import { Trans, useLingui } from '@lingui/react/macro'
 import {
   Button,
   GameNewGameDialog,
@@ -100,7 +99,7 @@ export function NewGame() {
       isLoading={isLoading}
       error={error}
       onRetry={refetch}
-      mode="single"
+      mode='single'
       value={selectedFriend}
       onChange={(value) => setSelectedFriend(value as string)}
       canSubmit={
@@ -110,17 +109,19 @@ export function NewGame() {
       onSubmit={handleCreateGame}
       options={
         <>
-          <div className="space-y-2">
-            <label className="text-sm font-medium"><Trans>Board size</Trans></label>
-            <div className="flex gap-2">
+          <div className='space-y-2'>
+            <label className='text-sm font-medium'>
+              <Trans>Board size</Trans>
+            </label>
+            <div className='flex gap-2'>
               {BOARD_SIZES.map((size) => (
                 <Button
                   key={size.value}
-                  type="button"
+                  type='button'
                   variant={boardSize === size.value ? 'default' : 'outline'}
-                  size="sm"
+                  size='sm'
                   onClick={() => setBoardSize(size.value)}
-                  className="flex-1"
+                  className='flex-1'
                 >
                   {size.label}
                 </Button>
@@ -128,35 +129,39 @@ export function NewGame() {
             </div>
           </div>
 
-          <div className="space-y-2">
-            <label htmlFor="komi-input" className="text-sm font-medium"><Trans>Komi</Trans></label>
-            <div className="flex items-center gap-2">
+          <div className='space-y-2'>
+            <label htmlFor='komi-input' className='text-sm font-medium'>
+              <Trans>Komi</Trans>
+            </label>
+            <div className='flex items-center gap-2'>
               {KOMI_PRESETS.map((preset) => (
                 <Button
                   key={preset.value}
-                  type="button"
+                  type='button'
                   variant={komi === preset.value ? 'default' : 'outline'}
-                  size="sm"
-                  className="shrink-0"
+                  size='sm'
+                  className='shrink-0'
                   onClick={() => setKomi(preset.value)}
                 >
                   {preset.label}
                 </Button>
               ))}
               <Input
-                id="komi-input"
-                type="number"
-                step="0.5"
-                min="0"
-                max="10"
+                id='komi-input'
+                type='number'
+                step='0.5'
+                min='0'
+                max='10'
                 value={komi}
                 onChange={(e) => setKomi(e.target.value)}
                 aria-describedby={komiError ? 'komi-error' : undefined}
-                className="flex-1"
+                className='flex-1'
               />
             </div>
             {komiError && (
-              <p id="komi-error" className="text-xs text-destructive">{komiError}</p>
+              <p id='komi-error' className='text-destructive text-xs'>
+                {komiError}
+              </p>
             )}
           </div>
         </>
@@ -166,7 +171,9 @@ export function NewGame() {
         description: <Trans>Start a new Go game</Trans>,
         opponentLabel: <Trans>Choose opponent</Trans>,
         emptyTitle: <Trans>No friends yet</Trans>,
-        emptyHint: <Trans>Add friends in the People app to start playing</Trans>,
+        emptyHint: (
+          <Trans>Add friends in the People app to start playing</Trans>
+        ),
         addFriends: <Trans>Add friends</Trans>,
         placeholder: t`Select a friend...`,
         emptyMessage: t`No friends found`,

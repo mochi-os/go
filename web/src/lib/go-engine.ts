@@ -37,18 +37,17 @@ function emptyGrid(size: number): Stone[][] {
 
 function sameGrid(a: Stone[][], b: Stone[][]): boolean {
   if (a.length !== b.length) return false
-  return a.every((row, r) => row.length === b[r].length && row.every((cell, c) => cell === b[r][c]))
+  return a.every(
+    (row, r) =>
+      row.length === b[r].length && row.every((cell, c) => cell === b[r][c])
+  )
 }
 
 function cloneGrid(grid: Stone[][]): Stone[][] {
   return grid.map((row) => [...row])
 }
 
-function neighbors(
-  row: number,
-  col: number,
-  size: number
-): [number, number][] {
+function neighbors(row: number, col: number, size: number): [number, number][] {
   const result: [number, number][] = []
   if (row > 0) result.push([row - 1, col])
   if (row < size - 1) result.push([row + 1, col])
@@ -142,9 +141,11 @@ function emptyRegions(
       regions.push({
         cells,
         owner:
-          touchesBlack && !touchesWhite ? 'B'
-          : touchesWhite && !touchesBlack ? 'W'
-          : 'N',
+          touchesBlack && !touchesWhite
+            ? 'B'
+            : touchesWhite && !touchesBlack
+              ? 'W'
+              : 'N',
       })
     }
   }
@@ -171,7 +172,6 @@ function scoreTerritory(grid: Stone[][]): { black: number; white: number } {
   }
 
   return { black, white }
-
 }
 
 function parseBoard(fen: string): GoGameState {
@@ -236,11 +236,7 @@ export class GoGame {
 
   private state: GoGameState
 
-  constructor(
-    size: 9 | 13 | 19 = 19,
-    board?: string,
-    previousBoard?: string
-  ) {
+  constructor(size: 9 | 13 | 19 = 19, board?: string, previousBoard?: string) {
     if (board) {
       this.state = parseBoard(board)
     } else {
@@ -270,9 +266,7 @@ export class GoGame {
         ? cloneGrid(this.state.previousGrid)
         : null,
       koPoint: this.state.koPoint ? [...this.state.koPoint] : null,
-      lastMovePos: this.state.lastMovePos
-        ? [...this.state.lastMovePos]
-        : null,
+      lastMovePos: this.state.lastMovePos ? [...this.state.lastMovePos] : null,
     }
   }
 
@@ -382,7 +376,6 @@ export class GoGame {
     return true
   }
 
-
   // `winner` is null for a tie (reachable with komi 0). Never resolve a tie to
   // a colour: the caller records it as a player identity.
   score(komi: number = 6.5): {
@@ -424,14 +417,12 @@ export class GoGame {
     return serializeBoard(this.state)
   }
 
-
   get captures(): { black: number; white: number } {
     return {
       black: this.state.capturesBlack,
       white: this.state.capturesWhite,
     }
   }
-
 
   get consecutivePasses(): number {
     return this.state.consecutivePasses
@@ -441,17 +432,12 @@ export class GoGame {
     return this.state.size
   }
 
-
   getStone(row: number, col: number): Stone {
     return this.state.grid[row][col]
   }
 
   // Convert row,col to SGF-style coordinate label (e.g., "D4", "Q16")
-  static coordToLabel(
-    row: number,
-    col: number,
-    size: number
-  ): string {
+  static coordToLabel(row: number, col: number, size: number): string {
     // Letters skip 'I' in Go notation
     const letters = 'ABCDEFGHJKLMNOPQRST'
     const letter = letters[col]

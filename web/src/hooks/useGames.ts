@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
-
 import {
   useMutation,
   useQueryClient,
@@ -77,7 +76,12 @@ export const usePassMutation = (
 // its message list, so they invalidate what a pass does.
 const useScoringMutation = (
   call: (gameId: string) => Promise<DrawOfferResponse>,
-  options?: UseMutationOptions<DrawOfferResponse, Error, { gameId: string }, unknown>
+  options?: UseMutationOptions<
+    DrawOfferResponse,
+    Error,
+    { gameId: string },
+    unknown
+  >
 ) => {
   const queryClient = useQueryClient()
   const { onSuccess, ...restOptions } = options ?? {}
@@ -99,11 +103,21 @@ const useScoringMutation = (
 }
 
 export const useScoreAcceptMutation = (
-  options?: UseMutationOptions<DrawOfferResponse, Error, { gameId: string }, unknown>
+  options?: UseMutationOptions<
+    DrawOfferResponse,
+    Error,
+    { gameId: string },
+    unknown
+  >
 ) => useScoringMutation(gamesApi.scoreAccept, options)
 
 export const useScoreResumeMutation = (
-  options?: UseMutationOptions<DrawOfferResponse, Error, { gameId: string }, unknown>
+  options?: UseMutationOptions<
+    DrawOfferResponse,
+    Error,
+    { gameId: string },
+    unknown
+  >
 ) => useScoringMutation(gamesApi.scoreResume, options)
 
 interface CreateGameVariables {

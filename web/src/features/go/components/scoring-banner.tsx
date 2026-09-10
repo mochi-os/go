@@ -2,15 +2,13 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
-
 // The score after two passes is a proposal, not a result. Counting cannot tell
 // a dead stone from a live one, so the rules settle a disagreement by resuming
 // play - the player who left dead stones must then defend them or lose them to
 // capture. Both players accept to end the game; either resumes to play on.
-
 import { Trans, useLingui } from '@lingui/react/macro'
-import { Check, Play } from 'lucide-react'
 import { Button, useFormat } from '@mochi/web'
+import { Check, Play } from 'lucide-react'
 
 export function ScoringBanner({
   black,
@@ -36,21 +34,24 @@ export function ScoringBanner({
   return (
     <div className='flex flex-wrap items-center gap-2'>
       <p className='text-sm'>
-        {waiting
-          ? (
-              <Trans>
-                Your opponent accepts this score: black {formatNumber(black)}, white{' '}
-                {formatNumber(white)}
-              </Trans>
-            )
-          : (
-              <Trans>
-                Proposed score: black {formatNumber(black)}, white {formatNumber(white)}
-              </Trans>
-            )}
+        {waiting ? (
+          <Trans>
+            Your opponent accepts this score: black {formatNumber(black)}, white{' '}
+            {formatNumber(white)}
+          </Trans>
+        ) : (
+          <Trans>
+            Proposed score: black {formatNumber(black)}, white{' '}
+            {formatNumber(white)}
+          </Trans>
+        )}
       </p>
       <div className='flex gap-2'>
-        <Button size='sm' onClick={onAccept} disabled={isAccepting || isResuming}>
+        <Button
+          size='sm'
+          onClick={onAccept}
+          disabled={isAccepting || isResuming}
+        >
           <Check className='size-4' />
           {t`Accept score`}
         </Button>

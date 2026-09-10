@@ -2,8 +2,8 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
-
 import { createAppClient } from '@mochi/web'
+import endpoints from './endpoints'
 import type {
   Game,
   GameViewResponse,
@@ -20,7 +20,6 @@ import type {
   DeleteResponse,
   DrawOfferResponse,
 } from './types/games'
-import endpoints from './endpoints'
 
 export * from './types/games'
 
@@ -70,11 +69,14 @@ export const gamesApi = {
 
   create: (opponent: string, boardSize: number = 19, komi: number = 6.5) =>
     client
-      .post<CreateGameResponse | { data: CreateGameResponse }>(endpoints.game.create, {
-        opponent,
-        board_size: boardSize,
-        komi,
-      })
+      .post<CreateGameResponse | { data: CreateGameResponse }>(
+        endpoints.game.create,
+        {
+          opponent,
+          board_size: boardSize,
+          komi,
+        }
+      )
       .then((res) => unwrapData<CreateGameResponse>(res)),
 
   resign: (gameId: string) =>

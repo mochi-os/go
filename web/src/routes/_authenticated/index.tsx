@@ -2,12 +2,11 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // This file is part of Mochi, licensed under the GNU AGPL v3 with the
 // Mochi Application Interface Exception - see license.txt and license-exception.md.
-
 import { createFileRoute, redirect } from '@tanstack/react-router'
-import { GoGameView } from '@/features/go'
-import { getLastGame, clearLastGame } from '@/hooks/useGameStorage'
 import { gamesApi } from '@/api/games'
+import { getLastGame, clearLastGame } from '@/hooks/useGameStorage'
 import { gameKeys } from '@/hooks/useGames'
+import { GoGameView } from '@/features/go'
 
 export const Route = createFileRoute('/_authenticated/')({
   loader: async ({ context }) => {
@@ -27,9 +26,7 @@ export const Route = createFileRoute('/_authenticated/')({
 
     const lastGameId = await getLastGame()
     if (lastGameId && games) {
-      const gameExists = games.some(
-        g => g.id === lastGameId
-      )
+      const gameExists = games.some((g) => g.id === lastGameId)
       if (gameExists) {
         throw redirect({ to: '/$gameId', params: { gameId: lastGameId } })
       } else {
