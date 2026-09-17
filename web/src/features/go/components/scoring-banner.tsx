@@ -50,18 +50,20 @@ export function ScoringBanner({
         <Button
           size='sm'
           onClick={onAccept}
-          disabled={isAccepting || isResuming}
+          loading={isAccepting}
+          icon={<Check className='size-4' />}
+          disabled={isResuming}
         >
-          <Check className='size-4' />
           {t`Accept score`}
         </Button>
         <Button
           size='sm'
           variant='outline'
           onClick={onResume}
-          disabled={isAccepting || isResuming}
+          loading={isResuming}
+          icon={<Play className='size-4' />}
+          disabled={isAccepting}
         >
-          <Play className='size-4' />
           {t`Resume play`}
         </Button>
       </div>

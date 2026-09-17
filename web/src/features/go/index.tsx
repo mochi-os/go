@@ -33,7 +33,6 @@ import {
 import {
   MoreHorizontal,
   Trash2,
-  Loader2,
   Flag,
   Handshake,
   RotateCcw,
@@ -687,18 +686,7 @@ export function GoGameView() {
             ? t`${opponentName} also passed. Confirming will count the board and propose a score for you both to agree.`
             : ''
         }
-        confirmText={
-          passMutation.isPending ? (
-            <>
-              <Loader2 className='me-2 size-4 animate-spin' />
-              <Trans>Passing...</Trans>
-            </>
-          ) : goGame?.consecutivePasses === 1 ? (
-            t`End game`
-          ) : (
-            t`Pass`
-          )
-        }
+        confirmText={goGame?.consecutivePasses === 1 ? t`End game` : t`Pass`}
         destructive={goGame?.consecutivePasses === 1}
         handleConfirm={handlePass}
         isLoading={passMutation.isPending}
