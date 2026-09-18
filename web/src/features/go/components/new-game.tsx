@@ -9,6 +9,7 @@ import {
   Button,
   GameNewGameDialog,
   Input,
+  Label,
   getErrorMessage,
   toast,
   type Person,
@@ -110,9 +111,9 @@ export function NewGame() {
       options={
         <>
           <div className='space-y-2'>
-            <label className='text-sm font-medium'>
+            <Label>
               <Trans>Board size</Trans>
-            </label>
+            </Label>
             <div className='flex gap-2'>
               {BOARD_SIZES.map((size) => (
                 <Button
@@ -130,9 +131,9 @@ export function NewGame() {
           </div>
 
           <div className='space-y-2'>
-            <label htmlFor='komi-input' className='text-sm font-medium'>
+            <Label htmlFor='komi-input'>
               <Trans>Komi</Trans>
-            </label>
+            </Label>
             <div className='flex items-center gap-2'>
               {KOMI_PRESETS.map((preset) => (
                 <Button
