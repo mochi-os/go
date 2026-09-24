@@ -65,8 +65,22 @@ msgstr ""
 msgid "{count, plural, one {#w} other {#w}}"
 msgstr ""
 
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+#: ../../../lib/web/src/components/calendar/tooltip.ts
+msgid "{day}, {from} to {to}"
+msgstr ""
+
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx
 msgid "{entityLabel} name"
+msgstr ""
+
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+#: ../../../lib/web/src/components/calendar/tooltip.ts
+msgid "{from} to {to}"
+msgstr ""
+
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+msgid "{hidden, plural, one {+# more} other {+# more}}"
 msgstr ""
 
 #: src/features/go/components/chat-message-list.tsx
@@ -273,6 +287,11 @@ msgstr ""
 msgid "AI"
 msgstr ""
 
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "All day"
+msgstr ""
+
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx
 msgid "Allow anyone to search for {entityLabel}"
 msgstr ""
@@ -338,6 +357,10 @@ msgstr ""
 
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx
 msgid "Ascending"
+msgstr ""
+
+#: ../../../lib/web/src/components/timezone-select.tsx
+msgid "At sea"
 msgstr ""
 
 #: ../../../lib/web/src/components/comment-composer.tsx
@@ -448,6 +471,10 @@ msgstr ""
 msgid "Browser notifications"
 msgstr ""
 
+#: ../../../lib/web/src/features/accounts/types.ts
+msgid "Calendar server"
+msgstr ""
+
 #: ../../../lib/web/src/lib/shell-errors.ts
 msgid "Camera permission denied"
 msgstr ""
@@ -510,6 +537,11 @@ msgstr ""
 msgid "Changed {field}"
 msgstr ""
 
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "Changed occurrence"
+msgstr ""
+
 #: src/features/go/index.tsx
 msgid "Chat"
 msgstr ""
@@ -520,6 +552,10 @@ msgstr ""
 
 #: ../../../lib/web/src/hooks/use-field-type-labels.ts
 msgid "Checklist"
+msgstr ""
+
+#: ../../../lib/web/src/components/ui/date-picker.tsx
+msgid "Choose a date"
 msgstr ""
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
@@ -599,6 +635,7 @@ msgid "Collapse sidebar"
 msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx
+#: ../../../lib/web/src/components/ui/create-entity-dialog.tsx
 msgid "Colour"
 msgstr ""
 
@@ -681,6 +718,10 @@ msgstr ""
 msgid "Continue with {label}"
 msgstr ""
 
+#: ../../../lib/web/src/features/accounts/account-add.tsx
+msgid "Continue with {providerLabel}"
+msgstr ""
+
 #: ../../../lib/web/src/lib/toast-utils.ts
 msgid "Copied"
 msgstr ""
@@ -689,6 +730,10 @@ msgstr ""
 msgid "Copied to clipboard"
 msgstr ""
 
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
 #: ../../../lib/web/src/components/ui/copy-button.tsx
 msgid "Copy"
 msgstr ""
@@ -1006,6 +1051,10 @@ msgstr ""
 
 #: src/features/go/index.tsx
 msgid "End game?"
+msgstr ""
+
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "Ends before it starts"
 msgstr ""
 
 #: src/features/go/components/new-game.tsx
@@ -1471,6 +1520,10 @@ msgstr ""
 msgid "Monday"
 msgstr ""
 
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Month"
+msgstr ""
+
 #: ../../../lib/web/src/components/options-menu.tsx
 msgid "More options"
 msgstr ""
@@ -1481,6 +1534,13 @@ msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-activity-list.tsx
 msgid "Moved {field}"
+msgstr ""
+
+#. placeholder {0}: dayName(current.day)
+#. placeholder {0}: dayName(dragging.day)
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "Moving to {0}"
 msgstr ""
 
 #: src/features/go/components/new-game.tsx
@@ -1527,6 +1587,14 @@ msgstr ""
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx
 msgid "Next image"
+msgstr ""
+
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Next month"
+msgstr ""
+
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Next year"
 msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx
@@ -1806,6 +1874,14 @@ msgstr ""
 msgid "Previous image"
 msgstr ""
 
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Previous month"
+msgstr ""
+
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Previous year"
+msgstr ""
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx
 #: ../../../lib/web/src/features/document/document-page.tsx
 msgid "Privacy"
@@ -1951,6 +2027,11 @@ msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx
 msgid "Rename this board column"
+msgstr ""
+
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "Repeats"
 msgstr ""
 
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx
@@ -2602,6 +2683,10 @@ msgstr "Weisser Stein auf {colLabel}{rowLabel}"
 #: src/features/go/components/go-board.tsx
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "Weisses Gebiet auf {colLabel}{rowLabel}"
+
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Year"
+msgstr ""
 
 #: src/features/go/components/chat-message-list.tsx
 msgid "You"
