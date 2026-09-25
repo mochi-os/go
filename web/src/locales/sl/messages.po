@@ -250,7 +250,7 @@ msgstr "Dodaj prijatelje"
 
 #: src/features/go/components/new-game.tsx
 msgid "Add friends in the People app to start playing"
-msgstr "Dodajte prijatelje v aplikaciji People, da začnete igrati"
+msgstr "Dodajte prijatelje v aplikaciji Ljudje, da začnete igrati"
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx
 msgid "Add item..."
@@ -311,7 +311,7 @@ msgstr "Prišlo je do nepričakovane napake"
 
 #: ../../../lib/web/src/features/accounts/types.ts
 msgid "Android push"
-msgstr "Android push"
+msgstr "Android push obvestila"
 
 #: ../../../lib/web/src/features/access/access-list.tsx
 #: ../../../lib/web/src/features/access/types.ts
@@ -1301,7 +1301,7 @@ msgstr "Konec igre"
 #: src/features/go/index.tsx
 #: src/features/go/index.tsx
 msgid "Go"
-msgstr "Pojdi"
+msgstr "Go"
 
 #: ../../../lib/web/src/features/errors/access-denied-error.tsx
 #: ../../../lib/web/src/features/errors/not-found-error.tsx
@@ -1573,9 +1573,13 @@ msgid "Network error"
 msgstr "Napaka omrežja"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx
-#: ../../../lib/web/src/components/ui/sort-selector.tsx
 msgid "New"
 msgstr "Novo"
+
+#: ../../../lib/web/src/components/ui/sort-selector.tsx
+msgctxt "sort order"
+msgid "New"
+msgstr "Najnovejše"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
@@ -1727,9 +1731,13 @@ msgstr "Nič ni najdeno"
 msgid "Notifications: {0}"
 msgstr "Obvestila: {0}"
 
+#: ../../../lib/web/src/hooks/use-field-type-labels.ts
+msgid "Number"
+msgstr "Številka"
+
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
-#: ../../../lib/web/src/hooks/use-field-type-labels.ts
+msgctxt "item number"
 msgid "Number"
 msgstr "Številka"
 
@@ -1812,11 +1820,11 @@ msgstr "Nadrejeno"
 #: src/features/go/index.tsx
 #: src/features/go/index.tsx
 msgid "Pass"
-msgstr "Pass"
+msgstr "Preskoči"
 
 #: src/features/go/index.tsx
 msgid "Pass turn?"
-msgstr "Pass turn?"
+msgstr "Preskočite potezo?"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx
 msgid "Passkey"
@@ -2182,7 +2190,7 @@ msgstr "Iskanje..."
 
 #: ../../../lib/web/src/hooks/use-field-type-labels.ts
 msgid "Select"
-msgstr "Izberi"
+msgstr "Izbira"
 
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
 msgid "Select a field"
@@ -2353,7 +2361,7 @@ msgstr "Prenehaj spremljati"
 
 #: ../../../lib/web/src/features/access/access-list.tsx
 msgid "Subject"
-msgstr "Zadeva"
+msgstr "Uporabnik ali skupina"
 
 #: ../../../lib/web/src/components/comment-composer.tsx
 msgid "Submit comment"
@@ -2377,9 +2385,13 @@ msgstr "Nedelja"
 msgid "Switch to view 1-9"
 msgstr "Preklopi na pogled 1-9"
 
+#: ../../../lib/web/src/lib/preference-utils.ts
+#: ../../../lib/web/src/lib/preference-utils.ts
+msgid "System"
+msgstr "Sistem"
+
 #: ../../../lib/web/src/components/audit-timeline.tsx
-#: ../../../lib/web/src/lib/preference-utils.ts
-#: ../../../lib/web/src/lib/preference-utils.ts
+msgctxt "actor"
 msgid "System"
 msgstr "Sistem"
 
@@ -2487,7 +2499,7 @@ msgstr "Preveč zahtev"
 
 #: ../../../lib/web/src/components/ui/sort-selector.tsx
 msgid "Top"
-msgstr "Vrh"
+msgstr "Najboljše"
 
 #: ../../../lib/web/src/components/travelling-picker.tsx
 msgid "Travelling"

@@ -250,7 +250,7 @@ msgstr "Pridėti draugų"
 
 #: src/features/go/components/new-game.tsx
 msgid "Add friends in the People app to start playing"
-msgstr "Pridėkite draugų programėlėje „People“, kad pradėtumėte žaisti"
+msgstr "Pridėkite draugų programėlėje „Žmonės“, kad pradėtumėte žaisti"
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx
 msgid "Add item..."
@@ -311,7 +311,7 @@ msgstr "Įvyko netikėta klaida"
 
 #: ../../../lib/web/src/features/accounts/types.ts
 msgid "Android push"
-msgstr "Android push"
+msgstr "Android push pranešimai"
 
 #: ../../../lib/web/src/features/access/access-list.tsx
 #: ../../../lib/web/src/features/access/types.ts
@@ -1301,7 +1301,7 @@ msgstr "Žaidimas baigtas"
 #: src/features/go/index.tsx
 #: src/features/go/index.tsx
 msgid "Go"
-msgstr "Eiti"
+msgstr "Go"
 
 #: ../../../lib/web/src/features/errors/access-denied-error.tsx
 #: ../../../lib/web/src/features/errors/not-found-error.tsx
@@ -1573,9 +1573,13 @@ msgid "Network error"
 msgstr "Tinklo klaida"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx
-#: ../../../lib/web/src/components/ui/sort-selector.tsx
 msgid "New"
 msgstr "Naujas"
+
+#: ../../../lib/web/src/components/ui/sort-selector.tsx
+msgctxt "sort order"
+msgid "New"
+msgstr "Naujausi"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
@@ -1727,11 +1731,15 @@ msgstr "Nieko nerasta"
 msgid "Notifications: {0}"
 msgstr "Pranešimai: {0}"
 
-#: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx
-#: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
 #: ../../../lib/web/src/hooks/use-field-type-labels.ts
 msgid "Number"
 msgstr "Skaičius"
+
+#: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx
+#: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
+msgctxt "item number"
+msgid "Number"
+msgstr "Numeris"
 
 #: src/features/go/index.tsx
 msgid "Offer draw"
@@ -2182,7 +2190,7 @@ msgstr "Ieškoma..."
 
 #: ../../../lib/web/src/hooks/use-field-type-labels.ts
 msgid "Select"
-msgstr "Pasirinkti"
+msgstr "Pasirinkimas"
 
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
 msgid "Select a field"
@@ -2353,7 +2361,7 @@ msgstr "Nebestebėti"
 
 #: ../../../lib/web/src/features/access/access-list.tsx
 msgid "Subject"
-msgstr "Tema"
+msgstr "Vartotojas ar grupė"
 
 #: ../../../lib/web/src/components/comment-composer.tsx
 msgid "Submit comment"
@@ -2377,9 +2385,13 @@ msgstr "Sekmadienis"
 msgid "Switch to view 1-9"
 msgstr "Perjungti į rodinį 1-9"
 
+#: ../../../lib/web/src/lib/preference-utils.ts
+#: ../../../lib/web/src/lib/preference-utils.ts
+msgid "System"
+msgstr "Sistema"
+
 #: ../../../lib/web/src/components/audit-timeline.tsx
-#: ../../../lib/web/src/lib/preference-utils.ts
-#: ../../../lib/web/src/lib/preference-utils.ts
+msgctxt "actor"
 msgid "System"
 msgstr "Sistema"
 
@@ -2487,7 +2499,7 @@ msgstr "Per daug užklausų"
 
 #: ../../../lib/web/src/components/ui/sort-selector.tsx
 msgid "Top"
-msgstr "Viršus"
+msgstr "Geriausia"
 
 #: ../../../lib/web/src/components/travelling-picker.tsx
 msgid "Travelling"

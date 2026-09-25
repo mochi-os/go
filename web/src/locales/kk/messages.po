@@ -250,7 +250,7 @@ msgstr "Достар қосу"
 
 #: src/features/go/components/new-game.tsx
 msgid "Add friends in the People app to start playing"
-msgstr "Ойынды бастау үшін People қолданбасында дос қосыңыз"
+msgstr "Ойынды бастау үшін Адамдар қолданбасында дос қосыңыз"
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx
 msgid "Add item..."
@@ -378,7 +378,7 @@ msgstr "Аутентификацияланған пайдаланушылар"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx
 msgid "Authenticator code"
-msgstr "Authenticator коды"
+msgstr "Аутентификатор коды"
 
 #: ../../../lib/web/src/components/entity/keyboard-shortcuts-help.tsx
 msgid "Available keyboard shortcuts"
@@ -448,7 +448,7 @@ msgstr "Сенімсіз сілтемеге өту бөгелді"
 
 #: ../../../lib/web/src/components/entity/entity-object-links.tsx
 msgid "Blocks"
-msgstr "Bloks"
+msgstr "Бөгейді"
 
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
 msgid "Board"
@@ -1071,7 +1071,7 @@ msgstr "Электрондық поштаңыздағы кодты енгізі�
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx
 msgid "Enter your authenticator code"
-msgstr "Authenticator кодын енгізіңіз"
+msgstr "Аутентификатор кодын енгізіңіз"
 
 #: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx
 msgid "Error"
@@ -1301,7 +1301,7 @@ msgstr "Ойын аяқталды"
 #: src/features/go/index.tsx
 #: src/features/go/index.tsx
 msgid "Go"
-msgstr "Өту"
+msgstr "Го"
 
 #: ../../../lib/web/src/features/errors/access-denied-error.tsx
 #: ../../../lib/web/src/features/errors/not-found-error.tsx
@@ -1391,7 +1391,7 @@ msgstr "Пернелер тіркесімдері"
 
 #: src/features/go/components/new-game.tsx
 msgid "Komi"
-msgstr "Komi"
+msgstr "Коми"
 
 #: ../../../lib/web/src/lib/preference-utils.ts
 #: ../../../lib/web/src/lib/preference-utils.ts
@@ -1573,9 +1573,13 @@ msgid "Network error"
 msgstr "Желі қатесі"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx
-#: ../../../lib/web/src/components/ui/sort-selector.tsx
 msgid "New"
 msgstr "Жаңа"
+
+#: ../../../lib/web/src/components/ui/sort-selector.tsx
+msgctxt "sort order"
+msgid "New"
+msgstr "Ең жаңа"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
@@ -1727,11 +1731,15 @@ msgstr "Ештеңе табылмады"
 msgid "Notifications: {0}"
 msgstr "Хабарландырулар: {0}"
 
-#: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx
-#: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
 #: ../../../lib/web/src/hooks/use-field-type-labels.ts
 msgid "Number"
 msgstr "Сан"
+
+#: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx
+#: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
+msgctxt "item number"
+msgid "Number"
+msgstr "Нөмір"
 
 #: src/features/go/index.tsx
 msgid "Offer draw"
@@ -1825,7 +1833,7 @@ msgstr "Кіру кілті"
 #: ../../../lib/web/src/components/step-up-dialog.tsx
 #: ../../../lib/web/src/lib/shell-errors.ts
 msgid "Passkey verification failed. Please try again."
-msgstr "Passkey тексеруі сәтсіз аяқталды. Қайталап көріңіз."
+msgstr "Кіру кілтін тексеру сәтсіз аяқталды. Қайталап көріңіз."
 
 #: ../../../lib/web/src/components/restore-banner.tsx
 msgid "Passkeys"
@@ -2353,7 +2361,7 @@ msgstr "Қарауды тоқтату"
 
 #: ../../../lib/web/src/features/access/access-list.tsx
 msgid "Subject"
-msgstr "Тақырып"
+msgstr "Пайдаланушы немесе топ"
 
 #: ../../../lib/web/src/components/comment-composer.tsx
 msgid "Submit comment"
@@ -2377,9 +2385,13 @@ msgstr "Жексенбі"
 msgid "Switch to view 1-9"
 msgstr "1-9 көрінісіне ауысу"
 
+#: ../../../lib/web/src/lib/preference-utils.ts
+#: ../../../lib/web/src/lib/preference-utils.ts
+msgid "System"
+msgstr "Жүйе"
+
 #: ../../../lib/web/src/components/audit-timeline.tsx
-#: ../../../lib/web/src/lib/preference-utils.ts
-#: ../../../lib/web/src/lib/preference-utils.ts
+msgctxt "actor"
 msgid "System"
 msgstr "Жүйе"
 
@@ -2432,7 +2444,7 @@ msgstr "Микрофон сұрауына жауап берілмеді"
 
 #: ../../../lib/web/src/lib/shell-errors.ts
 msgid "The passkey request was not answered"
-msgstr "Passkey сұрауына жауап берілмеді"
+msgstr "Кіру кілті сұрауына жауап берілмеді"
 
 #: ../../../lib/web/src/features/errors/general-error.tsx
 msgid "The requested content could not be found."
@@ -2444,7 +2456,7 @@ msgstr "Сервер деректердің орнына веб-бетті қа�
 
 #: ../../../lib/web/src/lib/shell-errors.ts
 msgid "This app is not allowed to use your passkey. Allow it in Settings, under Permissions."
-msgstr "Бұл қолданбаға сіздің passkey-іңізді пайдалануға рұқсат жоқ. Параметрлердегі Рұқсаттар бөлімінде рұқсат беріңіз."
+msgstr "Бұл қолданбаға сіздің кіру кілтіңізді пайдалануға рұқсат жоқ. Параметрлердегі Рұқсаттар бөлімінде рұқсат беріңіз."
 
 #: ../../../lib/web/src/components/game/game-end-dialogs.tsx
 msgid "This permanently deletes the game and its chat. This cannot be undone."
@@ -2487,7 +2499,7 @@ msgstr "Сұраулар тым көп"
 
 #: ../../../lib/web/src/components/ui/sort-selector.tsx
 msgid "Top"
-msgstr "Жоғары"
+msgstr "Үздіктер"
 
 #: ../../../lib/web/src/components/travelling-picker.tsx
 msgid "Travelling"
@@ -2593,7 +2605,7 @@ msgstr "Жүктеп салу барысы"
 
 #: ../../../lib/web/src/components/step-up-dialog.tsx
 msgid "Use your passkey"
-msgstr "Passkey пайдаланыңыз"
+msgstr "Кіру кілтін пайдаланыңыз"
 
 #: ../../../lib/web/src/components/layout/mochi-menu.tsx
 #: ../../../lib/web/src/features/access/access-dialog.tsx

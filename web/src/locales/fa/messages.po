@@ -250,7 +250,7 @@ msgstr "افزودن دوستان"
 
 #: src/features/go/components/new-game.tsx
 msgid "Add friends in the People app to start playing"
-msgstr "برای شروع بازی، در برنامهٔ People دوست اضافه کنید"
+msgstr "برای شروع بازی، در برنامهٔ «افراد» دوست اضافه کنید"
 
 #: ../../../lib/web/src/components/entity/entity-field-editor.tsx
 msgid "Add item..."
@@ -452,7 +452,7 @@ msgstr "بلوک‌ها"
 
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
 msgid "Board"
-msgstr "تخته"
+msgstr "تابلو"
 
 #: src/features/go/components/new-game.tsx
 msgid "Board size"
@@ -1205,7 +1205,7 @@ msgstr "ارسال دیدگاه ناموفق بود"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx
 msgid "Failed to reset prompt"
-msgstr "بازنشانی prompt ناموفق بود"
+msgstr "بازنشانی پرامپت ناموفق بود"
 
 #: src/features/go/index.tsx
 msgid "Failed to resign"
@@ -1225,7 +1225,7 @@ msgstr "ذخیره ناموفق بود"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx
 msgid "Failed to save prompt"
-msgstr "ذخیره prompt ناموفق بود"
+msgstr "ذخیره پرامپت ناموفق بود"
 
 #: src/features/go/index.tsx
 msgid "Failed to send"
@@ -1301,7 +1301,7 @@ msgstr "بازی تمام شد"
 #: src/features/go/index.tsx
 #: src/features/go/index.tsx
 msgid "Go"
-msgstr "برو"
+msgstr "گو"
 
 #: ../../../lib/web/src/features/errors/access-denied-error.tsx
 #: ../../../lib/web/src/features/errors/not-found-error.tsx
@@ -1391,7 +1391,7 @@ msgstr "میانبرهای صفحه‌کلید"
 
 #: src/features/go/components/new-game.tsx
 msgid "Komi"
-msgstr "Komi"
+msgstr "کومی"
 
 #: ../../../lib/web/src/lib/preference-utils.ts
 #: ../../../lib/web/src/lib/preference-utils.ts
@@ -1573,9 +1573,13 @@ msgid "Network error"
 msgstr "خطای شبکه"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx
-#: ../../../lib/web/src/components/ui/sort-selector.tsx
 msgid "New"
 msgstr "جدید"
+
+#: ../../../lib/web/src/components/ui/sort-selector.tsx
+msgctxt "sort order"
+msgid "New"
+msgstr "جدیدترین"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
@@ -1727,9 +1731,13 @@ msgstr "چیزی یافت نشد"
 msgid "Notifications: {0}"
 msgstr "اعلان‌ها: {0}"
 
+#: ../../../lib/web/src/hooks/use-field-type-labels.ts
+msgid "Number"
+msgstr "شماره"
+
 #: ../../../lib/web/src/components/entity/entity-view-options-bar.tsx
 #: ../../../lib/web/src/components/entity/entity-view-sheet.tsx
-#: ../../../lib/web/src/hooks/use-field-type-labels.ts
+msgctxt "item number"
 msgid "Number"
 msgstr "شماره"
 
@@ -1893,7 +1901,7 @@ msgstr "در حال پردازش…"
 
 #: ../../../lib/web/src/components/ai-prompts-editor.tsx
 msgid "Prompt saved"
-msgstr "Prompt ذخیره شد"
+msgstr "پرامپت ذخیره شد"
 
 #: ../../../lib/web/src/components/entity/entity-object-detail-panel.tsx
 msgid "Properties"
@@ -2353,7 +2361,7 @@ msgstr "توقف تماشا"
 
 #: ../../../lib/web/src/features/access/access-list.tsx
 msgid "Subject"
-msgstr "موضوع"
+msgstr "کاربر یا گروه"
 
 #: ../../../lib/web/src/components/comment-composer.tsx
 msgid "Submit comment"
@@ -2377,9 +2385,13 @@ msgstr "یکشنبه"
 msgid "Switch to view 1-9"
 msgstr "تغییر به نمای ۱ تا ۹"
 
+#: ../../../lib/web/src/lib/preference-utils.ts
+#: ../../../lib/web/src/lib/preference-utils.ts
+msgid "System"
+msgstr "سیستم"
+
 #: ../../../lib/web/src/components/audit-timeline.tsx
-#: ../../../lib/web/src/lib/preference-utils.ts
-#: ../../../lib/web/src/lib/preference-utils.ts
+msgctxt "actor"
 msgid "System"
 msgstr "سیستم"
 
@@ -2487,7 +2499,7 @@ msgstr "درخواست‌های بیش از حد"
 
 #: ../../../lib/web/src/components/ui/sort-selector.tsx
 msgid "Top"
-msgstr "بالا"
+msgstr "برترین"
 
 #: ../../../lib/web/src/components/travelling-picker.tsx
 msgid "Travelling"
