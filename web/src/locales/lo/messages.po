@@ -65,9 +65,23 @@ msgstr "{count, plural, one {#ນທ} other {#ນທ}}"
 msgid "{count, plural, one {#w} other {#w}}"
 msgstr "{count, plural, one {#ອທ} other {#ອທ}}"
 
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+#: ../../../lib/web/src/components/calendar/tooltip.ts
+msgid "{day}, {from} to {to}"
+msgstr "{day} {from} ຫາ {to}"
+
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx
 msgid "{entityLabel} name"
 msgstr "ຊື່ {entityLabel}"
+
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+#: ../../../lib/web/src/components/calendar/tooltip.ts
+msgid "{from} to {to}"
+msgstr "{from} ຫາ {to}"
+
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+msgid "{hidden, plural, one {+# more} other {+# more}}"
+msgstr "{hidden, plural, other {+# ລາຍການ}}"
 
 #: src/features/go/components/chat-message-list.tsx
 msgid "{name} accepted the score"
@@ -273,6 +287,11 @@ msgstr "ເພີ່ມມຸມມອງ"
 msgid "AI"
 msgstr "AI"
 
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "All day"
+msgstr "ຕະຫຼອດມື້"
+
 #: ../../../lib/web/src/components/ui/create-entity-dialog.tsx
 msgid "Allow anyone to search for {entityLabel}"
 msgstr "ອະນຸຍາດໃຫ້ທຸກຄົນຄົ້ນຫາ {entityLabel}"
@@ -339,6 +358,10 @@ msgstr "ທ່ານແນ່ໃຈບໍວ່າຕ້ອງການຍອມ
 #: ../../../lib/web/src/components/ui/sort-direction-button.tsx
 msgid "Ascending"
 msgstr "ຈາກໜ້ອຍຫາຫຼາຍ"
+
+#: ../../../lib/web/src/components/timezone-select.tsx
+msgid "At sea"
+msgstr "ຢູ່ທະເລ"
 
 #: ../../../lib/web/src/components/comment-composer.tsx
 msgid "Attach comment files"
@@ -448,6 +471,10 @@ msgstr "ສີຂອບ"
 msgid "Browser notifications"
 msgstr "ການແຈ້ງເຕືອນຕົວທ່ອງເວັບ"
 
+#: ../../../lib/web/src/features/accounts/types.ts
+msgid "Calendar server"
+msgstr "ເຊີບເວີປະຕິທິນ"
+
 #: ../../../lib/web/src/lib/shell-errors.ts
 msgid "Camera permission denied"
 msgstr "ການອະນຸຍາດກ້ອງຖືກປະຕິເສດ"
@@ -510,6 +537,11 @@ msgstr "ປ່ຽນແລ້ວ"
 msgid "Changed {field}"
 msgstr "ປ່ຽນ {field} ແລ້ວ"
 
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "Changed occurrence"
+msgstr "ຄັ້ງທີ່ຖືກປ່ຽນແປງ"
+
 #: src/features/go/index.tsx
 msgid "Chat"
 msgstr "ແຊັດ"
@@ -521,6 +553,10 @@ msgstr "ກ່ອງໝາຍ"
 #: ../../../lib/web/src/hooks/use-field-type-labels.ts
 msgid "Checklist"
 msgstr "ລາຍການກວດສອບ"
+
+#: ../../../lib/web/src/components/ui/date-picker.tsx
+msgid "Choose a date"
+msgstr "ເລືອກວັນທີ"
 
 #: ../../../lib/web/src/components/game/game-empty-state.tsx
 msgid "Choose a game from the sidebar or start a new one."
@@ -592,6 +628,7 @@ msgid "Collapse sidebar"
 msgstr "ຫຍໍ້ແຖບຂ້າງ"
 
 #: ../../../lib/web/src/components/entity/entity-option-dialog.tsx
+#: ../../../lib/web/src/components/ui/create-entity-dialog.tsx
 msgid "Colour"
 msgstr "ສີ"
 
@@ -674,6 +711,10 @@ msgstr "ຕໍ່"
 msgid "Continue with {label}"
 msgstr "ສືບຕໍ່ດ້ວຍ {label}"
 
+#: ../../../lib/web/src/features/accounts/account-add.tsx
+msgid "Continue with {providerLabel}"
+msgstr "ດຳເນີນຕໍ່ດ້ວຍ {providerLabel}"
+
 #: ../../../lib/web/src/lib/toast-utils.ts
 msgid "Copied"
 msgstr "ສຳເນົາແລ້ວ"
@@ -682,6 +723,10 @@ msgstr "ສຳເນົາແລ້ວ"
 msgid "Copied to clipboard"
 msgstr "ສຳເນົາໄປຄລິບບອດແລ້ວ"
 
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
 #: ../../../lib/web/src/components/ui/copy-button.tsx
 msgid "Copy"
 msgstr "ສຳເນົາ"
@@ -999,6 +1044,10 @@ msgstr "ຈົບເກມ"
 #: src/features/go/index.tsx
 msgid "End game?"
 msgstr "ຈົບເກມບໍ?"
+
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "Ends before it starts"
+msgstr "ສິ້ນສຸດກ່ອນເລີ່ມຕົ້ນ"
 
 #: src/features/go/components/new-game.tsx
 msgid "Enter a valid number"
@@ -1463,6 +1512,10 @@ msgstr "ການຄວບຄຸມ"
 msgid "Monday"
 msgstr "ວັນຈັນ"
 
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Month"
+msgstr "ເດືອນ"
+
 #: ../../../lib/web/src/components/options-menu.tsx
 msgid "More options"
 msgstr "ຕົວເລືອກເພີ່ມເຕີມ"
@@ -1474,6 +1527,13 @@ msgstr "ຍ້າຍແລ້ວ"
 #: ../../../lib/web/src/components/entity/entity-activity-list.tsx
 msgid "Moved {field}"
 msgstr "ຍ້າຍ {field} ແລ້ວ"
+
+#. placeholder {0}: dayName(current.day)
+#. placeholder {0}: dayName(dragging.day)
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "Moving to {0}"
+msgstr "ກຳລັງຍ້າຍໄປ {0}"
 
 #: src/features/go/components/new-game.tsx
 msgid "Must be between 0 and 10"
@@ -1520,6 +1580,14 @@ msgstr "ເກມໃໝ່"
 #: ../../../lib/web/src/components/ui/image-lightbox.tsx
 msgid "Next image"
 msgstr "ຮູບຕໍ່ໄປ"
+
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Next month"
+msgstr "ເດືອນໜ້າ"
+
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Next year"
+msgstr "ປີໜ້າ"
 
 #: ../../../lib/web/src/components/entity/entity-create-object-dialog.tsx
 msgid "No {parentClassNames} to add to"
@@ -1798,6 +1866,14 @@ msgstr "ໂພສແລະຄຳເຫັນ"
 msgid "Previous image"
 msgstr "ຮູບກ່ອນໜ້າ"
 
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Previous month"
+msgstr "ເດືອນກ່ອນໜ້າ"
+
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Previous year"
+msgstr "ປີກ່ອນໜ້າ"
+
 #: ../../../lib/web/src/components/server-documents-footer.tsx
 #: ../../../lib/web/src/features/document/document-page.tsx
 msgid "Privacy"
@@ -1945,6 +2021,11 @@ msgstr "ປ່ຽນຊື່ຄໍລຳ"
 #: ../../../lib/web/src/components/entity/entity-board-column.tsx
 msgid "Rename this board column"
 msgstr "ປ່ຽນຊື່ຄໍລຳກະດານນີ້"
+
+#: ../../../lib/web/src/components/calendar/month-grid.tsx
+#: ../../../lib/web/src/components/calendar/time-grid.tsx
+msgid "Repeats"
+msgstr "ເຮັດຊ້ຳ"
 
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx
 #: ../../../lib/web/src/components/entity/entity-comment-thread.tsx
@@ -2595,6 +2676,10 @@ msgstr "ຫີນຂາວທີ່ {colLabel}{rowLabel}"
 #: src/features/go/components/go-board.tsx
 msgid "White territory at {colLabel}{rowLabel}"
 msgstr "ດິນແດນຂາວທີ່ {colLabel}{rowLabel}"
+
+#: ../../../lib/web/src/components/calendar/date-header.tsx
+msgid "Year"
+msgstr "ປີ"
 
 #: src/features/go/components/chat-message-list.tsx
 msgid "You"
