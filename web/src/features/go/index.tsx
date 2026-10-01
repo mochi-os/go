@@ -687,6 +687,7 @@ export function GoGameView() {
             : ''
         }
         confirmText={goGame?.consecutivePasses === 1 ? t`End game` : t`Pass`}
+        icon={<SkipForward className='size-4' />}
         destructive={goGame?.consecutivePasses === 1}
         handleConfirm={handlePass}
         isLoading={passMutation.isPending}
