@@ -10,6 +10,12 @@ import { getOpponentName, type Game } from '@/api/games'
 import { useGamesQuery } from '@/hooks/useGames'
 import { NewGame } from '@/features/go/components/new-game'
 
+// A game in 'scoring' is waiting for both players to agree the count, or to
+// play on. Listing it as completed told a player it was over while the board
+// still asked them for an answer.
+const isLive = (game: Game) =>
+  game.status === 'active' || game.status === 'scoring'
+
 export function GoLayout() {
   const { t } = useLingui()
   const gamesQuery = useGamesQuery()
@@ -47,6 +53,7 @@ export function GoLayout() {
       appName='go'
       gameTitle={gameTitle}
       opponentId={opponentId}
+      isLive={isLive}
       labels={{
         active: t`Active games`,
         completed: t`Completed`,

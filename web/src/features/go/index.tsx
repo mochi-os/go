@@ -38,6 +38,7 @@ import {
   RotateCcw,
   SkipForward,
   MessageCircle,
+  Play,
 } from 'lucide-react'
 import { GoGame } from '@/lib/go-engine'
 import { lastStone } from '@/lib/move-record'
@@ -520,62 +521,81 @@ export function GoGameView() {
                         >
                           <MessageCircle className='size-4' />
                         </IconButton>
-                        <DropdownMenu>
-                          <DropdownMenuTrigger asChild>
-                            <IconButton
-                              variant='ghost'
-                              label={t`Open game actions`}
-                            >
-                              <MoreHorizontal className='size-4' />
-                            </IconButton>
-                          </DropdownMenuTrigger>
-                          <DropdownMenuContent align='end' className='w-48'>
-                            {game.status === 'active' ? (
-                              <>
-                                {isMyTurn && (
+                        {/* While the score is being agreed the game is neither
+                            playable nor over: the server refuses resign and
+                            draw, and rematch and delete belong to a finished
+                            game. The player still deciding has both actions
+                            in the banner. The one who already accepted has
+                            none there, so the menu is their way back: without
+                            it an opponent who never answers leaves them a
+                            game they can neither finish nor leave. */}
+                        {(game.status !== 'scoring' ||
+                          game.scoring === myIdentity) && (
+                          <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                              <IconButton
+                                variant='ghost'
+                                label={t`Open game actions`}
+                              >
+                                <MoreHorizontal className='size-4' />
+                              </IconButton>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent align='end' className='w-48'>
+                              {game.status === 'active' ? (
+                                <>
+                                  {isMyTurn && (
+                                    <DropdownMenuItem
+                                      onClick={() => setShowPassDialog(true)}
+                                      disabled={passMutation.isPending}
+                                    >
+                                      <SkipForward className='me-2 size-4' />{' '}
+                                      <Trans>Pass</Trans>
+                                    </DropdownMenuItem>
+                                  )}
+                                  {!game.draw_offer && (
+                                    <DropdownMenuItem
+                                      onClick={handleDrawOffer}
+                                      disabled={drawOfferMutation.isPending}
+                                    >
+                                      <Handshake className='me-2 size-4' />{' '}
+                                      <Trans>Offer draw</Trans>
+                                    </DropdownMenuItem>
+                                  )}
                                   <DropdownMenuItem
-                                    onClick={() => setShowPassDialog(true)}
-                                    disabled={passMutation.isPending}
+                                    onClick={() => setShowResignDialog(true)}
                                   >
-                                    <SkipForward className='me-2 size-4' />{' '}
-                                    <Trans>Pass</Trans>
+                                    <Flag className='me-2 size-4' />{' '}
+                                    <Trans>Resign</Trans>
                                   </DropdownMenuItem>
-                                )}
-                                {!game.draw_offer && (
+                                </>
+                              ) : game.status === 'scoring' ? (
+                                <DropdownMenuItem
+                                  onClick={handleScoreResume}
+                                  disabled={scoreResumeMutation.isPending}
+                                >
+                                  <Play className='me-2 size-4' />{' '}
+                                  <Trans>Resume play</Trans>
+                                </DropdownMenuItem>
+                              ) : (
+                                <>
                                   <DropdownMenuItem
-                                    onClick={handleDrawOffer}
-                                    disabled={drawOfferMutation.isPending}
+                                    onClick={handleRematch}
+                                    disabled={rematchMutation.isPending}
                                   >
-                                    <Handshake className='me-2 size-4' />{' '}
-                                    <Trans>Offer draw</Trans>
+                                    <RotateCcw className='me-2 size-4' />{' '}
+                                    <Trans>Rematch</Trans>
                                   </DropdownMenuItem>
-                                )}
-                                <DropdownMenuItem
-                                  onClick={() => setShowResignDialog(true)}
-                                >
-                                  <Flag className='me-2 size-4' />{' '}
-                                  <Trans>Resign</Trans>
-                                </DropdownMenuItem>
-                              </>
-                            ) : (
-                              <>
-                                <DropdownMenuItem
-                                  onClick={handleRematch}
-                                  disabled={rematchMutation.isPending}
-                                >
-                                  <RotateCcw className='me-2 size-4' />{' '}
-                                  <Trans>Rematch</Trans>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem
-                                  onClick={() => setShowDeleteDialog(true)}
-                                >
-                                  <Trash2 className='me-2 size-4' />{' '}
-                                  <Trans>Delete game</Trans>
-                                </DropdownMenuItem>
-                              </>
-                            )}
-                          </DropdownMenuContent>
-                        </DropdownMenu>
+                                  <DropdownMenuItem
+                                    onClick={() => setShowDeleteDialog(true)}
+                                  >
+                                    <Trash2 className='me-2 size-4' />{' '}
+                                    <Trans>Delete game</Trans>
+                                  </DropdownMenuItem>
+                                </>
+                              )}
+                            </DropdownMenuContent>
+                          </DropdownMenu>
+                        )}
                       </>
                     }
                     banner={
