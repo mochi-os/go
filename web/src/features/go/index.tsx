@@ -40,6 +40,7 @@ import {
   MessageCircle,
 } from 'lucide-react'
 import { GoGame } from '@/lib/go-engine'
+import { lastStone } from '@/lib/move-record'
 import { useSidebarContext } from '@/context/sidebar-context'
 import { setLastGame } from '@/hooks/useGameStorage'
 import { useGameWebsocket } from '@/hooks/useGameWebsocket'
@@ -77,7 +78,6 @@ export function GoGameView() {
   const [showDeleteDialog, setShowDeleteDialog] = useState(false)
   const [showPassDialog, setShowPassDialog] = useState(false)
   const [showMobileChat, setShowMobileChat] = useState(false)
-  const [lastMove, setLastMove] = useState<[number, number] | null>(null)
   const { identity: currentUserIdentity, initialize: initializeAuth } =
     useAuthStore()
 
@@ -106,13 +106,6 @@ export function GoGameView() {
     [games, selectedGameId]
   )
 
-  // Cleared on switch and on the game's own position change: the marker is set
-  // only from our own play, so it is stale both on the next game (drawn
-  // wherever a stone/piece happens to sit) and once the opponent replies.
-  useEffect(() => {
-    setLastMove(null)
-  }, [selectedGameId, selectedGame?.fen])
-
   // Game detail
   const {
     data: gameDetail,
@@ -129,6 +122,18 @@ export function GoGameView() {
     if (!game?.fen) return null
     return new GoGame(undefined, game.fen, game.previous_fen ?? undefined)
   }, [game?.fen, game?.previous_fen])
+
+  // From the record, so it marks the opponent's stone as well as ours and
+  // follows the game that is open. Checked against the board: a record that
+  // names a point holding no such stone is not this position's history, and
+  // marking an empty point is worse than marking none.
+  const lastMove = useMemo<[number, number] | null>(() => {
+    if (!goGame) return null
+    const last = lastStone(game?.sgf ?? '')
+    if (!last || last.row >= goGame.size || last.col >= goGame.size) return null
+    if (goGame.getStone(last.row, last.col) !== last.color) return null
+    return [last.row, last.col]
+  }, [game?.sgf, goGame])
 
   const myColor: 'b' | 'w' =
     game && myIdentity ? (game.black === myIdentity ? 'b' : 'w') : 'b'
@@ -263,8 +268,6 @@ export function GoGameView() {
       } catch {
         return
       }
-
-      setLastMove([row, col])
 
       const moveLabel = GoGame.coordToLabel(row, col, goGame.size)
       const sgfMove = `${myColor === 'b' ? 'B' : 'W'}[${row},${col}]`
