@@ -29,6 +29,7 @@ import {
   DropdownMenuTrigger,
   useFormat,
   getAppPath,
+  openGame,
 } from '@mochi/web'
 import {
   MoreHorizontal,
@@ -102,11 +103,6 @@ export function GoGameView() {
     [gamesQuery.data?.games]
   )
 
-  const selectedGame = useMemo(
-    () => games.find((g) => g.id === selectedGameId) ?? null,
-    [games, selectedGameId]
-  )
-
   // Game detail
   const {
     data: gameDetail,
@@ -117,6 +113,13 @@ export function GoGameView() {
 
   const game = gameDetail?.game
   const myIdentity = gameDetail?.identity ?? currentUserIdentity
+
+  // From the detail row while the list catches up, as after creating a game.
+  const listBehind = gamesQuery.isFetching || gamesQuery.isError
+  const selectedGame = useMemo(
+    () => openGame(games, selectedGameId, game, gameDetailError, listBehind),
+    [games, selectedGameId, game, gameDetailError, listBehind]
+  )
 
   // Go state from game detail FEN
   const goGame = useMemo(() => {
@@ -364,7 +367,10 @@ export function GoGameView() {
   }
 
   // Loading / empty
-  if (selectedGameId && gamesQuery.isLoading) {
+  if (
+    selectedGameId &&
+    (gamesQuery.isLoading || (!selectedGame && isLoadingDetail))
+  ) {
     return (
       <GamePlaceholderPage title={t`Go`} mainClassName='p-4'>
         <Skeleton className='h-8 w-48' />
