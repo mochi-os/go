@@ -164,8 +164,11 @@ export function GoGameView() {
     return goGame.score(game.komi)
   }, [game, goGame])
 
-  // Messages
-  const messagesQuery = useInfiniteMessagesQuery(selectedGame?.id)
+  // Messages, by the game the address names: they need nothing from the list
+  // or the detail, and the server refuses a game the caller cannot see.
+  const messagesQuery = useInfiniteMessagesQuery(selectedGameId, {
+    enabled: !gameDetailError,
+  })
   const chatMessages = useGameChatMessages(messagesQuery.data?.pages)
 
   // Send message

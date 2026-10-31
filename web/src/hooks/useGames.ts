@@ -19,6 +19,7 @@ import {
 const shared = createGameHooks(gamesApi)
 
 export const gameKeys = shared.gameKeys
+export const gameKey = shared.gameKey
 
 export const {
   useGameDetailQuery,
