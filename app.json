@@ -11,7 +11,8 @@
 	"services": ["go"],
 
 	"architecture": {"engine": "starlark", "version": 4},
-	"execute": ["go.star"],
+	"execute": ["lib/assets.star", "go.star"],
+	"require": {"version": {"minimum": "0.4.244"}},
 
 	"database": {
 		"schema": 5,
