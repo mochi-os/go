@@ -16,7 +16,9 @@ import {
   type DrawOfferResponse,
 } from '@/api/games'
 
-const shared = createGameHooks(gamesApi)
+// A move sends the position and captures the list row shows, so an accepted
+// move is written into the list rather than the list downloaded again.
+const shared = createGameHooks(gamesApi, { patch: true })
 
 export const gameKeys = shared.gameKeys
 export const gameKey = shared.gameKey
