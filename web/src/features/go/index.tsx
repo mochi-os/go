@@ -30,6 +30,7 @@ import {
   useFormat,
   getAppPath,
   openGame,
+  tryPath,
 } from '@mochi/web'
 import {
   MoreHorizontal,
@@ -41,6 +42,7 @@ import {
   MessageCircle,
   Play,
 } from 'lucide-react'
+import endpoints from '@/api/endpoints'
 import { GoGame } from '@/lib/go-engine'
 import { lastStone } from '@/lib/move-record'
 import { useSidebarContext } from '@/context/sidebar-context'
@@ -458,10 +460,16 @@ export function GoGameView() {
       : game.identity
     : ''
   // The opponent's avatar and style come through this app's own game-bound
-  // player-asset route, never a cross-app fetch from the people app.
+  // player-asset route, never a cross-app fetch from the people app. The
+  // opponent's id comes from their server, so it goes in through path, and an
+  // address it would take out of its segment is left out.
   const opponentAssetUrl = (asset: 'avatar' | 'style') =>
     opponentFingerprint && selectedGameId
-      ? `${getAppPath()}/${selectedGameId}/-/user/${opponentFingerprint}/asset/${asset}`
+      ? (tryPath(
+          () =>
+            getAppPath() +
+            endpoints.game.asset(selectedGameId, opponentFingerprint, asset)
+        ) ?? null)
       : null
 
   return (
